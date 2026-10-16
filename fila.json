@@ -1,13 +1,114 @@
 [
   {
-    "id": "teste-story-1",
-    "quando": "2026-10-16T00:00:00-03:00",
+    "id": "2026-10-16-carrossel",
+    "quando": "2026-10-16T12:00:00-03:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-16/carrossel-1.png",
+      "2026-10-16/carrossel-2.png",
+      "2026-10-16/carrossel-3.png",
+      "2026-10-16/carrossel-4.png",
+      "2026-10-16/carrossel-5.png",
+      "2026-10-16/carrossel-6.png",
+      "2026-10-16/carrossel-7.png"
+    ],
+    "legenda": "Você não precisa treinar mais. Precisa treinar com direção.\n\nCansaço não prova evolução.\nO corpo muda com estímulo medido, registrado e ajustado.\nSem avaliação, todo treino é tentativa.\nCom método, a evolução fica previsível.\n\nA Avaliação Estratégica leva 40 minutos: medimos onde você está e definimos a direção. Me manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #copacabana #ipanema #leblon"
+  },
+  {
+    "id": "2026-10-16-story-1",
+    "quando": "2026-10-16T15:00:00-03:00",
     "tipo": "STORY",
     "arquivos": [
-      "teste/story-teste.png"
+      "2026-10-16/story-1.png"
+    ]
+  },
+  {
+    "id": "2026-10-16-estatico",
+    "quando": "2026-10-16T19:00:00-03:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-10-16/estatico.png"
     ],
-    "status": "publicado",
-    "media_id": "18123994003948490",
-    "publicado_em": "2026-10-16T01:06-03:00"
+    "legenda": "Falta de resultado não é falta de esforço. É falta de direção.\n\nPrincípio do Método Nº 01.\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #ipanema"
+  },
+  {
+    "id": "2026-10-16-story-2",
+    "quando": "2026-10-16T19:30:00-03:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-16/story-2.png"
+    ]
+  },
+  {
+    "id": "2026-10-17-carrossel",
+    "quando": "2026-10-17T09:30:00-03:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-17/carrossel-1.png",
+      "2026-10-17/carrossel-2.png",
+      "2026-10-17/carrossel-3.png",
+      "2026-10-17/carrossel-4.png",
+      "2026-10-17/carrossel-5.png",
+      "2026-10-17/carrossel-6.png",
+      "2026-10-17/carrossel-7.png"
+    ],
+    "legenda": "Fim de semana não é recaída. É parte do plano.\n\nO corpo responde ao que você repete.\nUm almoço longo não apaga cinco dias de treino.\nCulpa e compensação, sim, bagunçam o processo.\nAproveite. Durma bem. Volte na segunda.\n\nSalva e manda para quem precisa ouvir isso.\n\n#treinofeminino #treinodeforca #ipanema #botafogo #personaltrainerrj"
+  },
+  {
+    "id": "2026-10-17-story-1",
+    "quando": "2026-10-17T14:00:00-03:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-17/story-1.png"
+    ]
+  },
+  {
+    "id": "2026-10-17-estatico",
+    "quando": "2026-10-17T19:00:00-03:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-10-17/estatico.png"
+    ],
+    "legenda": "O corpo responde ao padrão, não a um dia isolado.\n\nPrincípio do Método Nº 02.\nSalva para lembrar na segunda.\n\n#treinodeforca #botafogo #personaltrainerrj"
+  },
+  {
+    "id": "2026-10-18-estatico",
+    "quando": "2026-10-18T12:00:00-03:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-10-18/estatico.png"
+    ],
+    "legenda": "Envelhecer mal não é questão de idade. É falta de estímulo.\n\nPrincípio do Método Nº 03.\nSegue para mais método e menos achismo.\n\n#longevidade #treinodeforca #leblon"
+  },
+  {
+    "id": "2026-10-18-carrossel",
+    "quando": "2026-10-18T19:00:00-03:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-18/carrossel-1.png",
+      "2026-10-18/carrossel-2.png",
+      "2026-10-18/carrossel-3.png",
+      "2026-10-18/carrossel-4.png",
+      "2026-10-18/carrossel-5.png",
+      "2026-10-18/carrossel-6.png",
+      "2026-10-18/carrossel-7.png"
+    ],
+    "legenda": "Duas a três sessões de força por semana. Essa é a dose.\n\nUm estudo de Harvard com 147 mil pessoas associou 90 a 120 minutos semanais de musculação a 13% menos risco de morte.\nMais do que isso não trouxe ganho extra.\nNão é sobre viver na academia. É sobre critério.\nAntes de abrir a agenda da semana, reserve esses horários.\n\nSegue para mais método e menos achismo.\n\n#treinodeforca #longevidade #leblon #copacabana #personaltrainerrj"
+  },
+  {
+    "id": "2026-10-18-story-1",
+    "quando": "2026-10-18T20:00:00-03:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-18/story-1.png"
+    ]
+  },
+  {
+    "id": "2026-10-18-story-2",
+    "quando": "2026-10-18T21:00:00-03:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-18/story-2.png"
+    ]
   }
 ]
