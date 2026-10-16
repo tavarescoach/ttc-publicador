@@ -1,0 +1,41 @@
+name: Publicar no Instagram
+
+on:
+  schedule:
+    - cron: "*/30 9-23 * * *"
+    - cron: "*/30 0-1 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publicar o que está na hora
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          MIDIA_BASE: ${{ secrets.MIDIA_BASE }}
+        run: python publicar.py
+      - name: Salvar a fila atualizada
+        if: always()
+        run: |
+          if ! git diff --quiet fila.json; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git add fila.json
+            git commit -m "fila: status atualizado"
+            git pull --rebase
+            git push
+          fi
