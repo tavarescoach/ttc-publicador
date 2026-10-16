@@ -3,6 +3,10 @@
     "id": "teste-story-1",
     "quando": "2026-10-16T00:00:00-03:00",
     "tipo": "STORY",
-    "arquivos": ["teste/story-teste.png"]
+    "arquivos": [
+      "teste/story-teste.png"
+    ],
+    "status": "erro",
+    "erro": "API respondeu 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AWp8sLlNviX5T0xMkpHWOjf\"}}"
   }
 ]
