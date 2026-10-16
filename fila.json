@@ -3,6 +3,11 @@
     "id": "teste-story-1",
     "quando": "2026-10-16T00:00:00-03:00",
     "tipo": "STORY",
-    "arquivos": ["teste/story-teste.png"]
+    "arquivos": [
+      "teste/story-teste.png"
+    ],
+    "status": "publicado",
+    "media_id": "18123994003948490",
+    "publicado_em": "2026-10-16T01:06-03:00"
   }
 ]
