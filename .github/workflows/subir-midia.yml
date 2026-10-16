@@ -1,0 +1,66 @@
+name: Subir mídia
+
+# Copia para o bucket "midia" do Supabase tudo o que entrar na pasta midia/ do repositório.
+# Ex.: midia/2026-10-16/carrossel-1.png  ->  bucket midia / 2026-10-16/carrossel-1.png
+
+on:
+  push:
+    paths:
+      - "midia/**"
+  workflow_dispatch: {}
+
+jobs:
+  subir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Enviar arquivos para o Supabase
+        env:
+          KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          URL: https://txiszakrpssubgvzpdcx.supabase.co
+          BEFORE: ${{ github.event.before }}
+          EVENTO: ${{ github.event_name }}
+        run: |
+          set -e
+          if [ "$EVENTO" = "workflow_dispatch" ] || [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            ARQUIVOS=$(find midia -type f ! -name '.gitkeep' | sort)
+          else
+            ARQUIVOS=$(git diff --name-only --diff-filter=AM "$BEFORE" "$GITHUB_SHA" -- midia | sort)
+          fi
+
+          if [ -z "$ARQUIVOS" ]; then
+            echo "Nenhum arquivo novo em midia/."
+            exit 0
+          fi
+
+          FALHAS=0
+          for f in $ARQUIVOS; do
+            destino="${f#midia/}"
+            case "${f##*.}" in
+              png) tipo="image/png" ;;
+              jpg|jpeg) tipo="image/jpeg" ;;
+              mp4) tipo="video/mp4" ;;
+              mov) tipo="video/quicktime" ;;
+              *) echo "Ignorado (tipo não suportado): $f"; continue ;;
+            esac
+            codigo=$(curl -sS -o /tmp/resposta.txt -w "%{http_code}" -X POST \
+              "$URL/storage/v1/object/midia/$destino" \
+              -H "apikey: $KEY" \
+              -H "Content-Type: $tipo" \
+              -H "x-upsert: true" \
+              --data-binary "@$f")
+            if [ "$codigo" = "200" ]; then
+              echo "OK   $destino"
+            else
+              echo "ERRO $destino (HTTP $codigo): $(cat /tmp/resposta.txt)"
+              FALHAS=$((FALHAS+1))
+            fi
+          done
+
+          if [ "$FALHAS" -gt 0 ]; then
+            echo "$FALHAS arquivo(s) falharam."
+            exit 1
+          fi
