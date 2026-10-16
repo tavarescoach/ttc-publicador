@@ -1,10 +1,8 @@
 [
   {
-    "id": "exemplo-estatico",
-    "quando": "2026-01-01T19:00:00-03:00",
-    "tipo": "IMAGEM",
-    "arquivos": ["exemplo/estatico.png"],
-    "legenda": "Seu corpo responde ao que você repete.\n\nCorpo forte, evolução sem acaso.",
-    "status": "exemplo"
+    "id": "teste-story-1",
+    "quando": "2026-10-16T00:00:00-03:00",
+    "tipo": "STORY",
+    "arquivos": ["teste/story-teste.png"]
   }
 ]
