@@ -146,7 +146,15 @@ def publicar(item):
     else:
         raise ErroPublicacao(f"tipo desconhecido: {tipo}")
 
-    return chamar("POST", f"{IG_ID}/media_publish", {"creation_id": cid}).get("id")
+          esperar_pronto(cid)
+      for tentativa in range(6):
+          try:
+              return chamar("POST", f"{IG_ID}/media_publish", {"creation_id": cid}).get("id")
+          except ErroPublicacao as e:
+              if "9007" in str(e) and tentativa < 5:
+                  time.sleep(10)
+                  continue
+              raise
 
 
 def validar(item):
