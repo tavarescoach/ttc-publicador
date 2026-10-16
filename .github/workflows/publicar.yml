@@ -2,8 +2,8 @@ name: Publicar no Instagram
 
 on:
   schedule:
-    - cron: "*/30 9-23 * * *"
-    - cron: "*/30 0-1 * * *"
+    - cron: "7,37 9-23 * * *"
+    - cron: "7,37 0-1 * * *"
   workflow_dispatch: {}
 
 concurrency:
