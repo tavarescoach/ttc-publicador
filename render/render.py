@@ -95,6 +95,18 @@ def main():
             pg = nav.new_page(viewport={"width": 1080, "height": 1350})
         nav.close()
     print(f"{len(arquivos)} slides gerados em {saida}")
+    try:  # folha de prévia (para conferência do Claude): render/previas/<id>.jpg
+        from PIL import Image
+        W, H, n = 270, 338, len(arquivos)
+        cols = 5
+        folha = Image.new("RGB", (cols * (W + 6) + 6, ((n + cols - 1) // cols) * (H + 6) + 6), (40, 40, 40))
+        for k, a in enumerate(arquivos):
+            im = Image.open(os.path.join(RAIZ, "render", "_saida", a)).convert("RGB").resize((W, H))
+            folha.paste(im, (6 + (k % cols) * (W + 6), 6 + (k // cols) * (H + 6)))
+        os.makedirs(os.path.join(AQUI, "previas"), exist_ok=True)
+        folha.save(os.path.join(AQUI, "previas", f"{p['id']}.jpg"), quality=82)
+    except Exception as e:
+        print(f"[aviso] sem prévia: {e}")
 
     if local:
         return 0

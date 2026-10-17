@@ -18,6 +18,9 @@ concurrency:
   group: renderizar-artes
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   renderizar:
     runs-on: ubuntu-latest
@@ -31,7 +34,7 @@ jobs:
           python-version: "3.12"
       - name: Instalar navegador
         run: |
-          pip install playwright==1.47.0
+          pip install playwright==1.47.0 pillow
           python -m playwright install --with-deps chromium
       - name: Renderizar e entregar ao painel
         env:
@@ -55,3 +58,14 @@ jobs:
             python render/render.py "$p" || { echo "::error::falhou: $p"; FALHAS=$((FALHAS+1)); }
           done
           [ "$FALHAS" -eq 0 ]
+      - name: Guardar prévias
+        if: always()
+        run: |
+          git add render/previas || true
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "render: prévias"
+            git pull --rebase
+            git push
+          fi
