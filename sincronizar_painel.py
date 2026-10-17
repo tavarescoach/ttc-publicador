@@ -28,6 +28,7 @@ STATUS_PARA_ETAPA = {
     "publicado": "publicado",
     "erro": "erro",
     "atrasado": "atrasado",
+    "cancelado": "cancelado",
 }
 ETAPAS_ESQUERDA = {"pauta", "em_criacao", "revisar"}
 CAMPOS = ["id", "data", "tipo", "pauta", "funil", "etapa", "quando", "arquivos", "legenda", "media_id", "capa", "link"]
@@ -152,12 +153,26 @@ def respostas_criacoes():
             print(f"::error::criação {cid}: HTTP {e.code} — {e.read().decode(errors='replace')[:300]}")
 
 
+def cancelados():
+    """ids que o Luan cancelou no painel: nunca são recriados nem sobrescritos."""
+    if SIMULAR:
+        return set()
+    req = urllib.request.Request(f"{URL}/rest/v1/conteudos?etapa=eq.cancelado&select=id", headers={"apikey": KEY})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return {l["id"] for l in json.loads(r.read())}
+    except Exception as e:
+        print(f"::warning::não li os cancelados ({e})")
+        return set()
+
+
 def main():
     if not SIMULAR and not (URL and KEY):
         print("Faltam SUPABASE_URL e SUPABASE_SERVICE_KEY.")
         return 1
-    enviar([da_pauta(i) for i in ler("pautas.json")], "ignore")
-    enviar([da_fila(i) for i in ler("fila.json")], "merge")
+    fora = cancelados()
+    enviar([da_pauta(i) for i in ler("pautas.json") if i.get("id") not in fora], "ignore")
+    enviar([da_fila(i) for i in ler("fila.json") if i.get("id") not in fora], "merge")
     respostas_criacoes()
     return 0
 

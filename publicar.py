@@ -209,6 +209,29 @@ def importar_aprovados(fila):
     return novos
 
 
+def aplicar_cancelados(fila):
+    """O que o Luan cancelou no painel não vai ao ar: marca 'cancelado' na fila."""
+    url = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    key = os.environ.get("SUPABASE_SERVICE_KEY", "")
+    if not (url and key):
+        return 0
+    req = urllib.request.Request(f"{url}/rest/v1/conteudos?etapa=eq.cancelado&select=id", headers={"apikey": key})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            ids = {l["id"] for l in json.loads(r.read())}
+    except Exception as e:
+        print(f"[aviso] não consegui ler cancelados do painel: {e}")
+        return 0
+    n = 0
+    for item in fila:
+        if item.get("id") in ids and item.get("status", "pendente") in ("pendente", "erro", "atrasado"):
+            item["status"] = "cancelado"
+            item.pop("erro", None)
+            n += 1
+            print(f"Cancelado no painel, não será publicado: {item['id']}")
+    return n
+
+
 def main():
     if not SIMULAR and not (TOKEN and IG_ID and BASE_MIDIA):
         print("Faltam segredos: IG_TOKEN, IG_USER_ID e MIDIA_BASE.")
@@ -219,6 +242,7 @@ def main():
     t = agora()
     erros = 0
     mudou = importar_aprovados(fila) > 0
+    mudou = aplicar_cancelados(fila) > 0 or mudou
     for item in fila:
         if item.get("status", "pendente") != "pendente":
             continue
