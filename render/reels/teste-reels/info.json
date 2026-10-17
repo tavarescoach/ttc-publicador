@@ -1,0 +1,22 @@
+{
+  "id": "teste-reels",
+  "pauta": "TESTE (pode ignorar)",
+  "notas": "teste automático",
+  "quando": "2026-10-30T10:00:00+00:00",
+  "data": "2026-10-30",
+  "funil": "topo",
+  "duracao_s": 31.0,
+  "tamanho_mb": 29.9,
+  "video_bucket": "2026-10-30/teste-reels/reels.mp4",
+  "quadros": [
+    "render/reels/teste-reels/quadro-1.jpg",
+    "render/reels/teste-reels/quadro-2.jpg",
+    "render/reels/teste-reels/quadro-3.jpg",
+    "render/reels/teste-reels/quadro-4.jpg",
+    "render/reels/teste-reels/quadro-5.jpg",
+    "render/reels/teste-reels/quadro-6.jpg",
+    "render/reels/teste-reels/quadro-7.jpg",
+    "render/reels/teste-reels/quadro-8.jpg"
+  ],
+  "transcricao": ""
+}
