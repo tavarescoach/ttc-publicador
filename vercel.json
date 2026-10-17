@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "echo 'Painel estático: só a pasta painel é publicada.'",
+  "outputDirectory": "painel",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- painel vercel.json"
+}
