@@ -5,6 +5,7 @@ Esta sessão é disparada pelo Estúdio de criação do Luan (página do claude.
 
     ESTUDIO pesquisa <doc_id>
     ESTUDIO gerar <doc_id>
+    ESTUDIO reels <id>
 
 Ninguém está olhando: não faça perguntas. Decida pela leitura mais razoável e registre no documento.
 Responda e escreva sempre em português do Brasil.
@@ -48,6 +49,20 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
    e faça push (o robô "Sincronizar painel" coloca na coluna da esquerda).
 6. `ArtifactData update`: {status:"pronto", vez:"luan", resultado:{carrossel:"e-<doc_id>-carrossel", ...}, atualizado_em}.
    O Luan aprova no painel (Pronto para aprovar → Aprovar e agendar); o robô de publicação importa o aprovado.
+
+## ESTUDIO reels <id>
+O Luan enviou um vídeo pelo painel (card `<id>` em "Em criação"). O doc do Estúdio tem o mesmo id (`criacoes/<id>`, origem "reels").
+Leia `diretrizes/reels.md`.
+1. `ArtifactData get` do doc. Se status não for "gerando", pare.
+2. Dispare o robô "Preparar reels": `gh api -X POST repos/tavarescoach/ttc-publicador/actions/workflows/preparar-reels.yml/dispatches -f ref=main -f "inputs[id]=<id>"`.
+   Espere terminar (pode levar até ~8 min por causa da transcrição) e faça `git pull`. Se falhar, registre o erro (ex.: vídeo acima de 50 MB, card sem vídeo).
+3. Leia `render/reels/<id>/info.json` e abra os quadros com Read. Escolha o quadro, escreva título da capa e legenda.
+4. Escreva `render/pedidos/<id>-reels.json`:
+   `{"formato":"reels","id":"<id>","data":info.data,"quando":info.quando,"funil":info.funil,"pauta":info.pauta,
+     "video":info.video_bucket,"legenda":"...","slides":[{"tipo":"capa_reels","rotulo":"...","titulo":"...","subtitulo":"...","foto":"render/reels/<id>/quadro-N.jpg"}]}`
+   O `id` é o mesmo do card, então o card sai de "Em criação" e vai para "Pronto para aprovar" com vídeo, capa e legenda.
+5. Push, espere o "Renderizar artes", confira `render/previas/<id>.jpg` (no máximo 1 correção).
+6. `ArtifactData update`: {status:"pronto", vez:"luan", resultado:{reels:"<id>"}, atualizado_em}.
 
 ## Se algo falhar
 `ArtifactData update` com {status:"erro", vez:"luan", erro:"<o que aconteceu, em 1 frase>"}. Não deixe o documento em "gerando"/"pesquisando".
