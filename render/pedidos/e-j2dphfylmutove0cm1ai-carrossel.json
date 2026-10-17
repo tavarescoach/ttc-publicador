@@ -1,0 +1,20 @@
+{
+  "id": "e-j2dphfylmutove0cm1ai-carrossel",
+  "data": "2026-10-22",
+  "quando": "2026-10-22T12:00:00-03:00",
+  "funil": "topo",
+  "pauta": "Perder peso não é perder gordura.",
+  "legenda": "Decodificando as canetas emagrecedoras.\n\nNos grandes estudos de semaglutida e tirzepatida, um grupo de pacientes fez densitometria antes e depois do tratamento. O exame separa gordura de massa magra, coisa que a balança não faz.\n\nO resultado: de 25% a cerca de 40% do peso perdido não era gordura. E em pesquisas com dieta, quem treinou força preservou quase toda a massa magra.\n\nA caneta tira peso. Quem decide o que sai é o estímulo que o corpo recebe. Informação geral: seu médico define o tratamento.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #emagrecimentosaudavel #copacabana #ipanema",
+  "slides": [
+    {"tipo": "capa", "fundo": "marinho", "titulo": "Perder peso não é perder **gordura.**", "foto": "https://images.pexels.com/photos/9036538/pexels-photo-9036538.jpeg?auto=compress&cs=tinysrgb&w=1600"},
+    {"tipo": "texto_foto", "fundo": "preto", "titulo": "A caneta virou o atalho mais rápido para a balança.", "texto": "Semaglutida e tirzepatida derrubaram o peso nos grandes estudos. A pergunta que pouca gente faz é outra: do que era feito o peso que sumiu. Os pesquisadores mediram."},
+    {"tipo": "numero", "fundo": "marinho", "rotulo": "STEP 1, semaglutida", "numero": "140", "titulo": "pacientes **medidos por dentro.**", "texto": "Um subgrupo do estudo fez densitometria (DXA) no início e após 68 semanas. O exame separa gordura de massa magra, coisa que a balança não faz.", "fonte": "Wilding et al., NEJM (2021)"},
+    {"tipo": "numero", "fundo": "preto", "rotulo": "O resultado", "numero": "39%", "titulo": "do peso perdido **não era gordura.**", "texto": "A gordura caiu 19,3%. A massa magra caiu 9,7%. Na conta final, perto de 4 em cada 10 quilos perdidos vieram de tecido magro.", "fonte": "STEP 1, subestudo DXA, NEJM (2021)"},
+    {"tipo": "numero", "fundo": "marinho", "rotulo": "SURMOUNT-1, tirzepatida", "numero": "25%", "titulo": "da perda foi **massa magra.**", "texto": "Em 160 pacientes avaliados por DXA, o peso caiu 21,3% em 72 semanas. A gordura caiu 33,9%. A massa magra, 10,9%. Um quarto do que saiu não era gordura.", "fonte": "Look et al., Diabetes Obes. Metab. (2025)"},
+    {"tipo": "insight", "fundo": "claro", "rotulo": "Contexto honesto", "titulo": "A caneta não inventou o problema. **Acelerou.**", "texto": "**Dieta sem treino também tira massa magra.** A referência clássica é perto de 1 quilo a cada 4 perdidos. E massa magra inclui água e órgãos, não só músculo. O que muda é a velocidade."},
+    {"tipo": "texto_foto", "fundo": "preto", "titulo": "O treino é o sinal que diz o que **preservar.**", "foto": "https://images.pexels.com/photos/13219986/pexels-photo-13219986.jpeg?auto=compress&cs=tinysrgb&w=1600", "texto": "Em 6 ensaios com adultos mais velhos com obesidade em dieta, quem fez treino de força evitou 93,5% da perda de massa magra causada pela restrição calórica.", "fonte": "Sardeli et al., Nutrients (2018)"},
+    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "A caneta tira peso. **Não escolhe qual.**", "texto": "**A balança mede quanto saiu. Não mede o quê.** O estímulo que o corpo recebe enquanto emagrece decide se ele termina mais forte ou só menor."},
+    {"tipo": "licao", "fundo": "marinho", "rotulo": "Para quem treina", "titulo": "O critério de sucesso muda **de lugar.**", "texto": "Meça composição corporal e força, não só peso. Treino de força progressivo, 2 a 3 vezes por semana, com carga registrada. Medicação e proteína ficam com médico e nutricionista.", "nota": "Peso caindo e força mantida: o processo está no caminho. Calibrar isso é trabalho de treinador."},
+    {"tipo": "cta", "fundo": "preto", "titulo": "Vai emagrecer? Comece medindo o que **proteger.**", "texto": "A Avaliação Estratégica mede composição corporal e força e define a direção do seu treino. Informação geral: seu médico define o tratamento.", "cta": "Me manda **MÉTODO** no direct."}
+  ]
+}
