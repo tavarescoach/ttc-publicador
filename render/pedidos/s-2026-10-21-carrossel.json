@@ -1,0 +1,88 @@
+{
+  "id": "s-2026-10-21-carrossel",
+  "data": "2026-10-21",
+  "quando": "2026-10-21T12:00:00-03:00",
+  "funil": "meio",
+  "pauta": "Seu treino não parou.",
+  "legenda": "Decodificando o custo de uma noite sem dormir.\n\nNum estudo controlado publicado na Physiological Reports em 2021, 13 adultos saudáveis passaram uma noite em claro. No dia seguinte, a síntese de proteína muscular caiu 18%. O cortisol subiu 21% e a testosterona caiu 24%.\n\nÉ uma amostra pequena e uma noite só. Mas o sinal é claro: o corpo sem sono entra em modo de defesa, não de construção.\n\nSono é parte do treino, não o intervalo entre eles.\n\nMe manda MÉTODO no direct.\n\n#sono #recuperacao #treinodeforca #personaltrainerrj #leblon",
+  "slides": [
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Seu treino não parou. Seu **sono** parou.",
+      "foto": "https://images.pexels.com/photos/6943435/pexels-photo-6943435.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "O corpo **estacionou.**",
+      "foto": "https://images.pexels.com/photos/7063743/pexels-photo-7063743.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "texto": "Você treina, ajusta a comida e o espelho não muda. A primeira suspeita costuma ser o treino. Pesquisadores olharam para outro lugar: a noite anterior."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "O experimento",
+      "numero": "13",
+      "unidade": "adultos",
+      "titulo": "saudáveis, **uma noite em claro.**",
+      "texto": "Cada participante passou por uma noite normal e por uma noite sem dormir, em laboratório. Na manhã seguinte, os pesquisadores mediram como o músculo construía proteína.",
+      "fonte": "Lamon et al., Physiological Reports (2021)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "Construção",
+      "numero": "−18",
+      "unidade": "%",
+      "titulo": "na síntese de **proteína muscular.**",
+      "texto": "Depois da noite sem sono, o músculo construiu menos proteína do que depois de uma noite normal. É a matéria-prima de quem treina para ganhar ou manter massa.",
+      "fonte": "Lamon et al., Physiological Reports (2021)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "Hormônios",
+      "numero": "+21",
+      "unidade": "%",
+      "titulo": "de **cortisol** no dia seguinte.",
+      "texto": "O hormônio do estresse subiu. A testosterona caiu 24%. A combinação favorece quebra de tecido, não construção.",
+      "fonte": "Lamon et al., Physiological Reports (2021)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "Contexto honesto",
+      "titulo": "Uma noite, **um sinal.**",
+      "texto": "**Amostra pequena, efeito agudo.** O estudo não mede meses de sono curto. Mas mostra a direção: sem recuperação, o estímulo do treino não vira resultado."
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Modo de defesa, **não de construção.**",
+      "texto": "O treino dá o sinal. O sono executa a obra. Quando a noite falha, o corpo prioriza sobreviver ao dia, não adaptar ao treino."
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "Sono é parte do treino, **não o intervalo.**",
+      "texto": "**Corpo que não responde nem sempre é falta de treino.** Muitas vezes é falta de recuperação."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "marinho",
+      "rotulo": "Para quem treina",
+      "titulo": "Recuperação **entra no plano.**",
+      "texto": "Horário fixo para deitar e acordar. Treino pesado longe da hora de dormir. Semana de pouco sono pede ajuste de carga, não mais volume.",
+      "nota": "Insônia ou cansaço que não passa pedem avaliação médica. Ajustar o treino à sua rotina é trabalho de treinador."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "preto",
+      "titulo": "Quer um plano que respeite **a sua rotina?**",
+      "texto": "A Avaliação Estratégica olha seu treino, seu sono e sua agenda, e define o próximo passo.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
+  ]
+}

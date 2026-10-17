@@ -1,98 +1,507 @@
 [
-  {
-    "id": "2026-10-17-1",
-    "data": "2026-10-17",
-    "ordem": 1,
-    "formato": "aprovar",
-    "acao": "aprovar",
-    "titulo": "Revisar e aprovar os conteúdos prontos (carrosséis e reels)",
-    "detalhe": "Abra cada um em Ver arte, ajuste a legenda se quiser e clique em Aprovar e agendar.\nAtenção: o carrossel da creatina está sugerido para dom 18/10 às 12h, o mesmo horário do estático \"Envelhecer mal...\". Escolha outro horário (ex.: 18h30)."
-  },
-  {
-    "id": "2026-10-17-2",
-    "data": "2026-10-17",
-    "ordem": 2,
-    "formato": "outro",
-    "acao": "manual",
-    "titulo": "Cancelar o card de teste do reels (\"TESTE (pode ignorar)\")"
-  },
-  {
-    "id": "2026-10-17-3",
-    "data": "2026-10-17",
-    "ordem": 3,
-    "formato": "gravacao",
-    "acao": "reels",
-    "horario": "17:45",
-    "titulo": "Gravar reels: \"Cardio depois da musculação não é segredo. É hábito copiado.\"",
-    "detalhe": "Tipo: Mito x Método · Meio de funil · 30–45s · fala para câmera + b-roll\nBase: Folha Equilíbrio (17/10), cardio após musculação não aumenta os ganhos.\n\n1. GANCHO (0–3s, texto na tela): \"15 minutos de esteira depois do treino. Por quê?\"\n2. TENSÃO: \"Virou regra. Terminou a musculação, sobe na esteira. Quase ninguém sabe explicar o motivo.\"\n3. EXPLICAÇÃO (3 pontos):\n   • O que constrói músculo é o treino de força. O cardio no fim não soma ganho de músculo.\n   • Condicionamento importa, mas tem dose e momento próprios, inclusive em outro dia.\n   • Com pouco tempo, esses 15 minutos rendem mais em séries de força bem executadas.\n4. VIRADA: \"Cardio depois da musculação não é segredo do resultado. É hábito copiado.\"\n5. CTA: \"No meu método, cada parte do treino tem um motivo. Me manda MÉTODO no direct.\"\n\nB-ROLL: esteira vazia no fim do treino, anilhas sendo guardadas, você anotando a ficha do aluno.\nDepois de gravar: painel → Enviar vídeo de reels → assunto \"cardio depois da musculação\" → sugerir qua 21/10 07h."
-  },
-  {
-    "id": "2026-10-17-4",
-    "data": "2026-10-17",
-    "ordem": 4,
-    "formato": "carrossel",
-    "acao": "estudio",
-    "horario": "18:15",
-    "titulo": "Gerar carrossel: \"A força começa a cair aos 35. O que vem depois depende de você.\"",
-    "detalhe": "Base: estudo sueco que acompanhou adultos por 47 anos (ScienceDaily, 14/10): força e condicionamento começam a cair por volta dos 35, mesmo em quem treina, e começar a treinar na vida adulta ainda melhora o desempenho.\n\nCaminho mais rápido: Radar → card \"A 47-year study reveals the age…\" (nota 85) → Criar a partir desta.\nOu no Estúdio → Ideias rápidas, colando a headline abaixo.\n\nHeadline sugerida:\n  Frase 1: A força começa a cair aos 35.\n  Frase 2: O que acontece depois depende do que você faz agora.\nPúblico: executivo 30–45 · Formato: carrossel decodificado · Sugestão de agenda: seg 19/10 12h (dia de autoridade)."
-  },
-  {
-    "id": "2026-10-17-5",
-    "data": "2026-10-17",
-    "ordem": 5,
-    "formato": "stories",
-    "acao": "manual",
-    "horario": "18:45",
-    "titulo": "Stories de bastidor (2): gravando o conteúdo da semana na TTC",
-    "detalhe": "Story 1 (vídeo ao vivo, 10s): você montando o tripé na TTC. Texto: \"Bastidor: gravando o conteúdo da semana.\"\nStory 2 (vídeo, 10s): close na esteira vazia. Texto: \"Spoiler: tem uma regra de academia que vai cair amanhã.\""
-  },
-  {
-    "id": "2026-10-17-6",
-    "data": "2026-10-17",
-    "ordem": 6,
-    "formato": "stories",
-    "acao": "manual",
-    "horario": "19:30",
-    "titulo": "Story enquete: \"Você faz cardio depois da musculação?\"",
-    "detalhe": "Fundo escuro da marca, sticker de enquete:\nPergunta: \"Você faz cardio depois da musculação?\"\nOpções: \"Sempre\" / \"Às vezes\" / \"Nunca\"\n\nÀs 21h, story de resposta: \"A maioria respondeu ___. Amanhã eu explico por que essa regra não é o que faz o seu resultado. Quer entender o seu treino? Me manda MÉTODO no direct.\""
-  },
-  {
-    "id": "2026-10-17-7",
-    "data": "2026-10-17",
-    "ordem": 7,
-    "formato": "aprovar",
-    "acao": "aprovar",
-    "horario": "21:30",
-    "titulo": "Aprovar o reels e o carrossel gerados hoje",
-    "detalhe": "Quando chegarem em \"Pronto para aprovar\" (5 a 15 min depois de enviar/gerar):\n• Reels do cardio: qua 21/10 às 07h.\n• Carrossel da força aos 35: seg 19/10 às 12h.\nConfira capa, legenda e horário antes de aprovar."
-  },
-  {
-    "id": "2026-10-18-1",
-    "data": "2026-10-18",
-    "ordem": 1,
-    "formato": "outro",
-    "acao": "manual",
-    "horario": "08:00",
-    "titulo": "Ler o pacote de conteúdo da semana 19–25/10 e aprovar as pautas",
-    "detalhe": "O pacote chega às 7h51 (doc + aviso no celular). A lista do dia de cada dia da semana aparece aqui no painel."
-  },
-  {
-    "id": "2026-10-18-2",
-    "data": "2026-10-18",
-    "ordem": 2,
-    "formato": "stories",
-    "acao": "manual",
-    "horario": "20:00",
-    "titulo": "Stories manuais de domingo: bastidor da preparação da semana",
-    "detalhe": "2 stories ao vivo: o planejamento da semana de treinos e a agenda de avaliações. Fechar com convite: \"Me manda MÉTODO no direct.\""
-  },
-  {
-    "id": "2026-10-18-3",
-    "data": "2026-10-18",
-    "ordem": 3,
-    "formato": "gravacao",
-    "acao": "manual",
-    "titulo": "Marcar na agenda o bloco de gravação da semana (~2h)",
-    "detalhe": "A revisão semanal de domingo (18h52) sugere o melhor horário com base na sua agenda."
-  }
+ {
+  "id": "2026-10-17-1",
+  "data": "2026-10-17",
+  "ordem": 1,
+  "formato": "aprovar",
+  "acao": "aprovar",
+  "titulo": "Revisar e aprovar os conteúdos prontos (carrosséis e reels)",
+  "detalhe": "Abra cada um em Ver arte, ajuste a legenda se quiser e clique em Aprovar e agendar.\nAtenção: o carrossel da creatina está sugerido para dom 18/10 às 12h, o mesmo horário do estático \"Envelhecer mal...\". Escolha outro horário (ex.: 18h30)."
+ },
+ {
+  "id": "2026-10-17-2",
+  "data": "2026-10-17",
+  "ordem": 2,
+  "formato": "outro",
+  "acao": "manual",
+  "titulo": "Cancelar o card de teste do reels (\"TESTE (pode ignorar)\")"
+ },
+ {
+  "id": "2026-10-17-3",
+  "data": "2026-10-17",
+  "ordem": 3,
+  "formato": "gravacao",
+  "acao": "reels",
+  "horario": "17:45",
+  "titulo": "Gravar reels: \"Cardio depois da musculação não é segredo. É hábito copiado.\"",
+  "detalhe": "Tipo: Mito x Método · Meio de funil · 30–45s · fala para câmera + b-roll\nBase: Folha Equilíbrio (17/10), cardio após musculação não aumenta os ganhos.\n\n1. GANCHO (0–3s, texto na tela): \"15 minutos de esteira depois do treino. Por quê?\"\n2. TENSÃO: \"Virou regra. Terminou a musculação, sobe na esteira. Quase ninguém sabe explicar o motivo.\"\n3. EXPLICAÇÃO (3 pontos):\n   • O que constrói músculo é o treino de força. O cardio no fim não soma ganho de músculo.\n   • Condicionamento importa, mas tem dose e momento próprios, inclusive em outro dia.\n   • Com pouco tempo, esses 15 minutos rendem mais em séries de força bem executadas.\n4. VIRADA: \"Cardio depois da musculação não é segredo do resultado. É hábito copiado.\"\n5. CTA: \"No meu método, cada parte do treino tem um motivo. Me manda MÉTODO no direct.\"\n\nB-ROLL: esteira vazia no fim do treino, anilhas sendo guardadas, você anotando a ficha do aluno.\nDepois de gravar: painel → Enviar vídeo de reels → assunto \"cardio depois da musculação\" → sugerir qua 21/10 07h."
+ },
+ {
+  "id": "2026-10-17-4",
+  "data": "2026-10-17",
+  "ordem": 4,
+  "formato": "carrossel",
+  "acao": "estudio",
+  "horario": "18:15",
+  "titulo": "Gerar carrossel: \"A força começa a cair aos 35. O que vem depois depende de você.\"",
+  "detalhe": "Base: estudo sueco que acompanhou adultos por 47 anos (ScienceDaily, 14/10): força e condicionamento começam a cair por volta dos 35, mesmo em quem treina, e começar a treinar na vida adulta ainda melhora o desempenho.\n\nCaminho mais rápido: Radar → card \"A 47-year study reveals the age…\" (nota 85) → Criar a partir desta.\nOu no Estúdio → Ideias rápidas, colando a headline abaixo.\n\nHeadline sugerida:\n  Frase 1: A força começa a cair aos 35.\n  Frase 2: O que acontece depois depende do que você faz agora.\nPúblico: executivo 30–45 · Formato: carrossel decodificado · Sugestão de agenda: seg 19/10 12h (dia de autoridade)."
+ },
+ {
+  "id": "2026-10-17-5",
+  "data": "2026-10-17",
+  "ordem": 5,
+  "formato": "stories",
+  "acao": "manual",
+  "horario": "18:45",
+  "titulo": "Stories de bastidor (2): gravando o conteúdo da semana na TTC",
+  "detalhe": "Story 1 (vídeo ao vivo, 10s): você montando o tripé na TTC. Texto: \"Bastidor: gravando o conteúdo da semana.\"\nStory 2 (vídeo, 10s): close na esteira vazia. Texto: \"Spoiler: tem uma regra de academia que vai cair amanhã.\""
+ },
+ {
+  "id": "2026-10-17-6",
+  "data": "2026-10-17",
+  "ordem": 6,
+  "formato": "stories",
+  "acao": "manual",
+  "horario": "19:30",
+  "titulo": "Story enquete: \"Você faz cardio depois da musculação?\"",
+  "detalhe": "Fundo escuro da marca, sticker de enquete:\nPergunta: \"Você faz cardio depois da musculação?\"\nOpções: \"Sempre\" / \"Às vezes\" / \"Nunca\"\n\nÀs 21h, story de resposta: \"A maioria respondeu ___. Amanhã eu explico por que essa regra não é o que faz o seu resultado. Quer entender o seu treino? Me manda MÉTODO no direct.\""
+ },
+ {
+  "id": "2026-10-17-7",
+  "data": "2026-10-17",
+  "ordem": 7,
+  "formato": "aprovar",
+  "acao": "aprovar",
+  "horario": "21:30",
+  "titulo": "Aprovar o reels e o carrossel gerados hoje",
+  "detalhe": "Quando chegarem em \"Pronto para aprovar\" (5 a 15 min depois de enviar/gerar):\n• Reels do cardio: qua 21/10 às 07h.\n• Carrossel da força aos 35: seg 19/10 às 12h.\nConfira capa, legenda e horário antes de aprovar."
+ },
+ {
+  "id": "2026-10-18-1",
+  "data": "2026-10-18",
+  "ordem": 1,
+  "formato": "outro",
+  "acao": "manual",
+  "horario": "08:00",
+  "titulo": "Ler o pacote de conteúdo da semana 19–25/10 e aprovar as pautas",
+  "detalhe": "O pacote chega às 7h51 (doc + aviso no celular). A lista do dia de cada dia da semana aparece aqui no painel."
+ },
+ {
+  "id": "2026-10-18-2",
+  "data": "2026-10-18",
+  "ordem": 2,
+  "formato": "stories",
+  "acao": "manual",
+  "horario": "20:00",
+  "titulo": "Stories manuais de domingo: bastidor da preparação da semana",
+  "detalhe": "2 stories ao vivo: o planejamento da semana de treinos e a agenda de avaliações. Fechar com convite: \"Me manda MÉTODO no direct.\""
+ },
+ {
+  "id": "2026-10-18-3",
+  "data": "2026-10-18",
+  "ordem": 3,
+  "formato": "gravacao",
+  "acao": "manual",
+  "titulo": "Marcar na agenda o bloco de gravação da semana (~2h)",
+  "detalhe": "A revisão semanal de domingo (18h52) sugere o melhor horário com base na sua agenda."
+ },
+ {
+  "id": "2026-10-18-4",
+  "data": "2026-10-18",
+  "ordem": 4,
+  "formato": "gravacao",
+  "titulo": "Bloco de gravação: 3 reels da semana no TTC",
+  "detalhe": "Ordem: sexta (olho no olho) → quarta (fala + b-roll) → b-roll de segunda.\n\nSEG:\nGancho (tela): 40 minutos por semana.\nTensão: você acha que perder força depois dos 30 é idade.\nExplicação: meta-análise de 16 estudos: 30–60 min de força/semana = menos risco de morte, doença cardiovascular e câncer.\nVirada: Perder força não é idade. É falta de estímulo.\nCTA: Salva e manda para quem diz que não tem tempo.\nFormato: voz por cima de b-roll, 15s.\n\nQUA:\nGancho (tela): Uma noite mal dormida custa 18%.\nTensão: você treina, ajusta a comida e o corpo não muda.\nExplicação: uma noite em claro reduziu 18% da síntese de proteína muscular e subiu 21% o cortisol. Sono é parte do treino.\nVirada: Corpo que não responde não é falta de treino. É falta de recuperação.\nCTA: caixinha 'quantas horas você dormiu?' + seguir.\nFormato: fala para câmera + b-roll, 40s.\n\nSEX:\nGancho (tela): 3 sinais de que você treina sem critério.\nTensão: aluno treinava há 4 anos e o corpo era o mesmo.\nExplicação: 1) não sabe a carga da semana passada; 2) não mede nada além do espelho; 3) treino de hoje não depende do de ontem.\nVirada: Resultado não é sorte. É critério.\nCTA: Me manda MÉTODO no direct (Avaliação Estratégica).\nFormato: olho no olho, 60s.",
+  "acao": "reels"
+ },
+ {
+  "id": "2026-10-18-5",
+  "data": "2026-10-18",
+  "ordem": 5,
+  "formato": "carrossel",
+  "titulo": "Revisar e aprovar o carrossel: Força não é vaidade. É seguro de vida depois dos 30.",
+  "detalhe": "Conferir no painel (Pronto para aprovar → abrir a arte): capa e destaque, texto sem corte, foto sóbria, números iguais à fonte do plano, CTA MÉTODO. Publicação sugerida 12:00 de 19/10.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-18-6",
+  "data": "2026-10-18",
+  "ordem": 6,
+  "formato": "aprovar",
+  "titulo": "Aprovar os conteúdos prontos",
+  "detalhe": "Revisar a coluna Pronto para aprovar e agendar.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-19-1",
+  "data": "2026-10-19",
+  "ordem": 1,
+  "formato": "outro",
+  "titulo": "Ler o plano da semana (botão Plano em PDF)",
+  "detalhe": "3 pautas: seg (topo), qua (meio), sex (fundo). 6 stories por dia. O plano completo está no botão Plano em PDF, no topo do painel.",
+  "acao": "manual"
+ },
+ {
+  "id": "2026-10-19-2",
+  "data": "2026-10-19",
+  "ordem": 2,
+  "formato": "reels",
+  "titulo": "Enviar o vídeo do reels: Força não é vaidade",
+  "detalhe": "Gancho (tela): 40 minutos por semana.\nTensão: você acha que perder força depois dos 30 é idade.\nExplicação: meta-análise de 16 estudos: 30–60 min de força/semana = menos risco de morte, doença cardiovascular e câncer.\nVirada: Perder força não é idade. É falta de estímulo.\nCTA: Salva e manda para quem diz que não tem tempo.\nFormato: voz por cima de b-roll, 15s.\nPublicação sugerida 07:00. Capa e legenda são automáticas.",
+  "acao": "reels",
+  "horario": "07:00"
+ },
+ {
+  "id": "2026-10-19-3",
+  "data": "2026-10-19",
+  "ordem": 3,
+  "formato": "stories",
+  "titulo": "Story 07:30: Bastidor",
+  "detalhe": "Chegada no TTC — 'segunda começa com método'",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-19-4",
+  "data": "2026-10-19",
+  "ordem": 4,
+  "formato": "stories",
+  "titulo": "Story 09:00: Bastidor",
+  "detalhe": "Aluno executando — 'carga registrada, evolução previsível'",
+  "acao": "manual",
+  "horario": "09:00"
+ },
+ {
+  "id": "2026-10-19-5",
+  "data": "2026-10-19",
+  "ordem": 5,
+  "formato": "stories",
+  "titulo": "Story 15:00: Enquete",
+  "detalhe": "Minutos de força por semana? 0 / até 40 / mais de 40",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-19-6",
+  "data": "2026-10-19",
+  "ordem": 6,
+  "formato": "stories",
+  "titulo": "Story 21:00: Convite",
+  "detalhe": "'Quer saber seu ponto de partida? Me manda MÉTODO.'",
+  "acao": "manual",
+  "horario": "21:00"
+ },
+ {
+  "id": "2026-10-19-7",
+  "data": "2026-10-19",
+  "ordem": 7,
+  "formato": "aprovar",
+  "titulo": "Aprovar os conteúdos prontos",
+  "detalhe": "Revisar a coluna Pronto para aprovar e agendar.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-20-1",
+  "data": "2026-10-20",
+  "ordem": 1,
+  "formato": "stories",
+  "titulo": "Story 07:30: Bastidor",
+  "detalhe": "Treino da manhã no TTC",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-20-2",
+  "data": "2026-10-20",
+  "ordem": 2,
+  "formato": "stories",
+  "titulo": "Story 10:00: Bastidor",
+  "detalhe": "Correção técnica de um aluno",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-20-3",
+  "data": "2026-10-20",
+  "ordem": 3,
+  "formato": "stories",
+  "titulo": "Story 15:00: Enquete",
+  "detalhe": "O que mais te trava? tempo / consistência / não saber o que fazer",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-20-4",
+  "data": "2026-10-20",
+  "ordem": 4,
+  "formato": "stories",
+  "titulo": "Story 21:00: Prova",
+  "detalhe": "Evolução de carga de um aluno (com autorização)",
+  "acao": "manual",
+  "horario": "21:00"
+ },
+ {
+  "id": "2026-10-20-5",
+  "data": "2026-10-20",
+  "ordem": 5,
+  "formato": "carrossel",
+  "titulo": "Revisar e aprovar o carrossel: Seu treino não parou. Seu sono parou.",
+  "detalhe": "Conferir no painel (Pronto para aprovar → abrir a arte): capa e destaque, texto sem corte, foto sóbria, números iguais à fonte do plano, CTA MÉTODO. Publicação sugerida 12:00 de 21/10.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-20-6",
+  "data": "2026-10-20",
+  "ordem": 6,
+  "formato": "aprovar",
+  "titulo": "Aprovar os conteúdos prontos",
+  "detalhe": "Revisar a coluna Pronto para aprovar e agendar.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-21-1",
+  "data": "2026-10-21",
+  "ordem": 1,
+  "formato": "reels",
+  "titulo": "Enviar o vídeo do reels: Seu treino não parou. Seu sono parou.",
+  "detalhe": "Gancho (tela): Uma noite mal dormida custa 18%.\nTensão: você treina, ajusta a comida e o corpo não muda.\nExplicação: uma noite em claro reduziu 18% da síntese de proteína muscular e subiu 21% o cortisol. Sono é parte do treino.\nVirada: Corpo que não responde não é falta de treino. É falta de recuperação.\nCTA: caixinha 'quantas horas você dormiu?' + seguir.\nFormato: fala para câmera + b-roll, 40s.\nPublicação sugerida 07:00. Capa e legenda são automáticas.",
+  "acao": "reels",
+  "horario": "07:00"
+ },
+ {
+  "id": "2026-10-21-2",
+  "data": "2026-10-21",
+  "ordem": 2,
+  "formato": "stories",
+  "titulo": "Story 07:30: Bastidor",
+  "detalhe": "'O treino começa na noite anterior'",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-21-3",
+  "data": "2026-10-21",
+  "ordem": 3,
+  "formato": "stories",
+  "titulo": "Story 10:00: Bastidor",
+  "detalhe": "Aluna no TTC — 'recuperação também é planejada'",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-21-4",
+  "data": "2026-10-21",
+  "ordem": 4,
+  "formato": "stories",
+  "titulo": "Story 15:00: Caixinha",
+  "detalhe": "Quantas horas você dormiu ontem?",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-21-5",
+  "data": "2026-10-21",
+  "ordem": 5,
+  "formato": "stories",
+  "titulo": "Story 21:00: Objeção",
+  "detalhe": "'Não precisa treinar mais. Precisa recuperar melhor. Me manda MÉTODO.'",
+  "acao": "manual",
+  "horario": "21:00"
+ },
+ {
+  "id": "2026-10-21-6",
+  "data": "2026-10-21",
+  "ordem": 6,
+  "formato": "aprovar",
+  "titulo": "Aprovar os conteúdos prontos",
+  "detalhe": "Revisar a coluna Pronto para aprovar e agendar.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-22-1",
+  "data": "2026-10-22",
+  "ordem": 1,
+  "formato": "stories",
+  "titulo": "Story 07:30: Bastidor",
+  "detalhe": "Chegada ao TTC",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-22-2",
+  "data": "2026-10-22",
+  "ordem": 2,
+  "formato": "stories",
+  "titulo": "Story 10:00: Bastidor",
+  "detalhe": "Aluna treinando — 'força sem perder leveza'",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-22-3",
+  "data": "2026-10-22",
+  "ordem": 3,
+  "formato": "stories",
+  "titulo": "Story 15:00: Caixinha",
+  "detalhe": "Maior dúvida sobre treino depois dos 30?",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-22-4",
+  "data": "2026-10-22",
+  "ordem": 4,
+  "formato": "stories",
+  "titulo": "Story 21:00: Respostas",
+  "detalhe": "Responder a caixinha de quarta (sono)",
+  "acao": "manual",
+  "horario": "21:00"
+ },
+ {
+  "id": "2026-10-22-5",
+  "data": "2026-10-22",
+  "ordem": 5,
+  "formato": "carrossel",
+  "titulo": "Revisar e aprovar o carrossel: Treinar muito não é treinar certo.",
+  "detalhe": "Conferir no painel (Pronto para aprovar → abrir a arte): capa e destaque, texto sem corte, foto sóbria, números iguais à fonte do plano, CTA MÉTODO. Publicação sugerida 12:00 de 23/10. Sugestão: collab com a conta do studio TTC.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-22-6",
+  "data": "2026-10-22",
+  "ordem": 6,
+  "formato": "aprovar",
+  "titulo": "Aprovar os conteúdos prontos",
+  "detalhe": "Revisar a coluna Pronto para aprovar e agendar.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-23-1",
+  "data": "2026-10-23",
+  "ordem": 1,
+  "formato": "reels",
+  "titulo": "Enviar o vídeo do reels: 3 sinais de que você treina sem critério",
+  "detalhe": "Gancho (tela): 3 sinais de que você treina sem critério.\nTensão: aluno treinava há 4 anos e o corpo era o mesmo.\nExplicação: 1) não sabe a carga da semana passada; 2) não mede nada além do espelho; 3) treino de hoje não depende do de ontem.\nVirada: Resultado não é sorte. É critério.\nCTA: Me manda MÉTODO no direct (Avaliação Estratégica).\nFormato: olho no olho, 60s.\nPublicação sugerida 07:00. Capa e legenda são automáticas.",
+  "acao": "reels",
+  "horario": "07:00"
+ },
+ {
+  "id": "2026-10-23-2",
+  "data": "2026-10-23",
+  "ordem": 2,
+  "formato": "stories",
+  "titulo": "Story 07:30: Bastidor",
+  "detalhe": "Planilha de cargas de um aluno (sem nome) — 'isso é método'",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-23-3",
+  "data": "2026-10-23",
+  "ordem": 3,
+  "formato": "stories",
+  "titulo": "Story 10:00: Bastidor",
+  "detalhe": "Avaliação Estratégica acontecendo (com autorização)",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-23-4",
+  "data": "2026-10-23",
+  "ordem": 4,
+  "formato": "stories",
+  "titulo": "Story 15:00: Quiz",
+  "detalhe": "Sabe a carga do agachamento da semana passada? Sim / Não / Nem faço",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-23-5",
+  "data": "2026-10-23",
+  "ordem": 5,
+  "formato": "stories",
+  "titulo": "Story 20:30: Convite",
+  "detalhe": "'Avaliação Estratégica: 40 min para sair com direção. Me manda MÉTODO.'",
+  "acao": "manual",
+  "horario": "20:30"
+ },
+ {
+  "id": "2026-10-23-6",
+  "data": "2026-10-23",
+  "ordem": 6,
+  "formato": "aprovar",
+  "titulo": "Aprovar os conteúdos prontos",
+  "detalhe": "Revisar a coluna Pronto para aprovar e agendar.",
+  "acao": "aprovar"
+ },
+ {
+  "id": "2026-10-24-1",
+  "data": "2026-10-24",
+  "ordem": 1,
+  "formato": "stories",
+  "titulo": "Story 08:30: Bastidor",
+  "detalhe": "Treino de sábado / orla",
+  "acao": "manual",
+  "horario": "08:30"
+ },
+ {
+  "id": "2026-10-24-2",
+  "data": "2026-10-24",
+  "ordem": 2,
+  "formato": "stories",
+  "titulo": "Story 10:30: Bastidor",
+  "detalhe": "Fim de semana sem largar tudo",
+  "acao": "manual",
+  "horario": "10:30"
+ },
+ {
+  "id": "2026-10-24-3",
+  "data": "2026-10-24",
+  "ordem": 3,
+  "formato": "stories",
+  "titulo": "Story 15:00: Enquete",
+  "detalhe": "No fim de semana você mantém a rotina? Sim / Mais ou menos / Não",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-24-4",
+  "data": "2026-10-24",
+  "ordem": 4,
+  "formato": "stories",
+  "titulo": "Story 20:30: Convite",
+  "detalhe": "'Semana que vem tem vaga para Avaliação Estratégica. MÉTODO no direct.'",
+  "acao": "manual",
+  "horario": "20:30"
+ },
+ {
+  "id": "2026-10-25-1",
+  "data": "2026-10-25",
+  "ordem": 1,
+  "formato": "stories",
+  "titulo": "Story 09:00: Bastidor",
+  "detalhe": "Planejamento da semana",
+  "acao": "manual",
+  "horario": "09:00"
+ },
+ {
+  "id": "2026-10-25-2",
+  "data": "2026-10-25",
+  "ordem": 2,
+  "formato": "stories",
+  "titulo": "Story 11:00: Bastidor",
+  "detalhe": "Descanso ativo — 'recuperar também é treino'",
+  "acao": "manual",
+  "horario": "11:00"
+ },
+ {
+  "id": "2026-10-25-3",
+  "data": "2026-10-25",
+  "ordem": 3,
+  "formato": "stories",
+  "titulo": "Story 15:00: Quiz",
+  "detalhe": "Horas de sono que recuperam melhor? 5 / 6 / 7 ou mais",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-25-4",
+  "data": "2026-10-25",
+  "ordem": 4,
+  "formato": "stories",
+  "titulo": "Story 20:30: Prévia",
+  "detalhe": "'Segunda tem conteúdo novo'",
+  "acao": "manual",
+  "horario": "20:30"
+ }
 ]

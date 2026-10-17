@@ -1,0 +1,90 @@
+{
+  "id": "s-2026-10-19-carrossel",
+  "data": "2026-10-19",
+  "quando": "2026-10-19T12:00:00-03:00",
+  "funil": "topo",
+  "pauta": "Força não é vaidade.",
+  "legenda": "Decodificando o treino de força como seguro de vida.\n\nUma meta-análise com 16 estudos de coorte, publicada no British Journal of Sports Medicine em 2022, ligou o treino de força a 15% menos risco de morte por todas as causas. O menor risco apareceu perto de 40 minutos por semana.\n\nQuando força e aeróbio entram juntos no plano, a redução chega a 40%.\n\nPerder força depois dos 30 não é idade. É falta de estímulo. E estímulo se planeja.\n\nMe manda MÉTODO no direct.\n\n#treinodeforca #longevidade #personaltrainerrj #ipanema #copacabana",
+  "slides": [
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Força não é vaidade. É **seguro de vida** depois dos 30.",
+      "foto": "https://images.pexels.com/photos/13219986/pexels-photo-13219986.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Perder força parece **coisa da idade.**",
+      "texto": "Depois dos 30, a maioria aceita a queda como destino: menos energia, mais dor, menos firmeza. Pesquisadores juntaram os dados de 16 estudos para medir o que o treino de força muda nisso."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "A análise",
+      "numero": "16",
+      "titulo": "estudos de coorte, **somados numa só conta.**",
+      "texto": "Momma e colegas cruzaram estudos que acompanharam adultos por anos e compararam quem fazia e quem não fazia atividades de fortalecimento muscular.",
+      "fonte": "Momma et al., British Journal of Sports Medicine (2022)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "Mortalidade",
+      "numero": "15",
+      "unidade": "%",
+      "titulo": "menos risco de morte **por todas as causas.**",
+      "texto": "Quem treinava força teve risco menor de morrer por qualquer causa no período. O ponto de menor risco ficou perto de 40 minutos por semana.",
+      "fonte": "Momma et al., BJSM (2022)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "Coração",
+      "numero": "17",
+      "unidade": "%",
+      "titulo": "menos doença **cardiovascular.**",
+      "texto": "No mesmo trabalho, o risco de câncer foi 12% menor. São associações de estudos observacionais, não promessa individual. Mas a direção se repete em todos os desfechos.",
+      "fonte": "Momma et al., BJSM (2022)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O detalhe",
+      "titulo": "Não é volume. É **regularidade.**",
+      "texto": "**Entre 30 e 60 minutos por semana já mudaram a curva.** Acima disso, o benefício não cresceu na mesma proporção. Pouco tempo, bem distribuído, vence o excesso esporádico."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "A combinação",
+      "numero": "40",
+      "unidade": "%",
+      "titulo": "menos mortalidade com **força e aeróbio juntos.**",
+      "texto": "Quando o fortalecimento muscular se somou ao exercício aeróbio, a redução do risco de morte por todas as causas foi a maior de toda a análise.",
+      "fonte": "Momma et al., BJSM (2022)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "Perder força não é idade. É falta de **estímulo.**",
+      "texto": "**O músculo responde em qualquer década.** O que some com o tempo é o estímulo certo, na dose certa, repetido semana após semana."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "marinho",
+      "rotulo": "Para quem treina",
+      "titulo": "Força como base, **aeróbio como complemento.**",
+      "texto": "Treino de força 2 a 3 vezes por semana, com carga registrada e progressão. Aeróbio entra para somar, não para substituir. Constância vale mais que intensidade de fim de semana.",
+      "nota": "A dose certa depende da sua história, das suas dores e da sua agenda. Dosar é trabalho de treinador."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "preto",
+      "titulo": "Quer saber onde está o seu **ponto de partida?**",
+      "texto": "A Avaliação Estratégica mede sua força hoje e define a direção do seu treino.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
+  ]
+}
