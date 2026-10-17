@@ -1,0 +1,17 @@
+name: Teste reels (temporário)
+on: workflow_dispatch
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Card e vídeo de teste
+        env:
+          URL: https://txiszakrpssubgvzpdcx.supabase.co
+          KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          set -e
+          curl -sS -f -X POST "$URL/storage/v1/object/materiais/reels/teste-reels/video.mp4" -H "apikey: $KEY" -H "Content-Type: video/mp4" -H "x-upsert: true" --data-binary @midia/2026-10-16/reels.mp4 > /dev/null
+          curl -sS -f -X POST "$URL/rest/v1/conteudos?on_conflict=id" -H "apikey: $KEY" -H "Content-Type: application/json" -H "Prefer: resolution=merge-duplicates,return=minimal" \
+            -d '[{"id":"teste-reels","tipo":"REELS","etapa":"em_criacao","pauta":"TESTE (pode ignorar)","funil":"topo","data":"2026-10-30","quando":"2026-10-30T07:00:00-03:00","arquivos":["materiais:reels/teste-reels/video.mp4"],"legenda":"teste automático"}]'
+          echo ok
