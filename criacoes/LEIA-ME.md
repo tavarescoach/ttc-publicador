@@ -6,6 +6,7 @@
   (só se a criação ainda estiver na vez do Claude).
 
 Formato das respostas:
-- etapa `entrada` -> `{"id", "etapa": "opcoes", "opcoes": [{"titulo","subtitulo","frases":[f1,f2]} x5]}`
+- etapa `entrada` -> `{"id", "etapa": "opcoes", "opcoes": [{"titulo","subtitulo","frases":[f1,f2],"tese":"...","headlines":[{"titulo","subtitulo"} x4]} x5]}`
+  (tese e headlines de cada opção vêm prontas: ao escolher 1–5, o painel pula direto para as headlines; só a opção 6, escrita pelo Luan, volta para a etapa `tese`)
 - etapa `tese`    -> `{"id", "etapa": "headlines", "tese": "texto (## títulos e - listas)", "headlines": [{"titulo","subtitulo"} x4]}`
 - etapa `formatos` -> Fase C (criação dos formatos).

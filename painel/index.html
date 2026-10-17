@@ -368,7 +368,8 @@ function desenharEstudio(){
       <div class="grade">${ops}
         <div class="opc ${est.sel===5?"sel":""}" data-sel="5" style="cursor:default"><span class="num">OPÇÃO 6 · SUA</span>
           <input id="e6t" placeholder="Título" style="margin-bottom:8px" value="${esc(est.t6||"")}">
-          <textarea id="e6s" placeholder="Subtítulo / ideia" style="min-height:70px">${esc(est.s6||"")}</textarea></div>
+          <textarea id="e6s" placeholder="Subtítulo / ideia" style="min-height:70px">${esc(est.s6||"")}</textarea>
+          <i style="color:var(--mut);font-size:11.5px;margin-top:6px">As opções 1 a 5 já têm tese pronta. A sua volta para o Claude escrever.</i></div>
       </div>
       <div class="rodape"><button class="btn" data-cancelar-criacao>Cancelar criação</button>
         <button class="btn red" data-escolher ${est.sel===null?"disabled style='opacity:.5'":""}>Seguir com esta pauta →</button></div>`;
@@ -411,7 +412,13 @@ async function escolherPauta(){
     if (!t){ alert("Escreva o título da sua pauta."); return; }
     escolha = {indice:6, titulo:t, subtitulo:s, propria:true};
   } else {
-    const o = c.opcoes[est.sel]; escolha = {indice: est.sel + 1, ...o};
+    const o = c.opcoes[est.sel];
+    escolha = {indice: est.sel + 1, titulo:o.titulo, subtitulo:o.subtitulo, frases:o.frases};
+    // tese e headlines já vieram prontas: avança na hora, sem esperar o Claude
+    if (o.tese && (o.headlines || []).length){
+      if (await salvarCriacao(c.id, {escolha, tese:o.tese, headlines:o.headlines, etapa:"headlines", vez:"luan"})){ est.sel = null; desenharEstudio(); desenhar(); }
+      return;
+    }
   }
   if (await salvarCriacao(c.id, {escolha, etapa:"tese", vez:"claude"})){ est.sel = null; desenharEstudio(); desenhar(); }
 }
