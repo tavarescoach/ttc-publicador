@@ -147,6 +147,12 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
 @keyframes pulso{70%{box-shadow:0 0 0 8px rgba(193,18,31,0)}100%{box-shadow:0 0 0 0 rgba(193,18,31,0)}}
 @media (prefers-reduced-motion:reduce){.btn-radar .pulso{animation:none}}
 .btn-radar .cont{font-size:11px;font-weight:800;background:var(--red);color:#fff;border-radius:20px;padding:1px 7px;font-variant-numeric:tabular-nums}
+/* ícones lápis e lixeira */
+.ico{width:30px;height:30px;border-radius:7px;border:1px solid var(--line);display:inline-grid;place-items:center;color:var(--mut);flex-shrink:0}
+.ico svg{width:15px;height:15px}
+.ico:hover{color:var(--txt);border-color:#3B4A6B;background:var(--card2)}
+.ico.del:hover{color:#FCA5A5;border-color:var(--red);background:rgba(193,18,31,.1)}
+.icos{display:flex;gap:6px;justify-content:flex-end}
 /* checklist do dia */
 .hoje{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:6px 0 14px}
 .hoje-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
@@ -158,6 +164,7 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
 .tf:first-of-type{border-top:0}
 .tf input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--red);flex-shrink:0;cursor:pointer}
 .tf .tx{flex:1;min-width:0}
+.tf .acao{flex-shrink:0;display:flex;flex-direction:column;gap:6px;align-items:flex-end;max-width:46%}
 .tf .tx b{font-weight:600;display:block;line-height:1.35}
 .tf.ok .tx b{text-decoration:line-through;color:var(--mut)}
 .tf details{margin-top:4px}
@@ -318,6 +325,19 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
       </div>
     </div>
     <div class="msg" id="rMsg"></div>
+  </form>
+</div>
+
+<!-- EDITAR -->
+<div class="fundo hide" id="mEditar" style="z-index:26">
+  <form class="caixa" id="formEditar" style="max-width:560px">
+    <h1 style="margin-top:0" id="edTitulo">Editar</h1>
+    <div id="edCampos"></div>
+    <div class="linha" style="margin-top:18px">
+      <button type="button" class="btn" data-fechar-editar>Cancelar</button>
+      <button type="submit" class="btn red" style="margin:0">Salvar</button>
+    </div>
+    <div class="msg" id="edMsg"></div>
   </form>
 </div>
 
@@ -616,6 +636,52 @@ function restaurar(id){
   mudarEtapa(r, r.media_id ? "publicado" : (r.arquivos || []).length && r.quando ? "pronto" : "pauta");
 }
 
+const SVG_LAPIS = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>`;
+const SVG_LIXO = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/></svg>`;
+
+/* ---------- editar (tarefa ou conteúdo) ---------- */
+let editando = null;
+function abrirEditar(tipo, id){
+  const alvo = tipo === "tarefa" ? (tarefas || []).find(x => x.id === id) : dados.find(x => x.id === id);
+  if (!alvo) return;
+  editando = {tipo, alvo};
+  const campos = tipo === "tarefa"
+    ? [["titulo","Tarefa","input"],["horario","Horário (HH:MM, opcional)","input"],["detalhe","Roteiro e detalhes","textarea"]]
+    : [["pauta","Título / pauta","input"],["legenda","Legenda","textarea"]].concat(["agendado","pronto","pauta","em_criacao","revisar"].includes(alvo.etapa) ? [["quando","Dia e horário","datetime"]] : []);
+  $("edTitulo").textContent = tipo === "tarefa" ? "Editar tarefa" : "Editar conteúdo";
+  $("edCampos").innerHTML = campos.map(([k,l,t]) => {
+    let v = alvo[k] ?? "";
+    if (t === "datetime" && v) v = new Date(new Date(v).getTime() - 3*3600e3).toISOString().slice(0,16);
+    const id = "ed_" + k;
+    return `<label for="${id}">${l}</label>` + (t === "textarea" ? `<textarea id="${id}" rows="${k === "detalhe" ? 12 : 8}" style="resize:vertical">${esc(v)}</textarea>`
+      : `<input id="${id}" ${t === "datetime" ? 'type="datetime-local"' : ""} value="${esc(v)}">`);
+  }).join("");
+  $("edMsg").textContent = ""; $("mEditar").classList.remove("hide");
+}
+async function salvarEdicao(ev){
+  ev.preventDefault();
+  const {tipo, alvo} = editando, campos = {};
+  for (const el of $("edCampos").querySelectorAll("input,textarea")){
+    const k = el.id.slice(3); let v = el.value;
+    if (el.type === "datetime-local") v = v ? v + ":00-03:00" : null;
+    campos[k] = v === "" ? null : v;
+  }
+  if (tipo === "tarefa" && !campos.titulo){ $("edMsg").textContent = "A tarefa precisa de um título."; return; }
+  if (!DEMO){
+    const {error} = await sb.from(tipo === "tarefa" ? "tarefas" : "conteudos").update(campos).eq("id", alvo.id);
+    if (error){ $("edMsg").textContent = "Não salvou: " + error.message; return; }
+  }
+  Object.assign(alvo, campos); $("mEditar").classList.add("hide"); desenhar();
+}
+async function apagarTarefa(id){
+  const t = (tarefas || []).find(x => x.id === id); if (!t) return;
+  if (!confirm(`Apagar "${t.titulo.slice(0,80)}" da lista?`)) return;
+  t.apagada = true; desenharHoje();
+  if (DEMO) return;
+  const {error} = await sb.from("tarefas").update({apagada:true}).eq("id", id);
+  if (error){ t.apagada = false; desenharHoje(); alert("Não apagou: " + error.message + (/apagada/.test(error.message) ? " (falta rodar o SQL da coluna apagada)" : "")); }
+}
+
 let aprovando = null;
 function abrirAprovar(id){
   const r = dados.find(x => x.id === id); if (!r) return;
@@ -718,7 +784,7 @@ function card(r, botoes, comThumb){
     </div>
     ${`<div class="acao">${botoes || ""}${r.etapa === "cancelado"
         ? `<button class="mini go" data-restaurar="${esc(r.id)}">Restaurar</button>`
-        : `<button class="mini x" data-cancelar="${esc(r.id)}">${r.etapa === "publicado" ? "Ocultar" : "Cancelar"}</button>`}</div>`}
+        : `<div class="icos">${r.etapa !== "publicado" ? `<button class="ico" data-editar="${esc(r.id)}" title="Editar" aria-label="Editar">${SVG_LAPIS}</button>` : ""}<button class="ico del" data-cancelar="${esc(r.id)}" title="${r.etapa === "publicado" ? "Ocultar do painel" : "Apagar / cancelar"}" aria-label="Apagar">${SVG_LIXO}</button></div>`}</div>`}
   </div>`;
 }
 
@@ -772,7 +838,7 @@ function acaoTarefa(t){
 function desenharHoje(){
   const el = $("hoje");
   if (tarefas === null){ el.innerHTML = `<div class="vz">A lista do dia precisa da tabela <b>tarefas</b> no Supabase. Peça ao Claude o SQL.</div>`; return; }
-  const lista = tarefas.filter(t => t.data === diaSel).sort((a,b) => (a.ordem||0) - (b.ordem||0));
+  const lista = tarefas.filter(t => t.data === diaSel && !t.apagada).sort((a,b) => (a.ordem||0) - (b.ordem||0));
   const feitos = lista.filter(t => t.feito).length, pct = lista.length ? Math.round(feitos / lista.length * 100) : 0;
   const titulo = diaSel === hojeISO() ? "Para criar hoje" : "Para criar · " + diaTxt(diaSel);
   el.innerHTML = `<div class="hoje-top"><b>${titulo} <span class="n">${lista.length ? `${feitos}/${lista.length}` : ""}</span></b>
@@ -783,7 +849,7 @@ function desenharHoje(){
         <div class="tx"><b>${esc(t.titulo)}</b>
           <div class="meta">${t.formato ? `<span class="tag">${FMT[t.formato] || esc(t.formato.toUpperCase())}</span>` : ""}${t.horario ? `<span>${esc(t.horario)}</span>` : ""}</div>
           ${t.detalhe ? `<details><summary>Roteiro e detalhes</summary><div class="det">${esc(t.detalhe)}</div></details>` : ""}
-        </div>${acaoTarefa(t) ? `<div class="acao">${acaoTarefa(t)}</div>` : ""}</div>`).join("")
+        </div><div class="acao">${acaoTarefa(t)}<div class="icos"><button class="ico" data-tedit="${esc(t.id)}" title="Editar" aria-label="Editar">${SVG_LAPIS}</button><button class="ico del" data-tdel="${esc(t.id)}" title="Apagar" aria-label="Apagar">${SVG_LIXO}</button></div></div></div>`).join("")
       : `<div class="vz">Nada planejado para ${diaSel === hojeISO() ? "hoje" : "este dia"}. A lista da semana chega no domingo de manhã, junto com o pacote de conteúdo.</div>`}`;
 }
 async function marcarTarefa(id, feito){
@@ -926,6 +992,10 @@ document.addEventListener("click", ev => {
   const rl = ev.target.closest("[data-reels]");
   if (rl) return abrirReels(rl.dataset.reels || null);
   if (ev.target.closest("[data-fechar-reels]") || ev.target === $("mReels")) return $("mReels").classList.add("hide");
+  const te = ev.target.closest("[data-tedit]"); if (te) return abrirEditar("tarefa", te.dataset.tedit);
+  const td = ev.target.closest("[data-tdel]"); if (td) return apagarTarefa(td.dataset.tdel);
+  const ce = ev.target.closest("[data-editar]"); if (ce) return abrirEditar("conteudo", ce.dataset.editar);
+  if (ev.target.closest("[data-fechar-editar]") || ev.target === $("mEditar")) return $("mEditar").classList.add("hide");
   const cx = ev.target.closest("[data-cancelar]");
   if (cx) return cancelar(cx.dataset.cancelar);
   const rs = ev.target.closest("[data-restaurar]");
@@ -952,6 +1022,7 @@ document.addEventListener("keydown", ev => {
 });
 $("pCancelar").onclick = fecharModal;
 $("formAprovar").onsubmit = aprovar;
+$("formEditar").onsubmit = salvarEdicao;
 document.addEventListener("change", ev => { const c = ev.target.closest("[data-tarefa]"); if (c) marcarTarefa(c.dataset.tarefa, c.checked); });
 $("formReels").onsubmit = enviarReels;
 $("apCancelar").onclick = () => $("mAprovar").classList.add("hide");
