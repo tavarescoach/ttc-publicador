@@ -86,6 +86,23 @@ main{max-width:1280px;margin:0 auto;padding:14px 16px 40px;display:grid;grid-tem
 .msg{font-size:12px;color:#FCA5A5;margin-top:10px;min-height:16px}
 .fundo{position:fixed;inset:0;background:rgba(0,0,0,.6);display:grid;place-items:center;padding:16px;z-index:10}
 .linha{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.thumb{width:64px;height:80px;flex-shrink:0;border-radius:6px;overflow:hidden;background:var(--bg2);border:1px solid var(--line);position:relative;cursor:pointer}
+.thumb img,.thumb video{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .qt{position:absolute;right:3px;bottom:3px;font-size:9.5px;font-weight:700;background:rgba(0,0,0,.7);padding:1px 5px;border-radius:3px}
+.thumb.sem{display:grid;place-items:center;color:var(--mut);font-size:10px;text-align:center;padding:4px}
+a.mini{text-decoration:none;color:inherit;text-align:center}
+.visor{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:20;display:flex;align-items:center;justify-content:center;padding:16px}
+.visor .box{width:100%;max-width:980px;max-height:100%;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;overflow:auto}
+.palco{position:relative;background:var(--bg2);border-radius:10px;display:grid;place-items:center;min-height:300px}
+.palco img,.palco video{max-width:100%;max-height:78vh;display:block;border-radius:6px}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:rgba(15,23,42,.85);border:1px solid var(--line);font-size:18px}
+.nav.e{left:8px}.nav.d{right:8px}
+.pos{position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:11px;background:rgba(0,0,0,.7);padding:3px 9px;border-radius:20px}
+.info h3{font-size:15px;line-height:1.35;margin:6px 0 10px}
+.info .leg{white-space:pre-wrap;font-size:13px;line-height:1.5;color:#CBD5E1;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;max-height:40vh;overflow:auto}
+.info .bts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.fechar{position:absolute;top:14px;right:16px;font-size:26px;color:#fff;z-index:21}
+@media (max-width:820px){.visor .box{grid-template-columns:1fr}.palco img,.palco video{max-height:60vh}}
 .rod{max-width:1280px;margin:0 auto;padding:0 16px 30px;color:var(--mut);font-size:11px;display:flex;justify-content:space-between}
 
 @media (max-width:820px){
@@ -174,9 +191,26 @@ main{max-width:1280px;margin:0 auto;padding:14px 16px 40px;display:grid;grid-tem
   </form>
 </div>
 
+<!-- VISOR DA ARTE -->
+<div class="visor hide" id="visor">
+  <button class="fechar" aria-label="Fechar">×</button>
+  <div class="box">
+    <div class="palco" id="palco"></div>
+    <div class="info">
+      <div class="meta" id="vMeta"></div>
+      <h3 id="vTitulo"></h3>
+      <div class="leg" id="vLeg"></div>
+      <div class="bts" id="vBts"></div>
+    </div>
+  </div>
+</div>
+
 <script>
 const SUPABASE_URL = "https://txiszakrpssubgvzpdcx.supabase.co";
 const SUPABASE_KEY = "sb_publishable_S7gid6IZXgAiM0rbFRu52Q_MSnY2mYY";
+const MIDIA = SUPABASE_URL + "/storage/v1/object/public/midia/";
+const urlMidia = c => !c ? "" : /^https?:/.test(c) ? c : MIDIA + c.split("/").map(encodeURIComponent).join("/");
+const eVideo = c => /\.(mp4|mov)$/i.test(c || "");
 const DEMO = new URLSearchParams(location.search).has("demo");
 
 const ESQ = [
@@ -201,9 +235,48 @@ function quandoTxt(r){
   return "sem data";
 }
 
-function card(r, botoes){
+function miniatura(r){
+  const arqs = r.arquivos || [];
+  const capa = r.capa || arqs.find(a => !eVideo(a)) || arqs[0];
+  if (!capa) return `<div class="thumb sem">sem arte</div>`;
+  const qt = arqs.length > 1 ? `<span class="qt">1/${arqs.length}</span>` : r.tipo === "REELS" ? `<span class="qt">▶</span>` : "";
+  const midia = eVideo(capa)
+    ? `<video src="${esc(urlMidia(capa))}#t=0.5" muted preload="metadata" playsinline></video>`
+    : `<img src="${esc(urlMidia(capa))}" alt="" loading="lazy" onerror="this.parentNode.classList.add('sem');this.parentNode.innerHTML='arte não encontrada'">`;
+  return `<div class="thumb" data-ver="${esc(r.id)}">${midia}${qt}</div>`;
+}
+
+function botoesDireita(r){
+  let b = (r.arquivos || []).length ? `<button class="mini go" data-ver="${esc(r.id)}">Ver arte</button>` : "";
+  if (r.link) b += `<a class="mini" href="${esc(r.link)}" target="_blank" rel="noopener">Instagram ↗</a>`;
+  return b;
+}
+
+let visor = {r:null, i:0};
+function abrirVisor(id){
+  const r = dados.find(x => x.id === id); if (!r) return;
+  visor = {r, i:0}; desenharVisor(); $("visor").classList.remove("hide");
+}
+function fecharVisor(){ $("visor").classList.add("hide"); $("palco").innerHTML = ""; }
+function desenharVisor(){
+  const {r, i} = visor, arqs = r.arquivos || [], a = arqs[i];
+  const n = arqs.length;
+  $("palco").innerHTML = (eVideo(a)
+      ? `<video src="${esc(urlMidia(a))}" controls autoplay playsinline ${r.capa ? `poster="${esc(urlMidia(r.capa))}"` : ""}></video>`
+      : `<img src="${esc(urlMidia(a))}" alt="">`)
+    + (n > 1 ? `<span class="pos">${i+1} / ${n}</span>
+        <button class="nav e" data-nav="-1">‹</button><button class="nav d" data-nav="1">›</button>` : "");
+  $("vMeta").innerHTML = `<span class="tag">${TIPO[r.tipo] || esc(r.tipo)}</span><span>${esc(quandoTxt(r))}</span><span>· ${esc({agendado:"agendado",publicado:"publicado",pronto:"pronto",erro:"erro",atrasado:"atrasado"}[r.etapa] || r.etapa)}</span>`;
+  $("vTitulo").textContent = r.pauta || r.id;
+  $("vLeg").textContent = r.legenda || (r.tipo === "STORY" ? "Story sem legenda." : "Sem legenda.");
+  $("vBts").innerHTML = `<a class="mini" href="${esc(urlMidia(a))}" target="_blank" rel="noopener">Abrir arquivo ↗</a>`
+    + (r.link ? `<a class="mini go" href="${esc(r.link)}" target="_blank" rel="noopener">Ver no Instagram ↗</a>` : "");
+}
+
+function card(r, botoes, comThumb){
   const classe = ["erro","atrasado"].includes(r.etapa) ? "erro" : r.etapa === "publicado" ? "pub" : "";
   return `<div class="card ${classe}">
+    ${comThumb ? miniatura(r) : ""}
     <div class="corpo">
       <div class="t">${esc(r.pauta || r.id)}</div>
       <div class="meta">
@@ -239,12 +312,12 @@ function desenhar(){
 
   const limite = verTodosPub ? pub.length : 6;
   $("colDir").innerHTML =
-    (prob.length ? grupo("Atenção", "#C1121F", prob, r => card(r), "") : "") +
+    (prob.length ? grupo("Atenção", "#C1121F", prob, r => card(r, botoesDireita(r), true), "") : "") +
     grupo("Pronto (aguardando ir para a fila)", "#94A3B8", pronto,
-      r => card(r, `<button class="mini" data-mover="${esc(r.id)}" data-para="revisar">← Revisar</button>`),
+      r => card(r, botoesDireita(r) + `<button class="mini" data-mover="${esc(r.id)}" data-para="revisar">← Revisar</button>`, true),
       "Nada pronto esperando.") +
-    grupo("Agendado no robô", "#22C55E", agend, r => card(r), "Fila vazia. Nada agendado.") +
-    grupo("Publicado", "#475569", pub.slice(0, limite), r => card(r), "Nada publicado ainda.") +
+    grupo("Agendado no robô", "#22C55E", agend, r => card(r, botoesDireita(r), true), "Fila vazia. Nada agendado.") +
+    grupo("Publicado", "#475569", pub.slice(0, limite), r => card(r, botoesDireita(r), true), "Nada publicado ainda.") +
     (pub.length > 6 ? `<button class="mais" id="btnMais">${verTodosPub ? "Mostrar menos" : `Ver todos os ${pub.length} publicados`}</button>` : "");
 
   const hoje = hojeISO(), seteDias = Date.now() - 7*864e5;
@@ -296,6 +369,11 @@ function mostrar(logado){
 }
 
 document.addEventListener("click", ev => {
+  const v = ev.target.closest("[data-ver]");
+  if (v) return abrirVisor(v.dataset.ver);
+  const nv = ev.target.closest("[data-nav]");
+  if (nv){ const n = visor.r.arquivos.length; visor.i = (visor.i + Number(nv.dataset.nav) + n) % n; return desenharVisor(); }
+  if (ev.target.closest(".fechar") || ev.target === $("visor")) return fecharVisor();
   const m = ev.target.closest("[data-mover]");
   if (m) return mover(m.dataset.mover, m.dataset.para);
   if (ev.target.closest("#btnMais")){ verTodosPub = !verTodosPub; return desenhar(); }
@@ -303,6 +381,12 @@ document.addEventListener("click", ev => {
   if (ev.target.closest('[data-acao="pauta"]')){ $("menuCriar").classList.add("hide"); return abrirModal(); }
   if (!ev.target.closest(".criar")) $("menuCriar").classList.add("hide");
   if (ev.target === $("modal")) fecharModal();
+});
+document.addEventListener("keydown", ev => {
+  if ($("visor").classList.contains("hide")) return;
+  if (ev.key === "Escape") fecharVisor();
+  const n = (visor.r.arquivos || []).length;
+  if (n > 1 && (ev.key === "ArrowRight" || ev.key === "ArrowLeft")){ visor.i = (visor.i + (ev.key === "ArrowRight" ? 1 : -1) + n) % n; desenharVisor(); }
 });
 $("pCancelar").onclick = fecharModal;
 $("formPauta").onsubmit = salvarPauta;
@@ -328,9 +412,9 @@ function demo(){
     {id:"d2",pauta:"Por que o corpo mudou depois dos 30",tipo:"CARROSSEL",funil:"meio",etapa:"pauta",data:h},
     {id:"d3",pauta:"Creatina: o que a ciência sustenta",tipo:"CARROSSEL",funil:"topo",etapa:"em_criacao",data:h},
     {id:"d4",pauta:"Prova: 12 semanas do Ricardo",tipo:"REELS",funil:"fundo",etapa:"revisar",data:h},
-    {id:"d5",pauta:"O corpo responde ao padrão, não a um dia isolado.",tipo:"IMAGEM",etapa:"agendado",quando:h+"T19:00:00-03:00",data:h},
+    {id:"d5",pauta:"O corpo responde ao padrão, não a um dia isolado.",tipo:"IMAGEM",etapa:"agendado",quando:h+"T19:00:00-03:00",data:h,arquivos:["2026-10-17/estatico.png"],legenda:"O corpo responde ao padrão.\n\nMe manda MÉTODO no direct."},
     {id:"d6",pauta:"Duas a três sessões de força por semana. Essa é a dose.",tipo:"CARROSSEL",etapa:"agendado",quando:"2026-10-18T12:00:00-03:00",data:"2026-10-18"},
-    {id:"d7",pauta:"Fim de semana não é recaída. É parte do plano.",tipo:"CARROSSEL",etapa:"publicado",quando:h+"T09:30:00-03:00",data:h},
+    {id:"d7",pauta:"Fim de semana não é recaída. É parte do plano.",tipo:"CARROSSEL",etapa:"publicado",quando:h+"T09:30:00-03:00",data:h,arquivos:["2026-10-17/carrossel-1.png","2026-10-17/carrossel-2.png","2026-10-17/carrossel-3.png","2026-10-17/carrossel-4.png","2026-10-17/carrossel-5.png","2026-10-17/carrossel-6.png","2026-10-17/carrossel-7.png"],link:"https://www.instagram.com/tavarescoach/",legenda:"Fim de semana não é recaída.\n\n#personaltrainerrj"},
     {id:"d8",pauta:"Treinar até cansar não é o que muda o corpo.",tipo:"REELS",etapa:"publicado",quando:"2026-10-16T21:00:00-03:00",data:"2026-10-16"},
   ];
 }

@@ -29,7 +29,8 @@ STATUS_PARA_ETAPA = {
     "atrasado": "atrasado",
 }
 ETAPAS_ESQUERDA = {"pauta", "em_criacao", "revisar"}
-CAMPOS = ["id", "data", "tipo", "pauta", "funil", "etapa", "quando", "arquivos", "legenda", "media_id"]
+CAMPOS = ["id", "data", "tipo", "pauta", "funil", "etapa", "quando", "arquivos", "legenda", "media_id", "capa", "link"]
+CAMPOS_NOVOS = {"capa", "link"}  # se a tabela ainda não tiver essas colunas, envia sem elas
 
 
 def ler(nome):
@@ -60,6 +61,8 @@ def da_fila(item):
         "arquivos": item.get("arquivos", []),
         "legenda": item.get("legenda"),
         "media_id": item.get("media_id"),
+        "capa": item.get("capa"),
+        "link": item.get("permalink"),
     }
     return linha
 
@@ -79,14 +82,17 @@ def da_pauta(item):
         "arquivos": item.get("arquivos", []),
         "legenda": item.get("legenda"),
         "media_id": None,
+        "capa": None,
+        "link": None,
     }
 
 
-def enviar(linhas, modo):
+def enviar(linhas, modo, campos=CAMPOS):
     """modo: 'merge' atualiza o que existe; 'ignore' só insere o que é novo."""
     if not linhas:
         return
-    linhas = [{c: l.get(c) for c in CAMPOS} for l in linhas]
+    original = linhas
+    linhas = [{c: l.get(c) for c in campos} for l in linhas]
     if SIMULAR:
         print(f"[simulação] {modo}: {len(linhas)} linha(s)")
         for l in linhas:
@@ -107,6 +113,9 @@ def enviar(linhas, modo):
             print(f"OK ({modo}): {len(linhas)} linha(s), HTTP {r.status}")
     except urllib.error.HTTPError as e:
         msg = e.read().decode(errors='replace')[:500].replace("\n", " ")
+        if campos is CAMPOS and any(c in msg for c in CAMPOS_NOVOS):
+            print("::warning::Tabela sem as colunas capa/link. Enviando sem elas.")
+            return enviar(original, modo, [c for c in CAMPOS if c not in CAMPOS_NOVOS])
         print(f"::error::ERRO ({modo}): HTTP {e.code} — {msg}")
         raise SystemExit(1)
 

@@ -157,6 +157,16 @@ def publicar(item):
             raise
 
 
+def buscar_link(media_id):
+    """Link público do post (permalink). Falha aqui nunca derruba a publicação."""
+    if SIMULAR or not media_id:
+        return None
+    try:
+        return chamar("GET", media_id, {"fields": "permalink"}).get("permalink")
+    except ErroPublicacao:
+        return None
+
+
 def validar(item):
     for campo in ("id", "quando", "tipo", "arquivos"):
         if campo not in item:
@@ -201,6 +211,9 @@ def main():
         try:
             media_id = publicar(item)
             item.update(status="publicado", media_id=media_id, publicado_em=agora().isoformat(timespec="minutes"))
+            link = buscar_link(media_id)
+            if link:
+                item["permalink"] = link
             item.pop("erro", None)
             print(f"  OK, media_id={media_id}")
         except ErroPublicacao as e:
@@ -208,6 +221,13 @@ def main():
             erros += 1
             print(f"  [ERRO] {e}")
         mudou = True
+
+    # completa o link de posts publicados antes desta função existir (até 10 por rodada)
+    for item in [i for i in fila if i.get("status") == "publicado" and i.get("media_id") and not i.get("permalink")][:10]:
+        link = buscar_link(item["media_id"])
+        if link:
+            item["permalink"] = link
+            mudou = True
 
     if mudou and not SIMULAR:
         with open(FILA, "w", encoding="utf-8") as f:
