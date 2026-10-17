@@ -1,46 +1,23 @@
 {
   "id": "c-2610171339-y4f",
-  "etapa": "opcoes",
-  "opcoes": [
+  "etapa": "headlines",
+  "tese": "## A tese\nIr à falha em toda série não é sinal de intensidade. É um custo de fadiga que a maior parte das pessoas paga sem receber nada a mais em músculo. **A última repetição, a que você faz tremendo, quase não acrescenta crescimento, mas cobra recuperação, articulação e consistência.** Hipertrofia de verdade vem de séries próximas do limite, repetidas semana após semana com progressão. Não de exaustão.\n\n## O que a ciência mostra\n- **Refalo et al., 2024 (Journal of Sports Sciences):** 26 praticantes treinados, cada perna treinada de um jeito por 8 semanas. Uma ia à falha, a outra parava a 1 ou 2 repetições do limite. O crescimento foi semelhante.\n- **Robinson et al., 2024 (Sports Medicine):** análise de 55 estudos de hipertrofia. Chegar perto da falha ajuda, mas o ganho achata depois de 2 repetições de reserva. Para força, ir à falha tende a atrapalhar levemente.\n- **Sampson e Groeller, 2016:** 12 semanas treinando os flexores do cotovelo, ou seja, o bíceps. Parar antes da falha gerou crescimento parecido com ir até o fim.\n- **Refalo et al., 2023 (Sports Medicine):** a vantagem de ir à falha, quando aparece, é pequena.\n\n## Por que isso importa para o seu público\n- **Executivo de 30 a 45 anos:** dorme pouco, vive sob pressão e treina 2 a 3 vezes por semana. Cada sessão destruída pela fadiga compromete a seguinte. Para ele, recuperar bem é o que mantém a progressão viva. A falha em toda série transforma treino em mais uma fonte de desgaste.\n- **Depois dos 35:** cotovelos, ombros e punhos já cobram. A repetição roubada na falha é onde a técnica quebra e a dor articular começa, justamente no bíceps, onde o quadril e o ombro assumem o movimento.\n- **Mulher de 30 a 50 anos:** a ideia de que treino bom é treino punitivo afasta. Mostrar que dá para construir com controle, sem sofrimento gratuito, conversa direto com a objeção \"não quero viver presa ao fitness\".\n\n## O custo escondido da crença errada\n- Fadiga acumulada que derruba a carga das próximas séries e da próxima sessão.\n- Técnica que se desfaz no fim da série, gerando estímulo menor e risco maior.\n- Platô: quem vai à falha sempre não consegue medir progressão, porque cada dia é um \"máximo\" diferente.\n- Desistência: treino que sempre termina em exaustão é o primeiro a ser cortado numa semana corrida.\n\n## Como o método aplica\n- A maioria das séries termina a **1 ou 2 repetições do limite**, com técnica intacta.\n- A falha é ferramenta, não regra: pode aparecer na última série de exercícios isolados e seguros, como a rosca na máquina.\n- **Registrar carga e repetições** é o que transforma \"perto do limite\" em progressão previsível.\n- O ponto sensível: quem treina sozinho costuma errar a leitura de quanto ainda aguentava, em geral parando longe demais ou indo à falha sem querer. Calibrar essa percepção é trabalho de treinador. **Aqui está a ponte para o personal e para a Avaliação Estratégica.**\n\n## Objeções que esse tema responde\n- \"Se não dói, não funciona.\"\n- \"Treino com personal é pegar leve.\"\n- \"Não tenho tempo para treinar mais.\" (A resposta é treinar melhor, não mais.)\n- \"Treino cansa demais, não consigo manter.\"\n\n## Desdobramentos de conteúdo\n- Mito x Método: \"Falha em toda série\" contra \"reserva com progressão\".\n- Bastidor técnico: como medimos a reserva no TTC (escala de repetições em reserva e velocidade da barra).\n- Pergunta de aluno: \"Então eu paro antes de cansar?\" Não. Para perto do limite, com critério.\n- Prova: aluno que parou de ir à falha e voltou a progredir na carga.\n- Desdobramento para stories: quiz \"Quantas repetições você ainda aguentava na última série?\"\n\n## Cuidado de comunicação\nNão vender como \"treino leve\". A mensagem é **esforço alto com inteligência**. Perto do limite, sim; além dele, só quando há motivo. Sem prometer prazo ou resultado garantido.\n",
+  "headlines": [
     {
-      "titulo": "Rosca inclinada x rosca Scott: a ciência respondeu",
-      "subtitulo": "Estudo de 12 semanas (J Sports Sci, 2026) treinou cada braço da mesma pessoa com uma rosca e mediu tudo por ressonância. A inclinada cresceu mais o bíceps, a Scott mais o braquial e o braquiorradial, e o volume total do braço foi igual.",
-      "frases": [
-        "Braço grande não é segredo de exercício. É dose bem feita.",
-        "A melhor rosca é a que você progride. As duas funcionam."
-      ]
+      "titulo": "Treinar até falhar virou status. Não virou resultado.",
+      "subtitulo": "O que a ciência mostra sobre a última repetição que todo mundo persegue."
     },
     {
-      "titulo": "Seu braço não é só bíceps",
-      "subtitulo": "Braquial e braquiorradial respondem por boa parte do volume do braço. O braquial fica por baixo do bíceps e, quando cresce, empurra ele para cima. Variar a posição do cotovelo e da pegada (Scott, martelo) treina o conjunto.",
-      "frases": [
-        "Quem só pensa em bíceps esquece metade do braço.",
-        "Braço cheio não é bíceps isolado. É o conjunto inteiro crescendo."
-      ]
+      "titulo": "A repetição que você não faz também constrói músculo.",
+      "subtitulo": "Por que parar a uma ou duas do limite cresce igual e cansa menos."
     },
     {
-      "titulo": "Você não precisa ir à falha em toda série",
-      "subtitulo": "Estudo com praticantes treinados: parar a 1 ou 2 repetições da falha gerou hipertrofia semelhante a ir até o limite, com menos fadiga. Para braço, que se treina várias vezes por semana, isso significa recuperar melhor e manter a progressão.",
-      "frases": [
-        "Falha em toda série não é intensidade. É fadiga sem retorno.",
-        "Parar a uma ou duas repetições do limite cresce igual e recupera melhor."
-      ]
+      "titulo": "O culto da exaustão está atrasando o seu treino.",
+      "subtitulo": "O que pesquisadores encontraram ao comparar falha e reserva lado a lado."
     },
     {
-      "titulo": "O erro que trava o seu bíceps",
-      "subtitulo": "Rosca roubada: quadril balançando, cotovelo indo para frente e meia amplitude. A carga sobe, o bíceps não. Controle na descida e amplitude completa, principalmente na parte de baixo, onde o músculo está alongado, mudam o estímulo.",
-      "frases": [
-        "Peso que sobe com o quadril não treina bíceps.",
-        "Bíceps não cresce com a carga que você mostra. Cresce com a que ele sente."
-      ]
-    },
-    {
-      "titulo": "Quanto treino de bíceps você realmente precisa",
-      "subtitulo": "Dose semanal com método: 2 sessões por semana, séries perto da falha e progressão de carga ou repetições. Puxadas e remadas já trabalham o bíceps e entram na conta, então mais volume isolado nem sempre é a resposta.",
-      "frases": [
-        "Braço que não cresce raramente é falta de treino. É falta de progressão.",
-        "Puxada e remada também treinam bíceps. Conte essas séries."
-      ]
+      "titulo": "Ninguém te contou o preço da última repetição.",
+      "subtitulo": "Ela cansa mais do que constrói, e você paga na próxima sessão."
     }
   ]
 }
