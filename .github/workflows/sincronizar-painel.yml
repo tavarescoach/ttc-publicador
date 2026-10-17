@@ -1,0 +1,36 @@
+name: Sincronizar painel
+
+# Copia fila.json (e pautas.json, se existir) para a tabela "conteudos" do Supabase,
+# que alimenta o painel. Roda quando a fila muda, depois de cada publicação e manualmente.
+# Como toca o Supabase várias vezes por dia, também evita que o projeto Free pause.
+
+on:
+  push:
+    paths:
+      - "fila.json"
+      - "pautas.json"
+  workflow_run:
+    workflows: ["Publicar no Instagram"]
+    types: [completed]
+  workflow_dispatch: {}
+
+concurrency:
+  group: sincronizar-painel
+  cancel-in-progress: false
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Enviar fila para o painel
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python sincronizar_painel.py
