@@ -67,7 +67,11 @@ def main():
     except Exception as e:
         print(f"::warning::sem transcrição ({e})")
 
-    data = (c.get("quando") or "")[:10] or c.get("data") or "sem-data"
+    from datetime import datetime, timedelta, timezone
+    quando = c.get("quando")
+    if quando:  # Supabase devolve em UTC; volta para o horário de Brasília
+        quando = datetime.fromisoformat(quando).astimezone(timezone(timedelta(hours=-3))).isoformat(timespec="seconds")
+    data = (quando or "")[:10] or c.get("data") or "sem-data"
     destino = f"{data}/{cid}/reels{ext}"
     tipo = "video/quicktime" if ext == ".mov" else "video/mp4"
     with open(video, "rb") as f:
@@ -76,7 +80,7 @@ def main():
     print(f"vídeo copiado para midia/{destino}")
 
     info = {
-        "id": cid, "pauta": c.get("pauta"), "notas": c.get("legenda"), "quando": c.get("quando"), "data": data,
+        "id": cid, "pauta": c.get("pauta"), "notas": c.get("legenda"), "quando": quando, "data": data,
         "funil": c.get("funil"), "duracao_s": round(dur, 1), "tamanho_mb": round(tam / 1e6, 1),
         "video_bucket": destino, "quadros": quadros, "transcricao": transcricao,
     }
