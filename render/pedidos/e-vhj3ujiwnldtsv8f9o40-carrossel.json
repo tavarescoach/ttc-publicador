@@ -1,0 +1,20 @@
+{
+  "id": "e-vhj3ujiwnldtsv8f9o40-carrossel",
+  "data": "2026-10-23",
+  "quando": "2026-10-23T12:00:00-03:00",
+  "funil": "meio",
+  "pauta": "Executivo com pouco tempo não precisa de mais treino.",
+  "legenda": "Decodificando o cardio no treino de força.\n\nUma meta-análise reuniu 21 estudos e 422 comparações entre força isolada, aeróbico isolado e os dois juntos. Com cardio junto, o músculo cresceu menos e a potência caiu.\n\nO custo apareceu mais com corrida do que com bicicleta, e cresceu com sessões mais longas e mais frequentes. O cardio continua melhorando o condicionamento. A questão é a dose.\n\nCom pouco tempo na semana, escolher bem vale mais do que somar volume.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #treinoconcorrente #copacabana #leblon",
+  "slides": [
+    {"tipo": "capa", "fundo": "marinho", "titulo": "Executivo com pouco tempo não precisa de **mais treino.**", "foto": "https://images.pexels.com/photos/6455846/pexels-photo-6455846.jpeg?auto=compress&cs=tinysrgb&w=1600"},
+    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Mais cardio virou sinônimo de **disciplina.**", "foto": "https://images.pexels.com/photos/7063743/pexels-photo-7063743.jpeg?auto=compress&cs=tinysrgb&w=1600", "texto": "Corrida longa depois do expediente parece compromisso. Mas, para quem quer força e músculo, o aeróbico tem um custo. Uma meta-análise mediu esse custo."},
+    {"tipo": "numero", "fundo": "marinho", "rotulo": "A análise", "numero": "21", "titulo": "estudos, **422 comparações.**", "texto": "Força isolada, aeróbico isolado e os dois juntos, o chamado treino concorrente. A pergunta: o que no aeróbico atrapalha os ganhos de força?", "fonte": "Wilson et al., Journal of Strength and Conditioning Research (2011)"},
+    {"tipo": "numero", "fundo": "preto", "rotulo": "Hipertrofia", "numero": "1,23", "titulo": "contra 0,85: **o músculo cresceu menos** com cardio junto.", "texto": "Tamanho de efeito médio da força isolada contra o treino concorrente. O aeróbico sozinho ficou em 0,27. Na potência, a diferença foi significativa entre os três grupos.", "fonte": "Wilson et al., JSCR (2011)"},
+    {"tipo": "insight", "fundo": "claro", "rotulo": "Onde pesa mais", "titulo": "A corrida interferiu mais que a **bicicleta.**", "texto": "**Força com corrida teve queda significativa em hipertrofia e força.** Com ciclismo, não. Na hipertrofia de pernas, o efeito caiu de 1,54 para 0,68."},
+    {"tipo": "texto_foto", "fundo": "marinho", "titulo": "**Duração e frequência** decidem o custo.", "texto": "Quanto mais longas e frequentes as sessões de aeróbico, menores tenderam a ser os ganhos de força, músculo e potência. São correlações de grupo, não regra individual.", "fonte": "Wilson et al., JSCR (2011)"},
+    {"tipo": "texto_foto", "fundo": "preto", "titulo": "O que o estudo **não diz.**", "texto": "Que cardio é ruim. O aeróbico melhorou o condicionamento, com ou sem força junto. E a resposta varia muito: há quem perca força no treino concorrente e há quem ganhe bastante."},
+    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "Falta de resultado não é falta de esforço. É **dose errada.**", "texto": "**Cardio tem dose, formato e momento.** Com pouco tempo na semana, escolher bem vale mais do que somar volume."},
+    {"tipo": "licao", "fundo": "preto", "rotulo": "Para quem treina", "titulo": "Força como base, **cardio dimensionado.**", "texto": "Proteja as sessões de força. Defina frequência e duração do aeróbico pelo seu objetivo, sua rotina e seu sono. Se gosta de correr, continue: a questão é quanto.", "nota": "A resposta varia de pessoa para pessoa. Ajustar a dose é trabalho de treinador."},
+    {"tipo": "cta", "fundo": "marinho", "titulo": "Quer saber quanto cardio cabe **na sua semana?**", "texto": "A Avaliação Estratégica mede onde você está e define a direção do seu treino, com a dose certa para a sua rotina.", "cta": "Me manda **MÉTODO** no direct."}
+  ]
+}
