@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F172A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Painel LT">
+<title>Painel de Conteúdo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{
+  --bg:#0F172A; --bg2:#050505; --card:#162036; --card2:#1C2842; --line:#26324D;
+  --txt:#F8FAFC; --mut:#94A3B8; --red:#C1121F; --ok:#22C55E; --warn:#F59E0B;
+}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;font-size:14px;min-height:100vh}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+input,select,textarea{font:inherit;color:var(--txt);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%}
+.hide{display:none!important}
+
+/* topo */
+header{position:sticky;top:0;z-index:5;background:rgba(15,23,42,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top{max-width:1280px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:14px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo b{font-style:italic;font-weight:800;font-size:20px;letter-spacing:-1px}
+.logo i{width:2px;height:26px;background:var(--txt)}
+.logo span{display:flex;flex-direction:column;line-height:1.05}
+.logo strong{font-size:13px;letter-spacing:.5px}
+.logo small{font-size:8.5px;letter-spacing:3.2px;color:var(--mut)}
+.top .sp{flex:1}
+.btn{padding:9px 14px;border-radius:8px;border:1px solid var(--line);font-weight:600;font-size:13px}
+.btn:hover{background:var(--card)}
+.btn.red{background:var(--red);border-color:var(--red)}
+.btn.red:hover{filter:brightness(1.1)}
+.criar{position:relative}
+.menu{position:absolute;right:0;top:calc(100% + 6px);width:260px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px;box-shadow:0 12px 32px rgba(0,0,0,.4)}
+.menu button{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;padding:10px;border-radius:7px}
+.menu button:hover:not(:disabled){background:var(--card2)}
+.menu button:disabled{opacity:.45;cursor:default}
+.menu em{font-style:normal;font-size:10px;color:var(--mut);border:1px solid var(--line);border-radius:20px;padding:2px 7px}
+
+/* placar */
+.placar{max-width:1280px;margin:0 auto;padding:18px 16px 4px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.kpi b{display:block;font-size:24px;font-weight:800}
+.kpi span{color:var(--mut);font-size:12px}
+.kpi.alerta b{color:var(--red)}
+
+/* colunas */
+main{max-width:1280px;margin:0 auto;padding:14px 16px 40px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.col{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.col h2{font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.col h2 .n{font-size:12px;color:var(--mut);font-weight:500}
+.col>p{color:var(--mut);font-size:12px;margin-bottom:12px}
+.grupo{margin-top:14px}
+.grupo h3{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:var(--mut);font-weight:600;margin-bottom:8px;display:flex;gap:6px;align-items:center}
+.grupo h3 .dot{width:7px;height:7px;border-radius:50%;background:var(--mut)}
+.vazio{color:var(--mut);font-size:12px;padding:10px;border:1px dashed var(--line);border-radius:8px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 12px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start}
+.card .corpo{flex:1;min-width:0}
+.card .t{font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;align-items:center;color:var(--mut);font-size:12px}
+.tag{font-size:10.5px;font-weight:700;letter-spacing:.6px;padding:2px 7px;border-radius:4px;background:var(--card2);color:var(--txt)}
+.tag.fun{background:transparent;border:1px solid var(--line);color:var(--mut);font-weight:600}
+.card .acao{flex-shrink:0;display:flex;flex-direction:column;gap:6px}
+.mini{font-size:12px;padding:6px 10px;border-radius:7px;border:1px solid var(--line);white-space:nowrap}
+.mini:hover{background:var(--card2)}
+.mini.go{border-color:var(--red);color:#fff}
+.card.erro{border-color:var(--red)}
+.card.erro .t::before{content:"● ";color:var(--red)}
+.card.pub{opacity:.72}
+.err{color:#FCA5A5;font-size:12px;margin-top:6px}
+.mais{width:100%;padding:8px;color:var(--mut);font-size:12px;border:1px dashed var(--line);border-radius:8px}
+
+/* login e modal */
+.centro{min-height:100vh;display:grid;place-items:center;padding:16px}
+.caixa{width:100%;max-width:380px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.caixa h1{font-size:18px;margin:18px 0 4px}
+.caixa p{color:var(--mut);font-size:13px;margin-bottom:16px}
+.caixa label{display:block;font-size:12px;color:var(--mut);margin:12px 0 6px}
+.caixa .btn{width:100%;margin-top:18px;padding:12px}
+.msg{font-size:12px;color:#FCA5A5;margin-top:10px;min-height:16px}
+.fundo{position:fixed;inset:0;background:rgba(0,0,0,.6);display:grid;place-items:center;padding:16px;z-index:10}
+.linha{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.rod{max-width:1280px;margin:0 auto;padding:0 16px 30px;color:var(--mut);font-size:11px;display:flex;justify-content:space-between}
+
+@media (max-width:820px){
+  main{grid-template-columns:1fr}
+  .placar{grid-template-columns:repeat(2,1fr)}
+  .logo span{display:none}
+  .logo i{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<section id="telaLogin" class="centro hide">
+  <form class="caixa" id="formLogin">
+    <div class="logo"><b>LT</b><i></i><span><strong>LUAN TAVARES</strong><small>TREINADOR</small></span></div>
+    <h1>Painel de Conteúdo</h1>
+    <p>Entre com o e-mail e a senha que você criou no Supabase.</p>
+    <label>E-mail</label><input type="email" id="email" required autocomplete="username">
+    <label>Senha</label><input type="password" id="senha" required autocomplete="current-password">
+    <button class="btn red" type="submit">Entrar</button>
+    <div class="msg" id="msgLogin"></div>
+  </form>
+</section>
+
+<!-- PAINEL -->
+<section id="telaPainel" class="hide">
+  <header><div class="top">
+    <div class="logo"><b>LT</b><i></i><span><strong>LUAN TAVARES</strong><small>TREINADOR</small></span></div>
+    <div class="sp"></div>
+    <button class="btn" id="btnAtualizar" title="Atualizar">↻</button>
+    <div class="criar">
+      <button class="btn red" id="btnCriar">+ Criar</button>
+      <div class="menu hide" id="menuCriar">
+        <button data-acao="pauta">Nova pauta</button>
+        <button disabled>Gerar pautas da semana <em>em breve</em></button>
+        <button disabled>Montar carrossel no Canva <em>em breve</em></button>
+        <button disabled>Roteiro de reels <em>em breve</em></button>
+        <button disabled>Stories do dia <em>em breve</em></button>
+      </div>
+    </div>
+    <button class="btn" id="btnSair">Sair</button>
+  </div></header>
+
+  <div class="placar">
+    <div class="kpi"><b id="kExec">–</b><span>a executar</span></div>
+    <div class="kpi"><b id="kHoje">–</b><span>agendados para hoje</span></div>
+    <div class="kpi"><b id="kSemana">–</b><span>publicados em 7 dias</span></div>
+    <div class="kpi" id="kpiErro"><b id="kErro">–</b><span>com erro ou atraso</span></div>
+  </div>
+
+  <main>
+    <div class="col">
+      <h2>A executar <span class="n" id="nEsq"></span></h2>
+      <p>Pautas e artes em produção. Avance cada uma até ficar pronta.</p>
+      <div id="colEsq"></div>
+    </div>
+    <div class="col">
+      <h2>Prontos e no robô <span class="n" id="nDir"></span></h2>
+      <p>O que já está com o robô de publicação, do próximo ao mais antigo.</p>
+      <div id="colDir"></div>
+    </div>
+  </main>
+  <div class="rod"><span id="atualizado"></span><span>@tavarescoach</span></div>
+</section>
+
+<!-- MODAL NOVA PAUTA -->
+<div class="fundo hide" id="modal">
+  <form class="caixa" id="formPauta">
+    <h1 style="margin-top:0">Nova pauta</h1>
+    <p>Entra na coluna da esquerda como “Pauta”.</p>
+    <label>Tema / headline</label><input id="pTema" required maxlength="200" placeholder="Ex.: Cardio não atrapalha hipertrofia">
+    <div class="linha">
+      <div><label>Formato</label><select id="pTipo">
+        <option value="CARROSSEL">Carrossel</option><option value="REELS">Reels</option>
+        <option value="IMAGEM">Estático</option><option value="STORY">Story</option></select></div>
+      <div><label>Funil</label><select id="pFunil">
+        <option value="">—</option><option value="topo">Topo</option><option value="meio">Meio</option><option value="fundo">Fundo</option></select></div>
+    </div>
+    <label>Data prevista</label><input type="date" id="pData">
+    <div class="linha" style="margin-top:18px">
+      <button type="button" class="btn" id="pCancelar">Cancelar</button>
+      <button type="submit" class="btn red" style="margin:0">Salvar</button>
+    </div>
+    <div class="msg" id="msgPauta"></div>
+  </form>
+</div>
+
+<script>
+const SUPABASE_URL = "https://txiszakrpssubgvzpdcx.supabase.co";
+const SUPABASE_KEY = "sb_publishable_S7gid6IZXgAiM0rbFRu52Q_MSnY2mYY";
+const DEMO = new URLSearchParams(location.search).has("demo");
+
+const ESQ = [
+  {etapa:"pauta",      nome:"Pauta",        prox:"em_criacao", rot:"Começar"},
+  {etapa:"em_criacao", nome:"Em criação",   prox:"revisar",    rot:"Revisar"},
+  {etapa:"revisar",    nome:"Revisar",      prox:"pronto",     rot:"Pronto ✓"},
+];
+const TIPO = {CARROSSEL:"CARROSSEL", REELS:"REELS", IMAGEM:"ESTÁTICO", STORY:"STORY"};
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const hojeISO = () => new Date().toLocaleDateString("sv-SE", {timeZone:"America/Sao_Paulo"});
+
+let sb = null, dados = [], verTodosPub = false;
+if (!DEMO) sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+function quandoTxt(r){
+  if (r.quando){
+    const d = new Date(r.quando);
+    return d.toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo",weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}).replace(",", " ·");
+  }
+  if (r.data){ const [y,m,d] = r.data.split("-"); return `${d}/${m}`; }
+  return "sem data";
+}
+
+function card(r, botoes){
+  const classe = ["erro","atrasado"].includes(r.etapa) ? "erro" : r.etapa === "publicado" ? "pub" : "";
+  return `<div class="card ${classe}">
+    <div class="corpo">
+      <div class="t">${esc(r.pauta || r.id)}</div>
+      <div class="meta">
+        <span class="tag">${TIPO[r.tipo] || esc(r.tipo || "—")}</span>
+        ${r.funil ? `<span class="tag fun">${esc(r.funil)}</span>` : ""}
+        <span>${esc(quandoTxt(r))}</span>
+      </div>
+      ${r.etapa === "atrasado" ? `<div class="err">Passou do horário. Ajuste o horário na fila para republicar.</div>` : ""}
+      ${r.etapa === "erro" ? `<div class="err">O robô não conseguiu publicar. Peça ao Claude para verificar.</div>` : ""}
+    </div>
+    ${botoes ? `<div class="acao">${botoes}</div>` : ""}
+  </div>`;
+}
+
+function grupo(titulo, cor, itens, render, vazio){
+  return `<div class="grupo"><h3><span class="dot" style="background:${cor}"></span>${titulo} · ${itens.length}</h3>
+    ${itens.length ? itens.map(render).join("") : `<div class="vazio">${vazio}</div>`}</div>`;
+}
+
+function desenhar(){
+  const porData = (a,b) => (a.quando || a.data || "9").localeCompare(b.quando || b.data || "9");
+  const esq = dados.filter(r => ESQ.some(e => e.etapa === r.etapa));
+  const pronto = dados.filter(r => r.etapa === "pronto").sort(porData);
+  const agend = dados.filter(r => r.etapa === "agendado").sort(porData);
+  const prob = dados.filter(r => ["erro","atrasado"].includes(r.etapa)).sort(porData);
+  const pub = dados.filter(r => r.etapa === "publicado").sort((a,b) => porData(b,a));
+
+  $("colEsq").innerHTML = ESQ.map((e,i) => grupo(e.nome, ["#64748B","#F59E0B","#C1121F"][i],
+    esq.filter(r => r.etapa === e.etapa).sort(porData),
+    r => card(r, `<button class="mini go" data-mover="${esc(r.id)}" data-para="${e.prox}">${e.rot}</button>`
+      + (i > 0 ? `<button class="mini" data-mover="${esc(r.id)}" data-para="${ESQ[i-1].etapa}">← Voltar</button>` : "")),
+    e.etapa === "pauta" ? "Nenhuma pauta. Use + Criar → Nova pauta." : "Nada aqui.")).join("");
+
+  const limite = verTodosPub ? pub.length : 6;
+  $("colDir").innerHTML =
+    (prob.length ? grupo("Atenção", "#C1121F", prob, r => card(r), "") : "") +
+    grupo("Pronto (aguardando ir para a fila)", "#94A3B8", pronto,
+      r => card(r, `<button class="mini" data-mover="${esc(r.id)}" data-para="revisar">← Revisar</button>`),
+      "Nada pronto esperando.") +
+    grupo("Agendado no robô", "#22C55E", agend, r => card(r), "Fila vazia. Nada agendado.") +
+    grupo("Publicado", "#475569", pub.slice(0, limite), r => card(r), "Nada publicado ainda.") +
+    (pub.length > 6 ? `<button class="mais" id="btnMais">${verTodosPub ? "Mostrar menos" : `Ver todos os ${pub.length} publicados`}</button>` : "");
+
+  const hoje = hojeISO(), seteDias = Date.now() - 7*864e5;
+  $("kExec").textContent = esq.length;
+  $("kHoje").textContent = agend.filter(r => (r.data || "") === hoje).length;
+  $("kSemana").textContent = pub.filter(r => r.quando && new Date(r.quando) >= seteDias).length;
+  $("kErro").textContent = prob.length;
+  $("kpiErro").classList.toggle("alerta", prob.length > 0);
+  $("nEsq").textContent = esq.length; $("nDir").textContent = pronto.length + agend.length + prob.length + pub.length;
+  $("atualizado").textContent = "Atualizado às " + new Date().toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+}
+
+async function carregar(){
+  if (DEMO){ dados = demo(); return desenhar(); }
+  const {data, error} = await sb.from("conteudos").select("*").order("quando", {ascending:true, nullsFirst:false});
+  if (error){ alert("Erro ao carregar: " + error.message); return; }
+  dados = data; desenhar();
+}
+
+async function mover(id, para){
+  const r = dados.find(x => x.id === id); if (!r) return;
+  const antes = r.etapa; r.etapa = para; desenhar();
+  if (DEMO) return;
+  const {error} = await sb.from("conteudos").update({etapa:para, atualizado_em:new Date().toISOString()}).eq("id", id);
+  if (error){ r.etapa = antes; desenhar(); alert("Não salvou: " + error.message); }
+}
+
+async function salvarPauta(ev){
+  ev.preventDefault();
+  const tipo = $("pTipo").value, data = $("pData").value || null;
+  const linha = {
+    id: `${data || hojeISO()}-${tipo.toLowerCase()}-${Math.random().toString(36).slice(2,7)}`,
+    pauta: $("pTema").value.trim(), tipo, funil: $("pFunil").value || null, data, etapa: "pauta", arquivos: []
+  };
+  if (!DEMO){
+    const {error} = await sb.from("conteudos").insert(linha);
+    if (error){ $("msgPauta").textContent = error.message; return; }
+  }
+  dados.push(linha); fecharModal(); desenhar();
+}
+
+function abrirModal(){ $("formPauta").reset(); $("msgPauta").textContent = ""; $("pData").value = hojeISO(); $("modal").classList.remove("hide"); $("pTema").focus(); }
+function fecharModal(){ $("modal").classList.add("hide"); }
+
+function mostrar(logado){
+  $("telaLogin").classList.toggle("hide", logado);
+  $("telaPainel").classList.toggle("hide", !logado);
+  if (logado) carregar();
+}
+
+document.addEventListener("click", ev => {
+  const m = ev.target.closest("[data-mover]");
+  if (m) return mover(m.dataset.mover, m.dataset.para);
+  if (ev.target.closest("#btnMais")){ verTodosPub = !verTodosPub; return desenhar(); }
+  if (ev.target.closest("#btnCriar")) return $("menuCriar").classList.toggle("hide");
+  if (ev.target.closest('[data-acao="pauta"]')){ $("menuCriar").classList.add("hide"); return abrirModal(); }
+  if (!ev.target.closest(".criar")) $("menuCriar").classList.add("hide");
+  if (ev.target === $("modal")) fecharModal();
+});
+$("pCancelar").onclick = fecharModal;
+$("formPauta").onsubmit = salvarPauta;
+$("btnAtualizar").onclick = carregar;
+$("btnSair").onclick = async () => { if (sb) await sb.auth.signOut(); mostrar(false); };
+$("formLogin").onsubmit = async ev => {
+  ev.preventDefault(); $("msgLogin").textContent = "";
+  const {error} = await sb.auth.signInWithPassword({email:$("email").value, password:$("senha").value});
+  if (error) $("msgLogin").textContent = "E-mail ou senha incorretos."; else mostrar(true);
+};
+setInterval(() => { if (!$("telaPainel").classList.contains("hide") && document.visibilityState === "visible") carregar(); }, 60000);
+
+(async () => {
+  if (DEMO) return mostrar(true);
+  const {data} = await sb.auth.getSession();
+  mostrar(!!data.session);
+})();
+
+function demo(){
+  const h = hojeISO();
+  return [
+    {id:"d1",pauta:"Cardio não atrapalha hipertrofia. Excesso atrapalha.",tipo:"REELS",funil:"topo",etapa:"pauta",data:h},
+    {id:"d2",pauta:"Por que o corpo mudou depois dos 30",tipo:"CARROSSEL",funil:"meio",etapa:"pauta",data:h},
+    {id:"d3",pauta:"Creatina: o que a ciência sustenta",tipo:"CARROSSEL",funil:"topo",etapa:"em_criacao",data:h},
+    {id:"d4",pauta:"Prova: 12 semanas do Ricardo",tipo:"REELS",funil:"fundo",etapa:"revisar",data:h},
+    {id:"d5",pauta:"O corpo responde ao padrão, não a um dia isolado.",tipo:"IMAGEM",etapa:"agendado",quando:h+"T19:00:00-03:00",data:h},
+    {id:"d6",pauta:"Duas a três sessões de força por semana. Essa é a dose.",tipo:"CARROSSEL",etapa:"agendado",quando:"2026-10-18T12:00:00-03:00",data:"2026-10-18"},
+    {id:"d7",pauta:"Fim de semana não é recaída. É parte do plano.",tipo:"CARROSSEL",etapa:"publicado",quando:h+"T09:30:00-03:00",data:h},
+    {id:"d8",pauta:"Treinar até cansar não é o que muda o corpo.",tipo:"REELS",etapa:"publicado",quando:"2026-10-16T21:00:00-03:00",data:"2026-10-16"},
+  ];
+}
+</script>
+</body>
+</html>
