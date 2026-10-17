@@ -15,6 +15,7 @@ import json
 import os
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
 PASTA = os.path.dirname(os.path.abspath(__file__))
@@ -120,12 +121,44 @@ def enviar(linhas, modo, campos=CAMPOS):
         raise SystemExit(1)
 
 
+def respostas_criacoes():
+    """criacoes/respostas/<id>.json -> atualiza a criação no painel.
+    Só aplica se a criação ainda estiver na vez do Claude, então reenviar é seguro."""
+    pasta = os.path.join(PASTA, "criacoes", "respostas")
+    if not os.path.isdir(pasta):
+        return
+    import datetime
+    for nome in sorted(os.listdir(pasta)):
+        if not nome.endswith(".json"):
+            continue
+        with open(os.path.join(pasta, nome), encoding="utf-8") as f:
+            resp = json.load(f)
+        cid = resp.pop("id", nome[:-5])
+        resp.setdefault("vez", "luan")
+        resp["atualizado_em"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        if SIMULAR:
+            print(f"[simulação] criação {cid} -> etapa {resp.get('etapa')}")
+            continue
+        req = urllib.request.Request(
+            f"{URL}/rest/v1/criacoes?id=eq.{urllib.parse.quote(cid)}&vez=eq.claude",
+            data=json.dumps(resp, ensure_ascii=False).encode(), method="PATCH",
+            headers={"apikey": KEY, "Content-Type": "application/json", "Prefer": "return=representation"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                n = len(json.loads(r.read() or b"[]"))
+            print(f"criação {cid}: {'atualizada' if n else 'já respondida, ignorada'}")
+        except urllib.error.HTTPError as e:
+            print(f"::error::criação {cid}: HTTP {e.code} — {e.read().decode(errors='replace')[:300]}")
+
+
 def main():
     if not SIMULAR and not (URL and KEY):
         print("Faltam SUPABASE_URL e SUPABASE_SERVICE_KEY.")
         return 1
     enviar([da_pauta(i) for i in ler("pautas.json")], "ignore")
     enviar([da_fila(i) for i in ler("fila.json")], "merge")
+    respostas_criacoes()
     return 0
 
 

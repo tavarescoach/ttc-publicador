@@ -9,6 +9,7 @@ on:
     paths:
       - "fila.json"
       - "pautas.json"
+      - "criacoes/respostas/**"
   workflow_run:
     workflows: ["Publicar no Instagram"]
     types: [completed]
