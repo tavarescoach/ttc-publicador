@@ -231,6 +231,21 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
   </div>
 </div>
 
+<!-- APROVAR -->
+<div class="fundo hide" id="mAprovar" style="z-index:25">
+  <form class="caixa" id="formAprovar" style="max-width:520px">
+    <h1 style="margin-top:0">Aprovar e agendar</h1>
+    <p id="apTitulo"></p>
+    <label for="apQuando">Dia e horário da publicação</label><input type="datetime-local" id="apQuando" required>
+    <label for="apLegenda">Legenda (edite se quiser)</label><textarea id="apLegenda" rows="9" style="resize:vertical"></textarea>
+    <div class="linha" style="margin-top:18px">
+      <button type="button" class="btn" id="apCancelar">Cancelar</button>
+      <button type="submit" class="btn red" style="margin:0">Aprovar e agendar</button>
+    </div>
+    <div class="msg" id="apMsg"></div>
+  </form>
+</div>
+
 <!-- VISOR DA ARTE -->
 <div class="visor hide" id="visor">
   <button class="fechar" aria-label="Fechar">×</button>
@@ -287,7 +302,8 @@ function miniatura(r){
 }
 
 function botoesDireita(r){
-  let b = (r.arquivos || []).length ? `<button class="mini go" data-ver="${esc(r.id)}">Ver arte</button>` : "";
+  let b = (r.arquivos || []).length ? `<button class="mini ${r.etapa === "pronto" ? "" : "go"}" data-ver="${esc(r.id)}">Ver arte</button>` : "";
+  if (r.etapa === "pronto" && (r.arquivos || []).length) b = `<button class="mini go" data-aprovar="${esc(r.id)}">Aprovar e agendar</button>` + b;
   if (r.link) b += `<a class="mini" href="${esc(r.link)}" target="_blank" rel="noopener">Instagram ↗</a>`;
   return b;
 }
@@ -487,6 +503,30 @@ function criacoesHtml(){
       </div><div class="acao"><button class="mini ${c.vez === "luan" ? "go" : ""}" data-abrir-criacao="${esc(c.id)}">Abrir</button></div></div>`).join("") + "</div>";
 }
 
+let aprovando = null;
+function abrirAprovar(id){
+  const r = dados.find(x => x.id === id); if (!r) return;
+  aprovando = r; fecharVisor();
+  $("apTitulo").textContent = r.pauta || r.id;
+  const q = r.quando ? new Date(r.quando) : new Date(Date.now() + 864e5);
+  $("apQuando").value = new Date(q.getTime() - 3*3600e3).toISOString().slice(0,16); // horário de Brasília
+  $("apLegenda").value = r.legenda || ""; $("apMsg").textContent = "";
+  $("mAprovar").classList.remove("hide");
+}
+async function aprovar(ev){
+  ev.preventDefault();
+  const r = aprovando, v = $("apQuando").value;
+  if (!v){ $("apMsg").textContent = "Escolha dia e horário."; return; }
+  const quando = v + ":00-03:00";
+  if (new Date(quando) < new Date()){ $("apMsg").textContent = "Esse horário já passou. Escolha um horário futuro."; return; }
+  const campos = {etapa:"agendado", quando, legenda:$("apLegenda").value, atualizado_em:new Date().toISOString()};
+  if (!DEMO){
+    const {error} = await sb.from("conteudos").update(campos).eq("id", r.id);
+    if (error){ $("apMsg").textContent = "Não salvou: " + error.message; return; }
+  }
+  Object.assign(r, campos); $("mAprovar").classList.add("hide"); desenhar();
+}
+
 let visor = {r:null, i:0};
 function abrirVisor(id){
   const r = dados.find(x => x.id === id); if (!r) return;
@@ -505,7 +545,8 @@ function desenharVisor(){
   $("vTitulo").textContent = r.pauta || r.id;
   $("vLeg").textContent = r.legenda || (r.tipo === "STORY" ? "Story sem legenda." : "Sem legenda.");
   $("vBts").innerHTML = `<a class="mini" href="${esc(urlMidia(a))}" target="_blank" rel="noopener">Abrir arquivo ↗</a>`
-    + (r.link ? `<a class="mini go" href="${esc(r.link)}" target="_blank" rel="noopener">Ver no Instagram ↗</a>` : "");
+    + (r.link ? `<a class="mini go" href="${esc(r.link)}" target="_blank" rel="noopener">Ver no Instagram ↗</a>` : "")
+    + (r.etapa === "pronto" ? `<button class="mini go" data-aprovar="${esc(r.id)}">Aprovar e agendar</button>` : "");
 }
 
 function card(r, botoes, comThumb){
@@ -548,9 +589,9 @@ function desenhar(){
   const limite = verTodosPub ? pub.length : 6;
   $("colDir").innerHTML =
     (prob.length ? grupo("Atenção", "#C1121F", prob, r => card(r, botoesDireita(r), true), "") : "") +
-    grupo("Pronto (aguardando ir para a fila)", "#94A3B8", pronto,
+    grupo("Pronto para aprovar", "#F59E0B", pronto,
       r => card(r, botoesDireita(r) + `<button class="mini" data-mover="${esc(r.id)}" data-para="revisar">← Revisar</button>`, true),
-      "Nada pronto esperando.") +
+      "Nada esperando aprovação.") +
     grupo("Agendado no robô", "#22C55E", agend, r => card(r, botoesDireita(r), true), "Fila vazia. Nada agendado.") +
     grupo("Publicado", "#475569", pub.slice(0, limite), r => card(r, botoesDireita(r), true), "Nada publicado ainda.") +
     (pub.length > 6 ? `<button class="mais" id="btnMais">${verTodosPub ? "Mostrar menos" : `Ver todos os ${pub.length} publicados`}</button>` : "");
@@ -631,6 +672,9 @@ document.addEventListener("click", ev => {
   const ac = ev.target.closest("[data-abrir-criacao]");
   if (ac) return abrirEstudio(ac.dataset.abrirCriacao);
   if (ev.target.closest('[data-acao="criacao"]')){ $("menuCriar").classList.add("hide"); return abrirEstudio(null); }
+  const ap = ev.target.closest("[data-aprovar]");
+  if (ap) return abrirAprovar(ap.dataset.aprovar);
+  if (ev.target === $("mAprovar")) return $("mAprovar").classList.add("hide");
   const v = ev.target.closest("[data-ver]");
   if (v) return abrirVisor(v.dataset.ver);
   const nv = ev.target.closest("[data-nav]");
@@ -652,6 +696,8 @@ document.addEventListener("keydown", ev => {
   if (n > 1 && (ev.key === "ArrowRight" || ev.key === "ArrowLeft")){ visor.i = (visor.i + (ev.key === "ArrowRight" ? 1 : -1) + n) % n; desenharVisor(); }
 });
 $("pCancelar").onclick = fecharModal;
+$("formAprovar").onsubmit = aprovar;
+$("apCancelar").onclick = () => $("mAprovar").classList.add("hide");
 $("formPauta").onsubmit = salvarPauta;
 $("btnAtualizar").onclick = carregar;
 $("btnSair").onclick = async () => { if (sb) await sb.auth.signOut(); mostrar(false); };
@@ -699,6 +745,7 @@ function demo(){
     {id:"d2",pauta:"Por que o corpo mudou depois dos 30",tipo:"CARROSSEL",funil:"meio",etapa:"pauta",data:h},
     {id:"d3",pauta:"Creatina: o que a ciência sustenta",tipo:"CARROSSEL",funil:"topo",etapa:"em_criacao",data:h},
     {id:"d4",pauta:"Prova: 12 semanas do Ricardo",tipo:"REELS",funil:"fundo",etapa:"revisar",data:h},
+    {id:"d9",pauta:"Treinar até falhar virou status. Mas não se transforma em resultados.",tipo:"CARROSSEL",etapa:"pronto",quando:"2026-10-21T12:00:00-03:00",data:"2026-10-21",arquivos:["2026-10-17/carrossel-1.png","2026-10-17/carrossel-2.png"],legenda:"Decodificando a falha muscular.\n\nMe manda MÉTODO no direct."},
     {id:"d5",pauta:"O corpo responde ao padrão, não a um dia isolado.",tipo:"IMAGEM",etapa:"agendado",quando:h+"T19:00:00-03:00",data:h,arquivos:["2026-10-17/estatico.png"],legenda:"O corpo responde ao padrão.\n\nMe manda MÉTODO no direct."},
     {id:"d6",pauta:"Duas a três sessões de força por semana. Essa é a dose.",tipo:"CARROSSEL",etapa:"agendado",quando:"2026-10-18T12:00:00-03:00",data:"2026-10-18"},
     {id:"d7",pauta:"Fim de semana não é recaída. É parte do plano.",tipo:"CARROSSEL",etapa:"publicado",quando:h+"T09:30:00-03:00",data:h,arquivos:["2026-10-17/carrossel-1.png","2026-10-17/carrossel-2.png","2026-10-17/carrossel-3.png","2026-10-17/carrossel-4.png","2026-10-17/carrossel-5.png","2026-10-17/carrossel-6.png","2026-10-17/carrossel-7.png"],link:"https://www.instagram.com/tavarescoach/",legenda:"Fim de semana não é recaída.\n\n#personaltrainerrj"},

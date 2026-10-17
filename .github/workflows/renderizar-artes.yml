@@ -1,0 +1,57 @@
+name: Renderizar artes
+
+# Transforma render/pedidos/<id>.json em PNGs (padrão decodificado, identidade LT),
+# sobe para o bucket "midia" e cria o card "Pronto" no painel para o Luan aprovar.
+
+on:
+  push:
+    paths:
+      - "render/pedidos/**"
+  workflow_dispatch:
+    inputs:
+      pedido:
+        description: "Caminho do pedido (ex.: render/pedidos/abc.json). Vazio = todos."
+        required: false
+        default: ""
+
+concurrency:
+  group: renderizar-artes
+  cancel-in-progress: false
+
+jobs:
+  renderizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar navegador
+        run: |
+          pip install playwright==1.47.0
+          python -m playwright install --with-deps chromium
+      - name: Renderizar e entregar ao painel
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          PEDIDO: ${{ github.event.inputs.pedido }}
+          EVENTO: ${{ github.event_name }}
+        run: |
+          set -e
+          if [ -n "$PEDIDO" ]; then
+            LISTA="$PEDIDO"
+          elif [ "$EVENTO" = "workflow_dispatch" ]; then
+            LISTA=$(ls render/pedidos/*.json)
+          else
+            LISTA=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- render/pedidos | grep '\.json$' || true)
+          fi
+          if [ -z "$LISTA" ]; then echo "Nenhum pedido novo."; exit 0; fi
+          FALHAS=0
+          for p in $LISTA; do
+            echo "== $p"
+            python render/render.py "$p" || { echo "::error::falhou: $p"; FALHAS=$((FALHAS+1)); }
+          done
+          [ "$FALHAS" -eq 0 ]

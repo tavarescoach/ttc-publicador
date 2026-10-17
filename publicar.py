@@ -179,6 +179,36 @@ def validar(item):
     return quando
 
 
+def importar_aprovados(fila):
+    """Traz para a fila o que o Luan aprovou no painel (etapa 'agendado' que ainda não está no fila.json)."""
+    url = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    key = os.environ.get("SUPABASE_SERVICE_KEY", "")
+    if not (url and key):
+        return 0
+    req = urllib.request.Request(
+        f"{url}/rest/v1/conteudos?etapa=eq.agendado&select=id,quando,tipo,arquivos,legenda,capa",
+        headers={"apikey": key})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            linhas = json.loads(r.read())
+    except Exception as e:
+        print(f"[aviso] não consegui ler aprovados do painel: {e}")
+        return 0
+    ids = {i.get("id") for i in fila}
+    novos = 0
+    for l in linhas:
+        if l["id"] in ids or not l.get("quando") or not l.get("arquivos"):
+            continue
+        item = {"id": l["id"], "quando": l["quando"], "tipo": l["tipo"], "arquivos": l["arquivos"],
+                "legenda": l.get("legenda") or "", "status": "pendente", "origem": "painel"}
+        if l.get("capa"):
+            item["capa"] = l["capa"]
+        fila.append(item)
+        novos += 1
+        print(f"Aprovado no painel, entrou na fila: {l['id']} para {l['quando']}")
+    return novos
+
+
 def main():
     if not SIMULAR and not (TOKEN and IG_ID and BASE_MIDIA):
         print("Faltam segredos: IG_TOKEN, IG_USER_ID e MIDIA_BASE.")
@@ -188,7 +218,7 @@ def main():
 
     t = agora()
     erros = 0
-    mudou = False
+    mudou = importar_aprovados(fila) > 0
     for item in fila:
         if item.get("status", "pendente") != "pendente":
             continue

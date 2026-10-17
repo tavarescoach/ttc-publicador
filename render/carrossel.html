@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/* Carrossel "decodificado" · identidade Luan Tavares Treinador (LT)
+   Fundos: marinho / preto / claro (nunca 3 iguais seguidos). Vermelho só em destaque. */
+:root{--marinho:#07112A;--preto:#050505;--claro:#F1F3F6;--txt:#F8FAFC;--escuro:#0F172A;--red:#C1121F;--mut:#94A3B8;--mutc:#475569}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.s{position:relative;width:1080px;height:1350px;overflow:hidden;display:flex;flex-direction:column;padding:78px 96px 72px}
+.s.marinho{background:var(--marinho);color:var(--txt)} .s.preto{background:var(--preto);color:var(--txt)} .s.claro{background:var(--claro);color:var(--escuro)}
+.topo{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:3}
+.topo img{height:46px}
+.s.claro .topo img,.s.claro .marca{filter:invert(1) brightness(.12)}
+.topo span{font-size:22px;letter-spacing:2px;color:var(--mut);font-weight:500}
+.s.claro .topo span,.s.claro .rod{color:var(--mutc)}
+.rod{display:flex;justify-content:space-between;font-size:26px;color:var(--mut);position:relative;z-index:3;margin-top:auto}
+.corpo{flex:1;display:flex;flex-direction:column;justify-content:center;gap:34px;position:relative;z-index:2;padding:40px 0}
+.marca{position:absolute;right:-20px;top:130px;height:880px;opacity:.55;z-index:1}
+b,.hl{color:var(--red);font-weight:inherit}
+.rot{font-size:24px;letter-spacing:4px;text-transform:uppercase;color:var(--red);font-weight:700}
+h1{font-weight:800;letter-spacing:-.035em;line-height:1.02;text-wrap:balance}
+.t-xl{font-size:96px}.t-l{font-size:76px}.t-m{font-size:62px}
+p{font-size:36px;line-height:1.4;color:inherit;opacity:.9;text-wrap:pretty}
+p strong{font-weight:700;opacity:1}
+.fonte{font-size:22px;color:var(--mut);letter-spacing:.3px}
+.s.claro .fonte{color:var(--mutc)}
+.foto{width:100%;flex:1;min-height:420px;max-height:560px;border-radius:4px;background:#1a2440 center/cover no-repeat;filter:grayscale(.25) contrast(1.05)}
+/* capa */
+.capa .bg{position:absolute;inset:0;background:center/cover no-repeat;filter:grayscale(.35) contrast(1.1) brightness(.75)}
+.capa .ve{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,20,.55) 0%,rgba(5,8,20,.15) 30%,rgba(5,8,20,.75) 58%,rgba(5,8,20,.98) 100%)}
+.capa .corpo{justify-content:flex-end;padding-bottom:30px}
+.capa h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;line-height:.98;font-size:108px}
+.capa .arroba{font-size:26px;color:var(--mut);letter-spacing:1px}
+/* número gigante */
+.num{font-weight:900;letter-spacing:-.06em;line-height:.85;font-size:300px;color:var(--txt)}
+.s.claro .num{color:var(--escuro)}
+.num small{font-size:.32em;letter-spacing:-.03em;font-weight:800;margin-left:14px}
+/* nota com barra vermelha */
+.nota{border-left:6px solid var(--red);padding:6px 0 6px 30px;font-size:32px;line-height:1.4;opacity:.95}
+/* cta */
+.cta-box{display:inline-flex;align-items:center;gap:18px;border:2px solid var(--red);border-radius:6px;padding:22px 30px;font-size:36px;font-weight:700;align-self:flex-start}
+.cta-box i{width:14px;height:14px;background:var(--red);border-radius:50%}
+</style></head>
+<body><div id="raiz"></div>
+<script>
+const S = window.SLIDE, N = window.TOTAL, I = window.INDICE, ANO = window.ANO || "2026";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\n/g, "<br>");
+const topo = `<div class="topo"><img src="assets/logo-lt.png" alt=""><span>${ANO} //</span></div>`;
+const rod = `<div class="rod"><span>@tavarescoach</span><span>${I}/${N}</span></div>`;
+const len = t => (t || "").replace(/\*\*/g, "").length;
+const tam = t => len(t) > 90 ? "t-m" : len(t) > 55 ? "t-l" : "t-xl";
+let h = "", fundo = S.fundo || "marinho", marca = false;
+
+if (S.tipo === "capa"){
+  h = `${S.foto ? `<div class="bg" style="background-image:url('${S.foto}')"></div><div class="ve"></div>` : ""}
+    ${topo}<div class="corpo"><div class="arroba">@tavarescoach</div><h1>${fmt(S.titulo)}</h1></div>${rod}`;
+  marca = !S.foto;
+} else if (S.tipo === "texto_foto"){
+  h = `${topo}<div class="corpo" style="justify-content:${S.foto ? "flex-start" : "center"};gap:40px">
+      <h1 class="${S.foto ? "t-m" : tam(S.titulo)}">${fmt(S.titulo)}</h1>
+      ${S.foto ? `<div class="foto" style="background-image:url('${S.foto}')"></div>` : ""}
+      ${S.texto ? `<p>${fmt(S.texto)}</p>` : ""}${S.fonte ? `<div class="fonte">${fmt(S.fonte)}</div>` : ""}</div>${rod}`;
+  marca = !S.foto && fundo !== "claro";
+} else if (S.tipo === "numero"){
+  h = `${topo}<div class="corpo">${S.rotulo ? `<div class="rot">${fmt(S.rotulo)}</div>` : ""}
+      <div class="num">${fmt(S.numero)}${S.unidade ? `<small>${esc(S.unidade)}</small>` : ""}</div><h1 class="t-m">${fmt(S.titulo)}</h1>
+      ${S.texto ? `<p>${fmt(S.texto)}</p>` : ""}${S.fonte ? `<div class="fonte">Fonte: ${fmt(S.fonte)}</div>` : ""}</div>${rod}`;
+} else if (S.tipo === "insight" || S.tipo === "licao"){
+  h = `${topo}<div class="corpo">${S.rotulo ? `<div class="rot">${fmt(S.rotulo)}</div>` : ""}
+      <h1 class="${tam(S.titulo)}">${fmt(S.titulo)}</h1>
+      ${S.texto ? `<p>${fmt(S.texto)}</p>` : ""}${S.nota ? `<div class="nota">${fmt(S.nota)}</div>` : ""}
+      ${S.fonte ? `<div class="fonte">Fonte: ${fmt(S.fonte)}</div>` : ""}</div>${rod}`;
+  marca = S.tipo === "licao" && fundo !== "claro";
+} else if (S.tipo === "cta"){
+  h = `${topo}<div class="corpo">${S.rotulo ? `<div class="rot">${fmt(S.rotulo)}</div>` : ""}
+      <h1 class="${tam(S.titulo)}">${fmt(S.titulo)}</h1>${S.texto ? `<p>${fmt(S.texto)}</p>` : ""}
+      <div class="cta-box"><i></i>${fmt(S.cta || "Me manda **MÉTODO** no direct.")}</div></div>${rod}`;
+  marca = true;
+}
+document.getElementById("raiz").innerHTML = `<section class="s ${fundo} ${S.tipo}">${marca ? `<img class="marca" src="assets/marca-l.png" alt="">` : ""}${h}</section>`;
+</script></body></html>
