@@ -1,0 +1,54 @@
+name: Radar de notícias
+
+# Coleta: 5h47 e 13h47 (Brasília). A curadoria do Claude roda ~30 min depois (tarefa agendada)
+# e faz push em radar/curadoria/, que dispara a etapa "aplicar".
+
+on:
+  schedule:
+    - cron: "47 8,16 * * *"
+  push:
+    paths:
+      - "radar/curadoria/**"
+  workflow_dispatch: {}
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Coletar notícias
+        if: github.event_name != 'push'
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          pip install feedparser==6.0.11
+          python radar/coletar.py
+      - name: Aplicar curadoria
+        if: github.event_name == 'push'
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python radar/aplicar.py
+      - name: Salvar coleta no repositório
+        if: github.event_name != 'push'
+        run: |
+          git add radar/coleta.json radar/preferencias.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "radar: coleta"
+            git pull --rebase
+            git push
+          fi
