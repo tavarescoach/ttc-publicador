@@ -1,51 +1,160 @@
 [
-  {"canal": "BBC News", "dominio": "bbc.com", "peso": 1.0, "feeds": [
-    "https://feeds.bbci.co.uk/news/health/rss.xml",
-    "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
-    "https://feeds.bbci.co.uk/news/technology/rss.xml"]},
-  {"canal": "Reuters", "dominio": "reuters.com", "peso": 1.0, "feeds": [
-    "https://news.google.com/rss/search?q=site:reuters.com+(health+OR+fitness+OR+science+OR+obesity+OR+sleep)+when:3d&hl=en-US&gl=US&ceid=US:en"]},
-  {"canal": "CNN", "dominio": "cnn.com", "peso": 1.0, "feeds": [
-    "https://news.google.com/rss/search?q=site:cnn.com/health+when:3d&hl=en-US&gl=US&ceid=US:en"]},
-  {"canal": "The Guardian", "dominio": "theguardian.com", "peso": 1.0, "feeds": [
-    "https://www.theguardian.com/society/health/rss",
-    "https://www.theguardian.com/science/rss",
-    "https://www.theguardian.com/lifeandstyle/fitness/rss",
-    "https://www.theguardian.com/technology/rss"]},
-  {"canal": "Fox News Health", "dominio": "foxnews.com", "peso": 1.0, "feeds": [
-    "https://moxie.foxnews.com/google-publisher/health.xml"]},
-  {"canal": "Fox News Lifestyle", "dominio": "foxnews.com", "peso": 0.8, "feeds": [
-    "https://moxie.foxnews.com/google-publisher/lifestyle.xml"]},
-  {"canal": "Fox News (ciência, tech e esporte)", "dominio": "foxnews.com", "peso": 0.7, "feeds": [
-    "https://moxie.foxnews.com/google-publisher/science.xml",
-    "https://moxie.foxnews.com/google-publisher/tech.xml",
-    "https://moxie.foxnews.com/google-publisher/sports.xml"]},
-  {"canal": "The Art Newspaper", "dominio": "theartnewspaper.com", "peso": 0.5, "feeds": [
-    "https://www.theartnewspaper.com/rss.xml",
-    "https://news.google.com/rss/search?q=site:theartnewspaper.com+when:7d&hl=en-US&gl=US&ceid=US:en"]},
-  {"canal": "MIT Technology Review", "dominio": "technologyreview.com", "peso": 0.8, "feeds": [
-    "https://www.technologyreview.com/feed/"]},
-  {"canal": "Wired", "dominio": "wired.com", "peso": 0.7, "feeds": [
-    "https://www.wired.com/feed/category/science/latest/rss",
-    "https://www.wired.com/feed/category/gear/latest/rss"]},
-  {"canal": "Metrópoles", "dominio": "metropoles.com", "peso": 1.0, "feeds": [
-    "https://www.metropoles.com/saude/feed",
-    "https://news.google.com/rss/search?q=site:metropoles.com+(sa%C3%BAde+OR+treino+OR+academia+OR+obesidade)+when:3d&hl=pt-BR&gl=BR&ceid=BR:pt-419"]},
-  {"canal": "g1 Saúde", "dominio": "g1.globo.com", "peso": 1.1, "feeds": [
-    "https://g1.globo.com/rss/g1/ciencia-e-saude/",
-    "https://news.google.com/rss/search?q=site:g1.globo.com/saude+when:3d&hl=pt-BR&gl=BR&ceid=BR:pt-419"]},
-  {"canal": "Folha Equilíbrio", "dominio": "folha.uol.com.br", "peso": 1.1, "feeds": [
-    "https://feeds.folha.uol.com.br/equilibrioesaude/rss091.xml"]},
-  {"canal": "Estadão Saúde", "dominio": "estadao.com.br", "peso": 1.0, "feeds": [
-    "https://news.google.com/rss/search?q=site:estadao.com.br/saude+when:3d&hl=pt-BR&gl=BR&ceid=BR:pt-419"]},
-  {"canal": "ScienceDaily", "dominio": "sciencedaily.com", "peso": 1.0, "feeds": [
-    "https://www.sciencedaily.com/rss/health_medicine/fitness.xml",
-    "https://www.sciencedaily.com/rss/health_medicine/nutrition.xml",
-    "https://www.sciencedaily.com/rss/mind_brain/sleep_disorders.xml"]},
-  {"canal": "Nature News", "dominio": "nature.com", "peso": 0.7, "feeds": [
-    "https://www.nature.com/nature.rss"]},
-  {"canal": "Harvard Health", "dominio": "health.harvard.edu", "peso": 1.0, "feeds": [
-    "https://www.health.harvard.edu/blog/feed"]},
-  {"canal": "NYT Well", "dominio": "nytimes.com", "peso": 1.0, "feeds": [
-    "https://rss.nytimes.com/services/xml/rss/nyt/Well.xml"]}
+  {
+    "canal": "BBC News",
+    "dominio": "bbc.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://feeds.bbci.co.uk/news/health/rss.xml",
+      "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "https://feeds.bbci.co.uk/news/technology/rss.xml"
+    ]
+  },
+  {
+    "canal": "Reuters",
+    "dominio": "reuters.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://news.google.com/rss/search?q=site:reuters.com+(health+OR+fitness+OR+science+OR+obesity+OR+sleep)+when:3d&hl=en-US&gl=US&ceid=US:en"
+    ]
+  },
+  {
+    "canal": "CNN",
+    "dominio": "cnn.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://news.google.com/rss/search?q=site:cnn.com+(health+OR+fitness+OR+wellness+OR+sleep)+when:3d&hl=en-US&gl=US&ceid=US:en"
+    ]
+  },
+  {
+    "canal": "The Guardian",
+    "dominio": "theguardian.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://www.theguardian.com/society/health/rss",
+      "https://www.theguardian.com/science/rss",
+      "https://www.theguardian.com/lifeandstyle/fitness/rss",
+      "https://www.theguardian.com/technology/rss"
+    ]
+  },
+  {
+    "canal": "Fox News Health",
+    "dominio": "foxnews.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://moxie.foxnews.com/google-publisher/health.xml"
+    ]
+  },
+  {
+    "canal": "Fox News Lifestyle",
+    "dominio": "foxnews.com",
+    "peso": 0.8,
+    "feeds": [
+      "https://moxie.foxnews.com/google-publisher/lifestyle.xml"
+    ]
+  },
+  {
+    "canal": "Fox News (ciência, tech e esporte)",
+    "dominio": "foxnews.com",
+    "peso": 0.7,
+    "feeds": [
+      "https://moxie.foxnews.com/google-publisher/science.xml",
+      "https://moxie.foxnews.com/google-publisher/tech.xml",
+      "https://moxie.foxnews.com/google-publisher/sports.xml"
+    ]
+  },
+  {
+    "canal": "The Art Newspaper",
+    "dominio": "theartnewspaper.com",
+    "peso": 0.5,
+    "feeds": [
+      "https://www.theartnewspaper.com/rss.xml",
+      "https://news.google.com/rss/search?q=site:theartnewspaper.com+when:7d&hl=en-US&gl=US&ceid=US:en"
+    ]
+  },
+  {
+    "canal": "MIT Technology Review",
+    "dominio": "technologyreview.com",
+    "peso": 0.8,
+    "feeds": [
+      "https://www.technologyreview.com/feed/"
+    ]
+  },
+  {
+    "canal": "Wired",
+    "dominio": "wired.com",
+    "peso": 0.7,
+    "feeds": [
+      "https://www.wired.com/feed/category/science/latest/rss",
+      "https://www.wired.com/feed/category/gear/latest/rss"
+    ]
+  },
+  {
+    "canal": "Metrópoles",
+    "dominio": "metropoles.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://www.metropoles.com/saude/feed",
+      "https://news.google.com/rss/search?q=site:metropoles.com+(sa%C3%BAde+OR+treino+OR+academia+OR+obesidade)+when:3d&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+    ]
+  },
+  {
+    "canal": "g1 Saúde",
+    "dominio": "g1.globo.com",
+    "peso": 1.1,
+    "feeds": [
+      "https://g1.globo.com/rss/g1/ciencia-e-saude/",
+      "https://news.google.com/rss/search?q=site:g1.globo.com/saude+when:3d&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+    ]
+  },
+  {
+    "canal": "Folha Equilíbrio",
+    "dominio": "folha.uol.com.br",
+    "peso": 1.1,
+    "feeds": [
+      "https://feeds.folha.uol.com.br/equilibrioesaude/rss091.xml"
+    ]
+  },
+  {
+    "canal": "Estadão Saúde",
+    "dominio": "estadao.com.br",
+    "peso": 1.0,
+    "feeds": [
+      "https://news.google.com/rss/search?q=site:estadao.com.br+(sa%C3%BAde+OR+treino+OR+exerc%C3%ADcio+OR+obesidade+OR+sono)+when:3d&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+    ]
+  },
+  {
+    "canal": "ScienceDaily",
+    "dominio": "sciencedaily.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://www.sciencedaily.com/rss/health_medicine/fitness.xml",
+      "https://www.sciencedaily.com/rss/health_medicine/nutrition.xml",
+      "https://www.sciencedaily.com/rss/mind_brain/sleep_disorders.xml"
+    ]
+  },
+  {
+    "canal": "Nature News",
+    "dominio": "nature.com",
+    "peso": 0.7,
+    "feeds": [
+      "https://www.nature.com/nature.rss"
+    ]
+  },
+  {
+    "canal": "Harvard Health",
+    "dominio": "health.harvard.edu",
+    "peso": 1.0,
+    "feeds": [
+      "https://www.health.harvard.edu/blog/feed/",
+      "https://news.google.com/rss/search?q=site:health.harvard.edu+when:14d&hl=en-US&gl=US&ceid=US:en"
+    ]
+  },
+  {
+    "canal": "NYT Well",
+    "dominio": "nytimes.com",
+    "peso": 1.0,
+    "feeds": [
+      "https://rss.nytimes.com/services/xml/rss/nyt/Well.xml"
+    ]
+  }
 ]

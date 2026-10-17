@@ -28,6 +28,7 @@ KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 BRT = dt.timezone(dt.timedelta(hours=-3))
 AGORA = dt.datetime.now(dt.timezone.utc)
 JANELA = dt.timedelta(hours=72)
+JANELA_LENTAS = {"Harvard Health": dt.timedelta(days=14), "The Art Newspaper": dt.timedelta(days=7)}
 POR_CANAL = 10
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36 ttc-radar"
 
@@ -123,7 +124,7 @@ def coletar():
                 if "news.google.com" in url:  # "Título - Reuters" -> "Título"
                     titulo = re.sub(r"\s+[-–|]\s+[^-–|]{2,40}$", "", titulo)
                 quando = data_item(e)
-                if quando and AGORA - quando > JANELA:
+                if quando and AGORA - quando > JANELA_LENTAS.get(f["canal"], JANELA):
                     continue
                 chave = sem_acento(titulo)[:80]
                 if chave in vistos:
