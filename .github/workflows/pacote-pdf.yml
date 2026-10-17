@@ -1,0 +1,42 @@
+name: Plano em PDF
+
+# Cada pacotes/pacote-AAAA-MM-DD.md novo ou alterado vira PDF no bucket privado "materiais" (pasta pacotes/).
+
+on:
+  push:
+    paths:
+      - "pacotes/*.md"
+  workflow_dispatch:
+    inputs:
+      arquivo:
+        description: "Ex.: pacotes/pacote-2026-10-19.md (vazio = o mais recente)"
+        required: false
+        default: ""
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar
+        run: |
+          pip install playwright==1.47.0 markdown==3.7
+          python -m playwright install --with-deps chromium
+      - name: Gerar e enviar
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          ARQ: ${{ github.event.inputs.arquivo }}
+          EVENTO: ${{ github.event_name }}
+        run: |
+          set -e
+          if [ -n "$ARQ" ]; then LISTA="$ARQ"
+          elif [ "$EVENTO" = "workflow_dispatch" ]; then LISTA=$(ls pacotes/pacote-*.md | sort | tail -1)
+          else LISTA=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- 'pacotes/*.md'); fi
+          for f in $LISTA; do python pacotes/gerar_pdf.py "$f"; done

@@ -225,6 +225,7 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
     <div class="logo"><b>LT</b><i></i><span><strong>LUAN TAVARES</strong><small>TREINADOR</small></span></div>
     <div class="sp"></div>
     <button class="btn" id="btnAtualizar" title="Atualizar">↻</button>
+    <button class="btn" id="btnPlano" title="Plano de conteúdo da semana em PDF">Plano em PDF</button>
     <a class="btn btn-radar" href="radar.html"><i class="pulso"></i>Radar<span class="cont hide" id="radarCont"></span></a>
     <a class="btn red" href="https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH" target="_blank" rel="noopener" style="text-decoration:none;color:#fff">Estúdio ↗</a>
     <button class="btn" id="btnSair">Sair</button>
@@ -326,6 +327,16 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
     </div>
     <div class="msg" id="rMsg"></div>
   </form>
+</div>
+
+<!-- PLANO EM PDF -->
+<div class="fundo hide" id="mPlano" style="z-index:26">
+  <div class="caixa" style="max-width:520px">
+    <h1 style="margin-top:0">Plano em PDF</h1>
+    <p style="color:var(--mut);font-size:13px;margin:-4px 0 14px">O pacote de cada semana vira PDF sozinho (domingo de manhã).</p>
+    <div id="planoLista">Carregando…</div>
+    <div class="linha" style="margin-top:18px"><span></span><button type="button" class="btn" data-fechar-plano>Fechar</button></div>
+  </div>
 </div>
 
 <!-- EDITAR -->
@@ -953,6 +964,33 @@ async function salvarPauta(ev){
 }
 
 function abrirModal(){ $("formPauta").reset(); $("msgPauta").textContent = ""; $("pData").value = hojeISO(); $("modal").classList.remove("hide"); $("pTema").focus(); }
+async function abrirPlano(){
+  $("mPlano").classList.remove("hide");
+  const el = $("planoLista"); el.textContent = "Carregando…";
+  if (DEMO){ el.textContent = "No modo demonstração não há PDF."; return; }
+  const {data, error} = await sb.storage.from("materiais").list("pacotes", {limit:100, sortBy:{column:"name", order:"desc"}});
+  if (error){ el.textContent = "Não abriu: " + error.message; return; }
+  const pdfs = (data || []).filter(f => /\.pdf$/i.test(f.name)).slice(0, 8);
+  if (!pdfs.length){ el.textContent = "Ainda não há plano em PDF. O próximo sai domingo de manhã."; return; }
+  const linhas = await Promise.all(pdfs.map(async (f, i) => {
+    const caminho = "pacotes/" + f.name;
+    const [v, b] = await Promise.all([
+      sb.storage.from("materiais").createSignedUrl(caminho, 3600),
+      sb.storage.from("materiais").createSignedUrl(caminho, 3600, {download: f.name}),
+    ]);
+    const m = f.name.match(/(\d{4})-(\d{2})-(\d{2})/);
+    let nome = f.name;
+    if (m){ const d = new Date(+m[1], +m[2]-1, +m[3]), fim = new Date(d.getTime() + 6*864e5);
+      const dm = x => String(x.getDate()).padStart(2,"0") + "/" + String(x.getMonth()+1).padStart(2,"0");
+      nome = "Semana " + dm(d) + " – " + dm(fim); }
+    if (v.error) return `<div class="tf"><div>${esc(nome)}</div><div style="color:var(--mut)">sem acesso</div></div>`;
+    return `<div class="tf" style="align-items:center"><div class="tx"><b>${esc(nome)}</b>${i === 0 ? ' <span style="color:var(--red);font-size:12px">· mais recente</span>' : ""}</div>
+      <div class="acao" style="flex-direction:row"><a class="mini go" href="${v.data.signedUrl}" target="_blank" rel="noopener">Ver</a>
+      <a class="mini" href="${b.data ? b.data.signedUrl : v.data.signedUrl}">Baixar</a></div></div>`;
+  }));
+  el.innerHTML = linhas.join("");
+}
+
 function fecharModal(){ $("modal").classList.add("hide"); }
 
 function mostrar(logado){
@@ -992,6 +1030,7 @@ document.addEventListener("click", ev => {
   const rl = ev.target.closest("[data-reels]");
   if (rl) return abrirReels(rl.dataset.reels || null);
   if (ev.target.closest("[data-fechar-reels]") || ev.target === $("mReels")) return $("mReels").classList.add("hide");
+  if (ev.target.closest("[data-fechar-plano]") || ev.target === $("mPlano")) return $("mPlano").classList.add("hide");
   const te = ev.target.closest("[data-tedit]"); if (te) return abrirEditar("tarefa", te.dataset.tedit);
   const td = ev.target.closest("[data-tdel]"); if (td) return apagarTarefa(td.dataset.tdel);
   const ce = ev.target.closest("[data-editar]"); if (ce) return abrirEditar("conteudo", ce.dataset.editar);
@@ -1028,6 +1067,7 @@ $("formReels").onsubmit = enviarReels;
 $("apCancelar").onclick = () => $("mAprovar").classList.add("hide");
 $("formPauta").onsubmit = salvarPauta;
 $("btnAtualizar").onclick = carregar;
+$("btnPlano").onclick = abrirPlano;
 $("btnSair").onclick = async () => { if (sb) await sb.auth.signOut(); mostrar(false); };
 $("formLogin").onsubmit = async ev => {
   ev.preventDefault(); $("msgLogin").textContent = "";
