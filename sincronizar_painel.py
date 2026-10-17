@@ -106,7 +106,8 @@ def enviar(linhas, modo):
         with urllib.request.urlopen(req, timeout=60) as r:
             print(f"OK ({modo}): {len(linhas)} linha(s), HTTP {r.status}")
     except urllib.error.HTTPError as e:
-        print(f"ERRO ({modo}): HTTP {e.code} — {e.read().decode(errors='replace')[:500]}")
+        msg = e.read().decode(errors='replace')[:500].replace("\n", " ")
+        print(f"::error::ERRO ({modo}): HTTP {e.code} — {msg}")
         raise SystemExit(1)
 
 
