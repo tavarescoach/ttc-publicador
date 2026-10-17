@@ -1,0 +1,48 @@
+[
+  {
+    "id": "2026-10-17-1",
+    "data": "2026-10-17",
+    "ordem": 1,
+    "formato": "aprovar",
+    "acao": "aprovar",
+    "titulo": "Revisar e aprovar os conteúdos prontos (carrosséis e reels)",
+    "detalhe": "Abra cada um em Ver arte, ajuste a legenda se quiser e clique em Aprovar e agendar.\nAtenção: o carrossel da creatina está sugerido para dom 18/10 às 12h, o mesmo horário do estático \"Envelhecer mal...\". Escolha outro horário (ex.: 18h30)."
+  },
+  {
+    "id": "2026-10-17-2",
+    "data": "2026-10-17",
+    "ordem": 2,
+    "formato": "outro",
+    "acao": "manual",
+    "titulo": "Cancelar o card de teste do reels (\"TESTE (pode ignorar)\")"
+  },
+  {
+    "id": "2026-10-18-1",
+    "data": "2026-10-18",
+    "ordem": 1,
+    "formato": "outro",
+    "acao": "manual",
+    "horario": "08:00",
+    "titulo": "Ler o pacote de conteúdo da semana 19–25/10 e aprovar as pautas",
+    "detalhe": "O pacote chega às 7h51 (doc + aviso no celular). A lista do dia de cada dia da semana aparece aqui no painel."
+  },
+  {
+    "id": "2026-10-18-2",
+    "data": "2026-10-18",
+    "ordem": 2,
+    "formato": "stories",
+    "acao": "manual",
+    "horario": "20:00",
+    "titulo": "Stories manuais de domingo: bastidor da preparação da semana",
+    "detalhe": "2 stories ao vivo: o planejamento da semana de treinos e a agenda de avaliações. Fechar com convite: \"Me manda MÉTODO no direct.\""
+  },
+  {
+    "id": "2026-10-18-3",
+    "data": "2026-10-18",
+    "ordem": 3,
+    "formato": "gravacao",
+    "acao": "manual",
+    "titulo": "Marcar na agenda o bloco de gravação da semana (~2h)",
+    "detalhe": "A revisão semanal de domingo (18h52) sugere o melhor horário com base na sua agenda."
+  }
+]

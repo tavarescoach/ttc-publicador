@@ -166,6 +166,27 @@ def cancelados():
         return set()
 
 
+def enviar_tarefas():
+    """tarefas.json -> tabela tarefas (checklist do dia no painel). Só insere o que é novo,
+    para não desmarcar o que o Luan já concluiu."""
+    lista = ler("tarefas.json")
+    if not lista:
+        return
+    campos = ["id", "data", "ordem", "formato", "titulo", "detalhe", "horario", "acao"]
+    linhas = [{c: t.get(c) for c in campos} for t in lista]
+    if SIMULAR:
+        print(f"[simulação] tarefas: {len(linhas)}")
+        return
+    req = urllib.request.Request(
+        f"{URL}/rest/v1/tarefas?on_conflict=id", data=json.dumps(linhas, ensure_ascii=False).encode(), method="POST",
+        headers={"apikey": KEY, "Content-Type": "application/json", "Prefer": "resolution=ignore-duplicates,return=minimal"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            print(f"OK (tarefas): {len(linhas)} linha(s), HTTP {r.status}")
+    except urllib.error.HTTPError as e:
+        print(f"::warning::tarefas não sincronizadas: HTTP {e.code} — {e.read().decode(errors='replace')[:300]}")
+
+
 def main():
     if not SIMULAR and not (URL and KEY):
         print("Faltam SUPABASE_URL e SUPABASE_SERVICE_KEY.")
@@ -174,6 +195,7 @@ def main():
     enviar([da_pauta(i) for i in ler("pautas.json") if i.get("id") not in fora], "ignore")
     enviar([da_fila(i) for i in ler("fila.json") if i.get("id") not in fora], "merge")
     respostas_criacoes()
+    enviar_tarefas()
     return 0
 
 
