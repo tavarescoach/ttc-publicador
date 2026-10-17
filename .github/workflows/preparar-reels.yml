@@ -1,0 +1,47 @@
+name: Preparar reels
+
+# Disparado pela sessão do Estúdio: baixa o vídeo enviado no painel, copia para o bucket público,
+# extrai quadros e transcreve o áudio. Resultado em render/reels/<id>/ para o Claude criar capa e legenda.
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "id do card de reels no painel"
+        required: true
+
+concurrency:
+  group: preparar-reels-${{ github.event.inputs.id }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar ffmpeg e transcrição
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q faster-whisper==1.0.3
+      - name: Preparar
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python render/preparar_reels.py "${{ github.event.inputs.id }}"
+      - name: Guardar no repositório
+        run: |
+          git add render/reels
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "reels: quadros e transcrição de ${{ github.event.inputs.id }}"
+            git pull --rebase
+            git push
+          fi

@@ -219,6 +219,7 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
     <div class="col">
       <h2>A executar <span class="n" id="nEsq"></span></h2>
       <p>Pautas e artes em produção. Avance cada uma até ficar pronta.</p>
+      <button class="btn" data-reels="" style="width:100%;margin:2px 0 6px;border-style:dashed">▶ Enviar vídeo de reels</button>
       <div id="colEsq"></div>
     </div>
     <div class="col">
@@ -266,6 +267,37 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
     <div class="passos" id="ePassos"></div>
     <div id="eCorpo"></div>
   </div>
+</div>
+
+<!-- ENVIAR REELS -->
+<div class="fundo hide" id="mReels" style="z-index:25">
+  <form class="caixa" id="formReels" style="max-width:540px">
+    <h1 style="margin-top:0">Enviar reels</h1>
+    <p>O Claude cria a capa e a legenda. Depois você aprova e agenda no painel.</p>
+    <div id="rCampos">
+      <label for="rArq">Vídeo (MP4 ou MOV, até 50 MB)</label><input type="file" id="rArq" accept="video/mp4,video/quicktime,.mp4,.mov" required>
+      <label for="rTema">Tema do vídeo</label><input id="rTema" required maxlength="200" placeholder="Ex.: 3 erros na rosca direta">
+      <label for="rNotas">O que você fala ou mostra, e o que quer destacar (opcional)</label>
+      <textarea id="rNotas" rows="4" style="resize:vertical" placeholder="Ex.: mostro o erro do cotovelo e a correção. Quero que termine convidando para a avaliação."></textarea>
+      <div class="linha">
+        <div><label for="rFunil">Funil</label><select id="rFunil"><option value="topo">Topo (alcance)</option><option value="meio">Meio (autoridade)</option><option value="fundo">Fundo (venda)</option></select></div>
+        <div><label for="rQuando">Dia e horário sugeridos</label><input type="datetime-local" id="rQuando" required></div>
+      </div>
+      <div class="linha" style="margin-top:18px">
+        <button type="button" class="btn" data-fechar-reels>Cancelar</button>
+        <button type="submit" class="btn red" style="margin:0" id="rEnviar">Enviar vídeo</button>
+      </div>
+    </div>
+    <div id="rFeito" class="hide">
+      <div class="esperando" style="text-align:left"><b>Vídeo enviado.</b> Último passo: abra o Estúdio e clique em <b>Gerar capa e legenda</b>.
+        Em 5 a 15 minutos o reels aparece em <b>Pronto para aprovar</b>, com capa e legenda.</div>
+      <div class="linha" style="margin-top:18px">
+        <button type="button" class="btn" data-fechar-reels>Fechar</button>
+        <a class="btn red" id="rLink" target="_blank" rel="noopener" style="text-align:center;text-decoration:none;color:#fff">Gerar capa e legenda ↗</a>
+      </div>
+    </div>
+    <div class="msg" id="rMsg"></div>
+  </form>
 </div>
 
 <!-- APROVAR -->
@@ -586,6 +618,46 @@ function desenharVisor(){
     + (r.etapa === "pronto" ? `<button class="mini go" data-aprovar="${esc(r.id)}">Aprovar e agendar</button>` : "");
 }
 
+const ESTUDIO = "https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH";
+const temVideo = r => (r.arquivos || []).some(a => String(a).startsWith("materiais:"));
+let reelsDe = null;
+function abrirReels(id){
+  const r = id ? dados.find(x => x.id === id) : null; reelsDe = r;
+  $("formReels").reset(); $("rMsg").textContent = "";
+  $("rCampos").classList.remove("hide"); $("rFeito").classList.add("hide");
+  if (r){ $("rTema").value = r.pauta || ""; if (r.funil) $("rFunil").value = r.funil; }
+  const q = r && r.quando ? new Date(r.quando) : new Date(Date.now() + 864e5);
+  const base = new Date(q.getTime() - 3*3600e3).toISOString().slice(0,10);
+  $("rQuando").value = r && r.quando ? new Date(q.getTime() - 3*3600e3).toISOString().slice(0,16) : base + "T07:00";
+  $("mReels").classList.remove("hide");
+}
+async function enviarReels(ev){
+  ev.preventDefault();
+  const f = $("rArq").files[0];
+  if (!f){ $("rMsg").textContent = "Escolha o vídeo."; return; }
+  if (f.size > 50e6){ $("rMsg").textContent = `O vídeo tem ${(f.size/1e6).toFixed(0)} MB. O limite é 50 MB: exporte no CapCut em 1080p com taxa de bits menor e envie de novo.`; return; }
+  const quando = $("rQuando").value + ":00-03:00";
+  const ext = /\.mov$/i.test(f.name) || f.type === "video/quicktime" ? "mov" : "mp4";
+  const id = reelsDe ? reelsDe.id : "r-" + new Date().toLocaleString("sv-SE",{timeZone:"America/Sao_Paulo"}).replace(/\D/g,"").slice(2,12) + "-" + Math.random().toString(36).slice(2,5);
+  const caminho = `reels/${id}/video-${Date.now().toString(36)}.${ext}`;
+  $("rEnviar").disabled = true; $("rMsg").textContent = "Enviando o vídeo... (pode levar alguns minutos)";
+  if (!DEMO){
+    const up = await sb.storage.from("materiais").upload(caminho, f, {contentType: ext === "mov" ? "video/quicktime" : "video/mp4"});
+    if (up.error){ $("rEnviar").disabled = false; $("rMsg").textContent = "Falha no envio: " + up.error.message; return; }
+  }
+  const linha = {id, tipo:"REELS", etapa:"em_criacao", pauta:$("rTema").value.trim(), funil:$("rFunil").value,
+    data: quando.slice(0,10), quando, arquivos:["materiais:" + caminho], legenda: $("rNotas").value.trim() || null, capa:null};
+  if (!DEMO){
+    const {error} = await sb.from("conteudos").upsert(linha, {onConflict:"id"});
+    if (error){ $("rEnviar").disabled = false; $("rMsg").textContent = "Vídeo enviado, mas o card não salvou: " + error.message; return; }
+  }
+  const i = dados.findIndex(x => x.id === id); if (i >= 0) dados[i] = {...dados[i], ...linha}; else dados.push(linha);
+  $("rEnviar").disabled = false; $("rMsg").textContent = "";
+  $("rLink").href = `${ESTUDIO}#reels-${id}`;
+  $("rCampos").classList.add("hide"); $("rFeito").classList.remove("hide");
+  desenhar();
+}
+
 function card(r, botoes, comThumb){
   const classe = ["erro","atrasado"].includes(r.etapa) ? "erro" : r.etapa === "publicado" ? "pub" : "";
   return `<div class="card ${classe}">
@@ -654,7 +726,10 @@ function desenhar(){
 
   $("colEsq").innerHTML = (mostrarCriacoes ? criacoesHtml() : "") + ESQ.map((e,i) => grupo(e.nome, ["#64748B","#F59E0B","#C1121F"][i],
     esq.filter(r => r.etapa === e.etapa).sort(porData),
-    r => card(r, `<button class="mini go" data-mover="${esc(r.id)}" data-para="${e.prox}">${e.rot}</button>`
+    r => card(r, (r.tipo === "REELS" && temVideo(r)
+        ? `<a class="mini go" href="${ESTUDIO}#reels-${esc(r.id)}" target="_blank" rel="noopener">Gerar capa e legenda ↗</a>`
+        : r.tipo === "REELS" ? `<button class="mini go" data-reels="${esc(r.id)}">Enviar vídeo</button>` : "")
+      + `<button class="mini ${r.tipo === "REELS" ? "" : "go"}" data-mover="${esc(r.id)}" data-para="${e.prox}">${e.rot}</button>`
       + (i > 0 ? `<button class="mini" data-mover="${esc(r.id)}" data-para="${ESQ[i-1].etapa}">← Voltar</button>` : "")),
     e.etapa === "pauta" ? "Nenhuma pauta. Use + Criar → Abrir o Estúdio." : "Nada aqui.")).join("");
 
@@ -750,6 +825,9 @@ document.addEventListener("click", ev => {
     try { localStorage.setItem("ltFiltro", JSON.stringify(filtro)); } catch(_){}
     return desenhar();
   }
+  const rl = ev.target.closest("[data-reels]");
+  if (rl) return abrirReels(rl.dataset.reels || null);
+  if (ev.target.closest("[data-fechar-reels]") || ev.target === $("mReels")) return $("mReels").classList.add("hide");
   const ap = ev.target.closest("[data-aprovar]");
   if (ap) return abrirAprovar(ap.dataset.aprovar);
   if (ev.target === $("mAprovar")) return $("mAprovar").classList.add("hide");
@@ -775,6 +853,7 @@ document.addEventListener("keydown", ev => {
 });
 $("pCancelar").onclick = fecharModal;
 $("formAprovar").onsubmit = aprovar;
+$("formReels").onsubmit = enviarReels;
 $("apCancelar").onclick = () => $("mAprovar").classList.add("hide");
 $("formPauta").onsubmit = salvarPauta;
 $("btnAtualizar").onclick = carregar;

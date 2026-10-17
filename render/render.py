@@ -44,11 +44,11 @@ def subir(caminho_local, caminho_bucket):
     urllib.request.urlopen(req, timeout=60).read()
 
 
-def gravar_card(p, arquivos):
+def gravar_card(p, arquivos, capa=None, tipo="CARROSSEL"):
     linha = {
-        "id": p["id"], "data": p.get("data"), "tipo": "CARROSSEL", "pauta": p.get("pauta"),
+        "id": p["id"], "data": p.get("data"), "tipo": tipo, "pauta": p.get("pauta"),
         "funil": p.get("funil"), "etapa": "pronto", "quando": p.get("quando"),
-        "arquivos": arquivos, "legenda": p.get("legenda"), "capa": None, "link": None, "media_id": None,
+        "arquivos": arquivos, "legenda": p.get("legenda"), "capa": capa, "link": None, "media_id": None,
     }
     req = urllib.request.Request(
         f"{URL}/rest/v1/conteudos?on_conflict=id", data=json.dumps([linha], ensure_ascii=False).encode(),
@@ -68,8 +68,13 @@ def main():
     os.makedirs(saida, exist_ok=True)
     os.makedirs(fotos, exist_ok=True)
 
+    reels = p.get("formato") == "reels"
+    W, H = (1080, 1920) if reels else (1080, 1350)
+    for i, s in enumerate(slides, 1):  # foto do repositório (quadro do vídeo) -> caminho absoluto
+        if (s.get("foto") or "").startswith("render/"):
+            s["foto"] = "file://" + os.path.join(RAIZ, s["foto"])
     for i, s in enumerate(slides, 1):  # foto remota -> arquivo local; se falhar, slide sem foto
-        if s.get("foto", "").startswith("http"):
+        if (s.get("foto") or "").startswith("http"):
             destino = os.path.join(fotos, f"{p['id']}-{i}.jpg")
             try:
                 baixar_foto(s["foto"], destino)
@@ -79,25 +84,27 @@ def main():
                 s["foto"] = None
 
     arquivos = []
-    modelo = "file://" + os.path.join(AQUI, "carrossel.html")
+    modelo = "file://" + os.path.join(AQUI, "capa-reels.html" if reels else "carrossel.html")
     with sync_playwright() as pw:
         nav = pw.chromium.launch()
-        pg = nav.new_page(viewport={"width": 1080, "height": 1350})
+        pg = nav.new_page(viewport={"width": W, "height": H})
         for i, s in enumerate(slides, 1):
             pg.add_init_script(f"window.SLIDE={json.dumps(s, ensure_ascii=False)};window.TOTAL={len(slides)};window.INDICE={i};")
             pg.goto(modelo)
             pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(300)
-            arq = os.path.join(saida, f"carrossel-{i}.png")
-            pg.screenshot(path=arq)
-            arquivos.append(f"{pasta_rel}/carrossel-{i}.png")
+            nome = "reels-capa.png" if reels else f"carrossel-{i}.png"
+            pg.screenshot(path=os.path.join(saida, nome))
+            arquivos.append(f"{pasta_rel}/{nome}")
             pg.close()
-            pg = nav.new_page(viewport={"width": 1080, "height": 1350})
+            pg = nav.new_page(viewport={"width": W, "height": H})
+            if reels:
+                break
         nav.close()
     print(f"{len(arquivos)} slides gerados em {saida}")
     try:  # folha de prévia (para conferência do Claude): render/previas/<id>.jpg
         from PIL import Image
-        W, H, n = 270, 338, len(arquivos)
+        W, H, n = (300, 533, 1) if reels else (270, 338, len(arquivos))
         cols = 5
         folha = Image.new("RGB", (cols * (W + 6) + 6, ((n + cols - 1) // cols) * (H + 6) + 6), (40, 40, 40))
         for k, a in enumerate(arquivos):
@@ -112,7 +119,10 @@ def main():
         return 0
     for a in arquivos:
         subir(os.path.join(RAIZ, "render", "_saida", a), a)
-    gravar_card(p, arquivos)
+    if reels:
+        gravar_card(p, [p["video"]], capa=arquivos[0], tipo="REELS")
+    else:
+        gravar_card(p, arquivos)
     print(f"card '{p['id']}' gravado como pronto no painel")
     return 0
 
