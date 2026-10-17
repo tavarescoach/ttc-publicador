@@ -27,6 +27,10 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
 ## ESTUDIO pesquisa <doc_id>
 1. `ArtifactData get` (collection `criacoes`, doc_id). Guarde `version`. Se status não for "pesquisando", pare.
 2. Pesquise notícias, estudos recentes, trends e termos em alta ligados ao `foco` (ou ao nicho, se vazio). Confira as fontes.
+   **Notícia do Radar:** se o `foco` começa com `radar:<id>` (pode vir seguido de ` | direção extra`), procure o item com esse id em
+   `radar/curadoria/*.json` (o mais recente) ou em `radar/coleta.json`. Leia a matéria com WebFetch no `link` e confira os fatos em
+   outra fonte. As 5 opções partem DESSA notícia, cada uma com um ângulo diferente (ciência/decodificado, mito x método, objeção,
+   público feminino, bastidor/prova), e a tese cita a reportagem como ponto de partida, sem copiar trechos dela.
 3. Monte 5 opções DIFERENTES entre si (autoridade/ciência, mito x método, objeção, público feminino, prova/bastidor), cada uma com:
    - titulo (até 8 palavras), subtitulo (1 frase), frases (2 frases curtas de COMO explorar e ligar aos conteúdos e à venda — não frases de efeito);
    - tese: seções `## A tese`, `## O que a ciência mostra` (com fontes), `## Por que isso importa para o seu público` (executivo 30–45 e mulher 30–50),
