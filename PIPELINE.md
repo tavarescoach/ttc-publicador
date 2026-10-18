@@ -45,6 +45,7 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
      `## O custo escondido da crença errada`, `## Como o método aplica`, `## Objeções que esse tema responde`, `## Desdobramentos de conteúdo`,
      `## Cuidado de comunicação`. Use "- " em listas e **negrito**. Nada genérico.
    - headlines: 4 investigativas e culturais, com potencial viral (curiosidade, conexão). titulo = frase 1, subtitulo = frase 2.
+     Se a reportagem de partida tiver uma pessoa conhecida no centro do fato, pelo menos 2 das 4 headlines nomeiam a pessoa.
      Cada headline leva `notas` {curiosidade, clareza, marca, publico, venda} (0–10 cada, seja exigente e diferencie) e
      `publico_alvo` (executivo | mulher | ambos). A opção leva `recomendada_h` {indice (1–4), motivo (2 frases), ajuste
      {titulo, subtitulo} ou null}: a headline que melhor equilibra parar o scroll, salvamento e venda, com uma versão
@@ -70,7 +71,10 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
 2. Para `carrossel`: escreva `render/pedidos/e-<doc_id>-carrossel.json` seguindo `diretrizes/carrossel.md`
    (id "e-<doc_id>-carrossel", data = dia de `quando`, quando, funil, pauta = headline.titulo, legenda, 9–10 slides).
    A capa usa a headline confirmada pelo Luan (título); destaque 1–3 palavras com **...**.
-   Fatos e números: só os que estão na tese ou que você confirmar com pesquisa. Fotos conforme a seção Fotos.
+   Fatos e números: só os que estão na tese ou que você confirmar com pesquisa. Fotos: se a pauta partiu de reportagem com pessoa conhecida no centro do fato, a capa
+   segue a seção "Capa de pauta de notícia com pessoa conhecida" de diretrizes/carrossel.md (foto da pessoa, `credito`,
+   `licenca`), mesmo que a headline confirmada não cite o nome; nesse caso mantenha a headline do Luan. Nos demais casos,
+   seção Fotos.
    Escreva também `render/fontes/e-<doc_id>-carrossel.json` com os links dos estudos e notícias usados (formato em
    diretrizes/carrossel.md, seção Fontes). Se veio do Radar, inclua a matéria do Radar como "noticia".
 3. `git pull --rebase`, commit e push. Espere o robô "Renderizar artes" terminar (`gh api .../actions/workflows/renderizar-artes.yml/runs`).
