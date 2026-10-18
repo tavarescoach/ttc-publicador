@@ -65,7 +65,9 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
    `{id:"e-<doc_id>-<formato>", pauta: headline.titulo, legenda: headline.subtitulo, tipo (reels/broll→REELS, estatico→IMAGEM, stories→STORY), etapa:"pauta", data}`
    e faça push (o robô "Sincronizar painel" coloca na coluna da esquerda).
 6. `ArtifactData update`: {status:"pronto", vez:"luan", resultado:{carrossel:"e-<doc_id>-carrossel", ...}, atualizado_em}.
-   O Luan aprova no painel (Pronto para aprovar → Aprovar e agendar); o robô de publicação importa o aprovado.
+   Revisão automática (render/revisar.py, roda no robô "Renderizar artes"): se passar, o card entra AGENDADO sozinho e o Luan só veta se quiser;
+   se não passar, ou se for prova com aluno ou tema de saúde/hormônio/suplemento, vai para "Precisa de você" com o motivo
+   (render/revisoes/<id>.json). Antes do push, rode `python render/revisar.py render/pedidos/<id>.json` e corrija os "problemas".
 
 ## ESTUDIO reels <id>
 O Luan enviou um vídeo pelo painel (card `<id>` em "Em criação"). O doc do Estúdio tem o mesmo id (`criacoes/<id>`, origem "reels").
