@@ -7,6 +7,12 @@
 4. Coloca no Radar as datas do calendário que estão chegando (radar/calendario.json).
 5. Exporta radar/preferencias.json (o que o Luan salvou e descartou) para a curadoria aprender.
 
+Fontes: radar/fontes.json é a base. O botão "Fontes" do painel grava eventos em materiais/radar/fontes/*.json
+(adicionar | remover | pausar | reativar). Aqui os eventos são aplicados em ordem; para sites novos o feed é
+descoberto sozinho (RSS direto, <link rel="alternate">, caminhos comuns e, por último, Google Notícias site:).
+O resultado (com o desempenho de cada fonte na coleta) vai para materiais/radar/fontes-ativas.json, que o painel
+lê, e para radar/fontes-extras.json no repositório.
+
 Variáveis: SUPABASE_URL, SUPABASE_SERVICE_KEY (sem elas, só gera o arquivo).
 """
 import calendar
@@ -103,19 +109,167 @@ def og_image(link):
         return None
 
 
-def coletar():
-    fontes = json.load(open(os.path.join(AQUI, "fontes.json"), encoding="utf-8"))
+# ---------- fontes adicionadas pelo painel ----------
+
+def storage(metodo, caminho, corpo=None, tipo="application/json", upsert=False):
+    h = {"apikey": KEY, "Authorization": f"Bearer {KEY}", "Content-Type": tipo, "cache-control": "no-cache"}
+    if upsert:
+        h["x-upsert"] = "true"
+    dados = corpo if isinstance(corpo, (bytes, type(None))) else json.dumps(corpo, ensure_ascii=False).encode()
+    req = urllib.request.Request(f"{URL}/storage/v1/{caminho}", method=metodo, headers=h, data=dados)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read()
+
+
+def eventos_painel():
+    """Eventos gravados pelo botão Fontes do painel, em ordem de criação."""
+    if not (URL and KEY):
+        return []
+    try:
+        lista = json.loads(storage("POST", "object/list/materiais", {
+            "prefix": "radar/fontes", "limit": 1000, "offset": 0, "sortBy": {"column": "name", "order": "asc"}}))
+    except Exception as e:
+        print(f"[aviso] não li os eventos de fontes: {e}")
+        return []
+    evs = []
+    for o in sorted(lista, key=lambda o: o["name"]):
+        if not o["name"].endswith(".json"):
+            continue
+        try:
+            ev = json.loads(storage("GET", "object/materiais/radar/fontes/" + urllib.parse.quote(o["name"])))
+            ev["_arquivo"] = o["name"]
+            evs.append(ev)
+        except Exception as e:
+            print(f"[aviso] evento {o['name']} ilegível: {e}")
+    return evs
+
+
+def aplicar_eventos(base, evs):
+    nomes_base = {f["canal"] for f in base}
+    extras, pausadas = {}, set()
+    for ev in evs:
+        a, c = ev.get("acao"), (ev.get("canal") or "").strip()[:60]
+        if not c:
+            continue
+        if a == "adicionar":
+            url = (ev.get("url") or "").strip()
+            if c in nomes_base or not re.match(r"^https?://[^\s/]+\.[^\s]+$", url):
+                continue
+            extras[c] = {"canal": c, "url": url, "peso": float(ev.get("peso") or 1.0),
+                         "adicionado_em": ev.get("quando"), "evento": ev["_arquivo"]}
+            pausadas.discard(c)
+        elif a == "remover":
+            extras.pop(c, None)
+            pausadas.discard(c)
+        elif a == "pausar":
+            pausadas.add(c)
+        elif a == "reativar":
+            pausadas.discard(c)
+    return extras, pausadas
+
+
+def baixar(url, limite=400_000):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/xml,*/*"})
+    with urllib.request.urlopen(req, timeout=12) as r:
+        return r.geturl(), r.read(limite).decode("utf-8", "replace")
+
+
+def tem_itens(url):
+    try:
+        return len(feedparser.parse(url, agent=UA).entries) > 0
+    except Exception:
+        return False
+
+
+def descobrir_feed(url):
+    """Devolve (feeds, modo) para um endereço qualquer colado no painel."""
+    if tem_itens(url):
+        return [url], "rss"
+    final, pg = url, ""
+    try:
+        final, pg = baixar(url)
+        achados = []
+        for tag in re.findall(r"<link\b[^>]*>", pg, flags=re.I):
+            if re.search(r"rel=[\"']?alternate", tag, re.I) and re.search(r"(rss|atom)\+xml", tag, re.I):
+                m = re.search(r"href=[\"']([^\"']+)", tag, re.I)
+                if m:
+                    achados.append(urllib.parse.urljoin(final, html.unescape(m.group(1))))
+        for f in achados[:4]:
+            if tem_itens(f):
+                return [f], "descoberto"
+    except Exception as e:
+        print(f"[aviso] não abri {url}: {e}")
+    raiz = urllib.parse.urlsplit(final)
+    base_url = f"{raiz.scheme}://{raiz.netloc}"
+    caminho = raiz.path.rstrip("/")
+    tentativas = []
+    for pre in ([caminho] if caminho else []) + [""]:
+        tentativas += [f"{base_url}{pre}/feed", f"{base_url}{pre}/rss", f"{base_url}{pre}/feed.xml", f"{base_url}{pre}/rss.xml"]
+    tentativas += [f"{base_url}/atom.xml", f"{base_url}/index.xml"]
+    for f in tentativas:
+        if tem_itens(f):
+            return [f], "descoberto"
+    dominio = raiz.netloc.removeprefix("www.")
+    alvo = dominio + (caminho if caminho and caminho.count("/") <= 2 else "")
+    lang = re.search(r"<html[^>]*\blang=[\"']?([a-zA-Z-]+)", pg or "", re.I)
+    br = dominio.endswith(".br") or bool(lang and lang.group(1).lower().startswith("pt"))
+    termos = "(saude+OR+treino+OR+exercicio+OR+sono+OR+estudo)" if br else "(health+OR+fitness+OR+exercise+OR+sleep+OR+study)"
+    loc = "hl=pt-BR&gl=BR&ceid=BR:pt-419" if br else "hl=en-US&gl=US&ceid=US:en"
+    gn = f"https://news.google.com/rss/search?q=site:{urllib.parse.quote(alvo)}+{termos}+when:7d&{loc}"
+    if tem_itens(gn):
+        return [gn], "google_news"
+    gn_amplo = f"https://news.google.com/rss/search?q=site:{urllib.parse.quote(dominio)}+when:7d&{loc}"
+    return [gn_amplo], "google_news"
+
+
+def montar_fontes():
+    base = json.load(open(os.path.join(AQUI, "fontes.json"), encoding="utf-8"))
+    evs = eventos_painel()
+    extras, pausadas = aplicar_eventos(base, evs)
+    fontes = []
+    for f in base:
+        fontes.append({**f, "origem": "base", "ativa": f["canal"] not in pausadas, "modo": "rss"})
+    for c, e in extras.items():
+        feeds, modo = descobrir_feed(e["url"])
+        print(f"Fonte do painel: {c} -> {modo} ({feeds[0]})")
+        fontes.append({"canal": c, "dominio": urllib.parse.urlsplit(e["url"]).netloc.removeprefix("www."), "peso": e["peso"],
+                       "feeds": feeds, "origem": "painel", "url": e["url"], "modo": modo, "ativa": c not in pausadas,
+                       "adicionado_em": e["adicionado_em"]})
+    return fontes, (evs[-1]["_arquivo"] if evs else None)
+
+
+def publicar_fontes(fontes, relatorio, ultimo_evento):
+    estado = {
+        "atualizado_em": AGORA.isoformat(), "ultimo_evento": ultimo_evento,
+        "fontes": [{k: f.get(k) for k in ("canal", "dominio", "url", "peso", "feeds", "origem", "modo", "ativa", "adicionado_em")}
+                   | relatorio.get(f["canal"], {}) for f in fontes],
+    }
+    extras = [f for f in estado["fontes"] if f["origem"] == "painel" or not f["ativa"]]
+    with open(os.path.join(AQUI, "fontes-extras.json"), "w", encoding="utf-8") as fh:
+        json.dump(extras, fh, ensure_ascii=False, indent=1)
+    if URL and KEY:
+        storage("POST", "object/materiais/radar/fontes-ativas.json",
+                json.dumps(estado, ensure_ascii=False).encode(), upsert=True)
+        print(f"Fontes publicadas no painel: {sum(f['ativa'] for f in fontes)} ativas de {len(fontes)}.")
+
+
+def coletar(fontes):
     saida, relatorio = [], {}
     for f in fontes:
-        itens, vistos = [], set()
+        if not f.get("ativa", True):
+            relatorio[f["canal"]] = {"coletadas": 0, "aproveitadas": 0}
+            continue
+        itens, vistos, falhas = [], set(), 0
         for url in f["feeds"]:
             try:
                 d = feedparser.parse(url, agent=UA)
             except Exception as e:
                 print(f"[aviso] {f['canal']}: {url} falhou ({e})")
+                falhas += 1
                 continue
             if not d.entries:
                 print(f"[aviso] {f['canal']}: sem itens em {url}")
+                falhas += 1
             for e in d.entries:
                 titulo = limpar(e.get("title"))
                 link = e.get("link")
@@ -139,15 +293,17 @@ def coletar():
                 })
         itens.sort(key=lambda x: (x["pre"], x["publicado_em"] or ""), reverse=True)
         bons = [i for i in itens if i["pre"] > 0][:POR_CANAL]
-        relatorio[f["canal"]] = f"{len(bons)}/{len(itens)}"
+        relatorio[f["canal"]] = {"coletadas": len(itens), "aproveitadas": len(bons),
+                                 "falhou": falhas == len(f["feeds"])}
         saida.extend(bons)
     buscas = 0
     for i in saida:  # imagem de prévia quando o feed não traz
         if not i["imagem"] and buscas < 60:
             i["imagem"] = og_image(i["link"])
             buscas += 1
-    print("Por canal (aproveitadas/coletadas):", json.dumps(relatorio, ensure_ascii=False))
-    return saida
+    print("Por canal (aproveitadas/coletadas):",
+          json.dumps({c: f"{r['aproveitadas']}/{r['coletadas']}" for c, r in relatorio.items()}, ensure_ascii=False))
+    return saida, relatorio
 
 
 def calendario_proximo():
@@ -182,7 +338,12 @@ def supa(metodo, caminho, corpo=None, prefer=None):
 
 
 def main():
-    itens = coletar()
+    fontes, ultimo_evento = montar_fontes()
+    itens, relatorio = coletar(fontes)
+    try:
+        publicar_fontes(fontes, relatorio, ultimo_evento)
+    except Exception as e:
+        print(f"::warning::Não publiquei a lista de fontes: {e}")
     with open(os.path.join(AQUI, "coleta.json"), "w", encoding="utf-8") as f:
         json.dump({"coletado_em": AGORA.isoformat(), "itens": itens}, f, ensure_ascii=False, indent=1)
     print(f"{len(itens)} notícias pré-selecionadas.")

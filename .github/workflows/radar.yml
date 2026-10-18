@@ -44,7 +44,7 @@ jobs:
       - name: Salvar coleta no repositório
         if: github.event_name != 'push'
         run: |
-          git add radar/coleta.json radar/preferencias.json 2>/dev/null || true
+          for f in radar/coleta.json radar/preferencias.json radar/fontes-extras.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           if ! git diff --cached --quiet; then
             git config user.name "ttc-publicador"
             git config user.email "actions@users.noreply.github.com"
