@@ -1,0 +1,28 @@
+{
+ "pares": [
+  {
+   "headline": "Fim de semana não desfaz sua semana",
+   "formato": "reels",
+   "quando": "2026-10-17",
+   "alcance": 446,
+   "valor": 30,
+   "taxa": 6.7,
+   "parcial": true,
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
+  }
+ ],
+ "medidos": 0,
+ "com_notas": 0,
+ "mediana_taxa_perfil": 14.1,
+ "correlacao_taxa": {},
+ "pesos_sugeridos": null,
+ "recomendada": {
+  "seguiu": 0,
+  "nao_seguiu": 0,
+  "taxa_seguiu": null,
+  "taxa_nao_seguiu": null
+ }
+}

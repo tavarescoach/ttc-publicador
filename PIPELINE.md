@@ -18,10 +18,12 @@ Responda e escreva sempre em português do Brasil.
 - Robô "Renderizar artes": cada push em `render/pedidos/*.json` gera os PNGs, sobe para o bucket e cria o card
   "Pronto para aprovar" no painel; guarda a prévia em `render/previas/<id>.jpg`.
 
-## Desempenho do Instagram (coleção `contexto`, doc `instagram`)
-O Estúdio usa esse documento para dar a nota "Parecida com o que funcionou" às headlines. No início de toda execução,
-rode `python3 metricas/estudio_contexto.py` e grave `metricas/estudio-contexto.json` com `ArtifactData set` (file_path,
-com o `if_version` lido no `get`). Ao avaliar headlines (ver pesquisa), use esses posts como referência real.
+## Contexto do Estúdio (coleção `contexto`)
+Coleção `contexto`: `instagram` (desempenho real), `radar` (assuntos em alta) e `aprendizado` (headline escolhida x
+resultado). O Estúdio usa esses docs para avaliar as headlines e reavalia na tela as que chegarem sem `formato_ideal`,
+`risco` ou notas de `historico`/`atualidade`. No início de toda execução, rode `python3 metricas/estudio_contexto.py`
+e grave `instagram` e `radar` com `ArtifactData` (`list` em `contexto` para as versões, depois `batch` de `set` com
+`file_path` e `if_version`). O doc `aprendizado` é atualizado pela curadoria do Radar.
 
 ## Documento da criação (coleção `criacoes`)
 Campos: status (pesquisando | opcoes | rascunho | gerando | pronto | erro), vez (claude | luan), origem (pesquisa | material | ideias),
