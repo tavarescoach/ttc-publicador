@@ -1,1 +1,146 @@
-[]
+[
+ {
+  "canal": "Forbes",
+  "dominio": "forbes.com.br",
+  "url": "https://forbes.com.br/",
+  "peso": 1.0,
+  "feeds": [
+   "https://forbes.com.br/feed/"
+  ],
+  "origem": "painel",
+  "modo": "descoberto",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:47:04.730Z",
+  "coletadas": 50,
+  "aproveitadas": 10,
+  "falhou": false
+ },
+ {
+  "canal": "Bloomberg",
+  "dominio": "bloomberg.com",
+  "url": "https://www.bloomberg.com/billionaires/",
+  "peso": 1.0,
+  "feeds": [
+   "https://news.google.com/rss/search?q=site:bloomberg.com/billionaires+(health+OR+fitness+OR+exercise+OR+sleep+OR+study)+when:7d&hl=en-US&gl=US&ceid=US:en"
+  ],
+  "origem": "painel",
+  "modo": "google_news",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:47:13.769Z",
+  "coletadas": 2,
+  "aproveitadas": 0,
+  "falhou": false
+ },
+ {
+  "canal": "Gq",
+  "dominio": "gq.com",
+  "url": "https://www.gq.com/",
+  "peso": 1.0,
+  "feeds": [
+   "https://www.gq.com/feed/rss"
+  ],
+  "origem": "painel",
+  "modo": "descoberto",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:47:41.417Z",
+  "coletadas": 13,
+  "aproveitadas": 1,
+  "falhou": false
+ },
+ {
+  "canal": "Vanityfair",
+  "dominio": "vanityfair.com",
+  "url": "https://www.vanityfair.com/",
+  "peso": 1.0,
+  "feeds": [
+   "https://www.vanityfair.com/feed/rss"
+  ],
+  "origem": "painel",
+  "modo": "descoberto",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:48:14.521Z",
+  "coletadas": 14,
+  "aproveitadas": 2,
+  "falhou": false
+ },
+ {
+  "canal": "Nytimes",
+  "dominio": "nytimes.com",
+  "url": "https://www.nytimes.com/section/magazine",
+  "peso": 1.0,
+  "feeds": [
+   "https://news.google.com/rss/search?q=site:nytimes.com/section/magazine+(health+OR+fitness+OR+exercise+OR+sleep+OR+study)+when:7d&hl=en-US&gl=US&ceid=US:en"
+  ],
+  "origem": "painel",
+  "modo": "google_news",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:48:35.089Z",
+  "coletadas": 1,
+  "aproveitadas": 0,
+  "falhou": false
+ },
+ {
+  "canal": "Globo",
+  "dominio": "revistaquem.globo.com",
+  "url": "https://revistaquem.globo.com/",
+  "peso": 1.0,
+  "feeds": [
+   "https://revistaquem.globo.com/rss/quem"
+  ],
+  "origem": "painel",
+  "modo": "descoberto",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:48:43.313Z",
+  "coletadas": 100,
+  "aproveitadas": 10,
+  "falhou": false
+ },
+ {
+  "canal": "People",
+  "dominio": "people.com",
+  "url": "https://people.com/",
+  "peso": 1.0,
+  "feeds": [
+   "https://news.google.com/rss/search?q=site:people.com+(health+OR+fitness+OR+exercise+OR+sleep+OR+study)+when:7d&hl=en-US&gl=US&ceid=US:en"
+  ],
+  "origem": "painel",
+  "modo": "google_news",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:49:06.961Z",
+  "coletadas": 45,
+  "aproveitadas": 10,
+  "falhou": false
+ },
+ {
+  "canal": "Vulture",
+  "dominio": "vulture.com",
+  "url": "https://www.vulture.com/",
+  "peso": 1.0,
+  "feeds": [
+   "https://news.google.com/rss/search?q=site:vulture.com+(health+OR+fitness+OR+exercise+OR+sleep+OR+study)+when:7d&hl=en-US&gl=US&ceid=US:en"
+  ],
+  "origem": "painel",
+  "modo": "google_news",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:50:07.169Z",
+  "coletadas": 13,
+  "aproveitadas": 0,
+  "falhou": false
+ },
+ {
+  "canal": "Pagesix",
+  "dominio": "pagesix.com",
+  "url": "https://pagesix.com/",
+  "peso": 1.0,
+  "feeds": [
+   "https://pagesix.com/feed/"
+  ],
+  "origem": "painel",
+  "modo": "descoberto",
+  "ativa": true,
+  "adicionado_em": "2026-10-18T15:50:14.241Z",
+  "coletadas": 10,
+  "aproveitadas": 4,
+  "falhou": false
+ }
+]
