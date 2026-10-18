@@ -41,6 +41,13 @@ Exemplo aprovado: render/pedidos/c-2610171339-y4f-carrossel.json (prévia em ren
 ## Legenda
 "Decodificando [tema]." + 2 parágrafos curtos com os fatos + 1 parágrafo de lição + "Me manda MÉTODO no direct." + 3–5 hashtags (nicho e bairro).
 
+## Fontes (aparecem no painel, na janela do conteúdo)
+Junto com o pedido, escreva `render/fontes/<id>.json` (mesmo id do pedido) com TODAS as referências usadas, com link clicável:
+`[{"tipo": "estudo", "titulo": "Autor et al. (ano) — título. Revista", "url": "https://..."},
+  {"tipo": "noticia", "titulo": "Veículo (data) — título da matéria", "url": "https://..."}]`
+- tipo: estudo | noticia | artigo. Prefira o link do estudo (revista, PubMed ou PMC) e acrescente a notícia que levou ao tema (ex.: a matéria do Radar).
+- Só URLs que você abriu e conferiu. O robô "Renderizar artes" grava as fontes no card sem mexer na aprovação.
+
 ## Checklist
-- [ ] Todo número tem fonte e data   - [ ] 1 ideia por slide   - [ ] Fundos alternam
+- [ ] Todo número tem fonte e data   - [ ] render/fontes/<id>.json com os links   - [ ] 1 ideia por slide   - [ ] Fundos alternam
 - [ ] Lição liga ao treino e à Avaliação Estratégica   - [ ] Nada copiado de outra página

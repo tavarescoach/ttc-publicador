@@ -45,6 +45,8 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
    (id "e-<doc_id>-carrossel", data = dia de `quando`, quando, funil, pauta = headline.titulo, legenda, 9–10 slides).
    A capa usa a headline confirmada pelo Luan (título); destaque 1–3 palavras com **...**.
    Fatos e números: só os que estão na tese ou que você confirmar com pesquisa. Fotos conforme a seção Fotos.
+   Escreva também `render/fontes/e-<doc_id>-carrossel.json` com os links dos estudos e notícias usados (formato em
+   diretrizes/carrossel.md, seção Fontes). Se veio do Radar, inclua a matéria do Radar como "noticia".
 3. `git pull --rebase`, commit e push. Espere o robô "Renderizar artes" terminar (`gh api .../actions/workflows/renderizar-artes.yml/runs`).
 4. `git pull` e abra `render/previas/e-<doc_id>-carrossel.jpg` com Read. Confira: texto cortado, foto ruim, destaque errado.
    Se houver problema claro, corrija o JSON e faça push de novo (no máximo 1 correção).

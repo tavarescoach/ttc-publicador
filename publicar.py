@@ -194,10 +194,20 @@ def importar_aprovados(fila):
     except Exception as e:
         print(f"[aviso] não consegui ler aprovados do painel: {e}")
         return 0
-    ids = {i.get("id") for i in fila}
+    por_id = {i.get("id"): i for i in fila}
     novos = 0
     for l in linhas:
-        if l["id"] in ids or not l.get("quando") or not l.get("arquivos"):
+        atual = por_id.get(l["id"])
+        if atual is not None:
+            # já está na fila: o painel manda (Publicar agora, horário ou legenda editados com o lápis)
+            if atual.get("status", "pendente") in ("pendente", "erro", "atrasado") and l.get("quando") and \
+                    (atual.get("quando") != l["quando"] or (l.get("legenda") or "") != (atual.get("legenda") or "")):
+                atual.update(quando=l["quando"], legenda=l.get("legenda") or atual.get("legenda") or "", status="pendente")
+                atual.pop("erro", None)
+                novos += 1
+                print(f"Atualizado pelo painel: {l['id']} para {l['quando']}")
+            continue
+        if not l.get("quando") or not l.get("arquivos"):
             continue
         item = {"id": l["id"], "quando": l["quando"], "tipo": l["tipo"], "arquivos": l["arquivos"],
                 "legenda": l.get("legenda") or "", "status": "pendente", "origem": "painel"}

@@ -153,6 +153,14 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
 
 /* botão Radar */
 .btn-radar{color:var(--txt);text-decoration:none;border-color:#3B4A6B;background:var(--card);display:inline-flex;align-items:center;gap:8px}
+.fontes{margin-top:12px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12.5px}
+.fontes b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}
+.fontes a{display:flex;gap:8px;align-items:baseline;color:var(--txt);text-decoration:none;padding:5px 0;border-top:1px solid var(--line)}
+.fontes a:first-of-type{border-top:0}
+.fontes a:hover span{text-decoration:underline}
+.fontes a i{font-style:normal;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red);flex-shrink:0;min-width:52px}
+.fontes a em{font-style:normal;color:var(--mut);margin-left:auto;flex-shrink:0}
+.mini.agora{border-color:#2E7D4F;color:#fff;background:#1F5C3A}
 .btn-radar:hover{border-color:var(--txt)}
 .btn-radar .pulso{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(193,18,31,.7);animation:pulso 1.8s infinite}
 @keyframes pulso{70%{box-shadow:0 0 0 8px rgba(193,18,31,0)}100%{box-shadow:0 0 0 0 rgba(193,18,31,0)}}
@@ -389,6 +397,7 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
       <div class="meta" id="vMeta"></div>
       <h3 id="vTitulo"></h3>
       <div class="leg" id="vLeg"></div>
+      <div class="fontes hide" id="vFontes"></div>
       <div class="bts" id="vBts"></div>
     </div>
   </div>
@@ -730,6 +739,19 @@ async function aprovar(ev){
   Object.assign(r, campos); $("mAprovar").classList.add("hide"); desenhar();
 }
 
+async function publicarAgora(id){
+  const r = dados.find(x => x.id === id); if (!r) return;
+  if (!confirm("Publicar agora no Instagram?\n\n" + (r.pauta || r.id) + "\n\nVai com a legenda que está no card.")) return;
+  const quando = new Date(Date.now() - 3*3600e3 - 60e3).toISOString().slice(0,19) + "-03:00"; // horário de Brasília, 1 min atrás
+  const campos = {etapa:"agendado", quando, atualizado_em:new Date().toISOString()};
+  if (!DEMO){
+    const {error} = await sb.from("conteudos").update(campos).eq("id", r.id);
+    if (error){ alert("Não enviou: " + error.message); return; }
+  }
+  Object.assign(r, campos); fecharVisor(); desenhar();
+  alert("Enviado para publicação. Em 1 a 3 minutos aparece no Instagram e o card vai para Publicado. (Se o atalho imediato não estiver ligado, sai na próxima rodada do robô, aos :07 ou :37.)");
+}
+
 let visor = {r:null, i:0};
 function abrirVisor(id){
   const r = dados.find(x => x.id === id); if (!r) return;
@@ -747,9 +769,17 @@ function desenharVisor(){
   $("vMeta").innerHTML = `<span class="tag">${TIPO[r.tipo] || esc(r.tipo)}</span><span>${esc(quandoTxt(r))}</span><span>· ${esc({agendado:"agendado",publicado:"publicado",pronto:"pronto",erro:"erro",atrasado:"atrasado"}[r.etapa] || r.etapa)}</span>`;
   $("vTitulo").textContent = r.pauta || r.id;
   $("vLeg").textContent = r.legenda || (r.tipo === "STORY" ? "Story sem legenda." : "Sem legenda.");
+  const fontes = (Array.isArray(r.fontes) ? r.fontes : []).filter(f => f && /^https?:\/\//.test(f.url || ""));
+  $("vFontes").classList.toggle("hide", !fontes.length);
+  $("vFontes").innerHTML = fontes.length ? "<b>Fontes e referências</b>" + fontes.map(f => {
+    let dom = ""; try { dom = new URL(f.url).hostname.replace(/^www\./, ""); } catch(e){}
+    return `<a href="${esc(f.url)}" target="_blank" rel="noopener"><i>${esc({estudo:"Estudo", noticia:"Notícia", artigo:"Artigo"}[f.tipo] || "Fonte")}</i><span>${esc(f.titulo || f.url)}</span><em>${esc(dom)} ↗</em></a>`;
+  }).join("") : "";
+  const podeAgora = ["pronto","agendado","erro","atrasado"].includes(r.etapa) && arqs.length;
   $("vBts").innerHTML = `<a class="mini" href="${esc(urlMidia(a))}" target="_blank" rel="noopener">Abrir arquivo ↗</a>`
     + (r.link ? `<a class="mini go" href="${esc(r.link)}" target="_blank" rel="noopener">Ver no Instagram ↗</a>` : "")
-    + (r.etapa === "pronto" ? `<button class="mini go" data-aprovar="${esc(r.id)}">Aprovar e agendar</button>` : "");
+    + (r.etapa === "pronto" ? `<button class="mini go" data-aprovar="${esc(r.id)}">Aprovar e agendar</button>` : "")
+    + (podeAgora ? `<button class="mini agora" data-agora="${esc(r.id)}">Publicar agora</button>` : "");
 }
 
 const ESTUDIO = "https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH";
@@ -1053,6 +1083,7 @@ document.addEventListener("click", ev => {
   if (cx) return cancelar(cx.dataset.cancelar);
   const rs = ev.target.closest("[data-restaurar]");
   if (rs) return restaurar(rs.dataset.restaurar);
+  const ag = ev.target.closest("[data-agora]"); if (ag) return publicarAgora(ag.dataset.agora);
   const ap = ev.target.closest("[data-aprovar]");
   if (ap) return abrirAprovar(ap.dataset.aprovar);
   if (ev.target === $("mAprovar")) return $("mAprovar").classList.add("hide");

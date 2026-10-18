@@ -193,7 +193,11 @@ def main():
         return 1
     fora = cancelados()
     enviar([da_pauta(i) for i in ler("pautas.json") if i.get("id") not in fora], "ignore")
-    enviar([da_fila(i) for i in ler("fila.json") if i.get("id") not in fora], "merge")
+    fila = [i for i in ler("fila.json") if i.get("id") not in fora]
+    # o que veio aprovado do painel e ainda não saiu: horário e legenda são do painel (Publicar agora, lápis)
+    do_painel = [i for i in fila if i.get("origem") == "painel" and i.get("status", "pendente") == "pendente"]
+    enviar([da_fila(i) for i in fila if i not in do_painel], "merge")
+    enviar([da_fila(i) for i in do_painel], "merge", [c for c in CAMPOS if c not in ("quando", "legenda", "data")])
     respostas_criacoes()
     enviar_tarefas()
     return 0

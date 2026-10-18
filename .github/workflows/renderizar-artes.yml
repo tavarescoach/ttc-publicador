@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - "render/pedidos/**"
+      - "render/fontes/**"
   workflow_dispatch:
     inputs:
       pedido:
@@ -69,3 +70,9 @@ jobs:
             git pull --rebase
             git push
           fi
+      - name: Fontes e referências no painel
+        if: always()
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python render/fontes.py
