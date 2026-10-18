@@ -1,30 +1,24 @@
 [
  {
-  "titulo": "Is the energy of the 1990s returning to London’s art market?",
-  "canal": "The Art Newspaper",
-  "tema": "cultura",
-  "status": "virou_pauta"
- },
- {
   "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
   "canal": "Fox News Health",
   "tema": "saude",
   "status": "virou_pauta"
  },
  {
-  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
-  "canal": "ScienceDaily",
-  "tema": "saude",
+  "titulo": "Is the energy of the 1990s returning to London’s art market?",
+  "canal": "The Art Newspaper",
+  "tema": "cultura",
   "status": "virou_pauta"
  },
  {
-  "titulo": "Scientists discover how exercise reverses muscle aging",
+  "titulo": "A 47-year study reveals the age when your body starts losing strength",
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "virou_pauta"
  },
  {
-  "titulo": "A 47-year study reveals the age when your body starts losing strength",
+  "titulo": "Scientists discover how exercise reverses muscle aging",
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "virou_pauta"
@@ -46,5 +40,11 @@
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "salvo"
+ },
+ {
+  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
+  "canal": "ScienceDaily",
+  "tema": "saude",
+  "status": "virou_pauta"
  }
 ]
