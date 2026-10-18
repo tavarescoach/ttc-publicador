@@ -36,6 +36,7 @@ AGORA = dt.datetime.now(dt.timezone.utc)
 JANELA = dt.timedelta(hours=72)
 JANELA_LENTAS = {"Harvard Health": dt.timedelta(days=14), "The Art Newspaper": dt.timedelta(days=7)}
 POR_CANAL = 10
+MIN_PAINEL = 6  # mínimo por fonte adicionada pelo painel
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36 ttc-radar"
 
 # palavras do nicho -> peso (pt e en, minúsculas, sem acento tratado abaixo)
@@ -174,11 +175,15 @@ def baixar(url, limite=400_000):
         return r.geturl(), r.read(limite).decode("utf-8", "replace")
 
 
-def tem_itens(url):
+def qtd_itens(url):
     try:
-        return len(feedparser.parse(url, agent=UA).entries) > 0
+        return len(feedparser.parse(url, agent=UA).entries)
     except Exception:
-        return False
+        return 0
+
+
+def tem_itens(url):
+    return qtd_itens(url) > 0
 
 
 def descobrir_feed(url):
@@ -215,11 +220,19 @@ def descobrir_feed(url):
     br = dominio.endswith(".br") or bool(lang and lang.group(1).lower().startswith("pt"))
     termos = "(saude+OR+treino+OR+exercicio+OR+sono+OR+estudo)" if br else "(health+OR+fitness+OR+exercise+OR+sleep+OR+study)"
     loc = "hl=pt-BR&gl=BR&ceid=BR:pt-419" if br else "hl=en-US&gl=US&ceid=US:en"
-    gn = f"https://news.google.com/rss/search?q=site:{urllib.parse.quote(alvo)}+{termos}+when:7d&{loc}"
-    if tem_itens(gn):
-        return [gn], "google_news"
-    gn_amplo = f"https://news.google.com/rss/search?q=site:{urllib.parse.quote(dominio)}+when:7d&{loc}"
-    return [gn_amplo], "google_news"
+    # do mais específico ao mais amplo; fica com o primeiro que traz um volume útil (5+ matérias na semana)
+    tentativas_gn = [f"site:{urllib.parse.quote(alvo)}+{termos}", f"site:{urllib.parse.quote(alvo)}"]
+    if alvo != dominio:
+        tentativas_gn += [f"site:{urllib.parse.quote(dominio)}+{termos}", f"site:{urllib.parse.quote(dominio)}"]
+    melhor, melhor_n = None, -1
+    for q in tentativas_gn:
+        gn = f"https://news.google.com/rss/search?q={q}+when:7d&{loc}"
+        n = qtd_itens(gn)
+        if n >= 5:
+            return [gn], "google_news"
+        if n > melhor_n:
+            melhor, melhor_n = gn, n
+    return [melhor], "google_news"
 
 
 def montar_fontes():
@@ -293,6 +306,11 @@ def coletar(fontes):
                 })
         itens.sort(key=lambda x: (x["pre"], x["publicado_em"] or ""), reverse=True)
         bons = [i for i in itens if i["pre"] > 0][:POR_CANAL]
+        if f.get("origem") == "painel" and len(bons) < MIN_PAINEL:
+            # fonte escolhida pelo Luan (cultura, celebridades, negócios): o filtro de palavras do nicho corta quase tudo,
+            # então completa com as mais recentes e deixa a curadoria do Claude julgar a ponte com corpo e saúde
+            resto = sorted([i for i in itens if i not in bons], key=lambda x: x["publicado_em"] or "", reverse=True)
+            bons += resto[:MIN_PAINEL - len(bons)]
         relatorio[f["canal"]] = {"coletadas": len(itens), "aproveitadas": len(bons),
                                  "falhou": falhas == len(f["feeds"])}
         saida.extend(bons)
