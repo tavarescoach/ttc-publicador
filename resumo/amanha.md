@@ -1,23 +1,18 @@
-Amanhã, dom 18/10
+Amanhã, seg 19/10
 
 Sai sozinho:
-• 12:00 Estático: Envelhecer mal não é questão de idade. É falta de estímulo.
-• 12:00 Carrossel: Decodificando a creatina no cérebro.
-• 19:00 Carrossel: Duas a três sessões de força por semana. Essa é a dose.
-• 20:00 Story: 2026-10-18-story-1
-• 21:00 Story: 2026-10-18-story-2
+• 07:00 Carrossel: Decodificando a gordura que não aparece na foto.
+• 21:00 Story: 2026-10-19-story-1
 Para vetar: painel → Hoje → Vetar, até o horário do post.
 
-Precisa de você (4):
-• O que muda no treino de quem usa GLP-1. (18/10 12:00): revisar e aprovar
-• Ela passa o dia sem comer. (18/10 12:00): revisar e aprovar
-• Toda semana a ciência descobre algo sobre o músculo. (18/10 12:00): revisar e aprovar
-• Seu treino não parou. (21/10 12:00): Tema de saúde (hormôn, testosteron): revise o tom antes de publicar.
-
 Você faz amanhã:
-• 08:00 Ler o pacote de conteúdo da semana 19–25/10 e aprovar as pautas
-• 20:00 Stories manuais de domingo: bastidor da preparação da semana
-• Marcar na agenda o bloco de gravação da semana (~2h)
-• Bloco de gravação: 3 reels da semana no TTC
+• Ler o plano da semana (botão Plano em PDF)
+• 07:00 Enviar o vídeo do reels: Força não é vaidade
+• 07:30 Story 07:30 · Abertura: vídeo montando a carga
+• 07:35 Story 07:35 · Ponte do reels (só se o reels saiu às 7h)
+• 10:00 Story 10:00 · Enquete: idade ou falta de treino?
+• 12:10 Story 12:10 · Ponte do carrossel
+• 16:00 Story 16:00 · Resultado da enquete + virada
+• 21:00 Story 21:00 · Convite MÉTODO (automático, não precisa postar)
 
 Tela Hoje: https://ttc-painel.vercel.app/hoje.html
