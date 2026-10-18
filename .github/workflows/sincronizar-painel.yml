@@ -52,3 +52,10 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: python saude.py
+      - name: Fontes e referências no painel
+        if: always()
+        continue-on-error: true
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python render/fontes.py
