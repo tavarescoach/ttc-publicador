@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Tela de story 1080x1920 com a identidade LT. Uso: render/story.py -->
+<style>
+:root{--bg:#0B1222;--bg2:#050A16;--txt:#F8FAFC;--mut:#94A3B8;--red:#C1121F}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px}
+body{font-family:"Inter Display","Inter",sans-serif;color:var(--txt);-webkit-font-smoothing:antialiased;
+ background:radial-gradient(1200px 900px at 20% 15%,#111A2E 0%,var(--bg) 45%,var(--bg2) 100%);position:relative;overflow:hidden}
+.marca{position:absolute;right:-10px;top:560px;width:360px;opacity:.16}
+.logo{position:absolute;left:84px;top:258px;height:52px}
+.bloco{position:absolute;left:84px;right:150px}
+.barra{width:94px;height:7px;background:var(--red);margin-bottom:26px}
+.rot{font-size:27px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);margin-bottom:46px}
+h1{font-size:88px;line-height:1.02;font-weight:700;letter-spacing:-2.2px}
+h1 b{color:var(--red);font-weight:700}
+.p{margin-top:44px;font-size:46px;line-height:1.3;color:var(--txt);font-weight:500}
+.p b{color:var(--red);font-weight:700}
+.vaga{position:absolute;left:84px;right:84px;border:3px dashed rgba(148,163,184,.35);border-radius:28px;
+ display:flex;align-items:center;justify-content:center;color:rgba(148,163,184,.55);font-size:28px;font-weight:600;letter-spacing:.5px}
+.rod{position:absolute;left:84px;right:80px;top:1560px;display:flex;justify-content:space-between;font-family:"Inter",sans-serif;font-size:28px;color:var(--mut)}
+</style></head>
+<body><div id="raiz"></div>
+<script>
+const S = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const md = t => (t||"").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");
+let h = `<img class="marca" src="assets/marca-l.png" alt=""><img class="logo" src="assets/logo-lt.png" alt="">`;
+h += `<div class="bloco" style="top:${S.topo||660}px"><div class="barra"></div><div class="rot">${S.rotulo||""}</div><h1>${md(S.titulo)}</h1>${S.texto?`<div class="p">${md(S.texto)}</div>`:""}</div>`;
+if (S.vaga) h += `<div class="vaga" style="top:${S.vaga.y}px;height:${S.vaga.h}px">${S.vaga.txt}</div>`;
+h += `<div class="rod"><span>@tavarescoach</span><span>Corpo forte, evolução sem acaso.</span></div>`;
+document.getElementById("raiz").innerHTML = h;
+</script></body></html>

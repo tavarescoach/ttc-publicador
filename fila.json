@@ -161,7 +161,8 @@
       "2026-10-18/story-2.png"
     ],
     "legenda": "",
-    "status": "pendente"
+    "status": "cancelado",
+    "motivo": "substituído pelo arco de stories de 19/10 (abertura às 07:30; convite MÉTODO às 21h)"
   },
   {
     "id": "e-teste-pipeline-carrossel",
@@ -503,5 +504,15 @@
     "legenda": "Decodificando o \"confundir o músculo\".\n\nA ideia é trocar o treino o tempo todo para o corpo não se acostumar. Quando pesquisadores compararam treino fixo e treino sorteado a cada sessão, por 8 semanas, músculo e força cresceram igual. Só a motivação mudou.\n\nUma revisão de 8 estudos foi além: alguma variação planejada ajuda, mas troca excessiva e aleatória pode atrapalhar. E sem repetir o exercício, não dá para saber se a carga subiu.\n\nCorpo não estagna por se acostumar. Estagna porque o estímulo não sobe.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #sobrecargaprogressiva #copacabana #ipanema",
     "status": "pendente",
     "origem": "painel"
+  },
+  {
+    "id": "2026-10-19-story-1",
+    "quando": "2026-10-19T21:00:00-03:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-19/story-1.png"
+    ],
+    "legenda": "",
+    "status": "pendente"
   }
 ]

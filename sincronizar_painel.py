@@ -185,6 +185,19 @@ def enviar_tarefas():
             print(f"OK (tarefas): {len(linhas)} linha(s), HTTP {r.status}")
     except urllib.error.HTTPError as e:
         print(f"::warning::tarefas não sincronizadas: HTTP {e.code} — {e.read().decode(errors='replace')[:300]}")
+    # tarefas marcadas "apagada": true no tarefas.json somem do painel (substituídas por outras)
+    apagar = [t["id"] for t in lista if t.get("apagada")]
+    if apagar:
+        ids = ",".join(f'"{i}"' for i in apagar)
+        req = urllib.request.Request(
+            f"{URL}/rest/v1/tarefas?id=in.({urllib.parse.quote(ids)})&apagada=is.false",
+            data=json.dumps({"apagada": True}).encode(), method="PATCH",
+            headers={"apikey": KEY, "Content-Type": "application/json", "Prefer": "return=minimal"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                print(f"OK (tarefas apagadas): {len(apagar)} id(s), HTTP {r.status}")
+        except urllib.error.HTTPError as e:
+            print(f"::warning::tarefas não apagadas: HTTP {e.code} — {e.read().decode(errors='replace')[:300]}")
 
 
 def main():

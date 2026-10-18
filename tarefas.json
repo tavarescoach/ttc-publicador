@@ -149,7 +149,8 @@
   "titulo": "Story 07:30: Bastidor",
   "detalhe": "Chegada no TTC — 'segunda começa com método'",
   "acao": "manual",
-  "horario": "07:30"
+  "horario": "07:30",
+  "apagada": true
  },
  {
   "id": "2026-10-19-4",
@@ -159,7 +160,8 @@
   "titulo": "Story 09:00: Bastidor",
   "detalhe": "Aluno executando — 'carga registrada, evolução previsível'",
   "acao": "manual",
-  "horario": "09:00"
+  "horario": "09:00",
+  "apagada": true
  },
  {
   "id": "2026-10-19-5",
@@ -169,7 +171,8 @@
   "titulo": "Story 15:00: Enquete",
   "detalhe": "Minutos de força por semana? 0 / até 40 / mais de 40",
   "acao": "manual",
-  "horario": "15:00"
+  "horario": "15:00",
+  "apagada": true
  },
  {
   "id": "2026-10-19-6",
@@ -179,7 +182,8 @@
   "titulo": "Story 21:00: Convite",
   "detalhe": "'Quer saber seu ponto de partida? Me manda MÉTODO.'",
   "acao": "manual",
-  "horario": "21:00"
+  "horario": "21:00",
+  "apagada": true
  },
  {
   "id": "2026-10-19-7",
@@ -503,5 +507,65 @@
   "detalhe": "'Segunda tem conteúdo novo'",
   "acao": "manual",
   "horario": "20:30"
+ },
+ {
+  "id": "2026-10-19-8",
+  "ordem": 3,
+  "horario": "07:30",
+  "titulo": "Story 07:30 · Abertura: vídeo montando a carga",
+  "detalhe": "Objetivo do dia: levar as pessoas ao carrossel das 12h.\n\nO QUE FILMAR: 5 a 8 segundos, celular em pé. Você ou um aluno montando a carga na barra no TTC (anilha entrando, mão no giz).\n\nTEXTO NA TELA (Aa, fonte Moderna, branco, no meio da tela):\nPerder força depois dos 30 é coisa da idade?\n\nNão responder ainda. A resposta sai mais tarde.",
+  "acao": "manual",
+  "data": "2026-10-19",
+  "formato": "stories"
+ },
+ {
+  "id": "2026-10-19-9",
+  "ordem": 4,
+  "horario": "07:35",
+  "titulo": "Story 07:35 · Ponte do reels (só se o reels saiu às 7h)",
+  "detalhe": "COMO FAZER: abra o reels no seu perfil → ícone de avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, pequeno, acima do post):\n40 minutos por semana. Assiste até o fim.\n\nSe o reels não foi publicado, pule este story.",
+  "acao": "manual",
+  "data": "2026-10-19",
+  "formato": "stories"
+ },
+ {
+  "id": "2026-10-19-10",
+  "ordem": 5,
+  "horario": "10:00",
+  "titulo": "Story 10:00 · Enquete: idade ou falta de treino?",
+  "detalhe": "ARTE DE FUNDO: story-fundo-enquete.png (salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-19/story-fundo-enquete.png\n\nCOMO FAZER: novo story → galeria → escolha a arte → ícone de sticker → ENQUETE. Coloque o sticker no espaço vazio, abaixo da frase.\n\nPERGUNTA DO STICKER: deixe em branco (a frase já está na arte).\nOPÇÃO 1: Idade\nOPÇÃO 2: Falta de treino\n\nÀs 16h você vai precisar do resultado. Não apague.",
+  "acao": "manual",
+  "data": "2026-10-19",
+  "formato": "stories"
+ },
+ {
+  "id": "2026-10-19-11",
+  "ordem": 6,
+  "horario": "12:10",
+  "titulo": "Story 12:10 · Ponte do carrossel",
+  "detalhe": "O carrossel 'Força não é vaidade' sai às 12h (robô).\n\nCOMO FAZER: abra o carrossel no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nA resposta da enquete está aqui. Toca.\n\nOpcional: sticker de seta (GIF 'arrow') apontando para o post.",
+  "acao": "manual",
+  "data": "2026-10-19",
+  "formato": "stories"
+ },
+ {
+  "id": "2026-10-19-12",
+  "ordem": 8,
+  "horario": "16:00",
+  "titulo": "Story 16:00 · Resultado da enquete + virada",
+  "detalhe": "ARTE DE FUNDO: story-fundo-resultado.png (salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-19/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado da enquete das 10h (arraste para cima no story). Novo story → galeria → escolha a arte → Aa e escreva o número real no espaço vazio de cima, por exemplo:\nX% acham que é idade.\n\nUse só o número que aparecer. Se a enquete teve poucos votos (menos de 10), escreva: A maioria votou idade. (ou 'falta de treino', o que for verdade).\n\nA frase 'Não é idade. É falta de estímulo.' já está na arte.",
+  "acao": "manual",
+  "data": "2026-10-19",
+  "formato": "stories"
+ },
+ {
+  "id": "2026-10-19-13",
+  "ordem": 9,
+  "horario": "21:00",
+  "titulo": "Story 21:00 · Convite MÉTODO (automático, não precisa postar)",
+  "detalhe": "O robô publica sozinho a arte 'Quer saber onde está o seu ponto de partida? Me manda MÉTODO no direct.'\n\nSua parte: responder quem mandar MÉTODO no direct.",
+  "acao": "manual",
+  "data": "2026-10-19",
+  "formato": "stories"
  }
 ]
