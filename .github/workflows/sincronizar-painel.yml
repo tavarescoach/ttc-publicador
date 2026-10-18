@@ -11,6 +11,9 @@ on:
       - "pautas.json"
       - "tarefas.json"
       - "criacoes/respostas/**"
+      - "pacotes/**"
+      - "render/pedidos/**"
+      - "saude.py"
   workflow_run:
     workflows: ["Publicar no Instagram"]
     types: [completed]
@@ -19,6 +22,10 @@ on:
 concurrency:
   group: sincronizar-painel
   cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: read
 
 jobs:
   sincronizar:
@@ -36,3 +43,12 @@ jobs:
           SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: python sincronizar_painel.py
+      - name: Saúde do sistema (faixa do topo do painel)
+        if: always()
+        continue-on-error: true
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python saude.py

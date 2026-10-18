@@ -42,6 +42,17 @@ header{position:sticky;top:0;z-index:5;background:rgba(15,23,42,.92);backdrop-fi
 .menu button:disabled{opacity:.45;cursor:default}
 .menu em{font-style:normal;font-size:10px;color:var(--mut);border:1px solid var(--line);border-radius:20px;padding:2px 7px}
 
+/* saúde do sistema */
+.saude{max-width:1560px;margin:0 auto;padding:12px 16px 0}
+.saude>button{width:100%;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 14px;font-size:12.5px;color:var(--mut);cursor:pointer}
+.saude>button.ruim{border-color:var(--red)}
+.saude .it{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.saude .pt{width:8px;height:8px;border-radius:50%;background:var(--mut);flex:none}
+.saude .pt.ok{background:var(--ok)} .saude .pt.ruim{background:var(--red)} .saude .pt.aviso{background:var(--warn)}
+.saude .det{margin-top:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.55}
+.saude .det h4{margin:10px 0 4px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+.saude .det h4:first-child{margin-top:0}
+.saude .det a{color:var(--txt)}
 /* placar */
 .placar{max-width:1560px;margin:0 auto;padding:18px 16px 4px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
@@ -230,6 +241,8 @@ a.mini{text-decoration:none;color:inherit;text-align:center}
     <a class="btn red" href="https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH" target="_blank" rel="noopener" style="text-decoration:none;color:#fff">Estúdio ↗</a>
     <button class="btn" id="btnSair">Sair</button>
   </div></header>
+
+  <div class="saude" id="saude"><button type="button" id="saudeBtn" aria-expanded="false"><span class="it"><i class="pt"></i>Verificando o sistema…</span></button><div class="det hide" id="saudeDet"></div></div>
 
   <div class="placar">
     <div class="kpi"><b id="kExec">–</b><span>a executar</span></div>
@@ -932,6 +945,7 @@ async function carregar(){
   ]);
   if (r1.error){ alert("Erro ao carregar: " + r1.error.message); return; }
   dados = r1.data; criacoes = r2.error ? [] : r2.data; tarefas = r3.error ? null : r3.data; desenhar();
+  carregarSaude();
   sb.from("radar").select("id", {count:"exact", head:true}).gte("nota", 70).eq("status", "novo").eq("calendario", false)
     .gte("publicado_em", new Date(Date.now() - 72*3600e3).toISOString())
     .then(({count}) => { const c = $("radarCont"); if (count){ c.textContent = count; c.title = count + " notícias novas com nota 70+"; c.classList.remove("hide"); } else c.classList.add("hide"); });
@@ -1066,6 +1080,46 @@ document.addEventListener("change", ev => { const c = ev.target.closest("[data-t
 $("formReels").onsubmit = enviarReels;
 $("apCancelar").onclick = () => $("mAprovar").classList.add("hide");
 $("formPauta").onsubmit = salvarPauta;
+// ---- saúde do sistema (gerada pelo robô "Sincronizar painel" em materiais/saude/status.json)
+async function carregarSaude(){
+  if (DEMO) return;
+  let st;
+  try {
+    const {data, error} = await sb.storage.from("materiais").download("saude/status.json");
+    if (error) throw error;
+    st = JSON.parse(await data.text());
+  } catch(e){
+    $("saudeBtn").innerHTML = '<span class="it"><i class="pt aviso"></i>Saúde do sistema ainda não disponível. Aparece depois da próxima execução do robô.</span>';
+    return;
+  }
+  const idade = (Date.now() - new Date(st.gerado_em).getTime()) / 36e5;
+  const hora = new Date(Date.now() - 3*36e5).getUTCHours();
+  const velho = idade > 3 && hora >= 7 && hora <= 23;
+  const cor = p => p == null || p.ok == null ? "aviso" : p.ok ? "ok" : "ruim";
+  const fmt = iso => iso ? new Date(iso).toLocaleString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "";
+  const ult = st.fila && st.fila.ultimo, prox = st.fila && st.fila.proximo;
+  const itens = [
+    ["Pacote", st.pacote, st.pacote && st.pacote.ok ? "semana de " + st.pacote.semana.slice(8,10) + "/" + st.pacote.semana.slice(5,7) + " entregue" : "pacote faltando"],
+    ["Robôs", st.robos, st.robos && st.robos.ok === false ? st.robos.msg : "robôs ok"],
+    ["Token", st.token, !st.token || st.token.ok == null ? "token não testado" : st.token.ok ? "token ok" : "token recusado"],
+    ["Fila", st.fila, st.fila && st.fila.ok === false ? st.fila.msg : (prox ? "próximo: " + fmt(prox.quando) : "fila sem agendados")],
+  ];
+  const ruim = itens.some(i => cor(i[1]) === "ruim");
+  const btn = $("saudeBtn");
+  btn.classList.toggle("ruim", ruim);
+  btn.innerHTML = itens.map(([_, p, t]) => `<span class="it"><i class="pt ${cor(p)}"></i>${esc(t)}</span>`).join("")
+    + (ult ? `<span class="it">último post: ${esc(fmt(ult.quando))}</span>` : "")
+    + `<span class="it" style="margin-left:auto">${velho ? '<i class="pt aviso"></i>verificação atrasada · ' : ""}checado ${esc(fmt(st.gerado_em))}</span>`;
+  const robos = (st.robos && st.robos.itens || []).map(r => `<div><i class="pt ${r.ok == null ? "aviso" : r.ok ? "ok" : "ruim"}" style="display:inline-block;margin-right:6px"></i>${esc(r.robo)}${r.quando ? " · " + esc(fmt(r.quando)) : ""}${r.ok === false && r.link ? ` · <a href="${esc(r.link)}" target="_blank" rel="noopener">ver erro</a>` : ""}${r.msg ? " · " + esc(r.msg) : ""}</div>`).join("");
+  const probs = (st.fila && st.fila.problemas || []).map(p => `<div>${esc(p.status)} · ${esc(p.pauta || p.id)} · ${esc(fmt(p.quando))}${p.erro ? " · " + esc(p.erro) : ""}</div>`).join("");
+  $("saudeDet").innerHTML = `<h4>Pacote da semana</h4><div>${esc(st.pacote && st.pacote.msg)}</div>`
+    + `<h4>Robôs (última execução)</h4>${robos || "<div>—</div>"}`
+    + `<h4>Instagram</h4><div>${esc(st.token && st.token.msg)}</div>`
+    + `<h4>Fila</h4><div>${esc(st.fila && st.fila.msg)}</div>${probs}`
+    + (ult ? `<div>Último publicado: ${esc(ult.pauta || ult.id)} · ${esc(fmt(ult.quando))}${ult.link ? ` · <a href="${esc(ult.link)}" target="_blank" rel="noopener">abrir</a>` : ""}</div>` : "")
+    + (prox ? `<div>Próximo agendado: ${esc(prox.pauta || prox.id)} · ${esc(fmt(prox.quando))}</div>` : "");
+}
+$("saudeBtn").onclick = () => { const d = $("saudeDet"); d.classList.toggle("hide"); $("saudeBtn").setAttribute("aria-expanded", String(!d.classList.contains("hide"))); };
 $("btnAtualizar").onclick = carregar;
 $("btnPlano").onclick = abrirPlano;
 $("btnSair").onclick = async () => { if (sb) await sb.auth.signOut(); mostrar(false); };
