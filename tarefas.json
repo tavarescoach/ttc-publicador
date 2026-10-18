@@ -202,7 +202,8 @@
   "titulo": "Story 07:30: Bastidor",
   "detalhe": "Treino da manhã no TTC",
   "acao": "manual",
-  "horario": "07:30"
+  "horario": "07:30",
+  "apagada": true
  },
  {
   "id": "2026-10-20-2",
@@ -212,7 +213,8 @@
   "titulo": "Story 10:00: Bastidor",
   "detalhe": "Correção técnica de um aluno",
   "acao": "manual",
-  "horario": "10:00"
+  "horario": "10:00",
+  "apagada": true
  },
  {
   "id": "2026-10-20-3",
@@ -222,7 +224,8 @@
   "titulo": "Story 15:00: Enquete",
   "detalhe": "O que mais te trava? tempo / consistência / não saber o que fazer",
   "acao": "manual",
-  "horario": "15:00"
+  "horario": "15:00",
+  "apagada": true
  },
  {
   "id": "2026-10-20-4",
@@ -232,7 +235,8 @@
   "titulo": "Story 21:00: Prova",
   "detalhe": "Evolução de carga de um aluno (com autorização)",
   "acao": "manual",
-  "horario": "21:00"
+  "horario": "21:00",
+  "apagada": true
  },
  {
   "id": "2026-10-20-5",
@@ -270,7 +274,8 @@
   "titulo": "Story 07:30: Bastidor",
   "detalhe": "'O treino começa na noite anterior'",
   "acao": "manual",
-  "horario": "07:30"
+  "horario": "07:30",
+  "apagada": true
  },
  {
   "id": "2026-10-21-3",
@@ -280,7 +285,8 @@
   "titulo": "Story 10:00: Bastidor",
   "detalhe": "Aluna no TTC — 'recuperação também é planejada'",
   "acao": "manual",
-  "horario": "10:00"
+  "horario": "10:00",
+  "apagada": true
  },
  {
   "id": "2026-10-21-4",
@@ -290,7 +296,8 @@
   "titulo": "Story 15:00: Caixinha",
   "detalhe": "Quantas horas você dormiu ontem?",
   "acao": "manual",
-  "horario": "15:00"
+  "horario": "15:00",
+  "apagada": true
  },
  {
   "id": "2026-10-21-5",
@@ -300,7 +307,8 @@
   "titulo": "Story 21:00: Objeção",
   "detalhe": "'Não precisa treinar mais. Precisa recuperar melhor. Me manda MÉTODO.'",
   "acao": "manual",
-  "horario": "21:00"
+  "horario": "21:00",
+  "apagada": true
  },
  {
   "id": "2026-10-21-6",
@@ -319,7 +327,8 @@
   "titulo": "Story 07:30: Bastidor",
   "detalhe": "Chegada ao TTC",
   "acao": "manual",
-  "horario": "07:30"
+  "horario": "07:30",
+  "apagada": true
  },
  {
   "id": "2026-10-22-2",
@@ -329,7 +338,8 @@
   "titulo": "Story 10:00: Bastidor",
   "detalhe": "Aluna treinando — 'força sem perder leveza'",
   "acao": "manual",
-  "horario": "10:00"
+  "horario": "10:00",
+  "apagada": true
  },
  {
   "id": "2026-10-22-3",
@@ -339,7 +349,8 @@
   "titulo": "Story 15:00: Caixinha",
   "detalhe": "Maior dúvida sobre treino depois dos 30?",
   "acao": "manual",
-  "horario": "15:00"
+  "horario": "15:00",
+  "apagada": true
  },
  {
   "id": "2026-10-22-4",
@@ -349,7 +360,8 @@
   "titulo": "Story 21:00: Respostas",
   "detalhe": "Responder a caixinha de quarta (sono)",
   "acao": "manual",
-  "horario": "21:00"
+  "horario": "21:00",
+  "apagada": true
  },
  {
   "id": "2026-10-22-5",
@@ -387,7 +399,8 @@
   "titulo": "Story 07:30: Bastidor",
   "detalhe": "Planilha de cargas de um aluno (sem nome) — 'isso é método'",
   "acao": "manual",
-  "horario": "07:30"
+  "horario": "07:30",
+  "apagada": true
  },
  {
   "id": "2026-10-23-3",
@@ -397,7 +410,8 @@
   "titulo": "Story 10:00: Bastidor",
   "detalhe": "Avaliação Estratégica acontecendo (com autorização)",
   "acao": "manual",
-  "horario": "10:00"
+  "horario": "10:00",
+  "apagada": true
  },
  {
   "id": "2026-10-23-4",
@@ -407,7 +421,8 @@
   "titulo": "Story 15:00: Quiz",
   "detalhe": "Sabe a carga do agachamento da semana passada? Sim / Não / Nem faço",
   "acao": "manual",
-  "horario": "15:00"
+  "horario": "15:00",
+  "apagada": true
  },
  {
   "id": "2026-10-23-5",
@@ -417,7 +432,8 @@
   "titulo": "Story 20:30: Convite",
   "detalhe": "'Avaliação Estratégica: 40 min para sair com direção. Me manda MÉTODO.'",
   "acao": "manual",
-  "horario": "20:30"
+  "horario": "20:30",
+  "apagada": true
  },
  {
   "id": "2026-10-23-6",
@@ -436,7 +452,8 @@
   "titulo": "Story 08:30: Bastidor",
   "detalhe": "Treino de sábado / orla",
   "acao": "manual",
-  "horario": "08:30"
+  "horario": "08:30",
+  "apagada": true
  },
  {
   "id": "2026-10-24-2",
@@ -446,7 +463,8 @@
   "titulo": "Story 10:30: Bastidor",
   "detalhe": "Fim de semana sem largar tudo",
   "acao": "manual",
-  "horario": "10:30"
+  "horario": "10:30",
+  "apagada": true
  },
  {
   "id": "2026-10-24-3",
@@ -456,7 +474,8 @@
   "titulo": "Story 15:00: Enquete",
   "detalhe": "No fim de semana você mantém a rotina? Sim / Mais ou menos / Não",
   "acao": "manual",
-  "horario": "15:00"
+  "horario": "15:00",
+  "apagada": true
  },
  {
   "id": "2026-10-24-4",
@@ -466,7 +485,8 @@
   "titulo": "Story 20:30: Convite",
   "detalhe": "'Semana que vem tem vaga para Avaliação Estratégica. MÉTODO no direct.'",
   "acao": "manual",
-  "horario": "20:30"
+  "horario": "20:30",
+  "apagada": true
  },
  {
   "id": "2026-10-25-1",
@@ -476,7 +496,8 @@
   "titulo": "Story 09:00: Bastidor",
   "detalhe": "Planejamento da semana",
   "acao": "manual",
-  "horario": "09:00"
+  "horario": "09:00",
+  "apagada": true
  },
  {
   "id": "2026-10-25-2",
@@ -486,7 +507,8 @@
   "titulo": "Story 11:00: Bastidor",
   "detalhe": "Descanso ativo — 'recuperar também é treino'",
   "acao": "manual",
-  "horario": "11:00"
+  "horario": "11:00",
+  "apagada": true
  },
  {
   "id": "2026-10-25-3",
@@ -496,7 +518,8 @@
   "titulo": "Story 15:00: Quiz",
   "detalhe": "Horas de sono que recuperam melhor? 5 / 6 / 7 ou mais",
   "acao": "manual",
-  "horario": "15:00"
+  "horario": "15:00",
+  "apagada": true
  },
  {
   "id": "2026-10-25-4",
@@ -506,7 +529,8 @@
   "titulo": "Story 20:30: Prévia",
   "detalhe": "'Segunda tem conteúdo novo'",
   "acao": "manual",
-  "horario": "20:30"
+  "horario": "20:30",
+  "apagada": true
  },
  {
   "id": "2026-10-19-8",
@@ -567,5 +591,365 @@
   "acao": "manual",
   "data": "2026-10-19",
   "formato": "stories"
+ },
+ {
+  "id": "2026-10-20-s1",
+  "data": "2026-10-20",
+  "ordem": 10,
+  "formato": "stories",
+  "titulo": "Story 07:30 · Abertura: fita métrica na cintura",
+  "detalhe": "Objetivo do dia: levar ao post das 7h (toques na ponte + votos).\n\nO QUE FILMAR: 5 a 8 s, fita métrica passando na cintura (a sua, sem mostrar número).\n\nTEXTO NA TELA (Aa, no meio):\nSeu peso está normal. E a sua cintura?",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-20-s2",
+  "data": "2026-10-20",
+  "ordem": 11,
+  "formato": "stories",
+  "titulo": "Story 07:35 · Ponte do post das 7h (gordura que a foto não mostra)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nA gordura que a balança não mostra. Toca.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "07:35"
+ },
+ {
+  "id": "2026-10-20-s3",
+  "data": "2026-10-20",
+  "ordem": 12,
+  "formato": "stories",
+  "titulo": "Story 10:00 · Enquete: abdominal tira barriga?",
+  "detalhe": "ARTE DE FUNDO (story-fundo-enquete.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-20/story-fundo-enquete.png\n\nCOMO FAZER: novo story → galeria → escolha a arte → sticker → ENQUETE no espaço vazio abaixo da frase.\nPERGUNTA DO STICKER: em branco (a frase já está na arte).\nOPÇÃO 1: Sim\nOPÇÃO 2: Não",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-20-s4",
+  "data": "2026-10-20",
+  "ordem": 13,
+  "formato": "stories",
+  "titulo": "Story 12:10 · Ponte do carrossel das 12h (estudo do músculo)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nA ciência descobriu algo sobre o músculo. Leia o filtro antes.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "12:10"
+ },
+ {
+  "id": "2026-10-20-s5",
+  "data": "2026-10-20",
+  "ordem": 14,
+  "formato": "stories",
+  "titulo": "Story 16:00 · Resultado da enquete + virada",
+  "detalhe": "ARTE DE FUNDO (story-fundo-resultado.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-20/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado do sticker da manhã (arraste para cima no story). Novo story → galeria → arte → Aa e escreva o número REAL no espaço vazio de cima, por exemplo:\nX% acham que abdominal tira barriga.\n\nSó o número que aparecer. Com menos de 10 votos, escreva 'A maioria votou …' com a opção que ganhou.\nA virada já está na arte.",
+  "acao": "manual",
+  "horario": "16:00"
+ },
+ {
+  "id": "2026-10-20-s6",
+  "data": "2026-10-20",
+  "ordem": 15,
+  "formato": "stories",
+  "titulo": "Story 21:00 · Convite MÉTODO (automático, não precisa postar)",
+  "detalhe": "O robô publica sozinho a arte: 'Comece pelo número que a balança esconde. Me manda MÉTODO no direct.'.\n\nSua parte: responder quem mandar MÉTODO no direct.",
+  "acao": "manual",
+  "horario": "21:00"
+ },
+ {
+  "id": "2026-10-21-s1",
+  "data": "2026-10-21",
+  "ordem": 10,
+  "formato": "stories",
+  "titulo": "Story 07:30 · Abertura: bastidor da manhã",
+  "detalhe": "Objetivo do dia: levar ao carrossel das 12h (toques na ponte + respostas do quiz).\n\nO QUE FILMAR: 5 a 8 s do seu começo de dia (café, chegada ao TTC).\n\nTEXTO NA TELA (Aa, no meio):\nCreatina é só para músculo?\n\nSe o reels sair às 7h, compartilhe também logo depois (avião de papel → Adicionar ao story).",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-21-s2",
+  "data": "2026-10-21",
+  "ordem": 11,
+  "formato": "stories",
+  "titulo": "Story 10:00 · Quiz: que órgão também usa creatina?",
+  "detalhe": "ARTE DE FUNDO (story-fundo-enquete.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-21/story-fundo-enquete.png\n\nCOMO FAZER: novo story → galeria → arte → sticker → QUIZ no espaço vazio.\nPERGUNTA DO QUIZ: em branco (a frase já está na arte).\nOPÇÕES: Fígado / Cérebro / Pulmão\nRESPOSTA CERTA (marque no sticker): Cérebro",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-21-s3",
+  "data": "2026-10-21",
+  "ordem": 12,
+  "formato": "stories",
+  "titulo": "Story 12:10 · Ponte do carrossel (creatina no cérebro)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nA resposta do quiz está aqui. Toca.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "12:10"
+ },
+ {
+  "id": "2026-10-21-s4",
+  "data": "2026-10-21",
+  "ordem": 13,
+  "formato": "stories",
+  "titulo": "Story 16:00 · Resultado do quiz + virada",
+  "detalhe": "ARTE DE FUNDO (story-fundo-resultado.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-21/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado do sticker da manhã (arraste para cima no story). Novo story → galeria → arte → Aa e escreva o número REAL no espaço vazio de cima, por exemplo:\nX% acertaram: é o cérebro.\n\nSó o número que aparecer. Com menos de 10 votos, escreva 'A maioria votou …' com a opção que ganhou.\nA virada já está na arte.",
+  "acao": "manual",
+  "horario": "16:00"
+ },
+ {
+  "id": "2026-10-21-s5",
+  "data": "2026-10-21",
+  "ordem": 14,
+  "formato": "stories",
+  "titulo": "Story 20:00 · Prelúdio de amanhã: caixinha",
+  "detalhe": "Sem arte: fundo preto do próprio Instagram.\n\nTEXTO NA TELA (Aa):\nAmanhã: o que a balança não conta para quem usa caneta.\n\nSTICKER: PERGUNTAS (caixinha) → 'Usa ou já pensou em usar? Me conta.'",
+  "acao": "manual",
+  "horario": "20:00"
+ },
+ {
+  "id": "2026-10-21-s6",
+  "data": "2026-10-21",
+  "ordem": 15,
+  "formato": "stories",
+  "titulo": "Story 21:00 · Convite MÉTODO (automático, não precisa postar)",
+  "detalhe": "O robô publica sozinho a arte: 'Energia é estrutura, não atalho. Me manda MÉTODO no direct.'.\n\nSua parte: responder quem mandar MÉTODO no direct.",
+  "acao": "manual",
+  "horario": "21:00"
+ },
+ {
+  "id": "2026-10-22-s1",
+  "data": "2026-10-22",
+  "ordem": 10,
+  "formato": "stories",
+  "titulo": "Story 07:30 · Abertura: avaliação no TTC",
+  "detalhe": "Objetivo do dia: gerar respostas (votos + caixinha). Tema de saúde: tudo manual, revise antes de postar.\n\nO QUE FILMAR: 5 a 8 s da bioimpedância ou da fita métrica no TTC (sem mostrar rosto de aluno sem autorização).\n\nTEXTO NA TELA (Aa, no meio):\nA balança diz quanto saiu. Não diz o quê.",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-22-s2",
+  "data": "2026-10-22",
+  "ordem": 11,
+  "formato": "stories",
+  "titulo": "Story 07:35 · Ponte do post das 6h (treino de quem usa GLP-1)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nEm tratamento com caneta? Isso é para você.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "07:35"
+ },
+ {
+  "id": "2026-10-22-s3",
+  "data": "2026-10-22",
+  "ordem": 12,
+  "formato": "stories",
+  "titulo": "Story 10:00 · Enquete: a caneta tira só gordura?",
+  "detalhe": "ARTE DE FUNDO (story-fundo-enquete.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-22/story-fundo-enquete.png\n\nCOMO FAZER: novo story → galeria → escolha a arte → sticker → ENQUETE no espaço vazio abaixo da frase.\nPERGUNTA DO STICKER: em branco (a frase já está na arte).\nOPÇÃO 1: Sim\nOPÇÃO 2: Não",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-22-s4",
+  "data": "2026-10-22",
+  "ordem": 13,
+  "formato": "stories",
+  "titulo": "Story 12:10 · Ponte do carrossel (perder peso não é perder gordura)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nQuanto do peso perdido não era gordura? Toca.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "12:10"
+ },
+ {
+  "id": "2026-10-22-s5",
+  "data": "2026-10-22",
+  "ordem": 14,
+  "formato": "stories",
+  "titulo": "Story 16:00 · Resultado da enquete + virada",
+  "detalhe": "ARTE DE FUNDO (story-fundo-resultado.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-22/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado do sticker da manhã (arraste para cima no story). Novo story → galeria → arte → Aa e escreva o número REAL no espaço vazio de cima, por exemplo:\nX% acham que sai só gordura.\n\nSó o número que aparecer. Com menos de 10 votos, escreva 'A maioria votou …' com a opção que ganhou.\nA virada já está na arte.",
+  "acao": "manual",
+  "horario": "16:00"
+ },
+ {
+  "id": "2026-10-22-s6",
+  "data": "2026-10-22",
+  "ordem": 15,
+  "formato": "stories",
+  "titulo": "Story 20:30 · Caixinha: dúvidas sobre treino no tratamento",
+  "detalhe": "ARTE DE FUNDO (story-fundo-caixinha.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-22/story-fundo-caixinha.png\n\nCOMO FAZER: novo story → galeria → arte → sticker → PERGUNTAS (caixinha) no espaço vazio.\nTEXTO DO STICKER: Sua dúvida sobre treino durante o tratamento\n\nResponda em nível geral. Dose, remédio e dieta: indicar o médico ou a nutricionista.",
+  "acao": "manual",
+  "horario": "20:30"
+ },
+ {
+  "id": "2026-10-23-s1",
+  "data": "2026-10-23",
+  "ordem": 10,
+  "formato": "stories",
+  "titulo": "Story 07:30 · Abertura: bastidor com a barra",
+  "detalhe": "Objetivo do dia: gerar MÉTODO no direct.\n\nO QUE FILMAR: 5 a 8 s de treino de força no TTC (barra, anilha, pegada).\n\nTEXTO NA TELA (Aa, no meio):\nPouco tempo na semana. Mais cardio resolve?\n\nSe o reels sair às 7h, compartilhe também logo depois.",
+  "acao": "manual",
+  "horario": "07:30"
+ },
+ {
+  "id": "2026-10-23-s2",
+  "data": "2026-10-23",
+  "ordem": 11,
+  "formato": "stories",
+  "titulo": "Story 10:00 · Enquete: força ou cardio primeiro?",
+  "detalhe": "ARTE DE FUNDO (story-fundo-enquete.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-23/story-fundo-enquete.png\n\nCOMO FAZER: novo story → galeria → escolha a arte → sticker → ENQUETE no espaço vazio abaixo da frase.\nPERGUNTA DO STICKER: em branco (a frase já está na arte).\nOPÇÃO 1: Força\nOPÇÃO 2: Cardio",
+  "acao": "manual",
+  "horario": "10:00"
+ },
+ {
+  "id": "2026-10-23-s3",
+  "data": "2026-10-23",
+  "ordem": 12,
+  "formato": "stories",
+  "titulo": "Story 12:10 · Ponte do carrossel (cardio no treino de força)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\n21 estudos responderam. Toca.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "12:10"
+ },
+ {
+  "id": "2026-10-23-s4",
+  "data": "2026-10-23",
+  "ordem": 13,
+  "formato": "stories",
+  "titulo": "Story 16:00 · Resultado da enquete + virada",
+  "detalhe": "ARTE DE FUNDO (story-fundo-resultado.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-23/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado do sticker da manhã (arraste para cima no story). Novo story → galeria → arte → Aa e escreva o número REAL no espaço vazio de cima, por exemplo:\nX% escolheram cardio.\n\nSó o número que aparecer. Com menos de 10 votos, escreva 'A maioria votou …' com a opção que ganhou.\nA virada já está na arte.",
+  "acao": "manual",
+  "horario": "16:00"
+ },
+ {
+  "id": "2026-10-23-s5",
+  "data": "2026-10-23",
+  "ordem": 14,
+  "formato": "stories",
+  "titulo": "Story 19:00 · Convite MÉTODO (automático, não precisa postar)",
+  "detalhe": "O robô publica sozinho a arte: 'Quanto cardio cabe na sua semana? Me manda MÉTODO no direct.'.\n\nSua parte: responder quem mandar MÉTODO no direct.",
+  "acao": "manual",
+  "horario": "19:00"
+ },
+ {
+  "id": "2026-10-23-s6",
+  "data": "2026-10-23",
+  "ordem": 15,
+  "formato": "stories",
+  "titulo": "Story 22:05 · Ponte do post das 22h (fome da noite)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nPassa o dia sem comer e sente fome agora? Isso é para você.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "22:05"
+ },
+ {
+  "id": "2026-10-24-s1",
+  "data": "2026-10-24",
+  "ordem": 10,
+  "formato": "stories",
+  "titulo": "Story 08:30 · Abertura: sábado de manhã",
+  "detalhe": "Objetivo do dia: gerar respostas (votos + caixinha).\n\nO QUE FILMAR: 5 a 8 s da sua manhã de sábado (orla, treino, café).\n\nTEXTO NA TELA (Aa, no meio):\nSeu treino parou. Ou foi o seu sono?",
+  "acao": "manual",
+  "horario": "08:30"
+ },
+ {
+  "id": "2026-10-24-s2",
+  "data": "2026-10-24",
+  "ordem": 11,
+  "formato": "stories",
+  "titulo": "Story 10:30 · Enquete: quantas horas você dormiu?",
+  "detalhe": "ARTE DE FUNDO (story-fundo-enquete.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-24/story-fundo-enquete.png\n\nCOMO FAZER: novo story → galeria → escolha a arte → sticker → ENQUETE no espaço vazio abaixo da frase.\nPERGUNTA DO STICKER: em branco (a frase já está na arte).\nOPÇÃO 1: Menos de 6\nOPÇÃO 2: 6 a 7\nOPÇÃO 3: Mais de 7\n\nO sticker de enquete aceita até 4 opções: toque em 'Adicionar opção'.",
+  "acao": "manual",
+  "horario": "10:30"
+ },
+ {
+  "id": "2026-10-24-s3",
+  "data": "2026-10-24",
+  "ordem": 12,
+  "formato": "stories",
+  "titulo": "Story 12:10 · Ponte do carrossel (seu sono parou)",
+  "detalhe": "COMO FAZER: abra o post no seu perfil → avião de papel → Adicionar ao story.\n\nTEXTO POR CIMA (Aa, acima do post):\nO que uma noite sem dormir faz com o músculo. Toca.\n\nOpcional: GIF de seta ('arrow') apontando para o post.",
+  "acao": "manual",
+  "horario": "12:10"
+ },
+ {
+  "id": "2026-10-24-s4",
+  "data": "2026-10-24",
+  "ordem": 13,
+  "formato": "stories",
+  "titulo": "Story 16:00 · Resultado da enquete + virada",
+  "detalhe": "ARTE DE FUNDO (story-fundo-resultado.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-24/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado do sticker da manhã (arraste para cima no story). Novo story → galeria → arte → Aa e escreva o número REAL no espaço vazio de cima, por exemplo:\nX% dormiram menos de 6 horas.\n\nSó o número que aparecer. Com menos de 10 votos, escreva 'A maioria votou …' com a opção que ganhou.\nA virada já está na arte.",
+  "acao": "manual",
+  "horario": "16:00"
+ },
+ {
+  "id": "2026-10-24-s5",
+  "data": "2026-10-24",
+  "ordem": 14,
+  "formato": "stories",
+  "titulo": "Story 18:00 · Caixinha: o que atrapalha seu sono?",
+  "detalhe": "ARTE DE FUNDO (story-fundo-caixinha.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-24/story-fundo-caixinha.png\n\nCOMO FAZER: novo story → galeria → arte → sticker → PERGUNTAS (caixinha) no espaço vazio.\nTEXTO DO STICKER: O que mais atrapalha o seu sono?\n\nAs respostas viram stories de domingo às 11h.",
+  "acao": "manual",
+  "horario": "18:00"
+ },
+ {
+  "id": "2026-10-24-s6",
+  "data": "2026-10-24",
+  "ordem": 15,
+  "formato": "stories",
+  "titulo": "Story 20:30 · Convite MÉTODO (automático, não precisa postar)",
+  "detalhe": "O robô publica sozinho a arte: 'Quer um plano que respeite a sua rotina? Me manda MÉTODO no direct.'.\n\nSua parte: responder quem mandar MÉTODO no direct.",
+  "acao": "manual",
+  "horario": "20:30"
+ },
+ {
+  "id": "2026-10-25-s1",
+  "data": "2026-10-25",
+  "ordem": 10,
+  "formato": "stories",
+  "titulo": "Story 09:00 · Eco: bastidor de descanso",
+  "detalhe": "Objetivo do dia: dia sem pauta: metade eco do sono, metade prelúdio da semana (critério).\n\nO QUE FILMAR: 5 a 8 s de descanso ativo (caminhada, alongamento).\n\nTEXTO NA TELA (Aa):\nRecuperar também é treino.",
+  "acao": "manual",
+  "horario": "09:00"
+ },
+ {
+  "id": "2026-10-25-s2",
+  "data": "2026-10-25",
+  "ordem": 11,
+  "formato": "stories",
+  "titulo": "Story 11:00 · Eco: respostas da caixinha de sábado",
+  "detalhe": "COMO FAZER: abra o story da caixinha de sábado (18h) → veja as respostas → toque em uma → Compartilhar resposta.\n\nResponda 2 ou 3, uma por story, em uma frase cada. Ex.: 'Celular na cama: deixe fora do quarto por 7 dias e me conta.'\n\nNada de remédio ou suplemento para dormir: indicar médico.",
+  "acao": "manual",
+  "horario": "11:00"
+ },
+ {
+  "id": "2026-10-25-s3",
+  "data": "2026-10-25",
+  "ordem": 12,
+  "formato": "stories",
+  "titulo": "Story 15:00 · Eco: o plano do sono (automático, não precisa postar)",
+  "detalhe": "O robô publica sozinho a arte: 'Horário fixo para deitar e acordar. Treino pesado longe da hora de dormir.'",
+  "acao": "manual",
+  "horario": "15:00"
+ },
+ {
+  "id": "2026-10-25-s4",
+  "data": "2026-10-25",
+  "ordem": 13,
+  "formato": "stories",
+  "titulo": "Story 18:00 · Prelúdio: bastidor do planejamento",
+  "detalhe": "O QUE FILMAR: 5 a 8 s da agenda ou do caderno da semana.\n\nTEXTO NA TELA (Aa):\nSemana que vem começa hoje. Com critério.",
+  "acao": "manual",
+  "horario": "18:00"
+ },
+ {
+  "id": "2026-10-25-s5",
+  "data": "2026-10-25",
+  "ordem": 14,
+  "formato": "stories",
+  "titulo": "Story 19:00 · Prelúdio: enquete 'o que te trava?'",
+  "detalhe": "ARTE DE FUNDO (story-fundo-enquete.png, salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-25/story-fundo-enquete.png\n\nCOMO FAZER: novo story → galeria → escolha a arte → sticker → ENQUETE no espaço vazio abaixo da frase.\nPERGUNTA DO STICKER: em branco (a frase já está na arte).\nOPÇÃO 1: Tempo\nOPÇÃO 2: Critério",
+  "acao": "manual",
+  "horario": "19:00"
+ },
+ {
+  "id": "2026-10-25-s6",
+  "data": "2026-10-25",
+  "ordem": 15,
+  "formato": "stories",
+  "titulo": "Story 20:30 · Prelúdio: convite MÉTODO (automático, não precisa postar)",
+  "detalhe": "O robô publica sozinho a arte: 'Sua semana pode ter direção. Me manda MÉTODO no direct.'.\n\nSua parte: responder quem mandar MÉTODO no direct.",
+  "acao": "manual",
+  "horario": "20:30"
  }
 ]
