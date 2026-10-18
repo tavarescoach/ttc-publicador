@@ -120,7 +120,7 @@ Regras:
 
 Estrutura em 5 partes: **Gancho (0–3 s) → Tensão → Explicação (até 3 pontos) → Causa (frase-assinatura) → CTA.**
 
-**Todo reels com narração ou b-roll segue [references/narracao-broll.md](references/narracao-broll.md)** antes de escrever: imagem, voz e tela fazem trabalhos diferentes (a voz nunca descreve a imagem), o roteiro nasce da lista de planos do TTC, escrita para o ouvido (~2,5 palavras por segundo), silêncio antes da frase-assinatura e o formato em blocos Tempo · Imagem · Voz · Tela.
+**Todo reels com narração ou b-roll segue [references/narracao-broll.md](references/narracao-broll.md)** antes de escrever: imagem, voz e tela fazem trabalhos diferentes (a voz nunca descreve a imagem), o roteiro nasce da lista de planos do TTC, escrita para o ouvido no ritmo medido do Luan (2,8 palavras por segundo), texto exato só no gancho, na frase-assinatura e no CTA (o miolo de meio e fundo vai em pontos de fala, porque lido ele endurece), número principal até os 8 s (o perfil é assistido por 7 a 12 s em média), silêncio antes da frase-assinatura, formatos de reels para o nosso nicho, matriz de ganchos, diagnóstico por métrica e o formato em blocos Tempo · Imagem · Voz/Pontos · Tela. Antes de entregar, rode `python render/revisar_roteiro.py <tarefas.json ou arquivo>`.
 
 - **Três ganchos ao mesmo tempo no primeiro segundo:** visual (o que aparece: a barra carregada, o Luan olhando para a câmera, o número na tela), falado e escrito na tela. O escrito não repete o falado palavra por palavra; ele resume.
 - **Escreva para a boca.** Frases que o Luan diria numa conversa com aluno. Leia em voz alta: se trava, reescreva. Pode usar "a gente", "olha", contrações.

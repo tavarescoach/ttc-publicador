@@ -86,7 +86,8 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
    Para reels e broll, escreva também o ROTEIRO: acrescente em `tarefas.json` (indentação de 1 espaço, id novo "AAAA-MM-DD-eN")
    um item {data, ordem, formato:"reels", acao:"reels", titulo:"Gravar reels: <headline>", detalhe:<roteiro>} com o roteiro
    em blocos Tempo · IMAGEM · VOZ · TELA, intenção da voz, lista de planos e contagem de palavras, seguindo
-   `.claude/skills/copy-social-ttc/references/narracao-broll.md` (seção 6). Ele aparece na tela Hoje e no guia Como gravar.
+   `.claude/skills/copy-social-ttc/references/narracao-broll.md` (seção 12). Ele aparece na tela Hoje e no guia Como gravar.
+   Antes do push, rode `python render/revisar_roteiro.py tarefas.json` e corrija todo "problema" do roteiro novo.
 6. `ArtifactData update`: {status:"pronto", vez:"luan", resultado:{carrossel:"e-<doc_id>-carrossel", ...}, atualizado_em}.
    Revisão automática (render/revisar.py, roda no robô "Renderizar artes"): se passar, o card entra AGENDADO sozinho e o Luan só veta se quiser;
    se não passar, ou se for prova com aluno ou tema de saúde/hormônio/suplemento, vai para "Precisa de você" com o motivo
