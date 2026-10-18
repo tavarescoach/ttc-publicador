@@ -6,15 +6,81 @@
   "pauta": "Toda semana a ciência descobre algo sobre o músculo.",
   "legenda": "Decodificando o estudo do músculo que saiu esta semana.\n\nPesquisadores da Duke-NUS, em Singapura, mostraram na PNAS que um gene chamado DEAF1 sobe com a idade e desequilibra a manutenção do músculo. Em moscas e camundongos idosos, o exercício ajudou a baixá-lo.\n\nNão é um estudo em humanos. Mas confirma o que outros já mostraram: em 1990, idosos com média de 90 anos ganharam força em 8 semanas de musculação.\n\nEstudo novo não troca o seu treino a cada manchete. Ele confirma por que estímulo consistente, registrado e progressivo funciona.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #longevidade #copacabana #ipanema",
   "slides": [
-    {"tipo": "capa", "fundo": "marinho", "titulo": "Toda semana a ciência descobre algo sobre o músculo. Poucos sabem **o que fazer com isso.**", "foto": "https://images.pexels.com/photos/13219986/pexels-photo-13219986.jpeg?auto=compress&cs=tinysrgb&w=1600"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "A manchete dizia: exercício **reverte** o envelhecimento do músculo.", "texto": "Na semana passada, a notícia circulou em portais de ciência. Antes de virar treino, um estudo precisa passar por três perguntas: em quem foi feito, o que mediu e o que muda na prática.", "fonte": "ScienceDaily (15/10/2026)"},
-    {"tipo": "insight", "fundo": "marinho", "rotulo": "O estudo", "titulo": "Um gene chamado **DEAF1** sobe com a idade.", "texto": "Pesquisadores da Duke-NUS, em Singapura, mostraram que ele deixa o músculo priorizando fabricar proteína nova em vez de limpar a danificada. O dano se acumula e a força cai.", "fonte": "Choy et al., PNAS (2025)"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "O exercício ajuda a **baixar** esse gene.", "texto": "O treino ativa as proteínas FOXO, que seguram o DEAF1 e reequilibram a manutenção do músculo. Em moscas e camundongos idosos, menos DEAF1 devolveu equilíbrio e força.", "fonte": "Choy et al., PNAS (2025)"},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O filtro", "titulo": "Foi em **animais.** Ainda não há dados em humanos.", "texto": "**Ele explica um mecanismo. Não prova que treino rejuvenesce.** A própria equipe planeja biópsias de idosos antes e depois do treino para testar em pessoas."},
-    {"tipo": "numero", "fundo": "marinho", "rotulo": "Em humanos, desde 1990", "numero": "174", "unidade": "%", "titulo": "de ganho de força **aos 90 anos.**", "texto": "Dez idosos com média de 90 anos fizeram 8 semanas de musculação intensa. A força subiu em média 174% e a área muscular da coxa, cerca de 9%.", "fonte": "Fiatarone et al., JAMA (1990)"},
-    {"tipo": "numero", "fundo": "preto", "rotulo": "Quando começa", "numero": "30", "unidade": "anos", "titulo": "a massa muscular relativa **já começa a cair.**", "texto": "Em 468 adultos de 18 a 88 anos, a queda relativa aparece na casa dos 30. A perda absoluta fica visível perto dos 50, sobretudo nas pernas.", "fonte": "Janssen et al., J. Appl. Physiol. (2000)"},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "Estudo novo não muda o treino. **Confirma o critério.**", "texto": "Mecanismo em animais, força medida em humanos: as duas pontas dizem a mesma coisa. Músculo se mantém com estímulo consistente, em qualquer idade estudada."},
-    {"tipo": "licao", "fundo": "marinho", "rotulo": "Para quem treina", "titulo": "A ciência vira treino **quando vira registro.**", "texto": "Carga, repetições e frequência anotadas. Progressão planejada. Reavaliação para ver se o estímulo está acontecendo. Sem isso, manchete nenhuma muda o seu corpo.", "nota": "Filtrar estudo e transformar em dose é trabalho de treinador. Seguir manchete é tendência."},
-    {"tipo": "cta", "fundo": "preto", "titulo": "Quer um treino com **critério**, não com manchete?", "texto": "A Avaliação Estratégica mede onde você está e define a direção do seu treino.", "cta": "Me manda **MÉTODO** no direct."}
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Toda semana a ciência descobre algo sobre o músculo. Poucos sabem **o que fazer com isso.**",
+      "foto": "https://images.pexels.com/photos/13219986/pexels-photo-13219986.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "A manchete dizia: exercício **reverte** o envelhecimento do músculo.",
+      "texto": "Na semana passada, a notícia circulou em portais de ciência. Antes de virar treino, um estudo precisa passar por três perguntas: em quem foi feito, o que mediu e o que muda na prática.",
+      "fonte": "ScienceDaily (15/10/2026)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "marinho",
+      "rotulo": "O estudo",
+      "titulo": "Um gene chamado **DEAF1** sobe com a idade.",
+      "texto": "Pesquisadores da Duke-NUS, em Singapura, mostraram que ele deixa o músculo priorizando fabricar proteína nova em vez de limpar a danificada. O dano se acumula e a força cai."
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "O exercício ajuda a **baixar** esse gene.",
+      "texto": "O treino ativa as proteínas FOXO, que seguram o DEAF1 e reequilibram a manutenção do músculo. Em moscas e camundongos idosos, menos DEAF1 devolveu equilíbrio e força.",
+      "fonte": "Choy et al., PNAS (2025)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O filtro",
+      "titulo": "Foi em **animais.** Ainda não há dados em humanos.",
+      "texto": "**Ele explica um mecanismo. Não prova que treino rejuvenesce.** A própria equipe planeja biópsias de idosos antes e depois do treino para testar em pessoas."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "Em humanos, desde 1990",
+      "numero": "174",
+      "unidade": "%",
+      "titulo": "de ganho de força **aos 90 anos.**",
+      "texto": "Dez idosos com média de 90 anos fizeram 8 semanas de musculação intensa. A força subiu em média 174% e a área muscular da coxa, cerca de 9%.",
+      "fonte": "Fiatarone et al., JAMA (1990)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "Quando começa",
+      "numero": "30",
+      "unidade": "anos",
+      "titulo": "a massa muscular relativa **já começa a cair.**",
+      "texto": "Em 468 adultos de 18 a 88 anos, a queda relativa aparece na casa dos 30. A perda absoluta fica visível perto dos 50, sobretudo nas pernas.",
+      "fonte": "Janssen et al., J. Appl. Physiol. (2000)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "Estudo novo não muda o treino. **Confirma o critério.**",
+      "texto": "Mecanismo em animais, força medida em humanos: as duas pontas dizem a mesma coisa. Músculo se mantém com estímulo consistente, em qualquer idade estudada."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "marinho",
+      "rotulo": "Para quem treina",
+      "titulo": "A ciência vira treino **quando vira registro.**",
+      "texto": "Carga, repetições e frequência anotadas. Progressão planejada. Reavaliação para ver se o estímulo está acontecendo. Sem isso, manchete nenhuma muda o seu corpo.",
+      "nota": "Filtrar estudo e transformar em dose é trabalho de treinador. Seguir manchete é tendência."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "preto",
+      "titulo": "Quer um treino com **critério**, não com manchete?",
+      "texto": "A Avaliação Estratégica mede onde você está e define a direção do seu treino.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
   ]
 }
