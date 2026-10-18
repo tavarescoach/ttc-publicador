@@ -34,7 +34,7 @@ def main():
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 n = len(json.loads(r.read() or b"[]"))
-            print(f"{cid}: {len(fontes)} fonte(s)" + ("" if n else " — card ainda não existe no painel"))
+            print(f"::notice::fontes {cid}: {len(fontes)} link(s), {n} card(s) atualizado(s)")
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:300]
             if "fontes" in msg:
