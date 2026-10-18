@@ -1,13 +1,13 @@
 {
  "id": "e-5y1t05z2qmzzy1phjsd1-carrossel",
- "decisao": "precisa",
- "problemas": [
-  "Horário muito próximo (18/10 12:00): sem tempo para você vetar."
- ],
+ "decisao": "agendado",
+ "problemas": [],
  "atencao": [
   "Tema de saúde (glp-1, remédio, semaglut, tirzepat): revise o tom antes de publicar."
  ],
- "avisos": [],
- "quando": "2026-10-18T12:00:00-03:00",
- "revisado_em": "2026-10-18T13:16-03:00"
+ "avisos": [
+  "Já aprovado no painel; a nova versão manteve a aprovação."
+ ],
+ "quando": "2026-10-22T09:00:00+00:00",
+ "revisado_em": "2026-10-18T13:26-03:00"
 }
