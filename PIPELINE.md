@@ -20,7 +20,8 @@ Responda e escreva sempre em português do Brasil.
 
 ## Documento da criação (coleção `criacoes`)
 Campos: status (pesquisando | opcoes | rascunho | gerando | pronto | erro), vez (claude | luan), origem (pesquisa | material | ideias),
-foco, entrada_resumo, opcoes [5 × {titulo, subtitulo, frases[2], tese, headlines[4 × {titulo, subtitulo}]}],
+foco, entrada_resumo, opcoes [5 × {titulo, subtitulo, frases[2], objetivo, potencial, tese, headlines[4 × {titulo, subtitulo}]}],
+reportagem, fontes, recomendada (ver pesquisa),
 escolha {titulo, subtitulo, ...}, tese, headline {titulo, subtitulo}, formatos [carrossel | reels | broll | estatico | stories],
 quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, erro, atualizado_em.
 
@@ -37,7 +38,17 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
      `## O custo escondido da crença errada`, `## Como o método aplica`, `## Objeções que esse tema responde`, `## Desdobramentos de conteúdo`,
      `## Cuidado de comunicação`. Use "- " em listas e **negrito**. Nada genérico.
    - headlines: 4 investigativas e culturais, com potencial viral (curiosidade, conexão). titulo = frase 1, subtitulo = frase 2.
-4. `ArtifactData update` com {opcoes, status:"opcoes", vez:"luan", atualizado_em} e o `if_version`.
+   - objetivo: o objetivo que a opção mais atende, em 2–4 palavras (ex.: "Alcance e viralização", "Venda: quebra objeção");
+   - potencial: {alcance, engajamento, venda}, cada um "alto" | "medio" | "baixo" (alcance = views/viralização; engajamento = salvar,
+     comentar, compartilhar; venda = direct com MÉTODO / Avaliação Estratégica). Seja honesto: nem tudo é alto.
+   Campos do documento (valem para as 5 opções; o Estúdio mostra no topo da tela "Escolha a pauta"):
+   - reportagem: {titulo (original), titulo_pt (tradução fiel), veiculo (com autor se houver), data (DD/MM/AAAA), link} — a matéria
+     de partida (do Radar ou a principal da pesquisa). Se não houver uma matéria central, null.
+   - fontes: 2 a 5 principais, conferidas, mais forte primeiro: [{tipo: estudo|diretriz|comunicado|reportagem, titulo, autores,
+     publicacao (revista/veículo), ano, link}]. Estudo: prefira link do PubMed/PMC ou DOI. Sem link confiável, link "".
+   - recomendada: {indice (1–5), motivo (2–3 frases: por que equilibra alcance, engajamento e venda, timing do assunto e o que pegar
+     das outras opções para fechar a peça), headline {titulo, subtitulo} (uma das 4 da opção), formato (formato principal sugerido)}.
+4. `ArtifactData update` com {opcoes, reportagem, fontes, recomendada, status:"opcoes", vez:"luan", atualizado_em} e o `if_version`.
 
 ## ESTUDIO gerar <doc_id>
 1. `ArtifactData get`. Se status não for "gerando", pare. Leia escolha, tese, headline, formatos, quando.
