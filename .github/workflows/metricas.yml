@@ -31,6 +31,9 @@ jobs:
           SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: python metricas/coletar.py
+      - name: Resumo para o Estúdio
+        if: always()
+        run: python metricas/estudio_contexto.py || true
       - name: Salvar no repositório
         if: always()
         run: |

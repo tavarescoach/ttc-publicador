@@ -18,6 +18,11 @@ Responda e escreva sempre em português do Brasil.
 - Robô "Renderizar artes": cada push em `render/pedidos/*.json` gera os PNGs, sobe para o bucket e cria o card
   "Pronto para aprovar" no painel; guarda a prévia em `render/previas/<id>.jpg`.
 
+## Desempenho do Instagram (coleção `contexto`, doc `instagram`)
+O Estúdio usa esse documento para dar a nota "Parecida com o que funcionou" às headlines. No início de toda execução,
+rode `python3 metricas/estudio_contexto.py` e grave `metricas/estudio-contexto.json` com `ArtifactData set` (file_path,
+com o `if_version` lido no `get`). Ao avaliar headlines (ver pesquisa), use esses posts como referência real.
+
 ## Documento da criação (coleção `criacoes`)
 Campos: status (pesquisando | opcoes | rascunho | gerando | pronto | erro), vez (claude | luan), origem (pesquisa | material | ideias),
 foco, entrada_resumo, opcoes [5 × {titulo, subtitulo, frases[2], objetivo, potencial, tese, headlines[4 × {titulo, subtitulo}]}],
@@ -43,6 +48,9 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
      {titulo, subtitulo} ou null}: a headline que melhor equilibra parar o scroll, salvamento e venda, com uma versão
      melhorada se couber. Quesitos: curiosidade (para o scroll), clareza (entende em 2 s), marca (tom LT, sem clickbait),
      publico (dores do executivo 30–45 e da mulher 30–50), venda (ponte para Avaliação Estratégica / MÉTODO).
+     Quando houver o doc `contexto/instagram`, inclua também `historico` (0–10: semelhança de estrutura, tema e tom com os
+     posts de maior valor e taxa do perfil, ignorando os de baixo desempenho) e `referencia` (título exato do post mais
+     parecido, ou "" se nenhum).
    - objetivo: o objetivo que a opção mais atende, em 2–4 palavras (ex.: "Alcance e viralização", "Venda: quebra objeção");
    - potencial: {alcance, engajamento, venda}, cada um "alto" | "medio" | "baixo" (alcance = views/viralização; engajamento = salvar,
      comentar, compartilhar; venda = direct com MÉTODO / Avaliação Estratégica). Seja honesto: nem tudo é alto.

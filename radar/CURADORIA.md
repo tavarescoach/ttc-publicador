@@ -31,3 +31,8 @@ Roda 2x por dia (~6h17 e ~14h17, Brasília), 30 min depois da coleta. Ninguém e
    imagem, publicado_em, tema, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
 2. Apague arquivos de curadoria com mais de 3 dias.
 3. `git pull --rebase`, commit ("radar: curadoria AAAA-MM-DD HH h") e push. O robô "Radar de notícias" aplica no painel.
+4. Atualize o desempenho do Instagram no Estúdio (as notas de "Parecida com o que funcionou" das headlines dependem disso):
+   rode `python3 metricas/estudio_contexto.py` e envie `metricas/estudio-contexto.json` com a ferramenta ArtifactData
+   (carregar via ToolSearch "select:ArtifactData"): `get` em url https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH,
+   collection `contexto`, doc_id `instagram` para pegar a `version`; depois `set` com `file_path` e `if_version`.
+   Se falhar, siga em frente: é opcional.
