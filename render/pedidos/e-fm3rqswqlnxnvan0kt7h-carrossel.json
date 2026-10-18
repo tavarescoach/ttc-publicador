@@ -1,0 +1,89 @@
+{
+  "id": "e-fm3rqswqlnxnvan0kt7h-carrossel",
+  "data": "2026-10-30",
+  "quando": "2026-10-30T12:00:00-03:00",
+  "funil": "meio",
+  "pauta": "Mudar o treino toda semana parece inteligente.",
+  "legenda": "Decodificando o \"confundir o músculo\".\n\nA ideia é trocar o treino o tempo todo para o corpo não se acostumar. Quando pesquisadores compararam treino fixo e treino sorteado a cada sessão, por 8 semanas, músculo e força cresceram igual. Só a motivação mudou.\n\nUma revisão de 8 estudos foi além: alguma variação planejada ajuda, mas troca excessiva e aleatória pode atrapalhar. E sem repetir o exercício, não dá para saber se a carga subiu.\n\nCorpo não estagna por se acostumar. Estagna porque o estímulo não sobe.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #sobrecargaprogressiva #copacabana #ipanema",
+  "slides": [
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Mudar o treino toda semana parece inteligente. É o jeito mais rápido de **não evoluir.**",
+      "foto": "https://images.pexels.com/photos/4164850/pexels-photo-4164850.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "marinho",
+      "titulo": "\"Confundir o músculo\" virou **regra de academia.**",
+      "foto": "https://images.pexels.com/photos/28636776/pexels-photo-28636776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "texto": "Treino novo toda semana, aula diferente todo dia, app que sorteia exercícios. A ideia é não deixar o corpo se acostumar. Treinadores ouvidos pelo The Guardian apontam esse hábito entre os erros de quem não vê resultado.",
+      "fonte": "The Guardian (18/10/2026)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "O teste",
+      "numero": "8",
+      "unidade": "semanas",
+      "titulo": "treino fixo contra treino **sorteado.**",
+      "texto": "Homens treinados em dois grupos. Um repetiu os mesmos exercícios. O outro teve exercícios e repetições sorteados a cada sessão. Mesmo volume, mesma intensidade.",
+      "fonte": "Baz-Valle et al., PLoS One (2019)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O resultado",
+      "titulo": "Músculo e força cresceram **igual.**",
+      "texto": "**Sortear o treino não acrescentou nada.** A única diferença foi a motivação, maior no grupo sorteado. Treinar ficou mais divertido, não mais eficaz."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "Nas mulheres",
+      "numero": "70",
+      "titulo": "mulheres, 10 semanas, **o mesmo resultado.**",
+      "texto": "Metade repetiu os mesmos exercícios de perna. Metade alternou três combinações na semana. Espessura muscular e força no leg press subiram de forma parecida.",
+      "fonte": "Kassiano et al., Res. Q. Exerc. Sport (2024)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "A revisão",
+      "numero": "8",
+      "titulo": "estudos, **uma conclusão.**",
+      "texto": "Alguma variação planejada ajuda a trabalhar regiões diferentes do músculo. Troca excessiva e aleatória de exercícios pode comprometer os ganhos.",
+      "fonte": "Kassiano et al., J. Strength Cond. Res. (2022)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "marinho",
+      "titulo": "O que faz o corpo **responder.**",
+      "foto": "https://images.pexels.com/photos/4944313/pexels-photo-4944313.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "texto": "Séries perto do limite e carga que sobe com o tempo. A regra que os treinadores descrevem: manter o exercício, subir as repetições até um teto e só então aumentar a carga.",
+      "fonte": "Robinson et al., Sports Medicine (2024); The Guardian (2026)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "Corpo não estagna por se **acostumar.**",
+      "texto": "Estagna porque o estímulo não sobe. **Sem repetir o exercício, não existe como medir progresso.** Cada treino novo recomeça a conta do zero."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "preto",
+      "rotulo": "Para quem treina",
+      "titulo": "Repetir com critério é o que **faz evoluir.**",
+      "texto": "Mantenha os exercícios principais por algumas semanas. Defina uma faixa de repetições. Chegou ao teto com técnica, sobe a carga. Anote cada sessão. Troque no fim do ciclo, não por tédio.",
+      "nota": "Variedade dá sensação de novidade. Registro dá evolução. Planejar o ciclo é trabalho de treinador."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "marinho",
+      "titulo": "Você sabe se está **progredindo?**",
+      "texto": "A Avaliação Estratégica mede onde você está e define a direção do seu treino, com critério para cada ciclo.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
+  ]
+}
