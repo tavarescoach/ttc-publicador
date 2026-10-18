@@ -1,0 +1,20 @@
+{
+  "id": "e-5y1t05z2qmzzy1phjsd1-carrossel",
+  "data": "2026-10-18",
+  "quando": "2026-10-18T12:00:00-03:00",
+  "funil": "meio",
+  "pauta": "O que muda no treino de quem usa GLP-1.",
+  "legenda": "Decodificando o treino de quem usa GLP-1.\n\nAs canetas aceleram a perda de peso. Mas uma meta-análise de 20 ensaios (2026) mostrou que de 25% a 39% do peso perdido com esses remédios foi massa magra.\n\nQuando a mudança de estilo de vida incluiu treino de força, essa fatia caiu para 17,5%. E força faz diferença: no estudo PURE, cada 5 kg a menos de preensão se associou a 16% mais risco de morte.\n\nA caneta faz a parte dela. O músculo é a sua. Medicação é decisão do seu médico; estrutura de força é trabalho de treino.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #glp1 #copacabana #ipanema",
+  "slides": [
+    {"tipo": "capa", "fundo": "marinho", "titulo": "O que muda no treino de quem usa **GLP-1.**", "foto": "https://images.pexels.com/photos/896058/pexels-photo-896058.jpeg?auto=compress&cs=tinysrgb&w=1600"},
+    {"tipo": "texto_foto", "fundo": "marinho", "titulo": "A caneta mudou a velocidade da perda de peso.", "texto": "Semaglutida e tirzepatida reduzem o apetite e aceleram o emagrecimento. As pesquisas falam de coração, fígado e articulações. Quase ninguém fala do músculo.", "fonte": "Fox News Health (15/10/2026)"},
+    {"tipo": "numero", "fundo": "preto", "rotulo": "A conta que ninguém faz", "numero": "25–39", "unidade": "%", "titulo": "do peso perdido com incretinas foi **massa magra.**", "texto": "Meta-análise de 20 ensaios randomizados, com 15.782 participantes. Não é só gordura que sai quando o peso cai rápido.", "fonte": "Meta-análise de 20 ECRs (mar/2026, PMID 41877354)"},
+    {"tipo": "insight", "fundo": "claro", "rotulo": "O que entra na balança", "titulo": "Peso menor não garante **corpo mais forte.**", "texto": "**A balança não separa gordura de músculo.** Sem medir composição, ninguém sabe o que foi perdido."},
+    {"tipo": "numero", "fundo": "marinho", "rotulo": "Com treino de força", "numero": "17,5", "unidade": "%", "titulo": "foi a fatia de massa magra. **O melhor perfil.**", "texto": "Na mesma análise, a mudança de estilo de vida com treino de força teve a menor perda de massa magra entre os grupos comparados.", "fonte": "Meta-análise de 20 ECRs (mar/2026)"},
+    {"tipo": "numero", "fundo": "preto", "rotulo": "Por que o músculo importa", "numero": "16", "unidade": "%", "titulo": "mais risco de morte a cada **5 kg a menos** de força.", "texto": "No estudo PURE, com cerca de 140 mil adultos em 17 países, força de preensão menor se associou a maior risco de morte por qualquer causa.", "fonte": "Leong et al., Lancet (2015)"},
+    {"tipo": "texto_foto", "fundo": "marinho", "titulo": "Menos tempo, **mais critério.**", "foto": "https://images.pexels.com/photos/6551083/pexels-photo-6551083.jpeg?auto=compress&cs=tinysrgb&w=1600", "texto": "Com menos apetite, a energia cai. Sessões longas e exaustivas levam ao abandono. O treino fica mais curto, mais denso e com progressão de carga."},
+    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "A caneta faz a parte dela. **O músculo é a sua.**", "texto": "O remédio muda o apetite. Quem protege a estrutura é o estímulo de força, medido e repetido com consistência."},
+    {"tipo": "licao", "fundo": "preto", "rotulo": "Para quem treina", "titulo": "Como o treino se ajusta **na prática.**", "texto": "Medir composição e força antes de começar. Duas a três sessões curtas por semana, com foco em pernas e tronco. Reavaliar para confirmar que a massa magra ficou.", "nota": "Dose e medicação são decisão do seu médico. O treinador cuida da estrutura de força."},
+    {"tipo": "cta", "fundo": "marinho", "titulo": "Está em tratamento e quer proteger o **músculo?**", "texto": "A Avaliação Estratégica mede onde você está e define a direção do seu treino.", "cta": "Me manda **MÉTODO** no direct."}
+  ]
+}
