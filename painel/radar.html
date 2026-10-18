@@ -164,6 +164,21 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
 .ft.off{opacity:.6}
 .ft .meta{margin-top:3px}
 
+.nova-ref{display:grid;gap:10px;background:var(--sup2);border:1px solid var(--linha);border-radius:14px;padding:14px}
+.nova-ref label{display:block;font-size:12px;color:var(--apoio);margin-bottom:6px;font-weight:500}
+.nova-ref textarea{font:inherit;color:var(--tinta);background:var(--sup);border:1px solid var(--linha2);border-radius:var(--raio-p);padding:10px 12px;width:100%;resize:vertical}
+.nova-ref textarea:focus{outline:2px solid var(--tinta);outline-offset:1px}
+.linha-btn{display:flex;justify-content:flex-end}
+.perfil{margin-top:18px;border:1px solid var(--linha);border-radius:14px;padding:14px 16px;background:var(--sup)}
+.perfil h3{font-size:14px;font-weight:700;margin-bottom:4px}
+.perfil>p{color:var(--apoio);font-size:13px;line-height:1.55;margin-bottom:6px}
+.perfil h4{font-size:12px;color:var(--apoio);font-weight:600;margin:10px 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chips span{font-size:12px;padding:3px 10px;border-radius:999px;background:#EDEFF3;color:var(--tinta)}
+.chips.red span{background:var(--red-claro);color:var(--red)}
+.perfil ul{margin:0 0 0 18px;padding:0;font-size:13px;color:#2B3446;line-height:1.5}
+.ref .tx a{text-decoration:none}.ref .tx a:hover{text-decoration:underline}
+.ref .nota-l{display:block;font-size:12px;color:var(--apoio);font-style:italic;margin-top:2px;white-space:normal}
 .centro{min-height:60vh;display:grid;place-items:center;text-align:center;color:var(--apoio);line-height:1.7}
 
 @media (max-width:1100px){.placar{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -188,6 +203,9 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
     <button class="btn" id="btnFontes" type="button">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.2"/></svg>
       Fontes <span class="cont num" id="fontesCont">—</span></button>
+    <button class="btn" id="btnEnsinar" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></svg>
+      Ensinar o radar <span class="cont num" id="refCont">—</span></button>
     <a class="btn" href="./">← Painel</a>
     <a class="btn escuro" href="https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
@@ -210,6 +228,22 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
     </form>
     <div class="msg" id="fMsg" role="status"></div>
     <div id="ftLista"></div>
+  </div>
+</div>
+
+<div class="fundo hide" id="mEnsinar">
+  <div class="caixa" role="dialog" aria-modal="true" aria-labelledby="enTitulo">
+    <div class="caixa-top"><h2 id="enTitulo">Ensinar o radar</h2><button class="fechar" type="button" data-fechar-ensinar aria-label="Fechar">×</button></div>
+    <p>Cole o link de uma notícia que você achou interessante e, se quiser, diga o que chamou sua atenção. O Claude lê a matéria, entende os termos, os assuntos e o jeito de pensar que conversam com o seu nicho e o seu tom, e o radar passa a buscar e pontuar notícias parecidas. Entra na próxima coleta (5h47 e 13h47).</p>
+    <form id="formRef" autocomplete="off" class="nova-ref">
+      <div><label for="rUrl">Link da notícia</label><input id="rUrl" type="text" inputmode="url" autocapitalize="off" spellcheck="false" required placeholder="https://..."></div>
+      <div><label for="rNota">O que chamou sua atenção? <span style="color:var(--fraco)">(opcional, ajuda muito)</span></label>
+        <textarea id="rNota" rows="2" maxlength="600" placeholder="Ex.: o jeito de falar de envelhecimento sem drama; o dado do estudo; dá um ótimo mito x método"></textarea></div>
+      <div class="linha-btn"><button class="btn escuro" type="submit" id="rBtn">Ensinar com esta notícia</button></div>
+    </form>
+    <div class="msg" id="rMsg" role="status"></div>
+    <div id="enPerfil"></div>
+    <div id="enLista"></div>
   </div>
 </div>
 
@@ -282,7 +316,10 @@ function cardNoticia(i){
 function cardAdd(){
   return `<button class="add-fonte" type="button" data-add-fonte>
     <span class="mais-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-    Adicionar nova fonte<small>Cole o link de um site e ele entra no radar</small></button>`;
+    Adicionar nova fonte<small>Cole o link de um site e ele entra no radar</small></button>
+  <button class="add-fonte" type="button" data-ensinar>
+    <span class="mais-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></svg></span>
+    Ensinar o radar<small>Cole uma notícia que você achou interessante</small></button>`;
 }
 
 function chips(nome, lista){ return lista.map(([k,t]) => `<button class="chip ${String(ui[nome]) === String(k) ? "on" : ""}" data-f="${nome}" data-v="${k}">${t}</button>`).join(""); }
@@ -459,13 +496,96 @@ async function acaoFonte(acao, canal){
   try { await gravarEvento({acao, canal}); msg.textContent = ({remover:"Removida. Some na próxima coleta.", pausar:"Pausada a partir da próxima coleta.", reativar:"Reativada a partir da próxima coleta."})[acao]; }
   catch(e){ msg.className = "msg erro"; msg.textContent = "Não salvou: " + e.message; }
 }
+/* ---------- ensinar o radar (notícias de referência) ---------- */
+let refs = {estado:null, perfil:null, eventos:[], carregado:false};
+function listaRefs(){
+  const mapa = new Map((refs.estado?.referencias || []).map(r => [r.url, {...r}]));
+  for (const ev of refs.eventos){
+    if (refs.estado?.ultimo_evento && ev._arquivo <= refs.estado.ultimo_evento) continue;
+    if (ev.acao === "adicionar" && !mapa.has(ev.url)) mapa.set(ev.url, {url:ev.url, nota_luan:ev.nota || "", adicionado_em:ev.quando, pendente:true});
+    if (ev.acao === "remover") mapa.delete(ev.url);
+  }
+  return [...mapa.values()].sort((a,b) => (b.adicionado_em || "").localeCompare(a.adicionado_em || ""));
+}
+function renderRefs(){
+  const l = listaRefs();
+  $("refCont").textContent = refs.carregado ? l.length : "—";
+  if (!refs.carregado){ $("enLista").innerHTML = `<div class="msg">Carregando…</div>`; return; }
+  const pf = refs.perfil;
+  const chips = (arr, cls="") => arr?.length ? `<div class="chips ${cls}">${arr.map(x => `<span>${esc(typeof x === "string" ? x : x.nome || x.slug || "")}</span>`).join("")}</div>` : "";
+  $("enPerfil").innerHTML = pf && (pf.resumo || pf.assuntos?.length) ? `<div class="perfil">
+      <h3>O que o radar já entendeu de você</h3>
+      ${pf.resumo ? `<p>${esc(pf.resumo)}</p>` : ""}
+      ${pf.assuntos?.length ? `<h4>Assuntos que conversam com o seu nicho</h4>${chips(pf.assuntos)}` : ""}
+      ${(pf.termos?.pt?.length || pf.termos?.en?.length) ? `<h4>Termos que o radar passou a buscar</h4>${chips([...(pf.termos.pt || []), ...(pf.termos.en || [])].slice(0, 40))}` : ""}
+      ${pf.angulos?.length ? `<h4>Ângulos e jeito de pensar</h4><ul>${pf.angulos.map(a => `<li>${esc(a)}</li>`).join("")}</ul>` : ""}
+      ${pf.evitar?.length ? `<h4>O que não te interessa</h4>${chips(pf.evitar, "red")}` : ""}
+      ${pf.atualizado_em ? `<div class="msg">Atualizado ${esc(ha(pf.atualizado_em))} · ${pf.referencias_analisadas?.length || 0} referência(s) analisada(s)</div>` : ""}
+    </div>` : (l.length ? `<div class="perfil"><h3>O que o radar já entendeu de você</h3><p>O Claude analisa as referências na curadoria seguinte à coleta (6h17 e 14h17). O resumo aparece aqui.</p></div>` : "");
+  const analisadas = new Set(pf?.referencias_analisadas || []);
+  $("enLista").innerHTML = l.length ? `<div class="ft-grupo"><h3>Suas referências <span>${l.length}</span></h3>${l.map(r => {
+      const st = r.pendente ? `<span class="tag warn">entra na próxima coleta</span>` : analisadas.has(r.id) ? `<span class="tag ok">analisada</span>` : `<span class="tag">aguardando a curadoria</span>`;
+      return `<div class="ft ref"><span class="ini">${esc(iniciais(r.site || dominio(r.url)))}</span>
+        <div class="tx"><b>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.titulo || r.url)}</a>` : esc(r.titulo)}</b>
+          <small>${esc(r.site || dominio(r.url))}${r.adicionado_em ? " · " + esc(ha(r.adicionado_em)) : ""}</small>
+          ${r.nota_luan ? `<span class="nota-l">“${esc(r.nota_luan)}”</span>` : ""}
+          ${(r.aprendido || pf?.aprendido?.[r.id]) ? `<span class="nota-l" style="font-style:normal">Aprendido: ${esc(r.aprendido || pf.aprendido[r.id])}</span>` : ""}
+          <div class="meta">${st}</div></div>
+        <button class="mini x" data-ref-rem="${esc(r.url)}">Remover</button></div>`; }).join("")}</div>`
+    : `<div class="ft-grupo"><div class="vazio">Nenhuma referência ainda. Comece por uma notícia que você gostaria de ter transformado em conteúdo.</div></div>`;
+}
+async function carregarRefs(){
+  if (DEMO){ refs = {carregado:true, eventos:[], estado:{referencias:[{id:"r1", url:"https://www.nytimes.com/2026/10/10/well/strength.html", titulo:"Strength Training Is the New Retirement Plan", site:"NYT", adicionado_em:new Date(Date.now()-86400e3).toISOString(), nota_luan:"o jeito de falar de força como investimento", aprendido:"força como patrimônio; linguagem de finanças para falar de corpo"}]},
+    perfil:{atualizado_em:new Date(Date.now()-3600e3).toISOString(), referencias_analisadas:["r1"], resumo:"Você se interessa por notícias que tratam o corpo como patrimônio e decisão estratégica, com dado concreto e sem tom de culpa.", assuntos:["força como investimento","longevidade com autonomia","rotina do executivo"], termos:{pt:["longevidade","massa muscular","autonomia"], en:["healthspan","strength training","muscle mass"]}, angulos:["Linguagem de negócios para falar de corpo","Dado de estudo como gancho, sem alarmismo"], evitar:["dieta milagrosa","fofoca sem ponte"]}}; return renderRefs(); }
+  try {
+    const baixarJson = c => sb.storage.from("materiais").download(c).then(r => r.data ? r.data.text().then(JSON.parse) : null).catch(() => null);
+    const [est, perfil, lista] = await Promise.all([baixarJson("radar/referencias-estado.json"), baixarJson("radar/perfil.json"),
+      sb.storage.from("materiais").list("radar/referencias", {limit:1000, sortBy:{column:"name", order:"asc"}}).then(r => r.data || [])]);
+    const ult = est?.ultimo_evento || "";
+    const pend = lista.filter(o => o.name.endsWith(".json") && o.name > ult);
+    const evs = await Promise.all(pend.map(o => baixarJson("radar/referencias/" + o.name).then(e => e ? {...e, _arquivo:o.name} : null)));
+    refs = {estado:est, perfil, eventos:evs.filter(Boolean).sort((a,b) => a._arquivo.localeCompare(b._arquivo)), carregado:true};
+  } catch(e){ refs = {estado:null, perfil:null, eventos:[], carregado:true}; $("rMsg").className = "msg erro"; $("rMsg").textContent = "Não consegui ler as referências: " + e.message; }
+  renderRefs();
+}
+async function gravarRef(ev){
+  ev.quando = new Date().toISOString();
+  const nome = `${Date.now()}-${Math.random().toString(36).slice(2,8)}.json`;
+  if (!DEMO){
+    const {error} = await sb.storage.from("materiais").upload("radar/referencias/" + nome, new Blob([JSON.stringify(ev)], {type:"application/json"}), {contentType:"application/json"});
+    if (error) throw error;
+  }
+  refs.eventos.push({...ev, _arquivo:nome}); renderRefs();
+}
+async function adicionarRef(ev){
+  ev.preventDefault();
+  const msg = $("rMsg"); msg.className = "msg";
+  let url = $("rUrl").value.trim();
+  if (url && !/^https?:\/\//i.test(url)) url = "https://" + url;
+  try { const u = new URL(url); if (!u.hostname.includes(".")) throw 0; } catch(_){ msg.className = "msg erro"; msg.textContent = "Esse link não parece válido."; return; }
+  if (listaRefs().some(r => r.url === url)){ msg.className = "msg erro"; msg.textContent = "Essa notícia já está nas suas referências."; return; }
+  $("rBtn").disabled = true; msg.textContent = "Salvando…";
+  try { await gravarRef({acao:"adicionar", url, nota:$("rNota").value.trim().slice(0, 600)}); $("formRef").reset(); msg.className = "msg ok"; msg.textContent = "Referência salva. O Claude analisa depois da próxima coleta."; }
+  catch(e){ msg.className = "msg erro"; msg.textContent = "Não salvou: " + e.message; }
+  $("rBtn").disabled = false;
+}
+async function removerRef(url){
+  if (!confirm("Remover esta referência? O que o radar já aprendeu com ela continua até a próxima revisão do perfil.")) return;
+  try { await gravarRef({acao:"remover", url}); $("rMsg").className = "msg"; $("rMsg").textContent = "Removida."; }
+  catch(e){ $("rMsg").className = "msg erro"; $("rMsg").textContent = "Não salvou: " + e.message; }
+}
+function abrirEnsinar(){ $("mEnsinar").classList.remove("hide"); $("rMsg").textContent = ""; renderRefs(); carregarRefs(); setTimeout(() => $("rUrl").focus(), 50); }
+
 function abrirFontes(){ $("mFontes").classList.remove("hide"); $("fMsg").textContent = ""; renderFontes(); carregarFontes(); setTimeout(() => $("fUrl").focus(), 50); }
-function fecharTudo(){ $("modal").classList.add("hide"); $("mFontes").classList.add("hide"); }
+function fecharTudo(){ $("modal").classList.add("hide"); $("mFontes").classList.add("hide"); $("mEnsinar").classList.add("hide"); }
 
 document.addEventListener("click", ev => {
   const t = ev.target;
   if (t.closest("#btnFontes") || t.closest("[data-add-fonte]")) return abrirFontes();
   if (t.closest("[data-fechar-fontes]") || t === $("mFontes")) return $("mFontes").classList.add("hide");
+  if (t.closest("#btnEnsinar") || t.closest("[data-ensinar]")) return abrirEnsinar();
+  if (t.closest("[data-fechar-ensinar]") || t === $("mEnsinar")) return $("mEnsinar").classList.add("hide");
+  const rr = t.closest("[data-ref-rem]"); if (rr) return removerRef(rr.dataset.refRem);
   const fo = t.closest("[data-fonte]"); if (fo) return acaoFonte(fo.dataset.fonte, fo.dataset.canal);
   const k = t.closest("[data-kpi]");
   if (k){
@@ -487,9 +607,10 @@ document.addEventListener("click", ev => {
 });
 document.addEventListener("keydown", ev => { if (ev.key === "Escape") fecharTudo(); });
 $("formFonte").addEventListener("submit", adicionarFonte);
+$("formRef").addEventListener("submit", adicionarRef);
 
 async function carregar(){
-  if (DEMO){ itens = demo(); render(); return carregarFontes(); }
+  if (DEMO){ itens = demo(); render(); carregarRefs(); return carregarFontes(); }
   const {data:sess} = await sb.auth.getSession();
   if (!sess.session){ $("placar").innerHTML = ""; $("atual").textContent = ""; $("app").innerHTML = `<div class="centro"><div>Entre no painel primeiro.<br><a class="btn red" href="./" style="margin-top:12px">Ir para o login</a></div></div>`; return; }
   const desde = new Date(Date.now() - 8*864e5).toISOString();
@@ -497,9 +618,10 @@ async function carregar(){
   if (error){ $("app").innerHTML = `<div class="centro">Não consegui carregar o radar: ${esc(error.message)}</div>`; return; }
   itens = data; render();
   if (!fontes.carregado) carregarFontes();
+  if (!refs.carregado) carregarRefs();
 }
 carregar();
-setInterval(() => { if (document.visibilityState === "visible" && $("modal").classList.contains("hide") && $("mFontes").classList.contains("hide")) carregar(); }, 5*60000);
+setInterval(() => { if (document.visibilityState === "visible" && $("modal").classList.contains("hide") && $("mFontes").classList.contains("hide") && $("mEnsinar").classList.contains("hide")) carregar(); }, 5*60000);
 
 function demo(){
   const h = new Date().toISOString(), on = new Date(Date.now()-5*3600e3).toISOString();

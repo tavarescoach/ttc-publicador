@@ -13,6 +13,11 @@ descoberto sozinho (RSS direto, <link rel="alternate">, caminhos comuns e, por �
 O resultado (com o desempenho de cada fonte na coleta) vai para materiais/radar/fontes-ativas.json, que o painel
 lê, e para radar/fontes-extras.json no repositório.
 
+Referências ("Ensinar o radar"): o painel grava eventos em materiais/radar/referencias/*.json (adicionar | remover, com
+url e o comentário do Luan). Aqui cada notícia ativa ganha título e resumo (og:tags), entra na coleta marcada como
+referência (a curadoria do Claude analisa e atualiza radar/perfil-interesse.json) e vai ao painel como "salvo".
+Os termos de radar/perfil-interesse.json somam pontos no pré-filtro; os de "evitar" tiram.
+
 Variáveis: SUPABASE_URL, SUPABASE_SERVICE_KEY (sem elas, só gera o arquivo).
 """
 import calendar
@@ -64,11 +69,26 @@ def sem_acento(t):
     return "".join(c for c in unicodedata.normalize("NFD", t.lower()) if unicodedata.category(c) != "Mn")
 
 
+def carregar_perfil():
+    try:
+        return json.load(open(os.path.join(AQUI, "perfil-interesse.json"), encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+PERFIL = carregar_perfil()
+TERMOS_PERFIL = [sem_acento(t) for t in (PERFIL.get("termos") or {}).get("pt", []) + (PERFIL.get("termos") or {}).get("en", []) if len(t) >= 4]
+EVITAR_PERFIL = [sem_acento(t) for t in PERFIL.get("evitar_termos", []) if len(t) >= 4]
+
+
 def pontuar(texto, peso_canal):
     t = sem_acento(texto)
     if any(f in t for f in FORA):
         return 0
     p = sum(w for w, termos in NICHO.items() for k in termos if k in t)
+    p += 2 * sum(1 for k in TERMOS_PERFIL if k in t)  # aprendido com as referências do Luan
+    p -= 2 * sum(1 for k in EVITAR_PERFIL if k in t)
+    p = max(p, 0)
     return round(p * peso_canal, 2)
 
 
@@ -122,13 +142,13 @@ def storage(metodo, caminho, corpo=None, tipo="application/json", upsert=False):
         return r.read()
 
 
-def eventos_painel():
-    """Eventos gravados pelo botão Fontes do painel, em ordem de criação."""
+def eventos_painel(pasta="radar/fontes"):
+    """Eventos gravados pelo painel (botões Fontes e Ensinar o radar), em ordem de criação."""
     if not (URL and KEY):
         return []
     try:
         lista = json.loads(storage("POST", "object/list/materiais", {
-            "prefix": "radar/fontes", "limit": 1000, "offset": 0, "sortBy": {"column": "name", "order": "asc"}}))
+            "prefix": pasta, "limit": 1000, "offset": 0, "sortBy": {"column": "name", "order": "asc"}}))
     except Exception as e:
         print(f"[aviso] não li os eventos de fontes: {e}")
         return []
@@ -137,7 +157,7 @@ def eventos_painel():
         if not o["name"].endswith(".json"):
             continue
         try:
-            ev = json.loads(storage("GET", "object/materiais/radar/fontes/" + urllib.parse.quote(o["name"])))
+            ev = json.loads(storage("GET", f"object/materiais/{pasta}/" + urllib.parse.quote(o["name"])))
             ev["_arquivo"] = o["name"]
             evs.append(ev)
         except Exception as e:
@@ -233,6 +253,66 @@ def descobrir_feed(url):
         if n > melhor_n:
             melhor, melhor_n = gn, n
     return [melhor], "google_news"
+
+
+def meta_pagina(url):
+    """Título, resumo, imagem e site de uma notícia (og:tags), sem falhar."""
+    out = {"titulo": None, "resumo": None, "imagem": None, "site": urllib.parse.urlsplit(url).netloc.removeprefix("www.")}
+    try:
+        _, pg = baixar(url)
+        def og(nome):
+            m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:|twitter:)?' + nome + r'["\'][^>]+content=["\']([^"\']+)', pg, re.I) or \
+                re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:|twitter:)?' + nome + r'["\']', pg, re.I)
+            return limpar(html.unescape(m.group(1))) if m else None
+        out["titulo"] = og("title") or (limpar(re.search(r"<title[^>]*>(.*?)</title>", pg, re.I | re.S).group(1)) if re.search(r"<title", pg, re.I) else None)
+        out["resumo"] = (og("description") or "")[:500] or None
+        out["imagem"] = og("image")
+        out["site"] = og("site_name") or out["site"]
+    except Exception as e:
+        print(f"[aviso] referência {url}: não abri ({e})")
+    if not out["titulo"]:  # sem acesso (paywall/bloqueio): título a partir do endereço
+        slug = urllib.parse.urlsplit(url).path.rstrip("/").split("/")[-1]
+        out["titulo"] = re.sub(r"[-_]+", " ", re.sub(r"\.\w+$", "", slug)).strip().capitalize() or url
+    return out
+
+
+def montar_referencias():
+    """Referências ativas do botão "Ensinar o radar" (com cache dos metadados em radar/referencias.json)."""
+    evs = eventos_painel("radar/referencias")
+    ativas = {}
+    for ev in evs:
+        url = (ev.get("url") or "").strip()
+        if not re.match(r"^https?://[^\s/]+\.[^\s]+$", url):
+            continue
+        if ev.get("acao") == "adicionar":
+            ativas[url] = {"url": url, "nota_luan": (ev.get("nota") or "")[:600], "adicionado_em": ev.get("quando")}
+        elif ev.get("acao") == "remover":
+            ativas.pop(url, None)
+    try:
+        cache = {r["url"]: r for r in json.load(open(os.path.join(AQUI, "referencias.json"), encoding="utf-8"))}
+    except Exception:
+        cache = {}
+    refs = []
+    for url, r in ativas.items():
+        c = cache.get(url) or {}
+        meta = c if c.get("titulo") and c.get("titulo") != url else meta_pagina(url)
+        refs.append({"id": hashlib.sha1(url.encode()).hexdigest()[:16], **r,
+                     "titulo": meta.get("titulo"), "resumo": meta.get("resumo"), "imagem": meta.get("imagem"), "site": meta.get("site")})
+    refs.sort(key=lambda r: r["adicionado_em"] or "")
+    with open(os.path.join(AQUI, "referencias.json"), "w", encoding="utf-8") as f:
+        json.dump(refs, f, ensure_ascii=False, indent=1)
+    return refs, (evs[-1]["_arquivo"] if evs else None)
+
+
+def publicar_referencias(refs, ultimo_evento):
+    if not (URL and KEY):
+        return
+    estado = {"atualizado_em": AGORA.isoformat(), "ultimo_evento": ultimo_evento,
+              "referencias": [{k: r.get(k) for k in ("id", "url", "titulo", "site", "nota_luan", "adicionado_em")} for r in refs]}
+    storage("POST", "object/materiais/radar/referencias-estado.json", json.dumps(estado, ensure_ascii=False).encode(), upsert=True)
+    if PERFIL:
+        storage("POST", "object/materiais/radar/perfil.json", json.dumps(PERFIL, ensure_ascii=False).encode(), upsert=True)
+    print(f"Referências publicadas no painel: {len(refs)}.")
 
 
 def montar_fontes():
@@ -358,6 +438,17 @@ def supa(metodo, caminho, corpo=None, prefer=None):
 def main():
     fontes, ultimo_evento = montar_fontes()
     itens, relatorio = coletar(fontes)
+    refs, ultimo_ref = montar_referencias()
+    vistos = {i["id"] for i in itens}
+    for r in refs:  # a referência entra na coleta para a curadoria analisar e aprender
+        if r["id"] not in vistos:
+            itens.append({"id": r["id"], "canal": "Sua referência", "titulo": r["titulo"], "link": r["url"], "imagem": r["imagem"],
+                          "publicado_em": r["adicionado_em"], "resumo": r["resumo"] or "", "pre": 99,
+                          "referencia": True, "nota_luan": r["nota_luan"], "site": r["site"]})
+    try:
+        publicar_referencias(refs, ultimo_ref)
+    except Exception as e:
+        print(f"::warning::Não publiquei as referências: {e}")
     try:
         publicar_fontes(fontes, relatorio, ultimo_evento)
     except Exception as e:
@@ -369,8 +460,11 @@ def main():
         return 0
     campos = ["id", "canal", "titulo", "link", "imagem", "publicado_em"]
     try:
-        supa("POST", "radar?on_conflict=id", [{c: i[c] for c in campos} for i in itens],
+        supa("POST", "radar?on_conflict=id", [{c: i[c] for c in campos} for i in itens if not i.get("referencia")],
              "resolution=ignore-duplicates,return=minimal")
+        refs_db = [{**{c: i[c] for c in campos}, "status": "salvo"} for i in itens if i.get("referencia")]
+        if refs_db:
+            supa("POST", "radar?on_conflict=id", refs_db, "resolution=ignore-duplicates,return=minimal")
         cal = calendario_proximo()
         if cal:
             supa("POST", "radar?on_conflict=id", cal, "resolution=merge-duplicates,return=minimal")
