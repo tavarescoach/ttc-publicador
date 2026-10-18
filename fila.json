@@ -116,7 +116,7 @@
   },
   {
     "id": "2026-10-18-estatico",
-    "quando": "2026-10-18T15:00:00+00:00",
+    "quando": "2026-10-18T11:00:00+00:00",
     "tipo": "IMAGEM",
     "arquivos": [
       "2026-10-18/estatico.png"
@@ -152,7 +152,7 @@
   },
   {
     "id": "2026-10-18-story-2",
-    "quando": "2026-10-19T00:00:00+00:00",
+    "quando": "2026-10-19T10:00:00+00:00",
     "tipo": "STORY",
     "arquivos": [
       "2026-10-18/story-2.png"
@@ -162,7 +162,7 @@
   },
   {
     "id": "e-teste-pipeline-carrossel",
-    "quando": "2026-10-18T15:00:00+00:00",
+    "quando": "2026-10-21T15:00:00+00:00",
     "tipo": "CARROSSEL",
     "arquivos": [
       "2026-10-18/e-teste-pipeline-carrossel/carrossel-1.png",
@@ -320,7 +320,7 @@
   },
   {
     "id": "s-2026-10-23-carrossel",
-    "quando": "2026-10-23T15:00:00+00:00",
+    "quando": "2026-11-06T15:00:00+00:00",
     "tipo": "CARROSSEL",
     "arquivos": [
       "2026-10-23/s-2026-10-23-carrossel/carrossel-1.png",
@@ -340,7 +340,7 @@
   },
   {
     "id": "e-a5quuljupmctl82yyyzu-carrossel",
-    "quando": "2026-10-18T15:00:00+00:00",
+    "quando": "2026-10-20T10:00:00+00:00",
     "tipo": "CARROSSEL",
     "arquivos": [
       "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-1.png",
@@ -415,6 +415,66 @@
       "2026-10-18/e-7xv1pg1oxwwjvw0dbbzi-carrossel/carrossel-10.png"
     ],
     "legenda": "Decodificando o estudo do músculo que saiu esta semana.\n\nPesquisadores da Duke-NUS, em Singapura, mostraram na PNAS que um gene chamado DEAF1 sobe com a idade e desequilibra a manutenção do músculo. Em moscas e camundongos idosos, o exercício ajudou a baixá-lo.\n\nNão é um estudo em humanos. Mas confirma o que outros já mostraram: em 1990, idosos com média de 90 anos ganharam força em 8 semanas de musculação.\n\nEstudo novo não troca o seu treino a cada manchete. Ele confirma por que estímulo consistente, registrado e progressivo funciona.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #longevidade #copacabana #ipanema",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "s-2026-10-21-carrossel",
+    "quando": "2026-10-24T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-1.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-2.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-3.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-4.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-5.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-6.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-7.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-8.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-9.png",
+      "2026-10-21/s-2026-10-21-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Decodificando o custo de uma noite sem dormir.\n\nNum estudo controlado publicado na Physiological Reports em 2021, 13 adultos saudáveis passaram uma noite em claro. No dia seguinte, a síntese de proteína muscular caiu 18%. O cortisol subiu 21% e a testosterona caiu 24%.\n\nÉ uma amostra pequena e uma noite só. Mas o sinal é claro: o corpo sem sono entra em modo de defesa, não de construção.\n\nSono é parte do treino, não o intervalo entre eles.\n\nMe manda MÉTODO no direct.\n\n#sono #recuperacao #treinodeforca #personaltrainerrj #leblon",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "e-5y1t05z2qmzzy1phjsd1-carrossel",
+    "quando": "2026-10-22T09:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-1.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-2.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-3.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-4.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-5.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-6.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-7.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-8.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-9.png",
+      "2026-10-18/e-5y1t05z2qmzzy1phjsd1-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Decodificando o treino de quem usa GLP-1.\n\nAs canetas aceleram a perda de peso. Mas uma meta-análise de 20 ensaios (2026) mostrou que de 25% a 39% do peso perdido com esses remédios foi massa magra.\n\nQuando a mudança de estilo de vida incluiu treino de força, essa fatia caiu para 17,5%. E força faz diferença: no estudo PURE, cada 5 kg a menos de preensão se associou a 16% mais risco de morte.\n\nA caneta faz a parte dela. O músculo é a sua. Medicação é decisão do seu médico; estrutura de força é trabalho de treino.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #glp1 #copacabana #ipanema",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "e-kl1304eda5s8w3c9i5qv-carrossel",
+    "quando": "2026-10-24T01:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-1.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-2.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-3.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-4.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-5.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-6.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-7.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-8.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-9.png",
+      "2026-10-18/e-kl1304eda5s8w3c9i5qv-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Decodificando a fome da noite.\n\nCafé às pressas, almoço pulado, fome às 22h. Um estudo publicado em outubro de 2026, com quase 200 mil participantes de três coortes americanas, ligou comer depois do jantar ou de deitar a 20% a 30% mais risco de gordura no fígado.\n\nÉ associação, não prova de causa. Mas conversa com outro dado: o relógio interno pesa mais que o relógio de parede. E o treino mexe no fígado mesmo com pouca perda de peso.\n\nComer pouco o dia inteiro não é controle. Controle é rotina previsível e corpo forte.\n\nMe manda MÉTODO no direct.\n\n#treinofeminino #treinodeforca #personaltrainerrj #copacabana #ipanema",
     "status": "pendente",
     "origem": "painel"
   }
