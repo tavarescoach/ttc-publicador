@@ -10,6 +10,7 @@ Base do conteúdo: `render/reels/<id>/info.json` (tema, notas do Luan, funil, du
 - `titulo`: o gancho do vídeo em até 7 palavras (máx. ~40 caracteres), em CAIXA ALTA pelo próprio modelo. 1–2 palavras em **destaque** (vermelho).
   Use a Causa ou a Cena da fórmula da marca (skill copy-social-ttc), afirmativa, sem "não é X, é Y". Pode ser a primeira frase dita no vídeo (transcrição), encurtada.
 - `subtitulo` (opcional): 1 frase curta que completa o gancho.
+- A capa não repete o texto de tela dos 3 primeiros segundos do vídeo: resume a Causa ou a Cena (referência de narração e b-roll da skill copy-social-ttc).
 - Tudo importante fica na faixa central (o grid do perfil corta em 3:4). O modelo já respeita isso.
 
 ## Legenda

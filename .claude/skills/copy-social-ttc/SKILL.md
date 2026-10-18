@@ -120,6 +120,8 @@ Regras:
 
 Estrutura em 5 partes: **Gancho (0–3 s) → Tensão → Explicação (até 3 pontos) → Causa (frase-assinatura) → CTA.**
 
+**Todo reels com narração ou b-roll segue [references/narracao-broll.md](references/narracao-broll.md)** antes de escrever: imagem, voz e tela fazem trabalhos diferentes (a voz nunca descreve a imagem), o roteiro nasce da lista de planos do TTC, escrita para o ouvido (~2,5 palavras por segundo), silêncio antes da frase-assinatura e o formato em blocos Tempo · Imagem · Voz · Tela.
+
 - **Três ganchos ao mesmo tempo no primeiro segundo:** visual (o que aparece: a barra carregada, o Luan olhando para a câmera, o número na tela), falado e escrito na tela. O escrito não repete o falado palavra por palavra; ele resume.
 - **Escreva para a boca.** Frases que o Luan diria numa conversa com aluno. Leia em voz alta: se trava, reescreva. Pode usar "a gente", "olha", contrações.
 - **Duração por funil:** topo 7–20 s (voz sobre b-roll), meio 30–60 s (fala + b-roll), fundo 45–90 s (olho no olho).

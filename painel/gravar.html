@@ -48,7 +48,7 @@ th{color:var(--mut);font-size:12px;font-weight:600;text-transform:uppercase;lett
 .tela .faixa{position:absolute;left:0;right:0;top:12.5%;bottom:12.5%;border-top:1px dashed var(--ok);border-bottom:1px dashed var(--ok);background:rgba(34,197,94,.08)}
 .tela .rosto{position:absolute;left:50%;top:22%;width:34px;height:34px;border-radius:50%;background:var(--mut);transform:translateX(-50%)}
 .tela .corpo{position:absolute;left:50%;top:36%;width:70px;height:60px;border-radius:30px 30px 0 0;background:var(--mut);transform:translateX(-50%)}
-.tela .baixo{position:absolute;left:0;right:0;bottom:0;height:16%;background:rgba(193,18,31,.25);border-top:1px dashed var(--red)}
+.tela .baixo{position:absolute;left:0;right:0;bottom:0;height:26%;background:rgba(193,18,31,.25);border-top:1px dashed var(--red)}
 .legenda{font-size:13px;color:var(--mut)}
 .legenda i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
 .dia{border-left:3px solid var(--red)}
@@ -72,7 +72,7 @@ th{color:var(--mut);font-size:12px;font-weight:600;text-transform:uppercase;lett
   <p class="lead">O roteiro da semana e o padrão de gravação num lugar só. Leia o roteiro do dia, siga o checklist e envie o vídeo no painel.</p>
   <nav class="indice">
     <a href="#roteiros">Roteiros da semana</a><a href="#antes">Antes de gravar</a><a href="#quadro">Enquadramento</a>
-    <a href="#estrutura">As 5 partes</a><a href="#duracao">Duração</a><a href="#fala">Como falar</a><a href="#broll">B-roll</a><a href="#depois">Depois de gravar</a><a href="#stories">Stories</a>
+    <a href="#estrutura">As 5 partes</a><a href="#duracao">Duração</a><a href="#fala">Como falar</a><a href="#narracao">Narração sobre b-roll</a><a href="#broll">B-roll</a><a href="#depois">Depois de gravar</a><a href="#stories">Stories</a>
   </nav>
 
   <section id="roteiros">
@@ -101,7 +101,7 @@ th{color:var(--mut);font-size:12px;font-weight:600;text-transform:uppercase;lett
         <ul class="pts">
           <li>Olhos na linha de cima do terço superior. Rosto e ombros no quadro.</li>
           <li>O que importa fica na <b>faixa central</b>: o grid do perfil corta o vídeo em 3:4.</li>
-          <li>Nada importante nos <b>15% de baixo</b>: ali ficam a legenda e os botões do Instagram.</li>
+          <li>Texto e o que importa ficam <b>longe do quarto de baixo da tela</b> (cerca de 500 px de 1920) e de 220 px do topo: ali ficam a legenda, o nome do perfil e os botões do Instagram.</li>
           <li>Celular na altura dos olhos, apoiado. Nada de câmera de baixo para cima.</li>
         </ul>
         <p class="legenda" style="margin-top:10px"><i style="background:rgba(34,197,94,.35)"></i>faixa segura <i style="background:rgba(193,18,31,.4);margin-left:10px"></i>área coberta pelo app</p>
@@ -112,10 +112,10 @@ th{color:var(--mut);font-size:12px;font-weight:600;text-transform:uppercase;lett
   <section id="estrutura">
     <h2>As 5 partes de todo reels</h2>
     <div class="partes">
-      <div class="parte"><div class="k">Gancho<small>0–3 s</small></div><div>A frase que para o dedo. Vai <b>escrita na tela</b> e falada ao mesmo tempo. Grave 3 versões.</div></div>
-      <div class="parte"><div class="k">Tensão</div><div>A crença comum ou a dor de quem assiste. Uma frase.</div></div>
+      <div class="parte"><div class="k">Gancho<small>0–3 s</small></div><div>Imagem, voz e texto na tela entram juntos e <b>não repetem</b> a mesma coisa: a imagem para o dedo, a voz abre a questão, a tela resume para quem está sem som. Grave 3 versões.</div></div>
+      <div class="parte"><div class="k">Tensão</div><div>A cena que quem assiste vive (a dor, a rotina, o espelho parado). Uma ou duas frases, continuando o gancho.</div></div>
       <div class="parte"><div class="k">Explicação</div><div>No máximo 3 pontos. Sempre o porquê. Simples na superfície, técnico por trás.</div></div>
-      <div class="parte"><div class="k">Virada</div><div>A frase-assinatura: "[crença] não é [causa falsa]. É [causa real]."</div></div>
+      <div class="parte"><div class="k">Frase-assinatura</div><div>A causa real, dita como fato, curta e afirmativa. Ex.: "O músculo responde em qualquer década quando a carga sobe." Antes dela, 1 segundo de silêncio. Nada de "não é X, é Y".</div></div>
       <div class="parte"><div class="k">CTA</div><div>Um pedido só, conforme o funil (tabela abaixo).</div></div>
     </div>
   </section>
@@ -144,10 +144,26 @@ th{color:var(--mut);font-size:12px;font-weight:600;text-transform:uppercase;lett
     </ul></div>
   </section>
 
+  <section id="narracao">
+    <h2>Narração sobre b-roll</h2>
+    <div class="box"><ul class="pts">
+      <li>Os roteiros vêm em blocos: <b>tempo · IMAGEM · VOZ · TELA</b>. Cada bloco é um plano.</li>
+      <li><b>A voz não descreve a imagem.</b> Se a tela mostra a anilha, a voz diz o número ou o porquê. A tela resume, sem repetir as palavras da voz.</li>
+      <li><b>//</b> no roteiro é respiração (não se fala). <b>[silêncio 1 s]</b> é imagem sem voz: deixe a cena trabalhar.</li>
+      <li>Leia em voz alta com cronômetro antes de gravar. O ritmo calmo dá cerca de 2,5 palavras por segundo: 15 s ≈ 37 palavras, 40 s ≈ 100.</li>
+      <li><b>Intenção da voz</b> vem no roteiro. Na dúvida: fale como se explicasse para um aluno na pausa entre séries.</li>
+      <li>Soou locutor? Fale mais baixo e mais perto. Soou lido? Grave um take com as suas palavras, sem olhar o roteiro.</li>
+      <li>Voz gravada no celular a um palmo da boca, em lugar sem eco (carro parado, quarto com cortina), bloco a bloco, com 1 s de silêncio antes e depois. Grave a frase-assinatura três vezes.</li>
+      <li>Na edição: clipes sem som (menos o som que conta história, como o metal da anilha), música baixa por baixo da voz, texto branco sem caixa colorida, parado enquanto o bloco dura.</li>
+    </ul></div>
+  </section>
+
   <section id="broll">
     <h2>B-roll</h2>
     <div class="box"><ul class="pts">
-      <li>5 a 8 clipes de 3 a 6 segundos cada, com movimento lento.</li>
+      <li>5 a 8 clipes de 3 a 6 segundos cada, celular apoiado, movimento lento. Na edição usa-se 1 a 3 segundos de cada.</li>
+      <li>Grave <b>agrupado por lugar</b> do TTC (mesa, barra, espelho), não na ordem do vídeo. A lista de planos vem no fim de cada roteiro.</li>
+      <li>Banco de planos que serve a semana toda: anilha encaixando (com som), giz e pegada, terra de lado, planilha com carga subindo, fita métrica, cronômetro, porta do TTC às 7h, quarto escuro e celular de lado.</li>
       <li>Detalhes contam história: mãos no giz, anilha encaixando, planilha de cargas, fita métrica.</li>
       <li>Grave b-roll extra no mesmo bloco: ele serve para os stories da semana.</li>
     </ul></div>
@@ -197,7 +213,7 @@ function desenhar(lista){
 
 (async () => {
   if (DEMO){
-    return desenhar([{data:diaISO(0), titulo:"Bloco de gravação: 3 reels da semana no TTC", detalhe:"SEG:\nGancho (tela): 40 minutos por semana.\nTensão: você acha que perder força depois dos 30 é idade.\nVirada: Perder força não é idade. É falta de estímulo.\nFormato: voz por cima de b-roll, 15s."}]);
+    return desenhar([{data:diaISO(0), titulo:"Bloco de gravação: 3 reels da semana no TTC", detalhe:"0–2 s · IMAGEM: anilha batendo na barra (close, com o som do metal)\n   VOZ: \"Quarenta minutos por semana.\"\n   TELA: A dose que 16 estudos encontraram"}]);
   }
   const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
   const {data} = await sb.auth.getSession();
