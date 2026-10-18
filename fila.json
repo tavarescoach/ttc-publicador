@@ -116,16 +116,17 @@
   },
   {
     "id": "2026-10-18-estatico",
-    "quando": "2026-10-18T12:00:00-03:00",
+    "quando": "2026-10-18T15:00:00+00:00",
     "tipo": "IMAGEM",
     "arquivos": [
       "2026-10-18/estatico.png"
     ],
-    "legenda": "Envelhecer mal não é questão de idade. É falta de estímulo.\n\nPrincípio do Método Nº 03.\nSegue para mais método e menos achismo.\n\n#longevidade #treinodeforca #leblon"
+    "legenda": "Envelhecer mal não é questão de idade. É falta de estímulo.\n\nPrincípio do Método Nº 03.\nSegue para mais método e menos achismo.\n\n#longevidade #treinodeforca #leblon",
+    "status": "pendente"
   },
   {
     "id": "2026-10-18-carrossel",
-    "quando": "2026-10-18T19:00:00-03:00",
+    "quando": "2026-10-18T22:00:00+00:00",
     "tipo": "CARROSSEL",
     "arquivos": [
       "2026-10-18/carrossel-1.png",
@@ -136,23 +137,28 @@
       "2026-10-18/carrossel-6.png",
       "2026-10-18/carrossel-7.png"
     ],
-    "legenda": "Duas a três sessões de força por semana. Essa é a dose.\n\nUm estudo de Harvard com 147 mil pessoas associou 90 a 120 minutos semanais de musculação a 13% menos risco de morte.\nMais do que isso não trouxe ganho extra.\nNão é sobre viver na academia. É sobre critério.\nAntes de abrir a agenda da semana, reserve esses horários.\n\nSegue para mais método e menos achismo.\n\n#treinodeforca #longevidade #leblon #copacabana #personaltrainerrj"
+    "legenda": "Duas a três sessões de força por semana. Essa é a dose.\n\nUm estudo de Harvard com 147 mil pessoas associou 90 a 120 minutos semanais de musculação a 13% menos risco de morte.\nMais do que isso não trouxe ganho extra.\nNão é sobre viver na academia. É sobre critério.\nAntes de abrir a agenda da semana, reserve esses horários.\n\nSegue para mais método e menos achismo.\n\n#treinodeforca #longevidade #leblon #copacabana #personaltrainerrj",
+    "status": "pendente"
   },
   {
     "id": "2026-10-18-story-1",
-    "quando": "2026-10-18T20:00:00-03:00",
+    "quando": "2026-10-18T23:00:00+00:00",
     "tipo": "STORY",
     "arquivos": [
       "2026-10-18/story-1.png"
-    ]
+    ],
+    "legenda": "",
+    "status": "pendente"
   },
   {
     "id": "2026-10-18-story-2",
-    "quando": "2026-10-18T21:00:00-03:00",
+    "quando": "2026-10-19T00:00:00+00:00",
     "tipo": "STORY",
     "arquivos": [
       "2026-10-18/story-2.png"
-    ]
+    ],
+    "legenda": "",
+    "status": "pendente"
   },
   {
     "id": "e-teste-pipeline-carrossel",
@@ -309,6 +315,86 @@
       "2026-10-18/e-312m5xdgwcfpx8pocwsu-carrossel/carrossel-10.png"
     ],
     "legenda": "Decodificando a volta do corpo dos anos 90.\n\nA Tate Britain abriu em outubro uma exposição sobre a arte e a moda da década, e Londres voltou a olhar para aquela era. Nas passarelas, o padrão já tinha voltado: 97,1% dos 9.038 looks dos desfiles de Primavera/Verão 2026 vestiram modelos muito magras.\n\nO corpo de quem viveu os anos 90 não é mais o mesmo. A massa muscular começa a cair na casa dos 30. Restrição acelera essa perda. Treino de força faz o caminho contrário.\n\nO padrão volta por moda, e moda muda. O músculo que você constrói fica com você.\n\nMe manda MÉTODO no direct.\n\n#treinofeminino #treinodeforca #personaltrainerrj #copacabana #ipanema",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "s-2026-10-23-carrossel",
+    "quando": "2026-10-23T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-1.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-2.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-3.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-4.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-5.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-6.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-7.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-8.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-9.png",
+      "2026-10-23/s-2026-10-23-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Treinar muito não é treinar certo.\n\nTrês sinais de que você treina sem critério: não sabe a carga da semana passada, não mede nada além do espelho e o treino de hoje não depende do de ontem.\n\nSem registro não existe progressão. Sem progressão, existe só esforço.\n\nResultado não é sorte. É critério. A Avaliação Estratégica mostra onde você está e para onde ir.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #copacabana #botafogo #metodo",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "e-a5quuljupmctl82yyyzu-carrossel",
+    "quando": "2026-10-18T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-1.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-2.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-3.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-4.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-5.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-6.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-7.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-8.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-9.png",
+      "2026-10-18/e-a5quuljupmctl82yyyzu-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Decodificando a gordura que não aparece na foto.\n\nFotos de praia de um ator de Hollywood viraram debate sobre o \"dad bod\". A Fox News usou a repercussão para falar do que importa: a gordura visceral, que envolve os órgãos e está ligada a risco cardíaco e metabólico.\n\nA American Heart Association recomenda medir a cintura junto com o peso. A referência de alerta é acima de 102 cm no homem e 88 cm na mulher. E uma meta-análise com 84 ensaios mostrou que aeróbico, força, HIIT e treino combinado reduzem essa gordura.\n\nA medida que importa não está no espelho nem só na balança. Está na fita métrica, e ela responde a treino com estrutura.\n\nMe manda MÉTODO no direct.\n\n#gorduravisceral #treinodeforca #personaltrainerrj #copacabana #ipanema",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "e-n473f52ik2qd2saumtu5-carrossel",
+    "quando": "2026-10-18T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-1.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-2.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-3.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-4.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-5.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-6.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-7.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-8.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-9.png",
+      "2026-10-18/e-n473f52ik2qd2saumtu5-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Decodificando a curva da capacidade física.\n\nPesquisadores do Instituto Karolinska acompanharam 427 suecos dos 16 aos 63 anos. Fôlego e resistência chegaram ao pico entre 26 e 36 anos. Por volta dos 35, a curva virou.\n\nA queda começou leve e acelerou com a idade. Aos 63, a capacidade estava de 30% a 48% abaixo do pico, em ritmo semelhante para homens e mulheres. Quem começou a treinar já adulto ainda melhorou de 5% a 10%.\n\nA queda é previsível. Por isso dá para planejar: medir onde você está e treinar as capacidades que o tempo cobra.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #longevidade #copacabana #ipanema",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "s-2026-10-19-carrossel",
+    "quando": "2026-10-19T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-1.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-2.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-3.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-4.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-5.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-6.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-7.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-8.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-9.png",
+      "2026-10-19/s-2026-10-19-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Decodificando o treino de força como seguro de vida.\n\nUma meta-análise com 16 estudos de coorte, publicada no British Journal of Sports Medicine em 2022, ligou o treino de força a 15% menos risco de morte por todas as causas. O menor risco apareceu perto de 40 minutos por semana.\n\nQuando força e aeróbio entram juntos no plano, a redução chega a 40%.\n\nPerder força depois dos 30 não é idade. É falta de estímulo. E estímulo se planeja.\n\nMe manda MÉTODO no direct.\n\n#treinodeforca #longevidade #personaltrainerrj #ipanema #copacabana",
     "status": "pendente",
     "origem": "painel"
   }
