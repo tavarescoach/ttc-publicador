@@ -6,15 +6,83 @@
   "pauta": "Seu cérebro também usa creatina.",
   "legenda": "Decodificando a creatina no cérebro.\n\nEm 2024, pesquisadores alemães mantiveram 15 adultos acordados por 21 horas. Numa noite eles receberam creatina, na outra placebo. Com creatina, memória e velocidade de raciocínio caíram menos.\n\nA dose foi única e muito acima do uso habitual. O próprio autor desaconselhou repetir em casa. Uma revisão com 16 estudos aponta o mesmo sinal na memória, com evidência ainda limitada.\n\nCreatina não substitui sono. Energia é estrutura: sono, horário fixo de treino e recuperação.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #creatina #copacabana #ipanema",
   "slides": [
-    {"tipo": "capa", "fundo": "marinho", "titulo": "Seu cérebro também usa **creatina.**", "foto": "https://images.pexels.com/photos/5198264/pexels-photo-5198264.jpeg?auto=compress&cs=tinysrgb&w=1600"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Creatina sempre foi assunto de academia.", "foto": "https://images.pexels.com/photos/6943435/pexels-photo-6943435.jpeg?auto=compress&cs=tinysrgb&w=1600", "texto": "Por décadas, foi tratada como suplemento de músculo. Mas o cérebro usa o mesmo sistema de energia rápida. Pesquisadores resolveram medir o que acontece com ele numa noite sem dormir."},
-    {"tipo": "numero", "fundo": "marinho", "rotulo": "O experimento", "numero": "21", "unidade": "horas", "titulo": "acordados, **com e sem creatina.**", "texto": "15 adultos saudáveis passaram a noite em laboratório. Numa noite receberam creatina, na outra placebo, sem saber qual era qual.", "fonte": "Gordji-Nejad et al., Scientific Reports (2024)"},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O resultado", "titulo": "Memória e raciocínio **caíram menos.**", "texto": "**Com creatina, o cansaço cobrou menos.** Os participantes foram melhor em testes de memória de palavras e de velocidade de processamento do que na noite com placebo."},
-    {"tipo": "numero", "fundo": "preto", "rotulo": "O tempo", "numero": "4", "unidade": "horas", "titulo": "para o efeito chegar ao **pico.**", "texto": "A melhora apareceu cerca de 3 horas depois da dose e durou até 9 horas. A ressonância mostrou mudança na química de energia do cérebro.", "fonte": "Gordji-Nejad et al., Scientific Reports (2024)"},
-    {"tipo": "texto_foto", "fundo": "marinho", "titulo": "A dose do laboratório **não é para casa.**", "texto": "Foi uma dose única, muito acima do uso habitual. O próprio autor alertou para a sobrecarga nos rins e desaconselhou repetir em casa. A amostra era pequena e jovem.", "fonte": "Gordji-Nejad et al. (2024)"},
-    {"tipo": "numero", "fundo": "preto", "rotulo": "Além de uma noite", "numero": "16", "titulo": "estudos, **o mesmo sinal na memória.**", "texto": "Uma revisão com 492 adultos encontrou melhora em memória, atenção e velocidade de processamento com creatina. A certeza da evidência ainda vai de moderada a baixa.", "fonte": "Xu et al., Frontiers in Nutrition (2024)"},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "Creatina não substitui **sono.**", "texto": "**Ela só atenuou o custo de uma noite ruim, por algumas horas.** Energia de verdade vem de rotina: sono, horário fixo de treino e recuperação."},
-    {"tipo": "licao", "fundo": "preto", "rotulo": "Para quem treina", "titulo": "Energia é **estrutura,** não atalho.", "texto": "Proteja o sono antes de procurar suplemento. Treine em horário fixo para organizar o dia. Suplementação é decisão com médico ou nutricionista, principalmente se houver doença renal.", "nota": "Rotina, sono e recuperação entram na avaliação junto com o físico."},
-    {"tipo": "cta", "fundo": "marinho", "titulo": "Quer mais energia, com **direção?**", "texto": "A Avaliação Estratégica olha seu treino, sua rotina e sua recuperação, e define o próximo passo.", "cta": "Me manda **MÉTODO** no direct."}
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Seu cérebro também usa **creatina.**",
+      "foto": "https://images.pexels.com/photos/5198264/pexels-photo-5198264.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Creatina sempre foi assunto de academia.",
+      "foto": "https://images.pexels.com/photos/6943435/pexels-photo-6943435.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "texto": "Por décadas, foi tratada como suplemento de músculo. Mas o cérebro usa o mesmo sistema de energia rápida. Pesquisadores resolveram medir o que acontece com ele numa noite sem dormir."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "O experimento",
+      "numero": "21",
+      "unidade": "horas",
+      "titulo": "acordados, **com e sem creatina.**",
+      "texto": "15 adultos saudáveis passaram a noite em laboratório. Numa noite receberam creatina, na outra placebo, sem saber qual era qual.",
+      "fonte": "Gordji-Nejad et al., Scientific Reports (2024)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O resultado",
+      "titulo": "Memória e raciocínio **caíram menos.**",
+      "texto": "**Com creatina, o cansaço cobrou menos.** Os participantes foram melhor em testes de memória de palavras e de velocidade de processamento do que na noite com placebo."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "O tempo",
+      "numero": "4",
+      "unidade": "horas",
+      "titulo": "para o efeito chegar ao **pico.**",
+      "texto": "A melhora apareceu cerca de 3 horas depois da dose e durou até 9 horas. A ressonância mostrou mudança na química de energia do cérebro.",
+      "fonte": "Gordji-Nejad et al., Scientific Reports (2024)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "marinho",
+      "titulo": "A dose do laboratório **fica no laboratório.**",
+      "texto": "Foi uma dose única, muito acima do uso habitual. O próprio autor alertou para a sobrecarga nos rins e desaconselhou repetir em casa. A amostra era pequena e jovem.",
+      "fonte": "Gordji-Nejad et al. (2024)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "Além de uma noite",
+      "numero": "16",
+      "titulo": "estudos, **o mesmo sinal na memória.**",
+      "texto": "Uma revisão com 492 adultos encontrou melhora em memória, atenção e velocidade de processamento com creatina. A certeza da evidência ainda vai de moderada a baixa.",
+      "fonte": "Xu et al., Frontiers in Nutrition (2024)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "Creatina não substitui **sono.**",
+      "texto": "**Ela só atenuou o custo de uma noite ruim, por algumas horas.** Energia de verdade vem de rotina: sono, horário fixo de treino e recuperação."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "preto",
+      "rotulo": "Para quem treina",
+      "titulo": "Energia é **estrutura,** não atalho.",
+      "texto": "Proteja o sono antes de procurar suplemento. Treine em horário fixo para organizar o dia. Suplementação é decisão com médico ou nutricionista, principalmente se houver doença renal.",
+      "nota": "Rotina, sono e recuperação entram na avaliação junto com o físico."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "marinho",
+      "titulo": "Quer mais energia, com **direção?**",
+      "texto": "A Avaliação Estratégica olha seu treino, sua rotina e sua recuperação, e define o próximo passo.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
   ]
 }

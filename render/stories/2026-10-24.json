@@ -1,27 +1,27 @@
 [
- {
-  "arquivo": "midia/2026-10-24/story-fundo-enquete.png",
-  "rotulo": "Pergunta do dia",
-  "titulo": "Quantas horas você dormiu esta noite?",
-  "topo": 620
- },
- {
-  "arquivo": "midia/2026-10-24/story-fundo-resultado.png",
-  "rotulo": "Resultado da enquete",
-  "titulo": "Sono é parte do treino. Não o **intervalo.**",
-  "topo": 1000
- },
- {
-  "arquivo": "midia/2026-10-24/story-fundo-caixinha.png",
-  "rotulo": "Caixinha aberta",
-  "titulo": "O que mais atrapalha o seu **sono?**",
-  "topo": 620
- },
- {
-  "arquivo": "midia/2026-10-24/story-1.png",
-  "rotulo": "Sua rotina",
-  "titulo": "Quer um plano que respeite a sua rotina?",
-  "texto": "Me manda **MÉTODO** no direct.",
-  "topo": 660
- }
+  {
+    "arquivo": "midia/2026-10-24/story-fundo-enquete.png",
+    "rotulo": "Pergunta do dia",
+    "titulo": "Quantas horas você dormiu esta noite?",
+    "topo": 620
+  },
+  {
+    "arquivo": "midia/2026-10-24/story-fundo-resultado.png",
+    "rotulo": "Resultado da enquete",
+    "titulo": "Uma parte do treino **acontece na cama.**",
+    "topo": 1000
+  },
+  {
+    "arquivo": "midia/2026-10-24/story-fundo-caixinha.png",
+    "rotulo": "Caixinha aberta",
+    "titulo": "O que mais atrapalha o seu **sono?**",
+    "topo": 620
+  },
+  {
+    "arquivo": "midia/2026-10-24/story-1.png",
+    "rotulo": "Sua rotina",
+    "titulo": "Um plano que cabe na **sua rotina.**",
+    "texto": "Me manda **MÉTODO** no direct.",
+    "topo": 660
+  }
 ]

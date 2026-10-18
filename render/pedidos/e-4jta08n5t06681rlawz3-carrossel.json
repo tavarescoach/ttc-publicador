@@ -4,17 +4,83 @@
   "quando": "2026-10-30T12:00:00-03:00",
   "funil": "topo",
   "pauta": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
-  "legenda": "Decodificando a recuperação.\n\nBeth Dobbin correu os 200 m nos Jogos de Tóquio, em 2021. No inverno seguinte, teve Covid e mononucleose, uma atrás da outra. Continuou competindo em 2022, e a saúde piorou a cada campeonato.\n\nHoje, aos 32 anos, passa mais de 22 horas por dia na cama. O diagnóstico é encefalomielite miálgica, a síndrome da fadiga crônica: um cansaço que não melhora com repouso. É um caso raro e grave, e não um aviso sobre treinar demais.\n\nO que ele lembra vale para todo mundo: recuperação não é luxo. Cansaço não é falta de disciplina. É informação. Cansaço que não passa com descanso pede avaliação médica.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinofeminino #recuperacao #copacabana #ipanema",
+  "legenda": "Decodificando a recuperação.\n\nBeth Dobbin correu os 200 m nos Jogos de Tóquio, em 2021. No inverno seguinte, teve Covid e mononucleose, uma atrás da outra. Continuou competindo em 2022, e a saúde piorou a cada campeonato.\n\nHoje, aos 32 anos, passa mais de 22 horas por dia na cama. O diagnóstico é encefalomielite miálgica, a síndrome da fadiga crônica: um cansaço que não melhora com repouso. É um caso raro e grave, e não um aviso sobre treinar demais.\n\nO que o caso lembra vale para todo mundo. Recuperação faz parte do plano, e o cansaço traz informação sobre ela. Cansaço que não passa com descanso pede avaliação médica.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinofeminino #recuperacao #copacabana #ipanema",
   "slides": [
-    {"tipo": "capa", "fundo": "marinho", "titulo": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da **saúde.**", "foto": "https://images.pexels.com/photos/3756165/pexels-photo-3756165.jpeg?auto=compress&cs=tinysrgb&w=1600"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Ela era uma das mulheres **mais rápidas** do Reino Unido.", "foto": "https://images.pexels.com/photos/3763869/pexels-photo-3763869.jpeg?auto=compress&cs=tinysrgb&w=1600", "texto": "A britânica Beth Dobbin correu os 200 m nos Jogos de Tóquio, em 2021, e chegou à semifinal. Dois anos antes, tinha batido o recorde escocês da prova: 22s50.", "fonte": "Athletics Weekly (out/2026)"},
-    {"tipo": "numero", "fundo": "marinho", "rotulo": "O início", "numero": "2", "unidade": "infecções", "titulo": "seguidas, **no inverno de 2021.**", "texto": "Covid-19 e mononucleose, uma atrás da outra. Os primeiros sinais foram discretos: tempos um pouco piores, mais horas de sono, gânglios doloridos.", "fonte": "Athletics Weekly (16/10/2026)"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Ela seguiu competindo. A saúde **caiu a cada prova.**", "texto": "Em 2022, numa temporada curta, ela se classificou para o Mundial, os Jogos da Commonwealth e o Europeu. Ganhou bronze no revezamento 4x400 m. E piorou a cada campeonato.", "fonte": "Athletics Weekly (16/10/2026)"},
-    {"tipo": "numero", "fundo": "marinho", "rotulo": "Hoje", "numero": "22", "unidade": "horas", "titulo": "ou mais por dia, **na cama.**", "texto": "Aos 32 anos, Beth sai da cama para comer e ir ao banheiro. Saiu de casa cinco vezes em 2026. Anunciou a aposentadoria em abril.", "fonte": "Athletics Weekly (16/10/2026)"},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O diagnóstico", "titulo": "Um cansaço que **não melhora** com repouso.", "texto": "**Encefalomielite miálgica, ou síndrome da fadiga crônica.** Causa desconhecida na maioria dos casos, e infecções podem desencadear. O diagnóstico é clínico, segundo a Sociedade Brasileira de Reumatologia."},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Um caso raro. **Não é** aviso sobre treinar demais.", "texto": "As fontes não ligam a doença ao volume de treino, e a história dela não serve de comparação. Ela lembra outra coisa: o corpo tem limites reais de recuperação."},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "Cansaço não é falta de disciplina. É **informação.**", "texto": "O treino é o estímulo. A adaptação acontece na recuperação: sono, alimentação suficiente, estresse da semana e carga bem dosada. Força de vontade não substitui nenhum deles."},
-    {"tipo": "licao", "fundo": "preto", "rotulo": "Para quem treina", "titulo": "Treinar leve não é treinar fraco. É treinar com **critério.**", "texto": "Sua semana também é carga: trabalho, casa, família, noites curtas. Um bom plano prevê dias mais fortes e dias mais leves, e ajusta pelo que o corpo mostra. Cansaço que não passa com descanso pede médico, não mais treino.", "nota": "Ler esses sinais e ajustar a carga sem perder a progressão é trabalho de treinador."},
-    {"tipo": "cta", "fundo": "marinho", "titulo": "Quer evoluir sem brigar com o **seu corpo?**", "texto": "A Avaliação Estratégica mede o seu ponto de partida, entende a sua rotina e define a direção do treino.", "cta": "Me manda **MÉTODO** no direct."}
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da **saúde.**",
+      "foto": "https://images.pexels.com/photos/3756165/pexels-photo-3756165.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Ela era uma das mulheres **mais rápidas** do Reino Unido.",
+      "foto": "https://images.pexels.com/photos/3763869/pexels-photo-3763869.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "texto": "A britânica Beth Dobbin correu os 200 m nos Jogos de Tóquio, em 2021, e chegou à semifinal. Dois anos antes, tinha batido o recorde escocês da prova: 22s50.",
+      "fonte": "Athletics Weekly (out/2026)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "O início",
+      "numero": "2",
+      "unidade": "infecções",
+      "titulo": "seguidas, **no inverno de 2021.**",
+      "texto": "Covid-19 e mononucleose, uma atrás da outra. Os primeiros sinais foram discretos: tempos um pouco piores, mais horas de sono, gânglios doloridos.",
+      "fonte": "Athletics Weekly (16/10/2026)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Ela seguiu competindo. A saúde **caiu a cada prova.**",
+      "texto": "Em 2022, numa temporada curta, ela se classificou para o Mundial, os Jogos da Commonwealth e o Europeu. Ganhou bronze no revezamento 4x400 m. E piorou a cada campeonato.",
+      "fonte": "Athletics Weekly (16/10/2026)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "Hoje",
+      "numero": "22",
+      "unidade": "horas",
+      "titulo": "ou mais por dia, **na cama.**",
+      "texto": "Aos 32 anos, Beth sai da cama para comer e ir ao banheiro. Saiu de casa cinco vezes em 2026. Anunciou a aposentadoria em abril.",
+      "fonte": "Athletics Weekly (16/10/2026)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O diagnóstico",
+      "titulo": "Um cansaço que **não melhora** com repouso.",
+      "texto": "**Encefalomielite miálgica, ou síndrome da fadiga crônica.** Causa desconhecida na maioria dos casos, e infecções podem desencadear. O diagnóstico é clínico, segundo a Sociedade Brasileira de Reumatologia."
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Um caso raro, que começou com **duas infecções seguidas.**",
+      "texto": "As fontes não ligam a doença ao volume de treino, e a história dela não serve de comparação. Ela lembra outra coisa: o corpo tem limites reais de recuperação."
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "Cansaço é **informação** sobre a sua recuperação.",
+      "texto": "O treino é o estímulo. A adaptação acontece na recuperação: sono, alimentação suficiente, estresse da semana e carga bem dosada. Nenhum deles se resolve com força de vontade."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "preto",
+      "rotulo": "Para quem treina",
+      "titulo": "Dia leve, com critério, também é **treino.**",
+      "texto": "Sua semana também é carga: trabalho, casa, família, noites curtas. Um bom plano prevê dias mais fortes e dias mais leves, e ajusta pelo que o corpo mostra. Cansaço que não passa com descanso pede médico, não mais treino.",
+      "nota": "Ler esses sinais e ajustar a carga sem perder a progressão é trabalho de treinador."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "marinho",
+      "titulo": "Quer evoluir sem brigar com o **seu corpo?**",
+      "texto": "A Avaliação Estratégica mede o seu ponto de partida, entende a sua rotina e define a direção do treino.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
   ]
 }

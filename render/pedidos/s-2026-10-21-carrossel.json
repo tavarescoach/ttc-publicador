@@ -3,21 +3,21 @@
   "data": "2026-10-21",
   "quando": "2026-10-21T12:00:00-03:00",
   "funil": "meio",
-  "pauta": "Seu treino não parou.",
-  "legenda": "Decodificando o custo de uma noite sem dormir.\n\nNum estudo controlado publicado na Physiological Reports em 2021, 13 adultos saudáveis passaram uma noite em claro. No dia seguinte, a síntese de proteína muscular caiu 18%. O cortisol subiu 21% e a testosterona caiu 24%.\n\nÉ uma amostra pequena e uma noite só. Mas o sinal é claro: o corpo sem sono entra em modo de defesa, não de construção.\n\nSono é parte do treino, não o intervalo entre eles.\n\nMe manda MÉTODO no direct.\n\n#sono #recuperacao #treinodeforca #personaltrainerrj #leblon",
+  "pauta": "Uma noite em claro custa 18%",
+  "legenda": "Uma noite sem dormir e o músculo construiu 18% menos proteína no dia seguinte.\n\nNum estudo controlado publicado na Physiological Reports em 2021, 13 adultos saudáveis passaram uma noite normal e outra em claro, em laboratório. Depois da noite sem sono, a síntese de proteína muscular caiu 18%, o cortisol subiu 21% e a testosterona caiu 24%.\n\nÉ uma amostra pequena e uma noite só. O resultado aponta para o mesmo lado do que se sabe sobre recuperação: o treino vira resultado quando o corpo tem tempo de reconstruir.\n\nQuantas horas você dormiu ontem? Responde aqui nos comentários. Se o sono e a agenda estão travando o seu treino, me manda MÉTODO no direct.\n\n#sono #recuperacao #treinodeforca #personaltrainerrj #leblon",
   "slides": [
     {
       "tipo": "capa",
       "fundo": "marinho",
-      "titulo": "Seu treino não parou. Seu **sono** parou.",
+      "titulo": "Uma noite em claro corta **18%** da construção de músculo.",
       "foto": "https://images.pexels.com/photos/6943435/pexels-photo-6943435.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "tipo": "texto_foto",
       "fundo": "preto",
-      "titulo": "O corpo **estacionou.**",
+      "titulo": "Você treina, come bem e o **espelho parou.**",
       "foto": "https://images.pexels.com/photos/7063743/pexels-photo-7063743.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "texto": "Você treina, ajusta a comida e o espelho não muda. A primeira suspeita costuma ser o treino. Pesquisadores olharam para outro lugar: a noite anterior."
+      "texto": "A primeira suspeita costuma ser o treino. Pesquisadores olharam para a noite anterior e mediram o que ela faz com o músculo no dia seguinte."
     },
     {
       "tipo": "numero",
@@ -46,7 +46,7 @@
       "numero": "+21",
       "unidade": "%",
       "titulo": "de **cortisol** no dia seguinte.",
-      "texto": "O hormônio do estresse subiu. A testosterona caiu 24%. A combinação favorece quebra de tecido, não construção.",
+      "texto": "O hormônio do estresse subiu e a testosterona caiu 24%. Essa combinação favorece a quebra de tecido muscular.",
       "fonte": "Lamon et al., Physiological Reports (2021)"
     },
     {
@@ -54,33 +54,33 @@
       "fundo": "claro",
       "rotulo": "Contexto honesto",
       "titulo": "Uma noite, **um sinal.**",
-      "texto": "**Amostra pequena, efeito agudo.** O estudo não mede meses de sono curto. Mas mostra a direção: sem recuperação, o estímulo do treino não vira resultado."
+      "texto": "**Amostra pequena, efeito agudo.** O estudo não mede meses de sono curto. Ele mostra a direção: sem recuperação, o estímulo do treino demora mais a virar resultado."
     },
     {
       "tipo": "texto_foto",
       "fundo": "preto",
-      "titulo": "Modo de defesa, **não de construção.**",
-      "texto": "O treino dá o sinal. O sono executa a obra. Quando a noite falha, o corpo prioriza sobreviver ao dia, não adaptar ao treino."
+      "titulo": "O treino dá o sinal. **O sono faz a obra.**",
+      "texto": "Durante a noite, o corpo reconstrói o músculo que o treino desgastou. Quando a noite falha, a energia do dia seguinte vai para dar conta do estresse."
     },
     {
       "tipo": "insight",
       "fundo": "claro",
       "rotulo": "O que o caso revela",
-      "titulo": "Sono é parte do treino, **não o intervalo.**",
-      "texto": "**Corpo que não responde nem sempre é falta de treino.** Muitas vezes é falta de recuperação."
+      "titulo": "Uma parte do treino **acontece na cama.**",
+      "texto": "**Quem treina bem e dorme mal deixa resultado na mesa.** O ajuste começa na hora de deitar, antes de mexer na planilha."
     },
     {
       "tipo": "licao",
       "fundo": "marinho",
       "rotulo": "Para quem treina",
       "titulo": "Recuperação **entra no plano.**",
-      "texto": "Horário fixo para deitar e acordar. Treino pesado longe da hora de dormir. Semana de pouco sono pede ajuste de carga, não mais volume.",
+      "texto": "Horário fixo para deitar e acordar. Treino pesado longe da hora de dormir. Semana de pouco sono pede carga ajustada e volume menor.",
       "nota": "Insônia ou cansaço que não passa pedem avaliação médica. Ajustar o treino à sua rotina é trabalho de treinador."
     },
     {
       "tipo": "cta",
       "fundo": "preto",
-      "titulo": "Quer um plano que respeite **a sua rotina?**",
+      "titulo": "Um plano que cabe no seu sono **e na sua agenda.**",
       "texto": "A Avaliação Estratégica olha seu treino, seu sono e sua agenda, e define o próximo passo.",
       "cta": "Me manda **MÉTODO** no direct."
     }

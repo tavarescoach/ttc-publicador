@@ -10,9 +10,11 @@ Exemplo aprovado: render/pedidos/c-2610171339-y4f-carrossel.json (prévia em ren
 - Cada slide = 1 ideia, com pelo menos 1 dado concreto (número, data, fonte). Sem fonte confiável, sem dado.
 - A lição chega só no fim. Não moralizar no meio.
 - Tom: jornalístico e factual, sem exclamação, sem emoji. Sujeito + verbo + dado. Tom de voz da marca (diretrizes/marca.md).
+- Copy: siga a skill `.claude/skills/copy-social-ttc/SKILL.md` (Cena → Causa → Movimento, três perguntas, vícios de IA). A revisão automática barra "não é X. É Y.", "sem X, sem Y", pergunta respondida pelo próprio texto, revelação com dois-pontos e travessão.
+- A frase-assinatura (a Causa) aparece uma vez: na capa ou no slide 8, não nos dois. Legenda abre com gancho próprio, diferente do slide 1.
 
 ## Estrutura (9 a 10 slides)
-1. capa — headline escolhida pelo Luan (frase 1), 1 a 3 palavras em **destaque** (vermelho). Foto forte em tela cheia.
+1. capa — headline escolhida pelo Luan (frase 1), 1 a 3 palavras em **destaque** (vermelho). Foto forte em tela cheia. Precisa parar a rolagem sozinha: número medido, cena ou opinião do Luan.
 2. contexto — onde nasce a crença/caso (texto_foto).
 3–7. desenvolvimento — 1 fato por slide, alternando `numero` (número gigante) e `texto_foto`/`insight`. Cada slide puxa o próximo.
 8. "O QUE O CASO REVELA" — a leitura (insight, fundo claro).
@@ -39,7 +41,7 @@ Exemplo aprovado: render/pedidos/c-2610171339-y4f-carrossel.json (prévia em ren
 - Conferir a página da foto (título/descrição) antes de usar. Na dúvida, sem foto.
 
 ## Legenda
-"Decodificando [tema]." + 2 parágrafos curtos com os fatos + 1 parágrafo de lição + "Me manda MÉTODO no direct." + 3–5 hashtags (nicho e bairro).
+1ª linha: gancho próprio (número ou cena), diferente da capa; "Decodificando [tema]." pode abrir quando o caso for uma história. Depois 2 parágrafos curtos com os fatos + 1 parágrafo de lição + CTA do funil + "Me manda MÉTODO no direct." + 3–5 hashtags (nicho e bairro).
 
 ## Fontes (aparecem no painel, na janela do conteúdo)
 Junto com o pedido, escreva `render/fontes/<id>.json` (mesmo id do pedido) com TODAS as referências usadas, com link clicável:

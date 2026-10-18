@@ -1,21 +1,21 @@
 [
- {
-  "arquivo": "midia/2026-10-23/story-fundo-enquete.png",
-  "rotulo": "Pergunta do dia",
-  "titulo": "Com pouco tempo, o que entra primeiro?",
-  "topo": 620
- },
- {
-  "arquivo": "midia/2026-10-23/story-fundo-resultado.png",
-  "rotulo": "Resultado da enquete",
-  "titulo": "Não é falta de esforço. É **dose errada.**",
-  "topo": 1000
- },
- {
-  "arquivo": "midia/2026-10-23/story-1.png",
-  "rotulo": "Sua semana",
-  "titulo": "Quanto cardio cabe na sua semana?",
-  "texto": "Me manda **MÉTODO** no direct.",
-  "topo": 660
- }
+  {
+    "arquivo": "midia/2026-10-23/story-fundo-enquete.png",
+    "rotulo": "Pergunta do dia",
+    "titulo": "Com pouco tempo, o que entra primeiro?",
+    "topo": 620
+  },
+  {
+    "arquivo": "midia/2026-10-23/story-fundo-resultado.png",
+    "rotulo": "Resultado da enquete",
+    "titulo": "Com pouco tempo, avança quem acerta a **dose.**",
+    "topo": 1000
+  },
+  {
+    "arquivo": "midia/2026-10-23/story-1.png",
+    "rotulo": "Sua semana",
+    "titulo": "Quanto cardio cabe na sua semana?",
+    "texto": "Me manda **MÉTODO** no direct.",
+    "topo": 660
+  }
 ]

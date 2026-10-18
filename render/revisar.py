@@ -29,6 +29,19 @@ SIGLAS = {"MÉTODO", "METODO", "TTC", "BJSM", "BMJ", "JAMA", "OMS", "IMC", "HIIT
           "NIH", "CDC", "NHS", "MIT", "UCLA", "MMA", "LT"}
 EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿]")
 
+# Vícios de texto de IA (skill copy-social-ttc, seção 4). Barram o agendamento automático.
+VICIOS_IA = [
+    (r"\bn[ãa]o (?:é|foi|era|s[óo]|está)\b[^.!?\n]{1,70}[.!?,;]\s+(?:é|foi|era|mas)\b", "contraste encenado (\"não é X. É Y.\")"),
+    (r"\bn[ãa]o é sobre\b", "contraste encenado (\"não é sobre…\")"),
+    (r"\bn[ãa]o porque\b[^.!?\n]*[.!?]\s*porque\b", "contraste encenado (\"não porque… porque…\")"),
+    (r"\bmas sim\b", "contraste encenado (\"mas sim\")"),
+    (r"\b(?:menos|nada de) [^.,!?\n]{1,25}[.,]\s*mais\b", "contraste encenado (\"menos X, mais Y\")"),
+    (r"\bsem [^,.!?\n]{1,30}, sem [^,.!?\n]{1,30}", "lista de ausências (\"sem X, sem Y\")"),
+    (r"\b(?:o resultado|a verdade|o segredo|a resposta|o motivo|a diferença|o detalhe|o problema)\?\s", "pergunta respondida pelo próprio texto"),
+    (r"\b(?:o segredo|a verdade|spoiler|a real|a melhor parte)\s*:", "revelação com dois-pontos"),
+    (r"isso muda tudo|simples assim|leia de novo|ninguém te conta|pouca gente sabe|vamos falar sobre|próximo nível|virar a chave|desbloque|jornada|potencializ|ressignific", "frase de fábrica"),
+]
+
 
 def _txt(s):
     return re.sub(r"\*\*", "", str(s or ""))
@@ -73,6 +86,14 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
     for w in PROIBIDAS:
         if re.search(r"(?<!\w)" + re.escape(w) + r"(?!\w)", baixo):
             problemas.append(f'Palavra fora da marca: "{w}".')
+
+    # vícios de texto de IA (slides, legenda e título)
+    for padrao, nome in VICIOS_IA:
+        m = re.search(padrao, baixo)
+        if m:
+            problemas.append(f'Soa como IA: {nome} em "{m.group(0).strip()[:60]}".')
+    if "—" in tudo:
+        problemas.append("Travessão (—) no texto: troque por ponto, vírgula ou quebra de linha.")
 
     # caixa alta em texto corrido (a capa já sai em caixa alta pelo modelo)
     gritos = set()

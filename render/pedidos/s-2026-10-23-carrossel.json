@@ -3,41 +3,41 @@
   "data": "2026-10-23",
   "quando": "2026-10-23T12:00:00-03:00",
   "funil": "fundo",
-  "pauta": "Treinar muito não é treinar certo.",
-  "legenda": "Treinar muito não é treinar certo.\n\nTrês sinais de que você treina sem critério: não sabe a carga da semana passada, não mede nada além do espelho e o treino de hoje não depende do de ontem.\n\nSem registro não existe progressão. Sem progressão, existe só esforço.\n\nResultado não é sorte. É critério. A Avaliação Estratégica mostra onde você está e para onde ir.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #copacabana #botafogo #metodo",
+  "pauta": "Treino sem registro é palpite",
+  "legenda": "Se você não lembra a carga do agachamento de quinta passada, o treino de hoje está sendo decidido no improviso.\n\nTrês sinais aparecem em quem treina há anos sem ver mudança: a carga muda conforme o humor, a única medida é o espelho e cada treino começa do zero.\n\nAnotar carga e repetições, medir a cada quatro a seis semanas e montar o mês como uma sequência resolve os três. A Avaliação Estratégica faz esse ponto de partida com você em 40 minutos, no TTC.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #copacabana #botafogo #metodo",
   "slides": [
     {
       "tipo": "capa",
       "fundo": "marinho",
-      "titulo": "Treinar muito não é treinar certo. É treinar com **critério.**",
+      "titulo": "Se você não sabe a carga da semana passada, **seu treino é palpite.**",
       "foto": "https://images.pexels.com/photos/6455846/pexels-photo-6455846.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "tipo": "texto_foto",
       "fundo": "preto",
       "titulo": "Anos de academia. **O mesmo corpo.**",
-      "texto": "Suor, cansaço, frequência alta. E o espelho repetindo a mesma imagem. O problema raramente é esforço. É falta de critério. Ele aparece em três sinais."
+      "texto": "Frequência alta, suor, cansaço e o espelho repetindo a mesma imagem. Quase sempre falta um jeito de saber se esta semana foi melhor que a anterior. A falta aparece em três sinais."
     },
     {
       "tipo": "insight",
       "fundo": "marinho",
       "rotulo": "Sinal 1",
       "titulo": "Você não sabe a carga da **semana passada.**",
-      "texto": "**Sem número, não há comparação.** Se a carga muda conforme o humor do dia, o corpo nunca recebe um estímulo maior do que já conhece."
+      "texto": "**Sem número, você não tem com o que comparar.** Se a carga muda conforme o humor do dia, o corpo raramente recebe um estímulo maior do que já conhece."
     },
     {
       "tipo": "insight",
       "fundo": "preto",
       "rotulo": "Sinal 2",
       "titulo": "Você não mede nada **além do espelho.**",
-      "texto": "**O espelho mente nos dias ruins e nos dias bons.** Força, medidas e composição corporal mostram o que o olho não vê a tempo de corrigir a rota."
+      "texto": "**O espelho muda com a luz, a água e o humor.** Força, medidas e composição corporal mostram a direção a tempo de corrigir a rota."
     },
     {
       "tipo": "insight",
       "fundo": "marinho",
       "rotulo": "Sinal 3",
       "titulo": "O treino de hoje não depende **do de ontem.**",
-      "texto": "**Treino solto não constrói.** Cada sessão deveria ser o próximo passo de uma sequência, com objetivo para o mês, não só para o dia."
+      "texto": "**Treino solto não acumula.** Cada sessão deveria continuar a anterior, com um objetivo para o mês inteiro."
     },
     {
       "tipo": "numero",
@@ -46,22 +46,22 @@
       "numero": "40",
       "unidade": "%",
       "titulo": "menos mortalidade com **força e aeróbio combinados.**",
-      "texto": "Na meta-análise de 16 estudos, a combinação planejada dos dois estímulos mostrou o maior benefício. Organização pesa mais que volume aleatório.",
+      "texto": "Na meta-análise de 16 estudos, quem combinava os dois estímulos teve o maior benefício. Combinar exige plano: decidir o que entra em cada dia da semana.",
       "fonte": "Momma et al., British Journal of Sports Medicine (2022)"
     },
     {
       "tipo": "insight",
       "fundo": "claro",
       "rotulo": "O que o caso revela",
-      "titulo": "Sem registro, não existe **progressão.**",
-      "texto": "**Sem progressão, existe só esforço.** E esforço sem direção cansa, mas não muda o corpo."
+      "titulo": "Progressão começa com **carga anotada.**",
+      "texto": "**Com carga e repetições registradas, cada treino ganha uma meta: superar o anterior.** É assim que o esforço da semana se soma ao da semana seguinte."
     },
     {
       "tipo": "licao",
       "fundo": "marinho",
       "rotulo": "Para quem treina",
-      "titulo": "Resultado não é sorte. **É critério.**",
-      "texto": "Registre carga e repetições. Meça além do espelho a cada poucas semanas. Monte o treino como uma sequência com objetivo, não como uma lista do dia.",
+      "titulo": "Critério cabe em **três hábitos.**",
+      "texto": "Anote carga e repetições. Meça além do espelho a cada quatro a seis semanas. Monte o treino como uma sequência com objetivo para o mês.",
       "nota": "A Avaliação Estratégica: 40 minutos de avaliação física e um plano de direção para as próximas semanas, no TTC."
     },
     {
@@ -74,7 +74,7 @@
     {
       "tipo": "cta",
       "fundo": "preto",
-      "titulo": "Quer saber onde você está **e para onde ir?**",
+      "titulo": "Seu ponto de partida, **medido no TTC.**",
       "texto": "Agende a sua no TTC, em Copacabana.",
       "cta": "Me manda **MÉTODO** no direct."
     }

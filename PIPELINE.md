@@ -11,7 +11,7 @@ Ninguém está olhando: não faça perguntas. Decida pela leitura mais razoável
 Responda e escreva sempre em português do Brasil.
 
 ## Recursos
-- Repositório: tavarescoach/ttc-publicador (este). Clone, leia `diretrizes/marca.md` e `diretrizes/carrossel.md`.
+- Repositório: tavarescoach/ttc-publicador (este). Clone, leia `diretrizes/marca.md`, `diretrizes/carrossel.md` e a skill de texto `.claude/skills/copy-social-ttc/SKILL.md` (todo texto segue ela; a revisão automática barra os vícios de IA da seção 4).
 - Estúdio (artifact): https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH — banco do artifact, coleção `criacoes`.
   Ler/escrever com a ferramenta ArtifactData (carregar via ToolSearch "select:ArtifactData"). Toda escrita leva `if_version`.
 - Painel: https://ttc-painel.vercel.app (Supabase). Esta sessão NÃO alcança o Supabase direto: tudo passa pelos robôs do GitHub.
