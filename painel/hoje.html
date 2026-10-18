@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F172A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hoje LT">
+<title>Hoje</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{
+  --bg:#0F172A; --card:#162036; --card2:#1C2842; --line:#26324D;
+  --txt:#F8FAFC; --mut:#94A3B8; --red:#C1121F; --ok:#22C55E; --warn:#F59E0B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;font-size:15px;min-height:100vh;-webkit-font-smoothing:antialiased}
+button,a{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+.wrap{max-width:560px;margin:0 auto;padding:16px 16px calc(32px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;gap:10px;padding:6px 0 14px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-style:italic;font-size:20px}
+.logo i{width:1px;height:22px;background:var(--txt);opacity:.6}
+.logo span{font-style:normal;font-size:11px;letter-spacing:.14em;line-height:1.15;font-weight:700}
+.sp{flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 13px;border-radius:9px;border:1px solid var(--line);font-weight:600;font-size:13px;text-decoration:none;white-space:nowrap}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn.sm{padding:6px 10px;font-size:12.5px}
+h1{font-size:26px;font-weight:800;letter-spacing:-.02em}
+.sub{color:var(--mut);font-size:13.5px;margin-top:4px}
+.prog{height:6px;background:var(--line);border-radius:6px;margin:14px 0 4px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--ok);border-radius:6px;transition:width .3s}
+.alerta{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--warn);border-radius:12px;padding:12px 14px;margin-top:16px;text-decoration:none}
+.alerta b{font-size:22px;color:var(--warn)}
+.alerta span{flex:1;font-size:13.5px;line-height:1.35}
+h2{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin:24px 0 10px;display:flex;align-items:center;gap:8px}
+h2 .dot{width:8px;height:8px;border-radius:50%}
+.lista{display:flex;flex-direction:column;gap:8px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start}
+.item.feito{opacity:.5}
+.item.feito .tt{text-decoration:line-through}
+.chk{width:26px;height:26px;border-radius:7px;border:2px solid var(--mut);flex:none;display:grid;place-items:center;margin-top:1px}
+.item.feito .chk{background:var(--ok);border-color:var(--ok)}
+.item.feito .chk::after{content:"";width:6px;height:11px;border:solid #0F172A;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.mid{flex:1;min-width:0}
+.tt{font-weight:600;line-height:1.35}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:6px;font-size:12px;color:var(--mut);align-items:center}
+.tag{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--card2);padding:3px 7px;border-radius:5px;color:var(--txt)}
+details{margin-top:8px}
+details summary{font-size:12.5px;color:var(--mut);cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸ "}
+details[open] summary::before{content:"▾ "}
+.det{white-space:pre-wrap;font-size:13.5px;line-height:1.5;margin-top:8px;color:#CBD5E1}
+.acoes{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.post{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;gap:12px;align-items:center}
+.post img{width:56px;height:70px;object-fit:cover;border-radius:6px;background:var(--card2);flex:none}
+.post .sem{width:56px;height:70px;border-radius:6px;background:var(--card2);flex:none}
+.vazio{color:var(--mut);font-size:13.5px;padding:10px 2px}
+.pe{color:var(--mut);font-size:12px;text-align:center;margin-top:28px}
+.login{text-align:center;padding:60px 10px}
+.login p{color:var(--mut);margin:10px 0 18px}
+.hide{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">LT<i></i><span>LUAN TAVARES<br>TREINADOR</span></div>
+    <div class="sp"></div>
+    <a class="btn" href="gravar.html">Como gravar</a>
+    <a class="btn" href="index.html">Painel</a>
+  </header>
+
+  <div id="semLogin" class="login hide">
+    <h1>Entre no painel</h1>
+    <p>Faça login uma vez no painel. Esta tela usa a mesma conta.</p>
+    <a class="btn red" href="index.html">Abrir o painel</a>
+  </div>
+
+  <main id="tela" class="hide">
+    <h1 id="titulo">Hoje</h1>
+    <div class="sub" id="resumo">Carregando…</div>
+    <div class="prog" aria-hidden="true"><i id="barra" style="width:0"></i></div>
+    <div class="sub" id="semana"></div>
+
+    <a class="alerta hide" id="precisa" href="index.html"><b id="nPrecisa">0</b><span>esperando você no painel. O resto já está agendado.</span><span aria-hidden="true">›</span></a>
+
+    <h2><span class="dot" style="background:var(--red)"></span>O que só você faz hoje</h2>
+    <div class="lista" id="listaHoje"></div>
+
+    <h2><span class="dot" style="background:var(--ok)"></span>Sai hoje</h2>
+    <div class="lista" id="saiHoje"></div>
+
+    <h2><span class="dot" style="background:var(--warn)"></span>Sai amanhã · dá para vetar</h2>
+    <div class="lista" id="saiAmanha"></div>
+
+    <div class="pe" id="pe"></div>
+  </main>
+</div>
+
+<script>
+const SUPABASE_URL = "https://txiszakrpssubgvzpdcx.supabase.co";
+const SUPABASE_KEY = "sb_publishable_S7gid6IZXgAiM0rbFRu52Q_MSnY2mYY";
+const MIDIA = SUPABASE_URL + "/storage/v1/object/public/midia/";
+const DEMO = new URLSearchParams(location.search).has("demo");
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const urlMidia = c => !c ? "" : /^https?:/.test(c) ? c : MIDIA + c.split("/").map(encodeURIComponent).join("/");
+const eVideo = c => /\.(mp4|mov)$/i.test(c || "");
+const diaISO = (off = 0) => new Date(Date.now() + off * 864e5).toLocaleDateString("sv-SE", {timeZone:"America/Sao_Paulo"});
+const hora = iso => new Date(iso).toLocaleTimeString("pt-BR", {timeZone:"America/Sao_Paulo", hour:"2-digit", minute:"2-digit"});
+const TIPO = {CARROSSEL:"Carrossel", REELS:"Reels", IMAGEM:"Estático", STORY:"Story"};
+const ROT = {gravacao:"Gravação", reels:"Reels", carrossel:"Carrossel", estatico:"Estático", stories:"Story", aprovar:"Aprovar", outro:"Outro"};
+
+let sb = null, tarefas = [], conteudos = [];
+if (!DEMO) sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// Itens de aprovação viraram automáticos: só aparecem se ainda houver algo esperando o Luan.
+function relevante(t, nPrecisa){
+  if (t.apagada) return false;
+  if (t.acao === "aprovar") return nPrecisa > 0;
+  return true;
+}
+
+function desenhar(){
+  const hoje = diaISO(0), amanha = diaISO(1);
+  const precisa = conteudos.filter(r => r.etapa === "pronto" && (r.arquivos || []).length);
+  const lista = tarefas.filter(t => t.data === hoje && relevante(t, precisa.length)).sort((a,b) => (a.ordem||0) - (b.ordem||0));
+  const feitas = lista.filter(t => t.feito).length;
+
+  const d = new Date();
+  $("titulo").textContent = "Hoje, " + d.toLocaleDateString("pt-BR", {timeZone:"America/Sao_Paulo", weekday:"long", day:"2-digit", month:"2-digit"});
+  $("resumo").textContent = lista.length ? `${feitas} de ${lista.length} feitas` : "Nada que dependa de você hoje.";
+  $("barra").style.width = lista.length ? Math.round(100 * feitas / lista.length) + "%" : "0";
+
+  // consistência da semana (segunda até hoje)
+  const dow = (new Date(hoje + "T12:00:00").getDay() + 6) % 7;
+  const seg = diaISO(-dow);
+  const semana = tarefas.filter(t => t.data >= seg && t.data <= hoje && relevante(t, precisa.length));
+  const semFeitas = semana.filter(t => t.feito).length;
+  $("semana").textContent = semana.length ? `Semana: ${semFeitas} de ${semana.length} (${Math.round(100 * semFeitas / semana.length)}%)` : "";
+
+  $("precisa").classList.toggle("hide", !precisa.length);
+  $("nPrecisa").textContent = precisa.length;
+
+  $("listaHoje").innerHTML = lista.length ? lista.map(t => {
+    const acoes = [];
+    if (t.formato === "gravacao") acoes.push(`<a class="btn sm red" href="gravar.html#${esc(t.data)}">Roteiros e guia de gravação</a>`);
+    else if (t.acao === "reels") acoes.push(`<a class="btn sm" href="gravar.html#${esc(t.data)}">Roteiro e guia</a>`, `<a class="btn sm red" href="index.html#enviar-reels">Enviar vídeo</a>`);
+    if (t.acao === "aprovar") acoes.push(`<a class="btn sm" href="index.html">Abrir painel</a>`);
+    return `<div class="item ${t.feito ? "feito" : ""}">
+      <button class="chk" data-feito="${esc(t.id)}" aria-label="${t.feito ? "Desmarcar" : "Marcar como feito"}"></button>
+      <div class="mid"><div class="tt">${esc(t.titulo)}</div>
+        <div class="meta"><span class="tag">${esc(ROT[t.formato] || t.formato || "")}</span>${t.horario ? `<span>${esc(t.horario)}</span>` : ""}</div>
+        ${t.detalhe ? `<details><summary>Detalhes</summary><div class="det">${esc(t.detalhe)}</div></details>` : ""}
+        ${acoes.length ? `<div class="acoes">${acoes.join("")}</div>` : ""}
+      </div></div>`;
+  }).join("") : `<div class="vazio">Sem tarefas para hoje.</div>`;
+
+  const post = r => {
+    const capa = r.capa || (r.arquivos || []).find(a => !eVideo(a));
+    return `<div class="post">${capa ? `<img src="${esc(urlMidia(capa))}" alt="" loading="lazy">` : `<div class="sem"></div>`}
+      <div class="mid"><div class="tt">${esc(r.pauta || r.id)}</div>
+        <div class="meta"><span class="tag">${esc(TIPO[r.tipo] || r.tipo)}</span><span>${esc(hora(r.quando))}</span>${r.etapa === "publicado" ? "<span>· publicado</span>" : ""}</div></div>
+      ${r.etapa === "agendado" && new Date(r.quando) > new Date() ? `<button class="btn sm" data-vetar="${esc(r.id)}">Vetar</button>` : ""}
+    </div>`;
+  };
+  const doDia = dia => conteudos.filter(r => ["agendado","publicado"].includes(r.etapa) && r.quando && new Date(r.quando).toLocaleDateString("sv-SE", {timeZone:"America/Sao_Paulo"}) === dia)
+    .sort((a,b) => a.quando.localeCompare(b.quando));
+  const h = doDia(hoje), a = doDia(amanha).filter(r => r.etapa === "agendado");
+  $("saiHoje").innerHTML = h.length ? h.map(post).join("") : `<div class="vazio">Nada agendado para hoje.</div>`;
+  $("saiAmanha").innerHTML = a.length ? a.map(post).join("") : `<div class="vazio">Nada agendado para amanhã.</div>`;
+  $("pe").textContent = "Atualizado às " + new Date().toLocaleTimeString("pt-BR", {hour:"2-digit", minute:"2-digit"});
+}
+
+async function carregar(){
+  if (DEMO){ ({tarefas, conteudos} = demo()); return desenhar(); }
+  const ini = diaISO(-7), fim = diaISO(2);
+  const [t, c] = await Promise.all([
+    sb.from("tarefas").select("*").gte("data", ini).lte("data", fim).order("ordem"),
+    sb.from("conteudos").select("id,pauta,tipo,etapa,quando,arquivos,capa").in("etapa", ["pronto","agendado","publicado"]).gte("quando", new Date(Date.now() - 2*864e5).toISOString()),
+  ]);
+  tarefas = t.error ? [] : t.data;
+  conteudos = c.error ? [] : c.data;
+  // "pronto" sem data recente também conta como esperando
+  const p = await sb.from("conteudos").select("id,pauta,tipo,etapa,quando,arquivos,capa").eq("etapa", "pronto");
+  if (!p.error) for (const r of p.data) if (!conteudos.some(x => x.id === r.id)) conteudos.push(r);
+  desenhar();
+}
+
+document.addEventListener("click", async ev => {
+  const f = ev.target.closest("[data-feito]");
+  if (f){
+    const t = tarefas.find(x => x.id === f.dataset.feito); if (!t) return;
+    t.feito = !t.feito; t.feito_em = t.feito ? new Date().toISOString() : null; desenhar();
+    if (!DEMO){
+      const {error} = await sb.from("tarefas").update({feito:t.feito, feito_em:t.feito_em}).eq("id", t.id);
+      if (error){ t.feito = !t.feito; desenhar(); alert("Não salvou: " + error.message); }
+    }
+    return;
+  }
+  const v = ev.target.closest("[data-vetar]");
+  if (v){
+    const r = conteudos.find(x => x.id === v.dataset.vetar); if (!r) return;
+    if (!confirm(`Vetar "${(r.pauta || r.id).slice(0,70)}"? Ele não vai ao ar (dá para restaurar no painel, filtro Cancelados).`)) return;
+    const antes = r.etapa; r.etapa = "cancelado"; desenhar();
+    if (!DEMO){
+      const {error} = await sb.from("conteudos").update({etapa:"cancelado", atualizado_em:new Date().toISOString()}).eq("id", r.id);
+      if (error){ r.etapa = antes; desenhar(); alert("Não vetou: " + error.message); }
+    }
+  }
+});
+
+function demo(){
+  const h = diaISO(0), a = diaISO(1);
+  return {
+    tarefas: [
+      {id:"1", data:h, ordem:1, formato:"gravacao", titulo:"Bloco de gravação: 3 reels da semana no TTC", horario:"07:00", detalhe:"Ordem: sexta → quarta → b-roll de segunda.", acao:"reels"},
+      {id:"2", data:h, ordem:2, formato:"stories", titulo:"Story 07:30: Bastidor", detalhe:"Chegada no TTC — 'segunda começa com método'", horario:"07:30", acao:"manual", feito:true},
+      {id:"3", data:h, ordem:3, formato:"stories", titulo:"Story 15:00: Enquete", detalhe:"Minutos de força por semana? 0 / até 40 / mais de 40", horario:"15:00", acao:"manual"},
+      {id:"4", data:h, ordem:4, formato:"aprovar", titulo:"Aprovar os conteúdos prontos", acao:"aprovar"},
+    ],
+    conteudos: [
+      {id:"c1", pauta:"Força não é vaidade.", tipo:"CARROSSEL", etapa:"agendado", quando:h + "T12:00:00-03:00", arquivos:[]},
+      {id:"c2", pauta:"Seu treino não parou.", tipo:"CARROSSEL", etapa:"agendado", quando:a + "T12:00:00-03:00", arquivos:[]},
+      {id:"c3", pauta:"GLP-1 e massa muscular", tipo:"CARROSSEL", etapa:"pronto", quando:a + "T19:00:00-03:00", arquivos:["x.png"]},
+    ],
+  };
+}
+
+(async () => {
+  if (DEMO){ $("tela").classList.remove("hide"); return carregar(); }
+  const {data} = await sb.auth.getSession();
+  if (!data.session){ $("semLogin").classList.remove("hide"); return; }
+  $("tela").classList.remove("hide");
+  carregar();
+  setInterval(() => { if (document.visibilityState === "visible") carregar(); }, 60000);
+})();
+</script>
+</body>
+</html>

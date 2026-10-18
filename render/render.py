@@ -22,6 +22,9 @@ import urllib.request
 
 from playwright.sync_api import sync_playwright
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from revisar import revisar  # noqa: E402
+
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
@@ -44,10 +47,32 @@ def subir(caminho_local, caminho_bucket):
     urllib.request.urlopen(req, timeout=60).read()
 
 
-def gravar_card(p, arquivos, capa=None, tipo="CARROSSEL"):
+def etapa_atual(cid):
+    """Etapa que o card já tem no painel (None se ainda não existe)."""
+    req = urllib.request.Request(f"{URL}/rest/v1/conteudos?id=eq.{urllib.parse.quote(cid)}&select=etapa,quando",
+                                 headers={"apikey": KEY})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            linhas = json.loads(r.read())
+        return linhas[0] if linhas else None
+    except Exception as e:
+        print(f"::warning::não li a etapa atual de {cid}: {e}")
+        return None
+
+
+def gravar_card(p, arquivos, capa=None, tipo="CARROSSEL", etapa="pronto"):
+    atual = etapa_atual(p["id"]) or {}
+    quando = p.get("quando")
+    if atual.get("etapa") in ("cancelado", "publicado"):
+        etapa = atual["etapa"]  # nunca ressuscita o que foi cancelado nem mexe no que já saiu
+        quando = atual.get("quando") or quando
+    elif atual.get("etapa") == "agendado":
+        quando = atual.get("quando") or quando  # o horário que já estava valendo (pode ter sido ajustado no painel)
+        if etapa == "pronto":
+            print(f"::warning::{p['id']} estava agendado e a nova versão não passou na revisão: volta para Precisa de você")
     linha = {
         "id": p["id"], "data": p.get("data"), "tipo": tipo, "pauta": p.get("pauta"),
-        "funil": p.get("funil"), "etapa": "pronto", "quando": p.get("quando"),
+        "funil": p.get("funil"), "etapa": etapa, "quando": quando,
         "arquivos": arquivos, "legenda": p.get("legenda"), "capa": capa, "link": None, "media_id": None,
     }
     req = urllib.request.Request(
@@ -68,6 +93,7 @@ def main():
     os.makedirs(saida, exist_ok=True)
     os.makedirs(fotos, exist_ok=True)
 
+    fotos_falharam, cortes = [], []
     reels = p.get("formato") == "reels"
     W, H = (1080, 1920) if reels else (1080, 1350)
     for i, s in enumerate(slides, 1):  # foto do repositório (quadro do vídeo) -> caminho absoluto
@@ -82,6 +108,7 @@ def main():
             except Exception as e:
                 print(f"::warning::foto do slide {i} não baixou ({e}); segue sem foto")
                 s["foto"] = None
+                fotos_falharam.append(i)
 
     arquivos = []
     modelo = "file://" + os.path.join(AQUI, "capa-reels.html" if reels else "carrossel.html")
@@ -93,6 +120,15 @@ def main():
             pg.goto(modelo)
             pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(300)
+            cortado = pg.evaluate("""() => {
+              const c = document.querySelector('.corpo'), sec = document.querySelector('.s'), rod = document.querySelector('.rod');
+              if (!c || !sec) return false;
+              if (c.scrollHeight > c.clientHeight + 4 || sec.scrollHeight > sec.clientHeight + 4) return true;
+              if (rod && rod.getBoundingClientRect().bottom > sec.getBoundingClientRect().bottom - 20) return true;
+              return [...c.querySelectorAll('h1,p,.nota,.cta-box,.num')].some(e => e.scrollWidth > e.clientWidth + 4);
+            }""")
+            if cortado:
+                cortes.append(i)
             nome = "reels-capa.png" if reels else f"carrossel-{i}.png"
             pg.screenshot(path=os.path.join(saida, nome))
             arquivos.append(f"{pasta_rel}/{nome}")
@@ -115,16 +151,52 @@ def main():
     except Exception as e:
         print(f"[aviso] sem prévia: {e}")
 
+    rev = revisar(p, cortes=cortes, fotos_falharam=fotos_falharam)
+    if str(p["id"]).startswith(("teste", "e-teste")):
+        rev["decisao"] = "precisa"
+        rev["avisos"].append("Pedido de teste: nunca agenda sozinho.")
+    salvar_revisao(rev)
+    print(f"Revisão: {rev['decisao']} · problemas={rev['problemas']} atenção={rev['atencao']} avisos={rev['avisos']}")
     if local:
         return 0
     for a in arquivos:
         subir(os.path.join(RAIZ, "render", "_saida", a), a)
+    etapa = "agendado" if rev["decisao"] == "agendado" else "pronto"
     if reels:
-        gravar_card(p, [p["video"]], capa=arquivos[0], tipo="REELS")
+        gravar_card(p, [p["video"]], capa=arquivos[0], tipo="REELS", etapa=etapa)
     else:
-        gravar_card(p, arquivos)
-    print(f"card '{p['id']}' gravado como pronto no painel")
+        gravar_card(p, arquivos, etapa=etapa)
+    publicar_revisoes()
+    print(f"card '{p['id']}' gravado no painel como {etapa}")
     return 0
+
+
+def salvar_revisao(rev):
+    pasta = os.path.join(AQUI, "revisoes")
+    os.makedirs(pasta, exist_ok=True)
+    with open(os.path.join(pasta, f"{rev['id']}.json"), "w", encoding="utf-8") as f:
+        json.dump(rev, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+
+
+def publicar_revisoes():
+    """Junta render/revisoes/*.json num índice e grava em materiais/revisao/indice.json (o painel lê)."""
+    pasta = os.path.join(AQUI, "revisoes")
+    indice = {}
+    for nome in sorted(os.listdir(pasta)):
+        if nome.endswith(".json"):
+            with open(os.path.join(pasta, nome), encoding="utf-8") as f:
+                r = json.load(f)
+            indice[r["id"]] = r
+    req = urllib.request.Request(
+        f"{URL}/storage/v1/object/materiais/revisao/indice.json",
+        data=json.dumps(indice, ensure_ascii=False).encode(), method="POST",
+        headers={"apikey": KEY, "Authorization": f"Bearer {KEY}", "Content-Type": "application/json",
+                 "x-upsert": "true", "cache-control": "no-cache"})
+    try:
+        urllib.request.urlopen(req, timeout=60).read()
+    except Exception as e:
+        print(f"::warning::não publiquei o índice de revisões: {e}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F172A">
+<title>Como gravar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{--bg:#0F172A; --card:#162036; --card2:#1C2842; --line:#26324D; --txt:#F8FAFC; --mut:#94A3B8; --red:#C1121F; --ok:#22C55E; --warn:#F59E0B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:16px 16px calc(40px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;gap:10px;padding:6px 0 18px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-style:italic;font-size:20px}
+.logo i{width:1px;height:22px;background:var(--txt);opacity:.6}
+.logo span{font-style:normal;font-size:11px;letter-spacing:.14em;line-height:1.15;font-weight:700}
+.sp{flex:1}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 13px;border-radius:9px;border:1px solid var(--line);font-weight:600;font-size:13px;text-decoration:none;white-space:nowrap}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+h1{font-size:28px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.lead{color:var(--mut);margin-top:6px}
+nav.indice{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 6px}
+nav.indice a{font-size:12.5px;padding:6px 10px;border-radius:20px;background:var(--card);border:1px solid var(--line);text-decoration:none}
+section{margin-top:28px;scroll-margin-top:12px}
+h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.box + .box{margin-top:8px}
+ul.check{list-style:none;display:flex;flex-direction:column;gap:9px}
+ul.check li{padding-left:28px;position:relative}
+ul.check li::before{content:"";position:absolute;left:0;top:3px;width:17px;height:17px;border:2px solid var(--mut);border-radius:5px}
+ul.pts{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+ul.pts li::marker{color:var(--red)}
+b{font-weight:700}
+.partes{display:flex;flex-direction:column;gap:8px}
+.parte{display:grid;grid-template-columns:92px 1fr;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.parte .k{font-weight:800;font-size:13px}
+.parte .k small{display:block;color:var(--mut);font-weight:500;font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.quadro{display:flex;gap:16px;align-items:center}
+.tela{width:118px;flex:none;aspect-ratio:9/16;border:2px solid var(--mut);border-radius:14px;position:relative;overflow:hidden;background:var(--card2)}
+.tela .faixa{position:absolute;left:0;right:0;top:12.5%;bottom:12.5%;border-top:1px dashed var(--ok);border-bottom:1px dashed var(--ok);background:rgba(34,197,94,.08)}
+.tela .rosto{position:absolute;left:50%;top:22%;width:34px;height:34px;border-radius:50%;background:var(--mut);transform:translateX(-50%)}
+.tela .corpo{position:absolute;left:50%;top:36%;width:70px;height:60px;border-radius:30px 30px 0 0;background:var(--mut);transform:translateX(-50%)}
+.tela .baixo{position:absolute;left:0;right:0;bottom:0;height:16%;background:rgba(193,18,31,.25);border-top:1px dashed var(--red)}
+.legenda{font-size:13px;color:var(--mut)}
+.legenda i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.dia{border-left:3px solid var(--red)}
+.dia h3{font-size:16px;margin-bottom:4px}
+.dia .det{white-space:pre-wrap;font-size:14px;color:#CBD5E1;margin-top:8px}
+.vazio{color:var(--mut);font-size:14px}
+.hide{display:none!important}
+@media (max-width:480px){.parte{grid-template-columns:1fr;gap:4px}.quadro{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">LT<i></i><span>LUAN TAVARES<br>TREINADOR</span></div>
+    <div class="sp"></div>
+    <a class="btn" href="hoje.html">Hoje</a>
+    <a class="btn" href="index.html">Painel</a>
+  </header>
+
+  <h1>Como gravar</h1>
+  <p class="lead">O roteiro da semana e o padrão de gravação num lugar só. Leia o roteiro do dia, siga o checklist e envie o vídeo no painel.</p>
+  <nav class="indice">
+    <a href="#roteiros">Roteiros da semana</a><a href="#antes">Antes de gravar</a><a href="#quadro">Enquadramento</a>
+    <a href="#estrutura">As 5 partes</a><a href="#duracao">Duração</a><a href="#fala">Como falar</a><a href="#broll">B-roll</a><a href="#depois">Depois de gravar</a>
+  </nav>
+
+  <section id="roteiros">
+    <h2>Roteiros da semana</h2>
+    <div id="listaRoteiros"><div class="vazio">Carregando os roteiros…</div></div>
+  </section>
+
+  <section id="antes">
+    <h2>Antes de gravar</h2>
+    <div class="box"><ul class="check">
+      <li><b>Celular na vertical</b>, câmera traseira, 1080p ou 4K a 30 fps. Lente limpa.</li>
+      <li><b>Luz de frente</b>: janela ou luz do TTC atrás do celular. Nunca contra a luz.</li>
+      <li><b>Áudio</b>: microfone de lapela. Sem lapela, celular a até 1 metro e música do TTC desligada.</li>
+      <li><b>Roupa</b> lisa e sem marca grande. Mesmo figurino para os reels do bloco; troque só a camiseta entre um e outro.</li>
+      <li><b>Fundo</b> do TTC organizado: anilhas no lugar, sem garrafa e mochila no chão.</li>
+      <li><b>Celular em modo não perturbe.</b> Notificação estraga o take.</li>
+      <li><b>Aluno na cena</b>: só com autorização dele por escrito (mensagem serve).</li>
+    </ul></div>
+  </section>
+
+  <section id="quadro">
+    <h2>Enquadramento</h2>
+    <div class="box quadro">
+      <div class="tela" aria-hidden="true"><div class="faixa"></div><div class="rosto"></div><div class="corpo"></div><div class="baixo"></div></div>
+      <div>
+        <ul class="pts">
+          <li>Olhos na linha de cima do terço superior. Rosto e ombros no quadro.</li>
+          <li>O que importa fica na <b>faixa central</b>: o grid do perfil corta o vídeo em 3:4.</li>
+          <li>Nada importante nos <b>15% de baixo</b>: ali ficam a legenda e os botões do Instagram.</li>
+          <li>Celular na altura dos olhos, apoiado. Nada de câmera de baixo para cima.</li>
+        </ul>
+        <p class="legenda" style="margin-top:10px"><i style="background:rgba(34,197,94,.35)"></i>faixa segura <i style="background:rgba(193,18,31,.4);margin-left:10px"></i>área coberta pelo app</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="estrutura">
+    <h2>As 5 partes de todo reels</h2>
+    <div class="partes">
+      <div class="parte"><div class="k">Gancho<small>0–3 s</small></div><div>A frase que para o dedo. Vai <b>escrita na tela</b> e falada ao mesmo tempo. Grave 3 versões.</div></div>
+      <div class="parte"><div class="k">Tensão</div><div>A crença comum ou a dor de quem assiste. Uma frase.</div></div>
+      <div class="parte"><div class="k">Explicação</div><div>No máximo 3 pontos. Sempre o porquê. Simples na superfície, técnico por trás.</div></div>
+      <div class="parte"><div class="k">Virada</div><div>A frase-assinatura: "[crença] não é [causa falsa]. É [causa real]."</div></div>
+      <div class="parte"><div class="k">CTA</div><div>Um pedido só, conforme o funil (tabela abaixo).</div></div>
+    </div>
+  </section>
+
+  <section id="duracao">
+    <h2>Duração e formato por funil</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Funil</th><th>Duração</th><th>Formato</th><th>CTA</th></tr></thead>
+      <tbody>
+        <tr><td><b>Topo</b></td><td>7–20 s</td><td>Sua voz por cima de b-roll</td><td>Salvar ou compartilhar</td></tr>
+        <tr><td><b>Meio</b></td><td>30–60 s</td><td>Fala para a câmera + b-roll</td><td>Seguir ou caixinha</td></tr>
+        <tr><td><b>Fundo</b></td><td>45–90 s</td><td>Olho no olho, ou com aluno</td><td>Me manda MÉTODO no direct</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="fala">
+    <h2>Como falar</h2>
+    <div class="box"><ul class="pts">
+      <li>Olhe para a <b>lente</b>, não para a tela.</li>
+      <li>Frase curta, uma ideia por frase. Afirme, não pergunte. Calma é autoridade.</li>
+      <li>Fale com <b>uma pessoa</b>: "você".</li>
+      <li>Respire 1 segundo antes e depois de cada parte. Isso facilita o corte.</li>
+      <li>Errou? Pare, respire e repita a frase inteira. Não corrija no meio.</li>
+      <li>Evite: "bora", "shape", "monstro", "maromba", "projeto verão", promessa com prazo.</li>
+    </ul></div>
+  </section>
+
+  <section id="broll">
+    <h2>B-roll</h2>
+    <div class="box"><ul class="pts">
+      <li>5 a 8 clipes de 3 a 6 segundos cada, com movimento lento.</li>
+      <li>Detalhes contam história: mãos no giz, anilha encaixando, planilha de cargas, fita métrica.</li>
+      <li>Grave b-roll extra no mesmo bloco: ele serve para os stories da semana.</li>
+    </ul></div>
+  </section>
+
+  <section id="depois">
+    <h2>Depois de gravar</h2>
+    <div class="box"><ul class="pts">
+      <li>Edite os cortes e coloque o <b>texto do gancho na tela</b> nos 3 primeiros segundos. Legenda queimada ajuda quem assiste sem som.</li>
+      <li>Exporte na vertical (1080×1920).</li>
+      <li>Envie no painel em <b>Enviar vídeo de reels</b>. Capa e legenda são feitas sozinhas e o reels entra agendado no horário do plano.</li>
+    </ul>
+    <p style="margin-top:12px"><a class="btn red" href="index.html#enviar-reels">Enviar vídeo de reels</a></p></div>
+  </section>
+</div>
+
+<script>
+const SUPABASE_URL = "https://txiszakrpssubgvzpdcx.supabase.co";
+const SUPABASE_KEY = "sb_publishable_S7gid6IZXgAiM0rbFRu52Q_MSnY2mYY";
+const DEMO = new URLSearchParams(location.search).has("demo");
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const diaISO = (off = 0) => new Date(Date.now() + off * 864e5).toLocaleDateString("sv-SE", {timeZone:"America/Sao_Paulo"});
+const nomeDia = iso => new Date(iso + "T12:00:00").toLocaleDateString("pt-BR", {weekday:"long", day:"2-digit", month:"2-digit"});
+
+function desenhar(lista){
+  const alvo = location.hash.slice(1);
+  if (!lista.length){ $("listaRoteiros").innerHTML = `<div class="vazio">Nenhum roteiro de reels nos próximos 7 dias. Eles chegam com o pacote de sábado.</div>`; return; }
+  $("listaRoteiros").innerHTML = lista.map(t => `<div class="box dia" id="${esc(t.data)}">
+      <h3>${esc(nomeDia(t.data))}${t.data === diaISO(0) ? " · hoje" : ""}</h3>
+      <div>${esc(t.titulo)}${t.horario ? ` · publica ${esc(t.horario)}` : ""}</div>
+      ${t.detalhe ? `<div class="det">${esc(t.detalhe)}</div>` : ""}
+    </div>`).join("");
+  if (/^\d{4}-\d{2}-\d{2}$/.test(alvo)){ const el = document.getElementById(alvo); if (el) el.scrollIntoView(); }
+}
+
+(async () => {
+  if (DEMO){
+    return desenhar([{data:diaISO(0), titulo:"Bloco de gravação: 3 reels da semana no TTC", detalhe:"SEG:\nGancho (tela): 40 minutos por semana.\nTensão: você acha que perder força depois dos 30 é idade.\nVirada: Perder força não é idade. É falta de estímulo.\nFormato: voz por cima de b-roll, 15s."}]);
+  }
+  const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  const {data} = await sb.auth.getSession();
+  if (!data.session){ $("listaRoteiros").innerHTML = `<div class="vazio">Entre no <a href="index.html">painel</a> para ver os roteiros. O guia abaixo vale sempre.</div>`; return; }
+  const {data: t, error} = await sb.from("tarefas").select("*").gte("data", diaISO(-1)).lte("data", diaISO(7)).in("formato", ["gravacao","reels"]).order("data").order("ordem");
+  if (error){ $("listaRoteiros").innerHTML = `<div class="vazio">Não carreguei os roteiros: ${esc(error.message)}</div>`; return; }
+  desenhar((t || []).filter(x => !x.apagada && !(x.feito && x.data < diaISO(0))));
+})();
+</script>
+</body>
+</html>
