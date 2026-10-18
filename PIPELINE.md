@@ -38,6 +38,11 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
      `## O custo escondido da crença errada`, `## Como o método aplica`, `## Objeções que esse tema responde`, `## Desdobramentos de conteúdo`,
      `## Cuidado de comunicação`. Use "- " em listas e **negrito**. Nada genérico.
    - headlines: 4 investigativas e culturais, com potencial viral (curiosidade, conexão). titulo = frase 1, subtitulo = frase 2.
+     Cada headline leva `notas` {curiosidade, clareza, marca, publico, venda} (0–10 cada, seja exigente e diferencie) e
+     `publico_alvo` (executivo | mulher | ambos). A opção leva `recomendada_h` {indice (1–4), motivo (2 frases), ajuste
+     {titulo, subtitulo} ou null}: a headline que melhor equilibra parar o scroll, salvamento e venda, com uma versão
+     melhorada se couber. Quesitos: curiosidade (para o scroll), clareza (entende em 2 s), marca (tom LT, sem clickbait),
+     publico (dores do executivo 30–45 e da mulher 30–50), venda (ponte para Avaliação Estratégica / MÉTODO).
    - objetivo: o objetivo que a opção mais atende, em 2–4 palavras (ex.: "Alcance e viralização", "Venda: quebra objeção");
    - potencial: {alcance, engajamento, venda}, cada um "alto" | "medio" | "baixo" (alcance = views/viralização; engajamento = salvar,
      comentar, compartilhar; venda = direct com MÉTODO / Avaliação Estratégica). Seja honesto: nem tudo é alto.
