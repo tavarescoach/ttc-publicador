@@ -33,6 +33,7 @@ p strong{font-weight:700;opacity:1}
 .capa .corpo{justify-content:flex-end;padding-bottom:30px}
 .capa h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;line-height:.98;font-size:108px}
 .capa .arroba{font-size:26px;color:var(--mut);letter-spacing:1px}
+.capa .cred{font-size:20px;color:var(--mut);letter-spacing:.3px}
 /* número gigante */
 .num{font-weight:900;letter-spacing:-.06em;line-height:.85;font-size:300px;color:var(--txt)}
 .s.claro .num{color:var(--escuro)}
@@ -55,8 +56,9 @@ const tam = t => len(t) > 90 ? "t-m" : len(t) > 55 ? "t-l" : "t-xl";
 let h = "", fundo = S.fundo || "marinho", marca = false;
 
 if (S.tipo === "capa"){
-  h = `${S.foto ? `<div class="bg" style="background-image:url('${S.foto}')"></div><div class="ve"></div>` : ""}
-    ${topo}<div class="corpo"><div class="arroba">@tavarescoach</div><h1>${fmt(S.titulo)}</h1></div>${rod}`;
+  const rodCapa = S.credito ? `<div class="rod"><span class="cred">${esc(S.credito)}</span><span>${I}/${N}</span></div>` : rod;
+  h = `${S.foto ? `<div class="bg" style="background-image:url('${S.foto}');background-position:${esc(S.foco || "center")}"></div><div class="ve"></div>` : ""}
+    ${topo}<div class="corpo"><div class="arroba">@tavarescoach</div><h1>${fmt(S.titulo)}</h1></div>${rodCapa}`;
   marca = !S.foto;
 } else if (S.tipo === "texto_foto"){
   h = `${topo}<div class="corpo" style="justify-content:${S.foto ? "flex-start" : "center"};gap:40px">

@@ -40,6 +40,12 @@ Exemplo aprovado: render/pedidos/c-2610171339-y4f-carrossel.json (prévia em ren
 - EVITAR: homem sem camisa, fisiculturismo, poses de modelo, sorrisos posados, academia "de catálogo", imagens com marcas/logos visíveis.
 - Conferir a página da foto (título/descrição) antes de usar. Na dúvida, sem foto.
 
+## Capa de pauta de notícia com pessoa conhecida
+- Pauta que nasce de notícia com pessoa central (atleta, celebridade, executivo, figura pública): a capa mostra essa pessoa, numa foto do contexto do fato. Sem pessoa central, a foto do próprio fato. O título nomeia a pessoa.
+- Fonte da foto, em ordem: 1) licença livre (Agência Brasil, Wikimedia Commons CC BY/CC BY-SA/domínio público, Flickr oficial com CC); 2) divulgação oficial liberada para uso editorial; 3) a foto da própria notícia, marcada `sem-licenca` (vai sempre para "Precisa de você"); 4) sem foto: capa tipográfica com a manchete recriada e "Fonte: veículo, data".
+- Campos na capa: `foto`, `credito` ("Foto: autor / agência"), `licenca` (cc-by | cc-by-sa | dominio-publico | divulgacao | sem-licenca), `pagina_origem`, `link_noticia`, `foco` opcional (posição CSS do recorte, ex.: "30% center"). O crédito substitui o @ do rodapé da capa.
+- A capa é editorial: nada de MÉTODO, oferta ou logo em posição de parceria. Nunca sugerir que a pessoa usa ou recomenda o método. Sem montagem nem filtro que altere o corpo. Sobre corpo e saúde da pessoa, só o que a notícia afirmou. Notícia negativa: tom informativo e passa pelo Luan. Menor de idade nunca vai na capa.
+
 ## Legenda
 1ª linha: gancho próprio (número ou cena), diferente da capa; "Decodificando [tema]." pode abrir quando o caso for uma história. Depois 2 parágrafos curtos com os fatos + 1 parágrafo de lição + CTA do funil + "Me manda MÉTODO no direct." + 3–5 hashtags (nicho e bairro).
 

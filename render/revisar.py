@@ -140,6 +140,18 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
         for n in set(re.findall(r"(\d+(?:[.,]\d+)?)\s*%", legenda)):
             if n not in nums_slides:
                 problemas.append(f"A legenda cita {n}% e esse número não aparece nos slides.")
+        # foto da capa: crédito, licença e nada promocional
+        capa = slides[0] if slides and slides[0].get("tipo") == "capa" else None
+        if capa:
+            foto = capa.get("foto") or ""
+            banco = foto.startswith(("render/", "file://")) or re.search(r"pexels\.com|unsplash\.com", foto)
+            if foto and not banco:
+                if not capa.get("credito") or not capa.get("licenca"):
+                    problemas.append("Foto da capa de fora dos bancos sem crédito ou licença registrada.")
+                elif capa.get("licenca") == "sem-licenca":
+                    atencao.append(f"Foto da capa sem licença ({capa.get('credito')}): decida se publica.")
+            if "método" in _txt(capa).lower():
+                problemas.append("A capa tem MÉTODO: o convite fica só no último slide.")
         # fundos: nunca 3 iguais seguidos
         fundos = [s.get("fundo") for s in slides if s.get("tipo") != "capa"]
         for a, b, c in zip(fundos, fundos[1:], fundos[2:]):

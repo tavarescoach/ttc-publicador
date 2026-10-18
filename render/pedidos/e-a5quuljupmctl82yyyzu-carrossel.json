@@ -1,20 +1,90 @@
 {
   "id": "e-a5quuljupmctl82yyyzu-carrossel",
   "data": "2026-10-18",
-  "quando": "2026-10-18T12:00:00-03:00",
+  "quando": "2026-10-20T07:00:00-03:00",
   "funil": "topo",
   "pauta": "Uma foto de praia virou debate de saúde.",
-  "legenda": "Decodificando a gordura que não aparece na foto.\n\nFotos de praia de um ator de Hollywood viraram debate sobre o \"dad bod\". A Fox News usou a repercussão para falar do que importa: a gordura visceral, que envolve os órgãos e está ligada a risco cardíaco e metabólico.\n\nA American Heart Association recomenda medir a cintura junto com o peso. A referência de alerta é acima de 102 cm no homem e 88 cm na mulher. E uma meta-análise com 84 ensaios mostrou que aeróbico, força, HIIT e treino combinado reduzem essa gordura.\n\nA medida que importa não está no espelho nem só na balança. Está na fita métrica, e ela responde a treino com estrutura.\n\nMe manda MÉTODO no direct.\n\n#gorduravisceral #treinodeforca #personaltrainerrj #copacabana #ipanema",
+  "legenda": "Decodificando a gordura que não aparece na foto.\n\nFotos de praia de Leonardo DiCaprio viraram debate sobre o \"dad bod\". A Fox News usou a repercussão para falar do que importa: a gordura visceral, que envolve os órgãos e está ligada a risco cardíaco e metabólico.\n\nA American Heart Association recomenda medir a cintura junto com o peso. A referência de alerta é acima de 102 cm no homem e 88 cm na mulher. E uma meta-análise com 84 ensaios mostrou que aeróbico, força, HIIT e treino combinado reduzem essa gordura.\n\nA medida que importa não está no espelho nem só na balança. Está na fita métrica, e ela responde a treino com estrutura.\n\nMe manda MÉTODO no direct.\n\n#gorduravisceral #treinodeforca #personaltrainerrj #copacabana #ipanema",
   "slides": [
-    {"tipo": "capa", "fundo": "marinho", "titulo": "Uma foto de praia virou **debate de saúde.**", "foto": "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1600"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Fotos de um ator de 51 anos viraram debate sobre o **\"dad bod\".**", "texto": "A Fox News usou a repercussão para falar de outra coisa. Não da aparência de ninguém. Da gordura que fica por dentro do abdômen e não aparece em foto nenhuma.", "fonte": "Fox News Health (17/10/2026)"},
-    {"tipo": "texto_foto", "fundo": "marinho", "titulo": "Existe uma gordura que **a balança não mostra.**", "texto": "A gordura visceral envolve os órgãos do abdômen. Ela está ligada a mais risco de doença cardíaca e metabólica. E pode estar alta em quem tem o peso dentro do normal.", "fonte": "Powell-Wiley et al., Circulation (2021)"},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O alerta dos cardiologistas", "titulo": "Medir a cintura junto com **o peso.**", "texto": "**Gordura visceral é um risco claro à saúde**, resumiu a coordenadora da declaração da American Heart Association, em abril de 2021. Por isso o documento pede medir a cintura junto com o IMC."},
-    {"tipo": "numero", "fundo": "preto", "rotulo": "A referência de alerta", "numero": "102", "unidade": "cm", "titulo": "de cintura no homem. **88 cm** na mulher.", "texto": "Acima dessas medidas, o risco de problemas de saúde ligados ao excesso de peso aumenta. É sinal de alerta, não diagnóstico. A referência varia conforme a etnia.", "fonte": "CDC, Estados Unidos"},
-    {"tipo": "numero", "fundo": "marinho", "rotulo": "O que a ciência testou", "numero": "84", "unidade": "ensaios", "titulo": "com **4.836 pessoas** com sobrepeso ou obesidade.", "texto": "A meta-análise comparou tipos de treino. Aeróbico moderado ou intenso, treino de força, HIIT e o combinado de força com aeróbico reduziram a gordura visceral.", "fonte": "Chen et al., Obesity Reviews (2024)"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Mil abdominais não **tiram a barriga.**", "foto": "https://images.pexels.com/photos/6455846/pexels-photo-6455846.jpeg?auto=compress&cs=tinysrgb&w=1600", "texto": "Não existe queima localizada. A gordura do abdômen diminui quando a gordura do corpo inteiro diminui. O abdominal fortalece o músculo, mas não escolhe de onde a gordura sai."},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "O espelho e a balança **não contam tudo.**", "texto": "**A barriga que importa nem sempre aparece.** O debate começou na foto de uma celebridade. O dado que vale para você está na fita métrica, e ele muda com treino."},
-    {"tipo": "licao", "fundo": "preto", "rotulo": "Para quem treina", "titulo": "Cintura é **indicador de progresso.**", "texto": "Treino de força 2 a 3 vezes por semana, condicionamento planejado e 150 minutos semanais de atividade moderada. Medir a cintura no começo e reavaliar, sem depender só do peso.", "nota": "Cintura é sinal de alerta, não diagnóstico. Exame e conduta são com o médico. Estrutura de treino é trabalho de treinador."},
-    {"tipo": "cta", "fundo": "marinho", "titulo": "Comece pelo número que **a balança esconde.**", "texto": "A Avaliação Estratégica mede cintura, relação cintura-quadril e composição corporal, e define a direção do seu processo.", "cta": "Me manda **MÉTODO** no direct."}
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Uma foto de DiCaprio na praia virou **debate de saúde.**",
+      "foto": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/10/1200/675/leo-on-beach-horizontal.jpg",
+      "credito": "Foto: Backgrid / Fox News",
+      "licenca": "sem-licenca",
+      "pagina_origem": "https://www.foxnews.com/health/leonardo-dicaprio-dad-bod-spotlight-dangerous-belly-fat-how-lose-it",
+      "link_noticia": "https://www.foxnews.com/health/leonardo-dicaprio-dad-bod-spotlight-dangerous-belly-fat-how-lose-it"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Fotos de Leonardo DiCaprio, 51 anos, viraram debate sobre o **\"dad bod\".**",
+      "texto": "A Fox News usou a repercussão para falar de outra coisa. Não da aparência de ninguém. Da gordura que fica por dentro do abdômen e não aparece em foto nenhuma.",
+      "fonte": "Fox News Health (17/10/2026)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "marinho",
+      "titulo": "Existe uma gordura que **a balança não mostra.**",
+      "texto": "A gordura visceral envolve os órgãos do abdômen. Ela está ligada a mais risco de doença cardíaca e metabólica. E pode estar alta em quem tem o peso dentro do normal.",
+      "fonte": "Powell-Wiley et al., Circulation (2021)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O alerta dos cardiologistas",
+      "titulo": "Medir a cintura junto com **o peso.**",
+      "texto": "**Gordura visceral é um risco claro à saúde**, resumiu a coordenadora da declaração da American Heart Association, em abril de 2021. Por isso o documento pede medir a cintura junto com o IMC."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "A referência de alerta",
+      "numero": "102",
+      "unidade": "cm",
+      "titulo": "de cintura no homem. **88 cm** na mulher.",
+      "texto": "Acima dessas medidas, o risco de problemas de saúde ligados ao excesso de peso aumenta. É sinal de alerta, não diagnóstico. A referência varia conforme a etnia.",
+      "fonte": "CDC, Estados Unidos"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "O que a ciência testou",
+      "numero": "84",
+      "unidade": "ensaios",
+      "titulo": "com **4.836 pessoas** com sobrepeso ou obesidade.",
+      "texto": "A meta-análise comparou tipos de treino. Aeróbico moderado ou intenso, treino de força, HIIT e o combinado de força com aeróbico reduziram a gordura visceral.",
+      "fonte": "Chen et al., Obesity Reviews (2024)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Mil abdominais não **tiram a barriga.**",
+      "foto": "https://images.pexels.com/photos/6455846/pexels-photo-6455846.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "texto": "Não existe queima localizada. A gordura do abdômen diminui quando a gordura do corpo inteiro diminui. O abdominal fortalece o músculo, mas não escolhe de onde a gordura sai."
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "O espelho e a balança **não contam tudo.**",
+      "texto": "**A barriga que importa nem sempre aparece.** O debate começou na foto de uma celebridade. O dado que vale para você está na fita métrica, e ele muda com treino."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "preto",
+      "rotulo": "Para quem treina",
+      "titulo": "Cintura é **indicador de progresso.**",
+      "texto": "Treino de força 2 a 3 vezes por semana, condicionamento planejado e 150 minutos semanais de atividade moderada. Medir a cintura no começo e reavaliar, sem depender só do peso.",
+      "nota": "Cintura é sinal de alerta, não diagnóstico. Exame e conduta são com o médico. Estrutura de treino é trabalho de treinador."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "marinho",
+      "titulo": "Comece pelo número que **a balança esconde.**",
+      "texto": "A Avaliação Estratégica mede cintura, relação cintura-quadril e composição corporal, e define a direção do seu processo.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
   ]
 }
