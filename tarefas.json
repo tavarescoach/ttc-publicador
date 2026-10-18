@@ -580,7 +580,8 @@
   "detalhe": "ARTE DE FUNDO: story-fundo-resultado.png (salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-19/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado da enquete das 10h (arraste para cima no story). Novo story → galeria → escolha a arte → Aa e escreva o número real no espaço vazio de cima, por exemplo:\nX% acham que é idade.\n\nUse só o número que aparecer. Se a enquete teve poucos votos (menos de 10), escreva: A maioria votou idade. (ou 'falta de treino', o que for verdade).\n\nA frase 'O músculo responde em qualquer década quando a carga sobe.' já está na arte.",
   "acao": "manual",
   "data": "2026-10-19",
-  "formato": "stories"
+  "formato": "stories",
+  "apagada": true
  },
  {
   "id": "2026-10-19-13",
@@ -720,7 +721,8 @@
   "titulo": "Story 07:30 · Abertura: avaliação no TTC",
   "detalhe": "Objetivo do dia: gerar respostas (votos + caixinha). Tema de saúde: tudo manual, revise antes de postar.\n\nO QUE FILMAR: 5 a 8 s da bioimpedância ou da fita métrica no TTC (sem mostrar rosto de aluno sem autorização).\n\nTEXTO NA TELA (Aa, no meio):\nA balança diz quanto saiu. Não diz o quê.",
   "acao": "manual",
-  "horario": "07:30"
+  "horario": "07:30",
+  "apagada": true
  },
  {
   "id": "2026-10-22-s2",
@@ -951,5 +953,25 @@
   "detalhe": "O robô publica sozinho a arte: 'Sua semana pode ter direção. Me manda MÉTODO no direct.'.\n\nSua parte: responder quem mandar MÉTODO no direct.",
   "acao": "manual",
   "horario": "20:30"
+ },
+ {
+  "id": "2026-10-19-14",
+  "ordem": 8,
+  "horario": "16:00",
+  "titulo": "Story 16:00 · Resultado da enquete + virada",
+  "detalhe": "ARTE DE FUNDO: story-fundo-resultado.png (salve no celular antes):\nhttps://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-10-19/story-fundo-resultado.png\n\nCOMO FAZER: veja o resultado da enquete das 10h (arraste para cima no story). Novo story → galeria → escolha a arte → Aa e escreva o número real no espaço vazio de cima, por exemplo:\nX% acham que é idade.\n\nUse só o número que aparecer. Se a enquete teve poucos votos (menos de 10), escreva: A maioria votou idade. (ou 'falta de treino', o que for verdade).\n\nA frase 'O músculo responde em qualquer década quando a carga sobe.' já está na arte.",
+  "acao": "manual",
+  "data": "2026-10-19",
+  "formato": "stories"
+ },
+ {
+  "id": "2026-10-22-s1b",
+  "data": "2026-10-22",
+  "ordem": 10,
+  "formato": "stories",
+  "titulo": "Story 07:30 · Abertura: avaliação no TTC",
+  "detalhe": "Objetivo do dia: gerar respostas (votos + caixinha). Tema de saúde: tudo manual, revise antes de postar.\n\nO QUE FILMAR: 5 a 8 s da bioimpedância ou da fita métrica no TTC (sem mostrar rosto de aluno sem autorização).\n\nTEXTO NA TELA (Aa, no meio):\nA balança caiu 5 kg. Quanto disso era músculo?",
+  "acao": "manual",
+  "horario": "07:30"
  }
 ]
