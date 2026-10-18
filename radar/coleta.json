@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-10-18T12:48:24.695004+00:00",
+ "coletado_em": "2026-10-18T15:42:32.365457+00:00",
  "itens": [
   {
    "id": "339c5c25529647ab",
@@ -47,7 +47,7 @@
    "titulo": "Fuel leak spreads more than two miles along River Taff",
    "link": "https://www.bbc.co.uk/news/articles/c8vgxnp5w6vzo?at_medium=RSS&at_campaign=rss",
    "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e744/live/ac9b0fb0-cae9-11f1-bc2e-018d645d8d21.png",
-   "publicado_em": "2026-10-18T12:27:17+00:00",
+   "publicado_em": "2026-10-18T15:11:09+00:00",
    "resumo": "Public Health Wales advise people living nearby to shut their doors and windows due to the smell.",
    "pre": 1.0
   },
@@ -162,14 +162,24 @@
    "pre": 2.0
   },
   {
-   "id": "ade9f85352218ace",
+   "id": "e3b23372b7dd8804",
    "canal": "Reuters",
-   "titulo": "Bones from Iraqi cave hint at violence and compassion in Neanderthals",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMFNib3RvZjY5Z1Y4am9mellfT3I3UXNFSjdieUpUWkFITEIyWFhyMGMtVGVFRE9SM29aV09YeEdFYnZSZl9IXzBGWEl3N3ZQa2ZhRFRwYXUxZVE0QXRQUlJONHcwb1R3MXZPYlE0T19IQkNVSVV0NDhqWXhWS3JOaFZqQXlvMGxoLWhRMGtVcXBhTWFMaGtBSHp0YjB4QTg?oc=5",
+   "titulo": "Roy Cooper's North Carolina playbook is working. Can other Democrats copy it?",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSXVOM1JwQnJBTlRESW5tSjFSVERkbnRrNDBlSkx2bEJ6UENYaVVpNEpnbTlLaGdncWp1dkNZTE5yUjJZZVBtd3BNUHN2WElaeXRZdnJrOFFCS2dSc2RPRUF6WmJwNWRTRFBFVWUtcXRHYklNSXc5T3lzY0pkWW95M3YtcnY2ak5hMkxJUEJWV0lLcFY5Vlk3RDlxaGJ6dndraGtwMW4xN2xYX29Sc2E0YnREZWZXa2wwbUhhc3BPMjlZSjM1NHc?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-15T15:01:00+00:00",
-   "resumo": "Bones from Iraqi cave hint at violence and compassion in Neanderthals Reuters",
-   "pre": 2.0
+   "publicado_em": "2026-10-18T12:46:22+00:00",
+   "resumo": "Roy Cooper's North Carolina playbook is working. Can other Democrats copy it? Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "83be0439c39658f3",
+   "canal": "Reuters",
+   "titulo": "Davidovich Fokina overcomes Jodar to claim Shanghai crown",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMlJ1TFIyWXlJclFycGpaSmZ4ckpFcDJ0MU9wS1Ryb3FWX1NYSlEzZ3JfS202THFRRTczMWhqemE4XzRMbDB3UV9hOENkOTlRRHZEMm9xZjFrMHI0Vm9PbVFhOFh4aUNiYkIyanZLUm1NdV9GVWJSV1lBejFQTEk2Qk5XeDFzc2FmZXUzc3FUbFZ2bnFRRnNwVnhNeHUyWmctVWcydE8tc3dadlM5YTJyTjJB?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-18T12:06:51+00:00",
+   "resumo": "Davidovich Fokina overcomes Jodar to claim Shanghai crown Reuters",
+   "pre": 1.0
   },
   {
    "id": "d0129e38bae46709",
@@ -189,16 +199,6 @@
    "imagem": null,
    "publicado_em": "2026-10-17T11:39:54+00:00",
    "resumo": "AI rapidly improving, could vastly boost US GDP, Anthropic's Clark tells policymakers Reuters",
-   "pre": 1.0
-  },
-  {
-   "id": "0f68e46e87805085",
-   "canal": "Reuters",
-   "titulo": "EXCLUSIVE: US strikes one-year deal to fund maternal and newborn health donations in poorest countries",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNDlyZDhKeUV5SU9JeGd5ZkJtNDIyS3RnZHRlalZyMkVNWXlTRjdFMWFuZEQ5dkkzTkh0M2toTGNGQXJMRndPcXFRbWRpSmg4Z0NtNmZUdkY2bklYci02cWVFUjJ4bUZNWjZuWTJfMWU3MzVRZmdtMkE2cFFhcWhHT3hUSzI5WUdsMjc1RXBqRW1zX0lqZE9nRjNjQlhRU2lJcFVaRXNuVS11TjlPaHJOajh3c0RiTFlWOUQ0d1VTcG1lZHhZZEQyeTRybndweTJRUW1WMHV4bVFoZzZJTEs2UkwzMW92cnM?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-16T21:00:29+00:00",
-   "resumo": "EXCLUSIVE: US strikes one-year deal to fund maternal and newborn health donations in poorest countries Reuters",
    "pre": 1.0
   },
   {
@@ -252,6 +252,26 @@
    "pre": 2.0
   },
   {
+   "id": "99fc1b47d3918c05",
+   "canal": "CNN",
+   "titulo": "Olympic canoeist at center of Reflecting Pool scandal becomes a Trump foil",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOem5tdzVWcXlGY0JxZ3J2U0FFalRiMnY4enBueEtWVXk0bEIxQ3l6a1hHMFFsS2FmZDlROTJsdWNERTFPd1h4bVp4amNNNjJJVElpSExiU21UcUUzSDA0ZV90VmVMdnFhTXBNcGg3WElOUnZUd0RrZGs5dUZKaXMwaHdCd25TZjdpWEdVMndrWk1mRXNBZDU1WWhnaWU?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-18T10:30:45+00:00",
+   "resumo": "Olympic canoeist at center of Reflecting Pool scandal becomes a Trump foil CNN",
+   "pre": 1.0
+  },
+  {
+   "id": "5171a7e63bf25ab7",
+   "canal": "CNN",
+   "titulo": "Auburn stuns No. 1 Georgia as college football’s top ranked team loses for second straight week",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5xVmRqanNhU3ZQV1BBVExHR0c1RnR4dGVpY0k5ZVczZmRaYUJKdk9iUFpra0gtM0VQRzZRbWRjdTl3TDRkX0h2cE5aNVBoSjRnN0hJYWZyMnpEbnZTSFNnbVdpOW5wcUFXNTd0XzZfUS1wbmNXX1Jj?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-18T00:21:00+00:00",
+   "resumo": "Auburn stuns No. 1 Georgia as college football’s top ranked team loses for second straight week CNN",
+   "pre": 1.0
+  },
+  {
    "id": "244ef04bee12aead",
    "canal": "CNN",
    "titulo": "A grad student said he became ill after noticing an odd taste in his water. His coworkers may have helped crack the case",
@@ -279,26 +299,6 @@
    "imagem": null,
    "publicado_em": "2026-10-16T19:10:31+00:00",
    "resumo": "Nasdaq sinks more than 2% as investors raise questions about AI debt CNN",
-   "pre": 1.0
-  },
-  {
-   "id": "1ab73da274fc850b",
-   "canal": "CNN",
-   "titulo": "Exactly how much of an environmental menace is AI? Here’s what we know",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTEgtNXhpZnU3U3FQVmR0NXpiQ0REaWhPbzZxOGxxTTR0YVRpZS02RTBiX1NTeEdIaXFTNlFHWV9zdDZMUlVQWmpERkMzV3RETElhZzljYkgyTjJKOVI2TzViU2dacnBGZDNzN3VUT2pFdXpTaWh4QmpwdVRWM1BONEJlM1M3WjdCYldaVjRQWm9oRG5MV0E?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-16T12:24:19+00:00",
-   "resumo": "Exactly how much of an environmental menace is AI? Here’s what we know CNN",
-   "pre": 1.0
-  },
-  {
-   "id": "320e7872b155ced8",
-   "canal": "CNN",
-   "titulo": "How safe are roller coasters? What a doctor wants you to know before riding",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPU1o4V2tjUDdnMEhWakQ4LXItQldWMDFZckVEZU9kWW9pU2RzSDFYcFVUekRxbVpKMnM3MGR3X2J5b2t5ZHBVeHFFdkRvR2owSjgzdWxnbG5JUmFwajY3Y25zSWhvWk03UHRnYUVnU0FvN1E0TkZraE1ISXV2MXdSeWxBblJPeDVL?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-16T11:00:45+00:00",
-   "resumo": "How safe are roller coasters? What a doctor wants you to know before riding CNN",
    "pre": 1.0
   },
   {
@@ -342,6 +342,16 @@
    "pre": 4.0
   },
   {
+   "id": "26174453005d11ef",
+   "canal": "The Guardian",
+   "titulo": "What are self-replicating ‘AI worms’, and why is Anthropic worried about them?",
+   "link": "https://www.theguardian.com/technology/2026/oct/18/anthropic-ai-worm-worries",
+   "imagem": "https://i.guim.co.uk/img/media/34972ab7bdc22bd58b4b430c49ae81493971934a/234_0_5907_4725/master/5907.jpg?width=140&quality=85&auto=format&fit=max&s=288348dd3aa3c598608d1126f3559d09",
+   "publicado_em": "2026-10-18T13:30:00+00:00",
+   "resumo": "The tech company says successful AI worms need more capability on less powerful devices, but current trends make that feasible by the end of the year Warnings about what artificial intelligence might do in the future – together with alarming reports of what it has gotten up to already – are being issued so quickly that even security experts have difficulty triaging what to worry about. Yet a repor",
+   "pre": 3.0
+  },
+  {
    "id": "c7485150363ee709",
    "canal": "The Guardian",
    "titulo": "Commercial kitchen staff exposed to high levels of air pollution, study finds",
@@ -362,6 +372,16 @@
    "pre": 3.0
   },
   {
+   "id": "5a3339258e2257cd",
+   "canal": "The Guardian",
+   "titulo": "‘This is horrifying. This is madness’: the row over competitive yoga",
+   "link": "https://www.theguardian.com/lifeandstyle/2026/oct/18/this-is-horrifying-this-is-madness-the-row-over-competitive-yoga",
+   "imagem": "https://i.guim.co.uk/img/media/19bc0cf304d98049aede2d0a120a1b6ac6fb9cfd/0_21_577_462/master/577.jpg?width=140&quality=85&auto=format&fit=max&s=03e8d94dac403c2f1ef8bc536e6fb5b0",
+   "publicado_em": "2026-10-18T13:00:00+00:00",
+   "resumo": "Some yogis welcome the idea of competition – for others, it is anathema. Will those keen for yoga to become an Olympic sport win the argument? Vaishnavi Saravanakumar describes herself on Instagram as “India’s rubber band girl”. In a typical video post , dressed in a rhinestone-studded crimson catsuit and accompanied by a Bollywood-rap anthem, she demonstrates an improbable feat. From standing, sh",
+   "pre": 2.0
+  },
+  {
    "id": "e3228bc328c40470",
    "canal": "The Guardian",
    "titulo": "‘Keep away from the doctor’: a visit to an influencer’s wellness event, where the advice could kill",
@@ -379,26 +399,6 @@
    "imagem": "https://i.guim.co.uk/img/media/492e7e936d85b3a274cd73df683745e9d36e7bea/22_0_3956_3165/master/3956.jpg?width=140&quality=85&auto=format&fit=max&s=9b1d470261c76dc2925140b30c632e86",
    "publicado_em": "2026-10-18T11:00:00+00:00",
    "resumo": "From science kits to karaoke machines, shower sets to brain-boosting games, here are the presents our mini testers loved the most • The best gifts for seven-year-olds Eight is such a wonderful age. Kids are old enough to have their own interests and hobbies, but still young enough to get swept up in play and be absorbed for hours if you find the right toy for them. By eight, children’s interests a",
-   "pre": 1.0
-  },
-  {
-   "id": "a5ab9d34f87502c3",
-   "canal": "The Guardian",
-   "titulo": "Margaret Hamilton obituary",
-   "link": "https://www.theguardian.com/science/2026/oct/18/margaret-hamilton-obituary",
-   "imagem": "https://i.guim.co.uk/img/media/6239b0014ef4f714e4e66770bc920999d267ed26/4_0_2993_2394/master/2993.jpg?width=140&quality=85&auto=format&fit=max&s=ba048550cc0b6d211418458833ff5a81",
-   "publicado_em": "2026-10-18T10:43:26+00:00",
-   "resumo": "Pioneering software engineer whose work was critical to the Apollo moon landings Apollo was a bold, innovative project . It tested the boundaries of technology and human achievement, and took people to the moon. However, one thing it failed to challenge was the prevailing hierarchy. Nearly everyone involved in Nasa’s space programme in the 1960s was male and white. If you weren’t, you needed to be",
-   "pre": 1.0
-  },
-  {
-   "id": "55123bf451136c27",
-   "canal": "The Guardian",
-   "titulo": "Japan to launch world-first mission to collect samples from Martian moon",
-   "link": "https://www.theguardian.com/science/2026/oct/18/japan-mission-mars-moon-phobos-samples",
-   "imagem": "https://i.guim.co.uk/img/media/240753a4b6511a8a20ded060ec9fcddea78639c0/0_114_1280_1024/master/1280.jpg?width=140&quality=85&auto=format&fit=max&s=a692ed1b3cce762c747b5d084b1bf7f4",
-   "publicado_em": "2026-10-18T08:11:55+00:00",
-   "resumo": "Japanese space agency leads five-year mission to Phobos, one of ‘most important unclimbed mountains in the solar system’ Japan is to launch a spacecraft on the world’s first mission to bring back samples from Phobos, one of the two small, potato-shaped moons orbiting Mars. Scientists hope the mission, which is expected to take five years, will provide clues to how Phobos and its smaller sibling De",
    "pre": 1.0
   },
   {
@@ -792,16 +792,6 @@
    "pre": 15.0
   },
   {
-   "id": "a450cbcf9c1ecba4",
-   "canal": "Metrópoles",
-   "titulo": "Estudo indica que a creatina protege o cérebro de inflamação intestinal",
-   "link": "https://www.metropoles.com/saude/estudo-indica-que-a-creatina-protege-o-cerebro-de-inflamacao-intestinal",
-   "imagem": "https://images.metroimg.com/1d2af8a9-gettyimages-1465435636.jpg",
-   "publicado_em": "2026-10-15T14:06:10+00:00",
-   "resumo": "Estudo em ratos revela que a creatina traz benefícios a diversas áreas do cérebro, mesmo sem a prática de exercícios físicos na rotina",
-   "pre": 8.0
-  },
-  {
    "id": "551bc6933fed1173",
    "canal": "Metrópoles",
    "titulo": "Cérebro de crianças que ingerem cafeína se desenvolve de forma diferente",
@@ -809,16 +799,6 @@
    "imagem": "https://images.metroimg.com/2025/12/15124526/Refrigerantes-1.jpg",
    "publicado_em": "2026-10-15T16:33:42+00:00",
    "resumo": "Substância é consumida principalmente em refrigerantes. Participantes de estudo tiveram mais problemas relacionados ao sono e à saúde mental",
-   "pre": 6.0
-  },
-  {
-   "id": "cd0c4109494e2d0b",
-   "canal": "Metrópoles",
-   "titulo": "Exercícios para fortalecer os braços e preservar a força após os 50 anos",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPckU2WG9oYjJXVFoyQ1J4a19aN2xwLTd2UVpnVXg3ZTg5enY5bWFqWUVBQ1BNZG1reGtvelNZXzkza2RvOEhaUlYtaXZKTmZQaGc5bi02YXAxbnVBNGl2RTZIM19fVGRoUEJkdHdzenRSOE9obXFyRnBpaHlYcm4wdGx6azhqYkFaWThXb3RaZUZHZk5qaUNEQVFQVXk5ZjRvZDg4aEZjN2UxZnNmQnVZOVA3cw?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-15T14:11:00+00:00",
-   "resumo": "Exercícios para fortalecer os braços e preservar a força após os 50 anos Metrópoles",
    "pre": 6.0
   },
   {
@@ -840,6 +820,16 @@
    "publicado_em": "2026-10-16T11:58:00+00:00",
    "resumo": "5 benefícios da beterraba que você nem imagina e por que incluir na dieta Metrópoles",
    "pre": 4.0
+  },
+  {
+   "id": "98964a5433950550",
+   "canal": "Metrópoles",
+   "titulo": "Médico explica se existe um horário de almoço ideal para quem tem diabetes",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxON1VnNVJWMzZ0ZHBIdThpU0JfY182WXU0SU9pSmYtY1BnaTVtaE1Kbm91UFJDTTlkd2J5VkIzeDZQNUVNQm1CSnhsLUV5N25MLVRKVm5jNW5XRnpmREVLNzNYR2FJdUJwbWVLYVJvcnNhWEJBZEhXNmlyUy1RUnF0X2RnbTgtczJ0R2V6MENfcGJtc1BJMEpNRU9TNmg0dUdYRGFZWlU0WVNMR2VvdGlMUGkxMG95ZzV6dXBjOTZMbEE5aVU5?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-18T05:00:00+00:00",
+   "resumo": "Médico explica se existe um horário de almoço ideal para quem tem diabetes Metrópoles",
+   "pre": 3.0
   },
   {
    "id": "0b3e09fe100872cb",
@@ -879,6 +869,16 @@
    "imagem": null,
    "publicado_em": "2026-10-16T12:19:00+00:00",
    "resumo": "\"Tem boas chances\", diz Rafa Câmara sobre treino livre em Interlagos Metrópoles",
+   "pre": 3.0
+  },
+  {
+   "id": "1ffbbeebd6cb1386",
+   "canal": "Metrópoles",
+   "titulo": "Cleitinho tem pico de pressão e precisa de atendimento médico no Senado",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOS1d3TzlUalBqMjl6MmZUZ0dEeFRNUUl1bWNJcTRVUGVlTUJ0VGc5bGtzdDFONjNyZXFvWE5seEh5RVNDRjlXYUZjUGZvNFdYd3RHRFZwdE9sNHZkekpqQ0owazFUNzJMNEtLSmRSOExnRmVkbEY2X25BcWZxdEhrejVhNWpucXJYQUZVckd0WWlPSkNiVVhhRG5SS01pVmlXSjdEREM4cUREZFJXc0xldg?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-15T21:41:00+00:00",
+   "resumo": "Cleitinho tem pico de pressão e precisa de atendimento médico no Senado Metrópoles",
    "pre": 3.0
   },
   {
@@ -962,6 +962,16 @@
    "pre": 5.5
   },
   {
+   "id": "ad78c9321730e84d",
+   "canal": "Folha Equilíbrio",
+   "titulo": "Anéis e relógios rastreadores de saúde tentam prever menopausa, mas têm limites",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/10/aneis-e-relogios-rastreadores-de-saude-tentam-prever-menopausa-mas-tem-limites.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2026/10/15/17920954006ad134a85343b_1792095400_3x2_rt.jpg",
+   "publicado_em": "2026-10-18T15:00:00+00:00",
+   "resumo": "Tonya Kuxhausen começou a usar um anel Oura no fim de 2021. Enfermeira de 55 anos em Minneapolis, ela mantinha o anel no dedo quase o tempo todo: durante os plantões no pronto-socorro, à noite enquanto dormia e em todos os momentos entre uma coisa e outra. Leia mais (10/18/2026 - 12h00)",
+   "pre": 4.4
+  },
+  {
    "id": "dea39a307e602385",
    "canal": "Folha Equilíbrio",
    "titulo": "Dificuldade em relacionar sintomas como ansiedade e palpitações à perimenopausa pode atrasar diagnóstico",
@@ -1022,16 +1032,6 @@
    "pre": 2.2
   },
   {
-   "id": "a47121a85e30a30f",
-   "canal": "Folha Equilíbrio",
-   "titulo": "Autodiagnóstico pela internet pode atrasar tratamento e expor pacientes a riscos",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/10/autodiagnostico-pela-internet-pode-atrasar-tratamento-e-expor-pacientes-a-riscos.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2026/10/15/17921032596ad1535bcf8ac_1792103259_3x2_rt.jpg",
-   "publicado_em": "2026-10-16T20:00:00+00:00",
-   "resumo": "Precisa de tratamento rápido? Hoje, muitas pessoas recorrem ao Google antes de procurar um profissional de saúde . De pesquisar sintomas na internet a comprar medicamentos online e seguir orientações de influenciadores nas redes sociais, cuidar da saúde está se tornando cada vez mais uma atividade do tipo \"faça você mesmo\". Leia mais (10/16/2026 - 17h00)",
-   "pre": 2.2
-  },
-  {
    "id": "e3fe9a544778daf4",
    "canal": "Estadão Saúde",
    "titulo": "Creatina pode aumentar músculos sem exercício? Entenda resultados de estudo controverso",
@@ -1052,6 +1052,16 @@
    "pre": 6.0
   },
   {
+   "id": "6039a9492e09ca77",
+   "canal": "Estadão Saúde",
+   "titulo": "Psicologia ganha relevância no mercado de trabalho diante do aumento do estresse e das pressões profissionais",
+   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQOWxUMElKWkVxY3ZEa0ljeGtrZlNVS1R3bTQ0N0p1Rks1bGZpTUlhaU0xYloxWTRCczlzb1RJSTBrSW5YNjI4SFJvekZkN0VYVzdWYW5qbWl5VVA5MlVCN01PUjlDN0U4UWxXQmFNRGVhaVYtRjk5NWFETlVLalJ4UGdveTJuSkhKRU1HUFZ5ek1PQ3hIV1Z4VVhSbVpOaXdmYjlwN0JqLS14SUVXQmt1aFVyc1dOenhRMUFtM3hCREJmcEZVb1BBWUVEQXVEWnl6UHZCRllPdGdvV3BvRktocEN5Y0czS25aRWh4WW9PTGNfMW5tcDZHOHdWMjh1R3F3Q2hlV0sya0s2S2dJRW5B?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-15T21:27:42+00:00",
+   "resumo": "Psicologia ganha relevância no mercado de trabalho diante do aumento do estresse e das pressões profissionais Estadão Blue Studio",
+   "pre": 5.0
+  },
+  {
    "id": "757aeab386fc69ae",
    "canal": "Estadão Saúde",
    "titulo": "Gordura localizada ou lipedema? 4 diferenças que podem aparecer durante o emagrecimento",
@@ -1069,16 +1079,6 @@
    "imagem": null,
    "publicado_em": "2026-10-16T07:00:00+00:00",
    "resumo": "Atendimentos e internações de crianças por excesso de vitaminas crescem no Brasil Estadão",
-   "pre": 4.0
-  },
-  {
-   "id": "152d03d837580e47",
-   "canal": "Estadão Saúde",
-   "titulo": "Agência de Comunicação - Menopausa muda o corpo e pede atenção à alimentação saudável",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbGxTNXdqb1dfY0VhcUVSQlZ5YkFhQVgwSHpzZ0Z0MHBKMG5JVUltZ0JjWjlrRVlaZjNqSmlMM0dMYmhXcXl1aEd3cVN2YnJlOGxZcjZlUXpEblR5SjZqV01nZEtSa3EyX0dKVGVWZ20yWWNHZHBhaDBSakhyR2Z2eWhQWi1lM3c4aWtKV3FwaUtpdWktRnl0WThYV0xnZVRSdUNMQWJSMV9MQmdVTlg3cHhORnVTZG84YUY0eDJhM2lwTTZjd1l2cGlR?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-15T14:12:40+00:00",
-   "resumo": "Agência de Comunicação - Menopausa muda o corpo e pede atenção à alimentação saudável Estadão Blue Studio",
    "pre": 4.0
   },
   {
@@ -1122,13 +1122,13 @@
    "pre": 3.0
   },
   {
-   "id": "690451e778ba5b48",
+   "id": "2a6b68eba1d3fb54",
    "canal": "Estadão Saúde",
-   "titulo": "Exercício ‘cachorro-pássaro’ pode ajudar a fortalecer o abdômen",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWHVHVnMyM3VKeHdpdFJDaVNpYUFyeGJBanB5U0Y0UDdsSWRFTl9sdVJNWTNnMTk2Tjc2SnIwS0pBY2E5N25lVGJnQ24tZk15V3pKN1VyNHhHWE9MQ3JoSHFXTE5IMlYyQ2g2R0hmcUJVaE50ajFiYzlrNDNoSlRub2dwYm1mdXZEcExSYzJfNm5TaC0zZVNLX1ZjN1FmaG12M0JVVTNzVkd5d0ZRMm1aWkZIMUx6MjV3WWl2VlE4RnFBVGs4WDM5SVJHQWdEOEN5a2tPNTBn?oc=5",
+   "titulo": "Tensão, controle e encantamento: bastidores do treino que ‘decidiu a carreira’ de Rafa Câmara na F1",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOSzNZSVlxbk40eHYwWnlkeG14eGtISjBQaWJJTTI1VGx5eTc4QWItTlllYU5GSDF5SkJXazZJcTNBMEMyZTVsM2dVMTNiVVQ5eWxYdkRPZHNHRnY4WXc2bVpONnVpRXZhdloySnI4UHpEMkF6MHBaX3JxUGRGejJrN2NXOVRENHdiOGk1aHpXQjRIU1RHZ29hNWhOZkl0SFVqZ0lHUjE3ajlEaThiaFZJTUxrczh2aUdDb1Y0REFLaEV2RTVfbklTbkJENUpqQWVWTWxNS0hPVjI0LUNaWlQtdTBBWTcwQQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-17T14:59:03+00:00",
-   "resumo": "Exercício ‘cachorro-pássaro’ pode ajudar a fortalecer o abdômen Estadão",
+   "publicado_em": "2026-10-17T15:51:06+00:00",
+   "resumo": "Tensão, controle e encantamento: bastidores do treino que ‘decidiu a carreira’ de Rafa Câmara na F1 Estadão",
    "pre": 3.0
   },
   {
@@ -1152,6 +1152,16 @@
    "pre": 13.0
   },
   {
+   "id": "1b3b8bef73267210",
+   "canal": "ScienceDaily",
+   "titulo": "Scientists discover a natural compound that could protect the brain from too much salt",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261017230032.htm",
+   "imagem": "https://www.sciencedaily.com/images/1920/brain-shield-dementia-protection.webp",
+   "publicado_em": "2026-10-18T13:46:34+00:00",
+   "resumo": "Eating too much salt may do more than raise blood pressure. It could also harm memory and social behavior. In a new study, Japanese researchers discovered that a soy-derived compound called LPC70 helped protect mice from several damaging effects of a high-salt diet. Mice given the supplement had lower blood pressure, better memory, and improved social interactions compared with mice consuming exce",
+   "pre": 12.0
+  },
+  {
    "id": "d8a9172a471d8d15",
    "canal": "ScienceDaily",
    "titulo": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
@@ -1170,6 +1180,36 @@
    "publicado_em": "2026-10-17T13:45:06+00:00",
    "resumo": "Scientists have discovered that a potential new drug can reverse severe fatty liver disease in animal models by restoring gut health and blocking harmful substances from reaching the liver. The breakthrough could pave the way for new treatments for liver disease and potentially other serious conditions, including cardiovascular disease.",
    "pre": 6.0
+  },
+  {
+   "id": "211e0c7b0044d125",
+   "canal": "ScienceDaily",
+   "titulo": "Scientists link a strange sugar in red meat to a 63% higher diabetes risk",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261017230031.htm",
+   "imagem": "https://www.sciencedaily.com/images/1920/fresh-japanese-kobe-beef-steak.webp",
+   "publicado_em": "2026-10-18T13:09:01+00:00",
+   "resumo": "A study of nearly 90,000 adults found that people consuming the most of a little-known sugar found in red meat had a 63% higher risk of developing type 2 diabetes. Scientists suspect the sugar may trigger chronic inflammation, potentially revealing a hidden connection between red meat and diabetes that goes beyond weight gain.",
+   "pre": 4.0
+  },
+  {
+   "id": "088a557050bfa352",
+   "canal": "ScienceDaily",
+   "titulo": "Scientists tested 39 sweeteners and uncovered surprising gut effects",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261016081103.htm",
+   "imagem": null,
+   "publicado_em": "2026-10-18T03:55:59+00:00",
+   "resumo": "Scientists have discovered that many common sweeteners can interfere with gut bacteria, with some combinations involving medications producing surprisingly strong effects. One sweetener mixed with a widely prescribed antidepressant reduced beneficial bacteria and microbial diversity in laboratory experiments, raising new questions about potential effects on gut health and immunity.",
+   "pre": 2.0
+  },
+  {
+   "id": "a4e6473040ab1bce",
+   "canal": "ScienceDaily",
+   "titulo": "Magic mushroom ingredient takes the fight out of aggressive fish",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261017230036.htm",
+   "imagem": null,
+   "publicado_em": "2026-10-18T12:52:13+00:00",
+   "resumo": "A psychedelic compound found in magic mushrooms appears to have an unexpected effect: calming highly aggressive fish. Researchers discovered that low doses of psilocybin significantly reduced aggressive attacks in mangrove rivulus fish without disrupting their normal social interactions. The findings suggest psilocybin may selectively calm escalating aggression rather than simply suppressing all b",
+   "pre": 1.0
   },
   {
    "id": "98ae48ba0bd743af",
