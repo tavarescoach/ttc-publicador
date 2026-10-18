@@ -143,7 +143,7 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
         # foto da capa: crédito, licença e nada promocional
         capa = slides[0] if slides and slides[0].get("tipo") == "capa" else None
         if capa:
-            foto = capa.get("foto") or ""
+            foto = capa.get("foto_url") or capa.get("foto") or ""
             banco = foto.startswith(("render/", "file://")) or re.search(r"pexels\.com|unsplash\.com", foto)
             if foto and not banco:
                 if not capa.get("credito") or not capa.get("licenca"):

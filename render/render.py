@@ -115,6 +115,7 @@ def main():
             s["foto"] = "file://" + os.path.join(RAIZ, s["foto"])
     for i, s in enumerate(slides, 1):  # foto remota -> arquivo local; se falhar, slide sem foto
         if (s.get("foto") or "").startswith("http"):
+            s.setdefault("foto_url", s["foto"])
             destino = os.path.join(fotos, f"{p['id']}-{i}.jpg")
             try:
                 baixar_foto(s["foto"], destino)
