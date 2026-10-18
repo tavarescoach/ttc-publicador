@@ -60,9 +60,23 @@ def etapa_atual(cid):
         return None
 
 
+def aprovado_na_fila(cid):
+    """Item do fila.json ainda por publicar (o Luan já aprovou): devolve o item, senão None."""
+    try:
+        for i in json.load(open(os.path.join(RAIZ, "fila.json"), encoding="utf-8")):
+            if i.get("id") == cid and i.get("status", "pendente") in ("pendente", "erro", "atrasado"):
+                return i
+    except Exception as e:
+        print(f"::warning::não li o fila.json: {e}")
+    return None
+
+
 def gravar_card(p, arquivos, capa=None, tipo="CARROSSEL", etapa="pronto"):
     atual = etapa_atual(p["id"]) or {}
     quando = p.get("quando")
+    na_fila = aprovado_na_fila(p["id"])
+    if atual.get("etapa") not in ("cancelado", "publicado", "agendado") and na_fila and etapa == "agendado":
+        quando = na_fila.get("quando") or quando  # já aprovado: volta ao horário da fila
     if atual.get("etapa") in ("cancelado", "publicado"):
         etapa = atual["etapa"]  # nunca ressuscita o que foi cancelado nem mexe no que já saiu
         quando = atual.get("quando") or quando
@@ -151,7 +165,17 @@ def main():
     except Exception as e:
         print(f"[aviso] sem prévia: {e}")
 
-    rev = revisar(p, cortes=cortes, fotos_falharam=fotos_falharam)
+    # Card que já existe no painel: a revisão usa o horário que vale lá (pode ter sido ajustado com o lápis),
+    # e um card que o Luan já aprovou (agendado) continua agendado se a nova versão não tiver problema técnico.
+    atual = {} if local else (etapa_atual(p["id"]) or {})
+    na_fila = aprovado_na_fila(p["id"])
+    aprovado = atual.get("etapa") == "agendado" or na_fila is not None
+    quando_valido = atual.get("quando") if atual.get("etapa") == "agendado" else (na_fila or {}).get("quando")
+    p_rev = dict(p, quando=quando_valido or p.get("quando")) if aprovado else p
+    rev = revisar(p_rev, cortes=cortes, fotos_falharam=fotos_falharam)
+    if aprovado and not rev["problemas"] and rev["decisao"] != "agendado":
+        rev["decisao"] = "agendado"
+        rev["avisos"].append("Já aprovado no painel; a nova versão manteve a aprovação.")
     if str(p["id"]).startswith(("teste", "e-teste")):
         rev["decisao"] = "precisa"
         rev["avisos"].append("Pedido de teste: nunca agenda sozinho.")
