@@ -1,27 +1,27 @@
 {
- "atualizado_em": "2026-10-18T11:02-03:00",
- "seguidores": 9264,
+ "atualizado_em": "2026-10-18T21:13-03:00",
+ "seguidores": 9263,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 219.5,
-  "valor": 31.5,
-  "taxa": 14.1
+  "alcance": 183.0,
+  "valor": 20.0,
+  "taxa": 11.1
  },
  "por_tipo": {
   "IMAGEM": {
    "posts": 5,
-   "alcance_medio": 249,
-   "valor_medio": 36.2
+   "alcance_medio": 273,
+   "valor_medio": 37.2
   },
   "REELS": {
    "posts": 5,
-   "alcance_medio": 242,
-   "valor_medio": 24.8
+   "alcance_medio": 255,
+   "valor_medio": 25.0
   },
   "CARROSSEL": {
-   "posts": 3,
-   "alcance_medio": 120,
-   "valor_medio": 12.7
+   "posts": 5,
+   "alcance_medio": 116,
+   "valor_medio": 10.2
   }
  },
  "posts": [
@@ -30,13 +30,13 @@
    "titulo": "Um #tb de um dia de sol ☀️ no #riodejaneiro e do shape que vai, e volta 💪🏼 bora!",
    "tipo": "IMAGEM",
    "quando": "2026-10-16",
-   "alcance": 820,
-   "views": 1720,
+   "alcance": 840,
+   "views": 1768,
    "salvos": 2,
    "compart": 1,
    "comentarios": 3,
-   "valor": 151,
-   "taxa": 18.4,
+   "valor": 155,
+   "taxa": 18.5,
    "parcial": false
   },
   {
@@ -58,12 +58,26 @@
    "titulo": "Um almoço longo não apaga cinco dias de treino.",
    "tipo": "REELS",
    "quando": "2026-10-17",
-   "alcance": 446,
-   "views": 620,
+   "alcance": 508,
+   "views": 703,
    "salvos": 0,
    "compart": 1,
    "comentarios": 1,
-   "valor": 30,
+   "valor": 31,
+   "taxa": 6.1,
+   "parcial": true
+  },
+  {
+   "id": "17984510205094115",
+   "titulo": "O futuro do seu treino é agora. @xburnbrasil @dignitusbrasil @roxydinnershow",
+   "tipo": "IMAGEM",
+   "quando": "2026-10-17",
+   "alcance": 330,
+   "views": 657,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 0,
+   "valor": 22,
    "taxa": 6.7,
    "parcial": true
   },
@@ -72,42 +86,28 @@
    "titulo": "O que um treinador de alto rendimento pode ensinar para quem trabalha com treinamento de força, saúde e perfor",
    "tipo": "REELS",
    "quando": "2026-10-01",
-   "alcance": 187,
-   "views": 277,
+   "alcance": 189,
+   "views": 279,
    "salvos": 0,
    "compart": 0,
    "comentarios": 4,
    "valor": 22,
-   "taxa": 11.8,
+   "taxa": 11.6,
    "parcial": false
-  },
-  {
-   "id": "17984510205094115",
-   "titulo": "O futuro do seu treino é agora. @xburnbrasil @dignitusbrasil @roxydinnershow",
-   "tipo": "IMAGEM",
-   "quando": "2026-10-17",
-   "alcance": 273,
-   "views": 561,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 0,
-   "valor": 21,
-   "taxa": 7.7,
-   "parcial": true
   },
   {
    "id": "17963366856228149",
    "titulo": "Você não precisa treinar mais. Precisa treinar com direção.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-16",
-   "alcance": 174,
-   "views": 394,
+   "alcance": 177,
+   "views": 399,
    "salvos": 0,
    "compart": 4,
    "comentarios": 0,
    "valor": 18,
-   "taxa": 10.3,
-   "parcial": true
+   "taxa": 10.2,
+   "parcial": false
   },
   {
    "id": "17898321045658351",
@@ -128,13 +128,13 @@
    "titulo": "Treinar até cansar não é o que muda o corpo. É progressão.",
    "tipo": "REELS",
    "quando": "2026-10-16",
-   "alcance": 151,
-   "views": 232,
+   "alcance": 155,
+   "views": 235,
    "salvos": 0,
    "compart": 1,
    "comentarios": 0,
    "valor": 13,
-   "taxa": 8.6,
+   "taxa": 8.4,
    "parcial": true
   },
   {
@@ -142,13 +142,13 @@
    "titulo": "Fim de semana não é recaída. É parte do plano.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-17",
-   "alcance": 91,
-   "views": 204,
+   "alcance": 97,
+   "views": 219,
    "salvos": 0,
    "compart": 1,
    "comentarios": 1,
    "valor": 12,
-   "taxa": 13.2,
+   "taxa": 12.4,
    "parcial": true
   },
   {
@@ -156,13 +156,41 @@
    "titulo": "Decodificando a falha muscular.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-17",
-   "alcance": 94,
-   "views": 201,
+   "alcance": 109,
+   "views": 225,
    "salvos": 1,
    "compart": 0,
    "comentarios": 0,
-   "valor": 8,
-   "taxa": 8.5,
+   "valor": 9,
+   "taxa": 8.3,
+   "parcial": true
+  },
+  {
+   "id": "18110851733172521",
+   "titulo": "Decodificando a curva da capacidade física.",
+   "tipo": "CARROSSEL",
+   "quando": "2026-10-18",
+   "alcance": 157,
+   "views": 296,
+   "salvos": 0,
+   "compart": 1,
+   "comentarios": 0,
+   "valor": 6,
+   "taxa": 3.8,
+   "parcial": true
+  },
+  {
+   "id": "18180234259440821",
+   "titulo": "Duas a três sessões de força por semana. Essa é a dose.",
+   "tipo": "CARROSSEL",
+   "quando": "2026-10-18",
+   "alcance": 41,
+   "views": 113,
+   "salvos": 0,
+   "compart": 1,
+   "comentarios": 0,
+   "valor": 6,
+   "taxa": 14.6,
    "parcial": true
   },
   {
@@ -170,27 +198,27 @@
    "titulo": "Falta de resultado não é falta de esforço. É falta de direção.",
    "tipo": "IMAGEM",
    "quando": "2026-10-16",
-   "alcance": 60,
-   "views": 122,
+   "alcance": 65,
+   "views": 130,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 5,
-   "taxa": 8.3,
-   "parcial": true
+   "taxa": 7.7,
+   "parcial": false
   },
   {
    "id": "18109666976620948",
    "titulo": "O corpo responde ao padrão, não a um dia isolado.",
    "tipo": "IMAGEM",
    "quando": "2026-10-17",
-   "alcance": 60,
-   "views": 123,
+   "alcance": 74,
+   "views": 152,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 2,
-   "taxa": 3.3,
+   "taxa": 2.7,
    "parcial": true
   },
   {
@@ -198,13 +226,13 @@
    "titulo": "Envelhecer mal não é questão de idade. É falta de estímulo.",
    "tipo": "IMAGEM",
    "quando": "2026-10-18",
-   "alcance": 32,
-   "views": 72,
+   "alcance": 54,
+   "views": 99,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 2,
-   "taxa": 6.2,
+   "taxa": 3.7,
    "parcial": true
   }
  ]
