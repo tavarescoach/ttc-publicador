@@ -1,27 +1,27 @@
 {
- "atualizado_em": "2026-10-18T21:13-03:00",
- "seguidores": 9263,
+ "atualizado_em": "2026-10-19T13:59-03:00",
+ "seguidores": 9259,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 183.0,
-  "valor": 20.0,
-  "taxa": 11.1
+  "alcance": 183,
+  "valor": 18,
+  "taxa": 11.5
  },
  "por_tipo": {
   "IMAGEM": {
    "posts": 5,
-   "alcance_medio": 273,
-   "valor_medio": 37.2
+   "alcance_medio": 289,
+   "valor_medio": 37.4
   },
   "REELS": {
    "posts": 5,
-   "alcance_medio": 255,
-   "valor_medio": 25.0
+   "alcance_medio": 292,
+   "valor_medio": 26.6
   },
   "CARROSSEL": {
-   "posts": 5,
-   "alcance_medio": 116,
-   "valor_medio": 10.2
+   "posts": 6,
+   "alcance_medio": 133,
+   "valor_medio": 10.5
   }
  },
  "posts": [
@@ -30,13 +30,13 @@
    "titulo": "Um #tb de um dia de sol ☀️ no #riodejaneiro e do shape que vai, e volta 💪🏼 bora!",
    "tipo": "IMAGEM",
    "quando": "2026-10-16",
-   "alcance": 840,
-   "views": 1768,
+   "alcance": 864,
+   "views": 1791,
    "salvos": 2,
    "compart": 1,
    "comentarios": 3,
-   "valor": 155,
-   "taxa": 18.5,
+   "valor": 156,
+   "taxa": 18.1,
    "parcial": false
   },
   {
@@ -44,13 +44,13 @@
    "titulo": "Passa boa parte do dia no computador e termina o dia com o pescoço, ombros ou coluna tensos?",
    "tipo": "REELS",
    "quando": "2026-09-17",
-   "alcance": 252,
-   "views": 403,
+   "alcance": 253,
+   "views": 404,
    "salvos": 0,
    "compart": 3,
    "comentarios": 5,
    "valor": 41,
-   "taxa": 16.3,
+   "taxa": 16.2,
    "parcial": false
   },
   {
@@ -58,13 +58,27 @@
    "titulo": "Um almoço longo não apaga cinco dias de treino.",
    "tipo": "REELS",
    "quando": "2026-10-17",
-   "alcance": 508,
-   "views": 703,
+   "alcance": 517,
+   "views": 721,
    "salvos": 0,
    "compart": 1,
    "comentarios": 1,
    "valor": 31,
-   "taxa": 6.1,
+   "taxa": 6.0,
+   "parcial": true
+  },
+  {
+   "id": "18430509847147171",
+   "titulo": "Depois dos 30 a força cai, a coluna enverga e as juntas enferrujam. Todo mundo põe a culpa na idade.",
+   "tipo": "REELS",
+   "quando": "2026-10-19",
+   "alcance": 337,
+   "views": 468,
+   "salvos": 0,
+   "compart": 3,
+   "comentarios": 3,
+   "valor": 26,
+   "taxa": 7.7,
    "parcial": true
   },
   {
@@ -72,13 +86,13 @@
    "titulo": "O futuro do seu treino é agora. @xburnbrasil @dignitusbrasil @roxydinnershow",
    "tipo": "IMAGEM",
    "quando": "2026-10-17",
-   "alcance": 330,
-   "views": 657,
+   "alcance": 356,
+   "views": 706,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 22,
-   "taxa": 6.7,
+   "taxa": 6.2,
    "parcial": true
   },
   {
@@ -86,13 +100,13 @@
    "titulo": "O que um treinador de alto rendimento pode ensinar para quem trabalha com treinamento de força, saúde e perfor",
    "tipo": "REELS",
    "quando": "2026-10-01",
-   "alcance": 189,
-   "views": 279,
+   "alcance": 191,
+   "views": 281,
    "salvos": 0,
    "compart": 0,
    "comentarios": 4,
    "valor": 22,
-   "taxa": 11.6,
+   "taxa": 11.5,
    "parcial": false
   },
   {
@@ -100,27 +114,13 @@
    "titulo": "Você não precisa treinar mais. Precisa treinar com direção.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-16",
-   "alcance": 177,
-   "views": 399,
+   "alcance": 183,
+   "views": 407,
    "salvos": 0,
    "compart": 4,
    "comentarios": 0,
    "valor": 18,
-   "taxa": 10.2,
-   "parcial": false
-  },
-  {
-   "id": "17898321045658351",
-   "titulo": "COMO ENTENDER E AJUSTAR AS CARGAS DO SEU TREINO",
-   "tipo": "REELS",
-   "quando": "2026-09-04",
-   "alcance": 172,
-   "views": 271,
-   "salvos": 0,
-   "compart": 2,
-   "comentarios": 0,
-   "valor": 18,
-   "taxa": 10.5,
+   "taxa": 9.8,
    "parcial": false
   },
   {
@@ -128,41 +128,55 @@
    "titulo": "Treinar até cansar não é o que muda o corpo. É progressão.",
    "tipo": "REELS",
    "quando": "2026-10-16",
-   "alcance": 155,
-   "views": 235,
+   "alcance": 161,
+   "views": 245,
    "salvos": 0,
    "compart": 1,
    "comentarios": 0,
    "valor": 13,
-   "taxa": 8.4,
-   "parcial": true
+   "taxa": 8.1,
+   "parcial": false
   },
   {
    "id": "18107869249957854",
    "titulo": "Fim de semana não é recaída. É parte do plano.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-17",
-   "alcance": 97,
-   "views": 219,
+   "alcance": 100,
+   "views": 223,
    "salvos": 0,
    "compart": 1,
    "comentarios": 1,
    "valor": 12,
-   "taxa": 12.4,
-   "parcial": true
+   "taxa": 12.0,
+   "parcial": false
   },
   {
    "id": "18099475022638759",
    "titulo": "Decodificando a falha muscular.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-17",
-   "alcance": 109,
-   "views": 225,
+   "alcance": 119,
+   "views": 253,
    "salvos": 1,
    "compart": 0,
    "comentarios": 0,
+   "valor": 10,
+   "taxa": 8.4,
+   "parcial": true
+  },
+  {
+   "id": "18113845127154835",
+   "titulo": "40 minutos de treino de força por semana. Foi aí que 16 estudos encontraram o menor risco de morte por todas a",
+   "tipo": "CARROSSEL",
+   "quando": "2026-10-19",
+   "alcance": 71,
+   "views": 166,
+   "salvos": 0,
+   "compart": 2,
+   "comentarios": 0,
    "valor": 9,
-   "taxa": 8.3,
+   "taxa": 12.7,
    "parcial": true
   },
   {
@@ -170,13 +184,13 @@
    "titulo": "Decodificando a curva da capacidade física.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-18",
-   "alcance": 157,
-   "views": 296,
+   "alcance": 207,
+   "views": 399,
    "salvos": 0,
    "compart": 1,
    "comentarios": 0,
-   "valor": 6,
-   "taxa": 3.8,
+   "valor": 8,
+   "taxa": 3.9,
    "parcial": true
   },
   {
@@ -184,13 +198,13 @@
    "titulo": "Duas a três sessões de força por semana. Essa é a dose.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-18",
-   "alcance": 41,
-   "views": 113,
+   "alcance": 117,
+   "views": 230,
    "salvos": 0,
    "compart": 1,
    "comentarios": 0,
    "valor": 6,
-   "taxa": 14.6,
+   "taxa": 5.1,
    "parcial": true
   },
   {
@@ -198,13 +212,13 @@
    "titulo": "Falta de resultado não é falta de esforço. É falta de direção.",
    "tipo": "IMAGEM",
    "quando": "2026-10-16",
-   "alcance": 65,
-   "views": 130,
+   "alcance": 69,
+   "views": 132,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 5,
-   "taxa": 7.7,
+   "taxa": 7.2,
    "parcial": false
   },
   {
@@ -212,13 +226,13 @@
    "titulo": "O corpo responde ao padrão, não a um dia isolado.",
    "tipo": "IMAGEM",
    "quando": "2026-10-17",
-   "alcance": 74,
-   "views": 152,
+   "alcance": 90,
+   "views": 169,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 2,
-   "taxa": 2.7,
+   "taxa": 2.2,
    "parcial": true
   },
   {
@@ -226,13 +240,13 @@
    "titulo": "Envelhecer mal não é questão de idade. É falta de estímulo.",
    "tipo": "IMAGEM",
    "quando": "2026-10-18",
-   "alcance": 54,
-   "views": 99,
+   "alcance": 64,
+   "views": 114,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 2,
-   "taxa": 3.7,
+   "taxa": 3.1,
    "parcial": true
   }
  ]
