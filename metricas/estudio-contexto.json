@@ -1,27 +1,27 @@
 {
- "atualizado_em": "2026-10-21T21:41-03:00",
- "seguidores": 9258,
+ "atualizado_em": "2026-10-22T12:18-03:00",
+ "seguidores": 9255,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 192.5,
-  "valor": 17.0,
-  "taxa": 8.1
+  "alcance": 196,
+  "valor": 17,
+  "taxa": 6.8
  },
  "por_tipo": {
   "IMAGEM": {
    "posts": 6,
-   "alcance_medio": 316,
-   "valor_medio": 38.7
+   "alcance_medio": 323,
+   "valor_medio": 39.5
   },
   "REELS": {
-   "posts": 9,
-   "alcance_medio": 389,
-   "valor_medio": 37.0
+   "posts": 10,
+   "alcance_medio": 373,
+   "valor_medio": 34.5
   },
   "CARROSSEL": {
-   "posts": 9,
-   "alcance_medio": 229,
-   "valor_medio": 11.3
+   "posts": 11,
+   "alcance_medio": 199,
+   "valor_medio": 10.8
   }
  },
  "posts": [
@@ -31,12 +31,12 @@
    "tipo": "IMAGEM",
    "quando": "2026-10-16",
    "alcance": 903,
-   "views": 1849,
+   "views": 1852,
    "salvos": 2,
    "compart": 1,
    "comentarios": 3,
-   "valor": 161,
-   "taxa": 17.8,
+   "valor": 162,
+   "taxa": 17.9,
    "parcial": false
   },
   {
@@ -45,7 +45,7 @@
    "tipo": "REELS",
    "quando": "2026-10-19",
    "alcance": 1254,
-   "views": 1619,
+   "views": 1622,
    "salvos": 4,
    "compart": 19,
    "comentarios": 3,
@@ -58,14 +58,14 @@
    "titulo": "Me dá essa força ai? 🏃🏻💉💊",
    "tipo": "REELS",
    "quando": "2026-10-20",
-   "alcance": 730,
-   "views": 1130,
+   "alcance": 738,
+   "views": 1144,
    "salvos": 0,
    "compart": 1,
    "comentarios": 2,
    "valor": 45,
-   "taxa": 6.2,
-   "parcial": true
+   "taxa": 6.1,
+   "parcial": false
   },
   {
    "id": "17900554122665005",
@@ -82,12 +82,26 @@
    "parcial": false
   },
   {
+   "id": "18190336891406995",
+   "titulo": "Em constante estado de gratidão 🙏🏼",
+   "tipo": "IMAGEM",
+   "quando": "2026-10-20",
+   "alcance": 371,
+   "views": 718,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 0,
+   "valor": 39,
+   "taxa": 10.5,
+   "parcial": true
+  },
+  {
    "id": "17906892201578099",
    "titulo": "Um almoço longo não apaga cinco dias de treino.",
    "tipo": "REELS",
    "quando": "2026-10-17",
-   "alcance": 542,
-   "views": 749,
+   "alcance": 546,
+   "views": 753,
    "salvos": 0,
    "compart": 1,
    "comentarios": 3,
@@ -96,31 +110,17 @@
    "parcial": false
   },
   {
-   "id": "18190336891406995",
-   "titulo": "Em constante estado de gratidão 🙏🏼",
-   "tipo": "IMAGEM",
-   "quando": "2026-10-20",
-   "alcance": 329,
-   "views": 653,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 0,
-   "valor": 35,
-   "taxa": 10.6,
-   "parcial": true
-  },
-  {
    "id": "18077756243743843",
    "titulo": "Live sobre como combater a gordura visceral com exercício, alimentação e hábitos",
    "tipo": "REELS",
    "quando": "2026-10-20",
-   "alcance": 173,
-   "views": 300,
+   "alcance": 183,
+   "views": 313,
    "salvos": 0,
    "compart": 1,
-   "comentarios": 4,
-   "valor": 30,
-   "taxa": 17.3,
+   "comentarios": 6,
+   "valor": 34,
+   "taxa": 18.6,
    "parcial": true
   },
   {
@@ -142,13 +142,13 @@
    "titulo": "O que um treinador de alto rendimento pode ensinar para quem trabalha com treinamento de força, saúde e perfor",
    "tipo": "REELS",
    "quando": "2026-10-01",
-   "alcance": 195,
+   "alcance": 196,
    "views": 285,
    "salvos": 0,
    "compart": 0,
    "comentarios": 4,
    "valor": 22,
-   "taxa": 11.3,
+   "taxa": 11.2,
    "parcial": false
   },
   {
@@ -156,13 +156,13 @@
    "titulo": "Decodificando a creatina no cérebro. 🧠",
    "tipo": "REELS",
    "quando": "2026-10-21",
-   "alcance": 86,
-   "views": 149,
+   "alcance": 99,
+   "views": 165,
    "salvos": 0,
    "compart": 0,
    "comentarios": 2,
    "valor": 20,
-   "taxa": 23.3,
+   "taxa": 20.2,
    "parcial": true
   },
   {
@@ -170,13 +170,13 @@
    "titulo": "40 minutos de treino de força por semana. Foi aí que 16 estudos encontraram o menor risco de morte por todas a",
    "tipo": "CARROSSEL",
    "quando": "2026-10-19",
-   "alcance": 222,
-   "views": 473,
+   "alcance": 227,
+   "views": 486,
    "salvos": 2,
    "compart": 2,
    "comentarios": 0,
    "valor": 18,
-   "taxa": 8.1,
+   "taxa": 7.9,
    "parcial": false
   },
   {
@@ -184,13 +184,13 @@
    "titulo": "Você não precisa treinar mais. Precisa treinar com direção.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-16",
-   "alcance": 190,
-   "views": 426,
+   "alcance": 191,
+   "views": 428,
    "salvos": 0,
    "compart": 4,
    "comentarios": 0,
    "valor": 18,
-   "taxa": 9.5,
+   "taxa": 9.4,
    "parcial": false
   },
   {
@@ -198,14 +198,14 @@
    "titulo": "Decodificando a gordura que não aparece na foto.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-20",
-   "alcance": 797,
-   "views": 1664,
+   "alcance": 803,
+   "views": 1681,
    "salvos": 0,
    "compart": 1,
    "comentarios": 0,
    "valor": 17,
    "taxa": 2.1,
-   "parcial": true
+   "parcial": false
   },
   {
    "id": "18398528851201253",
@@ -226,13 +226,13 @@
    "titulo": "Decodificando a curva da capacidade física.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-18",
-   "alcance": 247,
-   "views": 490,
+   "alcance": 255,
+   "views": 507,
    "salvos": 0,
    "compart": 2,
    "comentarios": 0,
    "valor": 13,
-   "taxa": 5.3,
+   "taxa": 5.1,
    "parcial": false
   },
   {
@@ -254,13 +254,13 @@
    "titulo": "Decodificando a falha muscular.",
    "tipo": "CARROSSEL",
    "quando": "2026-10-17",
-   "alcance": 138,
-   "views": 296,
+   "alcance": 141,
+   "views": 301,
    "salvos": 1,
    "compart": 0,
    "comentarios": 0,
    "valor": 11,
-   "taxa": 8.0,
+   "taxa": 7.8,
    "parcial": false
   },
   {
@@ -268,42 +268,42 @@
    "titulo": "Esse estudo me surpreendeu.",
    "tipo": "REELS",
    "quando": "2026-10-21",
-   "alcance": 87,
-   "views": 123,
+   "alcance": 110,
+   "views": 143,
    "salvos": 0,
    "compart": 0,
    "comentarios": 2,
    "valor": 11,
-   "taxa": 12.6,
+   "taxa": 10.0,
    "parcial": true
   },
   {
-   "id": "18180234259440821",
-   "titulo": "Duas a três sessões de força por semana. Essa é a dose.",
+   "id": "18145064725575117",
+   "titulo": "Decodificando o treino de quem usa GLP-1.",
    "tipo": "CARROSSEL",
-   "quando": "2026-10-18",
-   "alcance": 147,
-   "views": 295,
+   "quando": "2026-10-22",
+   "alcance": 81,
+   "views": 250,
    "salvos": 0,
-   "compart": 1,
+   "compart": 3,
    "comentarios": 0,
-   "valor": 7,
-   "taxa": 4.8,
-   "parcial": false
+   "valor": 11,
+   "taxa": 13.6,
+   "parcial": true
   },
   {
-   "id": "18206309140373651",
-   "titulo": "Falta de resultado não é falta de esforço. É falta de direção.",
-   "tipo": "IMAGEM",
-   "quando": "2026-10-16",
-   "alcance": 79,
-   "views": 154,
+   "id": "18413507581090880",
+   "titulo": "Decodificando a creatina no cérebro.",
+   "tipo": "CARROSSEL",
+   "quando": "2026-10-21",
+   "alcance": 102,
+   "views": 348,
    "salvos": 0,
-   "compart": 0,
+   "compart": 2,
    "comentarios": 0,
-   "valor": 5,
-   "taxa": 6.3,
-   "parcial": false
+   "valor": 9,
+   "taxa": 8.8,
+   "parcial": true
   }
  ]
 }

@@ -1,205 +1,262 @@
 {
- "gerado_em": "2026-10-21T21:41-03:00",
+ "gerado_em": "2026-10-22T12:18-03:00",
  "conta": {
   "username": "tavarescoach",
-  "seguidores": 9258,
-  "seguindo": 4345,
-  "posts": 1803,
+  "seguidores": 9255,
+  "seguindo": 4346,
+  "posts": 1806,
   "ganhos_24h": null,
   "perdidos_24h": null,
   "saldo_24h": null,
-  "ganhos_7d": 24,
-  "perdidos_7d": 41,
-  "saldo_7d": -17,
-  "ganhos_30d": 97,
-  "perdidos_30d": 153,
-  "saldo_30d": -56,
-  "reach_7d": 3439,
-  "views_7d": 22447,
-  "profile_views_7d": 240,
-  "accounts_engaged_7d": 288,
-  "total_interactions_7d": 816,
+  "ganhos_7d": 23,
+  "perdidos_7d": 35,
+  "saldo_7d": -12,
+  "ganhos_30d": 88,
+  "perdidos_30d": 152,
+  "saldo_30d": -64,
+  "reach_7d": 3572,
+  "views_7d": 21432,
+  "profile_views_7d": 235,
+  "accounts_engaged_7d": 291,
+  "total_interactions_7d": 786,
   "website_clicks_7d": 8,
-  "reach_30d": 4340,
-  "views_30d": 40183,
-  "profile_views_30d": 664,
+  "reach_30d": 4357,
+  "views_30d": 39889,
+  "profile_views_30d": 658,
   "accounts_engaged_30d": 377,
-  "total_interactions_30d": 1312,
-  "website_clicks_30d": 21,
-  "reach_7d_anterior": 463,
-  "total_interactions_7d_anterior": 29,
-  "profile_views_7d_anterior": 97
+  "total_interactions_30d": 1291,
+  "website_clicks_30d": 19,
+  "reach_7d_anterior": 526,
+  "total_interactions_7d_anterior": 82,
+  "profile_views_7d_anterior": 102
  },
  "serie_seguidores": [
   {
-   "dia": "2026-09-22",
-   "seguidores": 9322,
-   "saldo": 8
-  },
-  {
    "dia": "2026-09-23",
-   "seguidores": 9321,
+   "seguidores": 9318,
    "saldo": -1
   },
   {
    "dia": "2026-09-24",
-   "seguidores": 9317,
+   "seguidores": 9314,
    "saldo": -4
   },
   {
    "dia": "2026-09-25",
-   "seguidores": 9315,
-   "saldo": -2
-  },
-  {
-   "dia": "2026-09-26",
-   "seguidores": 9317,
-   "saldo": 2
-  },
-  {
-   "dia": "2026-09-27",
-   "seguidores": 9314,
-   "saldo": -3
-  },
-  {
-   "dia": "2026-09-28",
    "seguidores": 9312,
    "saldo": -2
   },
   {
+   "dia": "2026-09-26",
+   "seguidores": 9314,
+   "saldo": 2
+  },
+  {
+   "dia": "2026-09-27",
+   "seguidores": 9311,
+   "saldo": -3
+  },
+  {
+   "dia": "2026-09-28",
+   "seguidores": 9309,
+   "saldo": -2
+  },
+  {
    "dia": "2026-09-29",
-   "seguidores": 9310,
+   "seguidores": 9307,
    "saldo": -2
   },
   {
    "dia": "2026-09-30",
-   "seguidores": 9309,
+   "seguidores": 9306,
    "saldo": -1
   },
   {
    "dia": "2026-10-01",
-   "seguidores": 9308,
+   "seguidores": 9305,
    "saldo": -1
   },
   {
    "dia": "2026-10-02",
-   "seguidores": 9308,
+   "seguidores": 9305,
    "saldo": 0
   },
   {
    "dia": "2026-10-03",
-   "seguidores": 9304,
+   "seguidores": 9301,
    "saldo": -4
   },
   {
    "dia": "2026-10-04",
-   "seguidores": 9299,
+   "seguidores": 9296,
    "saldo": -5
   },
   {
    "dia": "2026-10-05",
-   "seguidores": 9297,
+   "seguidores": 9294,
    "saldo": -2
   },
   {
    "dia": "2026-10-06",
-   "seguidores": 9290,
+   "seguidores": 9287,
    "saldo": -7
   },
   {
    "dia": "2026-10-07",
-   "seguidores": 9290,
+   "seguidores": 9287,
    "saldo": 0
   },
   {
    "dia": "2026-10-08",
-   "seguidores": 9287,
+   "seguidores": 9284,
    "saldo": -3
   },
   {
    "dia": "2026-10-09",
-   "seguidores": 9287,
+   "seguidores": 9284,
    "saldo": 0
   },
   {
    "dia": "2026-10-10",
-   "seguidores": 9282,
+   "seguidores": 9279,
    "saldo": -5
   },
   {
    "dia": "2026-10-11",
-   "seguidores": 9285,
+   "seguidores": 9282,
    "saldo": 3
   },
   {
    "dia": "2026-10-12",
-   "seguidores": 9280,
+   "seguidores": 9277,
    "saldo": -5
   },
   {
    "dia": "2026-10-13",
-   "seguidores": 9278,
+   "seguidores": 9275,
    "saldo": -2
   },
   {
    "dia": "2026-10-14",
-   "seguidores": 9275,
+   "seguidores": 9272,
    "saldo": -3
   },
   {
    "dia": "2026-10-15",
-   "seguidores": 9270,
+   "seguidores": 9267,
    "saldo": -5
   },
   {
    "dia": "2026-10-16",
-   "seguidores": 9270,
+   "seguidores": 9267,
    "saldo": 0
   },
   {
    "dia": "2026-10-17",
-   "seguidores": 9263,
+   "seguidores": 9260,
    "saldo": -7
   },
   {
    "dia": "2026-10-18",
-   "seguidores": 9259,
+   "seguidores": 9256,
    "saldo": -4
   },
   {
    "dia": "2026-10-19",
-   "seguidores": 9261,
+   "seguidores": 9258,
    "saldo": 2
   },
   {
    "dia": "2026-10-20",
-   "seguidores": 9258,
+   "seguidores": 9255,
    "saldo": -3
   },
   {
    "dia": "2026-10-21",
-   "seguidores": 9258,
+   "seguidores": 9255,
+   "saldo": 0
+  },
+  {
+   "dia": "2026-10-22",
+   "seguidores": 9255,
    "saldo": 0
   }
  ],
  "posts": [
+  {
+   "id": "17884248711626434",
+   "quando": "2026-10-22T12:02-03:00",
+   "tipo": "CARROSSEL",
+   "titulo": "Decodificando as canetas emagrecedoras.",
+   "link": "https://www.instagram.com/p/DezQhvHkUCU/",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/863066562_18643356205013202_8706420431180153694_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=HsrQlaHauBwQ7kNvwGOM90T&_nc_oc=AdrZ3Qw4hZ-O2oJKOxEV5l0R6w1Z8p-YOL3NMgQjImtU4rFH1KrGZzplt1s4r4rOe6Q&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQLFPaanPPNw1p7dU-JPNH4_x9sLyI9elVPdy75eftSNmG5-SjMQ-xk44BrvcatUxEjvr5DhIOuteQ&oh=00_AQMr2oV4d6hY7GyJFpG0W1zo6V9gcLMnTQewkXwOcdY67A&oe=6AE00DAE",
+   "alcance": 0,
+   "views": 12,
+   "curtidas": 1,
+   "comentarios": 0,
+   "salvos": 0,
+   "compart": 0,
+   "interacoes": 1,
+   "tempo_medio_s": null,
+   "valor": 1,
+   "taxa": null,
+   "parcial": true
+  },
+  {
+   "id": "18091341725214803",
+   "quando": "2026-10-22T09:45-03:00",
+   "tipo": "REELS",
+   "titulo": "Eileen Gu disse que treina como se nunca tivesse vencido e compete como se nunca tivesse perdido.",
+   "link": "https://www.instagram.com/reel/DezA2aSgfpC/",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/862550596_18643326907013202_4297460772147748425_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Uk6fW1yOs6gQ7kNvwHmqCrV&_nc_oc=Adp28BPk_p1bP2-PVtiiDXp6U5-pogLqTVPPc8v6jmtrZDKwGWK6Vk6VyaRT6i3vVII&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQLoBVGDzRWgrSuo_qGoZVYFq5W0i3C0XOwzV615jokfsjhrmt8a5P-zI4__l6P4rMhncVAM58WlKQ&oh=00_AQPekUa_2vSL-OFtd9lGINS9rcqgD_gvSKRb2Ni4ccRMXA&oe=6ADFE887",
+   "alcance": 172,
+   "views": 235,
+   "curtidas": 2,
+   "comentarios": 0,
+   "salvos": 1,
+   "compart": 1,
+   "interacoes": 4,
+   "tempo_medio_s": 9.6,
+   "valor": 8,
+   "taxa": 4.7,
+   "parcial": true
+  },
+  {
+   "id": "18145064725575117",
+   "quando": "2026-10-22T06:02-03:00",
+   "tipo": "CARROSSEL",
+   "titulo": "Decodificando o treino de quem usa GLP-1.",
+   "link": "https://www.instagram.com/p/DeynUjBlrLI/",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/859245059_18643284460013202_4076086762743898548_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=v8BuZUR_AyEQ7kNvwF01Kln&_nc_oc=Adrez-j8dgNlY0LRHatgF08zRN33vuye7DVOn90nvP_VnVpMMg4Q5Lx6aoYOJqiy7HY&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQI9eCFNhQ1r70jpQHu8DKvbfvk9j8hIfULUZL_nGoy-Qaj6vW767LwJIsEswbt1rVONyy855Hgafg&oh=00_AQOp5uQ9oDlfnnQHVI94koiShB7kFoLKnybjhJ88HLOm7w&oe=6AE00278",
+   "alcance": 81,
+   "views": 250,
+   "curtidas": 2,
+   "comentarios": 0,
+   "salvos": 0,
+   "compart": 3,
+   "interacoes": 7,
+   "tempo_medio_s": null,
+   "valor": 11,
+   "taxa": 13.6,
+   "parcial": true
+  },
   {
    "id": "18413507581090880",
    "quando": "2026-10-21T12:02-03:00",
    "tipo": "CARROSSEL",
    "titulo": "Decodificando a creatina no cérebro.",
    "link": "https://www.instagram.com/p/Dewru4oG8Wb/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/862082660_18643033156013202_50273955367327346_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AZsNuJ3FBtoQ7kNvwFT173P&_nc_oc=AdppF9tSBED_3ywudK_tCS1MKoLCEgqwoHnJjXSMCCwHxesVJSxvkNaQ8KERRvew1ao&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQLKLIWbFWZ8p1l3R_CRQ29ESm1scPs2ImVTLGbhCll-CiYnlWchW8HZ6jq8S9UJ_ra-bAaFM3j88A&oh=00_AQOLVPgoaOMlePj6ygI2B-frWBYT7X-WBF_rg5qcK17BPQ&oe=6ADF2C38",
-   "alcance": 85,
-   "views": 283,
-   "curtidas": 1,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/862082660_18643033156013202_50273955367327346_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AZsNuJ3FBtoQ7kNvwE4CFrZ&_nc_oc=AdomOw-vO039rrgb7TUVLJM545KcM9vWbxyUi6OWEcaAgRq8dHL-xLa9lUPlH36Uxsw&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQLtHMdMslbmN6U_XdKaz3W44JYf0jq1_SSNAGGr17qMRKSR4wNlH6nmp8YFAj7yseD0CyaWSpvE5A&oh=00_AQPGdjSwWaw4n8mvPcGsvf3eXHtFC1heSUqA_jpehKNXZg&oe=6AE00D38",
+   "alcance": 102,
+   "views": 348,
+   "curtidas": 3,
    "comentarios": 0,
    "salvos": 0,
-   "compart": 1,
-   "interacoes": 2,
+   "compart": 2,
+   "interacoes": 5,
    "tempo_medio_s": null,
-   "valor": 4,
-   "taxa": 4.7,
+   "valor": 9,
+   "taxa": 8.8,
    "parcial": true
   },
   {
@@ -208,17 +265,17 @@
    "tipo": "REELS",
    "titulo": "Decodificando a creatina no cérebro. 🧠",
    "link": "https://www.instagram.com/reel/Dewo6nGkeI-/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/858792239_18643028284013202_6564357639401158952_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=1C3uX2fI4YkQ7kNvwE36OKO&_nc_oc=AdqjMs8oEW7z8zwdppnxrBJ5gllEVkRvJ97LtjGuaEHqyagrXT6WXuzU1AIMUocnl_s&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQI_6gfOqp7deAUJw-BmPM6a3ByoN7N_3X4t2ZDRhbLAgS7GlaB5f6FQeRfDLHZSm8hJOulDv-Uslg&oh=00_AQO08YqHESBWSOfzequA1KaUbzGTAMzKzv0Epmm4TdBNQQ&oe=6ADF2E2F",
-   "alcance": 86,
-   "views": 149,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/858792239_18643028284013202_6564357639401158952_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=1C3uX2fI4YkQ7kNvwHac7Lm&_nc_oc=Adp2Dbj09wprv-iwck0n7yq4Bw1uLJewuolVYjmrDFSkkC0gSBs_k7Bc-EqVynnN_fY&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQIm95d11u-L3xrcH65SZru6rWBUF5DOD94KMCwJriCvPH8z-pTRYq7Io6OwU53qTixP9rCyHc3Q8A&oh=00_AQN6xIjvcU-QwkP1FbabasRn48BKFPAfGxOc0337fgMY_Q&oe=6AE00F2F",
+   "alcance": 99,
+   "views": 165,
    "curtidas": 16,
    "comentarios": 2,
    "salvos": 0,
    "compart": 0,
    "interacoes": 18,
-   "tempo_medio_s": 23.3,
+   "tempo_medio_s": 21.5,
    "valor": 20,
-   "taxa": 23.3,
+   "taxa": 20.2,
    "parcial": true
   },
   {
@@ -227,17 +284,17 @@
    "tipo": "REELS",
    "titulo": "Esse estudo me surpreendeu.",
    "link": "https://www.instagram.com/reel/DewLt07xe3W/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/859933412_1426480632285164_7429969644484191150_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7uu8bHBDdV8Q7kNvwE7A1jC&_nc_oc=AdqfN3DDAf4ATNQ_25mxOJbF0CyXbJivaIuDDFpxbVtX6nmUrjQ7GHE7-b-LbMiVvIE&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQLWjqiTCFc-iYG-D-_GkZGI6YEXCFFRfNSIcCQYEZ_a1nmozsWy-Tb1_gOsK_8Ca2WVnvJWKUsdwQ&oh=00_AQMfwyjlyAIjXMc0Wtt85ZaDt-xPsUihhdm9Qr14kD4sYg&oe=6ADF2B45",
-   "alcance": 87,
-   "views": 123,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/859933412_1426480632285164_7429969644484191150_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=7uu8bHBDdV8Q7kNvwHSm_h7&_nc_oc=AdrMZwZpsXANmB8K4N9MwZG5zcepGK_1uOiwqPx4HdWwD0MlF33giEjhO06qZs6oJWY&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQIDz7UxH4XarC0OuMyrwMva5-dki2WTOoGDdsJhidlJUimj10txAD07Kk5oK1ohLMz9tJlA0WOdLg&oh=00_AQP54Y9ehErSTJ4yfFAgDOGK36iMQ6Wh9IpBYDJyGLI9eQ&oe=6AE00C45",
+   "alcance": 110,
+   "views": 143,
    "curtidas": 7,
    "comentarios": 2,
    "salvos": 0,
    "compart": 0,
    "interacoes": 10,
-   "tempo_medio_s": 8.7,
+   "tempo_medio_s": 7.6,
    "valor": 11,
-   "taxa": 12.6,
+   "taxa": 10.0,
    "parcial": true
   },
   {
@@ -246,17 +303,17 @@
    "tipo": "IMAGEM",
    "titulo": "Em constante estado de gratidão 🙏🏼",
    "link": "https://www.instagram.com/p/DevXDBvM4xD/",
-   "capa": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/858994531_18642870688013202_4873898609954000528_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=f0WsHJ4mT_cQ7kNvwG0fQP3&_nc_oc=Adr9fr_8HGntZS24WLQ7pbH5ft4NLw3_U3RQ4E9ztrgNjf-WT-J0aVsGzyhPfCFILFE&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQIbCBhYqkxb8p2EEfn7NqnuxjLk0FeuQ3plgDUetJ1vakPXJ0R3_WoyNE2rg5ebSPME7_rOGKIHEw&oh=00_AQPCVN4BvfOYqZJQGOV-JEdMHGLoiXmNNZ9sLpa7mHHz7A&oe=6ADF1905",
-   "alcance": 329,
-   "views": 653,
-   "curtidas": 35,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/858994531_18642870688013202_4873898609954000528_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=f0WsHJ4mT_cQ7kNvwG3lHby&_nc_oc=AdqK6ol4ZewSQz6_86-gs4uyMrdXq4qsi9F-F4v26zddyUGjGEYKJIOM2z6oKymhUSk&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQK-IbSd-FMk3ZcIlZRXVHFyyIbeT2D45o1XfLuoGOqfVmiBezVLgLq6wBIzDyXMdSgvgzSOfqJ3LQ&oh=00_AQOG4nDYEWNGz1zIuwXiF6lFogqOuq0kP_cMX5Rs_acWVQ&oe=6ADFFA05",
+   "alcance": 371,
+   "views": 718,
+   "curtidas": 39,
    "comentarios": 0,
    "salvos": 0,
    "compart": 0,
-   "interacoes": 35,
+   "interacoes": 39,
    "tempo_medio_s": null,
-   "valor": 35,
-   "taxa": 10.6,
+   "valor": 39,
+   "taxa": 10.5,
    "parcial": true
   },
   {
@@ -265,17 +322,17 @@
    "tipo": "REELS",
    "titulo": "Live sobre como combater a gordura visceral com exercício, alimentação e hábitos",
    "link": "https://www.instagram.com/reel/DeuOk68ke7B/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/859087608_18642710368013202_1419166200844580857_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=aBmEfckkd78Q7kNvwHJI1Pg&_nc_oc=AdrXFKAJJ4RoDtar89pOdgAdddWhwVGXi9lO_DlXR6f6vajRF4uLC82lLworBblFBtI&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQLx2Mkn4Aoxne6LxyrZq4YvhGVv8jRJ6r3SgRKpZpBr0YLcfRKDQ3u6uzScdsNFU0WWDz-QapuJNw&oh=00_AQPcPr9IXxQTSxet68ULhDyzj0oHN_Bhx6_m5MPxbgqp8w&oe=6ADF173F",
-   "alcance": 173,
-   "views": 300,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/859087608_18642710368013202_1419166200844580857_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=aBmEfckkd78Q7kNvwE6hg3E&_nc_oc=AdrVlrvOwGPeyBD1wc2FG8dCyBbgih21OebEq-Wdh0AaOdj5lLJsM74znlreF2zmk7Q&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQIeveypmRBPqaL2ZsXcKeLje-YdK3n-sIGBNwyyevmLGXzi4USq3SZ4oXnDCycPBfDdANn6nZDkLg&oh=00_AQM-fBT6mgdpA8cMNpciRk57lfu4SYkP12kse_TES5C-oQ&oe=6ADFF83F",
+   "alcance": 183,
+   "views": 313,
    "curtidas": 19,
-   "comentarios": 4,
+   "comentarios": 6,
    "salvos": 0,
    "compart": 1,
-   "interacoes": 24,
-   "tempo_medio_s": 31.1,
-   "valor": 30,
-   "taxa": 17.3,
+   "interacoes": 26,
+   "tempo_medio_s": 33.3,
+   "valor": 34,
+   "taxa": 18.6,
    "parcial": true
   },
   {
@@ -284,9 +341,9 @@
    "tipo": "CARROSSEL",
    "titulo": "Decodificando o estudo do músculo que saiu esta semana.",
    "link": "https://www.instagram.com/p/DeuG6DllCQx/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/858098847_18642688126013202_1823536000297300418_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yp5A5Ye3izsQ7kNvwGeLyhb&_nc_oc=AdqSBPq9WREkK4cim-ITCKL0KpURzJG6zhavdLWdPx0n7_Wv5JmCCz2LKb-NMWIehjY&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQL8qvN-Q86m9eVQGYX-kk3bp-kZTxOff-iGleiPIEzf1HEvrrjJJyL83mKnjUHkrXcMfbpKbycqPA&oh=00_AQN6r0j6646dUrca21PdA3wpv1Smd4V5BQyK-_MQud0sDw&oe=6ADF3480",
-   "alcance": 129,
-   "views": 291,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/858098847_18642688126013202_1823536000297300418_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yp5A5Ye3izsQ7kNvwFy37gC&_nc_oc=Adpx4s-2_LJqG1q7zJUU_enbzpIxFbJX7DoQrOKv0SAP3_bz2jqvBJxAbbbNCFMlR5g&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQKeqByeLrh3BU1jRDCPynBsx3ahCvW7VtUowQaoH1aVuPxn8w4qk4wS9P3yZvqPzNXyAN7vuhnJEQ&oh=00_AQNJ2_dQ02azUhtRvYnPKHsgGYjN-rpx2_wVQkORLJd_cg&oe=6AE01580",
+   "alcance": 131,
+   "views": 305,
    "curtidas": 2,
    "comentarios": 0,
    "salvos": 0,
@@ -294,8 +351,8 @@
    "interacoes": 2,
    "tempo_medio_s": null,
    "valor": 2,
-   "taxa": 1.6,
-   "parcial": true
+   "taxa": 1.5,
+   "parcial": false
   },
   {
    "id": "18140097436627390",
@@ -303,9 +360,9 @@
    "tipo": "REELS",
    "titulo": "Me dá essa força ai? 🏃🏻💉💊",
    "link": "https://www.instagram.com/reel/DeuCGm4R4CE/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/860310579_18642678445013202_880586760728551605_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=N2xIA0NrD1AQ7kNvwHVF8MM&_nc_oc=AdrAT9Wzc0rJfIlcE6Qhsa_-WOnN5E3hdue2b34xat3y8NL18UF4fHf332g1PjjK3d4&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQLhj_sTvk8jNNo5N74Z1Ug0Dx5reH2sRy52hlic1jbhhPkEURWABLJoerdqEME0ukzopo6ayMi30Q&oh=00_AQOLnV2SI_c64xp2XixVtreYuEOZU9vkxO6JelltMVh4gw&oe=6ADF43EC",
-   "alcance": 730,
-   "views": 1130,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/860310579_18642678445013202_880586760728551605_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=N2xIA0NrD1AQ7kNvwFwA-Yw&_nc_oc=AdpJfnQJeJyPHEi5DrtzcBK5pnd3cUjkN6rEWWMEnUwExZsdKyGg-0775P4U4Nv92MM&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQIpFnFKtXvnz7H1PVaRX_NzpI39vLpAiQ80IZyAoN9Ui7IHduA8cHIsvw-88p9CmJ8oob3WCYzoPg&oh=00_AQOOKUITU9RPb-axqNehpOXGNvGpxZJzeCWZKBdtA11rWw&oe=6ADFECAC",
+   "alcance": 738,
+   "views": 1144,
    "curtidas": 38,
    "comentarios": 2,
    "salvos": 0,
@@ -313,8 +370,8 @@
    "interacoes": 41,
    "tempo_medio_s": 8.3,
    "valor": 45,
-   "taxa": 6.2,
-   "parcial": true
+   "taxa": 6.1,
+   "parcial": false
   },
   {
    "id": "18185113465425472",
@@ -322,9 +379,9 @@
    "tipo": "CARROSSEL",
    "titulo": "Decodificando a gordura que não aparece na foto.",
    "link": "https://www.instagram.com/p/Detkmo-INAb/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/860006188_18642609349013202_1091905119689839434_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=EyC5GjDR8U0Q7kNvwEg1P1d&_nc_oc=AdrA6ZJe7gp4OnuLoXHz6h7gsVWoktfegz96cOh8FJwtoktR1FduleFfQANZZHMrsCk&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQIVwwjxcnmRSDtOgEpxvyZT72v1iqMvr2wauA9vfZUEiibuYBI6flhf-jkY8ohdFEguhv2GmCsHSA&oh=00_AQMWyOCAVyRI8c5ayaBiU0JAHq6zg65-ZT5MpnyrHNgO2w&oe=6ADF1C19",
-   "alcance": 797,
-   "views": 1664,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/860006188_18642609349013202_1091905119689839434_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=t4uN6xz83wgQ7kNvwGXPCOF&_nc_oc=Adqx_29rDq1AzvzNDYOpb4HBMSueFQl_UZGpi-LET95AXOdAa905TpVh9tKQe_B15uk&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQKEJImETdsyT1UU0n0wiJ2uF4TjzcYvTgtEqtHWeNUCNIMX2Zk3IBKgHAIjUBD25Cvuk6x6gfXuKw&oh=00_AQPNbtg5jWypTUwDRqsbNPSzUAe1ZqCPT4DUHbR8ybQ-qg&oe=6ADFFD19",
+   "alcance": 803,
+   "views": 1681,
    "curtidas": 14,
    "comentarios": 0,
    "salvos": 0,
@@ -333,7 +390,7 @@
    "tempo_medio_s": null,
    "valor": 17,
    "taxa": 2.1,
-   "parcial": true
+   "parcial": false
   },
   {
    "id": "18113845127154835",
@@ -341,9 +398,9 @@
    "tipo": "CARROSSEL",
    "titulo": "40 minutos de treino de força por semana. Foi aí que 16 estudos encontraram o menor risco de morte por todas a",
    "link": "https://www.instagram.com/p/DeriHkiFBIp/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/858133136_18642331381013202_7699210534245736720_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=fKDFcFS3hhgQ7kNvwFQkXBR&_nc_oc=Adrtb3usfar8mME5E1mj7yYzQmi_N0I9euBtyqogBu1QzsPQ8X0gyETdXK4c8SvX_PQ&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQLB6LIaaTGt5BHpBoPOUZZvxFkunbRHw1F2nAYr_iozCopduuFcv7ALNj4warIYVu2lNgPRul2CMA&oh=00_AQOHSzcy7rLX4IvVPAiCQih_9WDma1X-8gn9vJQsrd_3yw&oe=6ADF3E89",
-   "alcance": 222,
-   "views": 473,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/858133136_18642331381013202_7699210534245736720_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=fKDFcFS3hhgQ7kNvwFMrXup&_nc_oc=AdomI5Ga2slu7s98QMXcqH2JM4DBeC4kbNEsqH1JbhIDDsnF-yJO8T3F1M15C0CtcwE&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQLp55GzRF34gdlYomSUtMMVk9IqUTIsaGjbrueRS8ZGFuU3XXcFgocvmYFD_9h6TxfZAhjh6SQDhA&oh=00_AQPrpEquFvfV1rpoBnIqKVrR9HoxN3VnQT7YDSOgFyMsxQ&oe=6ADFE749",
+   "alcance": 227,
+   "views": 486,
    "curtidas": 6,
    "comentarios": 0,
    "salvos": 2,
@@ -351,7 +408,7 @@
    "interacoes": 10,
    "tempo_medio_s": null,
    "valor": 18,
-   "taxa": 8.1,
+   "taxa": 7.9,
    "parcial": false
   },
   {
@@ -360,9 +417,9 @@
    "tipo": "REELS",
    "titulo": "Depois dos 30 a força cai, a coluna enverga e as juntas enferrujam. Todo mundo põe a culpa na idade.",
    "link": "https://www.instagram.com/reel/Deq_uvyE-ry/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/856959480_18642250372013202_5536494468367936143_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=oi2LGad_pegQ7kNvwGjmVmK&_nc_oc=Adqup4gcu8Uiuu2qtIdbh6sVRtgYuqoEwTP91pzAMkDUhhpBrAGjsVhakwYRXy4YiXY&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQIkVl9D6_vMwRNvhT4xxWD5bVxkcQ3ZP18_z6uLyBIAcyXQpX5l8msJkGo2vYPkD_hhIgaxMG_aVw&oh=00_AQMyRjybW_pC0fj4csJnUAXaCudaFw3XR-lgEA6AyfOZ8g&oe=6ADF38AF",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/856959480_18642250372013202_5536494468367936143_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=oi2LGad_pegQ7kNvwEIac5b&_nc_oc=Ado3AFXd7neTXEplXumVawpvI2SaapPZkPLvAJ826PYGas7A2xdGFaB5_e_iKkDSLLc&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQImKLpVSkn6-137xMzmCK4USu3o4zi7Q7PUjuLcx4J4lAv6cXAQNj7D-Rw1eiy_yUy8Goe6oiLOBA&oh=00_AQMmUOyao20lMZzkTLfKJh4GGpxtZ5CzNa7voa_SHp1aRQ&oe=6ADFE16F",
    "alcance": 1254,
-   "views": 1619,
+   "views": 1622,
    "curtidas": 36,
    "comentarios": 3,
    "salvos": 4,
@@ -379,9 +436,9 @@
    "tipo": "CARROSSEL",
    "titulo": "Duas a três sessões de força por semana. Essa é a dose.",
    "link": "https://www.instagram.com/p/DeptZAsgRal/",
-   "capa": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/851548270_18642079951013202_6466015474223313294_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-8_mw-9qdtgQ7kNvwG32neE&_nc_oc=AdqM2QGeoynB_sMV4Te0oZw1eUyujiY3n8mr_0D9YK8PsukE5nBOPU9nraSfuByiiyQ&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQK7v4qmPOxfvwdKYpMBYeLT_HuODYxQgtc9akt30UaV2vnI2KDCCMcBOKuu8bBBYQbcf2KbGb8MPQ&oh=00_AQOsa9rmxGvfW3zYR7FFkCIKhLWub3pQowBy2ippEiWm2g&oe=6ADF2472",
-   "alcance": 147,
-   "views": 295,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/851548270_18642079951013202_6466015474223313294_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-8_mw-9qdtgQ7kNvwFSDW6P&_nc_oc=AdrTRMeDZAjqBu43O-uPjPVThcMnC1FvdT4dX2-DAZnT5jnK_zHP4zRQZWJViXzSX6k&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQL3-wzzl0ATdLanSukxDILlO6PeolNNnBli2Y0dw4ODeMv3-dzED-LFX1LD5zp--FTOll_PCQwX5Q&oh=00_AQObGK4Vrjzu9V-4zY9WmExbS9w_h3T7FnXu_MRq3ysDng&oe=6AE00572",
+   "alcance": 149,
+   "views": 298,
    "curtidas": 4,
    "comentarios": 0,
    "salvos": 0,
@@ -389,7 +446,7 @@
    "interacoes": 5,
    "tempo_medio_s": null,
    "valor": 7,
-   "taxa": 4.8,
+   "taxa": 4.7,
    "parcial": false
   },
   {
@@ -398,9 +455,9 @@
    "tipo": "CARROSSEL",
    "titulo": "Decodificando a curva da capacidade física.",
    "link": "https://www.instagram.com/p/Deo9VxRG7LB/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/857606607_18641946958013202_4660660747748756559_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ybbtSlFX9t4Q7kNvwGSpS-d&_nc_oc=AdoZilAhojUUDbZz987ltGEyzxWE5vG6KdTmpYP9fBx-5bC80S2oRM2qUIQQUMyHW6U&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQLIqZK3sX1YfIXXjqZfPccZQ-34-vgwIYASCWMROq998piG7pdsxxmL8-H9whoS1OexBJYSxFAj1g&oh=00_AQOX6oQ8nAM_YCwLYrCuWw6qPP-FUAS0Q0em071aaT0jTw&oe=6ADF14AE",
-   "alcance": 247,
-   "views": 490,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/857606607_18641946958013202_4660660747748756559_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=K-NOjZFbSpkQ7kNvwGK2t-a&_nc_oc=AdrkmkG_DLWcouBcIeAaWJ896lV_aUbi655sW0ekFibNIs6fds6S2abHhel91aSwLtw&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQLgACuks9sAdTTJf877xtw1wYb8BmqtYkwErnK7n-aQ-7edEJFlKm20LrYMM0uTohDQm6l3O76rzA&oh=00_AQMly1selUh0HBoe4YRMorN5Ebbq-s1y2mFfClNPmCAJmQ&oe=6ADFF5AE",
+   "alcance": 255,
+   "views": 507,
    "curtidas": 7,
    "comentarios": 0,
    "salvos": 0,
@@ -408,7 +465,7 @@
    "interacoes": 9,
    "tempo_medio_s": null,
    "valor": 13,
-   "taxa": 5.3,
+   "taxa": 5.1,
    "parcial": false
   },
   {
@@ -417,7 +474,7 @@
    "tipo": "IMAGEM",
    "titulo": "Envelhecer mal não é questão de idade. É falta de estímulo.",
    "link": "https://www.instagram.com/p/DeohxoYG-i5/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/856854598_18641869531013202_3416322851619464047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=vX2bZwjvMCUQ7kNvwHQ6pDT&_nc_oc=AdqjADDqiOgYYKk60hL3aNTD2fTuormdN6IrEi6Qe4P19ZtweKRJzesR-7iw6rXtTe8&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQL422nmLkwqpJul_-K87Bbzk0jIDrLirW12o23ZvLVTF8On2dg75rWCdzgNlARgP0XzlvredC3vkQ&oh=00_AQO_1YG75u84jRYVi1TvBtCjD_B_oxBGxi1QyTA7aBoiIQ&oe=6ADF3B80",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/856854598_18641869531013202_3416322851619464047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=vX2bZwjvMCUQ7kNvwEpMX05&_nc_oc=AdoPNs1VyzPFgAuOfJwKKfFUzVDtN_6HV7lUB-O0GpPCmoy2_vDsOrkQfWTpfhjxNYw&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQK-iGqHs0UuSCIqVFwPR8yozPeEfJABDrOe9nsWiW078d1uQ2keDKyUMc9faxIiXSOQtH7WBSdOsA&oh=00_AQN8cPrR2R5f8TYK4VSPKq55fpLV8dhlZsJ53XJrxDUp2w&oe=6ADFE440",
    "alcance": 83,
    "views": 142,
    "curtidas": 3,
@@ -436,9 +493,9 @@
    "tipo": "REELS",
    "titulo": "Um almoço longo não apaga cinco dias de treino.",
    "link": "https://www.instagram.com/reel/DenPYpLkW3D/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/857105746_18641683594013202_5514466222485610082_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=LWsdtuplX3EQ7kNvwG1pL4h&_nc_oc=AdpynG7_WmTcCU1vtBD4CLkVUnMREgt_zg8DvQfXPuPH1ZD8jlZeEz4D3kEYrOHPeww&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQL72zt_-y9MoB8y0byKnBLuPitmeO-39F_e2zbvpihfGBEgRPcXi6CjbKgFNlGWny7syW-HiPU9cg&oh=00_AQM4j3xhQydOqVmKWj1S1zR5qyEfoFsBIirRd2LRaSjQCw&oe=6ADF20E2",
-   "alcance": 542,
-   "views": 749,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/857105746_18641683594013202_5514466222485610082_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=LWsdtuplX3EQ7kNvwE2wSeA&_nc_oc=AdoMdvqXrgPBRTT15UndLHkItVh4FTsI_M2s5HYT0Vgcy5WptaCR7X7Dw-TwXMBhJz8&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQIKMhG4736oWnwm9MpYL1R25ijkQrpwhtgoU_ucAKFBA2S6TQ18ZeWhbnMorW82g2fSwuIaxsu-aA&oh=00_AQPJTNLyhxH1wYc93KHXz-EDNFwq8zdz4QGjKqhBkAcThw&oe=6AE001E2",
+   "alcance": 546,
+   "views": 753,
    "curtidas": 28,
    "comentarios": 3,
    "salvos": 0,
@@ -455,7 +512,7 @@
    "tipo": "IMAGEM",
    "titulo": "O corpo responde ao padrão, não a um dia isolado.",
    "link": "https://www.instagram.com/p/DenIgOVm1Lp/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/851829344_18641656165013202_4890237626464978630_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=65M01rXRYT8Q7kNvwGLv-xe&_nc_oc=Adoi6uv4v1YGXLK3uYE1FhjnjrIdnZ0ItVUE552Gxdlv6lq_MKDjrz0wkDfpcm5h0TY&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQJG6UsUTDHCWmYRuCUsYRjxdCidEOGFMVtF9cIZtPm30b-idFAkmQurdPPWKf2RJk31cnIFlgkO7Q&oh=00_AQMjrdKeYd-FdlO_sz6wmzbQfmeekVeKTr7xw0trVcJTWQ&oe=6ADF1B2C",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/851829344_18641656165013202_4890237626464978630_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=65M01rXRYT8Q7kNvwFJeiiY&_nc_oc=AdqergGqPy2QS_Gg69_DwKu8HAnMGL6TeX0c2clb7GD2SqaPEd_cKy7yQZv12_9gsvI&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQLZbj0eA8vWWVDXg-0zWKJFLeMiLklafzuz578YvviJbTW4aR-Wa0bk6GnE5ggDYqp3-aaXhpzJaA&oh=00_AQPRSblZ_imTsDa97ATPthxuXbd59AhODdy1hOYwy8yllg&oe=6ADFFC2C",
    "alcance": 109,
    "views": 210,
    "curtidas": 2,
@@ -474,7 +531,7 @@
    "tipo": "IMAGEM",
    "titulo": "O futuro do seu treino é agora. @xburnbrasil @dignitusbrasil @roxydinnershow",
    "link": "https://www.instagram.com/p/Dem5DowRdSM/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/851887725_18641611336013202_8056092680115506525_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0fC-x8QZkp8Q7kNvwHv-ibC&_nc_oc=AdriwVlgjFwkCba2IBhpbSjjVWzliy1P8AxF_vRzs6PcqP0NKKhGHn0YqgPb-Mdy8fE&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQJ8F1LQ7agv-W-xYDux3H6fcHEMsp4fiVLsc7K7JjhZvewzDzhh58TT4ScaGRWIygymmmQKJa9x7g&oh=00_AQOxfcw_PNlwqGL1m75IO2h9s-JLWHfgzhhH6JTBBjhnKA&oe=6ADF3376",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/851887725_18641611336013202_8056092680115506525_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0fC-x8QZkp8Q7kNvwGddsjo&_nc_oc=Adq2DhfjF2E2xEcQ91MDy0lryqEfHU7SdwhTL3ZCfUk8TAojjpGb76cb4okZprvMxXo&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQKPC0Fx1DClnMmbXJvE4_7o1S7Xk0t-j8JKRm20yl-dP6ka_Ih2J1uo3I8BdH2YZsFMFoD0EyOekQ&oh=00_AQM_YAneQS4S_rXTizEm7Bsqd6lSDmnq_MycdIxnwILfyQ&oe=6AE01476",
    "alcance": 391,
    "views": 771,
    "curtidas": 26,
@@ -493,9 +550,9 @@
    "tipo": "CARROSSEL",
    "titulo": "Decodificando a falha muscular.",
    "link": "https://www.instagram.com/p/DemyXI_oARj/",
-   "capa": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/848733106_18641595076013202_4098636525413664194_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=O-1kjCwE4gIQ7kNvwFZ126H&_nc_oc=Adpfz1U1etHmGpT73UpyUNLNZcNxccd4SdAx7_XESypUsc7iwgpKSTcBHSvYucHKxlI&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQJAYqt1y7qzavUeqXgtvAfj6AcIBO02-haaJFmHz4XyQ7RP07BlPguZn9Bt9Imt_k207Id8pP_ofQ&oh=00_AQMfo0VwMJT8NPzi4SqISSw7ZLWM-jmH_sQKbGKdwstUOQ&oe=6ADF3CED",
-   "alcance": 138,
-   "views": 296,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/848733106_18641595076013202_4098636525413664194_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=O-1kjCwE4gIQ7kNvwFk8vBA&_nc_oc=Adpqc3Z23jyUyu_hBgoarVLmSBEwU8cxXSkd679yupFJZHyZF5zy6tzPr2oGZYXfISU&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQJIAJlzVhEZWXWV-or7OsrsKkUFDuYWQAJ2cBgeFOpnPSXFtQWjcg_aodl3R9oOZdTHMhWtwioDOQ&oh=00_AQM9CNeeKMaIDTLuYYWS2OM63zCX6085NGKf2YKvtytdWg&oe=6ADFE5AD",
+   "alcance": 141,
+   "views": 301,
    "curtidas": 8,
    "comentarios": 0,
    "salvos": 1,
@@ -503,7 +560,7 @@
    "interacoes": 9,
    "tempo_medio_s": null,
    "valor": 11,
-   "taxa": 8.0,
+   "taxa": 7.8,
    "parcial": false
   },
   {
@@ -512,7 +569,7 @@
    "tipo": "CARROSSEL",
    "titulo": "Fim de semana não é recaída. É parte do plano.",
    "link": "https://www.instagram.com/p/DemKA_ZFdLH/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/853528787_18641455726013202_2400654878671624922_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IZ_UIxwmR3gQ7kNvwHIakpH&_nc_oc=Adrct6BucBIGpVZwJwSk3VYd1IAYLQgsGDqSYkm435jbQO2H5M0ARXgJyP5fxPmiRSA&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQJ2eO6Lp67bPnmw7Teb5E9r5jbDX_yjcM0TtRP-0M6DrH8hdrOyniikxyKzwOJNLkZ3Nm0I-MJURA&oh=00_AQOMpqBMdhaUz95XGvqxT35A0d4hC6OmjJ-M27gOtEjdSg&oe=6ADF204A",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/853528787_18641455726013202_2400654878671624922_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IZ_UIxwmR3gQ7kNvwG20NH5&_nc_oc=AdqgLxBstxpvqPEY0A1WSBZXTPJApPa2D9_KErRXQbEmO7vIDNf9FLrLowNn79tbvX8&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQKPElzgrbHCd7BiTa2iT6e7fzb1rnde7t4_MSTSbVcLE9m8ep2Kkf09a5KzLi9-humwneVPc4r_wQ&oh=00_AQNxmiUW5wTv4IWhyRc9S7lri-z9cZ7bw5sv7S6vClR74w&oe=6AE0014A",
    "alcance": 105,
    "views": 240,
    "curtidas": 7,
@@ -531,7 +588,7 @@
    "tipo": "REELS",
    "titulo": "Treinar até cansar não é o que muda o corpo. É progressão.",
    "link": "https://www.instagram.com/reel/DekzQiFkjG4/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/849320295_18641278495013202_8771319113273034216_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Nef1WYqJWQcQ7kNvwGt_T2r&_nc_oc=Adp9MWvBvDx8jzbaXnDd9yzASeZrL6Nb7On4VV6XKTGNs8tmA-OaXukqvqYbMW8jidc&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQLCNMKdFHVnlOcpx3JpzidMvnk18tUnzsBlfNHzDw8kBtm7AaBEvC85NXwpTXgNwyGTWxVJDVjG2g&oh=00_AQO0-VCrIbnkfzHXUnW-V_3h9Sw5KmhUOOYHMO482clTZg&oe=6ADF1F6A",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/849320295_18641278495013202_8771319113273034216_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Nef1WYqJWQcQ7kNvwFNTC4p&_nc_oc=AdpNTEmVEh0mTADXOp-a6JFOsmjRHVDJx2YzurjFa4PhH0pk1mL1S6DeREE5tYpxx7Q&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQKYbDD0AMjk5OA7_H0Tv9jFofJ5e2fWgqB785kV1h03AuCCMpD8KnA_qw96tyiFPhGeK4WOccVdrA&oh=00_AQM3VAse6tIsZSSO3kq_rLRuZdyY3v4iLZAkgug5L0yPWg&oe=6AE0006A",
    "alcance": 176,
    "views": 274,
    "curtidas": 13,
@@ -550,9 +607,9 @@
    "tipo": "IMAGEM",
    "titulo": "Falta de resultado não é falta de esforço. É falta de direção.",
    "link": "https://www.instagram.com/p/Dekk1t6FIj6/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/851829747_18641249794013202_7644601494406300506_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RhLSmSX454EQ7kNvwHohVxd&_nc_oc=Ado1D8IjqhDWUoWKk1gmqXxg08hTwc4zwuVefRIijj6qNmvpyp0mWNnbNlmOF7P8QPw&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQIbtCBilutYIibw3jKOXaQBonu3uWHKNqVsvdp-yS1wlDtEPTppKyMpoyo5MEmymzinhlw4s5-v8g&oh=00_AQPM2VodGSmQI9YBXiM_mvJMOoGYdXHJtNDRu_Vpk_PBbQ&oe=6ADF20F9",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/851829747_18641249794013202_7644601494406300506_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RhLSmSX454EQ7kNvwGWDZPF&_nc_oc=Adp7bEobHLGRqG2wHvzJks0KTegLaKttoOdoCKBpRaJBs4mGkp3ssOj3ma_kV-pE0VQ&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQIwtauDruRVKKn_JOoSyB2QWbEvdpDiEWFW8RNIdotfWZ_emF3ifFBcgcojypqobQYtW1gxnM1iBw&oh=00_AQM5J4vks7KS9Qo-ZVWJm5JESZ9ZDNLB6rr0Esho2cN8EA&oe=6AE001F9",
    "alcance": 79,
-   "views": 154,
+   "views": 155,
    "curtidas": 5,
    "comentarios": 0,
    "salvos": 0,
@@ -569,9 +626,9 @@
    "tipo": "CARROSSEL",
    "titulo": "Você não precisa treinar mais. Precisa treinar com direção.",
    "link": "https://www.instagram.com/p/Dej6uLnFqHp/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/842282324_18641146648013202_174739068770271607_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6BDNhk3Hv3IQ7kNvwEVNu9_&_nc_oc=AdoBumSotA13D41jjSpC0JnJU9S_r7SQTh0CSVJh3x2m2bDs_GFI5Nj5h7BfTMjgEwI&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQJ7ylU57Gx8m0qTko0GP2m3dK9nosYLILogpRSDBoW3r_RE8o0H6BZ0ubbiy7ahNuKFdreorHOQpA&oh=00_AQOY0sl3R6BLnZJm0xpYRwc5XsoGWtREc8KJg_n3CVc-aA&oe=6ADF2AFB",
-   "alcance": 190,
-   "views": 426,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/842282324_18641146648013202_174739068770271607_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6BDNhk3Hv3IQ7kNvwEHt558&_nc_oc=Adq4jBd46XcAIEr_oSR0i6hcrmR4gJ9eNqhJUzgKfOE4ulRglPw3x61Cf3cX5jPqZC8&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQJvQLVU74y8vLIHD2H30hR6igSGtt7ZLvXllfQ4f27AhbHBpeh32yStRU2zpOrhEXbfo4dv6lyVhQ&oh=00_AQMuLoIlLSP4NvwfFiM2vhKd_rF7EgFVSjohcdo5Uy8lYA&oe=6AE00BFB",
+   "alcance": 191,
+   "views": 428,
    "curtidas": 6,
    "comentarios": 0,
    "salvos": 0,
@@ -579,7 +636,7 @@
    "interacoes": 10,
    "tempo_medio_s": null,
    "valor": 18,
-   "taxa": 9.5,
+   "taxa": 9.4,
    "parcial": false
   },
   {
@@ -588,17 +645,17 @@
    "tipo": "IMAGEM",
    "titulo": "Um #tb de um dia de sol ☀️ no #riodejaneiro e do shape que vai, e volta 💪🏼 bora!",
    "link": "https://www.instagram.com/p/DejrZ9aRKZK/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/851829433_18641105350013202_8278639311824770873_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=R5t-19eSh6cQ7kNvwHE5e1V&_nc_oc=AdrMWYjEHS1XXbKy1xkbNpKG5uC-tW10BSStrWoGmjBiGK0gLO1o5_NrE_DhNbaQt3c&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQL0F6j-PQaTNhyilozVwo9Mx1k-oCSImRoj52GBOXrbVCHiLFEH0LpQc-xWTqKm4UYRtO5dsAGKHQ&oh=00_AQP-L-xGBwqlY3TtBf4nBkBlQuz0PEjIHvaXLqiFzmBYRQ&oe=6ADF48F4",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/851829433_18641105350013202_8278639311824770873_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=R5t-19eSh6cQ7kNvwH99HGQ&_nc_oc=AdqiTPKDK-aDnlbSdNVjbA6ZfUMMH4_krsx2JdOw1yHcRQXcGUciahc3Tsxd1RRuVZ4&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQJkOV1oTlsQZo4WrrOMEvamVvqg36eyBzw_55-1BzSnovmWF__4u0JfsqmabQHvEBOKQxbbTCXECA&oh=00_AQNkkzbRECPCIBRx7rUuk5UfSkMcdKIIHEBJbjc3He04gw&oe=6ADFF1B4",
    "alcance": 903,
-   "views": 1849,
-   "curtidas": 146,
+   "views": 1852,
+   "curtidas": 147,
    "comentarios": 3,
    "salvos": 2,
    "compart": 1,
-   "interacoes": 152,
+   "interacoes": 153,
    "tempo_medio_s": null,
-   "valor": 161,
-   "taxa": 17.8,
+   "valor": 162,
+   "taxa": 17.9,
    "parcial": false
   },
   {
@@ -607,8 +664,8 @@
    "tipo": "REELS",
    "titulo": "O que um treinador de alto rendimento pode ensinar para quem trabalha com treinamento de força, saúde e perfor",
    "link": "https://www.instagram.com/reel/Dd89CxQRFNg/",
-   "capa": "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/831616266_18635599495013202_4644608289317154063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=o-RIz9GqOn4Q7kNvwG496ri&_nc_oc=Adp2roPO2JUN-eFl05GLdaiZWFVA05xES9pKBK3xCg8N3iHGAncSna2cB7NSi5v0dWc&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQIh6U0u0EYJdhnlUbrWLFAArNtUEHQgcIUGdIoTTE3DiMKBhZKh4VQ5sszPRjETPIS_PoyVZVBzuA&oh=00_AQNgx5IuVEpnZ8lIEjTQhrkh530CkgrzUf7VzMw6NfxeSw&oe=6ADF457D",
-   "alcance": 195,
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/831616266_18635599495013202_4644608289317154063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=o-RIz9GqOn4Q7kNvwHLN2rQ&_nc_oc=Ado5NX64geBw0D7mccwa573Gr00XEKQMQ_MZzGaCmtHwaVVfauKDXD4ydrn-Sn8jd3g&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQIybJLpX5TKDr74x2lA-JEGuKihriz5Gd8MZ-P7wz7JLGqESu8Co5ZLNnSo7m47lkzEV-Nqftar2g&oh=00_AQM66CeB3t2V3JqnAo9BqakoztpXgVg6UHcBx34BJsAyRQ&oe=6ADFEE3D",
+   "alcance": 196,
    "views": 285,
    "curtidas": 14,
    "comentarios": 4,
@@ -617,7 +674,7 @@
    "interacoes": 19,
    "tempo_medio_s": 8.7,
    "valor": 22,
-   "taxa": 11.3,
+   "taxa": 11.2,
    "parcial": false
   },
   {
@@ -626,7 +683,7 @@
    "tipo": "REELS",
    "titulo": "Passa boa parte do dia no computador e termina o dia com o pescoço, ombros ou coluna tensos?",
    "link": "https://www.instagram.com/reel/DdZYMs6x6NO/",
-   "capa": "https://scontent-iad3-1.cdninstagram.com/v/t51.82787-15/814624349_18630860797013202_4875810607026424205_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ThhlG-TnbvIQ7kNvwGh9wCW&_nc_oc=AdrVyB8v_ucL1ZAa5GoZUHhyeJJZ5mz9h0gHcSfaA-8knzj-2jubfX4g8hNDLahfo5U&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=T_e1dSNgPntXnCe3RsQSAQ&_nc_tpa=Q5bMBQKotSVioG7kaLbRfB4zHIgfQrZjfeHqby86mxTJVgtyhAysXuGWQVJuXa1l6G2Z2Qba0LHfffrbBw&oh=00_AQMtX8whNW-yL9qClhahEazPMAh891sSsF3XBjXfOft-3A&oe=6ADF1A00",
+   "capa": "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/814624349_18630860797013202_4875810607026424205_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ThhlG-TnbvIQ7kNvwEHpF11&_nc_oc=AdpShsAkGwFFbVyq5aYa-dX3Q3w71bHay0sH5y8L0A3PKn0I27OMYrrr1zbS9uPN6a4&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=rhHcl-EnMC8tBpjSecb0IA&_nc_tpa=Q5bMBQLJaW_qiLW_VlhCIFPnPhLvLaFYaykwmn4WXQRe6_MdF2tc0mUfIJTl3Khv2wWiqgdGkEQFOzGwSQ&oh=00_AQOI7dNqEoSbMWg9CsxbpYOiv6AI5igQILgLpjDJMMkdXg&oe=6ADFFB00",
    "alcance": 255,
    "views": 406,
    "curtidas": 22,
@@ -645,8 +702,8 @@
    "18072669692780980",
    "18430509847147171",
    "18140097436627390",
-   "17906892201578099",
    "18190336891406995",
+   "17906892201578099",
    "18077756243743843"
   ],
   "alcance": [
@@ -661,17 +718,17 @@
    "18430509847147171",
    "18113845127154835",
    "18072669692780980",
+   "18091341725214803",
    "18099475022638759",
-   "18413507581090880",
-   "18088658141280518"
+   "17884248711626434"
   ],
   "compart": [
    "18430509847147171",
    "17963366856228149",
-   "18113845127154835",
-   "18110851733172521",
+   "18145064725575117",
    "18413507581090880",
-   "18077756243743843"
+   "18113845127154835",
+   "18110851733172521"
   ]
  },
  "metodo": {
