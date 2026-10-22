@@ -1,12 +1,77 @@
 {
  "pares": [
   {
+   "headline": "Toda semana a ciência descobre algo sobre o músculo.",
+   "formato": "carrossel",
+   "quando": "2026-10-20",
+   "alcance": 129,
+   "valor": 2,
+   "taxa": 1.6,
+   "parcial": true,
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
+  },
+  {
+   "headline": "Uma foto de praia virou debate de saúde.",
+   "formato": "carrossel",
+   "quando": "2026-10-20",
+   "alcance": 797,
+   "valor": 17,
+   "taxa": 2.1,
+   "parcial": true,
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
+  },
+  {
+   "headline": "Acompanharam centenas de pessoas por 47 anos.",
+   "formato": "carrossel",
+   "quando": "2026-10-18",
+   "alcance": 247,
+   "valor": 13,
+   "taxa": 5.3,
+   "parcial": false,
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
+  },
+  {
    "headline": "Fim de semana não desfaz sua semana",
    "formato": "reels",
    "quando": "2026-10-17",
-   "alcance": 446,
-   "valor": 30,
-   "taxa": 6.7,
+   "alcance": 542,
+   "valor": 37,
+   "taxa": 6.8,
+   "parcial": false,
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
+  },
+  {
+   "headline": "O músculo responde em qualquer idade",
+   "formato": "reels",
+   "quando": "2026-10-19",
+   "alcance": 1254,
+   "valor": 111,
+   "taxa": 8.9,
+   "parcial": false,
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
+  },
+  {
+   "headline": "Seu cérebro também usa creatina.",
+   "formato": "carrossel",
+   "quando": "2026-10-21",
+   "alcance": 85,
+   "valor": 4,
+   "taxa": 4.7,
    "parcial": true,
    "notas": null,
    "total": null,
@@ -14,9 +79,9 @@
    "alternativas": []
   }
  ],
- "medidos": 0,
+ "medidos": 3,
  "com_notas": 0,
- "mediana_taxa_perfil": 14.1,
+ "mediana_taxa_perfil": 8.1,
  "correlacao_taxa": {},
  "pesos_sugeridos": null,
  "recomendada": {

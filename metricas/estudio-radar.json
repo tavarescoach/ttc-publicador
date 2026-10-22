@@ -1,121 +1,110 @@
 {
- "atualizado_em": "2026-10-18T06:21:17-03:00",
+ "atualizado_em": "2026-10-22T06:29:19-03:00",
  "em_alta": [
   {
-   "assunto": "menopausa",
-   "tema": "saude",
+   "assunto": "depressao-circadiana",
+   "tema": "ciencia",
    "canais": 4,
-   "nota_max": 75,
+   "nota_max": 66,
    "titulos": [
-    "New Guidelines Strongly Support Hormone Therapy for Common Menopause Symptoms",
-    "Dificuldade em relacionar sintomas como ansiedade e palpitações à perimenopausa pode atrasar diagnóstico",
-    "Agência de Comunicação - Menopausa muda o corpo e pede atenção à alimentação saudável"
+    "Australian researchers identify new subtype of depression linked to body clock disruptions",
+    "Pesquisa identifica novo subtipo de depressão ligado ao relógio biológico",
+    "Body clock disruptions contribute to one in four cases of depression, suggests large study"
    ]
   },
   {
-   "assunto": "glp1-canetas",
-   "tema": "saude",
-   "canais": 4,
-   "nota_max": 72,
+   "assunto": "ia-selfie-saude",
+   "tema": "tecnologia",
+   "canais": 3,
+   "nota_max": 52,
    "titulos": [
-    "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
-    "Agência de Comunicação - Canetas emagrecedoras ampliam o papel das academias na saúde",
-    "Man claims he went blind after taking Ozempic, shares warning for other users"
+    "Can a simple photo of your face reveal how ill you are?",
+    "New AI tool can predict cancer survival by a single patient selfie, study suggests",
+    "Could AI Use a Simple Photo of Your Face to Reveal Clues About Your Health?"
    ]
   },
   {
-   "assunto": "forca-envelhecimento",
+   "assunto": "carlos-alberto-nobrega-saude",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 80,
+   "nota_max": 22,
    "titulos": [
-    "Scientists discover how exercise reverses muscle aging",
-    "Exercícios para fortalecer os braços e preservar a força após os 50 anos",
-    "These Older Brazilian Jiu-Jitsu Students Are Fighting the Clock"
-   ]
-  },
-  {
-   "assunto": "horario-refeicoes",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 70,
-   "titulos": [
-    "Eating late at night linked to up to 30% higher risk of liver disease",
-    "Somado a estresse, horário do jantar pode influenciar na saúde intestinal",
-    "Malha à noite? Ajustar a dieta pode ajudar a melhorar massa muscular e sono"
+    "Saiba estado de saúde de Carlos Alberto de Nóbrega após cirurgia no coração",
+    "Vírus que internou Carlos Alberto de Nóbrega causa virose leve na maioria dos casos, mas pode alterar o ritmo do coração; entenda",
+    "Carlos Alberto de Nóbrega tem estado de saúde atualizado por esposa após cirurgia"
    ]
   }
  ],
  "top": [
   {
-   "titulo": "Scientists discover how exercise reverses muscle aging",
+   "titulo": "Just 4 minutes a day can dramatically improve strength after 65",
    "canal": "ScienceDaily",
-   "assunto": "forca-envelhecimento",
-   "nota": 80,
-   "gancho": "Seu músculo não perdeu a capacidade. Perdeu o estímulo."
+   "assunto": "forca-4-minutos",
+   "nota": 86,
+   "gancho": "Quatro minutos de força por dia mudaram a força de idosos."
   },
   {
-   "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
-   "canal": "Folha Equilíbrio",
-   "assunto": "cardio-pos-musculacao",
-   "nota": 78,
-   "gancho": "Cardio depois da musculação não é segredo do resultado. É hábito copiado."
+   "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
+   "canal": "Sua referência",
+   "assunto": "fc-repouso-status",
+   "nota": 84,
+   "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
   },
   {
-   "titulo": "Going nowhere fast? Personal trainers on why you aren’t seeing results in the gym",
+   "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
    "canal": "The Guardian",
-   "assunto": "treino-sem-resultado",
-   "nota": 76,
-   "gancho": "Você treina há meses e o espelho não muda. O motivo é outro."
+   "assunto": "perda-peso-meia-idade-coracao",
+   "nota": 82,
+   "gancho": "Perder 5% do peso já reduz o risco de AVC na meia-idade."
   },
   {
-   "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
-   "canal": "ScienceDaily",
-   "assunto": "sono-recuperacao",
-   "nota": 76,
-   "gancho": "Seu resultado não é feito só no treino. Também é feito dormindo."
+   "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+   "canal": "Sua referência",
+   "assunto": "alcool-beber-menos",
+   "nota": 82,
+   "gancho": "Uma cerveja hoje pesa mais que três aos 25."
   },
   {
-   "titulo": "New Guidelines Strongly Support Hormone Therapy for Common Menopause Symptoms",
-   "canal": "NYT Well",
-   "assunto": "menopausa",
-   "nota": 75,
-   "gancho": "A ciência mudou o tom sobre a menopausa. O treino também precisa mudar."
+   "titulo": "Longevity medicine mainstream",
+   "canal": "Sua referência",
+   "assunto": "longevidade-mainstream",
+   "nota": 82,
+   "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
   },
   {
-   "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
-   "canal": "Fox News Health",
-   "assunto": "glp1-canetas",
-   "nota": 72,
-   "gancho": "A caneta pode ajudar. Mas quem segura o resultado é o seu músculo."
-  },
-  {
-   "titulo": "Dificuldade em relacionar sintomas como ansiedade e palpitações à perimenopausa pode atrasar diagnóstico",
+   "titulo": "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
    "canal": "Folha Equilíbrio",
-   "assunto": "menopausa",
-   "nota": 72,
-   "gancho": "Não é só estresse. Pode ser a perimenopausa falando."
+   "assunto": "menopausa-terapia-hormonal",
+   "nota": 80,
+   "gancho": "Na menopausa, o medo do hormônio costuma ser maior que o risco."
   },
   {
-   "titulo": "Is Longevity Medicine Going Mainstream?",
+   "titulo": "The Return of the Women-Only Gym",
    "canal": "NYT Well",
-   "assunto": "longevidade",
-   "nota": 72,
-   "gancho": "Longevidade não começa na clínica. Começa no seu treino de força."
+   "assunto": "academia-feminina",
+   "nota": 80,
+   "gancho": "Mais mulheres pegando peso, e algumas querem uma sala só delas."
   },
   {
-   "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
-   "canal": "Fox News Health",
-   "assunto": "gordura-visceral",
-   "nota": 70,
-   "gancho": "Barriga depois dos 35 não é falta de abdominal. É falta de estrutura."
+   "titulo": "Leslie Jones, 59, Shows Off Results from Her Fitness Journey: ‘After 40, You Really Have to Focus on Your Muscles’",
+   "canal": "People",
+   "assunto": "musculo-depois-dos-40",
+   "nota": 80,
+   "gancho": "Aos 59, Leslie Jones resumiu: depois dos 40, cuide do músculo."
   },
   {
-   "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
-   "canal": "ScienceDaily",
-   "assunto": "horario-refeicoes",
-   "nota": 70,
-   "gancho": "Comer tarde todo dia não é só hábito. É risco acumulado."
+   "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
+   "canal": "Sua referência",
+   "assunto": "frio-calor-recuperacao",
+   "nota": 80,
+   "gancho": "Gelo depois do treino pode atrapalhar o músculo que você quer ganhar."
+  },
+  {
+   "titulo": "Exercise in a pill",
+   "canal": "MIT Technology Review",
+   "assunto": "exercicio-em-pilula",
+   "nota": 76,
+   "gancho": "Laboratórios já testam o exercício em comprimido."
   }
  ]
 }
