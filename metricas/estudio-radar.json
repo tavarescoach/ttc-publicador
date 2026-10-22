@@ -1,15 +1,37 @@
 {
- "atualizado_em": "2026-10-22T06:29:19-03:00",
+ "atualizado_em": "2026-10-22T14:25:04-03:00",
  "em_alta": [
+  {
+   "assunto": "menopausa-terapia-hormonal",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 80,
+   "titulos": [
+    "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
+    "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
+    "Existe idade ideal para começar a terapia hormonal da menopausa? Veja o que dizem os especialistas"
+   ]
+  },
+  {
+   "assunto": "glp1-mercado-e-efeitos",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 72,
+   "titulos": [
+    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
+    "People are taking an unapproved weight-loss drug. AI found something surprising",
+    "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags"
+   ]
+  },
   {
    "assunto": "depressao-circadiana",
    "tema": "ciencia",
-   "canais": 4,
+   "canais": 3,
    "nota_max": 66,
    "titulos": [
     "Australian researchers identify new subtype of depression linked to body clock disruptions",
     "Pesquisa identifica novo subtipo de depressão ligado ao relógio biológico",
-    "Body clock disruptions contribute to one in four cases of depression, suggests large study"
+    "New Type of Depression Linked to Disrupted Sleep and Out-of-Sync Body Clocks"
    ]
   },
   {
@@ -73,6 +95,13 @@
   },
   {
    "titulo": "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
+   "canal": "g1 Saúde",
+   "assunto": "menopausa-terapia-hormonal",
+   "nota": 80,
+   "gancho": "Seu medo da reposição hormonal pode estar maior que o risco."
+  },
+  {
+   "titulo": "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
    "canal": "Folha Equilíbrio",
    "assunto": "menopausa-terapia-hormonal",
    "nota": 80,
@@ -98,13 +127,6 @@
    "assunto": "frio-calor-recuperacao",
    "nota": 80,
    "gancho": "Gelo depois do treino pode atrapalhar o músculo que você quer ganhar."
-  },
-  {
-   "titulo": "Exercise in a pill",
-   "canal": "MIT Technology Review",
-   "assunto": "exercicio-em-pilula",
-   "nota": 76,
-   "gancho": "Laboratórios já testam o exercício em comprimido."
   }
  ]
 }
