@@ -1,15 +1,110 @@
 {
- "atualizado_em": "2026-10-18T14:30:00-03:00",
+ "atualizado_em": "2026-10-22T06:40:00-03:00",
  "origem": "Ponto de partida tirado do que o Luan já salvou ou transformou em pauta no Radar. As referências do botão Ensinar o radar refinam a partir daqui.",
- "referencias_analisadas": [],
- "aprendido": {},
- "resumo": "Você se interessa por notícias com dado concreto (estudo longo, número, mecanismo) que viram uma correção de crença comum, e por cultura e celebridade quando elas revelam um padrão de corpo que o seu público vive. Prefere o porquê ao como fazer.",
- "assuntos": ["perda de força com a idade", "músculo e envelhecimento", "canetas emagrecedoras e massa magra", "sono e recuperação", "horário das refeições", "erros de quem treina e não evolui", "cultura e moda como espelho do padrão de corpo", "corpo de celebridade como debate de saúde", "datas de saúde (Outubro Rosa, Novembro Azul)"],
- "termos": {
-  "pt": ["perda de força", "massa muscular", "envelhecimento", "longevidade", "sarcopenia", "canetas emagrecedoras", "gordura visceral", "sono profundo", "jantar tarde", "treino de força", "progressão de carga", "padrão de corpo"],
-  "en": ["strength loss", "muscle aging", "muscle mass", "healthspan", "visceral fat", "belly fat", "deep sleep", "late-night eating", "weight-loss drugs", "dad bod", "body standards", "resistance training"]
+ "referencias_analisadas": [
+  "450bc8ab660caf33",
+  "14331e9dddb0297f",
+  "4b675ab8dfc483a5",
+  "7e686b064037114d",
+  "8f36e4fb41d75d2e",
+  "d53925d753bcb4d2"
+ ],
+ "aprendido": {
+  "450bc8ab660caf33": "Hábitos e vícios do adulto (álcool, tolerância que cai com a idade) lidos pela ciência e pela cultura pop, no tom de revista masculina.",
+  "14331e9dddb0297f": "Recuperação como estratégia avançada: comparar ferramentas (calor x frio) com recomendação de especialista.",
+  "4b675ab8dfc483a5": "Métricas fisiológicas que viraram status (FC de repouso, dados de relógio) e o que o número diz de condicionamento.",
+  "7e686b064037114d": "O formato guia para adultos na meia-idade e a ideia de procurar um especialista pesam mais que o tema em si.",
+  "8f36e4fb41d75d2e": "Guias práticos de treino, inclusive em casa, com exercício explicado.",
+  "d53925d753bcb4d2": "Longevidade como mercado do público de alta renda: clínicas, exames e envelhecimento saudável."
  },
- "angulos": ["Estudo longo ou mecanismo novo virando correção de uma crença comum", "Celebridade ou tendência cultural como gancho para falar do corpo do executivo e da mulher 30–50", "Por que você não evolui: erro de processo, não de esforço", "Comparar épocas e padrões (anos 90, hoje) sem julgar o corpo de ninguém"],
- "evitar": ["fofoca sem ponte com corpo", "dieta milagrosa", "política"],
- "evitar_termos": []
+ "resumo": "Você se interessa por notícias com dado concreto (estudo, número, mecanismo, métrica do relógio) que corrigem uma crença comum, e por cultura pop e celebridade quando revelam um hábito ou padrão de corpo do adulto 30–50. Gosta de guias práticos de revista (GQ, NYT Well) sobre recuperação, longevidade, álcool e treino, sempre pelo porquê.",
+ "assuntos": [
+  "perda de força e músculo com a idade",
+  "longevidade e medicina da longevidade",
+  "canetas emagrecedoras e massa magra",
+  "sono e recuperação",
+  "recuperação muscular (frio, calor, descanso)",
+  "métricas fisiológicas (FC de repouso, VO2, dados de relógio)",
+  "álcool e hábitos do adulto",
+  "horário das refeições",
+  "erros de quem treina e não evolui",
+  "guias práticos de treino, inclusive em casa",
+  "meia-idade e recomeço com ajuda de especialista",
+  "cultura e celebridade como espelho do padrão de corpo",
+  "datas de saúde (Outubro Rosa, Novembro Azul)"
+ ],
+ "termos": {
+  "pt": [
+   "perda de força",
+   "massa muscular",
+   "sarcopenia",
+   "longevidade",
+   "envelhecimento saudável",
+   "canetas emagrecedoras",
+   "gordura visceral",
+   "sono profundo",
+   "jantar tarde",
+   "treino de força",
+   "progressão de carga",
+   "padrão de corpo",
+   "recuperação muscular",
+   "banho de gelo",
+   "sauna",
+   "frequência cardíaca de repouso",
+   "VO2 máx",
+   "tolerância ao álcool",
+   "beber menos",
+   "treino em casa",
+   "meia-idade",
+   "idade biológica"
+  ],
+  "en": [
+   "strength loss",
+   "muscle aging",
+   "muscle mass",
+   "healthspan",
+   "longevity medicine",
+   "longevity clinic",
+   "visceral fat",
+   "deep sleep",
+   "late-night eating",
+   "weight-loss drugs",
+   "dad bod",
+   "body standards",
+   "resistance training",
+   "muscle recovery",
+   "cold plunge",
+   "sauna",
+   "resting heart rate",
+   "VO2 max",
+   "sober curious",
+   "alcohol tolerance",
+   "home workout",
+   "midlife",
+   "biological age",
+   "fitness flex"
+  ]
+ },
+ "angulos": [
+  "Estudo longo ou mecanismo novo virando correção de uma crença comum",
+  "Celebridade ou tendência cultural como gancho para falar do corpo do executivo e da mulher 30–50",
+  "Por que você não evolui: erro de processo, não de esforço",
+  "Comparar épocas e padrões (anos 90, hoje) sem julgar o corpo de ninguém",
+  "Métrica que virou status (FC de repouso, passos, idade biológica) explicada com contexto",
+  "Comparar ferramentas de recuperação e dizer qual serve para qual objetivo",
+  "Hábito do adulto que muda com a idade (álcool, sono, recuperação) explicado pela fisiologia",
+  "Guia prático com especialista para quem recomeça na meia-idade"
+ ],
+ "evitar": [
+  "fofoca sem ponte com corpo",
+  "dieta milagrosa",
+  "política",
+  "mercado financeiro e bolsa",
+  "reality show"
+ ],
+ "evitar_termos": [
+  "Billionaires Index",
+  "Ibovespa",
+  "recap"
+ ]
 }
