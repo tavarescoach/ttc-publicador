@@ -6,15 +6,15 @@
   "status": "salvo"
  },
  {
-  "titulo": "Exercise in a pill",
-  "canal": "MIT Technology Review",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
   "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
   "canal": "The Guardian",
   "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Exercise in a pill",
+  "canal": "MIT Technology Review",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
@@ -30,24 +30,6 @@
   "status": "descartado"
  },
  {
-  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
-  "tema": null,
-  "status": "descartado"
- },
- {
-  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
-  "canal": "BBC News",
-  "tema": null,
-  "status": "descartado"
- },
- {
-  "titulo": "Is it true that … you need to take 10,000 steps a day to be healthy?",
-  "canal": "The Guardian",
-  "tema": null,
-  "status": "salvo"
- },
- {
   "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
   "canal": "Folha Equilíbrio",
   "tema": null,
@@ -60,8 +42,20 @@
   "status": "descartado"
  },
  {
+  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
   "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
   "canal": "NYT Well",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
+  "canal": "BBC News",
   "tema": null,
   "status": "descartado"
  },
@@ -72,21 +66,9 @@
   "status": "descartado"
  },
  {
-  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Home workout",
-  "canal": "Sua referência",
-  "tema": "esporte",
+  "titulo": "Is it true that … you need to take 10,000 steps a day to be healthy?",
+  "canal": "The Guardian",
+  "tema": null,
   "status": "salvo"
  },
  {
@@ -96,9 +78,27 @@
   "status": "salvo"
  },
  {
+  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
   "titulo": "Coming out midlife",
   "canal": "Sua referência",
   "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Home workout",
+  "canal": "Sua referência",
+  "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
+  "canal": "Sua referência",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -126,46 +126,10 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
-  "canal": "Folha Equilíbrio",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
-  "canal": "Fox News Health",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Is the energy of the 1990s returning to London’s art market?",
-  "canal": "The Art Newspaper",
-  "tema": "cultura",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
-  "canal": "Metrópoles",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Longevity medicine mainstream",
   "canal": "Sua referência",
   "tema": "saude",
   "status": "salvo"
- },
- {
-  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
-  "canal": "ScienceDaily",
-  "tema": "saude",
-  "status": "virou_pauta"
  },
  {
   "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
@@ -183,6 +147,42 @@
   "titulo": "Scientists discover how exercise reverses muscle aging",
   "canal": "ScienceDaily",
   "tema": "ciencia",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
+  "canal": "Fox News Health",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
+  "canal": "Folha Equilíbrio",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
+  "canal": "Metrópoles",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
+  "canal": "ScienceDaily",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Is the energy of the 1990s returning to London’s art market?",
+  "canal": "The Art Newspaper",
+  "tema": "cultura",
   "status": "virou_pauta"
  }
 ]
