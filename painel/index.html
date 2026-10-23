@@ -984,7 +984,9 @@ function desenharVisor(){
     return `<a href="${esc(f.url)}" target="_blank" rel="noopener"><i>${esc({estudo:"Estudo", noticia:"Notícia", artigo:"Artigo"}[f.tipo] || "Fonte")}</i><span>${esc(f.titulo || f.url)}</span><em>${esc(dom)} ↗</em></a>`;
   }).join("") : "";
   const podeAgora = ["pronto","agendado","erro","atrasado"].includes(r.etapa) && arqs.length;
+  const docPauta = pautaComRascunhos(r.id);
   $("vBts").innerHTML = `<a class="mini" href="${esc(urlMidia(a))}" target="_blank" rel="noopener">📂 Abrir arquivo ↗</a>`
+    + (docPauta ? `<button class="mini go" data-rascunhos="${esc(docPauta)}">📚 Rascunhos desta pauta</button>` : "")
     + (r.link ? `<a class="mini go" href="${esc(r.link)}" target="_blank" rel="noopener">📸 Ver no Instagram ↗</a>` : "")
     + (r.etapa === "pronto" ? `<button class="mini go" data-aprovar="${esc(r.id)}">✅ Aprovar e agendar</button>` : "")
     + (podeAgora ? `<button class="mini agora" data-agora="${esc(r.id)}">🚀 Publicar agora</button>` : "");
@@ -1596,6 +1598,18 @@ $("pautas").addEventListener("click", async ev => {
   }
 });
 carregarPautas();
+/* do carrossel (id e-<pauta>-carrossel) até os rascunhos da mesma pauta */
+function pautaComRascunhos(cardId){
+  const m = /^e-(.+)-(carrossel|reels|broll|estatico|stories)$/.exec(cardId || "");
+  return m && teses.some(t => t.id === m[1]) ? m[1] : null;
+}
+document.addEventListener("click", async ev => {
+  const b = ev.target.closest("[data-rascunhos]"); if (!b) return;
+  fecharVisor();
+  await carregarPautas();
+  $("pautas").scrollIntoView({behavior:"smooth", block:"start"});
+  await abrirTese(b.dataset.rascunhos);
+});
 $("btnSair").onclick = async () => { if (sb) await sb.auth.signOut(); mostrar(false); };
 $("formLogin").onsubmit = async ev => {
   ev.preventDefault(); $("msgLogin").textContent = "";
