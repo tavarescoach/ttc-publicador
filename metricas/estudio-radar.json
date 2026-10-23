@@ -1,59 +1,37 @@
 {
- "atualizado_em": "2026-10-22T14:25:04-03:00",
+ "atualizado_em": "2026-10-23T06:26:58-03:00",
  "em_alta": [
   {
-   "assunto": "menopausa-terapia-hormonal",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 80,
+   "assunto": "depressao-circadiana",
+   "tema": "ciencia",
+   "canais": 4,
+   "nota_max": 66,
    "titulos": [
-    "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
-    "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
-    "Existe idade ideal para começar a terapia hormonal da menopausa? Veja o que dizem os especialistas"
+    "Australian researchers identify new subtype of depression linked to body clock disruptions",
+    "Pesquisa identifica novo subtipo de depressão ligado ao relógio biológico",
+    "Sleep Habits May Indicate a Type of Depression, Researchers Say"
    ]
   },
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 72,
+   "nota_max": 68,
    "titulos": [
-    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
     "People are taking an unapproved weight-loss drug. AI found something surprising",
-    "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags"
+    "EXCLUSIVE: Heineken document reveals worries over weight-loss drugs and beer sales",
+    "Give more people weight-loss jabs on the NHS, say MPs"
    ]
   },
   {
-   "assunto": "depressao-circadiana",
+   "assunto": "vacina-cancer-melanoma",
    "tema": "ciencia",
    "canais": 3,
-   "nota_max": 66,
+   "nota_max": 32,
    "titulos": [
-    "Australian researchers identify new subtype of depression linked to body clock disruptions",
-    "Pesquisa identifica novo subtipo de depressão ligado ao relógio biológico",
-    "New Type of Depression Linked to Disrupted Sleep and Out-of-Sync Body Clocks"
-   ]
-  },
-  {
-   "assunto": "ia-selfie-saude",
-   "tema": "tecnologia",
-   "canais": 3,
-   "nota_max": 52,
-   "titulos": [
-    "Can a simple photo of your face reveal how ill you are?",
-    "New AI tool can predict cancer survival by a single patient selfie, study suggests",
-    "Could AI Use a Simple Photo of Your Face to Reveal Clues About Your Health?"
-   ]
-  },
-  {
-   "assunto": "carlos-alberto-nobrega-saude",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 22,
-   "titulos": [
-    "Saiba estado de saúde de Carlos Alberto de Nóbrega após cirurgia no coração",
-    "Vírus que internou Carlos Alberto de Nóbrega causa virose leve na maioria dos casos, mas pode alterar o ritmo do coração; entenda",
-    "Carlos Alberto de Nóbrega tem estado de saúde atualizado por esposa após cirurgia"
+    "First personalised cancer vaccine cuts risk of disease returning in major trial",
+    "Melanoma Vaccine Ushers in New Hope for Cancer Patients",
+    "Experimental mRNA vaccine cuts risk melanoma returns by 42%"
    ]
   }
  ],
@@ -101,13 +79,6 @@
    "gancho": "Seu medo da reposição hormonal pode estar maior que o risco."
   },
   {
-   "titulo": "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
-   "canal": "Folha Equilíbrio",
-   "assunto": "menopausa-terapia-hormonal",
-   "nota": 80,
-   "gancho": "Na menopausa, o medo do hormônio costuma ser maior que o risco."
-  },
-  {
    "titulo": "The Return of the Women-Only Gym",
    "canal": "NYT Well",
    "assunto": "academia-feminina",
@@ -127,6 +98,13 @@
    "assunto": "frio-calor-recuperacao",
    "nota": 80,
    "gancho": "Gelo depois do treino pode atrapalhar o músculo que você quer ganhar."
+  },
+  {
+   "titulo": "Millions take fish oil for brain health. A two-year study found no benefit",
+   "canal": "ScienceDaily",
+   "assunto": "omega3-cerebro",
+   "nota": 78,
+   "gancho": "Dois anos de óleo de peixe. Nenhum ganho de memória."
   }
  ]
 }
