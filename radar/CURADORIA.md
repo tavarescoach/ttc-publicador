@@ -10,8 +10,13 @@ Roda 2x por dia (~6h17 e ~14h17, Brasília), 30 min depois da coleta. Ninguém e
 - `diretrizes/marca.md` — marca, tom, público, oferta.
 - `radar/perfil-interesse.json` — o que o radar aprendeu sobre o gosto do Luan (assuntos, termos, ângulos, o que evitar).
   Notícias que batem com ele ganham pontos (até +15), as que batem com `evitar` perdem.
-- Itens com `"referencia": true` (canal "Sua referência") são notícias que o Luan colou no botão "Ensinar o radar",
-  às vezes com `nota_luan` (o que chamou a atenção dele). Veja "Referências do Luan" abaixo.
+- Itens com `"referencia": true` (canal "Sua referência") são links que o Luan colou no botão "Ensinar o radar",
+  às vezes com `nota_luan` (o que chamou a atenção dele). O campo `tipo` diz o que é: `noticia`, `instagram_reels` ou
+  `instagram_perfil`. Veja "Referências do Luan" e "Instagram" abaixo.
+- `radar/palavras-chave.json` — palavras que o Luan digitou no topo do Radar. Elas já trouxeram notícias na coleta (itens com
+  `palavra`) e são o motor principal da busca de reels.
+- Curadorias anteriores (`radar/curadoria/*.json`): notícia com o mesmo id já avaliada nas últimas 24 h mantém nota, motivo,
+  pitch e cluster (recalcule só `em_alta`). Avalie de verdade só o que é novo.
 
 ## Para cada notícia
 - `nota` 0–100: encaixe com o público (executivo 30–45 e mulher 30–50 da Zona Sul do Rio), potencial de conteúdo que gere valor
@@ -43,6 +48,41 @@ Para cada item com `"referencia": true` cujo id ainda não está em `referencias
 4. Dê nota, motivo e pitch à própria referência como a qualquer notícia; no `motivo`, diga o que o radar aprendeu com ela.
 Se houver fontes que publicam muito sobre os assuntos das referências e ainda não estão no radar, cite-as no fim da sua
 resposta final (não adicione sozinho).
+
+Referência do Instagram (`tipo` instagram_reels ou instagram_perfil): o título e o resumo podem vir pobres (o Instagram
+fecha a página). Tente WebFetch no link; se não abrir, busque o perfil ou o reels com WebSearch e use a `nota_luan`. Aprenda
+o FORMATO (como o vídeo é montado), a ESTRUTURA DO GANCHO, o ritmo, o uso de texto na tela, o tom e o tipo de perfil, e
+atualize a seção `instagram` de `radar/perfil-interesse.json`: `resumo` (2–3 frases, em "você"), `formatos` (até 10, nomes
+do catálogo abaixo ou novos quando fizer sentido), `ganchos` (até 8 estruturas de abertura, sem copiar frase de ninguém),
+`perfis` (até 15 @, os de referência e os parecidos que você achar), e `aprendido[id]` como nas notícias.
+
+## Instagram (reels)
+Objetivo: achar reels que estão funcionando no nicho e dizer como o @tavarescoach faz a versão dele, de preferência
+amarrada a uma notícia em alta da coleta.
+
+1. Busca (até ~10 WebSearch por rodada): para cada palavra de `radar/palavras-chave.json` (as mais recentes primeiro),
+   procure `site:instagram.com/reel <palavra>` e variações em português e inglês; depois os perfis de `instagram.perfis`
+   (`site:instagram.com/<perfil> reel`). Sem palavras nem perfis, use os `assuntos` do perfil de interesse.
+   Não use raspadores nem serviços que entram no Instagram: só a busca e o WebFetch do próprio link.
+2. Escolha até 8 reels por rodada: do nicho (treino, saúde, nutrição, sono, longevidade, medicina, revistas), recentes
+   (de preferência últimos 30 dias), com formato que o Luan consegue gravar sozinho (câmera, academia, tela verde, sem
+   produção pesada). Sinal de desempenho (curtidas, visualizações ou comentários visíveis no resultado) pesa a favor;
+   nunca invente número. Não repita reels sugeridos nos últimos 7 dias.
+3. Item na curadoria, junto das notícias:
+   `id` "ig-" + 14 primeiros caracteres do sha1 do link sem parâmetros, `canal` "Instagram", `titulo` (o que o reels
+   diz, em português, até ~90 caracteres), `link`, `imagem` (null se não tiver), `publicado_em` (data do reels; se não
+   souber, o `gerado_em`), `tema`, `nota`, `motivo` (por que serve e qual sinal de desempenho você viu), `publico`,
+   `cluster` (se o assunto bate com uma notícia da coleta, use O MESMO cluster: o Instagram conta como mais um canal
+   no "em alta"), `em_alta`, e `pitch` (sempre, mesmo abaixo de 50):
+   {"perfil": "@quem publicou",
+    "formato": "mito x método | erro comum | notícia com tela verde | talking head com dado | lista (3 sinais/3 erros) |
+                pergunta do aluno | POV | bastidor de aula | tutorial de exercício | antes e depois de rotina",
+    "estrutura": "o reels tempo a tempo (0–2 s gancho · … · CTA), como o Luan deve gravar a versão dele",
+    "por_que": "1 frase: o mecanismo que fez funcionar (tensão, número, identificação, contradição)",
+    "gancho": "a versão do @tavarescoach, palavras SUAS, até ~12 palavras, no tom da marca",
+    "angulo": "ângulo da marca", "noticia": "título da notícia da coleta que combina, ou null",
+    "ponte": "como liga ao personal / Avaliação Estratégica"}
+   `nota` 0–100: encaixe com o público e a marca, formato reproduzível, sinal de desempenho e combinação com notícia em alta.
 
 ## Saída
 1. Escreva `radar/curadoria/AAAA-MM-DD-HH.json` (horário de Brasília): {"gerado_em": "...", "itens": [ {id, canal, titulo, link,

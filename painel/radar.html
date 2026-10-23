@@ -179,6 +179,18 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
 .perfil ul{margin:0 0 0 18px;padding:0;font-size:13px;color:#2B3446;line-height:1.5}
 .ref .tx a{text-decoration:none}.ref .tx a:hover{text-decoration:underline}
 .ref .nota-l{display:block;font-size:12px;color:var(--apoio);font-style:italic;margin-top:2px;white-space:normal}
+/* ---------- palavras-chave ---------- */
+.kw{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:14px;background:var(--sup);border:1px solid var(--linha);border-radius:var(--raio);padding:9px 10px 9px 14px;box-shadow:var(--sombra)}
+.kw>b{font-size:12px;color:var(--apoio);font-weight:600;margin-right:4px}
+.kw .pk{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:600;padding:5px 6px 5px 11px;border-radius:999px;background:#EDEFF3}
+.kw .pk.pend{background:var(--warn-claro);color:var(--warn)}
+.kw .pk button{width:18px;height:18px;border-radius:999px;color:var(--apoio);font-size:13px;line-height:1}
+.kw .pk button:hover{background:var(--sup);color:var(--red)}
+.kw form{flex:1;min-width:180px}
+.kw input{border:0;padding:6px 4px;background:transparent}
+.kw input:focus{outline:0}
+.kw small{font-size:11.5px;color:var(--fraco);width:100%;padding-top:2px}
+.th.ig{background-color:#0E1626;color:#fff}
 .centro{min-height:60vh;display:grid;place-items:center;text-align:center;color:var(--apoio);line-height:1.7}
 
 @media (max-width:1100px){.placar{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -234,12 +246,12 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
 <div class="fundo hide" id="mEnsinar">
   <div class="caixa" role="dialog" aria-modal="true" aria-labelledby="enTitulo">
     <div class="caixa-top"><h2 id="enTitulo">Ensinar o radar</h2><button class="fechar" type="button" data-fechar-ensinar aria-label="Fechar">×</button></div>
-    <p>Cole o link de uma notícia que você achou interessante e, se quiser, diga o que chamou sua atenção. O Claude lê a matéria, entende os termos, os assuntos e o jeito de pensar que conversam com o seu nicho e o seu tom, e o radar passa a buscar e pontuar notícias parecidas. Entra na próxima coleta (5h47 e 13h47).</p>
+    <p>Cole o link de uma notícia, de um perfil ou de um reels do Instagram e diga o que chamou sua atenção. Na notícia, o Claude aprende assuntos, termos e jeito de pensar. No Instagram, aprende formato, gancho, edição e estilo, e passa a procurar reels parecidos. Entra na próxima coleta (5h47 e 13h47).</p>
     <form id="formRef" autocomplete="off" class="nova-ref">
-      <div><label for="rUrl">Link da notícia</label><input id="rUrl" type="text" inputmode="url" autocapitalize="off" spellcheck="false" required placeholder="https://..."></div>
+      <div><label for="rUrl">Link da notícia, do perfil ou do reels <span id="rTipo" style="color:var(--fraco)"></span></label><input id="rUrl" type="text" inputmode="url" autocapitalize="off" spellcheck="false" required placeholder="https://..."></div>
       <div><label for="rNota">O que chamou sua atenção? <span style="color:var(--fraco)">(opcional, ajuda muito)</span></label>
-        <textarea id="rNota" rows="2" maxlength="600" placeholder="Ex.: o jeito de falar de envelhecimento sem drama; o dado do estudo; dá um ótimo mito x método"></textarea></div>
-      <div class="linha-btn"><button class="btn escuro" type="submit" id="rBtn">Ensinar com esta notícia</button></div>
+        <textarea id="rNota" rows="2" maxlength="600" placeholder="Ex.: o gancho nos 2 primeiros segundos; a edição com texto na tela; o dado do estudo; dá um ótimo mito x método"></textarea></div>
+      <div class="linha-btn"><button class="btn escuro" type="submit" id="rBtn">Ensinar o radar</button></div>
     </form>
     <div class="msg" id="rMsg" role="status"></div>
     <div id="enPerfil"></div>
@@ -258,13 +270,14 @@ const sb = DEMO ? null : supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let itens = [];
 let fontes = {estado:null, eventos:[], carregado:false};
-let ui = {vista:"melhores", tema:"todos", publico:"todos", frescor:72, status:"novos", alta:false, min:0};
+let ui = {fonte:"tudo", vista:"melhores", tema:"todos", publico:"todos", frescor:72, status:"novos", alta:false, min:0};
 try { ui = {...ui, ...JSON.parse(localStorage.getItem("ltRadar") || "{}")}; } catch(_){}
 const salvarUi = () => { try { localStorage.setItem("ltRadar", JSON.stringify(ui)); } catch(_){} };
 
 const TEMAS = [["todos","Todos"],["saude","Saúde"],["ciencia","Ciência"],["tecnologia","Tecnologia"],["esporte","Esporte"],["comportamento","Comportamento"],["cultura","Cultura"],["negocio","Negócio"]];
 const PUBS = [["todos","Todos"],["executivo","Executivo 30–45"],["mulher","Mulher 30–50"]];
 const FRESC = [[24,"24 h"],[72,"3 dias"],[168,"7 dias"]];
+const FONTES = [["tudo","Tudo"],["noticias","Notícias"],["instagram","Instagram"]];
 const STATUS = [["novos","Novos"],["salvo","Salvos"],["virou_pauta","Viraram pauta"],["descartado","Descartados"]];
 
 function corNota(n){ return n == null ? "var(--fraco)" : n >= 75 ? "var(--ok)" : n >= 50 ? "var(--warn)" : "var(--fraco)"; }
@@ -275,11 +288,14 @@ function ha(iso){
   return m < 60 ? `há ${m} min` : m < 1440 ? `há ${Math.round(m/60)} h` : `há ${Math.round(m/1440)} d`;
 }
 function iniciais(c){ return String(c).replace(/[^A-Za-zÀ-ú0-9 ]/g,"").split(" ").filter(Boolean).slice(0,2).map(p => p[0]).join("").toUpperCase() || "•"; }
+const isIG = i => /instagram\.com/i.test(i.link || "");
 const novo = i => ["novo", null, undefined].includes(i.status);
 const recente = i => !i.publicado_em || Date.now() - new Date(i.publicado_em) <= ui.frescor * 3600e3;
 
 function passa(i){
   if (i.calendario) return false;
+  if (ui.fonte === "noticias" && isIG(i)) return false;
+  if (ui.fonte === "instagram" && !isIG(i)) return false;
   if (ui.status === "novos" ? !novo(i) : i.status !== ui.status) return false;
   if (ui.tema !== "todos" && i.tema !== ui.tema) return false;
   if (ui.publico !== "todos" && !(i.publico || "").includes(ui.publico) && i.publico !== "ambos") return false;
@@ -289,26 +305,30 @@ function passa(i){
 }
 
 function cardNoticia(i){
-  const p = i.pitch || null;
+  const p = i.pitch || null, ig = isIG(i);
+  const linha = (rot, v, cls="") => v ? `<div><dt>${rot}</dt><dd class="${cls}">${esc(v)}</dd></div>` : "";
   return `<article class="nt ${i.status === "descartado" ? "desc" : ""}">
-    <div class="th" ${i.imagem ? `style="background-image:url('${esc(i.imagem)}')"` : ""}>${i.imagem ? "" : esc(i.canal)}
+    <div class="th ${ig && !i.imagem ? "ig" : ""}" ${i.imagem ? `style="background-image:url('${esc(i.imagem)}')"` : ""}>${i.imagem ? "" : esc(ig ? (p?.perfil || "Instagram") : i.canal)}
       ${i.em_alta ? `<span class="alta">EM ALTA</span>` : ""}
       <span class="nota" style="color:${corNota(i.nota)}">${i.nota == null ? "—" : i.nota}</span>
       <span class="canal">${esc(i.canal)}</span></div>
     <div class="cp">
       <h3>${i.link ? `<a href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.titulo)}</a>` : esc(i.titulo)}</h3>
-      <div class="meta">${i.tema ? `<span class="tag">${esc(i.tema)}</span>` : ""}${i.publico ? `<span class="tag">${esc(i.publico)}</span>` : ""}<span>${esc(ha(i.publicado_em))}</span></div>
+      <div class="meta">${ig ? `<span class="tag red">instagram${p?.perfil ? " · " + esc(p.perfil) : ""}</span>` : ""}${i.tema ? `<span class="tag">${esc(i.tema)}</span>` : ""}${i.publico ? `<span class="tag">${esc(i.publico)}</span>` : ""}<span>${esc(ha(i.publicado_em))}</span></div>
       ${i.motivo ? `<div class="motivo">${esc(i.motivo)}</div>` : (i.curado ? "" : `<div class="motivo">Aguardando a curadoria do Claude (6h17 e 14h17).</div>`)}
       ${p ? `<dl class="pitch">
-        <div><dt>Gancho</dt><dd class="gancho">${esc(p.gancho)}</dd></div>
-        <div><dt>Ângulo</dt><dd>${esc(p.angulo)}</dd></div>
-        <div><dt>Formato</dt><dd>${esc(p.formato)}</dd></div>
-        <div><dt>Ponte para a venda</dt><dd>${esc(p.ponte)}</dd></div></dl>` : ""}
+        ${linha(ig ? "Gancho para o @tavarescoach" : "Gancho", p.gancho, "gancho")}
+        ${linha("Formato", p.formato)}
+        ${linha("Estrutura do reels", p.estrutura)}
+        ${linha("Por que funcionou", p.por_que)}
+        ${linha("Ângulo", p.angulo)}
+        ${linha("Notícia que combina", p.noticia)}
+        ${linha("Ponte para a venda", p.ponte)}</dl>` : ""}
       <div class="acoes">
         <a class="mini go" href="${ESTUDIO}#radar-${esc(i.id)}" target="_blank" rel="noopener" data-pauta="${esc(i.id)}">Criar a partir desta ↗</a>
         <button class="mini ${i.status === "salvo" ? "on" : ""}" data-st="${esc(i.id)}" data-v="${i.status === "salvo" ? "novo" : "salvo"}">${i.status === "salvo" ? "Salvo ✓" : "Salvar"}</button>
         <button class="mini x" data-st="${esc(i.id)}" data-v="${i.status === "descartado" ? "novo" : "descartado"}">${i.status === "descartado" ? "Restaurar" : "Descartar"}</button>
-        ${i.link ? `<a class="mini" href="${esc(i.link)}" target="_blank" rel="noopener">Ler matéria ↗</a>` : ""}
+        ${i.link ? `<a class="mini" href="${esc(i.link)}" target="_blank" rel="noopener">${ig ? "Ver no Instagram ↗" : "Ler matéria ↗"}</a>` : ""}
       </div>
     </div></article>`;
 }
@@ -319,7 +339,7 @@ function cardAdd(){
     Adicionar nova fonte<small>Cole o link de um site e ele entra no radar</small></button>
   <button class="add-fonte" type="button" data-ensinar>
     <span class="mais-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></svg></span>
-    Ensinar o radar<small>Cole uma notícia que você achou interessante</small></button>`;
+    Ensinar o radar<small>Cole uma notícia, um perfil ou um reels</small></button>`;
 }
 
 function chips(nome, lista){ return lista.map(([k,t]) => `<button class="chip ${String(ui[nome]) === String(k) ? "on" : ""}" data-f="${nome}" data-v="${k}">${t}</button>`).join(""); }
@@ -344,12 +364,13 @@ function render(){
   const lista = itens.filter(passa).sort((a,b) => (b.nota ?? -1) - (a.nota ?? -1) || (b.publicado_em||"").localeCompare(a.publicado_em||""));
   const ult = itens.reduce((m,i) => (i.coletado_em || "") > m ? i.coletado_em : m, "");
   const nts = itens.filter(i => !i.calendario);
-  $("atual").textContent = ult ? `Atualizado ${ha(ult)} · ${nts.length} notícias de ${new Set(nts.map(i => i.canal)).size} canais` : "";
+  const igs = nts.filter(isIG).length, nws = nts.length - igs;
+  $("atual").textContent = ult ? `Atualizado ${ha(ult)} · ${nws} notícias de ${new Set(nts.filter(i => !isIG(i)).map(i => i.canal)).size} canais${igs ? ` · ${igs} do Instagram` : ""}` : "";
 
   let corpo = "";
   if (ui.vista === "melhores"){
     corpo = lista.length ? `<div class="grade">${lista.slice(0, 60).map(cardNoticia).join("")}${cardAdd()}</div>`
-      : `<div class="vazio">Nada com esses filtros. Tente ampliar o período ou trocar o tema.</div><div class="grade" style="margin-top:14px">${cardAdd()}</div>`;
+      : `<div class="vazio">${ui.fonte === "instagram" && !itens.some(isIG) ? "Os reels aparecem depois da curadoria (6h17 e 14h17), buscados pelas suas palavras-chave e pelas referências do Instagram." : "Nada com esses filtros. Tente ampliar o período ou trocar o tema."}</div><div class="grade" style="margin-top:14px">${cardAdd()}</div>`;
   } else {
     const por = {};
     for (const i of lista) (por[i.canal] ||= []).push(i);
@@ -368,7 +389,9 @@ function render(){
   $("app").innerHTML = `
     ${cal.length ? `<div class="rot">Calendário: datas chegando</div>
       <div class="cal">${cal.map(c => `<button class="cdia" data-abrir="${esc(c.id)}"><small>${esc(ha(c.publicado_em))} · nota ${c.nota ?? "—"}</small><b>${esc(c.titulo)}</b><span>${esc(c.pitch?.gancho || "")}</span></button>`).join("")}</div>` : ""}
+    ${blocoPalavras()}
     <div class="barra">
+      <div class="seg" role="group" aria-label="Origem">${FONTES.map(([k,t]) => `<button class="${ui.fonte === k ? "on" : ""}" data-fonte-v="${k}">${t}</button>`).join("")}</div>
       <div class="seg" role="group" aria-label="Visualização"><button class="${ui.vista === "melhores" ? "on" : ""}" data-vista="melhores">Melhores do dia</button><button class="${ui.vista === "canais" ? "on" : ""}" data-vista="canais">Por canal</button></div>
       <div class="fg"><span>Tema</span>${chips("tema", TEMAS)}</div>
       <div class="fg"><span>Público</span>${chips("publico", PUBS)}</div>
@@ -387,6 +410,36 @@ async function mudarStatus(id, status){
 function abrir(id){
   const i = itens.find(x => x.id === id); if (!i) return;
   $("modal").innerHTML = cardNoticia(i); $("modal").classList.remove("hide");
+}
+
+/* ---------- palavras-chave (gravadas como eventos na pasta das referências) ---------- */
+function listaPalavras(){
+  const mapa = new Map((refs.estado?.palavras || []).map(p => [p.termo.toLowerCase(), {...p}]));
+  for (const ev of refs.eventos){
+    if (ev.tipo !== "palavra" || (refs.estado?.ultimo_evento && ev._arquivo <= refs.estado.ultimo_evento)) continue;
+    const k = (ev.termo || "").toLowerCase();
+    if (ev.acao === "adicionar") mapa.set(k, {termo:ev.termo, pendente:true});
+    if (ev.acao === "remover") mapa.delete(k);
+  }
+  return [...mapa.values()];
+}
+function blocoPalavras(){
+  const l = listaPalavras();
+  return `<div class="kw"><b>Palavras-chave</b>
+    ${l.map(p => `<span class="pk ${p.pendente ? "pend" : ""}" title="${p.pendente ? "Entra na próxima coleta" : ""}">${esc(p.termo)}<button type="button" data-pal-rem="${esc(p.termo)}" aria-label="Remover ${esc(p.termo)}">×</button></span>`).join("")}
+    <form id="formPal" autocomplete="off"><input id="pIn" maxlength="60" placeholder="${l.length ? "+ adicionar" : "Ex.: treino de força, menopausa, sono, GLP-1"}" aria-label="Nova palavra-chave"></form>
+    ${l.length ? "" : `<small>Cada palavra busca notícias e reels do Instagram na próxima coleta (5h47 e 13h47).</small>`}</div>`;
+}
+async function adicionarPalavra(termo){
+  termo = termo.replace(/\s+/g, " ").trim().slice(0, 60);
+  if (termo.length < 3) return;
+  if (listaPalavras().some(p => p.termo.toLowerCase() === termo.toLowerCase())) return;
+  try { await gravarRef({acao:"adicionar", tipo:"palavra", termo}); render(); setTimeout(() => $("pIn")?.focus(), 0); }
+  catch(e){ alert("Não salvou: " + e.message); }
+}
+async function removerPalavra(termo){
+  try { await gravarRef({acao:"remover", tipo:"palavra", termo}); render(); }
+  catch(e){ alert("Não salvou: " + e.message); }
 }
 
 /* ---------- fontes ---------- */
@@ -501,12 +554,21 @@ let refs = {estado:null, perfil:null, eventos:[], carregado:false};
 function listaRefs(){
   const mapa = new Map((refs.estado?.referencias || []).map(r => [r.url, {...r}]));
   for (const ev of refs.eventos){
-    if (refs.estado?.ultimo_evento && ev._arquivo <= refs.estado.ultimo_evento) continue;
+    if (ev.tipo === "palavra" || (refs.estado?.ultimo_evento && ev._arquivo <= refs.estado.ultimo_evento)) continue;
     if (ev.acao === "adicionar" && !mapa.has(ev.url)) mapa.set(ev.url, {url:ev.url, nota_luan:ev.nota || "", adicionado_em:ev.quando, pendente:true});
     if (ev.acao === "remover") mapa.delete(ev.url);
   }
   return [...mapa.values()].sort((a,b) => (b.adicionado_em || "").localeCompare(a.adicionado_em || ""));
 }
+function tipoLink(url){
+  try {
+    const u = new URL(/^https?:\/\//i.test(url) ? url : "https://" + url);
+    if (!/(^|\.)instagram\.com$/i.test(u.hostname)) return "noticia";
+    const p = u.pathname.split("/").filter(Boolean);
+    return (["reel","reels","p","tv"].includes(p[0]) || ["reel","p"].includes(p[1])) ? "instagram_reels" : "instagram_perfil";
+  } catch(_){ return ""; }
+}
+const NOME_TIPO = {noticia:"notícia", instagram_reels:"reels", instagram_perfil:"perfil do Instagram"};
 function renderRefs(){
   const l = listaRefs();
   $("refCont").textContent = refs.carregado ? l.length : "—";
@@ -520,6 +582,10 @@ function renderRefs(){
       ${(pf.termos?.pt?.length || pf.termos?.en?.length) ? `<h4>Termos que o radar passou a buscar</h4>${chips([...(pf.termos.pt || []), ...(pf.termos.en || [])].slice(0, 40))}` : ""}
       ${pf.angulos?.length ? `<h4>Ângulos e jeito de pensar</h4><ul>${pf.angulos.map(a => `<li>${esc(a)}</li>`).join("")}</ul>` : ""}
       ${pf.evitar?.length ? `<h4>O que não te interessa</h4>${chips(pf.evitar, "red")}` : ""}
+      ${pf.instagram?.resumo ? `<h4>No Instagram</h4><p style="font-size:13px;color:#2B3446;line-height:1.5">${esc(pf.instagram.resumo)}</p>` : ""}
+      ${pf.instagram?.formatos?.length ? `<h4>Formatos de reels que conversam com a marca</h4>${chips(pf.instagram.formatos)}` : ""}
+      ${pf.instagram?.ganchos?.length ? `<h4>Estruturas de gancho</h4><ul>${pf.instagram.ganchos.map(a => `<li>${esc(a)}</li>`).join("")}</ul>` : ""}
+      ${pf.instagram?.perfis?.length ? `<h4>Perfis de referência</h4>${chips(pf.instagram.perfis)}` : ""}
       ${pf.atualizado_em ? `<div class="msg">Atualizado ${esc(ha(pf.atualizado_em))} · ${pf.referencias_analisadas?.length || 0} referência(s) analisada(s)</div>` : ""}
     </div>` : (l.length ? `<div class="perfil"><h3>O que o radar já entendeu de você</h3><p>O Claude analisa as referências na curadoria seguinte à coleta (6h17 e 14h17). O resumo aparece aqui.</p></div>` : "");
   const analisadas = new Set(pf?.referencias_analisadas || []);
@@ -527,16 +593,17 @@ function renderRefs(){
       const st = r.pendente ? `<span class="tag warn">entra na próxima coleta</span>` : analisadas.has(r.id) ? `<span class="tag ok">analisada</span>` : `<span class="tag">aguardando a curadoria</span>`;
       return `<div class="ft ref"><span class="ini">${esc(iniciais(r.site || dominio(r.url)))}</span>
         <div class="tx"><b>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.titulo || r.url)}</a>` : esc(r.titulo)}</b>
-          <small>${esc(r.site || dominio(r.url))}${r.adicionado_em ? " · " + esc(ha(r.adicionado_em)) : ""}</small>
+          <small>${esc(NOME_TIPO[r.tipo || tipoLink(r.url)] || "")} · ${esc(r.site || dominio(r.url))}${r.adicionado_em ? " · " + esc(ha(r.adicionado_em)) : ""}</small>
           ${r.nota_luan ? `<span class="nota-l">“${esc(r.nota_luan)}”</span>` : ""}
           ${(r.aprendido || pf?.aprendido?.[r.id]) ? `<span class="nota-l" style="font-style:normal">Aprendido: ${esc(r.aprendido || pf.aprendido[r.id])}</span>` : ""}
           <div class="meta">${st}</div></div>
         <button class="mini x" data-ref-rem="${esc(r.url)}">Remover</button></div>`; }).join("")}</div>`
-    : `<div class="ft-grupo"><div class="vazio">Nenhuma referência ainda. Comece por uma notícia que você gostaria de ter transformado em conteúdo.</div></div>`;
+    : `<div class="ft-grupo"><div class="vazio">Nenhuma referência ainda. Comece por uma notícia ou um reels que você gostaria de ter feito.</div></div>`;
 }
 async function carregarRefs(){
-  if (DEMO){ refs = {carregado:true, eventos:[], estado:{referencias:[{id:"r1", url:"https://www.nytimes.com/2026/10/10/well/strength.html", titulo:"Strength Training Is the New Retirement Plan", site:"NYT", adicionado_em:new Date(Date.now()-86400e3).toISOString(), nota_luan:"o jeito de falar de força como investimento", aprendido:"força como patrimônio; linguagem de finanças para falar de corpo"}]},
-    perfil:{atualizado_em:new Date(Date.now()-3600e3).toISOString(), referencias_analisadas:["r1"], resumo:"Você se interessa por notícias que tratam o corpo como patrimônio e decisão estratégica, com dado concreto e sem tom de culpa.", assuntos:["força como investimento","longevidade com autonomia","rotina do executivo"], termos:{pt:["longevidade","massa muscular","autonomia"], en:["healthspan","strength training","muscle mass"]}, angulos:["Linguagem de negócios para falar de corpo","Dado de estudo como gancho, sem alarmismo"], evitar:["dieta milagrosa","fofoca sem ponte"]}}; return renderRefs(); }
+  if (DEMO){ refs = {carregado:true, eventos:[], estado:{palavras:[{termo:"treino de força"},{termo:"menopausa"},{termo:"sono"}], referencias:[{id:"r2", url:"https://www.instagram.com/reel/DEMO123/", tipo:"instagram_reels", titulo:"Reels @perfilexemplo", site:"Instagram", adicionado_em:new Date(Date.now()-7200e3).toISOString(), nota_luan:"gancho com dado nos 2 primeiros segundos e texto grande na tela"},{id:"r1", url:"https://www.nytimes.com/2026/10/10/well/strength.html", titulo:"Strength Training Is the New Retirement Plan", site:"NYT", adicionado_em:new Date(Date.now()-86400e3).toISOString(), nota_luan:"o jeito de falar de força como investimento", aprendido:"força como patrimônio; linguagem de finanças para falar de corpo"}]},
+    perfil:{atualizado_em:new Date(Date.now()-3600e3).toISOString(), referencias_analisadas:["r1"], resumo:"Você se interessa por notícias que tratam o corpo como patrimônio e decisão estratégica, com dado concreto e sem tom de culpa.", assuntos:["força como investimento","longevidade com autonomia","rotina do executivo"], termos:{pt:["longevidade","massa muscular","autonomia"], en:["healthspan","strength training","muscle mass"]}, angulos:["Linguagem de negócios para falar de corpo","Dado de estudo como gancho, sem alarmismo"], evitar:["dieta milagrosa","fofoca sem ponte"],
+      instagram:{resumo:"Você gosta de reels curtos com especialista falando direto para a câmera, dado na tela nos primeiros segundos e corte seco.", formatos:["mito x método","erro comum","notícia com tela verde"], ganchos:["Número inesperado + consequência para a pessoa","Crença comum dita e corrigida em uma frase"], perfis:["@perfilexemplo"]}}}; renderRefs(); if (itens.length) render(); return; }
   try {
     const baixarJson = c => sb.storage.from("materiais").download(c).then(r => r.data ? r.data.text().then(JSON.parse) : null).catch(() => null);
     const [est, perfil, lista] = await Promise.all([baixarJson("radar/referencias-estado.json"), baixarJson("radar/perfil.json"),
@@ -546,7 +613,7 @@ async function carregarRefs(){
     const evs = await Promise.all(pend.map(o => baixarJson("radar/referencias/" + o.name).then(e => e ? {...e, _arquivo:o.name} : null)));
     refs = {estado:est, perfil, eventos:evs.filter(Boolean).sort((a,b) => a._arquivo.localeCompare(b._arquivo)), carregado:true};
   } catch(e){ refs = {estado:null, perfil:null, eventos:[], carregado:true}; $("rMsg").className = "msg erro"; $("rMsg").textContent = "Não consegui ler as referências: " + e.message; }
-  renderRefs();
+  renderRefs(); if (itens.length) render();
 }
 async function gravarRef(ev){
   ev.quando = new Date().toISOString();
@@ -555,7 +622,7 @@ async function gravarRef(ev){
     const {error} = await sb.storage.from("materiais").upload("radar/referencias/" + nome, new Blob([JSON.stringify(ev)], {type:"application/json"}), {contentType:"application/json"});
     if (error) throw error;
   }
-  refs.eventos.push({...ev, _arquivo:nome}); renderRefs();
+  refs.eventos.push({...ev, _arquivo:nome}); renderRefs(); if (ev.tipo === "palavra") render();
 }
 async function adicionarRef(ev){
   ev.preventDefault();
@@ -563,9 +630,9 @@ async function adicionarRef(ev){
   let url = $("rUrl").value.trim();
   if (url && !/^https?:\/\//i.test(url)) url = "https://" + url;
   try { const u = new URL(url); if (!u.hostname.includes(".")) throw 0; } catch(_){ msg.className = "msg erro"; msg.textContent = "Esse link não parece válido."; return; }
-  if (listaRefs().some(r => r.url === url)){ msg.className = "msg erro"; msg.textContent = "Essa notícia já está nas suas referências."; return; }
+  if (listaRefs().some(r => r.url === url)){ msg.className = "msg erro"; msg.textContent = "Esse link já está nas suas referências."; return; }
   $("rBtn").disabled = true; msg.textContent = "Salvando…";
-  try { await gravarRef({acao:"adicionar", url, nota:$("rNota").value.trim().slice(0, 600)}); $("formRef").reset(); msg.className = "msg ok"; msg.textContent = "Referência salva. O Claude analisa depois da próxima coleta."; }
+  try { await gravarRef({acao:"adicionar", url, nota:$("rNota").value.trim().slice(0, 600)}); $("formRef").reset(); msg.className = "msg ok"; msg.textContent = `Referência salva (${NOME_TIPO[tipoLink(url)] || "link"}). O Claude analisa depois da próxima coleta.`; $("rTipo").textContent = ""; }
   catch(e){ msg.className = "msg erro"; msg.textContent = "Não salvou: " + e.message; }
   $("rBtn").disabled = false;
 }
@@ -586,6 +653,8 @@ document.addEventListener("click", ev => {
   if (t.closest("#btnEnsinar") || t.closest("[data-ensinar]")) return abrirEnsinar();
   if (t.closest("[data-fechar-ensinar]") || t === $("mEnsinar")) return $("mEnsinar").classList.add("hide");
   const rr = t.closest("[data-ref-rem]"); if (rr) return removerRef(rr.dataset.refRem);
+  const pr = t.closest("[data-pal-rem]"); if (pr) return removerPalavra(pr.dataset.palRem);
+  const fv = t.closest("[data-fonte-v]"); if (fv){ ui.fonte = fv.dataset.fonteV; salvarUi(); return render(); }
   const fo = t.closest("[data-fonte]"); if (fo) return acaoFonte(fo.dataset.fonte, fo.dataset.canal);
   const k = t.closest("[data-kpi]");
   if (k){
@@ -608,6 +677,8 @@ document.addEventListener("click", ev => {
 document.addEventListener("keydown", ev => { if (ev.key === "Escape") fecharTudo(); });
 $("formFonte").addEventListener("submit", adicionarFonte);
 $("formRef").addEventListener("submit", adicionarRef);
+$("rUrl").addEventListener("input", () => { const t = tipoLink($("rUrl").value.trim()); $("rTipo").textContent = $("rUrl").value.trim() && t ? `· ${NOME_TIPO[t]}` : ""; });
+document.addEventListener("submit", ev => { if (ev.target.id === "formPal"){ ev.preventDefault(); adicionarPalavra($("pIn").value); } });
 
 async function carregar(){
   if (DEMO){ itens = demo(); render(); carregarRefs(); return carregarFontes(); }
@@ -621,7 +692,7 @@ async function carregar(){
   if (!refs.carregado) carregarRefs();
 }
 carregar();
-setInterval(() => { if (document.visibilityState === "visible" && $("modal").classList.contains("hide") && $("mFontes").classList.contains("hide") && $("mEnsinar").classList.contains("hide")) carregar(); }, 5*60000);
+setInterval(() => { if (document.visibilityState === "visible" && $("modal").classList.contains("hide") && $("mFontes").classList.contains("hide") && $("mEnsinar").classList.contains("hide") && document.activeElement?.id !== "pIn") carregar(); }, 5*60000);
 
 function demo(){
   const h = new Date().toISOString(), on = new Date(Date.now()-5*3600e3).toISOString();
@@ -632,6 +703,8 @@ function demo(){
      motivo:"Fala direto com o medo de masculinizar e com a perda de massa na menopausa.", pitch:{gancho:"Carga não masculiniza. Protege.", angulo:"Força como proteção óssea e metabólica.", formato:"Reels mito x método", ponte:"Plano 2x por semana com carga progressiva."}},
     {id:"c", canal:"Wired", titulo:"The smart ring that tracks your recovery", link:"https://example.com", publicado_em:on, coletado_em:h, tema:"tecnologia", nota:58, publico:"executivo 30–45", curado:true, status:"salvo",
      motivo:"Executivo gosta de dados; o anel mede, mas não decide o treino.", pitch:{gancho:"Seu anel mede o sono. Quem decide o treino?", angulo:"Dado sem critério é ruído.", formato:"Reels bastidor", ponte:"Avaliação transforma dado em plano."}},
+    {id:"ig-demo1", canal:"Instagram", titulo:"Médico explica em 20 s por que caminhar não protege o músculo", link:"https://www.instagram.com/reel/DEMO456/", publicado_em:on, coletado_em:h, tema:"saude", nota:82, publico:"ambos", cluster:"forca-depois-dos-40", curado:true, status:"novo",
+     motivo:"Reels fora da curva do perfil (cerca de 4x o engajamento médio); formato que a marca domina.", pitch:{perfil:"@perfilexemplo", gancho:"Caminhar todo dia não segura o seu músculo depois dos 40.", formato:"Reels mito x método", estrutura:"0–2 s: crença na tela · 2–12 s: dado do estudo · 12–20 s: o que fazer na semana · CTA no fim", por_que:"Contradiz um hábito que o público acha suficiente e entrega a correção em 20 segundos.", angulo:"Força como proteção, caminhada como complemento.", noticia:"Just 4 minutes a day can dramatically improve strength after 65 (ScienceDaily)", ponte:"Avaliação Estratégica mede força e define a carga."}},
     {id:"d", canal:"BBC News", titulo:"Elections update", publicado_em:on, coletado_em:h, curado:false, status:"novo"},
     {id:"cal-novembro-azul-2026", canal:"Calendário", titulo:"Novembro Azul", publicado_em:"2026-11-01T09:00:00-03:00", calendario:true, nota:95, pitch:{gancho:"O homem que cuida do carro e não cuida do corpo.", angulo:"Saúde do homem além do exame.", formato:"Série do mês", ponte:"Avaliação com foco no homem 35+."}, tema:"saude", publico:"executivo 30–45"},
   ];

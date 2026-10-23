@@ -17,6 +17,12 @@ Referências ("Ensinar o radar"): o painel grava eventos em materiais/radar/refe
 url e o comentário do Luan). Aqui cada notícia ativa ganha título e resumo (og:tags), entra na coleta marcada como
 referência (a curadoria do Claude analisa e atualiza radar/perfil-interesse.json) e vai ao painel como "salvo".
 Os termos de radar/perfil-interesse.json somam pontos no pré-filtro; os de "evitar" tiram.
+O mesmo botão aceita links do Instagram (perfil ou reels): entram na coleta com "tipo" instagram_perfil | instagram_reels
+para a curadoria aprender formato, gancho e estilo (seção "instagram" do perfil de interesse).
+
+Palavras-chave (campo no topo do Radar): o painel grava eventos {acao: adicionar|remover, tipo: "palavra", termo} na mesma
+pasta das referências. Cada palavra vira uma busca no Google Notícias (canal = veículo da matéria), soma pontos no
+pré-filtro e guia a busca de reels da curadoria. Lista em radar/palavras-chave.json e no estado publicado no painel.
 
 Variáveis: SUPABASE_URL, SUPABASE_SERVICE_KEY (sem elas, só gera o arquivo).
 """
@@ -81,11 +87,15 @@ TERMOS_PERFIL = [sem_acento(t) for t in (PERFIL.get("termos") or {}).get("pt", [
 EVITAR_PERFIL = [sem_acento(t) for t in PERFIL.get("evitar_termos", []) if len(t) >= 4]
 
 
+PALAVRAS = []  # palavras-chave do Luan (preenchidas em main)
+
+
 def pontuar(texto, peso_canal):
     t = sem_acento(texto)
     if any(f in t for f in FORA):
         return 0
     p = sum(w for w, termos in NICHO.items() for k in termos if k in t)
+    p += 3 * sum(1 for k in PALAVRAS if sem_acento(k) in t)  # palavras-chave do painel
     p += 2 * sum(1 for k in TERMOS_PERFIL if k in t)  # aprendido com as referências do Luan
     p -= 2 * sum(1 for k in EVITAR_PERFIL if k in t)
     p = max(p, 0)
@@ -189,8 +199,19 @@ def aplicar_eventos(base, evs):
     return extras, pausadas
 
 
-def baixar(url, limite=400_000):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/xml,*/*"})
+def tipo_link(url):
+    """noticia | instagram_reels | instagram_perfil"""
+    u = urllib.parse.urlsplit(url)
+    if not u.netloc.removeprefix("www.").removeprefix("m.").endswith("instagram.com"):
+        return "noticia"
+    partes = [p for p in u.path.split("/") if p]
+    if partes and partes[0] in ("reel", "reels", "p", "tv") or (len(partes) >= 2 and partes[1] in ("reel", "p")):
+        return "instagram_reels"
+    return "instagram_perfil"
+
+
+def baixar(url, limite=400_000, ua=UA):
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "text/html,application/xhtml+xml,application/xml,*/*"})
     with urllib.request.urlopen(req, timeout=12) as r:
         return r.geturl(), r.read(limite).decode("utf-8", "replace")
 
@@ -258,8 +279,12 @@ def descobrir_feed(url):
 def meta_pagina(url):
     """Título, resumo, imagem e site de uma notícia (og:tags), sem falhar."""
     out = {"titulo": None, "resumo": None, "imagem": None, "site": urllib.parse.urlsplit(url).netloc.removeprefix("www.")}
+    ig = tipo_link(url) != "noticia"
+    if ig:
+        out["site"] = "Instagram"
     try:
-        _, pg = baixar(url)
+        # o Instagram só entrega as og:tags ao robô de prévia de links
+        _, pg = baixar(url, ua="facebookexternalhit/1.1" if ig else UA)
         def og(nome):
             m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:|twitter:)?' + nome + r'["\'][^>]+content=["\']([^"\']+)', pg, re.I) or \
                 re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:|twitter:)?' + nome + r'["\']', pg, re.I)
@@ -267,9 +292,12 @@ def meta_pagina(url):
         out["titulo"] = og("title") or (limpar(re.search(r"<title[^>]*>(.*?)</title>", pg, re.I | re.S).group(1)) if re.search(r"<title", pg, re.I) else None)
         out["resumo"] = (og("description") or "")[:500] or None
         out["imagem"] = og("image")
-        out["site"] = og("site_name") or out["site"]
+        out["site"] = "Instagram" if ig else (og("site_name") or out["site"])
     except Exception as e:
         print(f"[aviso] referência {url}: não abri ({e})")
+    if not out["titulo"] and ig:
+        partes = [p for p in urllib.parse.urlsplit(url).path.split("/") if p]
+        out["titulo"] = ("Reels" if tipo_link(url) == "instagram_reels" else "Perfil") + (f" @{partes[0]}" if partes and partes[0] not in ("reel", "reels", "p", "tv") else "")
     if not out["titulo"]:  # sem acesso (paywall/bloqueio): título a partir do endereço
         slug = urllib.parse.urlsplit(url).path.rstrip("/").split("/")[-1]
         out["titulo"] = re.sub(r"[-_]+", " ", re.sub(r"\.\w+$", "", slug)).strip().capitalize() or url
@@ -277,10 +305,19 @@ def meta_pagina(url):
 
 
 def montar_referencias():
-    """Referências ativas do botão "Ensinar o radar" (com cache dos metadados em radar/referencias.json)."""
+    """Referências ativas do botão "Ensinar o radar" (com cache dos metadados em radar/referencias.json)
+    e palavras-chave do painel (radar/palavras-chave.json)."""
     evs = eventos_painel("radar/referencias")
-    ativas = {}
+    ativas, palavras = {}, {}
     for ev in evs:
+        if ev.get("tipo") == "palavra":
+            termo = re.sub(r"\s+", " ", (ev.get("termo") or "")).strip()[:60]
+            if len(termo) >= 3:
+                if ev.get("acao") == "adicionar":
+                    palavras[termo.lower()] = {"termo": termo, "adicionado_em": ev.get("quando")}
+                elif ev.get("acao") == "remover":
+                    palavras.pop(termo.lower(), None)
+            continue
         url = (ev.get("url") or "").strip()
         if not re.match(r"^https?://[^\s/]+\.[^\s]+$", url):
             continue
@@ -296,19 +333,25 @@ def montar_referencias():
     for url, r in ativas.items():
         c = cache.get(url) or {}
         meta = c if c.get("titulo") and c.get("titulo") != url else meta_pagina(url)
-        refs.append({"id": hashlib.sha1(url.encode()).hexdigest()[:16], **r,
+        refs.append({"id": hashlib.sha1(url.encode()).hexdigest()[:16], **r, "tipo": tipo_link(url),
                      "titulo": meta.get("titulo"), "resumo": meta.get("resumo"), "imagem": meta.get("imagem"), "site": meta.get("site")})
     refs.sort(key=lambda r: r["adicionado_em"] or "")
     with open(os.path.join(AQUI, "referencias.json"), "w", encoding="utf-8") as f:
         json.dump(refs, f, ensure_ascii=False, indent=1)
-    return refs, (evs[-1]["_arquivo"] if evs else None)
+    pal = sorted(palavras.values(), key=lambda p: p["adicionado_em"] or "")
+    if evs or not os.path.exists(os.path.join(AQUI, "palavras-chave.json")):
+        with open(os.path.join(AQUI, "palavras-chave.json"), "w", encoding="utf-8") as f:
+            json.dump(pal, f, ensure_ascii=False, indent=1)
+    else:  # sem acesso aos eventos (rodada local): mantém a lista que já estava no repositório
+        pal = json.load(open(os.path.join(AQUI, "palavras-chave.json"), encoding="utf-8"))
+    return refs, pal, (evs[-1]["_arquivo"] if evs else None)
 
 
-def publicar_referencias(refs, ultimo_evento):
+def publicar_referencias(refs, palavras, ultimo_evento):
     if not (URL and KEY):
         return
-    estado = {"atualizado_em": AGORA.isoformat(), "ultimo_evento": ultimo_evento,
-              "referencias": [{k: r.get(k) for k in ("id", "url", "titulo", "site", "nota_luan", "adicionado_em")} for r in refs]}
+    estado = {"atualizado_em": AGORA.isoformat(), "ultimo_evento": ultimo_evento, "palavras": palavras,
+              "referencias": [{k: r.get(k) for k in ("id", "url", "tipo", "titulo", "site", "nota_luan", "adicionado_em")} for r in refs]}
     storage("POST", "object/materiais/radar/referencias-estado.json", json.dumps(estado, ensure_ascii=False).encode(), upsert=True)
     if PERFIL:
         storage("POST", "object/materiais/radar/perfil.json", json.dumps(PERFIL, ensure_ascii=False).encode(), upsert=True)
@@ -404,6 +447,50 @@ def coletar(fontes):
     return saida, relatorio
 
 
+POR_PALAVRA = 4
+
+
+def coletar_palavras(palavras, ja):
+    """Uma busca no Google Notícias (Brasil, últimos 3 dias) por palavra-chave do painel. O canal é o veículo da matéria,
+    para que a contagem de "em alta" (3+ canais) continue valendo."""
+    saida, chaves = [], {sem_acento(i["titulo"])[:80] for i in ja}
+    ids = {i["id"] for i in ja}
+    for p in palavras:
+        termo = p["termo"]
+        url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(f'"{termo}"' if " " in termo else termo)
+               + "+when:3d&hl=pt-BR&gl=BR&ceid=BR:pt-419")
+        try:
+            d = feedparser.parse(url, agent=UA)
+        except Exception as e:
+            print(f"[aviso] palavra-chave {termo}: {e}")
+            continue
+        n = 0
+        for e in sorted(d.entries, key=lambda e: data_item(e) or AGORA - JANELA, reverse=True):
+            titulo, link = limpar(e.get("title")), e.get("link")
+            if not titulo or not link:
+                continue
+            veiculo = limpar((e.get("source") or {}).get("title")) or "Google Notícias"
+            titulo = re.sub(r"\s+[-–|]\s+[^-–|]{2,40}$", "", titulo)
+            quando = data_item(e)
+            if quando and AGORA - quando > JANELA:
+                continue
+            iid = hashlib.sha1(link.encode()).hexdigest()[:16]
+            chave = sem_acento(titulo)[:80]
+            if iid in ids or chave in chaves:
+                continue
+            ids.add(iid)
+            chaves.add(chave)
+            resumo = limpar(e.get("summary"))[:400]
+            saida.append({"id": iid, "canal": veiculo[:60], "titulo": titulo, "link": link, "imagem": None,
+                          "publicado_em": quando.isoformat() if quando else None, "resumo": resumo,
+                          "pre": pontuar(titulo + " " + resumo, 1.0) + 3, "palavra": termo})
+            n += 1
+            if n >= POR_PALAVRA:
+                break
+        print(f"Palavra-chave “{termo}”: {n} matérias.")
+    return saida
+
+
 def calendario_proximo():
     cal = json.load(open(os.path.join(AQUI, "calendario.json"), encoding="utf-8"))
     hoje = AGORA.astimezone(BRT).date()
@@ -436,17 +523,19 @@ def supa(metodo, caminho, corpo=None, prefer=None):
 
 
 def main():
+    refs, palavras, ultimo_ref = montar_referencias()
+    PALAVRAS[:] = [p["termo"] for p in palavras]
     fontes, ultimo_evento = montar_fontes()
     itens, relatorio = coletar(fontes)
-    refs, ultimo_ref = montar_referencias()
+    itens += coletar_palavras(palavras, itens)
     vistos = {i["id"] for i in itens}
     for r in refs:  # a referência entra na coleta para a curadoria analisar e aprender
         if r["id"] not in vistos:
             itens.append({"id": r["id"], "canal": "Sua referência", "titulo": r["titulo"], "link": r["url"], "imagem": r["imagem"],
                           "publicado_em": r["adicionado_em"], "resumo": r["resumo"] or "", "pre": 99,
-                          "referencia": True, "nota_luan": r["nota_luan"], "site": r["site"]})
+                          "referencia": True, "tipo": r.get("tipo", "noticia"), "nota_luan": r["nota_luan"], "site": r["site"]})
     try:
-        publicar_referencias(refs, ultimo_ref)
+        publicar_referencias(refs, palavras, ultimo_ref)
     except Exception as e:
         print(f"::warning::Não publiquei as referências: {e}")
     try:
