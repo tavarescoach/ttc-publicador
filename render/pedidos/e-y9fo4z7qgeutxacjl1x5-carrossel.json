@@ -6,15 +6,84 @@
   "pauta": "Tico Santta Cruz, 49, compara a ressaca a uma dengue.",
   "legenda": "Com a mesma dose por quilo, o pico de álcool no sangue sobe com a idade.\n\nTico Santta Cruz, 49, contou no Instagram em 22/10 que depois dos 40 a ressaca parece uma dengue e que aos 44 parou de beber antes dos shows. Os dados contam outra parte da história: num levantamento com 51.645 dinamarqueses, a ressaca ficou mais rara com a idade. O que muda é o corpo que recebe a dose. Num estudo com 50 voluntários de 21 a 81 anos, a massa magra caiu com a idade e o pico de álcool subiu.\n\nA massa magra se treina em qualquer década. Ela é medida na avaliação, junto com a rotina do fim de semana, porque é ali que a segunda-feira costuma ser decidida.\n\nMe manda MÉTODO no direct.\n\n#personaltrainerrj #treinodeforca #massamagra #copacabana #ipanema",
   "slides": [
-    {"tipo": "capa", "fundo": "marinho", "titulo": "Tico Santta Cruz, 49, compara a ressaca **a uma dengue.**", "foto": "https://s2-quem.glbimg.com/flC3H7UEX-6KMS6hy93u5oL0H2A=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/X/w/2dzjRBRPm3glWQzFW0qg/ticostacruz-1790691378-3996931128068613682-1811651-1-.jpg", "credito": "Foto: Reprodução / Instagram / Quem", "licenca": "sem-licenca", "pagina_origem": "https://revistaquem.globo.com/noticias/noticia/2026/10/tico-santta-cruz-detalha-relacao-com-alcool-so-se-a-ressaca-estiver-ao-quilate-da-celebracao.ghtml", "link_noticia": "https://revistaquem.globo.com/noticias/noticia/2026/10/tico-santta-cruz-detalha-relacao-com-alcool-so-se-a-ressaca-estiver-ao-quilate-da-celebracao.ghtml"},
-    {"tipo": "texto_foto", "fundo": "preto", "titulo": "Aos 44, ele parou de beber **antes dos shows.**", "texto": "Na quinta (22/10), o vocalista do Detonautas contou no Instagram que bebia para relaxar antes de subir ao palco. Hoje bebe só em ocasião especial, porque gosta demais dos treinos.", "fonte": "Instagram de Tico Santta Cruz, via Quem e Metrópoles, 23/10/2026"},
-    {"tipo": "insight", "fundo": "marinho", "rotulo": "O que ele disse", "titulo": "\"Depois dos 40 anos, a ressaca é como se fosse **uma dengue.**\"", "texto": "**A frase é relato pessoal, e muita gente se reconheceu nela.** Os estudos sobre idade e álcool mediram outra coisa, e o primeiro dado vai contra a intuição."},
-    {"tipo": "numero", "fundo": "preto", "rotulo": "Na Dinamarca", "numero": "51.645", "titulo": "pessoas de 18 a 94 anos **contaram suas ressacas.**", "texto": "A frequência de ressaca caiu com a idade. O estudo contou quantas vezes ela aparecia e deixou a intensidade de fora. A explicação para a sensação do Tico está no corpo que recebe a dose.", "fonte": "Tolstrup, Stephens e Grønbaek, Alcohol Clin Exp Res (2014)"},
-    {"tipo": "texto_foto", "fundo": "marinho", "titulo": "Mesma dose, **pico mais alto** com a idade.", "texto": "Em 50 voluntários de 21 a 81 anos, o álcool no sangue chegou mais alto nos mais velhos. A massa magra caiu, e com ela a água onde o álcool se dilui. A velocidade de eliminação ficou igual.", "fonte": "Vestal et al., Clin Pharmacol Ther (1977)"},
-    {"tipo": "numero", "fundo": "preto", "rotulo": "Nas 3 primeiras horas de sono", "numero": "39", "unidade": "pontos", "titulo": "a menos de **recuperação.**", "texto": "Em 4.098 trabalhadores finlandeses, a recuperação medida pela variabilidade cardíaca caiu 9 pontos com dose baixa e 39 com dose alta, cerca de quatro doses para 80 kg.", "fonte": "Pietilä et al., JMIR Mental Health (2018)"},
-    {"tipo": "texto_foto", "fundo": "marinho", "titulo": "Depois do treino, o músculo **constrói menos.**", "texto": "Em 8 homens ativos, cerca de 12 doses depois de treino de força e bike reduziram em 24% a síntese de proteína muscular, mesmo com 25 g de proteína junto.", "fonte": "Parr et al., PLoS ONE (2014)"},
-    {"tipo": "insight", "fundo": "claro", "rotulo": "O que o caso revela", "titulo": "A massa magra decide quanto do copo **chega ao sangue.**", "texto": "**A idade muda a composição do corpo, e a composição se treina.** O Tico ajustou o critério: bebe na ocasião que vale a ressaca e protege os treinos."},
-    {"tipo": "licao", "fundo": "preto", "rotulo": "Para quem treina", "titulo": "Planeje a semana em volta **da noite de evento.**", "texto": "Treino mais pesado longe da noite em que você vai beber. Segunda com carga de controle, para ver se o fim de semana custou progresso. Massa magra medida, porque ela sustenta força e metabolismo.", "nota": "O registro de carga mostra em número se o sábado está cobrando a segunda."},
-    {"tipo": "cta", "fundo": "marinho", "titulo": "Comece medindo **a sua massa magra.**", "texto": "A Avaliação Estratégica mede sua composição corporal e olha a rotina inteira, fim de semana incluído, em 40 minutos no TTC.", "cta": "Me manda **MÉTODO** no direct."}
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Tico Santta Cruz, 49, compara a ressaca **a uma dengue.**",
+      "foto": "https://s2-quem.glbimg.com/flC3H7UEX-6KMS6hy93u5oL0H2A=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/X/w/2dzjRBRPm3glWQzFW0qg/ticostacruz-1790691378-3996931128068613682-1811651-1-.jpg",
+      "credito": "Foto: Reprodução / Instagram / Quem",
+      "licenca": "sem-licenca",
+      "pagina_origem": "https://revistaquem.globo.com/noticias/noticia/2026/10/tico-santta-cruz-detalha-relacao-com-alcool-so-se-a-ressaca-estiver-ao-quilate-da-celebracao.ghtml",
+      "link_noticia": "https://revistaquem.globo.com/noticias/noticia/2026/10/tico-santta-cruz-detalha-relacao-com-alcool-so-se-a-ressaca-estiver-ao-quilate-da-celebracao.ghtml"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Aos 44, ele parou de beber **antes dos shows.**",
+      "texto": "Na quinta (22/10), o vocalista do Detonautas contou no Instagram que bebia para relaxar antes de subir ao palco. Hoje bebe só em ocasião especial, porque gosta demais dos treinos.",
+      "fonte": "Instagram de Tico Santta Cruz, via Quem e Metrópoles, 23/10/2026"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "marinho",
+      "rotulo": "O que ele disse",
+      "titulo": "\"Depois dos 40 anos, a ressaca é como se fosse **uma dengue.**\"",
+      "texto": "**A frase é relato pessoal, e muita gente se reconheceu nela.** Os estudos sobre idade e álcool mediram outra coisa, e o primeiro dado vai contra a intuição."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "Na Dinamarca",
+      "numero": "51 mil",
+      "titulo": "dinamarqueses de 18 a 94 anos **contaram suas ressacas.**",
+      "texto": "Entre 51.645 pessoas, a frequência de ressaca caiu com a idade. O estudo contou quantas vezes ela aparecia e deixou a intensidade de fora. A explicação para a sensação do Tico está no corpo que recebe a dose.",
+      "fonte": "Tolstrup, Stephens e Grønbaek, Alcohol Clin Exp Res (2014)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "marinho",
+      "titulo": "Mesma dose, **pico mais alto** com a idade.",
+      "texto": "Em 50 voluntários de 21 a 81 anos, o álcool no sangue chegou mais alto nos mais velhos. A massa magra caiu, e com ela a água onde o álcool se dilui. A velocidade de eliminação ficou igual.",
+      "fonte": "Vestal et al., Clin Pharmacol Ther (1977)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "preto",
+      "rotulo": "Nas 3 primeiras horas de sono",
+      "numero": "39",
+      "unidade": "pontos",
+      "titulo": "a menos de **recuperação.**",
+      "texto": "Em 4.098 trabalhadores finlandeses, a recuperação medida pela variabilidade cardíaca caiu 9 pontos com dose baixa e 39 com dose alta, cerca de quatro doses para 80 kg.",
+      "fonte": "Pietilä et al., JMIR Mental Health (2018)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "marinho",
+      "titulo": "Depois do treino, o músculo **constrói menos.**",
+      "texto": "Em 8 homens ativos, cerca de 12 doses depois de treino de força e bike reduziram em 24% a síntese de proteína muscular, mesmo com 25 g de proteína junto.",
+      "fonte": "Parr et al., PLoS ONE (2014)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "A massa magra decide quanto do copo **chega ao sangue.**",
+      "texto": "**A idade muda a composição do corpo, e a composição se treina.** O Tico ajustou o critério: bebe na ocasião que vale a ressaca e protege os treinos."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "preto",
+      "rotulo": "Para quem treina",
+      "titulo": "Planeje a semana em volta **da noite de evento.**",
+      "texto": "Treino mais pesado longe da noite em que você vai beber. Segunda com carga de controle, para ver se o fim de semana custou progresso. Massa magra medida, porque ela sustenta força e metabolismo.",
+      "nota": "O registro de carga mostra em número se o sábado está cobrando a segunda."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "marinho",
+      "titulo": "Comece medindo **a sua massa magra.**",
+      "texto": "A Avaliação Estratégica mede sua composição corporal e olha a rotina inteira, fim de semana incluído, em 40 minutos no TTC.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
   ]
 }
