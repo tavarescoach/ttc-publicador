@@ -1,0 +1,63 @@
+{
+  "id": "tm-2026-10-23-cadeira-30",
+  "criacao": "olnycy745ecbl0blvhlw",
+  "criada_em": "2026-10-23T19:10:00-03:00",
+  "origem": "radar",
+  "reportagem": {
+    "titulo": "Exercícios de mobilidade para quem passa o dia sentado",
+    "veiculo": "Estadão Saúde",
+    "data": "22/10/2026",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWkg2WFlZUEowLWRsN1Budm1QQl9qTUJPLWQ4Z2RMeHp3TXRuME9keWJHaF9hU2xlT2xZX0JoQ2FCRUxmUWZCMGJTWVNGXzVoNWhEYU93U2NQM1BsaXMxcTZ1encxbXkxdjFoc241ellId3Q0QXFNbGRMY09XR290Yk5PdG9VMzFMRTRoQktyT2pXYTZjT0MyNWZjU2NucG55WHNPZ1RQSGFzcGlhSWU2TXBOamhnNkdKLVJoenZ0N1h3bEdvVjI1Q2E4OWt1RDMxUU9qX2FFdnUzRFhaTlk0LXYta0NpdDQ?oc=5"
+  },
+  "opcao_escolhida": "O relógio de 30 minutos da cadeira",
+  "tese": "Quem passa o dia sentado protege mais glicose, pressão e energia quebrando a cadeira em blocos de até 30 minutos, com 5 minutos de caminhada, do que esperando o treino da manhã compensar o dia inteiro.",
+  "cena": "Reunião das 14h emendada na das 15h. Você levanta às 17h com as costas duras e a energia no chão, mesmo tendo treinado às 7h.",
+  "causa": "Meia hora é o limite do bloco sentado que os estudos mediram.",
+  "evidencias": [
+    {
+      "afirmacao": "Em 11 adultos de 40 a 60 e poucos anos, sentados 8 horas no laboratório, 5 minutos de caminhada a cada 30 minutos reduziram em 58% o pico de glicose depois das refeições grandes. Caminhar a cada 60 minutos (1 ou 5 minutos) não mexeu na glicose.",
+      "fonte": "https://doi.org/10.1249/mss.0000000000003109"
+    },
+    {
+      "afirmacao": "No mesmo estudo, todas as pausas baixaram a pressão em 4 a 5 mmHg, e todas, menos 1 minuto por hora, reduziram a fadiga e melhoraram o humor.",
+      "fonte": "https://www.cuimc.columbia.edu/node/25711"
+    },
+    {
+      "afirmacao": "Em 7.985 adultos acima de 45 anos com acelerômetro, quem mantinha os blocos sentados abaixo de 30 minutos teve o menor risco de morte (estudo observacional).",
+      "fonte": "https://pubmed.ncbi.nlm.nih.gov/28892811/"
+    },
+    {
+      "afirmacao": "Em 16 estudos com mais de 1 milhão de pessoas, 60 a 75 minutos de atividade moderada por dia eliminaram o risco extra associado a 8 horas ou mais sentado.",
+      "fonte": "https://doi.org/10.1016/S0140-6736(16)30370-1"
+    }
+  ],
+  "tipo_pauta": "tese",
+  "emocao": "admiracao",
+  "lacuna": "A manchete promete o intervalo exato que muda o efeito de passar o dia sentado. O conteúdo entrega 5 minutos de caminhada a cada 30, com o que cada uma das cinco doses mediu.",
+  "passo_final": "Salvar e colocar um alarme de 30 minutos amanhã no trabalho, porque é a dose que o estudo mediu e cabe entre uma reunião e outra.",
+  "funil": "topo",
+  "publico": "ambos",
+  "cta": "Salva e coloca o alarme de 30 minutos amanhã. Me manda MÉTODO no direct se quiser montar a semana inteira.",
+  "pontos_de_cuidado": [
+    "Glicose e pressão são tema de saúde: falar do efeito medido no dia do estudo, sem prometer controle de diabetes, hipertensão ou emagrecimento. Passa pela aprovação do Luan.",
+    "Duran et al. (2023) tem 11 pessoas e mede o efeito agudo, num único dia. Escrever 'no estudo', 'mediu', nunca 'garante' ou 'resolve'.",
+    "Diaz et al. (2017) e Ekelund et al. (2016) são observacionais: 'associado a', 'quem fazia teve'.",
+    "Todas as pausas baixaram a pressão (4 a 5 mmHg). Só a de 5 a cada 30 mexeu forte na glicose. Não dizer que só uma pausa baixou a pressão.",
+    "A matéria do Estadão é só o ponto de partida do tema; o texto dela não foi aberto (link de agregador). Nenhum fato ou exercício sai dela.",
+    "Dor nas costas, pescoço e quadril: nível geral, sem diagnóstico nem prescrição. Dor forte, dormência ou dor que piora pede avaliação de saúde.",
+    "O estudo foi feito na Columbia University Irving Medical Center (Keith Diaz, autor sênior; Andrea Duran, primeira autora), confirmado na nota oficial da universidade."
+  ],
+  "aprovacao": {
+    "status": "aguarda_aprovacao",
+    "em": null
+  },
+  "saidas": {
+    "carrossel": "aguarda_tese",
+    "blogpost": "pronto",
+    "video_aula": "pronto",
+    "ementa": "pronto",
+    "reels_direcao": "pronto",
+    "teleprompter": "pronto",
+    "broll_narracao": "pronto"
+  }
+}
