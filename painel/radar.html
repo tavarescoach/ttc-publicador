@@ -490,7 +490,8 @@ function visaoInstagram(){
     .sort((a,b) => (b.nota ?? -1) - (a.nota ?? -1)).map(i => ({id:i.id, link:i.link, imagem:i.imagem, publicado_em:i.publicado_em, perfil:i.pitch?.perfil, _curado:true, ...i}));
   const posts = [...brutos.filter(x => itens.find(i => i.id === x.id)?.status !== "descartado"), ...curados];
   if (!ig.carregado) return `<div class="vazio">Carregando o Instagram…</div>`;
-  return `<div class="igv">
+  const aviso = ig.dados?.aviso ? `<div class="vazio" style="border-color:var(--warn);color:var(--warn);background:var(--warn-claro);margin-bottom:14px;text-align:left">${esc(ig.dados.aviso)}</div>` : "";
+  return `${aviso}<div class="igv">
     <section class="igp"><h2>Perfis em alta</h2><p>Os 9 do nicho para analisar e se inspirar agora, pelo que estão entregando acima da própria média.</p>
       ${perfis.length ? perfis.map((p, n) => cardPerfil(p, n + 1)).join("") : `<div class="vazio">Os perfis aparecem depois da próxima coleta (5h47 e 13h47). Para acompanhar um perfil, cole o link dele no Ensinar o radar.</div>`}
     </section>

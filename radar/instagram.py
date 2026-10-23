@@ -13,7 +13,9 @@ formato que funcionou para quem já tem público, e não o tamanho do perfil. Vi
 Saída: radar/instagram.json (a curadoria do Claude lê; seção "Instagram" de radar/CURADORIA.md) e a mesma cópia em
 materiais/radar/instagram.json, que o Radar mostra: à esquerda os 9 perfis em alta, à direita os posts em alta.
 Perfil em alta = soma das razões dos posts fora da curva + taxa de engajamento (mediana / seguidores, em %).
-Variáveis: FB_TOKEN (token da Página, app "TTC Radar", login do Facebook) e IG_BUSINESS_ID (@tavarescoach).
+Variáveis: FB_TOKEN (app "TTC Radar", login do Facebook) e IG_BUSINESS_ID (@tavarescoach).
+FB_TOKEN pode ser o token da Página ou o token de usuário estendido (60 dias); com o de usuário, o robô pega o token da
+Página a cada rodada (só em memória). Token vencido: o Radar mantém a última leitura (até 3 dias) e mostra o aviso no painel.
 Só funciona com perfis profissionais (empresa ou criador); os pessoais voltam com erro e seguem listados.
 """
 import datetime as dt
@@ -107,6 +109,36 @@ def quando(ts):
     return dt.datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S%z") if ts else None
 
 
+def api_get(caminho, **params):
+    url = f"{API}/{caminho}?" + urllib.parse.urlencode({**params, "access_token": TOKEN})
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            return json.load(r), None
+    except urllib.error.HTTPError as e:
+        try:
+            return None, json.load(e).get("error", {}).get("message", str(e))[:200]
+        except Exception:
+            return None, str(e)[:200]
+    except Exception as e:
+        return None, str(e)[:200]
+
+
+def preparar_token():
+    """Token de usuário -> usa o token da Página do @tavarescoach nesta rodada. Devolve a mensagem de erro se o token
+    não vale mais (vencido ou revogado), senão None."""
+    global TOKEN
+    contas, erro = api_get("me/accounts", fields="access_token,instagram_business_account", limit=50)
+    if erro and ("access token" in erro.lower() or "session has expired" in erro.lower()):
+        return erro
+    for c in (contas or {}).get("data", []):
+        if (c.get("instagram_business_account") or {}).get("id") == IG_ID and c.get("access_token"):
+            TOKEN = c["access_token"]
+            print("::add-mask::" + TOKEN)
+            print("Token de usuário: usando o token da Página nesta rodada.")
+            break
+    return None
+
+
 def tipo(m):
     if m.get("media_product_type") == "REELS" or m.get("media_type") == "VIDEO":
         return "reels"
@@ -131,6 +163,9 @@ def main():
     if not (TOKEN and IG_ID):
         print("Sem FB_TOKEN/IG_BUSINESS_ID: pulei o Instagram.")
         return 0
+    erro_token = preparar_token()
+    if erro_token:
+        print(f"::warning::Token do Instagram (FB_TOKEN) inválido: {erro_token}")
     lista = perfis()
     print(f"Perfis acompanhados: {len(lista)}")
     # limite de chamadas da Meta: os perfis que não deu para ler agora ficam com a última leitura (até 3 dias)
@@ -144,8 +179,12 @@ def main():
     saida_perfis, posts = [], []
     limite = False
     for p in lista:
-        d, erro = (None, "(#4) limite da Meta (pulado)") if limite else descobrir(p["usuario"])
-        if erro and ("(#4)" in erro or "(#17)" in erro or "(#32)" in erro or "request limit" in erro.lower()):
+        if erro_token:
+            d, erro = None, "token vencido (pulado)"
+        else:
+            d, erro = (None, "(#4) limite da Meta (pulado)") if limite else descobrir(p["usuario"])
+        if erro and ("(#4)" in erro or "(#17)" in erro or "(#32)" in erro or "request limit" in erro.lower()
+                     or "token" in erro.lower() or "session has expired" in erro.lower()):
             limite = True
             ant = perfis_antes.get(p["usuario"])
             if ant:
@@ -192,7 +231,12 @@ def main():
         print(f"@{p['usuario']}: {len(midias)} posts, mediana {mediana}, taxa {taxa}%, {len(meus)} fora da curva")
     posts.sort(key=lambda r: r["razao"], reverse=True)
     saida_perfis.sort(key=lambda x: (x.get("erro") is None, x.get("pontos") or 0), reverse=True)
-    dados = {"coletado_em": AGORA.isoformat(),
+    if erro_token and not any(not x.get("erro") for x in saida_perfis):
+        print("Token vencido e sem leitura anterior: mantive o arquivo como estava.")
+        return 1
+    dados = {"coletado_em": AGORA.isoformat() if not erro_token else antes.get("coletado_em", AGORA.isoformat()),
+             "aviso": ("O token do Instagram venceu: o Radar está mostrando a última leitura. Gere um token novo "
+                       "(Explorador da Graph API, app TTC Radar, estendido) e salve no segredo FB_TOKEN.") if erro_token else None,
              "criterio": f"posts de até {JANELA.days} dias com engajamento >= {RAZAO_MIN}x a mediana do perfil",
              "perfis": saida_perfis, "posts": posts[:40]}
     with open(os.path.join(AQUI, "instagram.json"), "w", encoding="utf-8") as f:
