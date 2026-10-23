@@ -1,37 +1,59 @@
 {
- "atualizado_em": "2026-10-23T06:26:58-03:00",
+ "atualizado_em": "2026-10-23T14:29:13-03:00",
  "em_alta": [
+  {
+   "assunto": "glp1-mercado-e-efeitos",
+   "tema": "saude",
+   "canais": 9,
+   "nota_max": 68,
+   "titulos": [
+    "People are taking an unapproved weight-loss drug. AI found something surprising",
+    "Boom in weight-loss drugs could lead to fall in beer sales, Heineken warns UK pubs",
+    "Terapia combinada promove perda de peso expressiva em estudo envolvendo pacientes com diabetes"
+   ]
+  },
   {
    "assunto": "depressao-circadiana",
    "tema": "ciencia",
-   "canais": 4,
+   "canais": 5,
    "nota_max": 66,
    "titulos": [
     "Australian researchers identify new subtype of depression linked to body clock disruptions",
     "Pesquisa identifica novo subtipo de depressão ligado ao relógio biológico",
-    "Sleep Habits May Indicate a Type of Depression, Researchers Say"
+    "Your Sleep Habits May Point to a Specific Type of Depression, a New Study Finds"
    ]
   },
   {
-   "assunto": "glp1-mercado-e-efeitos",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 68,
+   "assunto": "hyrox-tendencia",
+   "tema": "esporte",
+   "canais": 5,
+   "nota_max": 64,
    "titulos": [
-    "People are taking an unapproved weight-loss drug. AI found something surprising",
-    "EXCLUSIVE: Heineken document reveals worries over weight-loss drugs and beer sales",
-    "Give more people weight-loss jabs on the NHS, say MPs"
+    "Atleta híbrido: O novo protagonista do esporte",
+    "3 exercícios de força para quem corre",
+    "Nem Crossfit, nem musculação: ex-BBBs aderem ao Hyrox, nova febre fitness do momento"
    ]
   },
   {
    "assunto": "vacina-cancer-melanoma",
    "tema": "ciencia",
-   "canais": 3,
+   "canais": 4,
    "nota_max": 32,
    "titulos": [
     "First personalised cancer vaccine cuts risk of disease returning in major trial",
-    "Melanoma Vaccine Ushers in New Hope for Cancer Patients",
-    "Experimental mRNA vaccine cuts risk melanoma returns by 42%"
+    "Vacina contra Câncer da MSD/moderna Reduz em 42% Risco de Morte ou Recorrência do Melanoma",
+    "Melanoma Vaccine Ushers in New Hope for Cancer Patients"
+   ]
+  },
+  {
+   "assunto": "alcool-beber-menos",
+   "tema": "comportamento",
+   "canais": 3,
+   "nota_max": 82,
+   "titulos": [
+    "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+    "Tico Santta Cruz detalha relação com álcool: 'Depois dos 40, a ressaca é como dengue'",
+    "O mais saudável do bar e o que mais bebe na academia"
    ]
   }
  ],
@@ -100,11 +122,11 @@
    "gancho": "Gelo depois do treino pode atrapalhar o músculo que você quer ganhar."
   },
   {
-   "titulo": "Millions take fish oil for brain health. A two-year study found no benefit",
-   "canal": "ScienceDaily",
-   "assunto": "omega3-cerebro",
-   "nota": 78,
-   "gancho": "Dois anos de óleo de peixe. Nenhum ganho de memória."
+   "titulo": "Cardio depois da musculação: atrapalha ou ajuda?",
+   "canal": "Instagram",
+   "assunto": "cardio-depois-do-treino",
+   "nota": 80,
+   "gancho": "Um aluno me perguntou se a esteira depois do treino come o músculo."
   }
  ]
 }
