@@ -1,5 +1,11 @@
 [
  {
+  "titulo": "Jesse James West (@jessejameswest) • Instagram reel",
+  "canal": "Sua referência",
+  "tema": null,
+  "status": "salvo"
+ },
+ {
   "titulo": "Leslie Jones, 59, Shows Off Results from Her Fitness Journey: ‘After 40, You Really Have to Focus on Your Muscles’",
   "canal": "People",
   "tema": "cultura",
@@ -12,16 +18,16 @@
   "status": "salvo"
  },
  {
-  "titulo": "Exercise in a pill",
-  "canal": "MIT Technology Review",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
   "titulo": "Just 4 minutes a day can dramatically improve strength after 65",
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "virou_pauta"
+ },
+ {
+  "titulo": "Exercise in a pill",
+  "canal": "MIT Technology Review",
+  "tema": "ciencia",
+  "status": "salvo"
  },
  {
   "titulo": "Demi Lovato Was ‘Terrified’ to Tour After Gaining ‘a Little Weight.’ Then She Realized ‘My Worth Isn’t in My Body’",
@@ -32,12 +38,6 @@
  {
   "titulo": "Halle Berry arrives to court for restraining order, custody battle hearing as son Maceo, 13, shows up with dad Olivier Martinez",
   "canal": "Pagesix",
-  "tema": null,
-  "status": "descartado"
- },
- {
-  "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
-  "canal": "NYT Well",
   "tema": null,
   "status": "descartado"
  },
@@ -78,6 +78,18 @@
   "status": "descartado"
  },
  {
+  "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
+  "canal": "NYT Well",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+  "canal": "Sua referência",
+  "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
   "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
   "canal": "Sua referência",
   "tema": "saude",
@@ -96,28 +108,22 @@
   "status": "salvo"
  },
  {
-  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-  "canal": "Sua referência",
-  "tema": "comportamento",
-  "status": "salvo"
- },
- {
   "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
   "canal": "Sua referência",
   "tema": "saude",
   "status": "salvo"
  },
  {
-  "titulo": "Lubrificante e atenção às preliminares melhoram o sexo na menopausa",
-  "canal": "Folha Equilíbrio",
-  "tema": "saude",
-  "status": "descartado"
- },
- {
   "titulo": "Going nowhere fast? Personal trainers on why you aren’t seeing results in the gym",
   "canal": "The Guardian",
   "tema": "esporte",
   "status": "virou_pauta"
+ },
+ {
+  "titulo": "Lubrificante e atenção às preliminares melhoram o sexo na menopausa",
+  "canal": "Folha Equilíbrio",
+  "tema": "saude",
+  "status": "descartado"
  },
  {
   "titulo": "Creatina pode aumentar músculos sem exercício? Entenda resultados de estudo controverso",
@@ -132,26 +138,14 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
-  "canal": "Fox News Health",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Longevity medicine mainstream",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
   "canal": "Metrópoles",
   "tema": "saude",
   "status": "salvo"
  },
  {
-  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
-  "canal": "Folha Equilíbrio",
+  "titulo": "Longevity medicine mainstream",
+  "canal": "Sua referência",
   "tema": "saude",
   "status": "salvo"
  },
@@ -168,15 +162,15 @@
   "status": "virou_pauta"
  },
  {
+  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
+  "canal": "Folha Equilíbrio",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
   "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
   "canal": "Fox News Health",
   "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Scientists discover how exercise reverses muscle aging",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
   "status": "virou_pauta"
  },
  {
@@ -186,9 +180,21 @@
   "status": "virou_pauta"
  },
  {
+  "titulo": "Scientists discover how exercise reverses muscle aging",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "virou_pauta"
+ },
+ {
   "titulo": "A 47-year study reveals the age when your body starts losing strength",
   "canal": "ScienceDaily",
   "tema": "ciencia",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
+  "canal": "Fox News Health",
+  "tema": "saude",
   "status": "virou_pauta"
  }
 ]
