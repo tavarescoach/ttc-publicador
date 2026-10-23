@@ -112,3 +112,34 @@ Leia `diretrizes/reels.md`.
 
 ## Commits
 Mensagens curtas em português. Sempre `git pull --rebase` antes do push (outros robôs commitam na mesma branch).
+
+## Fluxo de criação ponta a ponta (versão 1, 23/10/2026)
+
+Fluxo que o Luan usa a cada tema. Cada etapa tem um estado em `criacoes` e um efeito visível no painel. Aprovação só pelo painel.
+
+1. **Painel:** vê o que executar e o que está agendado.
+2. **Radar:** lê notícias, tendências e vídeos. Clica no tema e em **"Criar a partir desta"** (cria a criação com `foco = radar:<id>`, status `pesquisando`).
+3. **Studio, "gerar 5 pautas":** `ESTUDIO pesquisa <doc_id>` gera 5 teses-mãe em `opcoes` (seção "ESTUDIO pesquisa" acima). O Luan escolhe uma.
+4. **Tese central:** ao escolher, a sessão grava `tese-mae/<id>.json` com o contrato de `diretrizes/tese-mae.md` (inclui `emocao`, `lacuna`, `passo_final`; a skill `acao-emocional-ttc` decide esses campos) e status `aguarda_aprovacao`.
+5. **Saídas em rascunho:** logo após a escolha, a sessão gera **em rascunho** (status `rascunho` no documento, `aprovacao` ainda pendente) as saídas, para o Luan comparar:
+   - `blogpost`: título, subtítulo e corpo; tamanho pelo tipo (abaixo);
+   - `video_aula`: pauta para YouTube (capítulos, promessa, prova, método, CTA);
+   - `ementa`: pontos de live ou podcast, tempo por bloco, perguntas-gatilho;
+   - `reels_direcao` e `teleprompter` (teleprompter derivado da direção);
+   - `broll_narracao` (formato de `narracao-broll.md`).
+   O carrossel **não** é gerado aqui: só a headline entra, na etapa 6.
+6. **Carrossel:** quando o Luan escolhe o carrossel, a sessão gera as **opções de headline** (4, cada uma com `notas`, `publico_alvo`, `historico` quando houver `contexto/instagram`). O Luan escolhe a headline e então o carrossel é escrito a partir da tese (`render/pedidos/e-<id>-carrossel.json`) e passa pela revisão automática.
+7. **Aprovação:** o Luan aprova a tese central pelo painel (`aprovacao.status = aprovada`). Sem aprovação, nenhuma saída sai do rascunho. Saídas escolhidas viram `pronto`.
+8. **Publicação:** carrossel e stories seguem o robô (aprovado → agendado, veto na lixeira). Blogpost, YouTube, ementa e roteiros não passam pelo robô: ficam no painel como materiais, com botão de copiar ou baixar.
+
+### Tamanho do blogpost (por tipo de pauta)
+- Notícia ou caso com um dado central: 800 a 1.200 palavras.
+- Tese com evidências (dois ou mais estudos): 1.500 a 2.000 palavras.
+- Guia, passo a passo ou método: 2.000 a 2.500 palavras.
+O tipo vem do campo `tipo_pauta` da tese (`noticia` | `tese` | `guia`). Sem tipo definido, usar 1.200 como padrão.
+
+### Regras que valem em toda etapa
+- Número sem fonte confirmada bloqueia a aprovação da tese (campo `fontes` em cada evidência).
+- Prova com aluno e temas de saúde (hormônio, suplemento, remédio, lesão, gravidez, menopausa) exigem aprovação explícita do Luan, em qualquer saída.
+- Público da notícia diferente de 30–50 anos deve virar ponte para o público da marca (`pontos_de_cuidado` da tese).
+- Nada é publicado fora do robô ou do Luan; nada já publicado é alterado.
