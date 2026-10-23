@@ -1,0 +1,51 @@
+{
+  "id": "tm-2026-10-23-forca-65",
+  "criada_em": "2026-10-23T17:40:00-03:00",
+  "origem": "radar",
+  "reportagem": {
+    "titulo": "4 minutos de força por dia já mudam a força depois dos 65",
+    "veiculo": "Penn State College of Medicine (notícia institucional)",
+    "data": "06/2026",
+    "link": "https://pennstatehealthnews.org/2026/06/four-minutes-of-daily-resistance-training-can-quadruple-fitness-in-older-adults/"
+  },
+  "opcao_escolhida": "Quatro minutos por dia: a força que não precisa de academia (teste de teste)",
+  "tese": "Quatro minutos de força por dia, com exercícios simples e repetidos, já melhoram força e equilíbrio em adultos acima de 65 anos.",
+  "cena": "Você acha que precisa de uma hora de academia para sentir diferença na força.",
+  "causa": "A força responde a estímulo curto e regular, não só a sessão longa.",
+  "evidencias": [
+    {
+      "afirmacao": "Em 97 adultos acima de 65 anos (média de 74), o grupo que fez o protocolo de 4 minutos diários por cerca de 12 semanas teve 4,2 repetições a mais no teste de levantar da cadeira em 30 segundos.",
+      "fonte": "https://pennstatehealthnews.org/2026/06/four-minutes-of-daily-resistance-training-can-quadruple-fitness-in-older-adults/"
+    },
+    {
+      "afirmacao": "O mesmo grupo ficou 3,6 segundos mais tempo em pé sobre uma perna (equilíbrio).",
+      "fonte": "https://pennstatehealthnews.org/2026/06/four-minutes-of-daily-resistance-training-can-quadruple-fitness-in-older-adults/"
+    }
+  ],
+  "emocao": "admiracao",
+  "lacuna": "A manchete promete que quatro minutos mudam a força. O conteúdo entrega o protocolo completo e o número medido.",
+  "passo_final": "Testar o próprio teste de levantar da cadeira em 30 segundos, para saber onde está. Me manda MÉTODO se quiser comparar com um plano.",
+  "funil": "topo",
+  "publico": "executivo",
+  "cta": "Me manda MÉTODO no direct",
+  "pontos_de_cuidado": [
+    "Público da notícia é acima de 65 anos. A marca fala com 30–50: a tese precisa ser ponte (o mesmo teste aplica-se a quem tem 30 e 40), não a notícia sobre idosos.",
+    "A notícia diz 'quadruplicar a aptidão', mas o artigo não explica o cálculo; os números reportados são 4,2 repetições e 3,6 segundos. Não usar 'quadruplicar'.",
+    "Estudo com 97 pessoas e 12 semanas: dizer 'melhora em 12 semanas', nunca 'resolve' ou 'garante'.",
+    "A fonte primária é o artigo do PLOS ONE (2026); o link acima é a nota institucional. Conferir o DOI antes de publicar a fonte.",
+    "Sem prescrição: o carrossel não indica protocolo de idoso nem para lesão."
+  ],
+  "aprovacao": {
+    "status": "aguarda_aprovacao",
+    "em": null
+  },
+  "saidas": {
+    "carrossel": "aguarda_tese",
+    "blogpost": "aguarda_tese",
+    "video_aula": "aguarda_tese",
+    "ementa": "aguarda_tese",
+    "reels_direcao": "aguarda_tese",
+    "teleprompter": "aguarda_tese",
+    "broll_narracao": "aguarda_tese"
+  }
+}
