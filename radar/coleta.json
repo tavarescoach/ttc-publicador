@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-10-23T18:59:44.515944+00:00",
+ "coletado_em": "2026-10-23T20:07:03.120269+00:00",
  "itens": [
   {
    "id": "c163dc3ee70fde8f",
@@ -62,6 +62,16 @@
    "pre": 2.0
   },
   {
+   "id": "e668af714e62fc3d",
+   "canal": "BBC News",
+   "titulo": "GP says she was forced out of job after raising concerns about gender treatment",
+   "link": "https://www.bbc.co.uk/news/articles/cr5ynl415j79o?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/81f9/live/dbfea4d0-ce20-11f1-906e-e3128518d85d.jpg",
+   "publicado_em": "2026-10-23T19:23:10+00:00",
+   "resumo": "The doctor says she faced a brutal investigation after she passed on complaints brought to her by other doctors.",
+   "pre": 1.0
+  },
+  {
    "id": "c75360ac724bd2d9",
    "canal": "BBC News",
    "titulo": "What is PHP and why did it spark a global cyber-security scramble?",
@@ -89,16 +99,6 @@
    "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/08bd/live/5bb18390-cec7-11f1-b9e0-e5f0da03dc7f.jpg",
    "publicado_em": "2026-10-23T07:50:33+00:00",
    "resumo": "The Department of Health has decided to take back £1.5m from the project, Belfast Trust officials have told a Stormont committee.",
-   "pre": 1.0
-  },
-  {
-   "id": "784f7f931746cf62",
-   "canal": "BBC News",
-   "titulo": "First personalised cancer vaccine cuts risk of disease returning in major trial",
-   "link": "https://www.bbc.co.uk/news/articles/cq0ld9g9e913o?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f379/live/0f348400-cead-11f1-bc2e-018d645d8d21.jpg",
-   "publicado_em": "2026-10-23T07:49:02+00:00",
-   "resumo": "The scientists involved say the results could mark a turning point in cancer treatment, bringing personalised medicine a step closer.",
    "pre": 1.0
   },
   {
@@ -752,6 +752,26 @@
    "pre": 4.0
   },
   {
+   "id": "70e084ad612e967b",
+   "canal": "Metrópoles",
+   "titulo": "Kompany é levado ao hospital após passar mal em treino do Bayern de Munique",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSzN4dXYxTkgwblNkN2ZQTjhodmkzTjU3cDR6Qm5XN09vMkFGaXJHQ1k4NHAxZktBR291X1hVMW1FYklIZEp4WGRZc0VDVlkzbDRhZEJjTW83aXh4ZWcxejN4MHd5eTJpNWJSN2VWdm1TSUppWVdVQ1RHRjBubjRQNW8wdG5UUUZTbV9TTmJhX05IeXhSeUp2UXpfZGpiMklTNjRVS2xCQ2VKTGJNLW53Uw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:41:00+00:00",
+   "resumo": "Kompany é levado ao hospital após passar mal em treino do Bayern de Munique Metrópoles",
+   "pre": 3.0
+  },
+  {
+   "id": "dc5b7befce942b2c",
+   "canal": "Metrópoles",
+   "titulo": "F1: Leclerc lidera treino livre do GP dos EUA em Austin; Bortoleto é 8º",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPY1FrcVViU3FmbVMwOVRaMS1GU3AxbHgyMktiWFVFTmFzMjRlSWUzMUdjUnBlZ2d6SGlWMWFsZnlIOWtrZWk5cjFjdmlaOWJvMnVnZXY3NTFPWlBqbE10ZGlJN2ZzTVhQcUhLTU9MOFlReS1hTFQzM0kxYmFKcVlIdFR6czFROWdiZElNbW43QUltS21feGZIVTIxVW9pM1BlMFpMajJTZzE?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:17:00+00:00",
+   "resumo": "F1: Leclerc lidera treino livre do GP dos EUA em Austin; Bortoleto é 8º Metrópoles",
+   "pre": 3.0
+  },
+  {
    "id": "fa1081c9786d591d",
    "canal": "Metrópoles",
    "titulo": "Foragido por feminicídio no Rio, \"Mendigato\" é preso em academia de SP",
@@ -779,26 +799,6 @@
    "imagem": null,
    "publicado_em": "2026-10-23T05:00:00+00:00",
    "resumo": "Treino de Flávio para debate da Globo teve Tarcísio interpretando Lula Metrópoles",
-   "pre": 3.0
-  },
-  {
-   "id": "dd253d37c96dd831",
-   "canal": "Metrópoles",
-   "titulo": "Atleta com câncer, Ana Paula corre os 4 km do Metrópoles Endurance Corrida",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaHV4Zld1aW5EMGVjYkRwcFJycmRkWTJ5YlRlU044TXFmc1FTYmREZE9UZWVfTFRFaVEySVVMOUlQV0R2Ym9hTW05X2RoUUQ5Q01iYkc3ZGI1NVhNY0RMSnNiaUM2WWZFMVcwMmd2QWNwWW1Ia1MydVJobFp1R011NVB3cUxqQmV0NkVzZ293aWd3UExybTNqT00xUUw5NS1xR2hRMHdLSXE3Zkc1Z0E?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T20:00:00+00:00",
-   "resumo": "Atleta com câncer, Ana Paula corre os 4 km do Metrópoles Endurance Corrida Metrópoles",
-   "pre": 3.0
-  },
-  {
-   "id": "27cd865643427ee3",
-   "canal": "Metrópoles",
-   "titulo": "Exercícios de pilates para dor no joelho podem ser feitos em 5 minutos",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTWlTZTV3SjBmV01YRkRZWnc1S2xMV1VWLTB6SmU4S3JIbU8tUjQxbzFhTnNqTC0yVnFtRU0tRVBha0NnUFYwTzdZVjBGNkoxSkpPTmtWck5RcXhxSDFQZkF2MUdUMFF5cGtfLUhUQXhCbDk4dFVwZ09sbnRlSDg2NC1tV0tqeVlTQjhhN05Gb3JwRVBNdmFvRGVsN1FaQ1F3VTlQUjJISFhhM0M2X19uZA?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T16:42:00+00:00",
-   "resumo": "Exercícios de pilates para dor no joelho podem ser feitos em 5 minutos Metrópoles",
    "pre": 3.0
   },
   {
@@ -932,16 +932,6 @@
    "pre": 3.3
   },
   {
-   "id": "0382d93495a10970",
-   "canal": "Folha Equilíbrio",
-   "titulo": "Mulheres são mais inteligentes emocionalmente que homens, e isso é um problema, diz estudo",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/10/mulheres-sao-mais-inteligentes-emocionalmente-que-homens-e-isso-e-um-problema-diz-estudo.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2026/10/14/17920138496acff61971daf_1792013849_3x2_rt.jpg",
-   "publicado_em": "2026-10-20T20:00:00+00:00",
-   "resumo": "Quem vem à sua mente quando você pensa em alguém emocionalmente inteligente? Alguém capaz de perceber o clima de um ambiente, acalmar uma discussão e sabe exatamente o que dizer quando um amigo está passando por dificuldades? Para muitas pessoas, essa pessoa é uma mulher . Essa crença é tão difundida que a psicologia popular a trata como um fato. Leia mais (10/20/2026 - 17h00)",
-   "pre": 3.3
-  },
-  {
    "id": "8bda4f3879f1f309",
    "canal": "Folha Equilíbrio",
    "titulo": "Farmácia Popular funciona também como política de proteção da renda das famílias, diz estudo",
@@ -992,14 +982,14 @@
    "pre": 2.2
   },
   {
-   "id": "0bda6e8769ce5744",
-   "canal": "Estadão Saúde",
-   "titulo": "Vai um ‘lanchinho de exercício’ aí? Estudo mostra que treino rápido já beneficia a saúde",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQVoyYUl5MlNtNEFsTVIwOW1RRDZKQzFPOGZPMHJ5SmJVS0UwMTdHMDFVZXBoTFpmRkwwZk1GMk9xVnlrSmtzblRVakk3T3k5R1VFSUNoeUxBUFlMcmVWWUJJc0FwemlxdTRRalFmQmk4X1RPc2ZDdzYzN2txWVRmREhCLThrdTJ1UHMzMXlzZU9wcThqYUI2Q2JHWjhvX1dCMGZHMWg4Z1M2eE1BVjNEN3RFS2hVSXdYTlVlaGc5UQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T05:25:00+00:00",
-   "resumo": "Vai um ‘lanchinho de exercício’ aí? Estudo mostra que treino rápido já beneficia a saúde Estadão",
-   "pre": 9.0
+   "id": "f51f04f93dd9eadc",
+   "canal": "Folha Equilíbrio",
+   "titulo": "O que são e como funcionam testes de idade biológica",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/10/o-que-sao-e-como-funcionam-testes-de-idade-biologica.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2026/10/20/17925274646ad7cc68335b9_1792527464_3x2_rt.jpg",
+   "publicado_em": "2026-10-21T18:00:00+00:00",
+   "resumo": "Quantos anos você tem? Quantos anos você sente que tem? Esses dois números são iguais? Testes de idade biológica validam o que muitos de nós percebem intuitivamente: nossas células nem sempre coincidem com nossas certidões de nascimento . Leia mais (10/21/2026 - 15h00)",
+   "pre": 2.2
   },
   {
    "id": "4c86052b294c7fe1",
@@ -1062,16 +1052,6 @@
    "pre": 3.0
   },
   {
-   "id": "0a681ef3b0c05755",
-   "canal": "Estadão Saúde",
-   "titulo": "Agência de Comunicação - Body Health escolhe SP para estreia mundial do Unyque Day",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOEVyOGduakhqdThEQWR1S2FwZ0xGWW1DVDBLNHRRdjZqRk5vVU9aejFRR3FuTkR6ZGtZZnN2M1p4cGx3Mm1xOUhtbE5DMVZZSFI1VlBOR3JKclFRcnVOY01sMzJLdEs5NnYwUzBNbUt4ejV0Ui1ReDJTQlI5TmgtQVlYUzJOQi16R2h4THFsUHF3OFdYWjBfLXFRdkE5bmk5alUwaHFCelZMZnhybzlJQkxVM2V3VG1WWHNfTnY3enRqRENraGc?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T14:13:19+00:00",
-   "resumo": "Agência de Comunicação - Body Health escolhe SP para estreia mundial do Unyque Day Estadão Blue Studio",
-   "pre": 3.0
-  },
-  {
    "id": "b67a07665491eefe",
    "canal": "Estadão Saúde",
    "titulo": "BradSaúde vê lucro superar R$ 1 bilhão no 3T26, mas enfrenta pressão nos planos de saúde",
@@ -1090,6 +1070,26 @@
    "publicado_em": "2026-10-21T19:30:36+00:00",
    "resumo": "Agência de Comunicação - Tecnologia e exercício mudam a rotina de cuidado do idoso Estadão Blue Studio",
    "pre": 3.0
+  },
+  {
+   "id": "392af417bda700c8",
+   "canal": "Estadão Saúde",
+   "titulo": "Fibromialgia e sono: por que uma noite na cama nem sempre recupera as energias?",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOVFfbDlEZ0pwMEV5ZGdzMWNEVzByWk5ZQ1ZsVDlTQlZfdmRvd0pKX2Z0akRUZDduREUzajFCbzVaWlBoa09IclNZRjVVNVBjcnlUR3pwLVpxeE9wUkJIajNYeVY3Ql9OcDM0SUk3TkRSQUVzVFNGY2RCX0QxSm1aS0xYUEU3X1FQVEc4cG5yMXNBTkQwbTJQSG9zemNvQ3VYVk5EUFFWLVRQa3VWRW1TUlZ3Qmo?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-21T06:06:00+00:00",
+   "resumo": "Fibromialgia e sono: por que uma noite na cama nem sempre recupera as energias? Estadão",
+   "pre": 3.0
+  },
+  {
+   "id": "3b66d3c4e1cd8852",
+   "canal": "Estadão Saúde",
+   "titulo": "Agência de Comunicação - Veganismo: 4 grãos que enriquecem a alimentação e ajudam no emagrecimento",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPeGczWDRRajRxWS1QejhFa1ZBMTl5YUZwaWxRNThGdU1wclhHZFZHZnZnUVBOMzRXTHRxdE1zck5hQUtOLVdOcV82TXVmTWQ0SjU5cERxcng5OWVmT2hpbW56eWJJRDc5MHUtc0gxN25Wd1IyNFVnM2VYSXFfZHdWUEZBRDFDeU0ta2QtVk1fcml2RER6ZFllQWdNeEJpTHRiVWh4NzdxWDFZT1hmZUhLTUpXNGJuUXF1TWRzd2o5SmlOaHdPSnJlaVVJd3VxQk93QlJKazQxci0ydHVYX1E?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T17:58:57+00:00",
+   "resumo": "Agência de Comunicação - Veganismo: 4 grãos que enriquecem a alimentação e ajudam no emagrecimento Estadão Blue Studio",
+   "pre": 2.0
   },
   {
    "id": "4eae6a52d88fa952",
@@ -1502,14 +1502,24 @@
    "pre": 2.0
   },
   {
-   "id": "dedbb289917b44ca",
+   "id": "31b53340d1a8e573",
    "canal": "Forbes",
-   "titulo": "Cury (CURY3) Prioriza Dividendos em Detrimento de Crescimento e Não Vê Ruptura do MCMV com Eventual Troca de Governo",
-   "link": "https://forbes.com.br/forbes-money/forbes-real-estate/2026/10/cury-estrategia-dividendos-mcmv/",
+   "titulo": "Órgão Regulador de Wall Street Vai Focar Fiscalização sobre IA e Tokens",
+   "link": "https://forbes.com.br/forbes-money/2026/10/orgao-regulador-de-wall-street-vai-focar-fiscalizacao-sobre-ia-e-tokens/",
    "imagem": null,
-   "publicado_em": "2026-10-22T19:30:29+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Com dividendos na casa dos 13%, construtora adota postura cautelosa para o crescimento e adapta processos após rigor da Caixa no crédito O post Cury (CURY3) Prioriza Dividendos em Detrimento de Crescimento e Não Vê Ruptura do MCMV com Eventual Troca de Governo apareceu primeiro em Forbes Brasil .",
-   "pre": 2.0
+   "publicado_em": "2026-10-23T19:46:06+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Medida permite que empresas ofereçam ações baseadas em blockchain ou representadas por tokens O post Órgão Regulador de Wall Street Vai Focar Fiscalização sobre IA e Tokens apareceu primeiro em Forbes Brasil .",
+   "pre": 1.0
+  },
+  {
+   "id": "302ba5e1f166cbf5",
+   "canal": "Forbes",
+   "titulo": "Microsoft Desenvolve Ferramenta de IA Capaz de Diagnosticar Como um Médico",
+   "link": "https://forbes.com.br/forbes-tech/2026/10/microsoft-desenvolve-ferramenta-de-ia-capaz-de-diagnosticar-como-um-medico/",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:28:08+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Sistema coordena as etapas do diagnóstico e mobiliza um painel simulado de especialistas clínicos para analisar os casos O post Microsoft Desenvolve Ferramenta de IA Capaz de Diagnosticar Como um Médico apareceu primeiro em Forbes Brasil .",
+   "pre": 1.0
   },
   {
    "id": "d613a5e7a088a13c",
@@ -1592,6 +1602,16 @@
    "pre": 1.0
   },
   {
+   "id": "deeafa169a7ec902",
+   "canal": "Gq",
+   "titulo": "The Perfect American-Made Oxford Shirt Still Exists",
+   "link": "https://www.gq.com/story/jpress-flap-pocket-oxford-shirt-three-outfits",
+   "imagem": "https://media.gq.com/photos/6ad906ea71fa9a11b2758113/master/pass/LedeDesignOxford-2.jpg",
+   "publicado_em": "2026-10-23T19:38:07+00:00",
+   "resumo": "It's hard to find a button-down crafted with the retro details Ivy-style diehards geek out over. Luckily, J.Press makes 'em just like they used to.",
+   "pre": 0.0
+  },
+  {
    "id": "3c812941a12d0e44",
    "canal": "Gq",
    "titulo": "30 Gifts for Girlfriends Who Have Excellent Taste (Obviously)",
@@ -1612,16 +1632,6 @@
    "pre": 0.0
   },
   {
-   "id": "37c514db1402ee4e",
-   "canal": "Gq",
-   "titulo": "3 Impeccable Fall Outfits for Peak Admiring-the-Foliage Season",
-   "link": "https://www.gq.com/story/cold-weather-getaway-outfits",
-   "imagem": "https://media.gq.com/photos/6adb670e9ffcdd8e6e957ad8/master/pass/MrPorter2.jpg",
-   "publicado_em": "2026-10-23T17:13:04+00:00",
-   "resumo": "Gearing up for a weekend somewhere scenic and leafy? Here’s how to dress for the getaway without losing a step.",
-   "pre": 0.0
-  },
-  {
    "id": "ba5b53a122f70647",
    "canal": "Vanityfair",
    "titulo": "So What Do We Want From a 'Glee' Reboot?",
@@ -1630,6 +1640,26 @@
    "publicado_em": "2026-10-22T20:13:21+00:00",
    "resumo": "Ready or not, a Glee reboot is in the works at Disney+ and Hulu, with Lea Michele set to return. One VF staff writer breaks down what choices Ryan Murphy should make for Glee round two—and what it would behoove him to avoid.",
    "pre": 1.0
+  },
+  {
+   "id": "ed6e9b9f0d50a85e",
+   "canal": "Vanityfair",
+   "titulo": "Art Basel Paris Opened—Then Closed Early, Due to Protests. What Happened?",
+   "link": "https://www.vanityfair.com/style-art-basel-paris",
+   "imagem": "https://media.vanityfair.com/photos/6adbb2128dac4e46eda37a8d/master/pass/The-Wounded-Have-No-Nationality.jpg",
+   "publicado_em": "2026-10-23T19:56:12+00:00",
+   "resumo": "One of the biggest moments in contemporary art got cut short due to the demonstrations. What caused the shock cancellation?",
+   "pre": 0.0
+  },
+  {
+   "id": "9f3e80c6144ce10d",
+   "canal": "Vanityfair",
+   "titulo": "Playwright Jocelyn Bioh Stars in 'School Girls; Or, The African Mean Girls Play' on Broadway",
+   "link": "https://www.vanityfair.com/story/jocelyn-bioh-school-girls-broadway-interview",
+   "imagem": "https://media.vanityfair.com/photos/6ad7b0cf5c5c0eaa6d728a39/master/pass/10.8.26JocelynSchoolGirlsRehearsal002-EDIT.jpg",
+   "publicado_em": "2026-10-23T19:12:47+00:00",
+   "resumo": "And for one whirlwind weekend, the Tony-nominated playwright hit the stage to star in her own Broadway production. In an exclusive conversation with Vanity Fair, the School Girls writer chats about her creative role reversal.",
+   "pre": 0.0
   },
   {
    "id": "543af92df3d2b46c",
@@ -1662,33 +1692,13 @@
    "pre": 0.0
   },
   {
-   "id": "afd83717337b4531",
-   "canal": "Vanityfair",
-   "titulo": "The Art of the Deal: Jared Kushner’s Hacked Phone Revealed His Secret Negotiations—Including More Than $700 Million in Transfers",
-   "link": "https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations",
-   "imagem": "https://media.vanityfair.com/photos/6ad91087dc03a09d237f39fb/master/pass/vfoctober_kushner_money_tout.jpg",
-   "publicado_em": "2026-10-22T17:48:02+00:00",
-   "resumo": "An exclusive excerpt from Princes and Thieves: Jared Kushner and Mohamed bin Zayed’s Secret Plot to Remake the Middle East examines how bank accounts linked the president’s son-in-law—and former senior adviser—to Israel, the UAE, and Saudi Arabia.",
-   "pre": 0.0
-  },
-  {
-   "id": "ebb0319631df63e0",
-   "canal": "Vanityfair",
-   "titulo": "Natalie Wood’s Daughter Says Her Movie Star Mom Was Not “Tragic or Doomed…. She Had a Wonderful Life.”",
-   "link": "https://www.vanityfair.com/story/natalie-wood-daughter-interview",
-   "imagem": "https://media.vanityfair.com/photos/6ad786825c5c0eaa6d7289ad/master/pass/GettyImages-2156955132.jpg",
-   "publicado_em": "2026-10-22T17:16:39+00:00",
-   "resumo": "Natasha Gregson Wagner was 11 years old when her mother, Natalie Wood, died. We spoke with her about the scent of gardenias from her childhood, a house where Fred Astaire and Audrey Hepburn used to visit, and why she refuses to let her mother’s story be told as a tragedy.",
-   "pre": 0.0
-  },
-  {
    "id": "efbdcc3cf59efe55",
    "canal": "Nytimes",
-   "titulo": "Sleep Habits May Indicate a Type of Depression, Researchers Say",
+   "titulo": "Your Sleep Habits May Point to a Specific Type of Depression, a New Study Finds",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTjlLdjRuaGd6c1VWZ0U3ZHE4WC11VzFRZmVuTTM0TV95ZDZrOW9HSlFvR19aSmJPRWoxcTcwZVBSUFJMVkt3R3F0Vl90MnVNdG5zaU5COEFSY0RDN3VJaC1sQUxJXzBSV3RPMmZXeHJFbUJzWjVRcFFpY1FwazBfT0dQTGI?oc=5",
    "imagem": null,
    "publicado_em": "2026-10-23T09:03:06+00:00",
-   "resumo": "Sleep Habits May Indicate a Type of Depression, Researchers Say The New York Times",
+   "resumo": "Your Sleep Habits May Point to a Specific Type of Depression, a New Study Finds The New York Times",
    "pre": 3.0
   },
   {
@@ -1752,13 +1762,13 @@
    "pre": 2.0
   },
   {
-   "id": "92956887effa7566",
+   "id": "168c704edf885c31",
    "canal": "Nytimes",
-   "titulo": "‘Cats Love Gravy’: How a Reporter Ended Up at a Pet Food Research Center",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9rZllKSi1JcVBLakZHRDRVQVB2SmJnbU1tZW40V05lVGk2MkxwSHJXeERjVEFPT0lQTFFTMW1iSnprSzktVnBZOTRGQmlIeTkzSEs5UmNyWHZMRzEzYjYtSEJGNjc3VzF6SEpiWTRXOVVCaWxG?oc=5",
+   "titulo": "At 90, Steve Reich Remains in Good Creative Health",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wYVhFRmFRdlBCd3ZwNUtGbmlTOXg5YWRQa0dLQmQwWTU5dVI5bHVvejdXdDZhdzV1MWc2ajlnbkhhZVkxd2d2T1lkRElKMGF2dElXejhUNmZINVg1aTBvREhEdFRNRFY5aUV2TmRSVGYyM0tWMnc4YU9NNnV0U2M?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T07:00:07+00:00",
-   "resumo": "‘Cats Love Gravy’: How a Reporter Ended Up at a Pet Food Research Center The New York Times",
+   "publicado_em": "2026-10-23T17:39:20+00:00",
+   "resumo": "At 90, Steve Reich Remains in Good Creative Health The New York Times",
    "pre": 1.0
   },
   {
@@ -1800,6 +1810,16 @@
    "publicado_em": "2026-10-23T08:21:49+00:00",
    "resumo": "Kaká Diniz, de 41 anos, marido da cantora Simone Mendes, eliminou 17 kg da balança após mudar os hábitos alimentares e adotar uma rotina de exercícios físicos. O empresário, que chegou a pesar 92,5 kg em 2023, atualmente está com 75 kg. Para entender melhor o processo, a Quem conversou com o nutricionista de fisiculturistas Fábio Pires, que está acompanhando o empresário nessa transformação. Segun",
    "pre": 7.0
+  },
+  {
+   "id": "4f4b3d9d9476ba39",
+   "canal": "Globo",
+   "titulo": "Após término, Gracyanne Barbosa compartilha reflexão: 'A gente é muito bom em dar desculpa'",
+   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/apos-termino-gracyanne-barbosa-compartilha-reflexao-a-gente-e-muito-bom-em-dar-desculpa.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/muE7WyyoXWFTJf73bfzKeYNAhek=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/k/t/CkvHOARbGmzdIQn2KBQQ/capa-1400-x-950-79-.png",
+   "publicado_em": "2026-10-23T18:36:46+00:00",
+   "resumo": "Gracyanne Barbosa, de 43 anos, compartilhou uma reflexão sobre seguir a disciplina enquanto passa por uma fase turbulenta da vida pessoal. A influenciadora, que teve o fim do namoro com Gabriel Cardoso confirmado pelo empresário na quinta-feira (22), contou que chegou a pensar em desistir de ir à academia, mas decidiu cumprir o treino mesmo sem motivação. Em um vídeo publicado no Story do Instagra",
+   "pre": 6.0
   },
   {
    "id": "5ed95f3b7fa1e669",
@@ -1869,16 +1889,6 @@
    "imagem": "https://s2-quem.glbimg.com/1bcWQCYDcQNznzlSsfkeQmIRSoE=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/T/w/yVU7mSQKeyOTy4Rfn3SA/design-sem-nome-9-.jpg",
    "publicado_em": "2026-10-22T19:17:51+00:00",
    "resumo": "O influenciador Lorenzo Fischer, de 19 anos, compartilhou nas redes sociais, na quarta-feira (21), um momento delicado de sua vida após ser diagnosticado com câncer. Conhecido por produzir conteúdos sobre beleza, autocuidado masculino, academia e lifestyle, o jovem publicou um vídeo no Instagram em que mostrou o resultado de ter raspado o cabelo e desabafou sobre os desafios enfrentados durante o ",
-   "pre": 3.0
-  },
-  {
-   "id": "c346b0d96e1ae433",
-   "canal": "Globo",
-   "titulo": "Ex de Gracyanne Barbosa abre motivo de término: 'Não tem funcionado'",
-   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/ex-de-gracyanne-barbosa-abre-motivo-de-termino-nao-tem-funcionado.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/2JMr3uMgfFGoHPl5ZmLxzKmCIxE=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/A/o/eg3A0RSEWHjNpccOJhYA/gracyanne-barbosa.jpg",
-   "publicado_em": "2026-10-22T18:18:08+00:00",
-   "resumo": "Gabriel Cardoso, de 35 anos, está reflexivo desde o fim de seu relacionamento com Gracyanne Barbosa, de 43. Em um desabafo para a Quem nesta quinta-feira (22), o empresário contou o motivo dos conflitos que culminaram no fim do relacionamento de nove meses, ressaltando a admiração pela ex-companheira. Gabriel diz ter notado uma incompatibilidade com a musa fitness por, segundo ele, não sentir que ",
    "pre": 3.0
   },
   {
@@ -1992,6 +2002,26 @@
    "pre": 2.0
   },
   {
+   "id": "b4811e7820b417e5",
+   "canal": "Vulture",
+   "titulo": "The 12 Best Movies and TV Shows to Watch This Weekend",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV2JtYzVVZm9hTUxYRm84UlBNdlpiUTFJWk55b3hQc1RhbTZWaG90SGljZ0NzcVlOX3FtOGFYSjdjYW91c2ZfZGxxMlJrb1IzZm9OYjBLckJ6U1B0aURRdXRnZHZjVGxETEJJNUI3ZEFLVElLbUpmaXNjVVB3MGozX0ZEelVjX3Zoak5kZ25zZm1pM0Qyd2tsaE1XMFY?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:44:36+00:00",
+   "resumo": "The 12 Best Movies and TV Shows to Watch This Weekend Vulture",
+   "pre": 0.0
+  },
+  {
+   "id": "5692ff3b1671edef",
+   "canal": "Vulture",
+   "titulo": "Why Not Be Anne Hathaway for Halloween?",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbkE5eF9nTmp3V0NnZUdBNUNwVHd3bFFBXzJNUElWV3hycmtJcDR3dFQwTE5xbDkwc0U5X2JFSC15RHJBUkEwU2lRZkxxQlV3ejdhYnBzYWFBTVJ1SkRWSTBTQkdwRElOU1R2eDMxN2lYblZydkdLR1lNSHY2ZjZaX0hMRWZKOXh4bDQ1TzNhSXY?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:39:22+00:00",
+   "resumo": "Why Not Be Anne Hathaway for Halloween? Vulture",
+   "pre": 0.0
+  },
+  {
    "id": "97ec5ec6e06e8598",
    "canal": "Vulture",
    "titulo": "John Turturro Loved Playing Jokes on Robert Redford While Filming Quiz Show",
@@ -1999,26 +2029,6 @@
    "imagem": null,
    "publicado_em": "2026-10-23T18:00:32+00:00",
    "resumo": "John Turturro Loved Playing Jokes on Robert Redford While Filming Quiz Show Vulture",
-   "pre": 0.0
-  },
-  {
-   "id": "de4079f372b086ff",
-   "canal": "Vulture",
-   "titulo": "Bilge Ebiri Author Archive",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HeUxOYjdjTWs2em1oSlhvQWUwY1FvRGk4MW05NWpwMnY3R0Y4Qk9zaWFnU1FSVEUwV2FpUUlaeTM5dDRVUVM3aTJkb1ZQS1RWVTZmYkVn?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T16:38:45+00:00",
-   "resumo": "Bilge Ebiri Author Archive Vulture",
-   "pre": 0.0
-  },
-  {
-   "id": "32bdc1740663ba89",
-   "canal": "Vulture",
-   "titulo": "Entertainment News - TV, Movies, Music, Books, Theater, Art",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5na05HdWxYQnlYMFRUTVFjSTAwdXRHOHpWUC1aeWF1WFBGdUZUOUZhWVBVN2R0Tm1COTlyOG5WX1Nadlk?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T15:57:53+00:00",
-   "resumo": "Entertainment News - TV, Movies, Music, Books, Theater, Art Vulture",
    "pre": 0.0
   },
   {
@@ -2052,14 +2062,44 @@
    "pre": 2.0
   },
   {
-   "id": "f9c3b1d092939f75",
+   "id": "a01f5ca4979e98a2",
    "canal": "Pagesix",
-   "titulo": "Prince Harry’s bizarre claim about Meghan Markle’s estranged dad resurfaces amid bombshell child porn allegations",
-   "link": "https://pagesix.com/2026/10/23/royal-family/prince-harrys-bizarre-claim-about-meghan-markles-dad-resurfaces-amid-child-porn-allegations/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Flos-angeles-ca-prince-harry-146134404_381b58.jpg?w%3D683",
-   "publicado_em": "2026-10-23T17:35:36+00:00",
-   "resumo": "In 2022, the Duke of Sussex blamed himself for Meghan's rift with her estranged father — despite her new claim that police warned her about disturbing allegations against him in 2018.",
-   "pre": 2.0
+   "titulo": "Kylie Jenner says she’s ‘seen a difference’ from using this $15 K-beauty buy",
+   "link": "https://pagesix.com/2026/10/23/style/kylie-jenners-favorite-retinal-is-this-15-k-beauty-skincare/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fkylie-retinol.jpg?quality%3D90%26strip%3Dall",
+   "publicado_em": "2026-10-23T19:30:00+00:00",
+   "resumo": "She may have just modeled a $50 million bra, but her skin care secret is on sale for $15.",
+   "pre": 0.0
+  },
+  {
+   "id": "08dab77f70e021e8",
+   "canal": "Pagesix",
+   "titulo": "Inside Andrew Shue and Marilee Fiebig’s relationship with Amy Robach, T.J. Holmes after partner swap",
+   "link": "https://pagesix.com/2026/10/23/celebrity-news/inside-andrew-shue-and-marilee-fiebigs-relationship-with-amy-robach-t-j-holmes/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fmarilee-fiebig-andrew-shue-attend-145941046_a62316.jpg?w%3D713",
+   "publicado_em": "2026-10-23T19:27:11+00:00",
+   "resumo": "Holmes and Robach married before their ex-spouses announced their own engagement.",
+   "pre": 0.0
+  },
+  {
+   "id": "95b12fd73fc6af8b",
+   "canal": "Pagesix",
+   "titulo": "Score 20% off celebrities’ beauty favorites at Credo, this weekend only",
+   "link": "https://pagesix.com/2026/10/23/style/11-best-celebrity-loved-beauty-picks-from-credo-20-off-sale/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2F146221997.jpg?quality%3D90%26strip%3Dall",
+   "publicado_em": "2026-10-23T19:08:54+00:00",
+   "resumo": "Luxe beauty for less might be our love language.",
+   "pre": 0.0
+  },
+  {
+   "id": "f4b0143641a211e8",
+   "canal": "Pagesix",
+   "titulo": "Trump staffer Britt McHenry forced to resign over NBA scuffle after being promoted on the same day",
+   "link": "https://pagesix.com/2026/10/23/society/trump-staffer-britt-mchenry-forced-to-resign-over-nba-scuffle-after-getting-promoted-the-same-day/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fespn-sideline-reporter-brittany-mchenry-146217740.jpg",
+   "publicado_em": "2026-10-23T19:03:24+00:00",
+   "resumo": "McHenry was hired in September as a press adviser and was promoted on Wednesday -- the day of the incident.",
+   "pre": 0.0
   },
   {
    "id": "d352624ebe1b884b",
@@ -2070,36 +2110,6 @@
    "publicado_em": "2026-10-23T19:00:18+00:00",
    "resumo": "\"Citizen Kim\" author Jonathan Van Meter revealed Hilton canceled on their interview about Kardashian a whopping 17 times.",
    "pre": 0.0
-  },
-  {
-   "id": "e04e571542e70c89",
-   "canal": "Pagesix",
-   "titulo": "Meghan Markle’s dad Thomas Sr. accused of sexually abusing child, traveling abroad to abuse kids in 2018 letter to police",
-   "link": "https://pagesix.com/2026/10/23/royal-family/meghan-markles-dad-thomas-sr-accused-of-sexually-abusing-child-traveling-abroad-to-abuse-kids-in-2018-letter-to-police/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fmeghan-markle-s-father-suing-146134351_b69fa3.jpg?w%3D778",
-   "publicado_em": "2026-10-23T18:55:49+00:00",
-   "resumo": "The bombshell letter was reportedly sent to a specialist Met Police protection unit.",
-   "pre": 0.0
-  },
-  {
-   "id": "9d598ed72ceb6645",
-   "canal": "Pagesix",
-   "titulo": "Kate Gosselin hits back at son Collin’s renewed allegations of abuse: ‘My kids know who I truly am’",
-   "link": "https://pagesix.com/2026/10/23/celebrity-news/kate-gosselin-hits-back-at-son-collins-renewed-allegations-of-abuse-my-kids-know-who-i-truly-am/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fkate-gosselin-visits-extra-universal-144022251_c9e956.jpg",
-   "publicado_em": "2026-10-23T18:38:04+00:00",
-   "resumo": "The 51-year-old TLC star posted the video to the platform in celebration of her boyfriend Steve Neild's birthday",
-   "pre": 0.0
-  },
-  {
-   "id": "45a072ebc5fb4721",
-   "canal": "Pagesix",
-   "titulo": "The best celebrity Halloween costumes 2026: Paris Hilton, North West, more",
-   "link": "https://pagesix.com/style/celebrity-halloween-costumes-2026/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fkim-kardashian-transforms-13-year-145848035_046d40.jpg",
-   "publicado_em": "2026-10-23T18:19:08+00:00",
-   "resumo": "From North West as Natalie Nunn — and Kim Kardashian as North West — here are the best celeb costumes of 2026.",
-   "pre": 0
   },
   {
    "id": "54378810bc277837",
@@ -2146,6 +2156,17 @@
    "palavra": "treino de força"
   },
   {
+   "id": "e6cf9123229343e5",
+   "canal": "ND Mais",
+   "titulo": "Joinville garante dois representantes no Mundial de Hyrox 2027 em Hong Kong",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVDNjVGhOajF1bXRSUk1tN3lqQ2o1THRhUGpZeDRxMkJ2VnMzVUt4SV9fNTVKN1N2RU43SmtteWRHbVdtUGdSaWg3U25VQTk5eFF5Y1NUckRUMWQ5Zjh0OUFiSDJvaFIwWmxHaTNsNDlYS294NDJQOGl0blhKNWY3TGFQQWVhWHk2VmdQQWdJQjJqNllqd2JMSy0yX19aam9rRV80TUZHYw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:01:29+00:00",
+   "resumo": "Joinville garante dois representantes no Mundial de Hyrox 2027 em Hong Kong ND Mais",
+   "pre": 6.0,
+   "palavra": "hyrox"
+  },
+  {
    "id": "7a8fbe9e27db2805",
    "canal": "InMagazine",
    "titulo": "Ex-BBBs Trocam Musculação Pelo Hyrox, Modalidade Que Virou Tendência Fitness",
@@ -2179,15 +2200,26 @@
    "palavra": "hyrox"
   },
   {
-   "id": "518d69c461239dc6",
-   "canal": "Gshow",
-   "titulo": "Nem Crossfit, nem musculação: ex-BBBs aderem ao Hyrox, nova moda fitness do momento",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUkVVOG9iTmMzRVA5VV92anlLTWo0WlFuamVra2oxTEtVTXZKbEZTRF9mMXpIZ1NsU1NUcl9yd0phV01wZXRGTm40TVRDWm9RTkhsaDJ1SUwwMjlzbEpva3ZzSk5vR1V3MEI1TlRyeW15SkNJRmF0bGJJYnc4LUhKMTQtU1FCSW1fUlN3Tkd3aVprUDZ3N3ZtUjA0a0tRanlfeFZhaVVzaFlzdFNLWkt2eVQxN0c1M2YzbVdaQjBzdHJSdUoydDJmMDFXSkVxOUt0T0lkeGEwRHZPYmNXQUpqTNIB7wFBVV95cUxQZi1HU3ZFQ2dVS1pqVWdzODQ5amdsTDMwck13bEp6MDlabG1oaXhHNUlDTG5NWlNUSEdfSDNaT01vdkJFS3lablJldFBhQ0dZM0ZYQXppY0gtczQxOWYyWkt4NmRaQTdHNFpRRVN2YnJTWWNLSXB4MkFEXzhwT3Y0eDBUOF9BTVNVN3ZTaEkyYXctOHJSQWNuQmxPcnhOWHYwdEZkcnF1eGYtRWJNaS1ZS1UxSXROaGRMT3RkV2RGaHFnbzFvQUFtR2lYY3Nua3kzd0RLUzR0UHYtMnhkd01HVDR6QW15MU1wNzAtdGdoTQ?oc=5",
+   "id": "c8b1c53c9c19f43c",
+   "canal": "melhorinvestimento.net",
+   "titulo": "Canetas emagrecedoras: mercado no Brasil, China e Índia pode chegar a US$ 22 bilhões",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNczc0TEw1T2EzbjhodE9laXI5S0E2MGltM2xhQzdLQ0xjRjJpTlVBUGZSWkFYQ2hkcVlmZ2ExMWFpaEROdG90WGNtb3Q4MlYyNzItbjlvRU9XUU5SWWFRSDhQQ0lCTzVZd2NVdXFpeTNtMndvUGR6SzFyOEZaclJJQWxWMVZaWi1BWVY0?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T08:00:00+00:00",
-   "resumo": "Nem Crossfit, nem musculação: ex-BBBs aderem ao Hyrox, nova moda fitness do momento Gshow",
-   "pre": 3,
-   "palavra": "hyrox"
+   "publicado_em": "2026-10-23T19:51:30+00:00",
+   "resumo": "Canetas emagrecedoras: mercado no Brasil, China e Índia pode chegar a US$ 22 bilhões melhorinvestimento.net",
+   "pre": 7.0,
+   "palavra": "glp-1"
+  },
+  {
+   "id": "9acd859690364b4f",
+   "canal": "boca.com.br",
+   "titulo": "Anvisa alerta sobre riscos de canetas emagrecedoras caseiras com tirzepatida",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYkh0UENzRmowcVh3N2RGLUFPUmx5N2QwWjVXOVM0SHBHdThMWHRPWVpNUmo5NDd6MndUb3Z0ek9tOGJZcXBfS2NmTThaRlo4ZVczbTh6SzBsY1BjOEZBcjBwSUl1b0ZpWHBGWHdVblcxZmdST3hSeDkxeW1rcTQ5WldsMmtXalk?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:16:15+00:00",
+   "resumo": "Anvisa alerta sobre riscos de canetas emagrecedoras caseiras com tirzepatida boca.com.br",
+   "pre": 7.0,
+   "palavra": "glp-1"
   },
   {
    "id": "223a6e62bcda9b66",
@@ -2209,28 +2241,6 @@
    "publicado_em": "2026-10-23T17:51:16+00:00",
    "resumo": "Mercado de canetas emagrecedoras pode triplicar até 2035 e chegar a US$ 22 bilhões Expressão Rondônia",
    "pre": 9.0,
-   "palavra": "glp-1"
-  },
-  {
-   "id": "71cd067d6a87445d",
-   "canal": "News.med.br",
-   "titulo": "Terapia combinada promove perda de peso expressiva em estudo envolvendo pacientes com diabetes",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNk9GbzVCaUFmUGFWRExSaEZjN0FkMk9fNnJ0MHVabFhDZVBnclBSTUNHVnk1QS1IUTJ2X1dETUdUTG5yOXJuSFozTWV5a000LUdrWFM4ZWp5Y3R5ZEVoNDNtVUNpMTBDRkktNUJkenBKczlwNEp2WTY4NU12aW8zRlZkMmM0aElyY1hpblhFUWJpNzFzT29id0laeWdsc1QwSGU1QTRfZmQwN1VRZVY1eDZUdVBac3RoRlM2U3hmeXpUanBaRGVJOUJ3?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T15:58:28+00:00",
-   "resumo": "Terapia combinada promove perda de peso expressiva em estudo envolvendo pacientes com diabetes News.med.br",
-   "pre": 6.0,
-   "palavra": "glp-1"
-  },
-  {
-   "id": "344aeebb531392e1",
-   "canal": "Paraíba Business",
-   "titulo": "Remédios para obesidade podem chegar a US$ 22 bi até 2035, diz J.P. Morgan",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaVFNNURsVnl2OWtsNnFyM0Z0b3l3N1JwUVEwbjhENW1OMkZ0WGpad1VOMFlwYk9DdTJ3WUkxblpuYW5mS0szNlIzYUdRTHFXM3A5RTFHa09ZQ2dfdzV4cU1lYWtCX1ZqeGJjR0g0bDdPRGlHRTAyeDBNczFCQVVQQTdBT29NR0JVbHpkZGo4U0xTSlBCNldyUW0tSUhMejdZVW10M0JR?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T15:40:00+00:00",
-   "resumo": "Remédios para obesidade podem chegar a US$ 22 bi até 2035, diz J.P. Morgan Paraíba Business",
-   "pre": 5.0,
    "palavra": "glp-1"
   },
   {
