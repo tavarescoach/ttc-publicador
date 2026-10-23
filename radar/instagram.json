@@ -1,5 +1,6 @@
 {
  "coletado_em": "2026-10-23T16:51:18.199580+00:00",
+ "aviso": "O token do Instagram venceu: o Radar está mostrando a última leitura. Gere um token novo (Explorador da Graph API, app TTC Radar, estendido) e salve no segredo FB_TOKEN.",
  "criterio": "posts de até 30 dias com engajamento >= 2.0x a mediana do perfil",
  "perfis": [
   {
@@ -14,7 +15,8 @@
    "taxa_engajamento": 0.03,
    "fora_da_curva": 10,
    "maior_razao": 1011.2,
-   "pontos": 1697.0
+   "pontos": 1697.0,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "thereadystate",
@@ -28,7 +30,8 @@
    "taxa_engajamento": 0.01,
    "fora_da_curva": 11,
    "maior_razao": 219.3,
-   "pontos": 331.1
+   "pontos": 331.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "nickbarefitness",
@@ -42,7 +45,8 @@
    "taxa_engajamento": 0.04,
    "fora_da_curva": 13,
    "maior_razao": 56.7,
-   "pontos": 244.2
+   "pontos": 244.2,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "coach_bowman",
@@ -56,11 +60,12 @@
    "taxa_engajamento": 1.96,
    "fora_da_curva": 7,
    "maior_razao": 78.3,
-   "pontos": 110.9
+   "pontos": 110.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "renato_cariani",
-   "origem": "nicho",
+   "origem": "aprendido",
    "nome": "Renato Cariani",
    "foto": "https://scontent-sea5-1.xx.fbcdn.net/v/t51.82787-15/532076392_18420866170105207_8288917263967374552_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=7d201b&_nc_eui2=AeFC0v9YRTUWa34qFiTdIx96wVQw3jE0chrBVDDeMTRyGsZAg4a9ESrsf53qLU02h7Ooq8gsZNk0w-6Svss1K50g&_nc_ohc=_wmuz-a6-rUQ7kNvwFEXGs5&_nc_oc=Adpmwc212pPiKJ9CU1mfULtSIxNLF1Zk8QO8BislKPLeSXKcXS7N2rlmJjx2_-9-Odc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AL-3X8kEAAAA&_nc_gid=b7NwVnrKmF-pqGgsymdHYw&oh=00_AQNf4xEjaGLEeyeCyzC2Pr9P8w-Lp8zHWrwQxPk9embm2w&oe=6AE1491B",
    "bio": "Professor | Atleta | Empresário \n🎥 Criador de Conteúdo \n@growthsupplements 🏆\n@ctrc_oficial 🏋️\n@taticariani_ 💍",
@@ -70,11 +75,12 @@
    "taxa_engajamento": 0.05,
    "fora_da_curva": 9,
    "maior_razao": 49.1,
-   "pontos": 90.0
+   "pontos": 90.0,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "paulomuzy",
-   "origem": "nicho",
+   "origem": "aprendido",
    "nome": "PAULO MUZY I MÉDICO CRM115573",
    "foto": "https://scontent-sea5-1.xx.fbcdn.net/v/t51.2885-15/15099532_1737710276556168_142487451305246720_a.jpg?_nc_cat=1&ccb=1-7&_nc_sid=7d201b&_nc_eui2=AeErbOVDh9dIrytufNwmjFeLL-4MZ1ofwN4v7gxnWh_A3s_9WO6WjJdhoNbkbBAHYPPQlKF8hFGGYR7yhJZD-t_F&_nc_ohc=q5JD6HoUxbYQ7kNvwHStC2b&_nc_oc=Adov6R6rfYrrwCO1VZn52fusVJm65GCAdyRdpu-OiMqhcXUanYq7fFlVx3E44sqL-u0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AL-3X8kEAAAA&oh=00_AQN7WmY_5GFhI_97ZGgi90OQ0SmvmsvZ8AT-mXZZUqQkHw&oe=6AE1508F",
    "bio": "🩻Ortopedia,Traumatologia,Medicina Esportiva\n📖Ciência e performance baseada em evidências\n🎖️Excelência não é um ato, é um hábito",
@@ -84,7 +90,8 @@
    "taxa_engajamento": 0.02,
    "fora_da_curva": 8,
    "maior_razao": 30.2,
-   "pontos": 74.9
+   "pontos": 74.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drmarkhyman",
@@ -98,7 +105,8 @@
    "taxa_engajamento": 0.15,
    "fora_da_curva": 11,
    "maior_razao": 26.7,
-   "pontos": 71.6
+   "pontos": 71.6,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drmaryclaire",
@@ -112,7 +120,8 @@
    "taxa_engajamento": 0.04,
    "fora_da_curva": 9,
    "maior_razao": 18.3,
-   "pontos": 64.9
+   "pontos": 64.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drvondawright",
@@ -126,7 +135,8 @@
    "taxa_engajamento": 0.03,
    "fora_da_curva": 7,
    "maior_razao": 20.3,
-   "pontos": 61.1
+   "pontos": 61.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "bretcontreras1",
@@ -140,7 +150,8 @@
    "taxa_engajamento": 0.23,
    "fora_da_curva": 7,
    "maior_razao": 12.9,
-   "pontos": 38.5
+   "pontos": 38.5,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drjohnrusin",
@@ -154,7 +165,8 @@
    "taxa_engajamento": 0.22,
    "fora_da_curva": 8,
    "maior_razao": 14.0,
-   "pontos": 35.2
+   "pontos": 35.2,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "itscoachgoodman",
@@ -168,11 +180,12 @@
    "taxa_engajamento": 0.13,
    "fora_da_curva": 7,
    "maior_razao": 11.3,
-   "pontos": 32.9
+   "pontos": 32.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "leandrotwin",
-   "origem": "nicho",
+   "origem": "aprendido",
    "nome": "Leandro Lima",
    "foto": "https://scontent-sea5-1.xx.fbcdn.net/v/t51.2885-15/481962516_530282833416177_3595963174916653757_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=7d201b&_nc_eui2=AeEnNvMGwPPSGPELVQaXFCj7lWVUm0CvYxmVZVSbQK9jGRBpopD7_97VQHZZRmgEAnzBqK-hrTheQYjC_TR1XJX2&_nc_ohc=3va9mvTc_PAQ7kNvwERs4pc&_nc_oc=AdoPte9Img-JVkoILUeHJvDrwEoiDwS5qB4N_Q_1OnzLPxhoqHT8Jl0yAJSqbCo0YYY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AL-3X8kEAAAA&oh=00_AQMLiTjoaGsqU3s8E8PwMFkhdc5PaadXDgXx4_32jbi9Ng&oe=6AE17092",
    "bio": "🏋️‍♂️ @leandrotwin_consultoria\n💪🏼 Consultoria Dieta e Treino (Online e Presencial)\n🎓 Cursos Online - Treino, Dieta e mais.\n⬇️ Clique no link abaixo",
@@ -182,11 +195,12 @@
    "taxa_engajamento": 0.12,
    "fora_da_curva": 7,
    "maior_razao": 6.4,
-   "pontos": 32.7
+   "pontos": 32.7,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "marcioatalla",
-   "origem": "nicho",
+   "origem": "aprendido",
    "nome": "Marcio Atalla",
    "foto": "https://scontent-sea5-1.xx.fbcdn.net/v/t51.2885-15/298789617_397329252313843_6258867285022516945_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7d201b&_nc_eui2=AeFzY30HajPRfpaYVJvmPL7lRKMFEB-wNBdEowUQH7A0F7PtN1BmUF34QKRmB7UWcEQ8IH6PNwWIbPYlLkOdzCcO&_nc_ohc=s2IWLEnSgAwQ7kNvwGGw1We&_nc_oc=Adodgy8KTF1l6p0VLRDRwCeNzjj5MBw8hI_adyKHdXY2A5f_3Nd-zgw57iWuwf_R_Wk&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AL-3X8kEAAAA&oh=00_AQNZULY1Y7HYjKAPDFYAFdTLrZwXhVhedWZ8NdU9kJXEGg&oe=6AE16758",
    "bio": "Especialista em saúde e movimento\n📺 Viva Bem na @jovempannews (Sáb, 11h)\n📺 Idade Real no @domingoespetacular \n⬇️ Receba sua Mandala da Saúde no link",
@@ -196,7 +210,8 @@
    "taxa_engajamento": 0.12,
    "fora_da_curva": 6,
    "maior_razao": 9.2,
-   "pontos": 26.9
+   "pontos": 26.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "mrc_marcela",
@@ -210,7 +225,8 @@
    "taxa_engajamento": 4.19,
    "fora_da_curva": 5,
    "maior_razao": 8.7,
-   "pontos": 26.8
+   "pontos": 26.8,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "biolayne",
@@ -224,7 +240,8 @@
    "taxa_engajamento": 0.18,
    "fora_da_curva": 6,
    "maior_razao": 5.2,
-   "pontos": 19.5
+   "pontos": 19.5,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drgabriellelyon",
@@ -238,7 +255,8 @@
    "taxa_engajamento": 0.06,
    "fora_da_curva": 3,
    "maior_razao": 8.2,
-   "pontos": 16.3
+   "pontos": 16.3,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "squat_university",
@@ -252,7 +270,8 @@
    "taxa_engajamento": 0.19,
    "fora_da_curva": 4,
    "maior_razao": 3.6,
-   "pontos": 10.5
+   "pontos": 10.5,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "menno.henselmans",
@@ -266,7 +285,8 @@
    "taxa_engajamento": 0.57,
    "fora_da_curva": 4,
    "maior_razao": 3.1,
-   "pontos": 10.3
+   "pontos": 10.3,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drstacysims",
@@ -280,7 +300,8 @@
    "taxa_engajamento": 0.23,
    "fora_da_curva": 2,
    "maior_razao": 2.3,
-   "pontos": 4.7
+   "pontos": 4.7,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "jeffnippard",
@@ -294,7 +315,8 @@
    "taxa_engajamento": 3.99,
    "fora_da_curva": 0,
    "maior_razao": null,
-   "pontos": 4.0
+   "pontos": 4.0,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "thefitnesschef_",
@@ -308,7 +330,8 @@
    "taxa_engajamento": 0.81,
    "fora_da_curva": 1,
    "maior_razao": 2.0,
-   "pontos": 2.8
+   "pontos": 2.8,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "peterattiamd",
@@ -322,7 +345,8 @@
    "taxa_engajamento": 0.1,
    "fora_da_curva": 0,
    "maior_razao": null,
-   "pontos": 0.1
+   "pontos": 0.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "rodrigopolesso",
@@ -336,7 +360,18 @@
    "taxa_engajamento": 0.04,
    "fora_da_curva": 0,
    "maior_razao": null,
-   "pontos": 0.0
+   "pontos": 0.0,
+   "da_leitura_anterior": true
+  },
+  {
+   "usuario": "jessejameswest",
+   "origem": "aprendido",
+   "erro": "token vencido (pulado)"
+  },
+  {
+   "usuario": "nickleyden",
+   "origem": "aprendido",
+   "erro": "token vencido (pulado)"
   }
  ],
  "posts": [
@@ -925,6 +960,5 @@
    "razao": 9.0,
    "cta_comentario": false
   }
- ],
- "aviso": null
+ ]
 }
