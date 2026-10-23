@@ -127,6 +127,8 @@ def main():
                     "link": link, "legenda": (m.get("caption") or "")[:600], "imagem": m.get("thumbnail_url"),
                     "publicado_em": t.isoformat(), "curtidas": m.get("like_count"), "comentarios": m.get("comments_count"),
                     "mediana_perfil": mediana, "razao": razao,
+                    # "comente X que eu te mando" infla os comentários: a curadoria desconta
+                    "cta_comentario": bool(re.search(r"\b(?i:comment|comente|comenta|digite|escreva)\s+[\"“']?[A-ZÀ-Ú]{3,}", m.get("caption") or "")),
                 })
         saida_perfis.append({**p, "usuario": d.get("username", p["usuario"]), "nome": d.get("name"),
                              "seguidores": d.get("followers_count"), "posts_lidos": len(midias),
