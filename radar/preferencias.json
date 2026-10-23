@@ -30,14 +30,14 @@
   "status": "descartado"
  },
  {
-  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
+  "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
+  "canal": "NYT Well",
   "tema": null,
   "status": "descartado"
  },
  {
-  "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
-  "canal": "NYT Well",
+  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
+  "canal": "BBC News",
   "tema": null,
   "status": "descartado"
  },
@@ -46,12 +46,6 @@
   "canal": "The Guardian",
   "tema": null,
   "status": "salvo"
- },
- {
-  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
-  "canal": "BBC News",
-  "tema": null,
-  "status": "descartado"
  },
  {
   "titulo": "Recuperação Judicial no Agro Cai 20,7% no 2º Trimestre de 2026, Aponta Serasa",
@@ -72,15 +66,27 @@
   "status": "descartado"
  },
  {
+  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Home workout",
+  "canal": "Sua referência",
+  "tema": "esporte",
+  "status": "salvo"
+ },
+ {
   "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
   "canal": "Sua referência",
   "tema": "saude",
   "status": "salvo"
  },
  {
-  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
+  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -90,15 +96,9 @@
   "status": "salvo"
  },
  {
-  "titulo": "Home workout",
+  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
   "canal": "Sua referência",
-  "tema": "esporte",
-  "status": "salvo"
- },
- {
-  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-  "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -126,39 +126,15 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Longevity medicine mainstream",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
-  "canal": "Fox News Health",
+  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
+  "canal": "ScienceDaily",
   "tema": "saude",
   "status": "virou_pauta"
  },
  {
-  "titulo": "A 47-year study reveals the age when your body starts losing strength",
+  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
   "canal": "ScienceDaily",
   "tema": "ciencia",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Scientists discover how exercise reverses muscle aging",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
-  "canal": "Fox News Health",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
-  "canal": "Folha Equilíbrio",
-  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -168,14 +144,32 @@
   "status": "salvo"
  },
  {
-  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
+  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
+  "canal": "Folha Equilíbrio",
+  "tema": "saude",
   "status": "salvo"
  },
  {
-  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
+  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
+  "canal": "Fox News Health",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Scientists discover how exercise reverses muscle aging",
   "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "A 47-year study reveals the age when your body starts losing strength",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
+  "canal": "Fox News Health",
   "tema": "saude",
   "status": "virou_pauta"
  },
@@ -184,5 +178,11 @@
   "canal": "The Art Newspaper",
   "tema": "cultura",
   "status": "virou_pauta"
+ },
+ {
+  "titulo": "Longevity medicine mainstream",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
  }
 ]
