@@ -30,6 +30,9 @@ Versão 1 · 23/10/2026 · Primeiro passo da pipeline de criação ampliada (rad
 | `cena` | texto | a cena que o leitor vive (vira enquete e abertura) |
 | `causa` | texto (1 frase) | frase-assinatura, a causa real, afirmada |
 | `evidencias` | lista de `{afirmacao, fonte}` | 2 a 4 itens, cada um com link |
+| `emocao` | `admiracao` \| `indignacao` \| `reconhecimento` \| `urgencia_perda` \| `pertencimento` | a emoção única que o conteúdo desperta (skill `acao-emocional-ttc`, seção 1) |
+| `lacuna` | texto | o que a manchete promete e o conteúdo entrega; precisa estar fechada no fim |
+| `passo_final` | texto | o único próximo passo do leitor, com a razão |
 | `funil` | `topo` \| `meio` \| `fundo` | objetivo de venda da pauta |
 | `publico` | `executivo` \| `mulher` \| `ambos` | para quem é a pauta |
 | `cta` | texto | CTA do funil (padrão: "Me manda MÉTODO no direct") |
