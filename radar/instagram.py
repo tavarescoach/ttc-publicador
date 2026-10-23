@@ -133,9 +133,26 @@ def main():
         return 0
     lista = perfis()
     print(f"Perfis acompanhados: {len(lista)}")
+    # limite de chamadas da Meta: os perfis que não deu para ler agora ficam com a última leitura (até 3 dias)
+    try:
+        antes = json.load(open(os.path.join(AQUI, "instagram.json"), encoding="utf-8"))
+    except Exception:
+        antes = {}
+    velho = dt.datetime.fromisoformat(antes["coletado_em"]) if antes.get("coletado_em") else None
+    cache_ok = velho and AGORA - velho < dt.timedelta(days=3)
+    perfis_antes = {x["usuario"].lower(): x for x in antes.get("perfis", []) if not x.get("erro")} if cache_ok else {}
     saida_perfis, posts = [], []
+    limite = False
     for p in lista:
-        d, erro = descobrir(p["usuario"])
+        d, erro = (None, "(#4) limite da Meta (pulado)") if limite else descobrir(p["usuario"])
+        if erro and ("(#4)" in erro or "(#17)" in erro or "(#32)" in erro or "request limit" in erro.lower()):
+            limite = True
+            ant = perfis_antes.get(p["usuario"])
+            if ant:
+                saida_perfis.append({**ant, "origem": p["origem"], "da_leitura_anterior": True})
+                posts += [x for x in antes.get("posts", []) if x.get("perfil", "").lower() == "@" + p["usuario"]]
+                print(f"[aviso] @{p['usuario']}: limite da Meta, mantive a leitura anterior")
+                continue
         if erro:
             print(f"[aviso] @{p['usuario']}: {erro}")
             saida_perfis.append({**p, "erro": erro})

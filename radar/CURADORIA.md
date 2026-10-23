@@ -69,7 +69,8 @@ amarrada a uma notícia em alta da coleta.
    "inspirar": "1 frase: o que pegar dele (formato, gancho, edição, tom), sem copiar"}}. Mantenha
    `radar/perfis-instagram.json` vivo: tire perfis que voltaram com erro e acrescente (no máximo 3 por rodada) perfis
    profissionais do nicho, parecidos com os que performam, que você encontrar nas buscas. Com `cta_comentario` true, os comentários foram puxados por "comente X": desconte e diga
-   isso no motivo (o formato do CTA também é aprendizado). Perfis com `erro` são pessoais ou não existem: tire de `instagram.perfis` e de `radar/perfis-instagram.json`.
+   isso no motivo (o formato do CTA também é aprendizado). Perfis com `erro` "Invalid user id" (ou de perfil não profissional) são pessoais ou não existem: tire de
+   `instagram.perfis` e de `radar/perfis-instagram.json`. Erro de limite ("(#4)", "request limit") é passageiro: não tire.
 1. Busca (até ~10 WebSearch por rodada): para cada palavra de `radar/palavras-chave.json` (as mais recentes primeiro),
    procure `site:instagram.com/reel <palavra>` e variações em português e inglês; depois os perfis de `instagram.perfis`
    (`site:instagram.com/<perfil> reel`). Sem palavras nem perfis, use os `assuntos` do perfil de interesse.
