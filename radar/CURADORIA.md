@@ -60,11 +60,16 @@ do catálogo abaixo ou novos quando fizer sentido), `ganchos` (até 8 estruturas
 Objetivo: achar reels que estão funcionando no nicho e dizer como o @tavarescoach faz a versão dele, de preferência
 amarrada a uma notícia em alta da coleta.
 
-0. Primeiro `radar/instagram.json` (robô, dados reais da API do Instagram): reels dos últimos 30 dias dos perfis de
-   referência com engajamento >= 2x a mediana do próprio perfil (`razao`), com legenda, curtidas e comentários. Eles têm
-   prioridade: analise cada um pela legenda (e WebFetch no link, se abrir) e cite a `razao` no `motivo`
-   ("4,3x a média do perfil"). Com `cta_comentario` true, os comentários foram puxados por "comente X": desconte e diga
-   isso no motivo (o formato do CTA também é aprendizado). Perfis com `erro` são pessoais ou não existem: tire de `instagram.perfis`.
+0. Primeiro `radar/instagram.json` (robô, dados reais da API do Instagram): `posts` (reels, carrosséis e fotos) dos
+   últimos 30 dias com engajamento >= 2x a mediana do próprio perfil (`razao`), com legenda, curtidas e comentários, e
+   `perfis` já ordenados por `pontos` (perfil em alta). Os posts têm prioridade: vire item da curadoria (mesmo `id`) os que
+   têm ponte com o nicho, analisando pela legenda (e WebFetch no link, se abrir), e cite a `razao` no `motivo`
+   ("4,3x a média do perfil"). Para os 9 primeiros perfis sem `erro`, escreva no arquivo da curadoria a chave
+   `instagram_perfis`: {"usuario": {"motivo": "1 frase: por que o Luan deve olhar este perfil agora",
+   "inspirar": "1 frase: o que pegar dele (formato, gancho, edição, tom), sem copiar"}}. Mantenha
+   `radar/perfis-instagram.json` vivo: tire perfis que voltaram com erro e acrescente (no máximo 3 por rodada) perfis
+   profissionais do nicho, parecidos com os que performam, que você encontrar nas buscas. Com `cta_comentario` true, os comentários foram puxados por "comente X": desconte e diga
+   isso no motivo (o formato do CTA também é aprendizado). Perfis com `erro` são pessoais ou não existem: tire de `instagram.perfis` e de `radar/perfis-instagram.json`.
 1. Busca (até ~10 WebSearch por rodada): para cada palavra de `radar/palavras-chave.json` (as mais recentes primeiro),
    procure `site:instagram.com/reel <palavra>` e variações em português e inglês; depois os perfis de `instagram.perfis`
    (`site:instagram.com/<perfil> reel`). Sem palavras nem perfis, use os `assuntos` do perfil de interesse.
@@ -93,7 +98,8 @@ amarrada a uma notícia em alta da coleta.
 1. Escreva `radar/curadoria/AAAA-MM-DD-HH.json` (horário de Brasília): {"gerado_em": "...", "itens": [ {id, canal, titulo, link,
    imagem, publicado_em, tema, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
 2. Apague arquivos de curadoria com mais de 3 dias.
-3. `git pull --rebase`, commit ("radar: curadoria AAAA-MM-DD HH h", incluindo `radar/perfil-interesse.json` se mudou) e push. O robô "Radar de notícias" aplica no painel.
+3. `git pull --rebase`, commit ("radar: curadoria AAAA-MM-DD HH h", incluindo `radar/perfil-interesse.json` e
+   `radar/perfis-instagram.json` se mudaram) e push. O robô "Radar de notícias" aplica no painel.
 4. Atualize o contexto do Estúdio (as notas de histórico, atualidade e o aprendizado A/B das headlines dependem disso).
    Carregue ArtifactData (ToolSearch "select:ArtifactData"); url https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH.
    a. `list` da collection `criacoes` com `out_dir` numa pasta temporária (ex.: o scratchpad) e `query.limit` 200.

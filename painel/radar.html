@@ -191,6 +191,32 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
 .kw input:focus{outline:0}
 .kw small{font-size:11.5px;color:var(--fraco);width:100%;padding-top:2px}
 .th.ig{background-color:#0E1626;color:#fff}
+
+/* ---------- visão Instagram: perfis em alta | posts em alta ---------- */
+.igv{display:grid;grid-template-columns:minmax(300px,380px) minmax(0,1fr);gap:18px;align-items:start}
+.igv h2{font-size:15px;font-weight:700;letter-spacing:-.2px;margin-bottom:2px}
+.igv h2+p{font-size:12px;color:var(--apoio);margin-bottom:10px}
+.igp{background:var(--sup);border:1px solid var(--linha);border-radius:18px;padding:16px;box-shadow:var(--sombra);position:sticky;top:84px}
+.pf{display:grid;grid-template-columns:20px 44px minmax(0,1fr);gap:10px;padding:11px 0;border-top:1px solid var(--linha);align-items:start;text-decoration:none;color:inherit}
+.pf:first-of-type{border-top:0}
+.pf .pos{font-family:Satoshi,Inter,sans-serif;font-weight:900;font-size:13px;color:var(--fraco);padding-top:12px;text-align:right}
+.pf img,.pf .sem{width:44px;height:44px;border-radius:999px;object-fit:cover;background:#E3E6EB;display:grid;place-items:center;font-weight:800;font-size:13px}
+.pf b{font-size:13.5px;font-weight:700;display:block}
+.pf b span{font-weight:500;color:var(--apoio)}
+.pf small{display:block;font-size:12px;color:var(--apoio);margin-top:1px}
+.pf em{display:block;font-style:normal;font-size:12.5px;color:#2B3446;line-height:1.45;margin-top:5px}
+.pf em i{font-style:normal;color:var(--apoio)}
+.pf:hover b{text-decoration:underline}
+.ps{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.po{background:var(--sup);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sombra);min-width:0}
+.po .im{position:relative;aspect-ratio:4/5;background:#0E1626;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600}
+.po .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.po .rz{position:absolute;top:10px;right:10px;font-family:Satoshi,Inter,sans-serif;font-weight:900;font-size:14px;padding:4px 10px;border-radius:999px;background:var(--red);color:#fff;z-index:1}
+.po .tp{position:absolute;left:10px;bottom:10px;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:rgba(14,22,38,.72);color:#fff;z-index:1}
+.po .cp{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.po .lg{font-size:12.5px;color:#2B3446;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.po .gch{font-family:Satoshi,Inter,sans-serif;font-size:14.5px;font-weight:700;border-left:3px solid var(--red);padding-left:9px;line-height:1.35}
+@media (max-width:980px){.igv{grid-template-columns:1fr}.igp{position:static}}
 .centro{min-height:60vh;display:grid;place-items:center;text-align:center;color:var(--apoio);line-height:1.7}
 
 @media (max-width:1100px){.placar{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -269,6 +295,7 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const sb = DEMO ? null : supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let itens = [];
+let ig = {dados:null, analise:null, carregado:false};
 let fontes = {estado:null, eventos:[], carregado:false};
 let ui = {fonte:"tudo", vista:"melhores", tema:"todos", publico:"todos", frescor:72, status:"novos", alta:false, min:0};
 try { ui = {...ui, ...JSON.parse(localStorage.getItem("ltRadar") || "{}")}; } catch(_){}
@@ -368,7 +395,9 @@ function render(){
   $("atual").textContent = ult ? `Atualizado ${ha(ult)} · ${nws} notícias de ${new Set(nts.filter(i => !isIG(i)).map(i => i.canal)).size} canais${igs ? ` · ${igs} do Instagram` : ""}` : "";
 
   let corpo = "";
-  if (ui.vista === "melhores"){
+  if (ui.fonte === "instagram"){
+    corpo = visaoInstagram();
+  } else if (ui.vista === "melhores"){
     corpo = lista.length ? `<div class="grade">${lista.slice(0, 60).map(cardNoticia).join("")}${cardAdd()}</div>`
       : `<div class="vazio">${ui.fonte === "instagram" && !itens.some(isIG) ? "Os reels aparecem depois da curadoria (6h17 e 14h17), buscados pelas suas palavras-chave e pelas referências do Instagram." : "Nada com esses filtros. Tente ampliar o período ou trocar o tema."}</div><div class="grade" style="margin-top:14px">${cardAdd()}</div>`;
   } else {
@@ -392,11 +421,12 @@ function render(){
     ${blocoPalavras()}
     <div class="barra">
       <div class="seg" role="group" aria-label="Origem">${FONTES.map(([k,t]) => `<button class="${ui.fonte === k ? "on" : ""}" data-fonte-v="${k}">${t}</button>`).join("")}</div>
+      ${ui.fonte === "instagram" ? (ig.dados?.coletado_em ? `<span class="rot" style="margin:0">Instagram lido ${esc(ha(ig.dados.coletado_em))} · ${(ig.dados.perfis || []).filter(p => !p.erro).length} perfis acompanhados</span>` : "") : `
       <div class="seg" role="group" aria-label="Visualização"><button class="${ui.vista === "melhores" ? "on" : ""}" data-vista="melhores">Melhores do dia</button><button class="${ui.vista === "canais" ? "on" : ""}" data-vista="canais">Por canal</button></div>
       <div class="fg"><span>Tema</span>${chips("tema", TEMAS)}</div>
       <div class="fg"><span>Público</span>${chips("publico", PUBS)}</div>
       <div class="fg"><span>Período</span>${chips("frescor", FRESC)}</div>
-      <div class="fg"><span>Mostrar</span>${chips("status", STATUS)}<button class="chip ${ui.alta ? "on" : ""}" data-alta>Só em alta</button>${ui.min ? `<button class="chip on" data-min>Nota 70+ ×</button>` : ""}</div>
+      <div class="fg"><span>Mostrar</span>${chips("status", STATUS)}<button class="chip ${ui.alta ? "on" : ""}" data-alta>Só em alta</button>${ui.min ? `<button class="chip on" data-min>Nota 70+ ×</button>` : ""}</div>`}
     </div>${corpo}`;
 }
 
@@ -410,6 +440,72 @@ async function mudarStatus(id, status){
 function abrir(id){
   const i = itens.find(x => x.id === id); if (!i) return;
   $("modal").innerHTML = cardNoticia(i); $("modal").classList.remove("hide");
+}
+
+/* ---------- Instagram: perfis em alta (esquerda) e posts em alta (direita) ---------- */
+function mil(n){
+  if (n == null) return "—";
+  if (n >= 1e6) return (n/1e6).toFixed(n >= 1e7 ? 0 : 1).replace(".", ",") + " mi";
+  if (n >= 1e3) return (n/1e3).toFixed(n >= 1e4 ? 0 : 1).replace(".", ",") + " mil";
+  return String(n);
+}
+const vx = n => String(n).replace(".", ",") + "x";
+function cardPerfil(p, n){
+  const a = ig.analise?.perfis?.[p.usuario] || ig.analise?.perfis?.["@" + p.usuario] || {};
+  const sinal = p.fora_da_curva ? `${p.fora_da_curva} post${p.fora_da_curva > 1 ? "s" : ""} em alta · até ${vx(p.maior_razao)}` : "sem post fora da curva no mês";
+  return `<a class="pf" href="https://www.instagram.com/${esc(p.usuario)}/" target="_blank" rel="noopener">
+    <span class="pos">${n}</span>
+    ${p.foto ? `<img src="${esc(p.foto)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'sem',textContent:'${esc(iniciais(p.usuario))}'}))">` : `<span class="sem">${esc(iniciais(p.usuario))}</span>`}
+    <div><b>@${esc(p.usuario)} ${p.nome ? `<span>· ${esc(p.nome)}</span>` : ""}</b>
+      <small>${mil(p.seguidores)} seguidores${p.taxa_engajamento != null ? ` · ${String(p.taxa_engajamento).replace(".", ",")}% de engajamento` : ""}</small>
+      <small style="color:${p.fora_da_curva ? "var(--red)" : "var(--fraco)"};font-weight:600">${sinal}</small>
+      ${a.motivo ? `<em>${esc(a.motivo)}</em>` : ""}${a.inspirar ? `<em><i>Inspirar-se em:</i> ${esc(a.inspirar)}</em>` : ""}</div></a>`;
+}
+function cardPost(x){
+  const c = itens.find(i => i.id === x.id) || (x._curado ? x : null);
+  const p = c?.pitch || {};
+  const img = x.imagem || c?.imagem;
+  const tipo = x.tipo || (p.formato ? "reels" : "post");
+  return `<article class="po ${c?.status === "descartado" ? "desc" : ""}">
+    <div class="im">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${esc(x.perfil || p.perfil || "Instagram")}
+      ${x.razao ? `<span class="rz" title="Engajamento comparado à média do próprio perfil">${vx(x.razao)}</span>` : (c?.nota != null ? `<span class="rz" style="background:var(--sup);color:${corNota(c.nota)}">${c.nota}</span>` : "")}
+      <span class="tp">${esc(tipo)}${x.perfil || p.perfil ? " · " + esc(x.perfil || p.perfil) : ""}</span></div>
+    <div class="cp">
+      <div class="meta">${x.curtidas != null ? `<span>♥ ${mil(x.curtidas)}</span><span>💬 ${mil(x.comentarios)}</span>` : ""}<span>${esc(ha(x.publicado_em || c?.publicado_em))}</span>${x.cta_comentario ? `<span class="tag warn" title="Os comentários foram puxados por um “comente X”">CTA de comentário</span>` : ""}</div>
+      ${p.gancho ? `<div class="gch">${esc(p.gancho)}</div>` : ""}
+      ${p.formato ? `<div class="meta"><span class="tag">${esc(p.formato)}</span>${c?.nota != null && x.razao ? `<span class="tag">nota ${c.nota}</span>` : ""}</div>` : ""}
+      ${c?.motivo ? `<div class="motivo">${esc(c.motivo)}</div>` : `<div class="lg">${esc(x.legenda || c?.titulo || "")}</div>`}
+      <div class="acoes">
+        ${c ? `<a class="mini go" href="${ESTUDIO}#radar-${esc(c.id)}" target="_blank" rel="noopener" data-pauta="${esc(c.id)}">Criar a partir ↗</a>
+          <button class="mini ${c.status === "salvo" ? "on" : ""}" data-st="${esc(c.id)}" data-v="${c.status === "salvo" ? "novo" : "salvo"}">${c.status === "salvo" ? "Salvo ✓" : "Salvar"}</button>` : ""}
+        ${x.link || c?.link ? `<a class="mini" href="${esc(x.link || c.link)}" target="_blank" rel="noopener">Ver ↗</a>` : ""}
+        ${x.link ? `<button class="mini" data-ensinar-link="${esc(x.link)}" title="Guardar como referência no Ensinar o radar">Ensinar</button>` : ""}
+      </div></div></article>`;
+}
+function visaoInstagram(){
+  const perfis = (ig.dados?.perfis || []).filter(p => !p.erro).slice(0, 9);
+  const brutos = ig.dados?.posts || [];
+  const ids = new Set(brutos.map(x => x.id));
+  const curados = itens.filter(i => isIG(i) && !ids.has(i.id) && !i.calendario && i.status !== "descartado" && recente(i))
+    .sort((a,b) => (b.nota ?? -1) - (a.nota ?? -1)).map(i => ({id:i.id, link:i.link, imagem:i.imagem, publicado_em:i.publicado_em, perfil:i.pitch?.perfil, _curado:true, ...i}));
+  const posts = [...brutos.filter(x => itens.find(i => i.id === x.id)?.status !== "descartado"), ...curados];
+  if (!ig.carregado) return `<div class="vazio">Carregando o Instagram…</div>`;
+  return `<div class="igv">
+    <section class="igp"><h2>Perfis em alta</h2><p>Os 9 do nicho para analisar e se inspirar agora, pelo que estão entregando acima da própria média.</p>
+      ${perfis.length ? perfis.map((p, n) => cardPerfil(p, n + 1)).join("") : `<div class="vazio">Os perfis aparecem depois da próxima coleta (5h47 e 13h47). Para acompanhar um perfil, cole o link dele no Ensinar o radar.</div>`}
+    </section>
+    <section><h2>Em alta no seu nicho</h2><p>Posts dos últimos 30 dias com 2x ou mais o engajamento médio do próprio perfil. Com nota e gancho, a curadoria já analisou.</p>
+      ${posts.length ? `<div class="ps">${posts.slice(0, 40).map(cardPost).join("")}</div>` : `<div class="vazio">Nenhum post fora da curva ainda. Eles aparecem depois da próxima coleta.</div>`}
+    </section></div>`;
+}
+async function carregarIG(){
+  if (DEMO){ ig = {carregado:true, dados:demoIG(), analise:{perfis:{drgabriellelyon:{motivo:"Fala de músculo como órgão de longevidade, o mesmo território da sua marca, e está entregando 8x a própria média.", inspirar:"Pergunta curiosa no primeiro segundo e resposta de especialista em tom calmo."}}}}; return render(); }
+  try {
+    const baixar = c => sb.storage.from("materiais").download(c).then(r => r.data ? r.data.text().then(JSON.parse) : null).catch(() => null);
+    const [dados, analise] = await Promise.all([baixar("radar/instagram.json"), baixar("radar/instagram-analise.json")]);
+    ig = {dados, analise, carregado:true};
+  } catch(_){ ig = {dados:null, analise:null, carregado:true}; }
+  if (ui.fonte === "instagram") render();
 }
 
 /* ---------- palavras-chave (gravadas como eventos na pasta das referências) ---------- */
@@ -654,6 +750,7 @@ document.addEventListener("click", ev => {
   if (t.closest("[data-fechar-ensinar]") || t === $("mEnsinar")) return $("mEnsinar").classList.add("hide");
   const rr = t.closest("[data-ref-rem]"); if (rr) return removerRef(rr.dataset.refRem);
   const pr = t.closest("[data-pal-rem]"); if (pr) return removerPalavra(pr.dataset.palRem);
+  const el = t.closest("[data-ensinar-link]"); if (el){ abrirEnsinar(); $("rUrl").value = el.dataset.ensinarLink; $("rUrl").dispatchEvent(new Event("input")); setTimeout(() => $("rNota").focus(), 60); return; }
   const fv = t.closest("[data-fonte-v]"); if (fv){ ui.fonte = fv.dataset.fonteV; salvarUi(); return render(); }
   const fo = t.closest("[data-fonte]"); if (fo) return acaoFonte(fo.dataset.fonte, fo.dataset.canal);
   const k = t.closest("[data-kpi]");
@@ -681,7 +778,7 @@ $("rUrl").addEventListener("input", () => { const t = tipoLink($("rUrl").value.t
 document.addEventListener("submit", ev => { if (ev.target.id === "formPal"){ ev.preventDefault(); adicionarPalavra($("pIn").value); } });
 
 async function carregar(){
-  if (DEMO){ itens = demo(); render(); carregarRefs(); return carregarFontes(); }
+  if (DEMO){ itens = demo(); render(); carregarRefs(); carregarIG(); return carregarFontes(); }
   const {data:sess} = await sb.auth.getSession();
   if (!sess.session){ $("placar").innerHTML = ""; $("atual").textContent = ""; $("app").innerHTML = `<div class="centro"><div>Entre no painel primeiro.<br><a class="btn red" href="./" style="margin-top:12px">Ir para o login</a></div></div>`; return; }
   const desde = new Date(Date.now() - 8*864e5).toISOString();
@@ -690,10 +787,19 @@ async function carregar(){
   itens = data; render();
   if (!fontes.carregado) carregarFontes();
   if (!refs.carregado) carregarRefs();
+  carregarIG();
 }
 carregar();
 setInterval(() => { if (document.visibilityState === "visible" && $("modal").classList.contains("hide") && $("mFontes").classList.contains("hide") && $("mEnsinar").classList.contains("hide") && document.activeElement?.id !== "pIn") carregar(); }, 5*60000);
 
+function demoIG(){
+  const d = n => new Date(Date.now() - n*86400e3).toISOString();
+  const pf = (u, nome, seg, taxa, fora, mx) => ({usuario:u, nome, seguidores:seg, taxa_engajamento:taxa, fora_da_curva:fora, maior_razao:mx, pontos:fora*3});
+  return {coletado_em:new Date(Date.now()-2*3600e3).toISOString(), perfis:[pf("drgabriellelyon","Dr. Gabrielle Lyon",1198079,0.06,3,8.2), pf("hubermanlab","Andrew Huberman, Ph.D.",8131520,0.14,3,2.5), pf("jeffnippard","Jeff Nippard",4500000,0.4,2,3.1), pf("peterattiamd","Peter Attia, M.D.",1572299,0.1,0,null), {usuario:"perfilpessoal", erro:"não é profissional"}],
+    posts:[{id:"ig-demo1", perfil:"@drgabriellelyon", tipo:"reels", link:"https://www.instagram.com/reel/DEMO456/", legenda:"We often think about muscle in terms of our looks, strength, and power. But it is the organ of longevity…", publicado_em:d(3), curtidas:3576, comentarios:120, razao:5.4},
+      {id:"ig-demo2", perfil:"@hubermanlab", tipo:"reels", link:"https://www.instagram.com/reel/DEMO789/", legenda:"Comment BRAIN FOOD & I will DM you a link to the full episode…", publicado_em:d(5), curtidas:28618, comentarios:4100, razao:2.5, cta_comentario:true},
+      {id:"ig-demo3", perfil:"@jeffnippard", tipo:"carrossel", link:"https://www.instagram.com/p/DEMO000/", legenda:"The 5 most underrated exercises for your back, ranked by the research.", publicado_em:d(8), curtidas:91000, comentarios:800, razao:3.1}]};
+}
 function demo(){
   const h = new Date().toISOString(), on = new Date(Date.now()-5*3600e3).toISOString();
   return [

@@ -44,6 +44,8 @@ jobs:
         if: github.event_name != 'push'
         continue-on-error: true
         env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           FB_TOKEN: ${{ secrets.FB_TOKEN }}
           IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
           PERFIS: ${{ github.event.inputs.perfis }}

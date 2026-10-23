@@ -16,7 +16,8 @@ def main():
     if not arqs:
         print("Sem curadoria.")
         return 0
-    itens = json.load(open(arqs[-1], encoding="utf-8")).get("itens", [])
+    cur = json.load(open(arqs[-1], encoding="utf-8"))
+    itens = cur.get("itens", [])
     linhas = []
     for i in itens:
         l = {c: i.get(c) for c in CAMPOS}
@@ -27,6 +28,17 @@ def main():
         headers={"apikey": KEY, "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates,return=minimal"})
     urllib.request.urlopen(req, timeout=60).read()
     print(f"Curadoria aplicada: {len(linhas)} notícias ({os.path.basename(arqs[-1])}).")
+    # análise dos perfis do Instagram (coluna "Perfis em alta" do Radar)
+    if cur.get("instagram_perfis"):
+        try:
+            up = urllib.request.Request(f"{URL}/storage/v1/object/materiais/radar/instagram-analise.json", method="POST",
+                data=json.dumps({"gerado_em": cur.get("gerado_em"), "perfis": cur["instagram_perfis"]}, ensure_ascii=False).encode(),
+                headers={"apikey": KEY, "Authorization": f"Bearer {KEY}", "Content-Type": "application/json",
+                         "x-upsert": "true", "cache-control": "no-cache"})
+            urllib.request.urlopen(up, timeout=30).read()
+            print("Análise dos perfis do Instagram publicada.")
+        except Exception as e:
+            print(f"::warning::Não publiquei a análise dos perfis: {e}")
     # o que o radar aprendeu com as referências do Luan aparece no painel logo depois da curadoria
     perfil = os.path.join(os.path.dirname(os.path.abspath(__file__)), "perfil-interesse.json")
     if os.path.exists(perfil):
