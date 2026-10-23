@@ -60,6 +60,10 @@ do catálogo abaixo ou novos quando fizer sentido), `ganchos` (até 8 estruturas
 Objetivo: achar reels que estão funcionando no nicho e dizer como o @tavarescoach faz a versão dele, de preferência
 amarrada a uma notícia em alta da coleta.
 
+0. Primeiro `radar/instagram.json` (robô, dados reais da API do Instagram): reels dos últimos 30 dias dos perfis de
+   referência com engajamento >= 2x a mediana do próprio perfil (`razao`), com legenda, curtidas e comentários. Eles têm
+   prioridade: analise cada um pela legenda (e WebFetch no link, se abrir) e cite a `razao` no `motivo`
+   ("4,3x a média do perfil"). Perfis com `erro` são pessoais ou não existem: tire de `instagram.perfis`.
 1. Busca (até ~10 WebSearch por rodada): para cada palavra de `radar/palavras-chave.json` (as mais recentes primeiro),
    procure `site:instagram.com/reel <palavra>` e variações em português e inglês; depois os perfis de `instagram.perfis`
    (`site:instagram.com/<perfil> reel`). Sem palavras nem perfis, use os `assuntos` do perfil de interesse.

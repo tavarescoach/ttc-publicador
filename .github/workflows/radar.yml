@@ -9,7 +9,12 @@ on:
   push:
     paths:
       - "radar/curadoria/**"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      perfis:
+        description: "Perfis do Instagram para testar (separados por vírgula, opcional)"
+        required: false
+        default: ""
 
 concurrency:
   group: radar
@@ -35,6 +40,14 @@ jobs:
         run: |
           pip install feedparser==6.0.11
           python radar/coletar.py
+      - name: Instagram (perfis de referência)
+        if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          FB_TOKEN: ${{ secrets.FB_TOKEN }}
+          IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
+          PERFIS: ${{ github.event.inputs.perfis }}
+        run: python radar/instagram.py
       - name: Aplicar curadoria
         if: github.event_name == 'push'
         env:
@@ -44,7 +57,7 @@ jobs:
       - name: Salvar coleta no repositório
         if: github.event_name != 'push'
         run: |
-          for f in radar/coleta.json radar/preferencias.json radar/fontes-extras.json radar/referencias.json radar/palavras-chave.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in radar/coleta.json radar/preferencias.json radar/fontes-extras.json radar/referencias.json radar/palavras-chave.json radar/instagram.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           if ! git diff --cached --quiet; then
             git config user.name "ttc-publicador"
             git config user.email "actions@users.noreply.github.com"
