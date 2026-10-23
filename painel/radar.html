@@ -217,6 +217,47 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
 .po .lg{font-size:12.5px;color:#2B3446;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .po .gch{font-family:Satoshi,Inter,sans-serif;font-size:14.5px;font-weight:700;border-left:3px solid var(--red);padding-left:9px;line-height:1.35}
 @media (max-width:980px){.igv{grid-template-columns:1fr}.igp{position:static}}
+
+/* ---------- resumo (página principal) ---------- */
+.res{display:grid;gap:28px}
+.sh{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.sh h2{font-size:20px;font-weight:700;letter-spacing:-.4px}
+.sh p{color:var(--apoio);font-size:12.5px;flex:1;min-width:200px}
+.ver{font-weight:700;font-size:13px;white-space:nowrap;border-bottom:1.5px solid var(--tinta);padding-bottom:1px;text-decoration:none}
+.datas{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.dt{flex:0 0 auto;min-width:240px;max-width:320px;display:flex;gap:12px;align-items:center;text-align:left;background:var(--sup);border:1px solid var(--linha);border-left:4px solid var(--red);border-radius:14px;padding:12px 14px;box-shadow:var(--sombra)}
+.dt .em{font-family:Satoshi,Inter,sans-serif;font-weight:900;font-size:26px;color:var(--red);line-height:1;text-align:center;min-width:44px}
+.dt .em small{display:block;font-size:10.5px;font-weight:700;color:var(--apoio);letter-spacing:.3px;margin-top:3px}
+.dt b{font-family:Satoshi,Inter,sans-serif;font-size:15px;display:block}
+.dt span{font-size:12.5px;color:var(--apoio);line-height:1.4;display:block;margin-top:2px}
+.dt.hoje{background:var(--red-claro)}
+.pautas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pa{background:var(--sup);border:1px solid var(--linha);border-top:3px solid var(--red);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--sombra);min-width:0}
+.pa .gch{font-family:Satoshi,Inter,sans-serif;font-size:18px;font-weight:700;line-height:1.3;letter-spacing:-.2px}
+.pa .par{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pa .par>*{background:var(--sup2);border:1px solid var(--linha);border-radius:12px;padding:9px 10px;font-size:12px;line-height:1.4;text-align:left;text-decoration:none;color:inherit}
+.pa .par small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.4px;color:var(--fraco);text-transform:uppercase;margin-bottom:3px}
+.pa .par i{font-style:normal;color:var(--fraco)}
+.pa .par em{font-style:normal;color:var(--red);font-weight:700}
+.pa .motivo{font-size:12.5px}
+.pa .acoes{margin-top:auto}
+.igr{display:grid;grid-template-columns:300px minmax(0,1fr);gap:14px;align-items:start}
+.pfs{background:var(--sup);border:1px solid var(--linha);border-radius:18px;padding:4px 14px;box-shadow:var(--sombra)}
+.pfs .pf{grid-template-columns:40px minmax(0,1fr);padding:10px 0}
+.pfs .pf img,.pfs .pf .sem{width:40px;height:40px}
+.pfs .pf .pos{display:none}
+.ps5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.ps5 .po .cp{padding:9px 10px 11px;gap:5px}
+.ps5 .po .lg{-webkit-line-clamp:3;font-size:12px}
+.ps5 .po h3{font-size:13.5px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ps5 .po .gch{font-size:13px}
+.ps5 .po .rz.nota{background:var(--sup)}
+.po.clica{cursor:pointer;text-align:left;font:inherit;color:inherit;padding:0;text-decoration:none}
+.po.clica:hover{border-color:var(--linha2)}
+.voltar{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;margin-bottom:14px;text-decoration:none}
+@media (max-width:1100px){.pautas{grid-template-columns:1fr}.igr{grid-template-columns:1fr}
+  .ps5{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.ps5>*{flex:0 0 46%;scroll-snap-align:start}}
+@media (max-width:640px){.pa .par{grid-template-columns:1fr}.ps5>*{flex-basis:62%}.dt{min-width:220px}}
 .centro{min-height:60vh;display:grid;place-items:center;text-align:center;color:var(--apoio);line-height:1.7}
 
 @media (max-width:1100px){.placar{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -295,7 +336,8 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const sb = DEMO ? null : supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let itens = [];
-let ig = {dados:null, analise:null, carregado:false};
+let ig = {dados:null, analise:null, pautas:null, carregado:false};
+const vista = () => (location.hash.slice(1) === "instagram" || location.hash.slice(1) === "noticias") ? location.hash.slice(1) : "resumo";
 let fontes = {estado:null, eventos:[], carregado:false};
 let ui = {fonte:"tudo", vista:"melhores", tema:"todos", publico:"todos", frescor:72, status:"novos", alta:false, min:0};
 try { ui = {...ui, ...JSON.parse(localStorage.getItem("ltRadar") || "{}")}; } catch(_){}
@@ -304,7 +346,6 @@ const salvarUi = () => { try { localStorage.setItem("ltRadar", JSON.stringify(ui
 const TEMAS = [["todos","Todos"],["saude","Saúde"],["ciencia","Ciência"],["tecnologia","Tecnologia"],["esporte","Esporte"],["comportamento","Comportamento"],["cultura","Cultura"],["negocio","Negócio"]];
 const PUBS = [["todos","Todos"],["executivo","Executivo 30–45"],["mulher","Mulher 30–50"]];
 const FRESC = [[24,"24 h"],[72,"3 dias"],[168,"7 dias"]];
-const FONTES = [["tudo","Tudo"],["noticias","Notícias"],["instagram","Instagram"]];
 const STATUS = [["novos","Novos"],["salvo","Salvos"],["virou_pauta","Viraram pauta"],["descartado","Descartados"]];
 
 function corNota(n){ return n == null ? "var(--fraco)" : n >= 75 ? "var(--ok)" : n >= 50 ? "var(--warn)" : "var(--fraco)"; }
@@ -321,8 +362,7 @@ const recente = i => !i.publicado_em || Date.now() - new Date(i.publicado_em) <=
 
 function passa(i){
   if (i.calendario) return false;
-  if (ui.fonte === "noticias" && isIG(i)) return false;
-  if (ui.fonte === "instagram" && !isIG(i)) return false;
+  if (isIG(i)) return false;
   if (ui.status === "novos" ? !novo(i) : i.status !== ui.status) return false;
   if (ui.tema !== "todos" && i.tema !== ui.tema) return false;
   if (ui.publico !== "todos" && !(i.publico || "").includes(ui.publico) && i.publico !== "ambos") return false;
@@ -371,8 +411,20 @@ function cardAdd(){
 
 function chips(nome, lista){ return lista.map(([k,t]) => `<button class="chip ${String(ui[nome]) === String(k) ? "on" : ""}" data-f="${nome}" data-v="${k}">${t}</button>`).join(""); }
 
+let kpisResumo = "";
 function placar(){
   const nts = itens.filter(i => !i.calendario);
+  if (vista() !== "noticias"){
+    const altas = new Set(nts.filter(i => i.em_alta && novo(i) && recente(i)).map(i => i.cluster || i.id)).size;
+    const kk = (href, n, rot, sub, cls="") => `<a class="kpi ${cls}" href="${href}" style="text-decoration:none;color:inherit"><b>${n}</b><span>${rot}<em>${sub}</em></span></a>`;
+    $("placar").innerHTML = "";
+    kpisResumo = vista() === "resumo" ? `<div class="placar" style="padding:0;max-width:none">` +
+      kk("#pautas", pautasDoDia().length, "Pautas do dia", "notícia + formato viral", "quente") +
+      kk("#noticias", altas, "Em alta agora", "assuntos em 3 ou mais canais") +
+      kk("#instagram", (ig.dados?.posts || []).length, "Posts virais no nicho", "2x ou mais a média do perfil") +
+      kk("#noticias", nts.filter(i => i.status === "salvo").length, "Salvas", "guardadas para depois") + `</div>` : "";
+    return;
+  }
   const quentes = nts.filter(i => novo(i) && (i.nota ?? 0) >= 70 && recente(i)).length;
   const altas = new Set(nts.filter(i => i.em_alta && novo(i) && recente(i)).map(i => i.cluster || i.id)).size;
   const salvas = nts.filter(i => i.status === "salvo").length;
@@ -394,12 +446,14 @@ function render(){
   const igs = nts.filter(isIG).length, nws = nts.length - igs;
   $("atual").textContent = ult ? `Atualizado ${ha(ult)} · ${nws} notícias de ${new Set(nts.filter(i => !isIG(i)).map(i => i.canal)).size} canais${igs ? ` · ${igs} do Instagram` : ""}` : "";
 
+  const v = vista();
+  if (v === "resumo"){ $("app").innerHTML = resumo(cal); return; }
+  if (v === "instagram"){ $("app").innerHTML = `<a class="voltar" href="#">← Resumo</a>${blocoPalavras()}
+    ${ig.dados?.coletado_em ? `<div class="rot">Instagram lido ${esc(ha(ig.dados.coletado_em))} · ${(ig.dados.perfis || []).filter(p => !p.erro).length} perfis acompanhados</div>` : ""}${visaoInstagram()}`; return; }
   let corpo = "";
-  if (ui.fonte === "instagram"){
-    corpo = visaoInstagram();
-  } else if (ui.vista === "melhores"){
+  if (ui.vista === "melhores"){
     corpo = lista.length ? `<div class="grade">${lista.slice(0, 60).map(cardNoticia).join("")}${cardAdd()}</div>`
-      : `<div class="vazio">${ui.fonte === "instagram" && !itens.some(isIG) ? "Os reels aparecem depois da curadoria (6h17 e 14h17), buscados pelas suas palavras-chave e pelas referências do Instagram." : "Nada com esses filtros. Tente ampliar o período ou trocar o tema."}</div><div class="grade" style="margin-top:14px">${cardAdd()}</div>`;
+      : `<div class="vazio">Nada com esses filtros. Tente ampliar o período ou trocar o tema.</div><div class="grade" style="margin-top:14px">${cardAdd()}</div>`;
   } else {
     const por = {};
     for (const i of lista) (por[i.canal] ||= []).push(i);
@@ -415,18 +469,14 @@ function render(){
       </section>`).join("")}${cardAdd()}</div>` : `<div class="vazio">Nada com esses filtros.</div><div class="canais" style="margin-top:14px">${cardAdd()}</div>`;
   }
 
-  $("app").innerHTML = `
-    ${cal.length ? `<div class="rot">Calendário: datas chegando</div>
-      <div class="cal">${cal.map(c => `<button class="cdia" data-abrir="${esc(c.id)}"><small>${esc(ha(c.publicado_em))} · nota ${c.nota ?? "—"}</small><b>${esc(c.titulo)}</b><span>${esc(c.pitch?.gancho || "")}</span></button>`).join("")}</div>` : ""}
+  $("app").innerHTML = `<a class="voltar" href="#">← Resumo</a>
     ${blocoPalavras()}
     <div class="barra">
-      <div class="seg" role="group" aria-label="Origem">${FONTES.map(([k,t]) => `<button class="${ui.fonte === k ? "on" : ""}" data-fonte-v="${k}">${t}</button>`).join("")}</div>
-      ${ui.fonte === "instagram" ? (ig.dados?.coletado_em ? `<span class="rot" style="margin:0">Instagram lido ${esc(ha(ig.dados.coletado_em))} · ${(ig.dados.perfis || []).filter(p => !p.erro).length} perfis acompanhados</span>` : "") : `
       <div class="seg" role="group" aria-label="Visualização"><button class="${ui.vista === "melhores" ? "on" : ""}" data-vista="melhores">Melhores do dia</button><button class="${ui.vista === "canais" ? "on" : ""}" data-vista="canais">Por canal</button></div>
       <div class="fg"><span>Tema</span>${chips("tema", TEMAS)}</div>
       <div class="fg"><span>Público</span>${chips("publico", PUBS)}</div>
       <div class="fg"><span>Período</span>${chips("frescor", FRESC)}</div>
-      <div class="fg"><span>Mostrar</span>${chips("status", STATUS)}<button class="chip ${ui.alta ? "on" : ""}" data-alta>Só em alta</button>${ui.min ? `<button class="chip on" data-min>Nota 70+ ×</button>` : ""}</div>`}
+      <div class="fg"><span>Mostrar</span>${chips("status", STATUS)}<button class="chip ${ui.alta ? "on" : ""}" data-alta>Só em alta</button>${ui.min ? `<button class="chip on" data-min>Nota 70+ ×</button>` : ""}</div>
     </div>${corpo}`;
 }
 
@@ -449,17 +499,17 @@ function mil(n){
   if (n >= 1e3) return (n/1e3).toFixed(n >= 1e4 ? 0 : 1).replace(".", ",") + " mil";
   return String(n);
 }
-const vx = n => String(n).replace(".", ",") + "x";
-function cardPerfil(p, n){
+const vx = n => (n >= 100 ? Math.round(n).toLocaleString("pt-BR") : String(n).replace(".", ",")) + "x";
+function cardPerfil(p, n, compacto){
   const a = ig.analise?.perfis?.[p.usuario] || ig.analise?.perfis?.["@" + p.usuario] || {};
   const sinal = p.fora_da_curva ? `${p.fora_da_curva} post${p.fora_da_curva > 1 ? "s" : ""} em alta · até ${vx(p.maior_razao)}` : "sem post fora da curva no mês";
   return `<a class="pf" href="https://www.instagram.com/${esc(p.usuario)}/" target="_blank" rel="noopener">
     <span class="pos">${n}</span>
     ${p.foto ? `<img src="${esc(p.foto)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'sem',textContent:'${esc(iniciais(p.usuario))}'}))">` : `<span class="sem">${esc(iniciais(p.usuario))}</span>`}
-    <div><b>@${esc(p.usuario)} ${p.nome ? `<span>· ${esc(p.nome)}</span>` : ""}</b>
-      <small>${mil(p.seguidores)} seguidores${p.taxa_engajamento != null ? ` · ${String(p.taxa_engajamento).replace(".", ",")}% de engajamento` : ""}</small>
+    <div><b>@${esc(p.usuario)} ${p.nome && !compacto ? `<span>· ${esc(p.nome)}</span>` : ""}</b>
+      <small>${mil(p.seguidores)} seguidores${p.taxa_engajamento != null && !compacto ? ` · ${String(p.taxa_engajamento).replace(".", ",")}% de engajamento` : ""}</small>
       <small style="color:${p.fora_da_curva ? "var(--red)" : "var(--fraco)"};font-weight:600">${sinal}</small>
-      ${a.motivo ? `<em>${esc(a.motivo)}</em>` : ""}${a.inspirar ? `<em><i>Inspirar-se em:</i> ${esc(a.inspirar)}</em>` : ""}</div></a>`;
+      ${compacto ? (a.inspirar ? `<em>${esc(a.inspirar)}</em>` : "") : `${a.motivo ? `<em>${esc(a.motivo)}</em>` : ""}${a.inspirar ? `<em><i>Inspirar-se em:</i> ${esc(a.inspirar)}</em>` : ""}`}</div></a>`;
 }
 function cardPost(x){
   const c = itens.find(i => i.id === x.id) || (x._curado ? x : null);
@@ -500,13 +550,98 @@ function visaoInstagram(){
     </section></div>`;
 }
 async function carregarIG(){
-  if (DEMO){ ig = {carregado:true, dados:demoIG(), analise:{perfis:{drgabriellelyon:{motivo:"Fala de músculo como órgão de longevidade, o mesmo território da sua marca, e está entregando 8x a própria média.", inspirar:"Pergunta curiosa no primeiro segundo e resposta de especialista em tom calmo."}}}}; return render(); }
+  if (DEMO){ ig = {carregado:true, dados:demoIG(), pautas:{pautas:[
+      {gancho:"Caminhar todo dia cuida do coração. O músculo pede carga.", tema:"força", publico:"ambos", noticia_id:"a", formato:{nome:"Pergunta do aluno respondida em segundos", perfil:"@paulomuzy", razao:32.1, link:"https://www.instagram.com/"}, motivo:"Estudo novo de força com o formato que mais rendeu no nicho brasileiro esta semana."},
+      {gancho:"Carga não masculiniza. Protege.", tema:"menopausa", publico:"mulher 30–50", em_alta:true, noticia_id:"b", formato:{nome:"Especialista comentando dado novo", perfil:"@drvondawright", razao:20.6, link:"https://www.instagram.com/"}}]}, analise:{perfis:{drgabriellelyon:{motivo:"Fala de músculo como órgão de longevidade, o mesmo território da sua marca, e está entregando 8x a própria média.", inspirar:"Pergunta curiosa no primeiro segundo e resposta de especialista em tom calmo."}}}}; return render(); }
   try {
     const baixar = c => sb.storage.from("materiais").download(c).then(r => r.data ? r.data.text().then(JSON.parse) : null).catch(() => null);
-    const [dados, analise] = await Promise.all([baixar("radar/instagram.json"), baixar("radar/instagram-analise.json")]);
-    ig = {dados, analise, carregado:true};
-  } catch(_){ ig = {dados:null, analise:null, carregado:true}; }
-  if (ui.fonte === "instagram") render();
+    const [dados, analise, pautas] = await Promise.all([baixar("radar/instagram.json"), baixar("radar/instagram-analise.json"), baixar("radar/pautas-do-dia.json")]);
+    ig = {dados, analise, pautas, carregado:true};
+  } catch(_){ ig = {dados:null, analise:null, pautas:null, carregado:true}; }
+  render();
+}
+
+/* ---------- resumo: datas, pautas do dia, Instagram e notícias ---------- */
+function diasAte(iso){
+  const h = new Date(); h.setHours(0,0,0,0);
+  const d = new Date(iso); d.setHours(0,0,0,0);
+  return Math.round((d - h) / 864e5);
+}
+function pautasDoDia(){
+  // da curadoria (pautas_do_dia); sem ela, as 3 melhores notícias novas com pitch
+  const doc = ig.pautas?.pautas || [];
+  const ok = doc.map(p => ({...p, item:itens.find(i => i.id === p.noticia_id)})).filter(p => p.gancho && p.item?.status !== "descartado");
+  if (ok.length) return ok.slice(0, 3);
+  return itens.filter(i => !i.calendario && !isIG(i) && novo(i) && recente(i) && i.pitch?.gancho)
+    .sort((a,b) => (b.em_alta - a.em_alta) || (b.nota ?? 0) - (a.nota ?? 0)).slice(0, 3)
+    .map(i => ({gancho:i.pitch.gancho, tema:i.tema, publico:i.publico, em_alta:i.em_alta, noticia_id:i.id, item:i, motivo:i.pitch.angulo,
+                formato:{nome:i.pitch.formato}}));
+}
+function cardPauta(p){
+  const i = p.item, f = p.formato || {};
+  return `<article class="pa">
+    <div class="meta">${p.em_alta ? `<span class="tag red">EM ALTA</span>` : ""}${p.tema ? `<span class="tag">${esc(p.tema)}</span>` : ""}${p.publico ? `<span class="tag">${esc(p.publico)}</span>` : ""}</div>
+    <div class="gch">${esc(p.gancho)}</div>
+    <div class="par">
+      ${i ? `<button type="button" data-abrir="${esc(i.id)}"><small>Notícia</small>${esc(p.noticia_titulo || i.titulo)}<br><i>${esc(i.canal)}${i.nota != null ? " · nota " + i.nota : ""}</i></button>`
+          : `<div><small>Notícia</small>${esc(p.noticia_titulo || "")}</div>`}
+      ${f.link ? `<a href="${esc(f.link)}" target="_blank" rel="noopener"><small>Formato que funciona</small>${esc(f.nome || "")}<br>${f.razao ? `<em>${vx(f.razao)}</em> ` : ""}<i>${esc(f.perfil || "")}</i></a>`
+               : `<div><small>Formato sugerido</small>${esc(f.nome || "")}</div>`}
+    </div>
+    ${p.motivo ? `<div class="motivo">${esc(p.motivo)}</div>` : ""}
+    <div class="acoes">${i ? `<a class="mini go" href="${ESTUDIO}#radar-${esc(i.id)}" target="_blank" rel="noopener" data-pauta="${esc(i.id)}">Criar a partir ↗</a>
+      <button class="mini ${i.status === "salvo" ? "on" : ""}" data-st="${esc(i.id)}" data-v="${i.status === "salvo" ? "novo" : "salvo"}">${i.status === "salvo" ? "Salvo ✓" : "Salvar"}</button>` : ""}</div>
+  </article>`;
+}
+function cardResumoNoticia(i){
+  return `<button type="button" class="po clica" data-abrir="${esc(i.id)}">
+    <div class="im">${i.imagem ? `<img src="${esc(i.imagem)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${esc(i.canal)}
+      <span class="rz nota" style="color:${corNota(i.nota)}">${i.nota ?? "—"}</span>
+      <span class="tp">${esc(i.canal)}</span></div>
+    <div class="cp"><h3>${esc(i.titulo)}</h3>
+      ${i.pitch?.gancho ? `<div class="lg">${esc(i.pitch.gancho)}</div>` : ""}
+      <div class="meta">${i.em_alta ? `<span class="tag red">em alta</span>` : ""}<span>${esc(ha(i.publicado_em))}</span></div></div></button>`;
+}
+function cardResumoPost(x){
+  const c = itens.find(i => i.id === x.id), p = c?.pitch || {};
+  const img = x.imagem || c?.imagem;
+  return `<a class="po clica" href="${esc(x.link || c?.link || "#")}" target="_blank" rel="noopener">
+    <div class="im">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${esc(x.perfil || p.perfil || "Instagram")}
+      ${x.razao ? `<span class="rz">${vx(x.razao)}</span>` : (c?.nota != null ? `<span class="rz nota" style="color:${corNota(c.nota)}">${c.nota}</span>` : "")}
+      <span class="tp">${esc(x.tipo || "post")} · ${esc(x.perfil || p.perfil || "")}</span></div>
+    <div class="cp">${p.gancho ? `<div class="gch">${esc(p.gancho)}</div>` : `<div class="lg">${esc(x.legenda || c?.titulo || "")}</div>`}
+      <div class="meta">${x.curtidas != null ? `<span>♥ ${mil(x.curtidas)}</span>` : ""}<span>${esc(ha(x.publicado_em || c?.publicado_em))}</span></div></div></a>`;
+}
+function resumo(cal){
+  const futuras = cal.filter(c => c.publicado_em && diasAte(c.publicado_em) >= 0);
+  const datas = futuras.length ? `<section><div class="sh"><h2>Datas chegando</h2><p>Para preparar o conteúdo com antecedência.</p></div>
+    <div class="datas">${futuras.map(c => { const d = diasAte(c.publicado_em); return `<button type="button" class="dt ${d === 0 ? "hoje" : ""}" data-abrir="${esc(c.id)}">
+      <span class="em">${d === 0 ? "hoje" : d}${d === 0 ? "" : `<small>${d === 1 ? "dia" : "dias"}</small>`}</span>
+      <span style="margin:0"><b>${esc(c.titulo)}</b><span>${esc(c.pitch?.gancho || "")}</span></span></button>`; }).join("")}</div></section>` : "";
+  const pautas = pautasDoDia();
+  const brutos = ig.dados?.posts || [];
+  const ids = new Set(brutos.map(x => x.id));
+  const curadosIG = itens.filter(i => isIG(i) && !i.calendario && !ids.has(i.id) && i.status !== "descartado" && recente(i) && (i.nota ?? 0) >= 60)
+    .sort((a,b) => (b.nota ?? 0) - (a.nota ?? 0)).map(i => ({id:i.id, link:i.link, imagem:i.imagem, publicado_em:i.publicado_em, perfil:i.pitch?.perfil}));
+  const posts = [...brutos.filter(x => itens.find(i => i.id === x.id)?.status !== "descartado"), ...curadosIG].slice(0, 10);
+  const perfis = (ig.dados?.perfis || []).filter(p => !p.erro).slice(0, 5);
+  const vistos = new Set();
+  const noticias = itens.filter(i => !i.calendario && !isIG(i) && novo(i) && recente(i) && i.curado && i.canal !== "Sua referência")
+    .sort((a,b) => (b.nota ?? -1) - (a.nota ?? -1))
+    .filter(i => { const k = i.cluster || i.id; if (vistos.has(k)) return false; vistos.add(k); return true; }).slice(0, 10);
+  return `<div class="res">
+    ${datas}
+    <div style="display:grid;gap:12px">${kpisResumo}${blocoPalavras()}</div>
+    <section id="pautas"><div class="sh"><h2>Pautas do dia</h2><p>Uma notícia em alta com um formato que está funcionando agora no Instagram, e o gancho pronto.</p></div>
+      ${pautas.length ? `<div class="pautas">${pautas.map(cardPauta).join("")}</div>` : `<div class="vazio">As pautas do dia aparecem depois da curadoria (6h17 e 14h17).</div>`}</section>
+    <section><div class="sh"><h2>Instagram</h2><p>Quem está entregando acima da própria média e os posts que estão estourando no nicho.</p><a class="ver" href="#instagram">Ver Instagram completo →</a></div>
+      ${!ig.carregado ? `<div class="vazio">Carregando o Instagram…</div>` : `<div class="igr">
+        <div class="pfs">${perfis.length ? perfis.map((p, n) => cardPerfil(p, n + 1, true)).join("") : `<div class="vazio" style="margin:10px 0">Os perfis aparecem depois da próxima coleta.</div>`}</div>
+        ${posts.length ? `<div class="ps5">${posts.map(cardResumoPost).join("")}</div>` : `<div class="vazio">Nenhum post fora da curva ainda.</div>`}</div>`}
+      ${ig.dados?.aviso ? `<div class="vazio" style="border-color:var(--warn);color:var(--warn);background:var(--warn-claro);margin-top:12px;text-align:left">${esc(ig.dados.aviso)}</div>` : ""}</section>
+    <section><div class="sh"><h2>Notícias</h2><p>As 10 melhores do dia, uma por assunto.</p><a class="ver" href="#noticias">Ver todas as notícias →</a></div>
+      ${noticias.length ? `<div class="ps5">${noticias.map(cardResumoNoticia).join("")}</div>` : `<div class="vazio">As notícias aparecem depois da curadoria (6h17 e 14h17).</div>`}</section>
+  </div>`;
 }
 
 /* ---------- palavras-chave (gravadas como eventos na pasta das referências) ---------- */
@@ -752,7 +887,6 @@ document.addEventListener("click", ev => {
   const rr = t.closest("[data-ref-rem]"); if (rr) return removerRef(rr.dataset.refRem);
   const pr = t.closest("[data-pal-rem]"); if (pr) return removerPalavra(pr.dataset.palRem);
   const el = t.closest("[data-ensinar-link]"); if (el){ abrirEnsinar(); $("rUrl").value = el.dataset.ensinarLink; $("rUrl").dispatchEvent(new Event("input")); setTimeout(() => $("rNota").focus(), 60); return; }
-  const fv = t.closest("[data-fonte-v]"); if (fv){ ui.fonte = fv.dataset.fonteV; salvarUi(); return render(); }
   const fo = t.closest("[data-fonte]"); if (fo) return acaoFonte(fo.dataset.fonte, fo.dataset.canal);
   const k = t.closest("[data-kpi]");
   if (k){
@@ -773,6 +907,11 @@ document.addEventListener("click", ev => {
   if (t === $("modal")) $("modal").classList.add("hide");
 });
 document.addEventListener("keydown", ev => { if (ev.key === "Escape") fecharTudo(); });
+window.addEventListener("hashchange", () => {
+  render();
+  const alvo = location.hash === "#pautas" ? $("pautas") : null;
+  if (alvo) alvo.scrollIntoView({behavior:"smooth", block:"start"}); else window.scrollTo(0, 0);
+});
 $("formFonte").addEventListener("submit", adicionarFonte);
 $("formRef").addEventListener("submit", adicionarRef);
 $("rUrl").addEventListener("input", () => { const t = tipoLink($("rUrl").value.trim()); $("rTipo").textContent = $("rUrl").value.trim() && t ? `· ${NOME_TIPO[t]}` : ""; });

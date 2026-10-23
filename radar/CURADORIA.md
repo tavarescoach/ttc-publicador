@@ -95,6 +95,15 @@ amarrada a uma notícia em alta da coleta.
     "ponte": "como liga ao personal / Avaliação Estratégica"}
    `nota` 0–100: encaixe com o público e a marca, formato reproduzível, sinal de desempenho e combinação com notícia em alta.
 
+## Pautas do dia (topo do Radar)
+Escolha as 3 melhores combinações de uma notícia desta coleta (nota 70+, de preferência em alta) com um post do Instagram
+que está funcionando (de `radar/instagram.json` ou dos reels que você achou), cujo FORMATO serve para contar aquela notícia.
+Varie o público (pelo menos uma para a mulher 30–50 quando houver notícia boa) e o tema. No arquivo da curadoria, chave
+`pautas_do_dia`: [{"gancho": "frase pronta no tom da marca", "tema": "...", "publico": "...", "em_alta": true|false,
+"noticia_id": "id da notícia", "noticia_titulo": "título em português, curto",
+"formato": {"nome": "o formato em poucas palavras", "perfil": "@quem fez", "razao": 12.3 ou null, "link": "link do post"},
+"motivo": "1 frase: por que essa combinação, hoje"}]. Não invente formato: descreva só o que a legenda ou o post mostram.
+
 ## Saída
 1. Escreva `radar/curadoria/AAAA-MM-DD-HH.json` (horário de Brasília): {"gerado_em": "...", "itens": [ {id, canal, titulo, link,
    imagem, publicado_em, tema, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.

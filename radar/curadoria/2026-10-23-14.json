@@ -4255,5 +4255,52 @@
    "motivo": "Fala com quem passou dos 40, mas nenhum post fugiu da curva nos últimos 30 dias.",
    "inspirar": "Só o recorte de público 40+; o formato atual não está performando."
   }
- }
+ },
+ "pautas_do_dia": [
+  {
+   "gancho": "Caminhar todo dia cuida do coração. O músculo pede carga.",
+   "tema": "força",
+   "publico": "ambos",
+   "em_alta": false,
+   "noticia_id": "65d6fa025cc2a787",
+   "noticia_titulo": "4 minutos de força por dia já mudam a força depois dos 65",
+   "formato": {
+    "nome": "Pergunta do aluno respondida em segundos",
+    "perfil": "@paulomuzy",
+    "razao": 32.1,
+    "link": "https://www.instagram.com/reel/DeMpgjrAMes/"
+   },
+   "motivo": "Estudo novo de força com o formato que mais rendeu no nicho brasileiro esta semana."
+  },
+  {
+   "gancho": "Uma cerveja hoje pesa mais que três aos 25.",
+   "tema": "álcool",
+   "publico": "executivo 30–45",
+   "em_alta": true,
+   "noticia_id": "a71521a367fe4df2",
+   "noticia_titulo": "Por que a ressaca pesa mais depois dos 40 (Globo, GQ e outros)",
+   "formato": {
+    "nome": "Escolha A ou B na tela",
+    "perfil": "@mindpumpmedia",
+    "razao": 1005.4,
+    "link": "https://www.instagram.com/reel/DeuoRvyTCG_/"
+   },
+   "motivo": "Assunto em alta em vários canais; a escolha na tela puxa comentário sem pedir."
+  },
+  {
+   "gancho": "Seu medo da reposição hormonal pode estar maior que o risco.",
+   "tema": "menopausa",
+   "publico": "mulher 30–50",
+   "em_alta": false,
+   "noticia_id": "6b7131f277bcaedf",
+   "noticia_titulo": "Médicos dizem que o medo da terapia hormonal supera o risco real",
+   "formato": {
+    "nome": "Especialista comentando dado novo",
+    "perfil": "@drvondawright",
+    "razao": 20.6,
+    "link": "https://www.instagram.com/reel/DezMQLDO79j/"
+   },
+   "motivo": "Fala direto com a mulher 30–50; tom de especialista calmo, sem prescrever."
+  }
+ ]
 }

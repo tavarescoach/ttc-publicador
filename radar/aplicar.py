@@ -39,6 +39,17 @@ def main():
             print("Análise dos perfis do Instagram publicada.")
         except Exception as e:
             print(f"::warning::Não publiquei a análise dos perfis: {e}")
+    # pautas do dia (topo do Radar: notícia + formato que funciona no Instagram + gancho)
+    if cur.get("pautas_do_dia"):
+        try:
+            up = urllib.request.Request(f"{URL}/storage/v1/object/materiais/radar/pautas-do-dia.json", method="POST",
+                data=json.dumps({"gerado_em": cur.get("gerado_em"), "pautas": cur["pautas_do_dia"]}, ensure_ascii=False).encode(),
+                headers={"apikey": KEY, "Authorization": f"Bearer {KEY}", "Content-Type": "application/json",
+                         "x-upsert": "true", "cache-control": "no-cache"})
+            urllib.request.urlopen(up, timeout=30).read()
+            print("Pautas do dia publicadas.")
+        except Exception as e:
+            print(f"::warning::Não publiquei as pautas do dia: {e}")
     # o que o radar aprendeu com as referências do Luan aparece no painel logo depois da curadoria
     perfil = os.path.join(os.path.dirname(os.path.abspath(__file__)), "perfil-interesse.json")
     if os.path.exists(perfil):
