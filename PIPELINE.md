@@ -114,7 +114,11 @@ Não publica, não agenda e não mexe em fila.json, pautas.json nem render/pedid
    Cada saída vira `{status: "pronto", texto, palavras, erro: null, escrito_em}`, ou `{status: "erro", erro: "motivo"}` se não der.
 4. Texto segue `copy-social-ttc` e a revisão de vícios de IA. Número só entra com fonte confirmada. Prova com aluno e tema de saúde
    são escritos, mas a tese já fica com aprovacao "aguarda_aprovacao" e o Luan confirma no painel.
-5. Grave cada saída também em `saidas/<doc_id>/<chave>.md` e a tese-mãe no repositório: `git pull --rebase`, commit e push.
+5. Grave a pauta para o painel, que lê estes arquivos (aba "Pautas e rascunhos"):
+   - `painel/teses/<doc_id>.json`: {"id", "titulo" (escolha.titulo), "subtitulo", "data" (AAAA-MM-DD de hoje), "aprovacao": "aguarda aprovação", "tese" (texto da tese com ## e -), "saidas": {"blogpost" | "video_aula" | "ementa" | "reels_direcao" | "teleprompter" | "broll_narracao": {"status": "pronto" | "erro", "texto", "erro"}}}.
+   - `painel/teses/index.json`: lista com {id, titulo, data, aprovacao}, a mais nova primeiro (sem duplicar o id).
+   - Também `saidas/<doc_id>/<chave>.md` e a tese-mãe do passo 2.
+   `git pull --rebase`, commit e push. O painel é publicado sozinho quando a pasta `painel/` muda.
 6. `ArtifactData update`: {status:"rascunhos", vez:"luan", atualizado_em}. Não troque o status para "gerando" nem "pronto" aqui.
 
 ## ESTUDIO reels <id>
