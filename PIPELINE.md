@@ -39,7 +39,7 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
    `radar/curadoria/*.json` (o mais recente) ou em `radar/coleta.json`. Leia a matéria com WebFetch no `link` e confira os fatos em
    outra fonte. As 5 opções partem DESSA notícia, cada uma com um ângulo diferente (ciência/decodificado, mito x método, objeção,
    público feminino, bastidor/prova), e a tese cita a reportagem como ponto de partida, sem copiar trechos dela.
-3. Monte 5 opções DIFERENTES entre si (autoridade/ciência, mito x método, objeção, público feminino, prova/bastidor), cada uma com:
+3. Monte 5 opções DIFERENTES entre si. Cada opção também traz os campos do contrato da tese-mãe (`diretrizes/tese-mae.md`): `tipo_pauta` (noticia | tese | guia), `emocao` (admiracao | indignacao | reconhecimento | urgencia_perda | pertencimento), `lacuna` (o que a manchete promete e o conteúdo entrega) e `passo_final` (um só, com a razão). Decida esses campos pela skill `acao-emocional-ttc`. Cada opção:  (autoridade/ciência, mito x método, objeção, público feminino, prova/bastidor), cada uma com:
    - titulo (até 8 palavras), subtitulo (1 frase), frases (2 frases curtas de COMO explorar e ligar aos conteúdos e à venda — não frases de efeito);
    - tese: seções `## A tese`, `## O que a ciência mostra` (com fontes), `## Por que isso importa para o seu público` (executivo 30–45 e mulher 30–50),
      `## O custo escondido da crença errada`, `## Como o método aplica`, `## Objeções que esse tema responde`, `## Desdobramentos de conteúdo`,

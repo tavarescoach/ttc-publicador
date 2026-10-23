@@ -30,6 +30,7 @@ Versão 1 · 23/10/2026 · Primeiro passo da pipeline de criação ampliada (rad
 | `cena` | texto | a cena que o leitor vive (vira enquete e abertura) |
 | `causa` | texto (1 frase) | frase-assinatura, a causa real, afirmada |
 | `evidencias` | lista de `{afirmacao, fonte}` | 2 a 4 itens, cada um com link |
+| `tipo_pauta` | `noticia` \| `tese` \| `guia` | define o tamanho do blogpost: notícia 800–1.200; tese 1.500–2.000; guia 2.000–2.500 (padrão 1.200 se vazio) |
 | `emocao` | `admiracao` \| `indignacao` \| `reconhecimento` \| `urgencia_perda` \| `pertencimento` | a emoção única que o conteúdo desperta (skill `acao-emocional-ttc`, seção 1) |
 | `lacuna` | texto | o que a manchete promete e o conteúdo entrega; precisa estar fechada no fim |
 | `passo_final` | texto | o único próximo passo do leitor, com a razão |
