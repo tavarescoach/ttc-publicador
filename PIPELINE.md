@@ -4,6 +4,7 @@ Esta sessão é disparada pelo Estúdio de criação do Luan (página do claude.
 "Pipeline do Estúdio". A mensagem extra da disparada diz o que fazer, num destes formatos:
 
     ESTUDIO pesquisa <doc_id>
+    ESTUDIO rascunhos <doc_id>
     ESTUDIO gerar <doc_id>
     ESTUDIO reels <id>
 
@@ -26,11 +27,15 @@ e grave `instagram` e `radar` com `ArtifactData` (`list` em `contexto` para as v
 `file_path` e `if_version`). O doc `aprendizado` é atualizado pela curadoria do Radar.
 
 ## Documento da criação (coleção `criacoes`)
-Campos: status (pesquisando | opcoes | rascunho | gerando | pronto | erro), vez (claude | luan), origem (pesquisa | material | ideias),
+Campos: status (pesquisando | opcoes | rascunhos | gerando | pronto | erro), vez (claude | luan), origem (pesquisa | material | ideias),
 foco, entrada_resumo, opcoes [5 × {titulo, subtitulo, frases[2], objetivo, potencial, tese, headlines[4 × {titulo, subtitulo}]}],
 reportagem, fontes, recomendada (ver pesquisa),
 escolha {titulo, subtitulo, ...}, tese, headline {titulo, subtitulo}, formatos [carrossel | reels | broll | estatico | stories],
 quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, erro, atualizado_em.
+headlines_tese [4 × {titulo, subtitulo, notas, total, formato_ideal, risco}] e hreco {indice, motivo, ajuste}: as headlines da tese escolhida.
+saidas {blogpost | video_aula | ementa | reels_direcao | teleprompter | broll_narracao}: cada uma {status: gerando | pronto | erro, texto, palavras, erro, escrito_em}.
+  O Estúdio mostra essas saídas assim que existem; quem escreve é a sessão (ESTUDIO rascunhos).
+
 
 ## ESTUDIO pesquisa <doc_id>
 1. `ArtifactData get` (collection `criacoes`, doc_id). Guarde `version`. Se status não for "pesquisando", pare.
@@ -92,6 +97,25 @@ quando (ISO com -03:00, horário desejado), resultado {formato: id do card}, err
    Revisão automática (render/revisar.py, roda no robô "Renderizar artes"): se passar, o card entra AGENDADO sozinho e o Luan só veta se quiser;
    se não passar, ou se for prova com aluno ou tema de saúde/hormônio/suplemento, vai para "Precisa de você" com o motivo
    (render/revisoes/<id>.json). Antes do push, rode `python render/revisar.py render/pedidos/<id>.json` e corrija os "problemas".
+
+## ESTUDIO rascunhos <doc_id>
+Disparada quando o Luan escolhe a pauta (tese central) no Estúdio. Escreve as saídas em rascunho para ele comparar.
+Não publica, não agenda e não mexe em fila.json, pautas.json nem render/pedidos. Carrossel não é gerado aqui.
+1. `ArtifactData get`. Se status não for "rascunhos", pare. Leia escolha, tese e headlines_tese.
+2. Grave a tese-mãe em `tese-mae/<doc_id>.json` seguindo `diretrizes/tese-mae.md` (aprovacao.status "aguarda_aprovacao"). Preencha
+   emocao, lacuna e passo_final com a skill `acao-emocional-ttc`. Se a tese tiver número sem fonte confirmada, marque em pontos_de_cuidado.
+3. Para cada chave de `saidas` com status "gerando", escreva o texto e atualize o campo com `ArtifactData update` (use if_version):
+   - `blogpost`: título, subtítulo e corpo com seções; tamanho pelo tipo_pauta (seção "Tamanho do blogpost").
+   - `video_aula`: pauta para YouTube (capítulos, promessa, prova, método, CTA).
+   - `ementa`: pontos de live ou podcast, tempo por bloco e perguntas-gatilho.
+   - `reels_direcao`: direção de gravação em 5 partes, com duração pelo funil.
+   - `teleprompter`: texto para a boca, derivado de reels_direcao.
+   - `broll_narracao`: narração em VOZ/PONTOS com planos de imagem (formato de `.claude/skills/copy-social-ttc/references/narracao-broll.md`).
+   Cada saída vira `{status: "pronto", texto, palavras, erro: null, escrito_em}`, ou `{status: "erro", erro: "motivo"}` se não der.
+4. Texto segue `copy-social-ttc` e a revisão de vícios de IA. Número só entra com fonte confirmada. Prova com aluno e tema de saúde
+   são escritos, mas a tese já fica com aprovacao "aguarda_aprovacao" e o Luan confirma no painel.
+5. Grave cada saída também em `saidas/<doc_id>/<chave>.md` e a tese-mãe no repositório: `git pull --rebase`, commit e push.
+6. `ArtifactData update`: {status:"rascunhos", vez:"luan", atualizado_em}. Não troque o status para "gerando" nem "pronto" aqui.
 
 ## ESTUDIO reels <id>
 O Luan enviou um vídeo pelo painel (card `<id>` em "Em criação"). O doc do Estúdio tem o mesmo id (`criacoes/<id>`, origem "reels").
