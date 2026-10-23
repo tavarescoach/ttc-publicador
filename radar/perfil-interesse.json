@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-22T06:40:00-03:00",
+ "atualizado_em": "2026-10-23T14:30:00-03:00",
  "origem": "Ponto de partida tirado do que o Luan já salvou ou transformou em pauta no Radar. As referências do botão Ensinar o radar refinam a partir daqui.",
  "referencias_analisadas": [
   "450bc8ab660caf33",
@@ -7,7 +7,13 @@
   "4b675ab8dfc483a5",
   "7e686b064037114d",
   "8f36e4fb41d75d2e",
-  "d53925d753bcb4d2"
+  "d53925d753bcb4d2",
+  "51a1a5bb24f8052c",
+  "ec04562928c28a89",
+  "e4091a226cc3fbf3",
+  "cbe72aeada1af703",
+  "8c860ccf53da819c",
+  "b3c50161ac3b49f8"
  ],
  "aprendido": {
   "450bc8ab660caf33": "Hábitos e vícios do adulto (álcool, tolerância que cai com a idade) lidos pela ciência e pela cultura pop, no tom de revista masculina.",
@@ -15,9 +21,15 @@
   "4b675ab8dfc483a5": "Métricas fisiológicas que viraram status (FC de repouso, dados de relógio) e o que o número diz de condicionamento.",
   "7e686b064037114d": "O formato guia para adultos na meia-idade e a ideia de procurar um especialista pesam mais que o tema em si.",
   "8f36e4fb41d75d2e": "Guias práticos de treino, inclusive em casa, com exercício explicado.",
-  "d53925d753bcb4d2": "Longevidade como mercado do público de alta renda: clínicas, exames e envelhecimento saudável."
+  "d53925d753bcb4d2": "Longevidade como mercado do público de alta renda: clínicas, exames e envelhecimento saudável.",
+  "51a1a5bb24f8052c": "Formato desafio ao vivo: duas pessoas, um teste de força, resultado incerto até o fim e quebra de expectativa sobre quem é mais forte.",
+  "ec04562928c28a89": "Perfil de treinador de força e condicionamento explicando treino com autoridade técnica; o vídeo em si não abriu.",
+  "e4091a226cc3fbf3": "História de bastidor de atleta (treinador do Phelps) em frases curtas, terminando numa regra de processo; o CTA \"comente palavra\" infla comentários.",
+  "cbe72aeada1af703": "Post de reflexão em texto: uma ideia de livro aplicada ao corpo e ao dinheiro, para um público que lê e salva.",
+  "8c860ccf53da819c": "Stitch de vídeo popular corrigido com ciência, em tom educado, seguido de demonstração do exercício.",
+  "b3c50161ac3b49f8": "Tom de identificação e humor de quem pensa com dados gera engajamento alto, mesmo fora do nicho fitness."
  },
- "resumo": "Você se interessa por notícias com dado concreto (estudo, número, mecanismo, métrica do relógio) que corrigem uma crença comum, e por cultura pop e celebridade quando revelam um hábito ou padrão de corpo do adulto 30–50. Gosta de guias práticos de revista (GQ, NYT Well) sobre recuperação, longevidade, álcool e treino, sempre pelo porquê.",
+ "resumo": "Você se interessa por notícias com dado concreto (estudo, número, mecanismo, métrica do relógio) que corrigem uma crença comum, e por cultura pop e celebridade quando revelam um hábito ou padrão de corpo do adulto 30–50. Gosta de guias práticos de revista (GQ, NYT Well) sobre recuperação, longevidade, álcool e treino, sempre pelo porquê, e no Instagram procura formatos de teste, bastidor e pergunta do aluno.",
  "assuntos": [
   "perda de força e músculo com a idade",
   "longevidade e medicina da longevidade",
@@ -93,7 +105,7 @@
   "Métrica que virou status (FC de repouso, passos, idade biológica) explicada com contexto",
   "Comparar ferramentas de recuperação e dizer qual serve para qual objetivo",
   "Hábito do adulto que muda com a idade (álcool, sono, recuperação) explicado pela fisiologia",
-  "Guia prático com especialista para quem recomeça na meia-idade"
+  "Desafio ou teste ao vivo que mostra onde a pessoa está, medido na tela"
  ],
  "evitar": [
   "fofoca sem ponte com corpo",
@@ -105,12 +117,51 @@
  "evitar_termos": [
   "Billionaires Index",
   "Ibovespa",
-  "recap"
+  "recap",
+  "Galeria de",
+  "Author Archive"
  ],
  "instagram": {
-  "resumo": "",
-  "formatos": [],
-  "ganchos": [],
-  "perfis": []
+  "resumo": "Você se inspira em treinadores que falam com autoridade calma e contam o processo por bastidores e testes, mais que em perfis de academia. Gosta de formatos que mostram o resultado na tela (desafio, pergunta do aluno, correção científica de um vídeo popular) e de quem usa dado e humor para gerar identificação.",
+  "formatos": [
+   "desafio ao vivo",
+   "bastidor de aula",
+   "pergunta do aluno",
+   "mito x método",
+   "talking head com dado",
+   "notícia com tela verde",
+   "tutorial de exercício",
+   "carrossel de reflexão em texto"
+  ],
+  "ganchos": [
+   "Pergunta curta que o aluno faria, escrita na tela e respondida em segundos",
+   "Duas pessoas lado a lado e o teste escrito na tela antes do resultado",
+   "Cena de bastidor com personagem real antes da lição",
+   "Regra numérica de consequência (faltou um dia, custa dois)",
+   "Trecho de vídeo popular seguido de \"funciona, mas\" e o dado",
+   "Frase entre aspas que o próprio público já disse",
+   "Número da rotina do espectador (horas sentado, degraus, noites curtas)",
+   "Ideia de um autor aplicada a uma decisão do dia a dia"
+  ],
+  "perfis": [
+   "@jessejameswest",
+   "@nickleyden",
+   "@coach_bowman",
+   "@itscoachgoodman",
+   "@squat_university",
+   "@mrc_marcela",
+   "@paulomuzy",
+   "@marcioatalla",
+   "@leandrotwin",
+   "@renato_cariani"
+  ],
+  "aprendido": {
+   "51a1a5bb24f8052c": "Formato desafio ao vivo: duas pessoas, um teste de força, resultado incerto até o fim e quebra de expectativa sobre quem é mais forte.",
+   "ec04562928c28a89": "Perfil de treinador de força e condicionamento explicando treino com autoridade técnica; o vídeo em si não abriu.",
+   "e4091a226cc3fbf3": "História de bastidor de atleta (treinador do Phelps) em frases curtas, terminando numa regra de processo; o CTA \"comente palavra\" infla comentários.",
+   "cbe72aeada1af703": "Post de reflexão em texto: uma ideia de livro aplicada ao corpo e ao dinheiro, para um público que lê e salva.",
+   "8c860ccf53da819c": "Stitch de vídeo popular corrigido com ciência, em tom educado, seguido de demonstração do exercício.",
+   "b3c50161ac3b49f8": "Tom de identificação e humor de quem pensa com dados gera engajamento alto, mesmo fora do nicho fitness."
+  }
  }
 }
