@@ -6,15 +6,15 @@
   "status": "salvo"
  },
  {
-  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
-  "canal": "The Guardian",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Exercise in a pill",
   "canal": "MIT Technology Review",
   "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
+  "canal": "The Guardian",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -26,18 +26,6 @@
  {
   "titulo": "Halle Berry arrives to court for restraining order, custody battle hearing as son Maceo, 13, shows up with dad Olivier Martinez",
   "canal": "Pagesix",
-  "tema": null,
-  "status": "descartado"
- },
- {
-  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
-  "canal": "Folha Equilíbrio",
-  "tema": null,
-  "status": "salvo"
- },
- {
-  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
   "tema": null,
   "status": "descartado"
  },
@@ -54,6 +42,12 @@
   "status": "descartado"
  },
  {
+  "titulo": "Is it true that … you need to take 10,000 steps a day to be healthy?",
+  "canal": "The Guardian",
+  "tema": null,
+  "status": "salvo"
+ },
+ {
   "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
   "canal": "BBC News",
   "tema": null,
@@ -66,15 +60,21 @@
   "status": "descartado"
  },
  {
-  "titulo": "Is it true that … you need to take 10,000 steps a day to be healthy?",
-  "canal": "The Guardian",
+  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
+  "canal": "Folha Equilíbrio",
   "tema": null,
   "status": "salvo"
  },
  {
-  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
   "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -96,22 +96,22 @@
   "status": "salvo"
  },
  {
-  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
+  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
- },
- {
-  "titulo": "Going nowhere fast? Personal trainers on why you aren’t seeing results in the gym",
-  "canal": "The Guardian",
-  "tema": "esporte",
-  "status": "virou_pauta"
  },
  {
   "titulo": "Lubrificante e atenção às preliminares melhoram o sexo na menopausa",
   "canal": "Folha Equilíbrio",
   "tema": "saude",
   "status": "descartado"
+ },
+ {
+  "titulo": "Going nowhere fast? Personal trainers on why you aren’t seeing results in the gym",
+  "canal": "The Guardian",
+  "tema": "esporte",
+  "status": "virou_pauta"
  },
  {
   "titulo": "Creatina pode aumentar músculos sem exercício? Entenda resultados de estudo controverso",
