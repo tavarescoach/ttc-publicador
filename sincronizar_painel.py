@@ -31,8 +31,8 @@ STATUS_PARA_ETAPA = {
     "cancelado": "cancelado",
 }
 ETAPAS_ESQUERDA = {"pauta", "em_criacao", "revisar"}
-CAMPOS = ["id", "data", "tipo", "pauta", "funil", "etapa", "quando", "arquivos", "legenda", "media_id", "capa", "link"]
-CAMPOS_NOVOS = {"capa", "link"}  # se a tabela ainda não tiver essas colunas, envia sem elas
+CAMPOS = ["id", "data", "tipo", "pauta", "funil", "etapa", "quando", "arquivos", "legenda", "media_id", "capa", "link", "tema"]
+CAMPOS_NOVOS = {"capa", "link", "tema"}  # se a tabela ainda não tiver essas colunas, envia sem elas
 
 
 def ler(nome):
@@ -65,6 +65,7 @@ def da_fila(item):
         "media_id": item.get("media_id"),
         "capa": item.get("capa"),
         "link": item.get("permalink"),
+        "tema": item.get("tema"),
     }
     return linha
 
@@ -86,6 +87,7 @@ def da_pauta(item):
         "media_id": None,
         "capa": None,
         "link": None,
+        "tema": item.get("tema"),
     }
 
 
