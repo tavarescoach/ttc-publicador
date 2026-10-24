@@ -171,3 +171,7 @@ O tipo vem do campo `tipo_pauta` da tese (`noticia` | `tese` | `guia`). Sem tipo
 - Prova com aluno e temas de saúde (hormônio, suplemento, remédio, lesão, gravidez, menopausa) exigem aprovação explícita do Luan, em qualquer saída.
 - Público da notícia diferente de 30–50 anos deve virar ponte para o público da marca (`pontos_de_cuidado` da tese).
 - Nada é publicado fora do robô ou do Luan; nada já publicado é alterado.
+
+## Tema editorial
+
+Cada pauta, carrossel, reels e story leva um campo `tema` com um valor exato da lista em `diretrizes/temas.md`. O painel usa esse campo para o calendário (sigla, equilíbrio e alerta de fora da linha). Sem `tema`, a publicação aparece como fora da lista.
