@@ -1,59 +1,59 @@
 {
- "atualizado_em": "2026-10-23T14:29:13-03:00",
+ "atualizado_em": "2026-10-24T06:29:55-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
    "canais": 9,
-   "nota_max": 68,
+   "nota_max": 72,
    "titulos": [
+    "Saiba por que canetas emagrecedoras são associadas a menor consumo de álcool | SEGS Portal Nacional de...",
     "People are taking an unapproved weight-loss drug. AI found something surprising",
-    "Boom in weight-loss drugs could lead to fall in beer sales, Heineken warns UK pubs",
-    "Terapia combinada promove perda de peso expressiva em estudo envolvendo pacientes com diabetes"
+    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says"
+   ]
+  },
+  {
+   "assunto": "emagrecimento-celebridades",
+   "tema": "cultura",
+   "canais": 3,
+   "nota_max": 62,
+   "titulos": [
+    "Adriana Bombom critica uso de canetas emagrecedoras para alcançar 'corpo do Carnaval'",
+    "Inside Trisha Yearwood’s Weight Loss Journey: Everything the Country Singer Has Said About Her Health",
+    "Chrissy Metz exibe perda de 63 libras em vestido justo"
    ]
   },
   {
    "assunto": "depressao-circadiana",
-   "tema": "ciencia",
-   "canais": 5,
-   "nota_max": 66,
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 60,
    "titulos": [
-    "Australian researchers identify new subtype of depression linked to body clock disruptions",
-    "Pesquisa identifica novo subtipo de depressão ligado ao relógio biológico",
-    "Your Sleep Habits May Point to a Specific Type of Depression, a New Study Finds"
+    "Sleep Habits May Indicate a Type of Depression, Researchers Say",
+    "Sleep Habits May Indicate a Type of Depression, Researchers Say",
+    "New Type of Depression Linked to Disrupted Sleep and Out-of-Sync Body Clocks"
    ]
   },
   {
-   "assunto": "hyrox-tendencia",
+   "assunto": "hybrid-race-acre",
    "tema": "esporte",
-   "canais": 5,
-   "nota_max": 64,
-   "titulos": [
-    "Atleta híbrido: O novo protagonista do esporte",
-    "3 exercícios de força para quem corre",
-    "Nem Crossfit, nem musculação: ex-BBBs aderem ao Hyrox, nova febre fitness do momento"
-   ]
-  },
-  {
-   "assunto": "vacina-cancer-melanoma",
-   "tema": "ciencia",
-   "canais": 4,
+   "canais": 3,
    "nota_max": 32,
    "titulos": [
-    "First personalised cancer vaccine cuts risk of disease returning in major trial",
-    "Vacina contra Câncer da MSD/moderna Reduz em 42% Risco de Morte ou Recorrência do Melanoma",
-    "Melanoma Vaccine Ushers in New Hope for Cancer Patients"
+    "Hybrid Race reúne 100 atletas no Sesi neste sábado",
+    "Hybrid Race será disputado no ginásio do Sesi com 100 atletas",
+    "Hybrid Race 2026 será realizado no Sesi com 100 atletas confirmados"
    ]
   },
   {
-   "assunto": "alcool-beber-menos",
-   "tema": "comportamento",
+   "assunto": "polilaminina-anvisa",
+   "tema": "saude",
    "canais": 3,
-   "nota_max": 82,
+   "nota_max": 15,
    "titulos": [
-    "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-    "Tico Santta Cruz detalha relação com álcool: 'Depois dos 40, a ressaca é como dengue'",
-    "O mais saudável do bar e o que mais bebe na academia"
+    "Anvisa Restringe Acesso À Polilaminina após Nove Mortes e Pesquisadora Critica Decisão",
+    "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora",
+    "Anvisa registra 9 mortes em uso compassivo de polilaminina e impõe restrições; pesquisadora questiona"
    ]
   }
  ],
@@ -73,13 +73,6 @@
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
   },
   {
-   "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
-   "canal": "The Guardian",
-   "assunto": "perda-peso-meia-idade-coracao",
-   "nota": 82,
-   "gancho": "Perder 5% do peso já reduz o risco de AVC na meia-idade."
-  },
-  {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
    "canal": "Sua referência",
    "assunto": "alcool-beber-menos",
@@ -92,13 +85,6 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
-  },
-  {
-   "titulo": "Menopausa: por que médicos dizem que o medo da terapia hormonal é maior que o risco real",
-   "canal": "g1 Saúde",
-   "assunto": "menopausa-terapia-hormonal",
-   "nota": 80,
-   "gancho": "Seu medo da reposição hormonal pode estar maior que o risco."
   },
   {
    "titulo": "The Return of the Women-Only Gym",
@@ -115,6 +101,13 @@
    "gancho": "Aos 59, Leslie Jones resumiu: depois dos 40, cuide do músculo."
   },
   {
+   "titulo": "Treino de força para corredores: treinadores explicam por que acumular quilômetros não basta e o que precisa mudar na preparação de quem quer correr melhor",
+   "canal": "Estado de Minas",
+   "assunto": "corrida-forca",
+   "nota": 80,
+   "gancho": "Mais quilômetros não deixaram sua corrida mais rápida."
+  },
+  {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
    "canal": "Sua referência",
    "assunto": "frio-calor-recuperacao",
@@ -127,6 +120,13 @@
    "assunto": "cardio-depois-do-treino",
    "nota": 80,
    "gancho": "Um aluno me perguntou se a esteira depois do treino come o músculo."
+  },
+  {
+   "titulo": "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
+   "canal": "Reuters",
+   "assunto": "boom-proteina",
+   "nota": 78,
+   "gancho": "Seu iogurte ganhou 20 g de proteína. Seu músculo continua igual."
   }
  ]
 }
