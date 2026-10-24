@@ -104,6 +104,51 @@ header{position:sticky;top:0;z-index:5;background:rgba(243,244,246,.86);backdrop
 .pv-espera{padding:22px;border:1px dashed var(--linha2);border-radius:10px;color:var(--apoio);background:var(--sup2)}
 @media (max-width:820px){.pautas-grid{grid-template-columns:1fr}}
 
+/* ---------- seletor de agenda (dia e horário com os temas do calendário) ---------- */
+.ag{border:1px solid var(--linha2);border-radius:12px;padding:12px;margin-top:6px;background:var(--sup)}
+.ag-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.ag-top b{font-family:Satoshi,Inter,sans-serif;font-size:15px}
+.ag-top .nv{display:inline-flex;gap:4px}
+.ag-top .nv button{width:30px;height:30px;border-radius:50%;border:1px solid var(--linha2);font-weight:700}
+.ag-top .nv button:hover:not(:disabled){border-color:var(--tinta)}
+.ag-top .nv button:disabled{opacity:.35;cursor:not-allowed}
+.ag-sem{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;font-size:10.5px;color:var(--fraco);font-weight:600;text-align:center;margin-bottom:3px}
+.ag-grade{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.ag-d{min-height:54px;border-radius:8px;border:1px solid var(--linha);background:var(--sup2);padding:3px;display:flex;flex-direction:column;align-items:stretch;gap:2px;text-align:center;min-width:0}
+.ag-d:hover:not(:disabled){border-color:var(--tinta)}
+.ag-d .n{font-family:Satoshi,Inter,sans-serif;font-weight:700;font-size:12.5px;color:var(--tinta);line-height:1.2}
+.ag-d.fora{opacity:.35}
+.ag-d:disabled{opacity:.4;cursor:not-allowed}
+.ag-d.agora{box-shadow:inset 0 0 0 1.5px var(--tinta)}
+.ag-d.sel{background:var(--tinta);border-color:var(--tinta)}
+.ag-d.sel .n{color:#fff}
+.ag-d .s{display:block;border-radius:3px;font-family:Satoshi,Inter,sans-serif;font-weight:900;font-size:8.5px;letter-spacing:.2px;line-height:1.35;background:var(--c,#8A93A3);color:#fff;overflow:hidden;white-space:nowrap}
+.ag-d .s.cruz{background:var(--sup);color:var(--tinta);box-shadow:inset 0 0 0 1px var(--tinta)}
+.ag-d .s.sem{background:var(--red-claro);color:var(--red);box-shadow:inset 0 0 0 1px var(--red)}
+.ag-d .s.plan{opacity:.6}
+.ag-d .s.mx{background:none;color:var(--apoio);font-weight:700}
+.ag-d.sel .s.mx{color:#fff}
+.ag-d .s.novo{background:repeating-linear-gradient(45deg,var(--c,#8A93A3) 0 3px,transparent 3px 5px);color:var(--tinta);box-shadow:inset 0 0 0 1px var(--c,#8A93A3)}
+.ag-d.sel .s.novo{color:#fff}
+.ag-h{margin-top:10px}
+.ag-h .rot{font-size:12px;color:var(--apoio);font-weight:600;margin-bottom:6px}
+.ag-hs{display:flex;flex-wrap:wrap;gap:5px}
+.ag-hs button{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:999px;border:1px solid var(--linha2);background:var(--sup);font-variant-numeric:tabular-nums}
+.ag-hs button:hover:not(:disabled){border-color:var(--tinta)}
+.ag-hs button.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.ag-hs button.ocup{border-color:var(--warn);background:var(--warn-claro)}
+.ag-hs button.on.ocup{background:var(--red);border-color:var(--red)}
+.ag-hs button:disabled{opacity:.4;cursor:not-allowed}
+.ag-hs button i{font-style:normal;font-family:Satoshi,Inter,sans-serif;font-weight:900;font-size:9.5px;padding:0 4px;border-radius:3px;background:var(--c,#8A93A3);color:#fff}
+.ag-hs button i.cruz{background:var(--sup);color:var(--tinta);box-shadow:inset 0 0 0 1px var(--tinta)}
+.ag-hs input{width:118px;padding:4px 8px;border-radius:999px;font-size:12.5px}
+.ag-res{margin-top:10px;font-size:12.5px;line-height:1.45}
+.ag-res b{font-family:Satoshi,Inter,sans-serif}
+.ag-res ul{list-style:none;padding:0;margin-top:5px;display:flex;flex-direction:column;gap:3px}
+.ag-res li{display:flex;gap:7px;align-items:flex-start}
+.ag-res li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;margin-top:6px;background:var(--ok)}
+.ag-res li.av::before{background:var(--warn)} .ag-res li.ruim::before{background:var(--red)}
+@media (max-width:480px){.ag{padding:8px}.ag-d{min-height:46px}.ag-d .s{font-size:7.5px}}
 /* ---------- calendário editorial compacto (coluna da direita) ---------- */
 .cal{margin-bottom:6px}
 .cal-sub{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:2px 0 10px}
@@ -326,7 +371,8 @@ main{max-width:1560px;margin:0 auto;padding:16px 20px 40px;display:grid;grid-tem
 .caixa label{display:block;font-size:12.5px;color:var(--apoio);margin:12px 0 6px}
 .caixa .btn{width:100%;margin-top:18px;padding:12px}
 .msg{font-size:12.5px;color:var(--red);margin-top:10px;min-height:16px}
-.fundo{position:fixed;inset:0;background:rgba(14,22,38,.42);backdrop-filter:blur(3px);display:grid;place-items:center;padding:16px;z-index:10}
+.fundo{position:fixed;inset:0;background:rgba(14,22,38,.42);backdrop-filter:blur(3px);display:flex;align-items:flex-start;justify-content:center;padding:16px;z-index:10;overflow-y:auto;overscroll-behavior:contain}
+.fundo>.caixa{margin:auto 0}
 .linha{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .visor{position:fixed;inset:0;background:rgba(14,22,38,.82);z-index:20;display:flex;align-items:center;justify-content:center;padding:16px}
 .visor .box{width:100%;max-width:1000px;max-height:100%;display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;background:var(--sup);border-radius:18px;padding:16px;overflow:auto}
@@ -959,6 +1005,7 @@ function abrirEditar(tipo, id){
     return `<label for="${id}">${l}</label>` + (t === "textarea" ? `<textarea id="${id}" rows="${k === "detalhe" ? 12 : 8}" style="resize:vertical">${esc(v)}</textarea>`
       : `<input id="${id}" ${t === "datetime" ? 'type="datetime-local"' : ""} value="${esc(v)}">`);
   }).join("");
+  if ($("ed_quando")) montarAgenda($("ed_quando"), {id: alvo.id, temaEl: $("ed_tema"), tema: alvo.tema ?? null});
   $("edMsg").textContent = ""; $("mEditar").classList.remove("hide");
 }
 async function salvarEdicao(ev){
@@ -993,6 +1040,7 @@ function abrirAprovar(id){
   const q = r.quando ? new Date(r.quando) : new Date(Date.now() + 864e5);
   $("apQuando").value = new Date(q.getTime() - 3*3600e3).toISOString().slice(0,16); // horário de Brasília
   $("apLegenda").value = r.legenda || ""; $("apMsg").textContent = "";
+  montarAgenda($("apQuando"), {id: r.id, tema: r.tema ?? null});
   $("mAprovar").classList.remove("hide");
 }
 async function aprovar(ev){
@@ -1065,6 +1113,7 @@ function abrirReels(id){
   const q = r && r.quando ? new Date(r.quando) : new Date(Date.now() + 864e5);
   const base = new Date(q.getTime() - 3*3600e3).toISOString().slice(0,10);
   $("rQuando").value = r && r.quando ? new Date(q.getTime() - 3*3600e3).toISOString().slice(0,16) : base + "T07:00";
+  montarAgenda($("rQuando"), {id: r ? r.id : null, tema: r ? (r.tema ?? null) : undefined});
   $("mReels").classList.remove("hide");
 }
 async function enviarReels(ev){
@@ -1352,6 +1401,81 @@ document.addEventListener("click", ev => {
   const tm = ev.target.closest("[data-caltema]");
   if (tm){ const k = tm.dataset.caltema; cal.esconder.has(k) ? cal.esconder.delete(k) : cal.esconder.add(k); return desenharCalendario(); }
 });
+
+// ---- seletor de agenda: substitui o calendário do navegador nos campos de dia e horário
+const HORARIOS_PADRAO = ["07:00","12:00","16:00","18:00","19:00","20:30"];
+function montarAgenda(input, opts = {}){
+  if (!input) return;
+  input.classList.add("hide");
+  const alvoEl = input.closest(".linha") || input;
+  let painel = alvoEl.nextElementSibling;
+  if (!painel || !painel.classList.contains("ag")){ painel = document.createElement("div"); painel.className = "ag"; alvoEl.after(painel); }
+  const lbl = document.querySelector(`label[for="${input.id}"]`);
+  if (lbl && input.closest(".linha") && !painel.previousElementSibling?.classList.contains("ag-rot")){
+    lbl.classList.add("hide"); const l2 = document.createElement("label"); l2.className = "ag-rot"; l2.textContent = lbl.textContent; painel.before(l2);
+  }
+  const ini = input.value || somaDias(hojeISO(), 1) + "T07:00";
+  const st = {dia: ini.slice(0,10), hora: ini.slice(11,16), mes: ini.slice(0,7)};
+  const temaAtual = () => temaInfo(opts.temaEl?.value ?? opts.tema);
+  const feedDoDia = dia => dados.filter(r => r.id !== opts.id && r.etapa !== "cancelado" && FEED.includes(r.tipo) && diaBR(r) === dia)
+    .sort((a,b) => (a.quando || "").localeCompare(b.quando || ""));
+  const chip = (r, cls = "s") => { const t = temaInfo(r.tema); const k = t ? (t.tipo === "central" ? "" : "cruz") : "sem";
+    return `<span class="${cls} ${k}${ETAPAS_ESQ.includes(r.etapa) ? " plan" : ""}" style="${t && t.c ? "--c:" + t.c : ""}" title="${esc((horaBR(r) || "sem horário") + " · " + (t ? t.nome : "sem tema") + " · " + (r.pauta || r.id))}">${t ? esc(t.base.sigla) : "???"}</span>`; };
+  const gravar = () => { input.value = st.dia + "T" + st.hora; input.dispatchEvent(new Event("change", {bubbles:true})); };
+
+  function desenharAg(){
+    const hoje = hojeISO(), [y,m] = st.mes.split("-").map(Number);
+    const primeiro = st.mes + "-01", semHoje = segundaDe(hojeISO()), inicio = segundaDe(primeiro) < semHoje ? semHoje : segundaDe(primeiro); // semanas que já passaram não aparecem
+    const nomeMes = (s => s[0].toUpperCase() + s.slice(1))(new Date(Date.UTC(y,m-1,15)).toLocaleDateString("pt-BR",{timeZone:"UTC",month:"long"})) + " " + y;
+    const t = temaAtual();
+    let grade = "";
+    for (let i = 0; i < 42; i++){
+      const dia = somaDias(inicio, i);
+      if (i % 7 === 0 && i > 0 && dia.slice(0,7) !== st.mes) break;
+      const doDia = feedDoDia(dia), passado = dia < hoje;
+      const novo = dia === st.dia && t ? `<span class="s novo" style="${t.c ? "--c:" + t.c : ""}" title="Esta publicação">${esc(t.base.sigla)}</span>` : "";
+      const vis = doDia.slice(0, novo ? 2 : 3);
+      grade += `<button type="button" class="ag-d${dia.slice(0,7) !== st.mes ? " fora" : ""}${dia === hoje ? " agora" : ""}${dia === st.dia ? " sel" : ""}" data-agdia="${dia}"${passado ? " disabled" : ""} title="${esc(diaTxt(dia))}${doDia.length ? " · " + doDia.length + " no feed" : ""}">
+        <span class="n">${Number(dia.slice(8))}</span>${novo}${vis.map(r => chip(r)).join("")}${doDia.length > vis.length ? `<span class="s mx">+${doDia.length - vis.length}</span>` : ""}</button>`;
+    }
+    // horários: padrão + os já usados no dia
+    const doDia = feedDoDia(st.dia), ocup = new Map();
+    doDia.forEach(r => { const h = horaBR(r); if (h) ocup.set(h, (ocup.get(h) || []).concat(r)); });
+    const horas = [...new Set([...HORARIOS_PADRAO, ...ocup.keys()])].sort();
+    const agora = new Date(), proxima = st.dia === hoje ? agora.toLocaleTimeString("pt-BR",{timeZone:"America/Sao_Paulo",hour:"2-digit",minute:"2-digit"}) : "";
+    const hs = horas.map(h => { const o = ocup.get(h) || [], passou = proxima && h <= proxima;
+      return `<button type="button" data-aghora="${h}" class="${h === st.hora ? "on" : ""}${o.length ? " ocup" : ""}"${passou ? " disabled" : ""}>${h}${o.map(r => { const tt = temaInfo(r.tema); return `<i class="${tt && tt.tipo !== "central" ? "cruz" : ""}" style="${tt && tt.c ? "--c:" + tt.c : ""}">${tt ? esc(tt.base.sigla) : "???"}</i>`; }).join("")}</button>`; }).join("");
+
+    // leitura do encaixe
+    const avisos = [], quando = new Date(st.dia + "T" + st.hora + ":00-03:00");
+    const choque = ocup.get(st.hora) || [];
+    if (quando < agora) avisos.push({c:"ruim", t:"Esse horário já passou."});
+    else if (quando - agora < 3*3600e3) avisos.push({c:"av", t:"Menos de 3 h para sair: a revisão automática segura e manda para Precisa de você."});
+    if (choque.length) avisos.push({c:"ruim", t:`Já tem ${choque.map(r => (temaInfo(r.tema)?.base.sigla || "???") + " (" + (SIGLA_TIPO[r.tipo] || r.tipo) + ")").join(" e ")} às ${st.hora}. Duas no mesmo horário dividem o alcance.`});
+    if (doDia.length >= 3) avisos.push({c:"av", t:`O dia já tem ${doDia.length} publicações no feed.`});
+    if (t){
+      const temNo = d => feedDoDia(d).some(r => temaInfo(r.tema)?.base.sigla === t.base.sigla);
+      const a1 = temNo(somaDias(st.dia,-1)), a2 = temNo(somaDias(st.dia,-2)), d1 = temNo(somaDias(st.dia,1)), d2 = temNo(somaDias(st.dia,2));
+      if ((a1 && a2) || (a1 && d1) || (d1 && d2)) avisos.push({c:"av", t:`Fica ${t.base.nome} em 3 dias seguidos. Considere outro dia.`});
+      else if (doDia.some(r => temaInfo(r.tema)?.base.sigla === t.base.sigla)) avisos.push({c:"av", t:`Já tem ${t.base.nome} nesse dia.`});
+    } else if (opts.temaEl || opts.tema !== undefined) avisos.push({c:"av", t:"Publicação sem tema: escolha o tema para conferir a linha editorial."});
+    if (!avisos.length) avisos.push({c:"", t:"Horário livre e tema sem repetição por perto."});
+
+    painel.innerHTML = `<div class="ag-top"><b>${esc(nomeMes)}</b><span class="nv"><button type="button" data-agmes="-1" aria-label="Mês anterior"${st.mes <= hoje.slice(0,7) ? " disabled" : ""}>‹</button><button type="button" data-agmes="1" aria-label="Próximo mês">›</button></span></div>
+      <div class="ag-sem"><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span><span>Dom</span></div>
+      <div class="ag-grade">${grade}</div>
+      <div class="ag-h"><div class="rot">Horário em ${esc(diaTxt(st.dia))}</div><div class="ag-hs">${hs}<input type="time" step="300" value="${esc(st.hora)}" aria-label="Outro horário" data-aglivre></div></div>
+      <div class="ag-res"><b>${esc(diaTxt(st.dia))} às ${esc(st.hora)}</b>${t ? ` · ${esc(t.base.sigla)} ${esc(t.base.nome)}` : ""}<ul>${avisos.map(a => `<li class="${a.c}">${esc(a.t)}</li>`).join("")}</ul></div>`;
+  }
+  painel.onclick = ev => {
+    const d = ev.target.closest("[data-agdia]"); if (d){ st.dia = d.dataset.agdia; st.mes = st.dia.slice(0,7); gravar(); return desenharAg(); }
+    const h = ev.target.closest("[data-aghora]"); if (h){ st.hora = h.dataset.aghora; gravar(); return desenharAg(); }
+    const mm = ev.target.closest("[data-agmes]"); if (mm){ const [y,m] = st.mes.split("-").map(Number); st.mes = new Date(Date.UTC(y, m - 1 + Number(mm.dataset.agmes), 15)).toISOString().slice(0,7); return desenharAg(); }
+  };
+  painel.onchange = ev => { if (ev.target.matches("[data-aglivre]") && ev.target.value){ st.hora = ev.target.value.slice(0,5); gravar(); desenharAg(); } };
+  if (opts.temaEl) opts.temaEl.addEventListener("change", desenharAg);
+  gravar(); desenharAg();
+}
 
 function desenhar(){
   const porData = (a,b) => (a.quando || a.data || "9").localeCompare(b.quando || b.data || "9");
