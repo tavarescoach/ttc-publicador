@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-10-24T09:18:26.339761+00:00",
+ "coletado_em": "2026-10-24T12:56:34.385238+00:00",
  "itens": [
   {
    "id": "2eb80f270753eccc",
@@ -19,16 +19,6 @@
    "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/08de/live/6e052f20-cd4f-11f1-8177-0f8bd59b54c4.jpg",
    "publicado_em": "2026-10-21T23:02:30+00:00",
    "resumo": "Drugs will be tested simultaneously, which it's hoped will speed up the process of finding new treatments for this common type of dementia.",
-   "pre": 3.0
-  },
-  {
-   "id": "59f5763d5f90c9fc",
-   "canal": "BBC News",
-   "titulo": "Astronaut surprise video leaves pupils starstruck",
-   "link": "https://www.bbc.co.uk/news/articles/cmvg9vlgxkv8o?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1186/live/d4f1f850-cd3e-11f1-bc2e-018d645d8d21.jpg",
-   "publicado_em": "2026-10-21T11:55:19+00:00",
-   "resumo": "The surprise came after a teacher's father met Peake while working on a cruise ship.",
    "pre": 3.0
   },
   {
@@ -102,6 +92,16 @@
    "pre": 1.0
   },
   {
+   "id": "7a5340218a02400a",
+   "canal": "BBC News",
+   "titulo": "'It's been relentless' say IT workers on frontline of PHP cyber-security scramble",
+   "link": "https://www.bbc.co.uk/news/articles/cxnv025d8qpmo?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f861/live/f70b8e60-cedd-11f1-b90b-55df5472350e.jpg",
+   "publicado_em": "2026-10-23T12:00:25+00:00",
+   "resumo": "IT and cyber experts have told the BBC about their struggles in the last 48 hours to update their systems.",
+   "pre": 1.0
+  },
+  {
    "id": "de70d6b141c546ee",
    "canal": "Reuters",
    "titulo": "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
@@ -120,6 +120,16 @@
    "publicado_em": "2026-10-23T10:02:25+00:00",
    "resumo": "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says Reuters",
    "pre": 5.0
+  },
+  {
+   "id": "f4bfe123f53bac14",
+   "canal": "Reuters",
+   "titulo": "Beauty giants target 'Ozempic face' as boom in obesity drugs opens new market",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzBscFc1bVNobHJsZmJJNHE4dmlON3Viekp4ZDd1R2QwdlZaZkZJc1QyTW9aQmhnOGxmUW14NnFWbFlkSWVDbkJiRjdzdjhLODlSMmd1T2hETGxfbXRnaFo2NFE5UG5vbVNWZ21Zd0tWTDM2NExxaVI4bU5zNTlrbHM2dmhiT1ZOVkwzWVItdHlYeTFESEFSMVRla0hPUzFueUdGVl80NS1IbHJlQWhsakRqN0lsbjF3cF9TODFrMA?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T10:05:13+00:00",
+   "resumo": "Beauty giants target 'Ozempic face' as boom in obesity drugs opens new market Reuters",
+   "pre": 4.0
   },
   {
    "id": "fc57be224d9e7b75",
@@ -192,26 +202,6 @@
    "pre": 2.0
   },
   {
-   "id": "fb6bfa1e76cd2e90",
-   "canal": "Reuters",
-   "titulo": "Abbott cuts 2026 sales growth view, plans to spin off nutrition business",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNWGtxUVgyODRDVEJyUEYyVnA3Ti0xTTFBbFVfYW93YlhQMTlrUjQ3WllPczFzQTByR0lIMjdJX19Wc1lGRnI0bGtYaFFUU3JGVXBUWXdCcTZpbkp3UGMxQUtQRlNPRV9xQmx2akZCbzE0XzZqUUVocHVvYkVmN0pZN3VHb3hzd0YzTDZuZmhyVFJWc2d5NFB2RkpuQWhmWlFkckNLbUFXM3V4VjVaOUJSelByeW5jcGMxR1dwTGM0cF9UbnowVHR1aFktSmRleDZqd1E?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-21T15:45:14+00:00",
-   "resumo": "Abbott cuts 2026 sales growth view, plans to spin off nutrition business Reuters",
-   "pre": 2.0
-  },
-  {
-   "id": "3348079da55fda33",
-   "canal": "CNN",
-   "titulo": "Meghan Markle 'deeply distressed' over child sex abuse image allegations against her father",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZXNCMGttblI0VDUwZks5NERpMWduQ0w4Sjg4X0h5aHdDVl84SkM4cEw1WTdyR2M4LU5nMkpmQkpDa3g2TlctN2tfcXZna2tFTkdMd3RuUHNaaXM1RkQ3b0J4MG9yaVNaM2VMdDltYjlmbFFBR3htbXpCQk5LcmdEa2JtMVBVWjFnajhmLXRILVI0Snc4WExfNm4tb05rb2lMQXYwUTFwLWs2VVE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T15:12:01+00:00",
-   "resumo": "Meghan Markle 'deeply distressed' over child sex abuse image allegations against her father CNN",
-   "pre": 4.0
-  },
-  {
    "id": "fe6dd80ddba5a24f",
    "canal": "CNN",
    "titulo": "Octopus Energy CEO on 'no brainer' solutions to the UK energy market",
@@ -249,6 +239,16 @@
    "imagem": null,
    "publicado_em": "2026-10-23T07:16:06+00:00",
    "resumo": "Hong Kong finance secretary on AI risk and future growth CNN",
+   "pre": 1.0
+  },
+  {
+   "id": "7e3dd48aac0f36f3",
+   "canal": "CNN",
+   "titulo": "Top Trump political advisers donate fee for work on behalf of pro-Russian government after he floated firing them",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaVdQWnNGSzRXdVRuVWdVSW5mMjdvbVpXOHNlbzY3T2FtVUJXRl9iZkUxWEdpb1RqV3V0VThhQUhoNE8wYXBVeERlXzFLRV9CMmFkSU1PYTBwVWd4T3dvdGpWalFsaGx3UEtvQkNaZmp0dUE2UWVUYVhWQnFPNGNSYURFaHBsVmtGYUUzOFRXTXREejJP?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T03:39:00+00:00",
+   "resumo": "Top Trump political advisers donate fee for work on behalf of pro-Russian government after he floated firing them CNN",
    "pre": 1.0
   },
   {
@@ -300,6 +300,16 @@
    "publicado_em": "2026-10-23T10:33:37+00:00",
    "resumo": "World’s second largest brewer says use of drugs such as Wegovy can reduce desire to drink alcohol Heineken has warned British bars and pubs that the boom in popularity of weight-loss drugs could lead to a fall in sales of beer and cider. The world’s second-largest brewer sent a presentation to British hospitality customers earlier this month that said the use of GLP-1 medication – such as Ozempic ",
    "pre": 13.0
+  },
+  {
+   "id": "6c7835bd7e9c0e09",
+   "canal": "The Guardian",
+   "titulo": "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
+   "link": "https://www.theguardian.com/technology/2026/oct/24/the-datacentre-next-door-on-the-frontline-of-techs-latest-david-v-goliath-battle",
+   "imagem": "https://i.guim.co.uk/img/media/0373ee73af80c68fd75a9ab321de66de4801ad27/865_0_5902_4724/master/5902.jpg?width=140&quality=85&auto=format&fit=max&s=5f523b9df1901844cac4ef7d3a723b2b",
+   "publicado_em": "2026-10-24T11:00:32+00:00",
+   "resumo": "The AI boom is pitting local residents against corporate giants seeking to power their energy-hungry networks – but one Welsh city is fighting back Dale Johnston opens the gate to his neat suburban garden on the western fringes of Newport in South Wales. There’s a trampoline and a slide on the lawn for his grandchildren, and chairs for him and his wife. He should be enjoying the light draining fro",
+   "pre": 5.0
   },
   {
    "id": "cecd62dbcd69b318",
@@ -380,26 +390,6 @@
    "publicado_em": "2026-10-23T05:00:01+00:00",
    "resumo": "An app and a camera phone are all that’s needed at more than 200 spots to help researchers monitor coastal areas The shoreline changes with the weather. Tracking these changes over time is a labour-intensive task, and an army of citizen scientists with camera phones is a great asset. The CoastSnap project started in Australia in 2017 and has spread to beaches worldwide. You may have spotted the se",
    "pre": 2.0
-  },
-  {
-   "id": "7502be3752d4f8ba",
-   "canal": "The Guardian",
-   "titulo": "Child health in England at risk from sharp rise in NHS waiting times, report says",
-   "link": "https://www.theguardian.com/society/2026/oct/23/child-health-england-at-risk-sharp-rise-nhs-waiting-times",
-   "imagem": "https://i.guim.co.uk/img/media/aa0c403b6d4c0f5fec5de4c02d771214604febbc/688_43_4232_3386/master/4232.jpg?width=140&quality=85&auto=format&fit=max&s=cf3ad6976341c6338f554290a4f05934",
-   "publicado_em": "2026-10-22T23:01:52+00:00",
-   "resumo": "CQC research finds long delays are making conditions harder to treat and highlights regional disparities in care Thousands of children in England are experiencing some of the sharpest rises in waiting times for healthcare in the history of the NHS, a report has revealed. While some adult waiting times have improved, children and young people are being “hit hardest” amid soaring demand and falling ",
-   "pre": 2.0
-  },
-  {
-   "id": "0043acf979c37c88",
-   "canal": "Fox News Health",
-   "titulo": "Stacking supplements without key test can do more harm than good, expert warns",
-   "link": "https://www.foxnews.com/health/why-stacking-supplements-without-blood-test-first-can-do-more-harm-than-good",
-   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/10/931/523/handful-pills.jpg?ve=1&tl=1",
-   "publicado_em": "2026-10-21T11:00:26+00:00",
-   "resumo": "Jim LaValle explains why a blood test should come before buying ashwagandha, magnesium or zinc supplements to address fatigue and other symptoms.",
-   "pre": 4.0
   },
   {
    "id": "d3e3a200cd23beca",
@@ -642,6 +632,16 @@
    "pre": 2.1
   },
   {
+   "id": "10d77c39b3ebb2d5",
+   "canal": "Wired",
+   "titulo": "My Favorite Sofa Is Discounted for Joybird’s Semiannual Sale",
+   "link": "https://www.wired.com/story/joybird-semi-annual-sale-2026/",
+   "imagem": "https://media.wired.com/photos/6adba966042fe07bfaca19da/master/pass/Joybird%20Deals%20Post%20102026%20top%20art%20SOURCE%20Joybird.jpg",
+   "publicado_em": "2026-10-24T10:30:00+00:00",
+   "resumo": "The Joybird Eliot Sleeper, plus hundreds of other options, are up to 40 percent off during the brand’s Semiannual sale.",
+   "pre": 1.4
+  },
+  {
    "id": "2787e81a34bfd28e",
    "canal": "Wired",
    "titulo": "What Type of Mattress Is Right for You? (2026)",
@@ -649,16 +649,6 @@
    "imagem": "https://media.wired.com/photos/6ada561615aedf0df959752a/master/pass/What%20Type%20of%20Mattress%20Is%20Right%20for%20You%20102026.jpg",
    "publicado_em": "2026-10-23T10:08:00+00:00",
    "resumo": "Here’s how to pick the best mattress for your sleep needs, straight from a professional mattress tester.",
-   "pre": 1.4
-  },
-  {
-   "id": "9a2f77b65b0e8cac",
-   "canal": "Wired",
-   "titulo": "OpenAI Invests in Startup That Uses Brain Implants to Detect Cancer",
-   "link": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
-   "imagem": "https://media.wired.com/photos/6ad7d54d2ae496685d93a3ef/master/pass/Science_OpenAI%20Invests%20in%20Startup%20That%20Uses%20Brain%20Implants%20to%20Detect%20Cancer_v1.jpg",
-   "publicado_em": "2026-10-21T10:30:00+00:00",
-   "resumo": "It’s the latest in a growing wave of bets that AI companies are making on brain data.",
    "pre": 1.4
   },
   {
@@ -689,16 +679,6 @@
    "imagem": "https://media.wired.com/photos/6ada6dba4d7b986a1aaeb09e/master/pass/virus%20Shamonda%20Francia%201298348369.jpg",
    "publicado_em": "2026-10-22T22:26:57+00:00",
    "resumo": "Although the case is considered exceptional, investigators are working to determine how the infection occurred and whether the pathogen played a role in the patient’s death.",
-   "pre": 0.7
-  },
-  {
-   "id": "2e1c835fb156f3f6",
-   "canal": "Wired",
-   "titulo": "I Worked for a Whole Day Using Only the iPhone Duo. Here’s How It Went",
-   "link": "https://www.wired.com/story/i-worked-for-a-whole-day-using-only-the-iphone-duo-heres-how-it-went/",
-   "imagem": "https://media.wired.com/photos/6ad935fd8dbac9acb33aa1cc/master/pass/DSC_9943.jpg",
-   "publicado_em": "2026-10-22T10:30:00+00:00",
-   "resumo": "A portable keyboard and kickstand make it a viable emergency workstation—even if iOS still gets in the way.",
    "pre": 0.7
   },
   {
@@ -810,6 +790,16 @@
    "publicado_em": "2026-10-23T07:00:00+00:00",
    "resumo": "Diabetes e obesidade: dispositivo eletrônico controla glicose e reduz peso em testes com animais G1",
    "pre": 4.4
+  },
+  {
+   "id": "afc4ec2f313a1830",
+   "canal": "g1 Saúde",
+   "titulo": "Menopausa ou doença reumatológica? Entenda quando dores nas articulações são sinal de alerta",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNME1tRXhRSGkyTzBKZ3N6T0J3MzB0TUhDbE9GSWNSWlFQRFdKdDRiOTRrdVlYeG5hcEhReGFBdXVLaV9qcEdKTGprUzQtUk9mSUVWUXNscWxnRFlzX3kzZ0MzTFNQTTZZTUxyZnpnWUttZVZwWDFhTFlfaFpqU095dlBQMlA0SzNpTFRhNWlWakR0REN0QkoxTEp3QUFLZEtfY3ZrYXZvdmhfVEZpOFJKc2Z1bFVNNk1NbVdwaUhkbklSWDA0d1luTURyLVB2UTBfbHUxLWgyT0p3U3PSAeoBQVVfeXFMTnlZZ05HdWs1OTRWZ29URmZVa0pDMHpwV1o5LXcwN0xpdklZQXhtU0dCQkNxZVl3aFlYdzVmVVJzM3hyTzRSRG1KNWtrTXVLXzdWcWFlMTdNVXJROWFtMDduRzllVEY4aUl0V0k0UF9PdEZraXZ1VTFLeGtFVlRpRk0xN0pOYjQyYUhZbHhKMlFTVzNOYUhDTHpORTlJbElCX19VMS1MZXVUVkF1b1FQZmlUS0dDcFlFcFNVeS1DYmJnOXI4b2VvalJMX2dqMUlBNFg1NnNVWWlJdUFnRktMb0R1SVUwY1MyTGln?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T07:00:00+00:00",
+   "resumo": "Menopausa ou doença reumatológica? Entenda quando dores nas articulações são sinal de alerta G1",
+   "pre": 2.2
   },
   {
    "id": "a042ba3e9ee3b780",
@@ -972,10 +962,10 @@
    "pre": 2.2
   },
   {
-   "id": "f8bd16af788b05b7",
+   "id": "88f8bbf8040561ed",
    "canal": "Estadão Saúde",
    "titulo": "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSkVPRGFGVGg3MEk1N2t2MVlkVFhYdTdkemRFdE9JekdLOWROLTd0VFlxVmRiVzRucnJybHNrbVJrRG5ESmR5RnJ2WkdmMUc1UV9WbHppb2ZBYVpLRU9Ld2E2b0lmV24wd3hncEJqUkdubWdjNHlMVHNaR1hvU3NYWU0tVGhIbVRDWl9zXzgxSWhSUVpJdnlzV2plU0hDb1lIWW5jZnRUQ2twQk93TFVhYWkwaWtXRmVodWZRMzhVRTNBa0hsVlZPWkZkendIOXBK0gHWAUFVX3lxTE1reC1ZODNCQ3dlWW85R1JpaS13OElPVVhYQUN0TldscFJmMlByNXI0V2JldGZGRGZTbWQ1VDR6NzkwUDBRQm9lY3QxMmdPT1M4aVMxSnY0WmY5U29rX0hrcW03QUZjb05qZDE0MUVBUWpIZk5kYnM3MTNYVGhvd3ZSVlVhbXZ0anVTTEp5UmUwbUo5d09idVdCSm9JUzh1Z29LVkR1NlNJTGlGZmRzZVAtMTFXM2lFWGU5UFpCblh5bXhGWFN5QXR6d3k5Z3o4UzRxT1E1QWc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNa3gtWTgzQkN3ZVlvOUdSaWktdzhJT1VYWEFDdE5XbHBSZjJQcjVyNFdiZXRmRkRmU21kNVQ0ejc5MFAwUUJvZWN0MTJnT09TOGlTMUp2NFpmOVNva19Ia3FtN0FGY29OamQxNDFFQVFqSGZOZGJzNzEzWFRob3d2UlZVYW12dGp1U0xKeVJlMG1KOXdPYnVXQkpvSVM4dWdvS1ZEdTZTSUxpRmZkc2VQLTExVzNpRVhlOVBaQm5YeW14RlhTeUF0end5OWd6OFM0cU9RNUFn0gHWAUFVX3lxTE1reC1ZODNCQ3dlWW85R1JpaS13OElPVVhYQUN0TldscFJmMlByNXI0V2JldGZGRGZTbWQ1VDR6NzkwUDBRQm9lY3QxMmdPT1M4aVMxSnY0WmY5U29rX0hrcW03QUZjb05qZDE0MUVBUWpIZk5kYnM3MTNYVGhvd3ZSVlVhbXZ0anVTTEp5UmUwbUo5d09idVdCSm9JUzh1Z29LVkR1NlNJTGlGZmRzZVAtMTFXM2lFWGU5UFpCblh5bXhGWFN5QXR6d3k5Z3o4UzRxT1E1QWc?oc=5",
    "imagem": null,
    "publicado_em": "2026-10-23T22:12:00+00:00",
    "resumo": "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º Estadão",
@@ -1092,16 +1082,6 @@
    "pre": 8.0
   },
   {
-   "id": "51727b1f3d02d609",
-   "canal": "ScienceDaily",
-   "titulo": "Astronauts’ hearts just passed a surprising test for Mars",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261020085016.htm",
-   "imagem": "https://www.sciencedaily.com/images/1920/nasa-astronaut-tired-sitting-mars.webp",
-   "publicado_em": "2026-10-21T11:59:14+00:00",
-   "resumo": "A new study tracking 13 astronauts suggests that the human heart may be surprisingly well equipped for a journey to Mars, especially with regular exercise during spaceflight. Researchers found that astronauts' hearts adapted to months of weightlessness and handled simulated Martian gravity without major problems, offering new hope for future missions to the Red Planet.",
-   "pre": 7.0
-  },
-  {
    "id": "bfb51e6eac2f707f",
    "canal": "ScienceDaily",
    "titulo": "People are taking an unapproved weight-loss drug. AI found something surprising",
@@ -1120,16 +1100,6 @@
    "publicado_em": "2026-10-23T10:10:11+00:00",
    "resumo": "A seven-year study found that people with Parkinson’s disease who were more physically active experienced slower declines in memory, thinking, and movement abilities. Those exercising more than eight hours per week showed almost no average cognitive decline, suggesting that staying active may offer important benefits as the disease progresses.",
    "pre": 5.0
-  },
-  {
-   "id": "65d6fa025cc2a787",
-   "canal": "ScienceDaily",
-   "titulo": "Just 4 minutes a day can dramatically improve strength after 65",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261020085025.htm",
-   "imagem": null,
-   "publicado_em": "2026-10-21T09:52:28+00:00",
-   "resumo": "A new Penn State study suggests that just four minutes of daily strength training can significantly improve mobility and physical function in older adults. After 12 weeks, participants showed meaningful gains in balance, leg strength, and their ability to stand up from a chair, all important factors for maintaining independence and reducing fall risk.",
-   "pre": 4.0
   },
   {
    "id": "3862f879a312c149",
@@ -1242,6 +1212,16 @@
    "pre": 6.0
   },
   {
+   "id": "6beacca196662d72",
+   "canal": "Harvard Health",
+   "titulo": "Diet and nutrition",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9teU52UkRudEZ6Sk9xQ3BMUThZVjE0dDIwdU5ESVp0Nkdqd0NPeWJIQWZYSHZKcW5Za1lZUkZnNTFvSDBKbVk5MFhtbG90VnNQdUVaMUVDUGhMSmRoQWpKaTRvUU1FSlU?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-22T07:00:00+00:00",
+   "resumo": "Diet and nutrition Harvard Health",
+   "pre": 5.0
+  },
+  {
    "id": "c97518d975edda5f",
    "canal": "Harvard Health",
    "titulo": "All Diet and nutrition Articles | Page 155",
@@ -1282,6 +1262,16 @@
    "pre": 4.0
   },
   {
+   "id": "9c0fdb26f10defcb",
+   "canal": "Harvard Health",
+   "titulo": "All MIND diet Articles | Page 101",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFaXltdmpLYUM1OFV6TWJMSHVWN2tBbkphRkZmaVotU0lVckFnZk1SRlgwbTJudUJYYTJ4TTUzWENtd2hEcDhyUThBVHU4bTRYTW9iU290M1dxT2JkWGh2STE0VDJmeTZfVTd0Vw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T02:03:00+00:00",
+   "resumo": "All MIND diet Articles | Page 101 Harvard Health",
+   "pre": 3.0
+  },
+  {
    "id": "64df0d892dc0b253",
    "canal": "Harvard Health",
    "titulo": "CoQ10: Should you take this popular supplement if you're on a statin?",
@@ -1299,26 +1289,6 @@
    "imagem": null,
    "publicado_em": "2026-10-22T22:00:16+00:00",
    "resumo": "All Blood Pressure Articles | Page 218 Harvard Health",
-   "pre": 3.0
-  },
-  {
-   "id": "c43a8dda7a490e82",
-   "canal": "Harvard Health",
-   "titulo": "Reading the current blood pressure guidelines",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcndHRm0xR0otUGc4bnlvVnh6SFozZUsxRnBGa1U2YmdoVUlzZzZrOEx4Y25pU1dLZTk4bTJ4OGhObDdQMkwtMDBiOVdXb21aRHgydzBfQi1lYkZEdUZPX25jLU1TTHhBNlhoS0tmSzhER1RUbjR1U3Q4blhtd2N1dUlNRG9DaWJKM2wxZUZseHRLelE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T04:00:00+00:00",
-   "resumo": "Reading the current blood pressure guidelines Harvard Health",
-   "pre": 3.0
-  },
-  {
-   "id": "ca5eefcfbe6445f2",
-   "canal": "Harvard Health",
-   "titulo": "Oat vs. dairy milk: Nutrition, benefits, and downsides",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNVlLT2hIOEpYT2VJSjNnOEF1VEE4QWVLRjFVdHRwLWJaVEVIOWxEMl9lV2FpanE2WUZ4bk0tWE8tVXFoX1NmNkVaLWRDOGxRM29iaTF0YlpHV0hYZFVvWHJMaTJSNDliUXR1cVhRTXdHbm0yZml2cGRhQndDNnQtVHl0djdQa0Z5TzhRZkg1VkZzSGxBTEhKSlM1VTJmUFlpaFE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T04:00:00+00:00",
-   "resumo": "Oat vs. dairy milk: Nutrition, benefits, and downsides Harvard Health",
    "pre": 3.0
   },
   {
@@ -1752,6 +1722,16 @@
    "pre": 6.0
   },
   {
+   "id": "9ea5a7311617df7c",
+   "canal": "Globo",
+   "titulo": "Fátima Bernardes: 'No início da minha carreira, sucesso era ter carteira assinada'",
+   "link": "https://revistaquem.globo.com/entrevistas/noticia/2026/10/fatima-bernardes-no-inicio-da-minha-carreira-sucesso-era-ter-carteira-assinada.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/orAIJNHdw-13Zp1zhWd-tOOR1t0=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/U/U/u39sIVTZKvXi6S6MHK8w/fatima-bernardes1.jpg",
+   "publicado_em": "2026-10-24T10:28:04+00:00",
+   "resumo": "Fátima Bernardes, de 64 anos, não esconde a satisfação com a boa repercussão do podcast Cá entre nós, atração que apresenta com a filha Bia Bonemer, de 28, em seu canal no YouTube. Depois de uma primeira temporada com o tema maternidade, mãe e filha trouxeram o sucesso para o centro das discussões na segunda temporada da atração. De acordo com a apresentadora, o amadurecimento e as conquistas prof",
+   "pre": 4.0
+  },
+  {
    "id": "5ed95f3b7fa1e669",
    "canal": "Globo",
    "titulo": "Musa do Salgueiro, Cintia Dicker explica tratamento no bumbum para o Carnaval: 'Acabei emagrecendo muito'",
@@ -1802,16 +1782,6 @@
    "pre": 3.0
   },
   {
-   "id": "e64201d991d7e1df",
-   "canal": "Globo",
-   "titulo": "Confeiteiro revela perrengue com bolo gigante de Maria Flor: 'Nem oito homens conseguiram carregar'",
-   "link": "https://revistaquem.globo.com/noticias/filhos-dos-famosos/noticia/2026/10/bolo-de-maria-flor-pesava-mais-de-1000-kg.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/N-uhzuhSZ_uKE1VylPfpTJelpHQ=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/f/t/NQp7l0Sg6SKdOjHLQrlg/befunky-collage-1-.png",
-   "publicado_em": "2026-10-23T12:06:56+00:00",
-   "resumo": "O bolo da festa de quatro anos de Maria Flor, filha de Virginia Fonseca e Zé Felipe, impressionou não apenas pelo tamanho e pela decoração, mas também pelas dimensões e pela logística necessária para transportá-lo. Responsável pela criação, o confeiteiro Denilson Lima revelou em suas redes sociais que o bolo pesava mais de uma tonelada, ultrapassava três metros de altura e precisou de um carrinho ",
-   "pre": 3.0
-  },
-  {
    "id": "e980e48ea3b8436d",
    "canal": "People",
    "titulo": "Joe Amabile Says Running NYC Marathon 3 Months After Brain Surgery Gives Him ‘Control’ Over His Body (Exclusive)",
@@ -1830,16 +1800,6 @@
    "publicado_em": "2026-10-21T21:37:59+00:00",
    "resumo": "Leslie Jones, 59, Shows Off Results from Her Fitness Journey: ‘After 40, You Really Have to Focus on Your Muscles’ People.com",
    "pre": 6.0
-  },
-  {
-   "id": "663b0589353a6528",
-   "canal": "People",
-   "titulo": "Judi Dench Shares Heartbreaking Update amid Degenerative Eye Condition, Says Aging Is ‘Rubbish’",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTWdINm81d001ajZJQ3RnUU42QUZ2TjE3MG9WbFVUMzNyZV9xV0g5WUctb3c2RVJ6ZzBwemNmZ1JIbVZHSFRqN3V0SF9OT1pGcEpXdDdfaEFGRkp5b0hnTnpFYXFLdldaV3hPZkJKaWVGVnJkUm0tYTJoWElSSXFEUjlzWERNQ0N1SDRRVWd0UXNOd3RPRFUtOXZpTDExQjg?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T14:44:16+00:00",
-   "resumo": "Judi Dench Shares Heartbreaking Update amid Degenerative Eye Condition, Says Aging Is ‘Rubbish’ People.com",
-   "pre": 4.0
   },
   {
    "id": "1ca606d883ba5305",
@@ -1872,14 +1832,14 @@
    "pre": 3.0
   },
   {
-   "id": "bac95302b4b7f80d",
+   "id": "e9db269c7183716e",
    "canal": "People",
-   "titulo": "Meghan Markle Says She Was Alerted to ‘Disturbing Allegations’ Against Her Father in 2018 After Royal Wedding",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTnVWajdzNVNvUGN4NmxDcWdneVYySG9wVVRrWnVVRjV4V196cG11Sm5JN2NlcndqZUxIRGNES3JrNVFtSlFIODdoUzlrVkxjRFJQekZIMUNIajBvYmR6bzRDbktyNFdzT0dEdVhsYkYtOF9mQUNNb2k3VlE3MU90NWdPNDJpTHltOGs4TVh2cjBxSmZQYjlqLU9USQ?oc=5",
+   "titulo": "5 Stars Whose Acting Careers Were Forever Changed by a Health Crisis",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE11UHk5YUhWWDhYakJwSWlRUUh4dFBDRGxyMmZ3UVFUQnFnS3d3c1RyVnRLQTl6R0tOTDBoSVRuVWZiMm5pUEdqVUxhdFlsbGl0WW1lZEtLOUJhRWZkY3l1S2ZEYTVWVkVNeUFwZ0JVOWMtd0NzUS1VN0pn?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T14:16:01+00:00",
-   "resumo": "Meghan Markle Says She Was Alerted to ‘Disturbing Allegations’ Against Her Father in 2018 After Royal Wedding People.com",
-   "pre": 2.0
+   "publicado_em": "2026-10-24T10:30:00+00:00",
+   "resumo": "5 Stars Whose Acting Careers Were Forever Changed by a Health Crisis People.com",
+   "pre": 1.0
   },
   {
    "id": "2d7baa33605df4d8",
@@ -1902,16 +1862,6 @@
    "pre": 1.0
   },
   {
-   "id": "2d6af2a9d2533d46",
-   "canal": "People",
-   "titulo": "What Happened During the Real Stanford Prison Experiment? What to Know About the Controversial Study",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdjk2eWJkSlZBRFVpT2JTVy1fTHJzWjNNLVF0bjhjbnQtSE92MkV5aXplN1RvZUxXQWJkcnhyN09aUk9jbFd1bmd3cDVNNzJaU25qZlJQb1h6cDlkSVpHQmZ6d04yTUwxNUN3b0JkX3lreU1YQ0pDSjZ3STMybzMtQmlwTXJCRVZHUWJuRQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-21T11:00:11+00:00",
-   "resumo": "What Happened During the Real Stanford Prison Experiment? What to Know About the Controversial Study People.com",
-   "pre": 1.0
-  },
-  {
    "id": "68179e0de520c341",
    "canal": "Vulture",
    "titulo": "Dead Man’s Bones Tease a Return From the Grave",
@@ -1919,16 +1869,6 @@
    "imagem": null,
    "publicado_em": "2026-10-23T22:09:56+00:00",
    "resumo": "Dead Man’s Bones Tease a Return From the Grave Vulture",
-   "pre": 2.0
-  },
-  {
-   "id": "d9899cc1afb0c729",
-   "canal": "Vulture",
-   "titulo": "‘Fatherland’: Sandra Hüller Is Having One Hell of a Year",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSFRuRjNmMWJrU0puT3pucDAxZHh2RzVIenFHNWpLOTJNemZSV3d0SmhHNjNDOHhpazhYRm1lYVZ4WVRYcW9lNXNEV244MVZQVGhDYmt2QWFqMHNsYUd6X1U2a3J4MVVoUzA3X0lLYnRneGVlZldQbE9vdFcwRkY4Q0lsdUZYdGh0Nll4bjQ5Q3BhVUdnOUZBRy0tWTQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T13:00:00+00:00",
-   "resumo": "‘Fatherland’: Sandra Hüller Is Having One Hell of a Year Vulture",
    "pre": 2.0
   },
   {
@@ -1972,6 +1912,56 @@
    "pre": 0.0
   },
   {
+   "id": "5692ff3b1671edef",
+   "canal": "Vulture",
+   "titulo": "Why Not Be Anne Hathaway for Halloween?",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbkE5eF9nTmp3V0NnZUdBNUNwVHd3bFFBXzJNUElWV3hycmtJcDR3dFQwTE5xbDkwc0U5X2JFSC15RHJBUkEwU2lRZkxxQlV3ejdhYnBzYWFBTVJ1SkRWSTBTQkdwRElOU1R2eDMxN2lYblZydkdLR1lNSHY2ZjZaX0hMRWZKOXh4bDQ1TzNhSXY?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T19:39:22+00:00",
+   "resumo": "Why Not Be Anne Hathaway for Halloween? Vulture",
+   "pre": 0.0
+  },
+  {
+   "id": "71a7bbb3072bd1f0",
+   "canal": "Pagesix",
+   "titulo": "Jenna Bush Hager scolds Al Roker for calling her shocking nickname on live TV",
+   "link": "https://pagesix.com/2026/10/24/entertainment/jenna-bush-hager-scolds-al-roker-for-calling-her-nickname/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fjenna-bush-hager-al-roker-146242101_630880.jpg?w%3D796",
+   "publicado_em": "2026-10-24T12:18:25+00:00",
+   "resumo": "Bush Hager shares three children with husband Henry Hager.",
+   "pre": 0.0
+  },
+  {
+   "id": "28dbcd9c6a74c0df",
+   "canal": "Pagesix",
+   "titulo": "‘Sopranos’ alum Max Casella reveals how ‘insane’ medical condition nearly derailed his career: ‘Humiliating’",
+   "link": "https://pagesix.com/2026/10/24/celebrity-news/sopranos-alum-max-casella-reveals-how-insane-medical-condition-nearly-derailed-his-career/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fsopranos-alum-details-insane-medical-146125507.jpg",
+   "publicado_em": "2026-10-24T12:00:00+00:00",
+   "resumo": "\"It was insane,\" the actor told Page Six at the Cinema Society screening of \"Jimmy\" earlier this week.",
+   "pre": 0.0
+  },
+  {
+   "id": "cfa581bd92d399aa",
+   "canal": "Pagesix",
+   "titulo": "Inside Nicole Kidman’s red-hot renaissance at age 59 — ‘She is the ultimate seducer’",
+   "link": "https://pagesix.com/2026/10/24/celebrity-news/inside-nicole-kidmans-red-hot-renaissance-at-age-59/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fnicole-kidman-poses-upon-arrival-143883110_0944b2.jpg?w%3D683",
+   "publicado_em": "2026-10-24T11:00:00+00:00",
+   "resumo": "\"She is very much like 'why do they care about me? But she's very touched by it,\" said a pal of Kidman's awe at this past year.",
+   "pre": 0.0
+  },
+  {
+   "id": "2a504db24451962b",
+   "canal": "Pagesix",
+   "titulo": "13 chic Wayfair furniture and decor sale finds our editors are eyeing",
+   "link": "https://pagesix.com/2026/10/24/style/chic-wayfair-furniture-and-decor-deals-our-editors-are-eyeing/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fwayfair2.jpg?quality%3D90%26strip%3Dall",
+   "publicado_em": "2026-10-24T09:30:00+00:00",
+   "resumo": "From splurge-worthy furniture to affordable organization hacks.",
+   "pre": 0.0
+  },
+  {
    "id": "ac7d122e627a1637",
    "canal": "Pagesix",
    "titulo": "Hollywood veteran says Tom Cruise punched Jack Nicholson after ‘A Few Good Men’ courtroom scene",
@@ -1989,46 +1979,6 @@
    "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fexclusive-los-angeles-ca-olivier-146267298.jpg?w%3D683",
    "publicado_em": "2026-10-24T02:35:45+00:00",
    "resumo": "Berry’s fiancé, Van Hunt, also took the stand in closed court Friday, and appeared to be relieved after finishing his testimony.",
-   "pre": 0.0
-  },
-  {
-   "id": "9c380f46138ea30b",
-   "canal": "Pagesix",
-   "titulo": "Kate Gosselin’s former nanny claims she witnessed abuse of son Collin",
-   "link": "https://pagesix.com/2026/10/23/parents/former-gosselin-family-nanny-backs-collins-allegations-of-abuse/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fcollin-gosselin-seen-segment-good-143168760_a3ae71.jpg?w%3D697",
-   "publicado_em": "2026-10-24T01:03:33+00:00",
-   "resumo": "A former Gosselin family nanny is backing Collin's abuse allegations against his mom, Kate.",
-   "pre": 0.0
-  },
-  {
-   "id": "1505e5ad6c94eb16",
-   "canal": "Pagesix",
-   "titulo": "Vanessa Trump announces she’s cancer-free after breast cancer diagnosis",
-   "link": "https://pagesix.com/2026/10/23/celebrity-news/vanessa-trump-announces-shes-cancer-free/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fwww-instagram-com-p-de2qu5knuak-146255393.jpg",
-   "publicado_em": "2026-10-23T22:52:56+00:00",
-   "resumo": "Trump was diagnosed with breast cancer in April.",
-   "pre": 0.0
-  },
-  {
-   "id": "4ddeccba1763145f",
-   "canal": "Pagesix",
-   "titulo": "Ariana Madix’s LA home burglarized as thieves make off with jewelry",
-   "link": "https://pagesix.com/2026/10/23/celebrity-news/ariana-madixs-la-home-burglarized-as-thieves-make-off-with-jewelry/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fariana-madix-vanderpump-rules-season-146248322.jpg?w%3D1024",
-   "publicado_em": "2026-10-23T22:46:43+00:00",
-   "resumo": "The \"Vanderpump Rules\" alum's back door was shattered as the thieves made off with her valuables.",
-   "pre": 0.0
-  },
-  {
-   "id": "567318286c1a0a3b",
-   "canal": "Pagesix",
-   "titulo": "Why Megan Fox is ‘relieved’ MGK has ‘moved on’ with Dakota Johnson",
-   "link": "https://pagesix.com/2026/10/23/celebrity-news/why-megan-fox-is-relieved-mgk-has-moved-on-with-dakota-johnson/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fmegan-fox-l-machine-gun-30875991.jpg?w%3D680",
-   "publicado_em": "2026-10-23T22:43:20+00:00",
-   "resumo": "Now that MGK has been spending time with Johnson, Fox is hoping his attention will shift away from their past romance.",
    "pre": 0.0
   },
   {
@@ -2076,6 +2026,17 @@
    "palavra": "treino de força"
   },
   {
+   "id": "417b7ff52ea9d9e9",
+   "canal": "Portal AquiVale",
+   "titulo": "Competição inspirada no HYROX reúne corrida e exercícios funcionais",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQTlrSUJ0N0xOT3BjOEh5RlhnSXBKUHh3NDkzb1V4alF6YUhnNUVqRC1raHVTM19NemJGN3hqWS10UnZzZkFvN1h2ZDdUQ0UtcmNpOS1TR1NyQlFmcUZCVkJIdUFNaDloSm1zd2ZaRW5CdzA2NUlmTjhkbXFmNzVOak9IRHpQTnI4WEVsNEhSUUE5dVNNX2RjbmRaODV4QQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T11:00:00+00:00",
+   "resumo": "Competição inspirada no HYROX reúne corrida e exercícios funcionais Portal AquiVale",
+   "pre": 11.0,
+   "palavra": "hyrox"
+  },
+  {
    "id": "42544c62a8db2a7b",
    "canal": "O Alto Acre",
    "titulo": "Hybrid Race reúne 100 atletas no Sesi neste sábado",
@@ -2109,25 +2070,14 @@
    "palavra": "hyrox"
   },
   {
-   "id": "0cd5bb2e27279e33",
-   "canal": "ac24horas",
-   "titulo": "Hybrid Race será disputado no ginásio do Sesi com 100 atletas",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYW1xbVd1SUxuMXB4andua213aDJ0bWhsYnpueURuZ3MyLWFWNVpwbVZwTEMtVmxPd3RyTG9IYVozdzZBZUJRVHc5WU8xd21MZTE4bVJvVWdaUTcxNUMwT1l1N3p5ZlJncTE4Z052a1ozMkEyNXM0MEpOa01uSmJuVjdkNmdQZXJNUnBhRVBhNXgzUVJPa2xRTlFlMG5CQWNm0gGgAUFVX3lxTE9hbXFtV3VJTG4xcHhqd25rbXdoMnRtaGxiem55RG5nczItYVY1WnBtVnBMQy1WbE93dHJMb0hhWjN3NkFlQlFUdzlZTzF3bUxlMThtUm9VZ1pRNzE1QzBPWXU3enlmUmdxMThnTnZrWjMyQTI1czQwSk5rTW5KYm5WN2Q2Z1Blck1ScGFFUGE1eDNRUk9rbFFOUWUwbkJBY2Y?oc=5",
+   "id": "49cd514d767e145f",
+   "canal": "CNN Portugal",
+   "titulo": "Ozempic e Wegovy podem atrasar o envelhecimento? Os cientistas estão a descobrir novos efeitos destes medicamentos",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQeVFfLVdLeWR5ZGphSWxRQmp4NkU4N1hKZzUxTlVFVkNkMkU3dXJZdktZa0tSdXllSGZabnpXX0NuVjFyc19KSzBfNkc1bHo3Q1JsMnNYazJWbEdqREVkU2dEYUJwR2VWeFRYMHNWZkYwSEJNc2x6bTRlOXFJX1Q5VVpEc1FLejFNM2JpUzZmYXpQNzRNNVUxZVFsd2hUTWJIQXRRaFdtaU5DYmRSMl9tcjRWcDA0ZnVHZ21HUWNDY0U0WTNaRGhsVGNVQVNfRWl4RFFFZU1MeHZHVTVBalhZUm8zcjdBMlhTZUM4LTB3SkF4cGluQkptVnR0TzdtNm1wZ3VreG9SN0NWZ1h0RS1QRzVaQkNxc2ho?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-24T01:38:12+00:00",
-   "resumo": "Hybrid Race será disputado no ginásio do Sesi com 100 atletas ac24horas",
-   "pre": 4.0,
-   "palavra": "hyrox"
-  },
-  {
-   "id": "8030658fdcf3433b",
-   "canal": "SpaceMoney",
-   "titulo": "Chrissy Metz exibe perda de 63 libras em vestido justo",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcGlCbEgyd3d5WW83RHREOFZfS3pyM3hDdFdEbWVMWGlNQi04ckVodTdVV09Hak9nUjVueWs5VUpxeVNSbGZ3UkRDS21iNl91SXlTZUZrYmx2VXlOeTN2bzFSeEhpbFRFbWVuTG1qX09KWjNsY25ydGgwVzNTUVVsdzZkTFlyMXc?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-24T04:36:16+00:00",
-   "resumo": "Chrissy Metz exibe perda de 63 libras em vestido justo SpaceMoney",
-   "pre": 3.0,
+   "publicado_em": "2026-10-24T11:00:00+00:00",
+   "resumo": "Ozempic e Wegovy podem atrasar o envelhecimento? Os cientistas estão a descobrir novos efeitos destes medicamentos CNN Portugal",
+   "pre": 10.0,
    "palavra": "glp-1"
   },
   {

@@ -8,25 +8,25 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "comportamento",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
   "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "comportamento",
   "status": "salvo"
  },
  {
   "titulo": "Strength & Conditioning Coach - Nick Leyden (@nickleyden) • Instagram reel",
   "canal": "Sua referência",
   "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -66,15 +66,15 @@
   "status": "salvo"
  },
  {
-  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
-  "canal": "The Guardian",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Exercise in a pill",
   "canal": "MIT Technology Review",
   "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
+  "canal": "The Guardian",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -96,14 +96,8 @@
   "status": "descartado"
  },
  {
-  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
-  "tema": null,
-  "status": "descartado"
- },
- {
-  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
-  "canal": "BBC News",
+  "titulo": "Recuperação Judicial no Agro Cai 20,7% no 2º Trimestre de 2026, Aponta Serasa",
+  "canal": "Forbes",
   "tema": null,
   "status": "descartado"
  },
@@ -120,20 +114,26 @@
   "status": "salvo"
  },
  {
-  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
-  "tema": null,
-  "status": "descartado"
- },
- {
   "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
   "canal": "NYT Well",
   "tema": null,
   "status": "descartado"
  },
  {
-  "titulo": "Recuperação Judicial no Agro Cai 20,7% no 2º Trimestre de 2026, Aponta Serasa",
-  "canal": "Forbes",
+  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
+  "canal": "BBC News",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
   "tema": null,
   "status": "descartado"
  },
@@ -144,9 +144,9 @@
   "status": "salvo"
  },
  {
-  "titulo": "Home workout",
+  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
   "canal": "Sua referência",
-  "tema": "esporte",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -156,15 +156,15 @@
   "status": "salvo"
  },
  {
-  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+  "titulo": "Home workout",
   "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "esporte",
   "status": "salvo"
  },
  {
-  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
+  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -198,10 +198,10 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Longevity medicine mainstream",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
+  "titulo": "Is the energy of the 1990s returning to London’s art market?",
+  "canal": "The Art Newspaper",
+  "tema": "cultura",
+  "status": "virou_pauta"
  },
  {
   "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
@@ -210,15 +210,27 @@
   "status": "virou_pauta"
  },
  {
+  "titulo": "Longevity medicine mainstream",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
   "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "salvo"
  },
  {
-  "titulo": "Is the energy of the 1990s returning to London’s art market?",
-  "canal": "The Art Newspaper",
-  "tema": "cultura",
+  "titulo": "Scientists discover how exercise reverses muscle aging",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "A 47-year study reveals the age when your body starts losing strength",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
   "status": "virou_pauta"
  },
  {
@@ -237,18 +249,6 @@
   "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
   "canal": "Fox News Health",
   "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Scientists discover how exercise reverses muscle aging",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "A 47-year study reveals the age when your body starts losing strength",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
   "status": "virou_pauta"
  },
  {
