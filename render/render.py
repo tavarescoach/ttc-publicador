@@ -49,7 +49,7 @@ def subir(caminho_local, caminho_bucket):
 
 def etapa_atual(cid):
     """Etapa que o card já tem no painel (None se ainda não existe)."""
-    req = urllib.request.Request(f"{URL}/rest/v1/conteudos?id=eq.{urllib.parse.quote(cid)}&select=etapa,quando",
+    req = urllib.request.Request(f"{URL}/rest/v1/conteudos?id=eq.{urllib.parse.quote(cid)}&select=*",
                                  headers={"apikey": KEY})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -89,6 +89,8 @@ def gravar_card(p, arquivos, capa=None, tipo="CARROSSEL", etapa="pronto"):
         "funil": p.get("funil"), "etapa": etapa, "quando": quando,
         "arquivos": arquivos, "legenda": p.get("legenda"), "capa": capa, "link": None, "media_id": None,
     }
+    if p.get("tema") and not atual.get("tema"):
+        linha["tema"] = p["tema"]  # só preenche: o tema corrigido no painel vale mais
     req = urllib.request.Request(
         f"{URL}/rest/v1/conteudos?on_conflict=id", data=json.dumps([linha], ensure_ascii=False).encode(),
         method="POST", headers={"apikey": KEY, "Content-Type": "application/json",

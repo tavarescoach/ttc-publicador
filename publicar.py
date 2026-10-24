@@ -186,7 +186,7 @@ def importar_aprovados(fila):
     if not (url and key):
         return 0
     req = urllib.request.Request(
-        f"{url}/rest/v1/conteudos?etapa=eq.agendado&select=id,quando,tipo,arquivos,legenda,capa",
+        f"{url}/rest/v1/conteudos?etapa=eq.agendado&select=*",
         headers={"apikey": key})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
@@ -213,6 +213,8 @@ def importar_aprovados(fila):
                 "legenda": l.get("legenda") or "", "status": "pendente", "origem": "painel"}
         if l.get("capa"):
             item["capa"] = l["capa"]
+        if l.get("tema"):
+            item["tema"] = l["tema"]  # calendário editorial (diretrizes/temas.md)
         fila.append(item)
         novos += 1
         print(f"Aprovado no painel, entrou na fila: {l['id']} para {l['quando']}")

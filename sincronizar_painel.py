@@ -31,8 +31,10 @@ STATUS_PARA_ETAPA = {
     "cancelado": "cancelado",
 }
 ETAPAS_ESQUERDA = {"pauta", "em_criacao", "revisar"}
-CAMPOS = ["id", "data", "tipo", "pauta", "funil", "etapa", "quando", "arquivos", "legenda", "media_id", "capa", "link", "tema"]
-CAMPOS_NOVOS = {"capa", "link", "tema"}  # se a tabela ainda não tiver essas colunas, envia sem elas
+CAMPOS = ["id", "data", "tipo", "pauta", "funil", "etapa", "quando", "arquivos", "legenda", "media_id", "capa", "link"]
+CAMPOS_NOVOS = {"capa", "link"}  # se a tabela ainda não tiver essas colunas, envia sem elas
+# "tema" não entra no upsert: o painel pode corrigir o tema (lápis) e a sincronização
+# não pode desfazer. O JSON só preenche onde o painel ainda está sem tema (preencher_temas).
 
 
 def ler(nome):
@@ -202,6 +204,37 @@ def enviar_tarefas():
             print(f"::warning::tarefas não apagadas: HTTP {e.code} — {e.read().decode(errors='replace')[:300]}")
 
 
+def preencher_temas(itens):
+    """Grava o tema do JSON só nas linhas do painel que ainda estão sem tema."""
+    com_tema = {i["id"]: i["tema"] for i in itens if i.get("id") and i.get("tema")}
+    if not com_tema:
+        return
+    if SIMULAR:
+        print(f"[simulação] temas: {len(com_tema)} item(ns) com tema no JSON")
+        return
+    cab = {"apikey": KEY, "Content-Type": "application/json"}
+    try:
+        with urllib.request.urlopen(urllib.request.Request(
+                f"{URL}/rest/v1/conteudos?select=id&tema=is.null", headers=cab), timeout=60) as r:
+            vazios = {l["id"] for l in json.load(r)}
+    except urllib.error.HTTPError as e:
+        print(f"::warning::temas não preenchidos (falta rodar sql/001_calendario_tema.sql?): HTTP {e.code} — {e.read().decode(errors='replace')[:200]}")
+        return
+    n = 0
+    for id_, tema in com_tema.items():
+        if id_ not in vazios:
+            continue
+        req = urllib.request.Request(
+            f"{URL}/rest/v1/conteudos?id=eq.{urllib.parse.quote(id_)}&tema=is.null",
+            data=json.dumps({"tema": tema}, ensure_ascii=False).encode(), method="PATCH",
+            headers={**cab, "Prefer": "return=minimal"})
+        try:
+            urllib.request.urlopen(req, timeout=60).close(); n += 1
+        except urllib.error.HTTPError as e:
+            print(f"::warning::tema de {id_} não gravado: HTTP {e.code}")
+    print(f"OK (temas): {n} preenchido(s)")
+
+
 def main():
     if not SIMULAR and not (URL and KEY):
         print("Faltam SUPABASE_URL e SUPABASE_SERVICE_KEY.")
@@ -213,6 +246,7 @@ def main():
     do_painel = [i for i in fila if i.get("origem") == "painel" and i.get("status", "pendente") == "pendente"]
     enviar([da_fila(i) for i in fila if i not in do_painel], "merge")
     enviar([da_fila(i) for i in do_painel], "merge", [c for c in CAMPOS if c not in ("quando", "legenda", "data")])
+    preencher_temas(ler("pautas.json") + fila)
     respostas_criacoes()
     enviar_tarefas()
     return 0
