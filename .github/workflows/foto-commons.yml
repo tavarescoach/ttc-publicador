@@ -2,21 +2,40 @@ name: Buscar foto no Commons
 
 # Diagnóstico: mostra a foto que o robô "Renderizar artes" usaria para uma pessoa (licença conferida).
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
     inputs:
       pessoa:
-        description: "Nome da pessoa"
+        descriptipermissions:
+  contents: write
+
+on: "Nome da pessoa"
         required: true
 
 jobs:
   buscar:
-    runs-on: ubuntu-latest
+    runs-permissions:
+  contents: write
+
+on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-versipermissions:
+  contents: write
+
+on: "3.12"
       - name: Buscar
-        run: python render/foto_commons.py "${{ github.event.inputs.pessoa }}" | tee -a "$GITHUB_STEP_SUMMARY"
+        run: |
+          mkdir -p ciclos/teste
+          python render/foto_commons.py "${{ github.event.inputs.pessoa }}" > ciclos/teste/foto-commons.json 2>&1 || true
+          cat ciclos/teste/foto-commons.json
+          git add ciclos/teste/foto-commons.json
+          git config user.name "ttc-publicador"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "diagnóstico: foto no Commons" && git pull --rebase && git push || true
