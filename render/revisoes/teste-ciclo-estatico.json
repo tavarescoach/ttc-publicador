@@ -1,0 +1,13 @@
+{
+ "id": "teste-ciclo-estatico",
+ "decisao": "precisa",
+ "problemas": [
+  "Horário muito próximo (24/10 07:00): sem tempo para você vetar."
+ ],
+ "atencao": [],
+ "avisos": [
+  "Pedido de teste: nunca agenda sozinho."
+ ],
+ "quando": "2026-10-24T07:00:00-03:00",
+ "revisado_em": "2026-10-24T23:03-03:00"
+}
