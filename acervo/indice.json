@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-24T21:34-03:00",
+ "gerado_em": "2026-10-24T21:53-03:00",
  "pastas": {
   "fotos": [
    {
@@ -15,6 +15,19 @@
     }
    },
    {
+    "mimeType": "image/heif",
+    "size": "1985143",
+    "id": "1WY3Yp-jc6a3TH-nYQ5l4OgY5_7OWra9z",
+    "name": "IMG_7028.HEIC",
+    "createdTime": "2026-10-25T00:34:33.034Z",
+    "modifiedTime": "2026-10-25T00:34:33.034Z",
+    "imageMediaMetadata": {
+     "width": 3024,
+     "height": 4032,
+     "time": "2024:01:12 13:11:22"
+    }
+   },
+   {
     "mimeType": "image/jpeg",
     "size": "268176",
     "id": "1xhYI3GO8omrv0jB8Cg0rzgX5X1JE9OZ-",
@@ -27,7 +40,99 @@
     }
    }
   ],
-  "timelapse-trabalho": [],
+  "timelapse-trabalho": [
+   {
+    "mimeType": "video/quicktime",
+    "size": "23594167",
+    "id": "1TV-MKhPR4Kwi3sQx1GC7EMLcJ21qemrl",
+    "name": "IMG_2391.MOV",
+    "createdTime": "2026-10-25T00:40:20.145Z",
+    "modifiedTime": "2026-10-25T00:40:20.145Z",
+    "videoMediaMetadata": {
+     "width": 1080,
+     "height": 1920,
+     "durationMillis": "12466"
+    }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "23594167",
+    "id": "1rgOtKNu9wIJRx2dya-jhsRWWFSr6hrTE",
+    "name": "IMG_2391.MOV",
+    "createdTime": "2026-10-25T00:39:41.531Z",
+    "modifiedTime": "2026-10-25T00:39:41.531Z",
+    "videoMediaMetadata": {
+     "width": 1080,
+     "height": 1920,
+     "durationMillis": "12466"
+    }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "34034144",
+    "id": "1HhXIojBCxaJHTW6qqTJ6XJ_M59bWfth5",
+    "name": "IMG_2393.MOV",
+    "createdTime": "2026-10-25T00:51:13.938Z",
+    "modifiedTime": "2026-10-25T00:51:13.938Z",
+    "videoMediaMetadata": {
+     "width": 1080,
+     "height": 1920,
+     "durationMillis": "18066"
+    }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "34034144",
+    "id": "16DJsM_rSnrVJFbZBrlzEnP_90yS7zkLV",
+    "name": "IMG_2393.MOV",
+    "createdTime": "2026-10-25T00:50:42.765Z",
+    "modifiedTime": "2026-10-25T00:50:42.765Z",
+    "videoMediaMetadata": {
+     "width": 1080,
+     "height": 1920,
+     "durationMillis": "18066"
+    }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "20361793",
+    "id": "16UAmK7cKvgUi4EAaThZrx7pP6o-snw7f",
+    "name": "IMG_2395.MOV",
+    "createdTime": "2026-10-25T00:39:09.408Z",
+    "modifiedTime": "2026-10-25T00:39:09.408Z",
+    "videoMediaMetadata": {
+     "width": 1080,
+     "height": 1920,
+     "durationMillis": "10666"
+    }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "25701112",
+    "id": "1MHWMGHsI2FaOqNS1jr7jRDMeX3YBcvWO",
+    "name": "IMG_2397.MOV",
+    "createdTime": "2026-10-25T00:50:05.209Z",
+    "modifiedTime": "2026-10-25T00:50:05.209Z",
+    "videoMediaMetadata": {
+     "width": 1080,
+     "height": 1920,
+     "durationMillis": "13599"
+    }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "25701112",
+    "id": "1IkJg6V-MEy-uo6PxsDD-6JBplsYLnwTg",
+    "name": "IMG_2397.MOV",
+    "createdTime": "2026-10-25T00:41:11.164Z",
+    "modifiedTime": "2026-10-25T00:41:11.164Z",
+    "videoMediaMetadata": {
+     "width": 1080,
+     "height": 1920,
+     "durationMillis": "13599"
+    }
+   }
+  ],
   "timelapse-treino": []
  }
 }

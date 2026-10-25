@@ -1,0 +1,60 @@
+{
+ "id": "c-2026-10-25",
+ "inicio": "2026-10-25",
+ "fim": "2026-10-27",
+ "tema": "Estilo de vida",
+ "sigla": "EST",
+ "pontuacao": {
+  "EST": 10.746,
+  "FOR": 8.057,
+  "EMA": 3.1,
+  "MEN": 1.202,
+  "GLP": 1.188,
+  "LON": 0.747,
+  "ESP": 0.432,
+  "WEA": 0.36
+ },
+ "excluidos": [],
+ "regra": "2 ciclos anteriores fora",
+ "bonus_calendario": {
+  "EST": "Outubro Rosa"
+ },
+ "noticias_base": [
+  "ea5aaaaf9418a270",
+  "38f86ba6d4c53725",
+  "a71521a367fe4df2",
+  "3de4d9b89e4008d4",
+  "008f2a457f2f9cd5",
+  "03a10e8445fe399c",
+  "d96d7321ecb57ea1",
+  "4f2455bc52b43ff2",
+  "efbdcc3cf59efe55",
+  "e12406ad20b1e12c",
+  "6a8443c7f7caa5c6",
+  "27cd865643427ee3",
+  "5b2d94f784fd030f",
+  "27f295fa7021c4c0",
+  "0bda6e8769ce5744"
+ ],
+ "famosos": [],
+ "fotos": [
+  {
+   "dia": "2026-10-25",
+   "quando": "2026-10-25T20:00:00-03:00",
+   "arquivo": "2026-10-25/foto-pessoal.jpg",
+   "previa": "ciclos/fotos/2026-10-25.jpg",
+   "drive_id": "1xhYI3GO8omrv0jB8Cg0rzgX5X1JE9OZ-",
+   "nome": "ba9e66e8-8c74-46ae-acd0-35223dbab34e.jpg"
+  },
+  {
+   "dia": "2026-10-27",
+   "quando": "2026-10-27T20:00:00-03:00",
+   "arquivo": "2026-10-27/foto-pessoal.jpg",
+   "previa": "ciclos/fotos/2026-10-27.jpg",
+   "drive_id": "1gelQJviwqmj_vKwJZFYCGDdptGbZBA0Z",
+   "nome": "4819a369-b09f-49e9-aef5-12c652dc428c.jpg"
+  }
+ ],
+ "escolhido_em": "2026-10-24T21:53-03:00",
+ "status": "escolhido"
+}
