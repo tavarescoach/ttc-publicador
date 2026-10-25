@@ -1,5 +1,7 @@
 # Stories do @tavarescoach — como planejar e entregar
 
+> Em transição para o ciclo temático (diretrizes/ciclo.md): quando `acervo/config.json` tiver "ativo": true, os stories automáticos são os do robô "Preparar stories" (6h, 8h, 10h, 12h30) e os stories com sticker deste arquivo viram opcionais. Até lá, vale o que está abaixo.
+
 Regra de operação dos stories. Vale para o pacote semanal e para qualquer sessão que monte stories. Estratégia completa: doc `claude/stories-estrategia.md` do Project. Texto: skill `copy-social-ttc` (seção 9 e vícios de IA).
 
 ## 1. Princípios

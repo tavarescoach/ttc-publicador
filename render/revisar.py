@@ -4,7 +4,7 @@ Decide se o conteúdo entra direto como "agendado" (o Luan só veta se quiser)
 ou se vai para "Precisa de você", com os motivos.
 
 - problemas: impedem o agendamento automático (texto cortado, palavra proibida, número sem fonte...).
-- atencao: temas que o Luan escolheu revisar sempre (prova com aluno; saúde, hormônio, suplemento).
+- atencao: temas que o Luan escolheu revisar sempre (prova com aluno). Saúde publica sozinha, com a revisão de saúde.
 - avisos: não impedem; só aparecem no painel.
 
 Usado por render/render.py. Também roda sozinho: python render/revisar.py render/pedidos/<id>.json
@@ -162,9 +162,12 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
     # temas que sempre passam pelo Luan
     if p.get("prova") or any(re.search(r, baixo) for r in PROVA):
         atencao.append("Prova com aluno: confirme a autorização antes de publicar.")
+    # saúde publica sozinha desde 24/10/2026 (diretrizes/ciclo.md), mas passa pela revisão de saúde
     achados = sorted({re.search(r, baixo).group(0) for r in SENSIVEIS if re.search(r, baixo)})
     if achados:
-        atencao.append("Tema de saúde (" + ", ".join(achados[:4]) + "): revise o tom antes de publicar.")
+        tem_fonte = any(s.get("fonte") for s in slides) or bool(p.get("fontes"))
+        problemas += revisar_saude(tudo, tem_fonte)
+        avisos.append("Tema de saúde (" + ", ".join(achados[:4]) + "): passou pela revisão de saúde.")
 
     ok = not problemas and not atencao
     return {
@@ -176,6 +179,91 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
         "quando": quando,
         "revisado_em": agora.isoformat(timespec="minutes"),
     }
+
+
+# ---------------------------------------------------------------- stories
+MAX_PALAVRAS_STORY = 15
+DESTINOS = {"post", "direct", "respostas", "perfil"}
+
+
+def revisar_story(t, agora=None):
+    """Revisa uma tela de story (dict com rotulo, titulo, texto, quando, aponta).
+
+    Mesmas barras do carrossel para o texto, mais: até 15 palavras na tela e destino definido
+    (post do dia, direct, respostas ou perfil). Saúde não vai para o Luan: só barra número sem fonte.
+    """
+    agora = agora or dt.datetime.now(BRT)
+    tela = [_txt(t.get(c)) for c in ("rotulo", "titulo", "texto") if t.get(c)]
+    tudo = "\n".join(tela)
+    baixo = tudo.lower()
+    problemas, avisos = [], []
+
+    try:
+        q = dt.datetime.fromisoformat(t["quando"]) if t.get("quando") else None
+    except ValueError:
+        q = None
+    if not q:
+        problemas.append("Sem dia e horário de publicação.")
+    elif q < agora + dt.timedelta(hours=JANELA_MIN_H):
+        problemas.append(f"Horário muito próximo ({q.astimezone(BRT):%d/%m %H:%M}): sem tempo para você vetar.")
+
+    palavras = len(re.findall(r"\w+", " ".join(_txt(t.get(c)) for c in ("titulo", "texto") if t.get(c))))
+    if palavras > MAX_PALAVRAS_STORY:
+        problemas.append(f"{palavras} palavras na tela (máximo {MAX_PALAVRAS_STORY}).")
+    if not tela:
+        problemas.append("Tela sem texto.")
+    if t.get("aponta") not in DESTINOS:
+        problemas.append("Story sem destino (post do dia, direct, respostas ou perfil).")
+    if t.get("aponta") == "post" and not t.get("post_id"):
+        problemas.append("Story-ponte sem o post de destino.")
+
+    for w in PROIBIDAS:
+        if re.search(r"(?<!\w)" + re.escape(w) + r"(?!\w)", baixo):
+            problemas.append(f'Palavra fora da marca: "{w}".')
+    for padrao, nome in VICIOS_IA:
+        m = re.search(padrao, baixo)
+        if m:
+            problemas.append(f'Soa como IA: {nome} em "{m.group(0).strip()[:60]}".')
+    if "—" in tudo:
+        problemas.append("Travessão (—) no texto.")
+    gritos = {w for w in re.findall(r"\b[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{4,}\b", " ".join(tela[1:] if t.get("rotulo") else tela)) if w not in SIGLAS}
+    if gritos:
+        problemas.append("Caixa alta em texto corrido: " + ", ".join(sorted(gritos)[:5]) + ".")
+    if len(EMOJI.findall(tudo)) > 1:
+        problemas.append("Emoji em excesso.")
+    if re.search(r"\d+(?:[.,]\d+)?\s*%", tudo) and not t.get("fonte"):
+        problemas.append("Percentual na tela sem fonte.")
+    problemas += revisar_saude(tudo, bool(t.get("fonte")))
+
+    return {"id": t.get("id"), "decisao": "agendado" if not problemas else "precisa", "problemas": problemas,
+            "atencao": [], "avisos": avisos, "quando": t.get("quando"),
+            "revisado_em": agora.isoformat(timespec="minutes")}
+
+
+# Revisão de saúde (decisão do Luan, 24/10/2026): tema de saúde publica sozinho, mas barra o que não é defensável.
+PRESCRICAO = [r"\btome\b", r"\btomar\b \d", r"\buse\b \d", r"\bdose\b", r"\bdosagem\b", r"\bsubstitua\b",
+              r"\bpare (?:o|de tomar)\b", r"\bsuspenda\b", r"\bmg\b", r"\bcomprimido"]
+PROMESSA = [r"\bcura\b", r"\bcurar\b", r"\bgarant", r"\bem \d+ (?:dias|semanas)\b.*\b(?:perde|elimina|queima)",
+            r"\b(?:perca|elimine|queime) \d+ ?kg"]
+REMEDIOS = r"ozempic|mounjaro|wegovy|semaglut|tirzepat|saxenda|liraglut|metformin|finasterid|minoxidil"
+
+
+def revisar_saude(texto, tem_fonte):
+    baixo = texto.lower()
+    out = []
+    for r in PRESCRICAO:
+        m = re.search(r, baixo)
+        if m:
+            out.append(f'Saúde: linguagem de prescrição ("{m.group(0)}"). Fale do que a evidência mostra, sem orientar uso.')
+            break
+    for r in PROMESSA:
+        m = re.search(r, baixo)
+        if m:
+            out.append(f'Saúde: promessa de resultado ("{m.group(0)[:40]}").')
+            break
+    if re.search(REMEDIOS, baixo) and not tem_fonte:
+        out.append("Saúde: nome de remédio sem fonte registrada.")
+    return out
 
 
 if __name__ == "__main__":

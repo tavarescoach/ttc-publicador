@@ -1,0 +1,71 @@
+name: Preparar stories
+
+# Stories automáticos do dia seguinte (diretrizes/ciclo.md): time-lapses das 6h e 10h (cortados do acervo do Drive,
+# com rotação de trechos) e pontes das 8h e 12h30 para os posts do dia. Revisão automática em cada um.
+# Roda todo dia às 15h30 (Brasília) para o dia seguinte. Com "ativo": false em acervo/config.json, roda em ensaio
+# (só gera prévias em render/previas/stories/<data>/, não agenda nada).
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+    inputs:
+      data:
+        description: "Dia dos stories (AAAA-MM-DD). Vazio = amanhã."
+        required: false
+        default: ""
+      ensaio:
+        description: "Só prévias, sem agendar (true/false)"
+        required: false
+        default: "true"
+
+concurrency:
+  group: preparar-stories
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar ffmpeg, navegador e fonte
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-inter
+          pip install playwright==1.47.0
+          python -m playwright install --with-deps chromium
+      - name: Atualizar o índice do acervo
+        env:
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
+        run: python acervo/listar.py
+      - name: Gerar os stories
+        env:
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          MIDIA_BASE: ${{ secrets.MIDIA_BASE }}
+          DATA: ${{ github.event.inputs.data }}
+          ENSAIO: ${{ github.event.inputs.ensaio }}
+        run: |
+          if [ -z "$DATA" ]; then DATA=$(TZ=America/Sao_Paulo date -d tomorrow +%F); fi
+          EXTRA=""
+          if [ "$ENSAIO" = "true" ]; then EXTRA="--ensaio"; fi
+          python acervo/stories.py "$DATA" $EXTRA
+      - name: Salvar no repositório
+        if: always()
+        run: |
+          git add acervo/indice.json ciclos render/previas/stories render/revisoes 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "stories: preparados"
+            git pull --rebase
+            git push
+          fi

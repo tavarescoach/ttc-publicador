@@ -79,6 +79,10 @@ Tarefa agendada única (substitui o pacote de sábado), todo dia às 15h07. Se n
 
 ## Implementação
 - [x] Etapa 1: especificação (este arquivo).
-- [ ] Etapa 2: stories (rotação, telas, revisão estendida, publicação).
+- [x] Etapa 2: stories (24/10/2026), desligado até o ciclo entrar no ar (`acervo/config.json` "ativo": false = só ensaio).
+  - `acervo/listar.py` + robô "Listar acervo" (14h40): índice do Drive em `acervo/indice.json`.
+  - `acervo/stories.py` + robô "Preparar stories" (15h30, dia seguinte): escolhe trechos (`ciclos/rotacao.json`), corta com ffmpeg, grava a camada de texto (`render/story.html`, modo `transparente`), monta as pontes (modo `imagem`), revisa (`revisar_story`) e grava o card no painel: passou = agendado; não passou = Precisa de você. Prévias em `render/previas/stories/<data>/`.
+  - Frases, CTAs, horários e regra de aceleração em `acervo/config.json` (vídeo com 3 min ou mais é acelerado 8x; cada story de 12 s usa 96 s de gravação).
+  - Revisão de saúde (`revisar_saude`) vale para carrosséis e stories: saúde não vai mais para "Precisa de você" só pelo tema.
 - [ ] Etapa 3: escolha do tema, pacote do ciclo, estático com fonte, carrosséis.
 - [ ] Atualizar PIPELINE.md, temas.md e stories.md ao fim de cada etapa.

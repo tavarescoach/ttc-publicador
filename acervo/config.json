@@ -1,0 +1,23 @@
+{
+ "ativo": false,
+ "_ativo": "false: o robô só roda em ensaio (gera prévias, não agenda nada). Virar true quando o ciclo temático entrar no ar.",
+ "trecho_s": 12,
+ "acelerar": {"duracao_minima_s": 180, "fator": 8},
+ "_acelerar": "Vídeo com 3 min ou mais é tratado como gravação normal e acelerado 8x (12 s de story = 96 s de gravação). Mais curto que isso: já é time-lapse, sai na velocidade original.",
+ "repetir_trecho_apos_dias": 30,
+ "horarios": {"trabalho": "06:00", "ponte_estatico": "08:00", "treino": "10:00", "ponte_carrossel": "12:30"},
+ "frases_bom_dia": [
+  "Bom dia, meu povo!",
+  "Estamos na atividade.",
+  "Mais um dia seguindo nosso propósito."
+ ],
+ "ctas_treino": [
+  {"rotulo": "Treino de hoje", "titulo": "Treino com **critério**.", "texto": "Me manda **MÉTODO** no direct."},
+  {"rotulo": "Treino de hoje", "titulo": "Horário fixo e plano **medido**.", "texto": "Me manda **MÉTODO** no direct."},
+  {"rotulo": "Treino de hoje", "titulo": "Cada série com **direção**.", "texto": "Me manda **MÉTODO** no direct."}
+ ],
+ "pontes": {
+  "ponte_estatico": {"rotulo": "Saiu agora", "titulo": "Post novo no **perfil**.", "texto": "A explicação completa sai ao meio-dia."},
+  "ponte_carrossel": {"rotulo": "Carrossel novo", "titulo": "Deslize no **perfil**.", "texto": "O caso inteiro, slide a slide."}
+ }
+}
