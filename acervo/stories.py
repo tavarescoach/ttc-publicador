@@ -72,9 +72,15 @@ def trechos_do_video(arq, cfg):
 
 
 def escolher_trecho(slot, data, indice, rotacao, cfg):
-    """Trecho usado há mais tempo. Nunca: mesmo vídeo no mesmo slot no dia anterior; mesmo trecho em 30 dias."""
+    """Partes do story, em ordem: trechos usados há mais tempo.
+
+    Nunca: mesmo vídeo no mesmo slot no dia anterior; mesmo trecho em 30 dias (se faltar, relaxa).
+    Clipe curto (o acervo de treino tem muitos de 1 a 4 s): junta clipes de vídeos diferentes até ~12 s,
+    cada um com no máximo `parte_max_s`.
+    """
     pasta = {"trabalho": "timelapse-trabalho", "treino": "timelapse-treino"}[slot]
-    videos = [a for a in indice.get("pastas", {}).get(pasta, []) if a.get("mimeType", "").startswith("video/")]
+    videos = [a for a in indice.get("pastas", {}).get(pasta, [])
+              if a.get("mimeType", "").startswith("video/") and duracao_s(a) >= cfg.get("clipe_min_s", 1)]
     if not videos:
         return None
     hoje = dt.date.fromisoformat(data)
@@ -95,7 +101,23 @@ def escolher_trecho(slot, data, indice, rotacao, cfg):
                          "bloqueado": v["id"] in ontem and len(videos) > 1})
     livres = [c for c in cand if not c["bloqueado"] and c["usado"] < limite] or \
              [c for c in cand if not c["bloqueado"]] or cand
-    return min(livres, key=lambda c: c["chave"])
+    livres.sort(key=lambda c: c["chave"])
+    alvo, parte_max = cfg["trecho_s"], cfg.get("parte_max_s", 4)
+    partes, total, vistos = [], 0.0, set()
+    for c in livres:
+        saida = c["janela"] / c["fator"]
+        if not partes and saida >= alvo - 2:  # trecho longo: sozinho
+            return [dict(c, saida=min(saida, alvo))]
+        if c["video"]["id"] in vistos:
+            continue
+        c = dict(c, saida=min(saida, parte_max))
+        c["janela"] = c["saida"] * c["fator"]
+        partes.append(c)
+        vistos.add(c["video"]["id"])
+        total += c["saida"]
+        if total >= alvo - 1 or len(partes) >= cfg.get("partes_max", 6):
+            break
+    return partes
 
 
 # ------------------------------------------------------------ mídia
@@ -108,21 +130,26 @@ def baixar_video(arq, destino, local_dir=None):
         shutil.copyfileobj(r, f)
 
 
-def montar_video(origem, camada_png, trecho, saida):
-    """Corta o trecho, acelera, enquadra em 1080x1920, grava a camada de texto e comprime (sem áudio)."""
-    filtro = (f"[0:v]setpts=PTS/{trecho['fator']},scale=1080:1920:force_original_aspect_ratio=increase,"
-              f"crop=1080:1920,fps=30[v];[v][1:v]overlay=0:0[o]")
-    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{trecho['inicio']:.2f}", "-t", f"{trecho['janela']:.2f}",
-           "-i", origem, "-i", camada_png, "-filter_complex", filtro, "-map", "[o]", "-an",
-           "-c:v", "libx264", "-preset", "veryfast", "-crf", "24", "-pix_fmt", "yuv420p",
-           "-movflags", "+faststart", "-t", str(12 if trecho["fator"] > 1 else trecho["janela"]), saida]
+def montar_video(origens, camada_png, partes, saida):
+    """Corta cada parte, acelera, enquadra em 1080x1920, emenda, grava a camada de texto e comprime (sem áudio)."""
+    cmd, filtros = ["ffmpeg", "-y", "-loglevel", "error"], []
+    for i, (o, t) in enumerate(zip(origens, partes)):
+        cmd += ["-ss", f"{t['inicio']:.2f}", "-t", f"{t['janela']:.2f}", "-i", o]
+        filtros.append(f"[{i}:v]setpts=(PTS-STARTPTS)/{t['fator']},scale=1080:1920:force_original_aspect_ratio=increase,"
+                       f"crop=1080:1920,fps=30,setsar=1,format=yuv420p[p{i}]")
+    n = len(partes)
+    cmd += ["-i", camada_png]
+    filtro = ";".join(filtros) + ";" + "".join(f"[p{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0[v];[v][{n}:v]overlay=0:0[o]"
+    total = sum(t["saida"] for t in partes)
+    cmd += ["-filter_complex", filtro, "-map", "[o]", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "24",
+            "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-t", f"{total:.2f}", saida]
     subprocess.run(cmd, check=True)
     if os.path.getsize(saida) > 45 * 1024 * 1024:
         raise RuntimeError(f"{saida} passou de 45 MB")
 
 
 def quadro(video, saida_jpg):
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "3", "-i", video, "-frames:v", "1",
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "1.5", "-i", video, "-frames:v", "1",
                     "-q:v", "4", saida_jpg], check=True)
 
 
@@ -209,11 +236,14 @@ def main(argv):
         if video:
             camada = os.path.join(tmp, f"camada-{nome}.png")
             renderizar([{**tela, "arquivo": os.path.relpath(camada, RAIZ), "transparente": True, "topo": 400}])
-            origem = os.path.join(tmp, f"origem-{s['trecho']['video']['id']}")
-            if not os.path.exists(origem):
-                baixar_video(s["trecho"]["video"], origem, local_dir)
+            origens = []
+            for t in s["trecho"]:
+                origem = os.path.join(tmp, f"origem-{t['video']['id']}")
+                if not os.path.exists(origem):
+                    baixar_video(t["video"], origem, local_dir)
+                origens.append(origem)
             local = os.path.join(tmp, f"story-{nome}.mp4")
-            montar_video(origem, camada, s["trecho"], local)
+            montar_video(origens, camada, s["trecho"], local)
             quadro(local, os.path.join(previas, f"story-{nome}.jpg"))
         else:
             local = os.path.join(tmp, f"story-{nome}.png")
@@ -223,7 +253,8 @@ def main(argv):
         etapa = rev["decisao"] if rev["decisao"] == "agendado" else "pronto"
         resumo.append({"id": s["id"], "quando": s["quando"], "arquivo": arq_bucket, "decisao": rev["decisao"],
                        "problemas": rev["problemas"],
-                       "trecho": {"video": s["trecho"]["video"]["name"], "k": s["trecho"]["k"]} if video else None})
+                       "partes": [{"video": t["video"]["name"], "k": t["k"], "s": round(t["saida"], 1)}
+                                  for t in s["trecho"]] if video else None})
         if ensaio:
             continue
         subir(local, arq_bucket, "video/mp4" if video else "image/png")
@@ -232,8 +263,9 @@ def main(argv):
         rnd.gravar_card({"id": s["id"], "data": data, "quando": s["quando"], "pauta": _limpo(s["titulo"]),
                          "legenda": "", "tema": s.get("tema")}, [arq_bucket], tipo="STORY", etapa=etapa)
         if video:
-            rotacao.setdefault("trechos", []).append({"data": data, "slot": s["slot"], "video": s["trecho"]["video"]["id"],
-                                                      "nome": s["trecho"]["video"]["name"], "k": s["trecho"]["k"]})
+            for t in s["trecho"]:
+                rotacao.setdefault("trechos", []).append({"data": data, "slot": s["slot"], "video": t["video"]["id"],
+                                                          "nome": t["video"]["name"], "k": t["k"]})
     if not ensaio:
         import render as rnd  # noqa: E402
         rnd.publicar_revisoes()
