@@ -1,5 +1,7 @@
 # Pipeline do Estúdio (sessão em segundo plano)
 
+> Ciclo temático de 3 dias (aprovado em 24/10/2026, em implementação): ver `diretrizes/ciclo.md`. Onde ele contradiz regras antigas deste arquivo (aprovação de saúde, pacote de sábado, stories), vale o ciclo.
+
 Esta sessão é disparada pelo Estúdio de criação do Luan (página do claude.ai) através da tarefa agendada
 "Pipeline do Estúdio". A mensagem extra da disparada diz o que fazer, num destes formatos:
 

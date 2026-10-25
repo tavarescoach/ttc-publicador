@@ -24,5 +24,6 @@ Todo post (pauta, carrossel, reels, estático e story) leva exatamente um tema d
 ## Regras
 
 - Hipertrofia fica fora: a marca não vende hipertrofia nem emagrecimento como promessa.
-- Tema de saúde (GLP-1, hormônio, suplemento) continua passando pelo Luan antes de sair.
+- Tema de saúde (GLP-1, hormônio, suplemento, lesão, saúde mental) publica sem aprovação prévia desde 24/10/2026, mas passa pela revisão de saúde mais rígida (diretrizes/ciclo.md, seção 5).
+- Ciclo temático (diretrizes/ciclo.md): FAM não entra no sorteio do tema do ciclo; vira o formato do estático das 7h.
 - Equilíbrio da semana: pelo menos dois dias com tema central e nenhum tema de apoio repetido mais de duas vezes.
