@@ -1,59 +1,37 @@
 {
- "atualizado_em": "2026-10-24T14:23:53-03:00",
+ "atualizado_em": "2026-10-25T06:34:56-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
-   "canais": 10,
-   "nota_max": 80,
+   "canais": 5,
+   "nota_max": 84,
    "titulos": [
-    "Ozempic e Wegovy podem atrasar o envelhecimento? Os cientistas estão a descobrir novos efeitos destes medicamentos",
-    "Saiba por que canetas emagrecedoras são associadas a menor consumo de álcool | SEGS Portal Nacional de...",
-    "People are taking an unapproved weight-loss drug. AI found something surprising"
+    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
+    "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags",
+    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says"
    ]
   },
   {
-   "assunto": "academia-feminina",
-   "tema": "comportamento",
-   "canais": 3,
-   "nota_max": 80,
+   "assunto": "boom-proteina",
+   "tema": "negocio",
+   "canais": 4,
+   "nota_max": 78,
    "titulos": [
-    "The Return of the Women-Only Gym",
-    "The Return of the Women-Only Gym",
-    "Humor sobre o que mulheres vivem na academia"
-   ]
-  },
-  {
-   "assunto": "hyrox-tendencia",
-   "tema": "esporte",
-   "canais": 3,
-   "nota_max": 72,
-   "titulos": [
-    "CrossFit, Hyrox etc.: risco ou excelente exercício?",
-    "Competição inspirada no HYROX reúne corrida e exercícios funcionais",
-    "Levantar pesado, correr longe: treino híbrido sem complicar"
-   ]
-  },
-  {
-   "assunto": "depressao-circadiana",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 60,
-   "titulos": [
-    "Sleep Habits May Indicate a Type of Depression, Researchers Say",
-    "Sleep Habits May Indicate a Type of Depression, Researchers Say",
-    "New Type of Depression Linked to Disrupted Sleep and Out-of-Sync Body Clocks"
+    "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
+    "Tofu é eleito a melhor proteína do mundo e a de menor impacto ambiental",
+    "Os perigos do excesso de proteína para os adolescentes"
    ]
   },
   {
    "assunto": "polilaminina-anvisa",
    "tema": "saude",
-   "canais": 3,
+   "canais": 4,
    "nota_max": 15,
    "titulos": [
+    "Pesquisadora da polilaminina chama ciência de religião e compara cientistas críticos a ela a Mengele",
     "Anvisa Restringe Acesso À Polilaminina após Nove Mortes e Pesquisadora Critica Decisão",
-    "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora",
-    "Anvisa registra 9 mortes em uso compassivo de polilaminina e impõe restrições; pesquisadora questiona"
+    "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora"
    ]
   },
   {
@@ -66,9 +44,27 @@
     "Fox News AI Newsletter: What we saw inside a massive Texas data center",
     "Data Centers Menores e Regulares Buscam Alternativas para Reduzir Custos"
    ]
+  },
+  {
+   "assunto": "meghan-pai",
+   "tema": "cultura",
+   "canais": 3,
+   "nota_max": 5,
+   "titulos": [
+    "Meghan ‘deeply distressed’ over child sex abuse image allegations against father",
+    "Meghan Markle’s final message to dad Thomas before his child porn allegations revealed: report",
+    "Meghan Markle Responds to Child Pornography Allegations Against Her Father"
+   ]
   }
  ],
  "top": [
+  {
+   "titulo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
+   "canal": "Estadão Saúde",
+   "assunto": "glp1-mercado-e-efeitos",
+   "nota": 84,
+   "gancho": "Seu pai emagreceu com a caneta. Quanto da perda foi músculo?"
+  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -91,32 +87,11 @@
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
   },
   {
-   "titulo": "The Return of the Women-Only Gym",
-   "canal": "NYT Well",
-   "assunto": "academia-feminina",
-   "nota": 80,
-   "gancho": "Mais mulheres pegando peso, e algumas querem uma sala só delas."
-  },
-  {
-   "titulo": "Leslie Jones, 59, Shows Off Results from Her Fitness Journey: ‘After 40, You Really Have to Focus on Your Muscles’",
-   "canal": "People",
-   "assunto": "musculo-depois-dos-40",
-   "nota": 80,
-   "gancho": "Aos 59, Leslie Jones resumiu: depois dos 40, cuide do músculo."
-  },
-  {
-   "titulo": "Treino de força para corredores: treinadores explicam por que acumular quilômetros não basta e o que precisa mudar na preparação de quem quer correr melhor",
-   "canal": "Estado de Minas",
-   "assunto": "corrida-forca",
-   "nota": 80,
-   "gancho": "Mais quilômetros não deixaram sua corrida mais rápida."
-  },
-  {
-   "titulo": "Ozempic e Wegovy podem atrasar o envelhecimento? Os cientistas estão a descobrir novos efeitos destes medicamentos",
-   "canal": "CNN Portugal",
+   "titulo": "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags",
+   "canal": "Reuters",
    "assunto": "glp1-mercado-e-efeitos",
    "nota": 80,
-   "gancho": "A caneta pode atrasar o envelhecimento. Seu músculo não entra nessa conta."
+   "gancho": "Metade de quem usa caneta começou a tomar suplemento por conta própria."
   },
   {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
@@ -124,6 +99,13 @@
    "assunto": "frio-calor-recuperacao",
    "nota": 80,
    "gancho": "Gelo depois do treino pode atrapalhar o músculo que você quer ganhar."
+  },
+  {
+   "titulo": "Instagram",
+   "canal": "Sua referência",
+   "assunto": "longevidade-mainstream",
+   "nota": 80,
+   "gancho": "Aos 75 você vai querer levantar sua mala sozinho. O treino começa agora."
   },
   {
    "titulo": "Cardio depois da musculação: atrapalha ou ajuda?",
@@ -138,6 +120,13 @@
    "assunto": "boom-proteina",
    "nota": 78,
    "gancho": "Seu iogurte ganhou 20 g de proteína. Seu músculo continua igual."
+  },
+  {
+   "titulo": "Millions take fish oil for brain health. A two-year study found no benefit",
+   "canal": "ScienceDaily",
+   "assunto": "omega3-cerebro",
+   "nota": 78,
+   "gancho": "Dois anos de óleo de peixe. Nenhum ganho de memória."
   }
  ]
 }
