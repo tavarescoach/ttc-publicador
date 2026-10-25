@@ -185,6 +185,13 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    ou se o último ciclo não estiver com status "escolhido", ou se o `inicio` dele não for amanhã (horário de Brasília).
 2. Leia `diretrizes/ciclo.md`, `marca.md`, `carrossel.md`, `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`.
    Todo item leva `tema` = o `tema` do ciclo. Saúde: só afirmação defensável, com fonte; sem prescrição nem promessa.
+   **Arco do ciclo (como os 3 dias conversam):** um tema, três ângulos que avançam. D1 = o caso (o fato da pessoa
+   conhecida e o estudo que explica). D2 = o mecanismo e a aplicação (por que funciona e como entra na semana;
+   o carrossel das 20h é o guia prático). D3 = a objeção e o convite (o que trava o leitor e o primeiro passo, com
+   MÉTODO mais forte). Funil por horário: 7h topo (atenção), 12h meio (autoridade, salvamento), 20h fundo/humano.
+   Cada estático termina chamando o carrossel do meio-dia do mesmo dia; o carrossel cita o caso da manhã no slide 2.
+   Headline do estático: nomeia a pessoa, traz um número ou uma frase dela, fica abaixo de ~60 caracteres e não
+   promete resultado; 1–3 palavras em **destaque** no que muda para o leitor.
 3. Peças (D1, D2, D3 = dias do ciclo; ids com o dia, ex. `k-2026-10-26-estatico`):
    - **Estático 07h** de cada dia (`k-<dia>-estatico`): notícia de pessoa conhecida ligada ao tema. Comece por
      `famosos` do ciclo; sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
