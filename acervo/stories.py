@@ -214,6 +214,9 @@ def main(argv):
     cfg, indice = ler(CONFIG, {}), ler(INDICE, {})
     rotacao, fila = ler(ROTACAO, {"trechos": []}), ler(FILA, [])
     ensaio = "--ensaio" in argv or not cfg.get("ativo")
+    inicio = (ler(os.path.join(RAIZ, "ciclo", "config.json"), {}) or {}).get("inicio")
+    if inicio and data < inicio:
+        ensaio = True  # antes do primeiro ciclo: só prévia
     local_dir = argv[argv.index("--local") + 1] if "--local" in argv else None
     from story import renderizar  # playwright só quando precisa
 

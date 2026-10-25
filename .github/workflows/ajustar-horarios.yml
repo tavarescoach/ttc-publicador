@@ -1,0 +1,41 @@
+name: Ajustar horários
+
+# Aplica ajustes/horarios.json: muda o horário de posts ainda não publicados no painel e no fila.json.
+
+on:
+  push:
+    paths:
+      - "ajustes/horarios.json"
+  workflow_dispatch: {}
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ajustar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ajustar
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python ajustes/ajustar_horarios.py ajustes/horarios.json
+      - name: Salvar
+        run: |
+          git add fila.json ajustes/horarios.json
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "ajuste de horários"
+            git pull --rebase
+            git push
+          fi

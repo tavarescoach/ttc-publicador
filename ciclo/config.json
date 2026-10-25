@@ -1,7 +1,7 @@
 {
- "ativo": false,
+ "ativo": true,
  "_ativo": "false: o robô calcula e mostra a escolha em ciclos/simulacao.json, mas não cria ciclo. Virar true junto com acervo/config.json.",
- "inicio": null,
+ "inicio": "2026-10-29",
  "_inicio": "Data (AAAA-MM-DD) do primeiro dia do primeiro ciclo. Depois disso os ciclos se emendam de 3 em 3 dias.",
  "dias": 3,
  "temas": {

@@ -1,5 +1,5 @@
 {
- "ativo": false,
+ "ativo": true,
  "_ativo": "false: o robô só roda em ensaio (gera prévias, não agenda nada). Virar true quando o ciclo temático entrar no ar.",
  "trecho_s": 12,
  "acelerar": {

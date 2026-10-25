@@ -90,7 +90,13 @@ Tarefa agendada única (substitui o pacote de sábado), todo dia às 15h07. Se n
   - Formatos novos no render: `estatico` (capa única 1080x1350 com fonte e crédito, card IMAGEM) e `foto` (foto pessoal, só revisa a legenda). Revisão: `revisar_estatico`; licença de foto de terceiros só cc-by, cc-by-sa, domínio público ou cc0 (vale também para capas de carrossel).
   - Sessão "Pacote do ciclo": PIPELINE.md, seção "CICLO pacote".
 
-## Para ligar o ciclo
+## Ligado em 24/10/2026
+- Primeiro ciclo: 29/10 a 31/10 (tema escolhido em 28/10 às 14h50). Stories automáticos a partir de 29/10.
+- Robô "Preparar stories" passou para 18h (depois do pacote do ciclo, que roda às 15h07).
+- Carrosséis do Estúdio que caíam às 12h em dia de ciclo foram para 17h (`ajustes/horarios.json`, robô "Ajustar horários"). Para mudar horário de post já agendado, acrescente nesse arquivo; o painel e a fila mudam juntos.
+- Tarefa "Pacote semanal de conteúdo" pausada; tarefa "Pacote do ciclo" criada (15h07).
+
+## Para ligar o ciclo (referência)
 1. `ciclo/config.json`: "ativo": true e "inicio": primeiro dia do primeiro ciclo.
 2. `acervo/config.json`: "ativo": true.
 3. Criar a tarefa agendada "Pacote do ciclo" (todo dia 15h07, mensagem "CICLO pacote", seguir PIPELINE.md).

@@ -2,12 +2,12 @@ name: Preparar stories
 
 # Stories automáticos do dia seguinte (diretrizes/ciclo.md): time-lapses das 6h e 10h (cortados do acervo do Drive,
 # com rotação de trechos) e pontes das 8h e 12h30 para os posts do dia. Revisão automática em cada um.
-# Roda todo dia às 15h30 (Brasília) para o dia seguinte. Com "ativo": false em acervo/config.json, roda em ensaio
+# Roda todo dia às 18h (Brasília), depois do pacote do ciclo, para o dia seguinte. Com "ativo": false em acervo/config.json, roda em ensaio
 # (só gera prévias em render/previas/stories/<data>/, não agenda nada).
 
 on:
   schedule:
-    - cron: "30 18 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
       data:
