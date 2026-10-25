@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-10-25T09:18:16.952301+00:00",
+ "coletado_em": "2026-10-25T13:23:16.779050+00:00",
  "itens": [
   {
    "id": "2eb80f270753eccc",
@@ -10,6 +10,16 @@
    "publicado_em": "2026-10-24T06:17:30+00:00",
    "resumo": "Wayne Davies was left \"constantly worrying\" about race times, comparing himself to other runners on social media.",
    "pre": 5.0
+  },
+  {
+   "id": "273fcd0426609c7d",
+   "canal": "BBC News",
+   "titulo": "Police using AI risks making discrimination worse, researchers warn",
+   "link": "https://www.bbc.co.uk/news/articles/ckpdg4pl7pgvo?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/560f/live/b29654d0-c8ad-11f1-9c75-6ff1271de385.jpg",
+   "publicado_em": "2026-10-25T12:18:56+00:00",
+   "resumo": "AI tools learn from biased records and may deepen discrimination against minorities without oversight, researchers say.",
+   "pre": 2.0
   },
   {
    "id": "78b224c035e94686",
@@ -92,16 +102,6 @@
    "pre": 1.0
   },
   {
-   "id": "c75360ac724bd2d9",
-   "canal": "BBC News",
-   "titulo": "What is PHP and why did it spark a global cyber-security scramble?",
-   "link": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fccd/live/bf4a03d0-ce15-11f1-9a39-31b474234113.jpg",
-   "publicado_em": "2026-10-23T12:24:17+00:00",
-   "resumo": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-   "pre": 1.0
-  },
-  {
    "id": "2dbe9c51cabb0351",
    "canal": "Reuters",
    "titulo": "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags",
@@ -130,16 +130,6 @@
    "publicado_em": "2026-10-23T07:00:00+00:00",
    "resumo": "Beauty giants target 'Ozempic face' as boom in obesity drugs opens new market Reuters",
    "pre": 4.0
-  },
-  {
-   "id": "04ddc1ed6012c694",
-   "canal": "Reuters",
-   "titulo": "Allegiant exercises options for six Boeing 737 MAX jets worth over $720 million",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNlM2ODEyWTVoOUdVRnJFWDFwX1NQeXI0b1J3bzJoOGFfNkl5ejNNYWJ0N0RDYUpHNTVjektKRzk0dDluR1ZmeWdMcG05ajJoelBrbXYzMXF3R1oyN0gwX3dnanZnVHpjbDFiRTJtNHgxaUVSSDRKZzdaM3dRUnFvVHl6OVprTTFEZHMxek5sTnRzX0VfRHd2S1pLZHNrRFItdTlIaUJjTUFqYy03Tk9oZmc3bHJwbFVuWmZtMWh6VEJLT1ZCODhjODRiNkpMaTJocVFZ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T21:49:43+00:00",
-   "resumo": "Allegiant exercises options for six Boeing 737 MAX jets worth over $720 million Reuters",
-   "pre": 3.0
   },
   {
    "id": "03a10e8445fe399c",
@@ -187,7 +177,7 @@
    "titulo": "Microsoft develops AI tool that can diagnose 'sequentially' like a doctor",
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYWJuX2ZuZl9pQm10SHpOeEZTZ0xuWWJEZklvZ0xsMndvNEFEYXlZVUUtQVBGS0hMX1E4UEVncDl4VW1QUUFOdnUtbF91VkdqeDBzOU4yVDctQWFzRE5EczcxaGI2OV8zWlpUUTVodjlCNmtwOUh6TW43eFZ0RFhsazRhWmdVRUtKd1g2ZG5HV2l6X0s4aXBiSmljRVYtNy1hV3lqTHJPbnRlMmpkaERxZHhfaUh5N0NJNVBoUElGQmoxLUxRN3ZaNVVYX2ZvZTY5M1pJazFwaUM?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T00:34:00+00:00",
+   "publicado_em": "2026-10-23T05:07:07+00:00",
    "resumo": "Microsoft develops AI tool that can diagnose 'sequentially' like a doctor Reuters",
    "pre": 2.0
   },
@@ -199,6 +189,16 @@
    "imagem": null,
    "publicado_em": "2026-10-24T05:57:00+00:00",
    "resumo": "Mumbai Indians promote Pollard to head coach, replacing Jayawardene Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "519f593f60ec2fac",
+   "canal": "Reuters",
+   "titulo": "UK government sets out $800 million of AI security funding",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTDJseUNYVnJGcWZWUjlPR0RUSXJHTVItRmh1dkdnNTFiZ2tmTFhUM1p3YnI1T2RGdlpFZ1JWN3BGR2dCajk3Y1pBMlBCYjNFX2dnbjJzZnNJb1BONkNGREFYamNWT1FLRFJXdjdVeEdMUFZnM3FQRXE2VFBIbFdWUVItWEJwd3F4dmFRbHpKTzE4RWpXSGRnTzY4QVdISFJj?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T23:03:43+00:00",
+   "resumo": "UK government sets out $800 million of AI security funding Reuters",
    "pre": 1.0
   },
   {
@@ -222,6 +222,16 @@
    "pre": 3.0
   },
   {
+   "id": "c80ebe13b9d0802c",
+   "canal": "CNN",
+   "titulo": "Swapping horses for ninja warriors: The Olympic sport undergoing massive change",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQakJ1aTVmTFhrNnFDaDJLZnZ6M2NsZ3Z2OS11U2hMX0FLUnl0V0ttdFlqTkFmdWt0S2RQekZtRHd4UXVudEhWM2hNdldpcjdCWWk5Um1qWGRvTjNITklIZnFLa001Tk9zUGVFUzFoSEQza3hYTm1DTXR4d242SDZSYlBJcWR3UlNSOW13?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-25T09:30:15+00:00",
+   "resumo": "Swapping horses for ninja warriors: The Olympic sport undergoing massive change CNN",
+   "pre": 2.0
+  },
+  {
    "id": "aecc6f7d0f7f778d",
    "canal": "CNN",
    "titulo": "At one Atlanta restaurant, workers are family. A health insurance crisis tested that commitment",
@@ -240,6 +250,16 @@
    "publicado_em": "2026-10-24T14:56:36+00:00",
    "resumo": "Six Flags signals Goliath roller coaster will reopen — with seat belts — after fatal fall at Georgia park CNN",
    "pre": 2.0
+  },
+  {
+   "id": "8c05f14690eb8170",
+   "canal": "CNN",
+   "titulo": "How Title IX investigations work and why experts say the system failed Cornell’s Jane Doe",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55aEZSZ0xqSlh0VGxOQnlrLTM1WTRvWDJfb0VzWGlMZ2tPM1hXOWpSamROTHRtWmNoS2Zvd0NxT1pxV0IxbEluNnptTjZDbEV4YVdJM1RiREFCQ3pFTlJsc1pNN05ONEJiLTRiVUtjMUlJbnM?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T10:30:17+00:00",
+   "resumo": "How Title IX investigations work and why experts say the system failed Cornell’s Jane Doe CNN",
+   "pre": 1.0
   },
   {
    "id": "b308e58ce14fc45e",
@@ -282,16 +302,6 @@
    "pre": 1.0
   },
   {
-   "id": "adf51227c216d1b2",
-   "canal": "CNN",
-   "titulo": "Getting health insurance from your job will be extra pricey for 2027",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVT1QwaFQ3OVZKUEx4ajI3VndsOXdwTjVmdndhSHFUNlZGdllYNlJlUTZQLTRTX0ctY2NaZTRWNThtRGdjWVNtWXB4b3B4OTE3UXNVTzNtVV93Z1hGSmVTN2RqQXJFSUtKejNXVzRLU214ZHI2MDZLV21HQU5DbnM?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T09:30:15+00:00",
-   "resumo": "Getting health insurance from your job will be extra pricey for 2027 CNN",
-   "pre": 1.0
-  },
-  {
    "id": "a86a51f086ed6957",
    "canal": "The Guardian",
    "titulo": "Boom in weight-loss drugs could lead to fall in beer sales, Heineken warns UK pubs",
@@ -300,6 +310,16 @@
    "publicado_em": "2026-10-23T10:33:37+00:00",
    "resumo": "World’s second largest brewer says use of drugs such as Wegovy can reduce desire to drink alcohol Heineken has warned British bars and pubs that the boom in popularity of weight-loss drugs could lead to a fall in sales of beer and cider. The world’s second-largest brewer sent a presentation to British hospitality customers earlier this month that said the use of GLP-1 medication – such as Ozempic ",
    "pre": 10.0
+  },
+  {
+   "id": "ab8b36b45ebb7c6a",
+   "canal": "The Guardian",
+   "titulo": "Trump administration has pushed off 13% of Americans enrolled in food stamps",
+   "link": "https://www.theguardian.com/us-news/2026/oct/25/trump-food-stamp-cuts",
+   "imagem": "https://i.guim.co.uk/img/media/bbe436fb2fa0e6dfadfbda9fd4ef7fd3c835a354/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=a2b92d8da9869a6dd20cfe0e90355283",
+   "publicado_em": "2026-10-25T11:00:02+00:00",
+   "resumo": "Stakeholders concerned more people at risk of food insecurity after One Big Beautiful Act took effect Enrollment in the Supplemental Nutrition Assistance Program (Snap) has decreased significantly over the past year in the US following restrictions imposed by the Trump administration, which has forced more people to seek help from food banks or go hungry, stakeholders say. The number of people who",
+   "pre": 5.0
   },
   {
    "id": "6c7835bd7e9c0e09",
@@ -382,14 +402,14 @@
    "pre": 2.0
   },
   {
-   "id": "1a51e90606f8a64b",
-   "canal": "The Guardian",
-   "titulo": "Have scientists finally found a way to save the banana from disaster?",
-   "link": "https://www.theguardian.com/global-development/2026/oct/22/have-scientists-finally-found-a-way-to-save-the-banana-from-disaster",
-   "imagem": "https://i.guim.co.uk/img/media/acd57c35350ea477e5e54107c57603bee7d5a111/127_0_1705_1365/master/1705.jpg?width=140&quality=85&auto=format&fit=max&s=e0064b0c35eecc61d9eb7666e6cf1427",
-   "publicado_em": "2026-10-22T13:00:05+00:00",
-   "resumo": "With the climate crisis and diseases threatening one of the world’s most popular fruits, researchers are hoping a breakthrough in breeding techniques could give the Cavendish banana a certain future Love them or loathe them, bananas are one of the world’s most popular fruit . But a combination of the climate crisis and new killer diseases have had growers concerned over the banana’s threatened ext",
-   "pre": 2.0
+   "id": "24630d7bc165dfa6",
+   "canal": "Fox News Health",
+   "titulo": "Catholic alcohol consumption drops to record low as Americans rethink moderate drinking habits",
+   "link": "https://www.foxnews.com/health/catholic-alcohol-consumption-drops-record-low-americans-rethink-moderate-drinking-habits",
+   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/10/931/523/person-holding-holy-wine-praying-church.jpg?ve=1&tl=1",
+   "publicado_em": "2026-10-25T13:00:04+00:00",
+   "resumo": "Catholic adults now report drinking rates near the levels of Protestants as shifting health views and social habits reshape moderate drinking in America.",
+   "pre": 3.0
   },
   {
    "id": "d3e3a200cd23beca",
@@ -430,16 +450,6 @@
    "publicado_em": "2026-10-23T20:58:38+00:00",
    "resumo": "A non-surgical knee osteoarthritis treatment uses dissolvable gelatin particles to block excess blood vessels, reducing inflammation without implants, researchers say.",
    "pre": 2.0
-  },
-  {
-   "id": "ad93256ef0f19d6f",
-   "canal": "Fox News Health",
-   "titulo": "Marijuana use rises sharply among one group of Americans, new study finds",
-   "link": "https://www.foxnews.com/health/marijuana-use-rises-sharply-among-one-group-americans-new-study-finds",
-   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/10/931/523/woman-smoking-marijuana-1.jpg?ve=1&tl=1",
-   "publicado_em": "2026-10-22T11:00:07+00:00",
-   "resumo": "At least 5.9 million U.S. children lived with a parent who used marijuana on most days in 2024, a new study estimates, raising safety concerns.",
-   "pre": 1.0
   },
   {
    "id": "9750041b5f1467f4",
@@ -612,24 +622,14 @@
    "pre": 0.8
   },
   {
-   "id": "6a85074051ec3677",
-   "canal": "MIT Technology Review",
-   "titulo": "Making the case for context-aware AI",
-   "link": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
-   "imagem": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR-Celonis-social-card.png?resize=1200,600",
-   "publicado_em": "2026-10-22T10:00:00+00:00",
-   "resumo": "Enterprise AI can generate recommendations, automate tasks, and help organizations make decisions faster. But without an understanding of how a business actually operates, even powerful models can miss the constraints and relationships that determine whether a decision is the right one. As companies look to move AI from experimentation into everyday operations, the challenge ahead…",
-   "pre": 0.8
-  },
-  {
-   "id": "ddf7f86b51c14194",
+   "id": "f2894f5ccafcf356",
    "canal": "Wired",
-   "titulo": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
-   "link": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-   "imagem": "https://media.wired.com/photos/6ada5ebcd90d47bccee2186e/master/pass/Science_HuggingFacesPowerfulNewDNAModelIsSmallEnou-ezgif.com-video-to-gif-converter%20(1).gif",
-   "publicado_em": "2026-10-22T10:00:00+00:00",
-   "resumo": "The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
-   "pre": 2.1
+   "titulo": "Scientists Trapped an Antimatter Particle for Months to Study Its Secrets",
+   "link": "https://www.wired.com/story/scientists-trapped-an-antimatter-particle-for-months-to-study-its-secrets/",
+   "imagem": "https://media.wired.com/photos/6adaaa0519e924cf3288639a/master/pass/1344013114",
+   "publicado_em": "2026-10-25T12:00:00+00:00",
+   "resumo": "These elusive and reactive particles have been challenging to hold on to and even more challenging to study, but a new method paves the way for tests on the differences between matter and antimatter.",
+   "pre": 1.4
   },
   {
    "id": "10d77c39b3ebb2d5",
@@ -642,14 +642,14 @@
    "pre": 1.4
   },
   {
-   "id": "2787e81a34bfd28e",
+   "id": "74394b345f30b895",
    "canal": "Wired",
-   "titulo": "What Type of Mattress Is Right for You? (2026)",
-   "link": "https://www.wired.com/story/mattress-types-explained-2026/",
-   "imagem": "https://media.wired.com/photos/6ada561615aedf0df959752a/master/pass/What%20Type%20of%20Mattress%20Is%20Right%20for%20You%20102026.jpg",
-   "publicado_em": "2026-10-23T10:08:00+00:00",
-   "resumo": "Here’s how to pick the best mattress for your sleep needs, straight from a professional mattress tester.",
-   "pre": 1.4
+   "titulo": "Oil Spills Wreak Havoc on the Bottom of the Ocean, Even a Decade Later",
+   "link": "https://www.wired.com/story/oil-spills-wreak-havoc-on-the-bottom-of-the-ocean-even-a-decade-later/",
+   "imagem": "https://media.wired.com/photos/6ad9cf0216c3bcd306bcde9c/master/pass/GettyImages-99306371.jpg",
+   "publicado_em": "2026-10-25T10:30:00+00:00",
+   "resumo": "While oil is known to float, new research finds that over time it can permeate even extremely deep marine habitats, with animal populations declining by as much as 80 percent.",
+   "pre": 0.7
   },
   {
    "id": "0eb46261fdf03327",
@@ -712,16 +712,6 @@
    "pre": 4.0
   },
   {
-   "id": "285fc0154fe4f92d",
-   "canal": "Metrópoles",
-   "titulo": "Coelho: veterinário explica a importância de incluir feno na dieta do pet",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQk5ObTlCY2VIbU1Qd29xaTdWZElBbHRUOVBidER2SEZtbDZZNXlDUHo1bTVOektjWHBESG8xMEhUUXhSOVBjeWhNaC05YjJwVHpsWFhQcUhFVHg3RHhXOGVKVEJrZ3B4RWJCRnNtaGtsN1N0UV9ZU2pKYXJtdUFpZTBQSkFjcFRuNkpHM2J3SlpWS0tiOU9KQVBManZMU0NEa2FFTVhVclIzZkJJbVNGT1l3WEpfOFlv?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-24T05:00:00+00:00",
-   "resumo": "Coelho: veterinário explica a importância de incluir feno na dieta do pet Metrópoles",
-   "pre": 4.0
-  },
-  {
    "id": "b74b87f018a5265f",
    "canal": "Metrópoles",
    "titulo": "Dieta ruim está ligada a câncer de intestino que causou morte de Lua Blanco",
@@ -729,6 +719,16 @@
    "imagem": null,
    "publicado_em": "2026-10-24T05:00:00+00:00",
    "resumo": "Dieta ruim está ligada a câncer de intestino que causou morte de Lua Blanco Metrópoles",
+   "pre": 4.0
+  },
+  {
+   "id": "285fc0154fe4f92d",
+   "canal": "Metrópoles",
+   "titulo": "Coelho: veterinário explica a importância de incluir feno na dieta do pet",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQk5ObTlCY2VIbU1Qd29xaTdWZElBbHRUOVBidER2SEZtbDZZNXlDUHo1bTVOektjWHBESG8xMEhUUXhSOVBjeWhNaC05YjJwVHpsWFhQcUhFVHg3RHhXOGVKVEJrZ3B4RWJCRnNtaGtsN1N0UV9ZU2pKYXJtdUFpZTBQSkFjcFRuNkpHM2J3SlpWS0tiOU9KQVBManZMU0NEa2FFTVhVclIzZkJJbVNGT1l3WEpfOFlv?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T05:00:00+00:00",
+   "resumo": "Coelho: veterinário explica a importância de incluir feno na dieta do pet Metrópoles",
    "pre": 4.0
   },
   {
@@ -822,16 +822,6 @@
    "pre": 2.2
   },
   {
-   "id": "1b81ec21b8179854",
-   "canal": "g1 Saúde",
-   "titulo": "Anvisa apreende suplemento falsificado e interdita lote de medicamento injetável usado em tratamento paliativo de câncer",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQ0V1S2x1RDZrMnRRNmtvbFhjRTlRRUctNUx1bWVCWERzYWExTmtnU1JBMEZGOHJKaDJGdWpJb05GRFZvdUFHOHpqbkE2NktkOUd5MVN5cW1xMGFKYi1hdlRNRlR4Mm94REE0ZjJlYjNhYkJKMTZYaXpMY1p5aHBBRzd6VEJnY1E4ZUJDbXdsbTZYZ1JzNlFKNTJ4RFlMNmpjZW54eDRpQmp2eHE3ek1ENlB0dXQ5c0Fua2k4QU5FUV9wSlJpZ0ZBaUxSX0bSAdsBQVVfeXFMTk9JbVdRNVhVdTZYOHhJZ1FMamkwVUpUM3BIMUE5VnhUU2psQzlYY25qZnBBcURzUTlCUjBiVFMwME9JenAwSzhYa0wxMXFRUzNGcVhfRjd3a0lxaFR6a1FST1ZVX0ViSl9mMHk0ZDRUVFZUdGcwZlRDNjZIc1FKRXZpbDJVUGtFcE1SQ1BiY0ZrWUJzckZ2RXBkOG4zdnhBTXJCODhPTFVSd0dISlQ0Qno4ZUxZZzFWU09fZVhuT1BhZVNFWHNyRlRCeHRVZUlqdTFlNzE0UlNzS0dF?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T09:57:03+00:00",
-   "resumo": "Anvisa apreende suplemento falsificado e interdita lote de medicamento injetável usado em tratamento paliativo de câncer G1",
-   "pre": 2.2
-  },
-  {
    "id": "6c76fbc7883c521d",
    "canal": "g1 Saúde",
    "titulo": "Anvisa registra 9 mortes em uso compassivo de polilaminina e impõe restrições; pesquisadora questiona",
@@ -839,16 +829,6 @@
    "imagem": null,
    "publicado_em": "2026-10-22T17:22:38+00:00",
    "resumo": "Anvisa registra 9 mortes em uso compassivo de polilaminina e impõe restrições; pesquisadora questiona G1",
-   "pre": 1.1
-  },
-  {
-   "id": "e2ca81a8fafcacfe",
-   "canal": "g1 Saúde",
-   "titulo": "VÍDEOS: dicas de saúde",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYkY0eDRZSGpia0JOd2hzT2RxNmhtMWJXbUV3MVE0T2k0SW5RME8wUnVYV2lQd0RVZjZmSE05bUhvT3dMT3BucV82RkJUdFVZUzFaOVBhOFhrWWg2bDNFc3YySFlYSC1ERlpDZWRRNFlNYWFKN2RfbHpOVFN0ZU1QNUloSm1UMFhrSlNMaHRET25hVzVCWDYxb0JxZjZFWUYxdHprbmR3?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T12:52:00+00:00",
-   "resumo": "VÍDEOS: dicas de saúde G1",
    "pre": 1.1
   },
   {
@@ -912,6 +892,16 @@
    "pre": 3.3
   },
   {
+   "id": "46d7b3618761d8a7",
+   "canal": "Folha Equilíbrio",
+   "titulo": "Vacina contra câncer reduz em 42% risco de morte ou recidiva de melanoma",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/10/vacina-contra-cancer-reduz-em-42-risco-de-morte-ou-recidiva-de-melanoma.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2026/08/19/17871415276a859d979311f_1787141527_3x2_rt.jpg",
+   "publicado_em": "2026-10-23T01:06:00+00:00",
+   "resumo": "A Moderna e a Merck (MSD, no Brasil) disseram nesta quinta-feira (22) que sua vacina de mRNA contra o câncer , quando combinada com a imunoterapia amplamente utilizada da Merck, reduziu em 42% o risco de morte ou recidiva de melanoma em um grande estudo, potencialmente abrindo caminho para uma nova era de tratamentos personalizados. Leia mais (10/22/2026 - 22h06)",
+   "pre": 3.3
+  },
+  {
    "id": "f3d7aa396edd7f77",
    "canal": "Folha Equilíbrio",
    "titulo": "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora",
@@ -919,16 +909,6 @@
    "imagem": "https://f.i.uol.com.br/fotografia/2025/12/16/17659149766941b96012164_1765914976_3x2_rt.jpg",
    "publicado_em": "2026-10-22T22:08:00+00:00",
    "resumo": "A Anvisa (Agência Nacional de Vigilância Sanitária) decidiu impor restrições ao uso compassivo da polilaminina e passou a adotar os mesmos critérios previstos no estudo clínico de fase 1 da substância experimental. Com isso, o acesso ficou restrito a pacientes com lesões na medula espinhal sofridas em até 72 horas e localizadas na região torácica da coluna, entre as vértebras T2 e T10. Leia mais (",
-   "pre": 3.3
-  },
-  {
-   "id": "b8131a282799c224",
-   "canal": "Folha Equilíbrio",
-   "titulo": "Doenças neurológicas atingem quase metade das pessoas nas Américas",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/10/doencas-neurologicas-atingem-quase-metade-das-pessoas-nas-americas.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2023/09/06/169402256764f8bba7c6048_1694022567_3x2_rt.jpg",
-   "publicado_em": "2026-10-22T13:02:00+00:00",
-   "resumo": "Cerca de 2 em cada 5 pessoas no continente americano convivem com pelo menos uma condição neurológica. Isso representa aproximadamente 470 milhões de portadores de demências, tumores, epilepsia, Parkinson, problemas de neurodesenvolvimento, entre outros. Os dados são de um estudo conduzido pela Organização Pan-Americana da Saúde , recém-publicado no The Lancet Regional Health . Leia mais (10/22/20",
    "pre": 3.3
   },
   {
@@ -962,6 +942,16 @@
    "pre": 4.0
   },
   {
+   "id": "bbe38e978d2b7dad",
+   "canal": "Estadão Saúde",
+   "titulo": "BradSaúde vê lucro superar R$ 1 bilhão no 3T26, mas enfrenta pressão nos planos de saúde",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONEdZUkZ5NmdnX1JnNk1LRnVacTgwekZlcnNkOTRPc2ZCbk5CQmp6aGNNWDdNckZBbXNBbHk4WGJfMDZpdDNyV3pCWjhNdTJJOE5GbVptRmE2LXNLWlN2UEtkZldzbkxCWGZkZUxpd3ZYUzExMDNaZ2JCSHdoMG8xSXhlajRHSTlhejNGRmVnNmx0TloycDlPNjhjNTJPOFNkRDFnd1l4LVV6dElHRW5GXzRZMzY4ZldiZjVYaVZ6NWJDck9KU3ZuMGRrMEs1TjBCRXFHOWU1dlhRNmc4eWRoSXVEMzcwMkJs?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-25T06:51:19+00:00",
+   "resumo": "BradSaúde vê lucro superar R$ 1 bilhão no 3T26, mas enfrenta pressão nos planos de saúde Estadão",
+   "pre": 3.0
+  },
+  {
    "id": "66cf92b3eb1585f8",
    "canal": "Estadão Saúde",
    "titulo": "Diretor do Bayern de Munique atualiza situação de Kompany após desmaio em treino",
@@ -972,10 +962,10 @@
    "pre": 3.0
   },
   {
-   "id": "f8bd16af788b05b7",
+   "id": "88f8bbf8040561ed",
    "canal": "Estadão Saúde",
    "titulo": "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSkVPRGFGVGg3MEk1N2t2MVlkVFhYdTdkemRFdE9JekdLOWROLTd0VFlxVmRiVzRucnJybHNrbVJrRG5ESmR5RnJ2WkdmMUc1UV9WbHppb2ZBYVpLRU9Ld2E2b0lmV24wd3hncEJqUkdubWdjNHlMVHNaR1hvU3NYWU0tVGhIbVRDWl9zXzgxSWhSUVpJdnlzV2plU0hDb1lIWW5jZnRUQ2twQk93TFVhYWkwaWtXRmVodWZRMzhVRTNBa0hsVlZPWkZkendIOXBK0gHWAUFVX3lxTE1reC1ZODNCQ3dlWW85R1JpaS13OElPVVhYQUN0TldscFJmMlByNXI0V2JldGZGRGZTbWQ1VDR6NzkwUDBRQm9lY3QxMmdPT1M4aVMxSnY0WmY5U29rX0hrcW03QUZjb05qZDE0MUVBUWpIZk5kYnM3MTNYVGhvd3ZSVlVhbXZ0anVTTEp5UmUwbUo5d09idVdCSm9JUzh1Z29LVkR1NlNJTGlGZmRzZVAtMTFXM2lFWGU5UFpCblh5bXhGWFN5QXR6d3k5Z3o4UzRxT1E1QWc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNa3gtWTgzQkN3ZVlvOUdSaWktdzhJT1VYWEFDdE5XbHBSZjJQcjVyNFdiZXRmRkRmU21kNVQ0ejc5MFAwUUJvZWN0MTJnT09TOGlTMUp2NFpmOVNva19Ia3FtN0FGY29OamQxNDFFQVFqSGZOZGJzNzEzWFRob3d2UlZVYW12dGp1U0xKeVJlMG1KOXdPYnVXQkpvSVM4dWdvS1ZEdTZTSUxpRmZkc2VQLTExVzNpRVhlOVBaQm5YeW14RlhTeUF0end5OWd6OFM0cU9RNUFn0gHWAUFVX3lxTE1reC1ZODNCQ3dlWW85R1JpaS13OElPVVhYQUN0TldscFJmMlByNXI0V2JldGZGRGZTbWQ1VDR6NzkwUDBRQm9lY3QxMmdPT1M4aVMxSnY0WmY5U29rX0hrcW03QUZjb05qZDE0MUVBUWpIZk5kYnM3MTNYVGhvd3ZSVlVhbXZ0anVTTEp5UmUwbUo5d09idVdCSm9JUzh1Z29LVkR1NlNJTGlGZmRzZVAtMTFXM2lFWGU5UFpCblh5bXhGWFN5QXR6d3k5Z3o4UzRxT1E1QWc?oc=5",
    "imagem": null,
    "publicado_em": "2026-10-23T22:12:00+00:00",
    "resumo": "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º Estadão",
@@ -1022,34 +1012,34 @@
    "pre": 3.0
   },
   {
-   "id": "ad6eb123cee535ad",
+   "id": "0a681ef3b0c05755",
+   "canal": "Estadão Saúde",
+   "titulo": "Agência de Comunicação - Body Health escolhe SP para estreia mundial do Unyque Day",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOEVyOGduakhqdThEQWR1S2FwZ0xGWW1DVDBLNHRRdjZqRk5vVU9aejFRR3FuTkR6ZGtZZnN2M1p4cGx3Mm1xOUhtbE5DMVZZSFI1VlBOR3JKclFRcnVOY01sMzJLdEs5NnYwUzBNbUt4ejV0Ui1ReDJTQlI5TmgtQVlYUzJOQi16R2h4THFsUHF3OFdYWjBfLXFRdkE5bmk5alUwaHFCelZMZnhybzlJQkxVM2V3VG1WWHNfTnY3enRqRENraGc?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-22T14:13:19+00:00",
+   "resumo": "Agência de Comunicação - Body Health escolhe SP para estreia mundial do Unyque Day Estadão Blue Studio",
+   "pre": 3.0
+  },
+  {
+   "id": "7598284949a89410",
    "canal": "Estadão Saúde",
    "titulo": "O segundo turno das eleições pode afetar o coração? Especialistas avaliam",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVVNJbkRjc1NDU3UzVU1rOXJJWVVacjZrc2I2TEd6T2xLeklva3F6aWhJSUJxWmdoc0ZFUzZxR3pmbVV6MjFkN2hnWEVZTVBTY3gzU2p1N1UxRG95X3Jaby1RWXpiMm9GbW5NZmdrOE1BTmk1aERkbnhjclE2Zm5OR1JwXzRydHdvUF9qYTBFU1J1d09sYldYdUpuN3llUFhmYlkyQlVoaXJxM2NaTU9uQ3c1dkh0UEUwa0h3LW1TMTkyY0HSAcgBQVVfeXFMTXJqSnJGX09heV9PZWc0YkhraHhoeldWUDVJMjVLTjR0ckgydW1hV3l1TzRqczYxbUpFbFItc2ozZG1OemNzRjdxR0YzUUJ1d0RMYVNqc0NQek9xeTB2QmoxNDR6RlEwclRVN1dCTmdqS2o3SFJRS0txcDUxbG5tbzBsejVUeE9KTmlhNlVhSWtpcGw0aW5FLUpvSlJwWVIwekozemdpcDlIbG91emtxY1FUaVZ6cUQtLXppb183WGNFcGVKSDMzd2c?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVVNJbkRjc1NDU3UzVU1rOXJJWVVacjZrc2I2TEd6T2xLeklva3F6aWhJSUJxWmdoc0ZFUzZxR3pmbVV6MjFkN2hnWEVZTVBTY3gzU2p1N1UxRG95X3Jaby1RWXpiMm9GbW5NZmdrOE1BTmk1aERkbnhjclE2Zm5OR1JwXzRydHdvUF9qYTBFU1J1d09sYldYdUpuN3llUFhmYlkyQlVoaXJxM2NaTU9uQ3c1dkh0UEUwa0h3LW1TMTkyY0E?oc=5",
    "imagem": null,
    "publicado_em": "2026-10-25T08:30:00+00:00",
    "resumo": "O segundo turno das eleições pode afetar o coração? Especialistas avaliam Estadão",
    "pre": 2.0
   },
   {
-   "id": "efd5b14ce93354e5",
-   "canal": "Estadão Saúde",
-   "titulo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRFRpc050aUhaOVp6R0xhM1h1bHd4QUNkdS1tYXhwWGJBTEQ3WDYzeXVSSGZId0FOQnVQQWJleHlEUklZX1Rvcm82WTVTbmlSVkg2ZVpiRzRxSG5vc1ZIaEdjTVUwSVhhWXFDQmVUU2ZkUVM5NjJfQmR3bEpoUEtzeUlXd1hDQ3ZQRC1mM1JoME9ueF9ZYkszakRKeGk2eWlaeFMyWkxRSlBwT25kRWd3RFlKdUtWX05UdFdpa1BaVmRCZFhlY05j?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-25T07:56:45+00:00",
-   "resumo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso Estadão",
-   "pre": 2.0
-  },
-  {
-   "id": "c4a006bef1b60480",
-   "canal": "Estadão Saúde",
-   "titulo": "Pesquisadora da polilaminina chama ciência de religião e compara cientistas críticos a ela a Mengele",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeWNOTFotbm1SVm44NS15MWd5V2ZCS0wwbnJWUFpCYmM5MC1MSmtjSVd6SkR6Xzctc3JMVlI4M29jdDRkbmFlekxTdzZqZGtTRmY4VG9vczBOWlNlUlhfdUxlRjFZYU9tSVJIY3hmbkxQTFB5RDduaTZORjJCRnlac2xpM1h2QXN6eV81a0tQdGtOby1iRGhZR0RfQVJ2dWMwelh4NFg5WV9Ld2NqdG4zMW5KdWZzdHExLUJiblpfTkJKVHFTNkg5bXViVUk5SURaNXdMYkVyR3Eyb0RkaU1lblZ3WWt3WTFC0gHuAUFVX3lxTE52SWZ5OFJveFE1bjZxMGtmSXB4V2RxczJDVGo1Qm5WdTJPZl8yd25mVGRNeTc2aTRNR0U2WUF4ZWJ3UTNpYWhnTFM5dmFrUGJVRDEtWUdOTXNtdTEway1XbGdkbTY1N3FTX0g4MDliclBXcEU4ZUU3aUk1SlExUmpKOVNVUnhnN3lQTjJ6OWxQbUJCcFhTRzF6dXNQSUtkNy1zOFFSNFlkTVVkNVVnbVR4d1dFZTVYcEU2QlQtZGFoU0UxX282WkE1WHpQc2ZZY1ZJVDZqR29aWWhhRUtHM1JkemNPcjZUWGg4N1Q5S1E?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T23:53:00+00:00",
-   "resumo": "Pesquisadora da polilaminina chama ciência de religião e compara cientistas críticos a ela a Mengele Estadão",
-   "pre": 2.0
+   "id": "c964e27e98e897e1",
+   "canal": "ScienceDaily",
+   "titulo": "Mediterranean diet may boost tiny proteins that protect the heart and brain",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261023003337.htm",
+   "imagem": "https://www.sciencedaily.com/images/1920/grilled-salmon-vegetable-salad-close.webp",
+   "publicado_em": "2026-10-25T01:38:38+00:00",
+   "resumo": "Scientists have uncovered a surprising new clue to why the Mediterranean diet is so good for the heart, brain, and healthy aging. Researchers at USC found that older adults who closely followed the diet had higher levels of two tiny proteins, humanin and SHMOOSE, produced by the mitochondria, the energy-producing structures inside cells. These proteins have been linked to protection against heart ",
+   "pre": 14.0
   },
   {
    "id": "fa4873ddcf4f3249",
@@ -1062,34 +1052,84 @@
    "pre": 8.0
   },
   {
-   "id": "008f2a457f2f9cd5",
+   "id": "eb991886f7e21bc4",
    "canal": "ScienceDaily",
-   "titulo": "Millions take fish oil for brain health. A two-year study found no benefit",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261020085427.htm",
-   "imagem": "https://www.sciencedaily.com/images/1920/fish-oil-omega-3-capsules-dha-epa.webp",
-   "publicado_em": "2026-10-22T12:46:24+00:00",
-   "resumo": "A surprising two-year clinical trial found that fish oil supplements successfully delivered omega-3s to the brain but failed to improve memory or protect against Alzheimer's-related brain shrinkage. Researchers suspect that getting these nutrients through a healthy diet may offer benefits that supplements alone cannot provide.",
-   "pre": 8.0
+   "titulo": "Just two drinks a day may be far riskier than you think",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261024222030.htm",
+   "imagem": "https://www.sciencedaily.com/images/1920/shocked-woman-holding-beer.webp",
+   "publicado_em": "2026-10-25T12:18:13+00:00",
+   "resumo": "A major new study reveals that drinking just two alcoholic beverages a day is associated with a 1 in 25 lifetime risk of death from alcohol-related causes, challenging the idea that moderate drinking is harmless. Researchers also found no significant overall health benefits from alcohol, with risks rising as consumption increases.",
+   "pre": 5.0
   },
   {
    "id": "66a6a29ab6786727",
    "canal": "ScienceDaily",
    "titulo": "Scientists discover a surprising double benefit of exercise for Parkinson’s",
    "link": "https://www.sciencedaily.com/releases/2026/10/261022081306.htm",
-   "imagem": null,
+   "imagem": "https://www.sciencedaily.com/images/1920/happy-senior-woman-stretches-outdoor-yoga.webp",
    "publicado_em": "2026-10-23T10:10:11+00:00",
    "resumo": "A seven-year study found that people with Parkinson’s disease who were more physically active experienced slower declines in memory, thinking, and movement abilities. Those exercising more than eight hours per week showed almost no average cognitive decline, suggesting that staying active may offer important benefits as the disease progresses.",
    "pre": 5.0
   },
   {
-   "id": "3862f879a312c149",
+   "id": "79fe21b47c88ae21",
    "canal": "ScienceDaily",
-   "titulo": "Coffee calories have jumped nearly 40%. Sugar isn't the biggest culprit",
-   "link": "https://www.sciencedaily.com/releases/2026/10/261021231224.htm",
+   "titulo": "Popular cannabis sleep gummies may have a hidden dark side",
+   "link": "https://www.sciencedaily.com/releases/2026/10/261024221952.htm",
    "imagem": null,
-   "publicado_em": "2026-10-22T10:52:18+00:00",
-   "resumo": "Your morning coffee may be packing more calories than you realize, and sugar isn't the biggest reason. A study of 30,000 Americans found that non-dairy creamer has overtaken sugar and milk as the leading source of added coffee calories, helping drive a nearly 40% increase between 2003 and 2018.",
-   "pre": 1.0
+   "publicado_em": "2026-10-25T05:08:39+00:00",
+   "resumo": "A cannabis-derived ingredient commonly found in sleep gummies may be more habit-forming than previously thought, with new research showing that repeated exposure caused tolerance and withdrawal symptoms in mice. Scientists warn that CBN may carry risks similar to THC, although its long-term effects in humans remain largely unknown.",
+   "pre": 4.0
+  },
+  {
+   "id": "4b83af2eac7799c0",
+   "canal": "Nature News",
+   "titulo": "Sleep declines in rural communities after electricity arrives",
+   "link": "https://www.nature.com/articles/d41586-026-03318-2",
+   "imagem": null,
+   "publicado_em": "2026-10-23T00:00:00+00:00",
+   "resumo": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03318-2 Scientists tracked the changing sleep patterns of Indigenous people in Argentina who gained access to mains electricity — and smart phones.",
+   "pre": 2.1
+  },
+  {
+   "id": "6cfdb943f67883f6",
+   "canal": "Nature News",
+   "titulo": "Rebody",
+   "link": "https://www.nature.com/articles/d41586-026-03108-w",
+   "imagem": null,
+   "publicado_em": "2026-10-23T00:00:00+00:00",
+   "resumo": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03108-w Fighting fit.",
+   "pre": 1.4
+  },
+  {
+   "id": "da118bc7d9cf3333",
+   "canal": "Nature News",
+   "titulo": "I’m expected to work excessive hours in the lab. Should I speak up about my disability?",
+   "link": "https://www.nature.com/articles/d41586-026-02582-6",
+   "imagem": null,
+   "publicado_em": "2026-10-23T00:00:00+00:00",
+   "resumo": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-02582-6 What can a researcher in an overworked laboratory do to take care of themselves and their lab-mates, and how should they navigate medical disclosure?",
+   "pre": 1.4
+  },
+  {
+   "id": "98f430df60ac4616",
+   "canal": "Nature News",
+   "titulo": "First person infected with rare Shamonda virus: what we know",
+   "link": "https://www.nature.com/articles/d41586-026-03416-1",
+   "imagem": null,
+   "publicado_em": "2026-10-23T00:00:00+00:00",
+   "resumo": "Nature, Published online: 23 October 2026; doi:10.1038/d41586-026-03416-1 Infectious-disease researchers say the risk of the livestock pathogen moving between people is low.",
+   "pre": 0.7
+  },
+  {
+   "id": "cc00cb5286bb28de",
+   "canal": "Harvard Health",
+   "titulo": "All Mind body exercise Articles | Page 90",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE11NUZ6S2RiTjUzdGRmVjJUdWtFdXJwX2IxUktvOVdCRVN1WlEtQUJPS0tQMzc3NkZfNW5EN1doMFdBRGhGYzNKeUR5MVBnNnhVWWJsb2JVU3Zob2llWHhXRC1Za3RoYktOblZGTXFBOFJoSU5tdmdZ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T06:58:36+00:00",
+   "resumo": "All Mind body exercise Articles | Page 90 Harvard Health",
+   "pre": 6.0
   },
   {
    "id": "a0756b701f703d50",
@@ -1122,6 +1162,26 @@
    "pre": 5.0
   },
   {
+   "id": "c97518d975edda5f",
+   "canal": "Harvard Health",
+   "titulo": "All Diet and nutrition Articles | Page 155",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE90bVdkdGozZlhsSVBNcTRlVlA2TzkyeDBMdHRiVXd5d00wSHZacU9zTlBuZ1lENG5XelM4eV94akItbUhGQzczRThkMTFnb3g5ZnpjbWZHRm9hcllaMFB5OTRwaGM3dG9ZLVRSOHkxbHA1LXVxM2tHcQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-20T16:54:10+00:00",
+   "resumo": "All Diet and nutrition Articles | Page 155 Harvard Health",
+   "pre": 5.0
+  },
+  {
+   "id": "9a044301db054269",
+   "canal": "Harvard Health",
+   "titulo": "All Vitamins, minerals & supplements Articles | Page 184",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR2VqNmZUYTlybmlsdXJQWVp5WEx6WVlBSE12SGhVQ082NmxUMFVMaWRyTVdzOUFNeWExM3BlZmdwR0xub1Z2YXlWS1RNaUQ3WUhiVjFVd0hadmx0OXpLNE96bzZUVGFfS251VHRkMEgwMlVqN2xhOC1oMlQzbDBQZExwZElHTU0?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-16T21:45:45+00:00",
+   "resumo": "All Vitamins, minerals & supplements Articles | Page 184 Harvard Health",
+   "pre": 5.0
+  },
+  {
    "id": "03638fdcd6fd280f",
    "canal": "Harvard Health",
    "titulo": "Hair Loss and Protein Deficiency",
@@ -1142,6 +1202,16 @@
    "pre": 4.0
   },
   {
+   "id": "9c0fdb26f10defcb",
+   "canal": "Harvard Health",
+   "titulo": "All MIND diet Articles | Page 101",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFaXltdmpLYUM1OFV6TWJMSHVWN2tBbkphRkZmaVotU0lVckFnZk1SRlgwbTJudUJYYTJ4TTUzWENtd2hEcDhyUThBVHU4bTRYTW9iU290M1dxT2JkWGh2STE0VDJmeTZfVTd0Vw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-24T02:03:00+00:00",
+   "resumo": "All MIND diet Articles | Page 101 Harvard Health",
+   "pre": 3.0
+  },
+  {
    "id": "0782b462a9b68377",
    "canal": "Harvard Health",
    "titulo": "Reading the new blood pressure guidelines",
@@ -1149,46 +1219,6 @@
    "imagem": null,
    "publicado_em": "2026-10-23T07:00:00+00:00",
    "resumo": "Reading the new blood pressure guidelines Harvard Health",
-   "pre": 3.0
-  },
-  {
-   "id": "64df0d892dc0b253",
-   "canal": "Harvard Health",
-   "titulo": "CoQ10: Should you take this popular supplement if you're on a statin?",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSi11aGlRRGFUdEcwekpJY2tEZmtxQzdhS2JDZ0FGeUthODB3czdZbGk0TFFBZUZiUTJrUmVDc3RybFlTcUY4cTk1OXQ2M1FORFZoemlYX19HN0hmZ1BRenFJUFJEQ1hhOHpCTEVuQVJyeFJPMmtUX3pTWGRDZEQxWi1JZGRFT3pMcGZWWTRPaFRvSERVZlhuOTBZN2R2RUVBeDRxQ1FXTGFYSHFKeXFTc1JMaVVSN084c0FjNlVwbFlxMFY0elRhV1N3?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T04:00:00+00:00",
-   "resumo": "CoQ10: Should you take this popular supplement if you're on a statin? Harvard Health",
-   "pre": 3.0
-  },
-  {
-   "id": "ca5eefcfbe6445f2",
-   "canal": "Harvard Health",
-   "titulo": "Oat vs. dairy milk: Nutrition, benefits, and downsides",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNVlLT2hIOEpYT2VJSjNnOEF1VEE4QWVLRjFVdHRwLWJaVEVIOWxEMl9lV2FpanE2WUZ4bk0tWE8tVXFoX1NmNkVaLWRDOGxRM29iaTF0YlpHV0hYZFVvWHJMaTJSNDliUXR1cVhRTXdHbm0yZml2cGRhQndDNnQtVHl0djdQa0Z5TzhRZkg1VkZzSGxBTEhKSlM1VTJmUFlpaFE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-22T04:00:00+00:00",
-   "resumo": "Oat vs. dairy milk: Nutrition, benefits, and downsides Harvard Health",
-   "pre": 3.0
-  },
-  {
-   "id": "382cc5c26f8e0973",
-   "canal": "Harvard Health",
-   "titulo": "What is tempeh? Benefits, nutrition, and how to use it",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWGJmRjBzTUVQaXhET1pKTnVMbHdWT3plbzFPTXI3eXFNTEdiMHpSRGpyTTdUWTdMazNSV2JXUy1oMnNDb2x1RjNLOVJBeFNPTldpRmlxczd1X0JYLWpRakNybmVud0dmVHd6Y05oVDM2MTVGZmxNWm9TU2xsX3Z3SkQySzlTYWFXanpuTl9YZ0NWbFc5bVVTTnI2LTdDODB2SFBr?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-20T04:00:00+00:00",
-   "resumo": "What is tempeh? Benefits, nutrition, and how to use it Harvard Health",
-   "pre": 3.0
-  },
-  {
-   "id": "5a83bea1bf4a84c2",
-   "canal": "Harvard Health",
-   "titulo": "Does diet influence the risk of developing arthritis?",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQkZWMWJJWTFBTElMZmdpZU9HREFsZDJDV3ZPMGNnYWxSX180SkhoRHpITnRndUxTVTBheWpDSzNDNDdxYmpiVlFWS0p0c0h1OUpxQWRESk1BWk1hRmJXUXZmWEZGVy1ldDI2MUFnZVBhYnUwbU1OWnREeFAyYmdaNzhoOWdqSDl5YjgtcHNBLU9MUEdGSk9DajNZYXFKeWVvckE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-19T07:00:00+00:00",
-   "resumo": "Does diet influence the risk of developing arthritis? Harvard Health",
    "pre": 3.0
   },
   {
@@ -1302,6 +1332,16 @@
    "pre": 2.0
   },
   {
+   "id": "671a15e140728d54",
+   "canal": "Forbes",
+   "titulo": "TSE Agiliza Aprovação de Transporte para Indígenas e Quilombolas",
+   "link": "https://forbes.com.br/geral/2026/10/tse-agiliza-aprovacao-de-transporte-para-indigenas-e-quilombolas/",
+   "imagem": null,
+   "publicado_em": "2026-10-25T13:15:26+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Decisão foi assinada após a União apresentar um plano logístico para levar eleitores de áreas de difícil acesso às seções eleitorais O post TSE Agiliza Aprovação de Transporte para Indígenas e Quilombolas apareceu primeiro em Forbes Brasil .",
+   "pre": 1.0
+  },
+  {
    "id": "5ec35d50199b6737",
    "canal": "Forbes",
    "titulo": "Mais Médicos Especialistas Oferece 224 Vagas Imediatas em Nova Chamada",
@@ -1312,13 +1352,13 @@
    "pre": 1.0
   },
   {
-   "id": "a8abc4849729e0ea",
-   "canal": "Forbes",
-   "titulo": "Caso de Ebola na Nigéria Está Ligado Ao Vírus Encontrado no Primeiro Caso do Quênia, Diz Ministro da Saúde",
-   "link": "https://forbes.com.br/forbes-saude/2026/10/caso-de-ebola-na-nigeria-esta-ligado-ao-virus-encontrado-no-primeiro-caso-do-quenia-diz-ministro-da-saude/",
+   "id": "508862892fe19025",
+   "canal": "Bloomberg",
+   "titulo": "Tsai Hung-Tu",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyb3pCREdTMHo2Q0p5NjFnSXZDcUJQWGdNVGpfbWJFOXN2WG5kTEZ6NHIyZndvWTY4SzlMTHlueF8zSXM5bC02UXZnc2tWdE1OSWRPX3lwSWJxc3hBNWdUTUpwTU9EQ3IxMzJ2Uw?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-24T15:23:25+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Sequenciamento genético confirma conexão entre infecções nos dois países, mas autoridades nigerianas descartam contato direto ou viagem entre os pacientes O post Caso de Ebola na Nigéria Está Ligado Ao Vírus Encontrado no Primeiro Caso do Quênia, Diz Ministro da Saúde apareceu primeiro em Forbes Brasil .",
+   "publicado_em": "2026-10-23T22:30:16+00:00",
+   "resumo": "Tsai Hung-Tu Bloomberg.com",
    "pre": 1.0
   },
   {
@@ -1332,6 +1372,16 @@
    "pre": 0.0
   },
   {
+   "id": "bdbf02d28e98ac6c",
+   "canal": "Bloomberg",
+   "titulo": "Ronda Stryker",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBJN0NPVUljWlE1aHZGYkgtRjVReHFNZGJKOEgzT3FvaklRY2p4QVhmbS1VMjMxUDc4amlWemtrR1ppX0I1NkhOTVJ1MXNOOC1IZDFSMmc0Z0JUeVlaTU1ydF9RMF8wXzBDbk0tYVFCWGYyZw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T22:30:16+00:00",
+   "resumo": "Ronda Stryker Bloomberg.com",
+   "pre": 0.0
+  },
+  {
    "id": "05caab98a1879a3e",
    "canal": "Bloomberg",
    "titulo": "Sulaiman Al Habib",
@@ -1342,43 +1392,23 @@
    "pre": 0.0
   },
   {
-   "id": "dbea0776c1933052",
+   "id": "ea5ceb4383a5efad",
    "canal": "Bloomberg",
-   "titulo": "Frederik Paulsen",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB4cFhIOENFMU83Vm9FU2FhdFJpR2JQY01oUy12LWYzeDVJU2N5S3NhMElQVXFLdXRjTEpaR1hBTE94Vl9NUHA3VHVJaExSX2RncXNMOHFVRzVYaS1IS0Uzekc5Q1RqN2gzT2hNSDRLc0dpNkU?oc=5",
+   "titulo": "Pham Nhat Vuong",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE96cHVZcWRUV3NLRkpmdjZYZ0ZtWTZxR3YzaUZJS1dMWGxfOUt6OGltZlFrWjQwY0JCLWh0V1VCaDVrNVUyRUNRU3d6UkY4RDBURmkzM2FiaERoMzZJTlU3OWg3VHFGOGJhNERVUU8xdVR2Zw?oc=5",
    "imagem": null,
    "publicado_em": "2026-10-23T22:30:16+00:00",
-   "resumo": "Frederik Paulsen Bloomberg.com",
+   "resumo": "Pham Nhat Vuong Bloomberg.com",
    "pre": 0.0
   },
   {
-   "id": "6225356e2a73b8d0",
+   "id": "4d126230b3b0da1d",
    "canal": "Bloomberg",
-   "titulo": "Cen Junda",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9VajR1MGo1Vnh1d3Q3eXBJMVY4TDU3cWc4Wk0tbHFnNHJlMTFKbHJxZ1k3LXNaTDJPbmNyMDdaV3hRY0NfRjZFdXpJcXJkMXZJcHYxSkh3V1QzVFhIYzVqWVZ3SHJ4RU5JaVE?oc=5",
+   "titulo": "Tahir",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2OXpickZJNHF6eGgxRnlzaXVXcTA3SWJnTEZqQ2g5NXRlNXlLWm96cDhrT056N0RvM0ZBeHc3TlMxRUZHNGpQckVVNkZwTXh6V3VXX1I1MW1sNnQxMTA4SFk3UjY2X05iNWlLVQ?oc=5",
    "imagem": null,
    "publicado_em": "2026-10-23T22:30:16+00:00",
-   "resumo": "Cen Junda Bloomberg.com",
-   "pre": 0.0
-  },
-  {
-   "id": "829562c90bbaf035",
-   "canal": "Bloomberg",
-   "titulo": "Lv Xiang-yang",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5PM2szbXZKMWdIVTgxN3NjaHFZcGJxNWdpdnZoQTdCamhoemRici1lSkF4SWFYUFZERFJzNWhIOWNYcVBkQ3lKSWpvOTBiMVhvT0NjOTJVU2toTGRFaDFlNnlwbkdUaHI3TFkwY1pB?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T22:30:16+00:00",
-   "resumo": "Lv Xiang-yang Bloomberg.com",
-   "pre": 0.0
-  },
-  {
-   "id": "3fa62795febbc655",
-   "canal": "Bloomberg",
-   "titulo": "Andreas Struengmann",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1YUGdfVjNINlpLdTN1TEtfVUowVFVySjRnT1QyTTN0VXhYZVlsclNPQ05GZlA4UXItb3dfVENQemdNd2dtSEJlTDdPMjI1S24tTEdTaHg0dE5jRTBnQVhfb2pURTVYVUhuV0JlNkIxVDY1Y3RfeXRv?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T22:30:16+00:00",
-   "resumo": "Andreas Struengmann Bloomberg.com",
+   "resumo": "Tahir Bloomberg.com",
    "pre": 0.0
   },
   {
@@ -1444,7 +1474,7 @@
   {
    "id": "e933c96a96fb869e",
    "canal": "Vanityfair",
-   "titulo": "Taylor Swift Released Her First Album 20 Years Ago Today",
+   "titulo": "Taylor Swift Celebrates 20 Years Of 'Taylor Swift'",
    "link": "https://www.vanityfair.com/story/taylor-swift-20-years-anniversary",
    "imagem": "https://media.vanityfair.com/photos/6adcf67684ad889fa4eb0043/master/pass/71027193",
    "publicado_em": "2026-10-24T18:54:42+00:00",
@@ -1504,11 +1534,11 @@
   {
    "id": "efbdcc3cf59efe55",
    "canal": "Nytimes",
-   "titulo": "Sleep Habits May Indicate a Type of Depression, Researchers Say",
+   "titulo": "Your Sleep Habits May Point to a Specific Type of Depression, a New Study Finds",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTjlLdjRuaGd6c1VWZ0U3ZHE4WC11VzFRZmVuTTM0TV95ZDZrOW9HSlFvR19aSmJPRWoxcTcwZVBSUFJMVkt3R3F0Vl90MnVNdG5zaU5COEFSY0RDN3VJaC1sQUxJXzBSV3RPMmZXeHJFbUJzWjVRcFFpY1FwazBfT0dQTGI?oc=5",
    "imagem": null,
    "publicado_em": "2026-10-23T09:03:06+00:00",
-   "resumo": "Sleep Habits May Indicate a Type of Depression, Researchers Say The New York Times",
+   "resumo": "Your Sleep Habits May Point to a Specific Type of Depression, a New Study Finds The New York Times",
    "pre": 3.0
   },
   {
@@ -1592,6 +1622,16 @@
    "pre": 7.0
   },
   {
+   "id": "3f64bea9d142661c",
+   "canal": "Globo",
+   "titulo": "Fred Bruno comemora conquista após ter o pé atingido por tiro de raspão",
+   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/fred-bruno-comemora-conquista-apos-ter-o-pe-atingido-por-tiro-de-raspao.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/GXbwwJTLIUxbASyAwaENXlyWj2g=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/S/E/vIg8P0S8CKQz7eYYYUCQ/863478507-18643728022054443-3876746323370420985-n-1-1-.jpg",
+   "publicado_em": "2026-10-25T11:58:25+00:00",
+   "resumo": "Fred Bruno, de 37 anos, tem uma nova conquista pessoal. O apresentador do Globo Esporte SP ficou em terceiro lugar num campeonato interno da academia onde treina basquete. Ele foi liberado por seu médico para praticar o esporte para cinco dias após ser atingido no pé por um disparo de arma de fogo durante uma confusão em uma casa noturna de São Paulo. \"Fiquei em terceiro lugar num campeonato inter",
+   "pre": 6.0
+  },
+  {
    "id": "ff1d9f4dd00bf924",
    "canal": "Globo",
    "titulo": "Vivi Winkler revela ter feito lipo na região íntima: 'Estava incomodando'",
@@ -1652,16 +1692,6 @@
    "pre": 4.0
   },
   {
-   "id": "a71521a367fe4df2",
-   "canal": "Globo",
-   "titulo": "Tico Santta Cruz detalha relação com álcool: 'Depois dos 40, a ressaca é como dengue'",
-   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/tico-santta-cruz-detalha-relacao-com-alcool-so-se-a-ressaca-estiver-ao-quilate-da-celebracao.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/flC3H7UEX-6KMS6hy93u5oL0H2A=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/X/w/2dzjRBRPm3glWQzFW0qg/ticostacruz-1790691378-3996931128068613682-1811651-1-.jpg",
-   "publicado_em": "2026-10-23T09:52:35+00:00",
-   "resumo": "Tico Santta Cruz, de 49 anos, detalhou sua relação com o álcool. O vocalista do Detonautas revelou em seu Instagram, na quinta-feira (22), que só bebe em ocasiões especialíssimas. Segundo ele, as experiências tidas com a substância na adolescência, a chegada aos 40+ e seu gosto pelo esporte moldaram sua atual percepção sobre o que vale a pena. Initial plugin text \"O álcool nunca foi algo com o qua",
-   "pre": 4.0
-  },
-  {
    "id": "e980e48ea3b8436d",
    "canal": "People",
    "titulo": "Joe Amabile Says Running NYC Marathon 3 Months After Brain Surgery Gives Him ‘Control’ Over His Body (Exclusive)",
@@ -1680,6 +1710,16 @@
    "publicado_em": "2026-10-22T19:20:13+00:00",
    "resumo": "Inside Trisha Yearwood’s Weight Loss Journey: Everything the Country Singer Has Said About Her Health People.com",
    "pre": 3.0
+  },
+  {
+   "id": "4f39f6b0f7049758",
+   "canal": "People",
+   "titulo": "Meghan Markle’s Father Was Accused of Sexually Abusing a Child in 2018 Letter to Police: Report",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdmtGejBOZUVwblVjY1ZMaXFVYkRaZzdCd1Byc0ZGX0JzWGJJVHZlTGJpX05LY0tVWHctMDJWRHdyY1hwMm1LOUJYTDBGSFVCTTFWNFptUjZScmlLRUowaV85LXFfN1Uybmp0MDBrMkNBclVDVEEtcURJNEE1ODljZjRQdF8zSU90WHRzVFkxOUo4Ym13el9rblBB?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-23T21:33:35+00:00",
+   "resumo": "Meghan Markle’s Father Was Accused of Sexually Abusing a Child in 2018 Letter to Police: Report People.com",
+   "pre": 2.0
   },
   {
    "id": "ee398f9a0afac564",
@@ -1802,6 +1842,16 @@
    "pre": 2.0
   },
   {
+   "id": "c5ddf31442ec7b9a",
+   "canal": "Pagesix",
+   "titulo": "Martha Stewart’s top-rated cookware and home decor is deeply discounted for Way Day",
+   "link": "https://pagesix.com/2026/10/25/style/martha-stewart-cookware-and-home-decor-is-on-sale-for-way-day/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2F146243115.jpg?quality%3D90%26strip%3Dall",
+   "publicado_em": "2026-10-25T13:00:00+00:00",
+   "resumo": "Bring Stewart's impeccable taste to your home with these can't-miss deals.",
+   "pre": 0.0
+  },
+  {
    "id": "af32d828125a04f1",
    "canal": "Pagesix",
    "titulo": "Tom Brady dating supermodel Candice Swanepoel: report",
@@ -1839,16 +1889,6 @@
    "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fgia-giudice-seen-segment-good-146362491.jpg",
    "publicado_em": "2026-10-25T01:32:37+00:00",
    "resumo": "Giudice's upscale new eatery opened earlier this month.",
-   "pre": 0.0
-  },
-  {
-   "id": "a17c8a599c30358d",
-   "canal": "Pagesix",
-   "titulo": "Meghan Markle’s final message to dad Thomas before his child porn allegations revealed: report",
-   "link": "https://pagesix.com/2026/10/24/royal-family/meghan-markle-told-dad-thomas-hed-never-see-her-kids-in-letter-before-scandal/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fprince-harry-duke-sussex-meghan-145178508_88f657.jpg",
-   "publicado_em": "2026-10-25T00:47:19+00:00",
-   "resumo": "Thomas Markle Sr is under investigation after his son reportedly submitted a hidden horde of child sex abuse material to authorities.",
    "pre": 0.0
   },
   {
