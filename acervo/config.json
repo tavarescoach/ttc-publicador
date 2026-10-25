@@ -51,5 +51,7 @@
  "parte_max_s": 4,
  "partes_max": 6,
  "clipe_min_s": 1,
- "_partes": "Clipe curto (menos de ~10 s): o story junta clipes de vídeos diferentes, até 4 s de cada, até ~12 s no total. Clipes com menos de 1 s ficam de fora."
+ "_partes": "Clipe curto (menos de ~10 s): o story junta clipes de vídeos diferentes, até 4 s de cada, até ~12 s no total. Clipes com menos de 1 s ficam de fora.",
+ "inicio_stories": "2026-10-26",
+ "_inicio_stories": "Primeiro dia com stories automáticos publicados. Antes disso o robô só gera prévias."
 }

@@ -267,9 +267,9 @@ def planejar(data, cfg, indice, rotacao, fila):
         plano.append({"id": f"{data}-st-0600", "slot": "trabalho", "quando": q(h["trabalho"]), "aponta": "respostas",
                       "rotulo": "Bom dia", "titulo": frase, "trecho": t})
 
-    est = post_do_dia(fila, data, "IMAGEM", 7)
-    if est:
-        p = cfg["pontes"]["ponte_estatico"]
+    est = post_do_dia(fila, data, "IMAGEM", 7) or post_do_dia(fila, data, "CARROSSEL", 7)
+    if est:  # estático do ciclo chama o carrossel do meio-dia; carrossel das 7h (Estúdio) usa a ponte de carrossel
+        p = cfg["pontes"]["ponte_estatico" if est["tipo"] == "IMAGEM" else "ponte_carrossel"]
         plano.append({"id": f"{data}-st-0800", "quando": q(h["ponte_estatico"]), "aponta": "post", "post_id": est["id"],
                       **p, "imagem": f"{MIDIA_BASE}/{est['arquivos'][0]}"})
 
@@ -292,7 +292,7 @@ def main(argv):
     cfg, indice = ler(CONFIG, {}), ler(INDICE, {})
     rotacao, fila = ler(ROTACAO, {"trechos": []}), ler(FILA, [])
     ensaio = "--ensaio" in argv or not cfg.get("ativo")
-    inicio = (ler(os.path.join(RAIZ, "ciclo", "config.json"), {}) or {}).get("inicio")
+    inicio = cfg.get("inicio_stories") or (ler(os.path.join(RAIZ, "ciclo", "config.json"), {}) or {}).get("inicio")
     if inicio and data < inicio:
         ensaio = True  # antes do primeiro ciclo: só prévia
     local_dir = argv[argv.index("--local") + 1] if "--local" in argv else None

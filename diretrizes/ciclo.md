@@ -92,7 +92,7 @@ Tarefa agendada única (substitui o pacote de sábado), todo dia às 15h07. Se n
   - Sessão "Pacote do ciclo": PIPELINE.md, seção "CICLO pacote".
 
 ## Ligado em 24/10/2026
-- Primeiro ciclo: 29/10 a 31/10 (tema escolhido em 28/10 às 14h50). Stories automáticos a partir de 29/10.
+- Primeiro ciclo: 28/10 a 30/10 (tema escolhido em 27/10 às 14h50). Stories automáticos a partir de 26/10 (`inicio_stories` em acervo/config.json); antes do ciclo, as pontes apontam para os carrosséis do Estúdio.
 - Robô "Preparar stories" passou para 18h (depois do pacote do ciclo, que roda às 15h07).
 - Carrosséis do Estúdio que caíam às 12h em dia de ciclo foram para 17h (`ajustes/horarios.json`, robô "Ajustar horários"). Para mudar horário de post já agendado, acrescente nesse arquivo; o painel e a fila mudam juntos.
 - Tarefa "Pacote semanal de conteúdo" pausada; tarefa "Pacote do ciclo" criada (15h07).
