@@ -117,6 +117,19 @@ def main():
     if estatico:
         slides = p["slides"] = slides[:1]
     W, H = (1080, 1920) if reels else (1080, 1350)
+    for s in slides:  # capa com pessoa conhecida e sem foto: o robô busca no Commons, com licença conferida
+        if s.get("tipo") == "capa" and s.get("pessoa") and not s.get("foto"):
+            try:
+                from foto_commons import buscar
+                achada = buscar(s["pessoa"])
+            except Exception as e:
+                achada = None
+                print(f"::warning::busca no Commons falhou ({e}); capa sem foto")
+            if achada:
+                s.update(achada)
+                print(f"Foto do Commons: {achada['pagina_origem']} ({achada['licenca']})")
+            else:
+                print(f"Sem foto liberada de {s['pessoa']} no Commons; capa só com texto")
     for i, s in enumerate(slides, 1):  # foto do repositório (quadro do vídeo) -> caminho absoluto
         if (s.get("foto") or "").startswith("render/"):
             s["foto"] = "file://" + os.path.join(RAIZ, s["foto"])

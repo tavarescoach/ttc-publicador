@@ -1,0 +1,22 @@
+name: Buscar foto no Commons
+
+# Diagnóstico: mostra a foto que o robô "Renderizar artes" usaria para uma pessoa (licença conferida).
+
+on:
+  workflow_dispatch:
+    inputs:
+      pessoa:
+        description: "Nome da pessoa"
+        required: true
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Buscar
+        run: python render/foto_commons.py "${{ github.event.inputs.pessoa }}" | tee -a "$GITHUB_STEP_SUMMARY"

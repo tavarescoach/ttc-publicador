@@ -189,9 +189,10 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    - **Estático 07h** de cada dia (`k-<dia>-estatico`): notícia de pessoa conhecida ligada ao tema. Comece por
      `famosos` do ciclo; sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
      Abra a matéria (WebFetch) e confirme o fato numa segunda fonte. Três pessoas ou fatos diferentes nos 3 dias.
-     Foto: só Wikimedia Commons. Ache o arquivo da pessoa, abra a página do arquivo e confira a licença (CC BY,
-     CC BY-SA, CC0 ou domínio público; qualquer outra, não use). Use a URL direta de upload.wikimedia.org (miniatura
-     de ~1600 px). Sem foto liberada, sem foto (capa tipográfica).
+     Foto: escreva `"pessoa": "<nome como aparece no Commons>"` na capa e deixe `foto` vazio. O robô "Renderizar
+     artes" busca no Wikimedia Commons, confere a licença pelos metadados (só CC BY, CC BY-SA, CC0 ou domínio
+     público) e preenche foto, crédito, licença e página de origem. Sem foto liberada, a capa sai só com texto.
+     Depois do render, confira na prévia se a foto é mesmo da pessoa; se não for, troque o nome ou ponha `"pessoa": null`.
      Pedido: `{"formato": "estatico", "id", "data", "quando": "<dia>T07:00:00-03:00", "tema", "funil": "topo", "pauta",
      "legenda", "slides": [{"tipo": "capa", "titulo" (nomeia a pessoa, até ~60 caracteres, 1–3 palavras em **destaque**),
      "subtitulo" (chama para o carrossel das 12h), "fonte": "Veículo, DD/MM/AAAA", "link_noticia", "foto", "credito":
