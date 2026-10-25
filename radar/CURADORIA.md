@@ -31,6 +31,12 @@ Roda 2x por dia (~6h17 e ~14h17, Brasília), 30 min depois da coleta. Ninguém e
    "formato": "carrossel decodificado | reels mito x método | reels erro comum | bastidor | story/enquete | estático",
    "gancho": "frase de abertura pronta, até ~12 palavras, no tom da marca",
    "ponte": "como liga ao personal / Avaliação Estratégica"}
+- `tema_editorial` (ciclo temático, diretrizes/ciclo.md): a sigla do tema editorial que a notícia alimenta, uma de
+  FOR (treino de força), EMA (emagrecimento), EST (estilo de vida: sono, rotina, postura, exercício no dia a dia),
+  ESP (esportes), GLP (GLP-1 e remédios para obesidade), LON (longevidade, coração, ossos, envelhecimento, menopausa),
+  MEN (saúde mental), WEA (tecnologia e dados: wearables, apps, IA). Use null quando nada servir. Nunca FAM.
+- `pessoa`: nome da pessoa conhecida no centro do fato (atleta, artista, executivo, figura pública), ou null. Só quando
+  a notícia é sobre ela; citação de especialista não conta. Menor de idade: sempre null.
 - `cluster`: um slug curto do ASSUNTO (ex.: "glp1-perda-muscular"). Notícias de canais diferentes sobre a mesma história recebem o
   mesmo cluster. `em_alta`: true quando o cluster aparece em 3 ou mais canais diferentes.
 - Na dúvida sobre um fato, use WebFetch no link (no máximo ~5 por rodada, nas notas mais altas).
@@ -106,7 +112,7 @@ Varie o público (pelo menos uma para a mulher 30–50 quando houver notícia bo
 
 ## Saída
 1. Escreva `radar/curadoria/AAAA-MM-DD-HH.json` (horário de Brasília): {"gerado_em": "...", "itens": [ {id, canal, titulo, link,
-   imagem, publicado_em, tema, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
+   imagem, publicado_em, tema, tema_editorial, pessoa, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
 2. Apague arquivos de curadoria com mais de 3 dias.
 3. `git pull --rebase`, commit ("radar: curadoria AAAA-MM-DD HH h", incluindo `radar/perfil-interesse.json` e
    `radar/perfis-instagram.json` se mudaram) e push. O robô "Radar de notícias" aplica no painel.

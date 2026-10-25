@@ -29,6 +29,9 @@ SIGLAS = {"MÉTODO", "METODO", "TTC", "BJSM", "BMJ", "JAMA", "OMS", "IMC", "HIIT
           "NIH", "CDC", "NHS", "MIT", "UCLA", "MMA", "LT"}
 EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿]")
 
+# Foto de terceiros: só licença que permite uso comercial (decisão do Luan, 24/10/2026)
+LICENCAS_OK = {"cc-by", "cc-by-sa", "dominio-publico", "cc0"}
+
 # Vícios de texto de IA (skill copy-social-ttc, seção 4). Barram o agendamento automático.
 VICIOS_IA = [
     (r"\bn[ãa]o (?:é|foi|era|s[óo]|está)\b[^.!?\n]{1,70}[.!?,;]\s+(?:é|foi|era|mas)\b", "contraste encenado (\"não é X. É Y.\")"),
@@ -117,7 +120,15 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
     elif len(tags) > 8:
         problemas.append(f"Hashtags demais ({len(tags)}); o padrão é 3 a 5.")
 
-    if not reels:
+    formato = p.get("formato")
+    if formato == "estatico":
+        problemas += revisar_estatico(p)
+    elif formato == "foto":
+        if not p.get("arquivo"):
+            problemas.append("Foto pessoal sem arquivo.")
+        if "MÉTODO" not in legenda.upper():
+            avisos.append("Legenda da foto sem MÉTODO.")
+    elif not reels:
         # estrutura do carrossel
         if not slides:
             problemas.append("Carrossel sem slides.")
@@ -148,8 +159,9 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
             if foto and not banco:
                 if not capa.get("credito") or not capa.get("licenca"):
                     problemas.append("Foto da capa de fora dos bancos sem crédito ou licença registrada.")
-                elif capa.get("licenca") == "sem-licenca":
-                    atencao.append(f"Foto da capa sem licença ({capa.get('credito')}): decida se publica.")
+                elif capa.get("licenca") not in LICENCAS_OK:
+                    problemas.append(f"Foto da capa com licença '{capa.get('licenca')}': só vale licença com uso comercial "
+                                     "(cc-by, cc-by-sa, dominio-publico). Troque a foto ou faça a capa sem foto.")
             if "método" in _txt(capa).lower():
                 problemas.append("A capa tem MÉTODO: o convite fica só no último slide.")
         # fundos: nunca 3 iguais seguidos
@@ -179,6 +191,32 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
         "quando": quando,
         "revisado_em": agora.isoformat(timespec="minutes"),
     }
+
+
+def revisar_estatico(p):
+    """Estático das 7h (ciclo temático): notícia de pessoa conhecida, com fonte e crédito visíveis na arte."""
+    out = []
+    slides = p.get("slides") or []
+    if not slides or slides[0].get("tipo") != "capa":
+        return ["Estático sem a arte (slide de capa)."]
+    c = slides[0]
+    if not c.get("fonte"):
+        out.append("Estático sem a fonte da notícia na arte (veículo e data).")
+    if not c.get("link_noticia"):
+        out.append("Estático sem o link da notícia (link_noticia).")
+    if c.get("foto"):
+        foto = c.get("foto_url") or c.get("foto") or ""
+        banco = re.search(r"pexels\.com|unsplash\.com", foto)
+        if not banco:
+            if not c.get("credito") or "foto:" not in c.get("credito", "").lower():
+                out.append("Estático com foto e sem o crédito \"Foto: autor / origem (licença)\" na arte.")
+            if c.get("licenca") not in LICENCAS_OK:
+                out.append(f"Foto do estático com licença '{c.get('licenca')}': só cc-by, cc-by-sa ou domínio público.")
+            if not c.get("pagina_origem"):
+                out.append("Foto do estático sem a página de origem (pagina_origem).")
+    if "método" in _txt(c).lower():
+        out.append("O estático é editorial: sem MÉTODO na arte (vai na legenda).")
+    return out
 
 
 # ---------------------------------------------------------------- stories

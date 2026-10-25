@@ -84,5 +84,15 @@ Tarefa agendada única (substitui o pacote de sábado), todo dia às 15h07. Se n
   - `acervo/stories.py` + robô "Preparar stories" (15h30, dia seguinte): escolhe trechos (`ciclos/rotacao.json`), corta com ffmpeg, grava a camada de texto (`render/story.html`, modo `transparente`), monta as pontes (modo `imagem`), revisa (`revisar_story`) e grava o card no painel: passou = agendado; não passou = Precisa de você. Prévias em `render/previas/stories/<data>/`.
   - Frases, CTAs, horários e regra de aceleração em `acervo/config.json` (vídeo com 3 min ou mais é acelerado 8x; cada story de 12 s usa 96 s de gravação).
   - Revisão de saúde (`revisar_saude`) vale para carrosséis e stories: saúde não vai mais para "Precisa de você" só pelo tema.
-- [ ] Etapa 3: escolha do tema, pacote do ciclo, estático com fonte, carrosséis.
+- [x] Etapa 3 (24/10/2026), desligada até a data de início:
+  - `ciclo/escolher.py` + robô "Ciclo temático" (14h50): fórmula da seção 1, notícias com pessoa, fotos pessoais (baixa do Drive, enquadra no limite do feed sem filtro, sobe para o bucket, prévia em `ciclos/fotos/`). Config e palavras de reserva em `ciclo/config.json`. Sem `ativo`, grava só `ciclos/simulacao.json`.
+  - Curadoria do Radar grava `tema_editorial` e `pessoa` (radar/CURADORIA.md).
+  - Formatos novos no render: `estatico` (capa única 1080x1350 com fonte e crédito, card IMAGEM) e `foto` (foto pessoal, só revisa a legenda). Revisão: `revisar_estatico`; licença de foto de terceiros só cc-by, cc-by-sa, domínio público ou cc0 (vale também para capas de carrossel).
+  - Sessão "Pacote do ciclo": PIPELINE.md, seção "CICLO pacote".
+
+## Para ligar o ciclo
+1. `ciclo/config.json`: "ativo": true e "inicio": primeiro dia do primeiro ciclo.
+2. `acervo/config.json`: "ativo": true.
+3. Criar a tarefa agendada "Pacote do ciclo" (todo dia 15h07, mensagem "CICLO pacote", seguir PIPELINE.md).
+4. Pausar a tarefa "Pacote semanal de conteúdo" (sábado 19h51); os pacotes antigos já na fila seguem normalmente.
 - [ ] Atualizar PIPELINE.md, temas.md e stories.md ao fim de cada etapa.

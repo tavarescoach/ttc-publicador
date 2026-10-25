@@ -177,3 +177,40 @@ O tipo vem do campo `tipo_pauta` da tese (`noticia` | `tese` | `guia`). Sem tipo
 ## Tema editorial
 
 Cada pauta, carrossel, reels e story leva um campo `tema` com um valor exato da lista em `diretrizes/temas.md`. O painel usa esse campo para o calendário (sigla, equilíbrio e alerta de fora da linha). Sem `tema`, a publicação aparece como fora da lista.
+
+## CICLO pacote (tarefa agendada "Pacote do ciclo", todo dia 15h07)
+
+Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ninguém está olhando: não pergunte nada.
+1. `git pull`. Leia `ciclo/config.json` e `ciclos/ciclos.json`. Pare sem fazer nada ("nada a fazer") se `ativo` for false,
+   ou se o último ciclo não estiver com status "escolhido", ou se o `inicio` dele não for amanhã (horário de Brasília).
+2. Leia `diretrizes/ciclo.md`, `marca.md`, `carrossel.md`, `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`.
+   Todo item leva `tema` = o `tema` do ciclo. Saúde: só afirmação defensável, com fonte; sem prescrição nem promessa.
+3. Peças (D1, D2, D3 = dias do ciclo; ids com o dia, ex. `k-2026-10-26-estatico`):
+   - **Estático 07h** de cada dia (`k-<dia>-estatico`): notícia de pessoa conhecida ligada ao tema. Comece por
+     `famosos` do ciclo; sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
+     Abra a matéria (WebFetch) e confirme o fato numa segunda fonte. Três pessoas ou fatos diferentes nos 3 dias.
+     Foto: só Wikimedia Commons. Ache o arquivo da pessoa, abra a página do arquivo e confira a licença (CC BY,
+     CC BY-SA, CC0 ou domínio público; qualquer outra, não use). Use a URL direta de upload.wikimedia.org (miniatura
+     de ~1600 px). Sem foto liberada, sem foto (capa tipográfica).
+     Pedido: `{"formato": "estatico", "id", "data", "quando": "<dia>T07:00:00-03:00", "tema", "funil": "topo", "pauta",
+     "legenda", "slides": [{"tipo": "capa", "titulo" (nomeia a pessoa, até ~60 caracteres, 1–3 palavras em **destaque**),
+     "subtitulo" (chama para o carrossel das 12h), "fonte": "Veículo, DD/MM/AAAA", "link_noticia", "foto", "credito":
+     "Foto: autor / Wikimedia Commons (CC BY-SA 4.0)", "licenca": "cc-by | cc-by-sa | dominio-publico | cc0",
+     "pagina_origem", "foco"}]}`. Só o que a notícia afirma sobre a pessoa; nunca sugerir que ela usa ou recomenda o
+     método; notícia negativa em tom informativo; menor de idade nunca. Sem MÉTODO na arte (vai na legenda).
+   - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): aprofunda o gancho do estático daquele dia, padrão
+     Decodificado de `diretrizes/carrossel.md` (9–10 slides, fontes, CTA MÉTODO). A capa pode usar a mesma foto, com o
+     mesmo crédito e licença.
+   - **Carrossel 20h** do D2 (`k-<D2>-carrossel-noite`, quando 20:00): outro ângulo do tema (guia, aplicação, objeção).
+   - **Foto pessoal 20h** do D1 e do D3 (`k-<dia>-foto`): use `fotos` do ciclo. Abra a `previa` com Read e escreva a
+     legenda: 2 a 4 linhas curtas, só o que a foto mostra (não invente lugar, aluno nem história), a ligação com o
+     tema do ciclo, "Me manda MÉTODO no direct." e 3 hashtags. Pedido: `{"formato": "foto", "id", "data", "quando",
+     "arquivo", "tema", "pauta", "legenda"}`.
+   - Escreva `render/fontes/<id>.json` para estáticos e carrosséis (diretrizes/carrossel.md, seção Fontes).
+   - Stories: nada a fazer; o robô "Preparar stories" monta os do dia seguinte sozinho.
+4. Rode `python render/revisar.py render/pedidos/<id>.json` em cada pedido e corrija todo "problema".
+5. Marque o ciclo em `ciclos/ciclos.json`: `status` "pacote_pronto", `pecas` (lista de ids). `git pull --rebase`,
+   commit ("ciclo: pacote <id>") e push. Até 3 tentativas; confira em origin/main. Se não der, deixe `status` "erro" com
+   `erro` (1 frase) e termine a resposta com "CICLO NÃO ENTREGUE: <motivo>".
+6. Espere o robô "Renderizar artes", `git pull` e abra as prévias (`render/previas/<id>.jpg`). Texto cortado, foto
+   ruim ou destaque errado: corrija e faça push de novo (no máximo 1 correção por peça).

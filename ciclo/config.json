@@ -1,0 +1,51 @@
+{
+ "ativo": false,
+ "_ativo": "false: o robô calcula e mostra a escolha em ciclos/simulacao.json, mas não cria ciclo. Virar true junto com acervo/config.json.",
+ "inicio": null,
+ "_inicio": "Data (AAAA-MM-DD) do primeiro dia do primeiro ciclo. Depois disso os ciclos se emendam de 3 em 3 dias.",
+ "dias": 3,
+ "temas": {
+  "FOR": "Treino de força",
+  "EMA": "Emagrecimento",
+  "EST": "Estilo de vida",
+  "ESP": "Esportes",
+  "GLP": "GLP-1",
+  "LON": "Longevidade",
+  "MEN": "Saúde mental",
+  "WEA": "Tecnologia e dados"
+ },
+ "centrais": [
+  "FOR",
+  "EMA",
+  "EST",
+  "ESP"
+ ],
+ "calendario": {
+  "dia-do-medico": "LON",
+  "osteoporose": "FOR",
+  "outubro-rosa": "EST",
+  "avc": "EST",
+  "novembro-azul": "FOR",
+  "diabetes": "EMA",
+  "verao": "EMA",
+  "ano-novo": "EST",
+  "educacao-fisica": "FOR",
+  "saude-mental": "MEN",
+  "dia-mundial-saude": "LON"
+ },
+ "palavras": {
+  "FOR": "for[çc]a|strength|muscula|resistance training|weightlift|levantamento|sarcopen|muscle|m[uú]scul|agachamento|squat",
+  "EMA": "emagrec|obes|weight loss|perda de peso|gordura|body fat|dieta|diet\\b|calori|metabol",
+  "EST": "\\bsono\\b|sleep|rotina|estresse|stress|sedent|postura|h[aá]bito|habit|alimenta[çc][aã]o|caminhada|walking|exerc[ií]cio|exercise|workout|treino r[aá]pido|pilates|mobilidade|degraus|suplement|supplement|fish oil",
+  "ESP": "atleta|athlete|marat|futebol|football|soccer|corrida|running|ol[ií]mp|olymp|\\bcopa\\b|esporte|sport|ciclis|triathl|nba|nfl|ufc|crossfit|hyrox",
+  "GLP": "glp-?1|ozempic|mounjaro|wegovy|semaglut|tirzepat|zepbound",
+  "LON": "longev|envelhec|aging|ageing|lifespan|healthspan|mortalid|mortality|dem[eê]ncia|dementia|alzheimer|idos|cora[çc][aã]o|heart|press[aã]o arterial|blood pressure|menopaus|estrog|[oó]sse|bone|depois dos 40|after 40",
+  "MEN": "sa[uú]de mental|mental health|ansiedade|anxiety|depress|burnout|cogni|humor|mood",
+  "WEA": "wearable|smartwatch|rel[oó]gio|oura|whoop|garmin|apple watch|intelig[eê]ncia artificial|\\bai\\b|\\bia\\b|app\\b|aplicativo|dados|tracker|monitor"
+ },
+ "foto_hora": "20:00",
+ "foto_dias": [
+  1,
+  3
+ ]
+}

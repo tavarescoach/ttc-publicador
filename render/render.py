@@ -102,6 +102,8 @@ def main():
     caminho = sys.argv[1]
     local = "--local" in sys.argv
     p = json.load(open(caminho, encoding="utf-8"))
+    if p.get("formato") == "foto":
+        return entregar_foto(p, local)
     slides = p["slides"]
     pasta_rel = f"{p['data']}/{p['id']}"
     saida = os.path.join(RAIZ, "render", "_saida", pasta_rel)
@@ -111,6 +113,9 @@ def main():
 
     fotos_falharam, cortes = [], []
     reels = p.get("formato") == "reels"
+    estatico = p.get("formato") == "estatico"
+    if estatico:
+        slides = p["slides"] = slides[:1]
     W, H = (1080, 1920) if reels else (1080, 1350)
     for i, s in enumerate(slides, 1):  # foto do repositório (quadro do vídeo) -> caminho absoluto
         if (s.get("foto") or "").startswith("render/"):
@@ -146,12 +151,12 @@ def main():
             }""")
             if cortado:
                 cortes.append(i)
-            nome = "reels-capa.png" if reels else f"carrossel-{i}.png"
+            nome = "reels-capa.png" if reels else "estatico.png" if estatico else f"carrossel-{i}.png"
             pg.screenshot(path=os.path.join(saida, nome))
             arquivos.append(f"{pasta_rel}/{nome}")
             pg.close()
             pg = nav.new_page(viewport={"width": W, "height": H})
-            if reels:
+            if reels or estatico:
                 break
         nav.close()
     print(f"{len(arquivos)} slides gerados em {saida}")
@@ -191,10 +196,25 @@ def main():
     etapa = "agendado" if rev["decisao"] == "agendado" else "pronto"
     if reels:
         gravar_card(p, [p["video"]], capa=arquivos[0], tipo="REELS", etapa=etapa)
+    elif estatico:
+        gravar_card(p, arquivos, tipo="IMAGEM", etapa=etapa)
     else:
         gravar_card(p, arquivos, etapa=etapa)
     publicar_revisoes()
     print(f"card '{p['id']}' gravado no painel como {etapa}")
+    return 0
+
+
+def entregar_foto(p, local):
+    """Foto pessoal (ciclo temático): a imagem já está no bucket (robô Escolher tema do ciclo); só revisa a legenda."""
+    rev = revisar(p)
+    salvar_revisao(rev)
+    print(f"Revisão: {rev['decisao']} · problemas={rev['problemas']} avisos={rev['avisos']}")
+    if local:
+        return 0
+    gravar_card(p, [p["arquivo"]], tipo="IMAGEM", etapa="agendado" if rev["decisao"] == "agendado" else "pronto")
+    publicar_revisoes()
+    print(f"card '{p['id']}' gravado no painel")
     return 0
 
 

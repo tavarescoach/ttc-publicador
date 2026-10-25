@@ -33,6 +33,8 @@ p strong{font-weight:700;opacity:1}
 .capa .corpo{justify-content:flex-end;padding-bottom:30px}
 .capa h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;line-height:.98;font-size:108px}
 .capa .arroba{font-size:26px;color:var(--mut);letter-spacing:1px}
+.capa .sub{font-size:38px;line-height:1.3;margin-top:22px;font-weight:500}
+.capa .corpo .fonte{margin-top:18px}
 .capa .cred{font-size:20px;color:var(--mut);letter-spacing:.3px}
 /* número gigante */
 .num{font-weight:900;letter-spacing:-.06em;line-height:.85;font-size:300px;color:var(--txt)}
@@ -56,9 +58,11 @@ const tam = t => len(t) > 90 ? "t-m" : len(t) > 55 ? "t-l" : "t-xl";
 let h = "", fundo = S.fundo || "marinho", marca = false;
 
 if (S.tipo === "capa"){
-  const rodCapa = S.credito ? `<div class="rod"><span class="cred">${esc(S.credito)}</span><span>${I}/${N}</span></div>` : rod;
+  // estático (N === 1): sem numeração; "subtitulo" chama para o carrossel e "fonte" traz o veículo e a data da notícia
+  const pag = N > 1 ? `<span>${I}/${N}</span>` : `<span>@tavarescoach</span>`;
+  const rodCapa = S.credito ? `<div class="rod"><span class="cred">${esc(S.credito)}</span>${pag}</div>` : rod;
   h = `${S.foto ? `<div class="bg" style="background-image:url('${S.foto}');background-position:${esc(S.foco || "center")}"></div><div class="ve"></div>` : ""}
-    ${topo}<div class="corpo"><div class="arroba">@tavarescoach</div><h1>${fmt(S.titulo)}</h1></div>${rodCapa}`;
+    ${topo}<div class="corpo">${N > 1 ? `<div class="arroba">@tavarescoach</div>` : ""}<h1>${fmt(S.titulo)}</h1>${S.subtitulo ? `<p class="sub">${fmt(S.subtitulo)}</p>` : ""}${S.fonte ? `<div class="fonte">Fonte: ${fmt(S.fonte)}</div>` : ""}</div>${rodCapa}`;
   marca = !S.foto;
 } else if (S.tipo === "texto_foto"){
   h = `${topo}<div class="corpo" style="justify-content:${S.foto ? "flex-start" : "center"};gap:40px">
