@@ -21,6 +21,7 @@ import datetime as dt
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -79,8 +80,16 @@ def escolher_trecho(slot, data, indice, rotacao, cfg):
     cada um com no máximo `parte_max_s`.
     """
     pasta = {"trabalho": "timelapse-trabalho", "treino": "timelapse-treino"}[slot]
-    videos = [a for a in indice.get("pastas", {}).get(pasta, [])
-              if a.get("mimeType", "").startswith("video/") and duracao_s(a) >= cfg.get("clipe_min_s", 1)]
+    videos, vistos_chave = [], set()
+    for a in indice.get("pastas", {}).get(pasta, []):
+        if not a.get("mimeType", "").startswith("video/") or duracao_s(a) < cfg.get("clipe_min_s", 1):
+            continue
+        # cópias do mesmo arquivo ("nome (1).mp4", mesmo tamanho) contam uma vez só
+        chave = (re.sub(r" \(\d+\)(?=\.\w+$)", "", a.get("name", "")).lower(), a.get("size"))
+        if chave in vistos_chave:
+            continue
+        vistos_chave.add(chave)
+        videos.append(a)
     if not videos:
         return None
     hoje = dt.date.fromisoformat(data)
