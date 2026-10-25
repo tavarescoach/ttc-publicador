@@ -1,0 +1,40 @@
+name: Listar acervo
+
+# Lista a pasta "TTC Acervo" do Google Drive e grava acervo/indice.json.
+# Roda todo dia às 14h40 (Brasília), antes da escolha do tema do ciclo, e quando disparado.
+
+on:
+  schedule:
+    - cron: "40 17 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: acervo
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Listar o Drive
+        env:
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
+        run: python acervo/listar.py
+      - name: Salvar no repositório
+        run: |
+          git add acervo/indice.json
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "acervo: índice"
+            git pull --rebase
+            git push
+          fi
