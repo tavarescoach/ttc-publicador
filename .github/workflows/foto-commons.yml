@@ -1,35 +1,27 @@
 name: Buscar foto no Commons
 
 # Diagnóstico: mostra a foto que o robô "Renderizar artes" usaria para uma pessoa (licença conferida).
-
-permissions:
-  contents: write
+# Grava o resultado em ciclos/teste/foto-commons.json.
 
 on:
   workflow_dispatch:
     inputs:
       pessoa:
-        descriptipermissions:
-  contents: write
-
-on: "Nome da pessoa"
+        description: "Nome da pessoa"
         required: true
+
+permissions:
+  contents: write
 
 jobs:
   buscar:
-    runs-permissions:
-  contents: write
-
-on: ubuntu-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-versipermissions:
-  contents: write
-
-on: "3.12"
+          python-version: "3.12"
       - name: Buscar
         run: |
           mkdir -p ciclos/teste
