@@ -1,26 +1,37 @@
 {
- "atualizado_em": "2026-10-24T06:29:55-03:00",
+ "atualizado_em": "2026-10-24T14:23:53-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
-   "canais": 9,
-   "nota_max": 72,
+   "canais": 10,
+   "nota_max": 80,
    "titulos": [
+    "Ozempic e Wegovy podem atrasar o envelhecimento? Os cientistas estão a descobrir novos efeitos destes medicamentos",
     "Saiba por que canetas emagrecedoras são associadas a menor consumo de álcool | SEGS Portal Nacional de...",
-    "People are taking an unapproved weight-loss drug. AI found something surprising",
-    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says"
+    "People are taking an unapproved weight-loss drug. AI found something surprising"
    ]
   },
   {
-   "assunto": "emagrecimento-celebridades",
-   "tema": "cultura",
+   "assunto": "academia-feminina",
+   "tema": "comportamento",
    "canais": 3,
-   "nota_max": 62,
+   "nota_max": 80,
    "titulos": [
-    "Adriana Bombom critica uso de canetas emagrecedoras para alcançar 'corpo do Carnaval'",
-    "Inside Trisha Yearwood’s Weight Loss Journey: Everything the Country Singer Has Said About Her Health",
-    "Chrissy Metz exibe perda de 63 libras em vestido justo"
+    "The Return of the Women-Only Gym",
+    "The Return of the Women-Only Gym",
+    "Humor sobre o que mulheres vivem na academia"
+   ]
+  },
+  {
+   "assunto": "hyrox-tendencia",
+   "tema": "esporte",
+   "canais": 3,
+   "nota_max": 72,
+   "titulos": [
+    "CrossFit, Hyrox etc.: risco ou excelente exercício?",
+    "Competição inspirada no HYROX reúne corrida e exercícios funcionais",
+    "Levantar pesado, correr longe: treino híbrido sem complicar"
    ]
   },
   {
@@ -35,17 +46,6 @@
    ]
   },
   {
-   "assunto": "hybrid-race-acre",
-   "tema": "esporte",
-   "canais": 3,
-   "nota_max": 32,
-   "titulos": [
-    "Hybrid Race reúne 100 atletas no Sesi neste sábado",
-    "Hybrid Race será disputado no ginásio do Sesi com 100 atletas",
-    "Hybrid Race 2026 será realizado no Sesi com 100 atletas confirmados"
-   ]
-  },
-  {
    "assunto": "polilaminina-anvisa",
    "tema": "saude",
    "canais": 3,
@@ -55,16 +55,20 @@
     "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora",
     "Anvisa registra 9 mortes em uso compassivo de polilaminina e impõe restrições; pesquisadora questiona"
    ]
+  },
+  {
+   "assunto": "ia-data-center",
+   "tema": "tecnologia",
+   "canais": 3,
+   "nota_max": 12,
+   "titulos": [
+    "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
+    "Fox News AI Newsletter: What we saw inside a massive Texas data center",
+    "Data Centers Menores e Regulares Buscam Alternativas para Reduzir Custos"
+   ]
   }
  ],
  "top": [
-  {
-   "titulo": "Just 4 minutes a day can dramatically improve strength after 65",
-   "canal": "ScienceDaily",
-   "assunto": "forca-4-minutos",
-   "nota": 86,
-   "gancho": "Quatro minutos de força por dia mudaram a força de idosos."
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -106,6 +110,13 @@
    "assunto": "corrida-forca",
    "nota": 80,
    "gancho": "Mais quilômetros não deixaram sua corrida mais rápida."
+  },
+  {
+   "titulo": "Ozempic e Wegovy podem atrasar o envelhecimento? Os cientistas estão a descobrir novos efeitos destes medicamentos",
+   "canal": "CNN Portugal",
+   "assunto": "glp1-mercado-e-efeitos",
+   "nota": 80,
+   "gancho": "A caneta pode atrasar o envelhecimento. Seu músculo não entra nessa conta."
   },
   {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
