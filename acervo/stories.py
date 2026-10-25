@@ -140,21 +140,90 @@ def baixar_video(arq, destino, local_dir=None):
 
 
 def montar_video(origens, camada_png, partes, saida):
-    """Corta cada parte, acelera, enquadra em 1080x1920, emenda, grava a camada de texto e comprime (sem áudio)."""
+    """Corta cada parte, acelera, enquadra em 1080x1920, emenda, grava a camada de texto e comprime (sem áudio).
+    camada_png None: só a base (para achar o rosto antes de posicionar o texto)."""
     cmd, filtros = ["ffmpeg", "-y", "-loglevel", "error"], []
     for i, (o, t) in enumerate(zip(origens, partes)):
         cmd += ["-ss", f"{t['inicio']:.2f}", "-t", f"{t['janela']:.2f}", "-i", o]
         filtros.append(f"[{i}:v]setpts=(PTS-STARTPTS)/{t['fator']},scale=1080:1920:force_original_aspect_ratio=increase,"
                        f"crop=1080:1920,fps=30,setsar=1,format=yuv420p[p{i}]")
     n = len(partes)
-    cmd += ["-i", camada_png]
-    filtro = ";".join(filtros) + ";" + "".join(f"[p{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0[v];[v][{n}:v]overlay=0:0[o]"
+    filtro = ";".join(filtros) + ";" + "".join(f"[p{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0[v]"
+    if camada_png:
+        cmd += ["-i", camada_png]
+        filtro += f";[v][{n}:v]overlay=0:0[o]"
+    else:
+        filtro += ";[v]null[o]"
     total = sum(t["saida"] for t in partes)
     cmd += ["-filter_complex", filtro, "-map", "[o]", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "24",
             "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-t", f"{total:.2f}", saida]
     subprocess.run(cmd, check=True)
     if os.path.getsize(saida) > 45 * 1024 * 1024:
         raise RuntimeError(f"{saida} passou de 45 MB")
+
+
+# Caixa de texto nos vídeos: embaixo por padrão; sobe quando há rosto na faixa de baixo e não na de cima.
+CAIXA = {"baixo": (1070, 1560), "cima": (400, 920)}
+
+
+def onde_tem_rosto(video, amostras=8):
+    """Quanto de rosto (área somada nos quadros) cai em cada faixa de CAIXA. Detectores de rosto do OpenCV 4."""
+    import cv2
+    det = [cv2.CascadeClassifier(cv2.data.haarcascades + n)
+           for n in ("haarcascade_frontalface_default.xml", "haarcascade_profileface.xml")]
+    cap = cv2.VideoCapture(video)
+    total = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) or 1
+    achou = {k: 0 for k in CAIXA}
+    for i in range(amostras):
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int(total * (i + 0.5) / amostras))
+        ok, img = cap.read()
+        if not ok:
+            continue
+        cinza = cv2.equalizeHist(cv2.cvtColor(cv2.resize(img, (540, 960)), cv2.COLOR_BGR2GRAY))
+        for d in det:
+            for (x, y, w, h) in d.detectMultiScale(cinza, scaleFactor=1.1, minNeighbors=6, minSize=(50, 50)):
+                topo, base = y * 2, (y + h) * 2
+                for k, (a, b) in CAIXA.items():
+                    achou[k] += max(0, min(base, b) - max(topo, a)) * w * 2  # área do rosto dentro da faixa
+    cap.release()
+    return achou
+
+
+def posicao_texto(video):
+    try:
+        r = onde_tem_rosto(video)
+    except Exception as e:  # sem OpenCV ou vídeo ilegível: posição padrão
+        print(f"[aviso] detecção de rosto falhou ({e}); texto embaixo")
+        return "baixo", {}
+    return ("cima" if r["baixo"] > r["cima"] * 1.2 else "baixo"), r
+
+
+def gravar_camada(base, camada_png, saida):
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", base, "-i", camada_png, "-filter_complex",
+                    "[0:v][1:v]overlay=0:0[o]", "-map", "[o]", "-an", "-c:v", "libx264", "-preset", "veryfast",
+                    "-crf", "24", "-pix_fmt", "yuv420p", "-movflags", "+faststart", saida], check=True)
+    if os.path.getsize(saida) > 45 * 1024 * 1024:
+        raise RuntimeError(f"{saida} passou de 45 MB")
+
+
+def story_em_video(s, tela, tmp, nome, local_dir=None):
+    """Monta o vídeo do story: base, rosto, camada de texto na faixa livre. Devolve (arquivo, posição)."""
+    from story import renderizar
+    origens = []
+    for t in s["trecho"]:
+        origem = os.path.join(tmp, f"origem-{t['video']['id']}")
+        if not os.path.exists(origem):
+            baixar_video(t["video"], origem, local_dir)
+        origens.append(origem)
+    base = os.path.join(tmp, f"base-{nome}.mp4")
+    montar_video(origens, None, s["trecho"], base)
+    pos, rostos = posicao_texto(base)
+    camada = os.path.join(tmp, f"camada-{nome}.png")
+    renderizar([{**tela, "arquivo": os.path.relpath(camada, RAIZ), "transparente": True, "topo": CAIXA[pos][0]}])
+    local = os.path.join(tmp, f"story-{nome}.mp4")
+    gravar_camada(base, camada, local)
+    print(f"story {nome}: texto {pos} (rostos {rostos})")
+    return local, pos
 
 
 def quadro(video, saida_jpg):
@@ -246,16 +315,7 @@ def main(argv):
         arq_bucket = f"{data}/story-{nome}.{'mp4' if video else 'png'}"
         tela = {k: s[k] for k in ("rotulo", "titulo", "texto", "imagem") if s.get(k)}
         if video:
-            camada = os.path.join(tmp, f"camada-{nome}.png")
-            renderizar([{**tela, "arquivo": os.path.relpath(camada, RAIZ), "transparente": True, "topo": 400}])
-            origens = []
-            for t in s["trecho"]:
-                origem = os.path.join(tmp, f"origem-{t['video']['id']}")
-                if not os.path.exists(origem):
-                    baixar_video(t["video"], origem, local_dir)
-                origens.append(origem)
-            local = os.path.join(tmp, f"story-{nome}.mp4")
-            montar_video(origens, camada, s["trecho"], local)
+            local, pos = story_em_video(s, tela, tmp, nome, local_dir)
             quadro(local, os.path.join(previas, f"story-{nome}.jpg"))
         else:
             local = os.path.join(tmp, f"story-{nome}.png")
@@ -263,7 +323,7 @@ def main(argv):
             shutil.copy(local, os.path.join(previas, f"story-{nome}.png"))
 
         etapa = rev["decisao"] if rev["decisao"] == "agendado" else "pronto"
-        resumo.append({"id": s["id"], "quando": s["quando"], "arquivo": arq_bucket, "decisao": rev["decisao"],
+        resumo.append({"id": s["id"], "quando": s["quando"], "arquivo": arq_bucket, "decisao": rev["decisao"], "texto": pos if video else None,
                        "problemas": rev["problemas"],
                        "partes": [{"video": t["video"]["name"], "k": t["k"], "s": round(t["saida"], 1)}
                                   for t in s["trecho"]] if video else None})

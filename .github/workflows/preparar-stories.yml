@@ -39,7 +39,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-inter
-          pip install playwright==1.47.0
+          pip install playwright==1.47.0 "opencv-python-headless<5"
           python -m playwright install --with-deps chromium
       - name: Atualizar o índice do acervo
         env:

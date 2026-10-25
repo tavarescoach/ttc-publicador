@@ -67,6 +67,7 @@ Rotação dos time-lapses:
 - Trechos de 12 s (início avança de 12 em 12 s). Escolha: o trecho usado há mais tempo.
 - Nunca o mesmo vídeo em dias seguidos no mesmo horário; nunca o mesmo trecho em 30 dias nem dentro do ciclo.
 - O robô corta, grava a frase na tela (identidade LT, área segura), comprime abaixo de 50 MB e envia.
+- Posição do texto nos vídeos: caixa escura no terço de baixo por padrão; o robô procura rostos em 8 quadros (OpenCV 4) e sobe a caixa quando há mais rosto embaixo do que em cima.
 
 ## 5. Revisão automática
 - Stories passam por `render/revisar.py` com as mesmas barras dos carrosséis, mais: tela com mais de 15 palavras; story sem post ou CTA de destino.

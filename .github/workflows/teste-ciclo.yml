@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-inter
-          pip install playwright==1.47.0 pillow
+          pip install playwright==1.47.0 pillow "opencv-python-headless<5"
           python -m playwright install --with-deps chromium
       - name: Renderizar estático e carrossel
         env:

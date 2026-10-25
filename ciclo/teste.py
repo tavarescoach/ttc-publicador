@@ -47,16 +47,8 @@ def main(data):
         nome = s["id"].split("-st-")[1]
         tela = {k: s[k] for k in ("rotulo", "titulo", "texto", "imagem") if s.get(k)}
         if "trecho" in s:
-            camada = os.path.join(tmp, f"camada-{nome}.png")
-            renderizar([{**tela, "arquivo": os.path.relpath(camada, RAIZ), "transparente": True, "topo": 400}])
-            origens = []
-            for t in s["trecho"]:
-                o = os.path.join(tmp, f"origem-{t['video']['id']}")
-                if not os.path.exists(o):
-                    stories.baixar_video(t["video"], o)
-                origens.append(o)
-            local, tipo, ext = os.path.join(tmp, f"story-{nome}.mp4"), "video/mp4", "mp4"
-            stories.montar_video(origens, camada, s["trecho"], local)
+            local, _ = stories.story_em_video(s, tela, tmp, nome)
+            tipo, ext = "video/mp4", "mp4"
         else:
             local, tipo, ext = os.path.join(tmp, f"story-{nome}.png"), "image/png", "png"
             renderizar([{**tela, "arquivo": os.path.relpath(local, RAIZ), "topo": 1220, "imagem_topo": 360}])
