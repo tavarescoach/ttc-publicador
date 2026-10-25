@@ -153,7 +153,7 @@ def _ord(d):
 # ------------------------------------------------------------ fotos pessoais
 def escolher_fotos(n, data_ref, rotacao):
     fotos = [f for f in ler(os.path.join(RAIZ, "acervo", "indice.json"), {}).get("pastas", {}).get("fotos", [])
-             if f.get("mimeType", "").startswith("image/")]
+             if f.get("mimeType") in ("image/jpeg", "image/png")]
     usadas = {u["id"]: u["data"] for u in rotacao.get("fotos", [])}
     if not fotos:
         return []
