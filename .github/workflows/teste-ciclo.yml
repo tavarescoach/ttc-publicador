@@ -1,0 +1,62 @@
+name: Teste do ciclo
+
+# Teste de ponta a ponta de um dia do ciclo temático: renderiza o estático e o carrossel de ciclos/teste/,
+# monta os stories e publica tudo AGORA, na ordem do dia, com 40 s entre as publicações. Só roda quando disparado.
+
+on:
+  workflow_dispatch:
+    inputs:
+      data:
+        description: "Pasta de mídia (AAAA-MM-DD)"
+        required: true
+        default: "2026-10-24"
+
+concurrency:
+  group: teste-ciclo
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar ffmpeg, navegador e fonte
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-inter
+          pip install playwright==1.47.0 pillow
+          python -m playwright install --with-deps chromium
+      - name: Renderizar estático e carrossel
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          python render/render.py ciclos/teste/teste-ciclo-estatico.json
+          python render/render.py ciclos/teste/teste-ciclo-carrossel.json
+      - name: Stories e publicação
+        env:
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          MIDIA_BASE: ${{ secrets.MIDIA_BASE }}
+        run: python ciclo/teste.py "${{ github.event.inputs.data }}"
+      - name: Salvar resultado
+        if: always()
+        run: |
+          git add ciclos/teste render/previas render/revisoes || true
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "teste do ciclo: resultado"
+            git pull --rebase
+            git push
+          fi
