@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-24T23:42-03:00",
+ "gerado_em": "2026-10-24T23:44-03:00",
  "pastas": {
   "fotos": [
    {
@@ -4417,7 +4417,12 @@
     "id": "1I_xRcAPmA7LTt875KbeUB7E3sJmiNLx2",
     "name": "IMG_0940.MP4",
     "createdTime": "2026-10-25T02:42:13.184Z",
-    "modifiedTime": "2026-10-25T05:25:38.000Z"
+    "modifiedTime": "2026-10-25T05:25:38.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "42034"
+    }
    },
    {
     "mimeType": "video/mp4",
@@ -4516,7 +4521,12 @@
     "id": "1GDrDeV9CWmtgoLuZgg8HNFqnLXdP0hfi",
     "name": "IMG_1008.MP4",
     "createdTime": "2026-10-25T02:42:22.994Z",
-    "modifiedTime": "2026-10-25T05:25:50.000Z"
+    "modifiedTime": "2026-10-25T05:25:50.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "27181"
+    }
    },
    {
     "mimeType": "video/mp4",
@@ -4524,7 +4534,12 @@
     "id": "1PLB4x4pAB8rQPWbTgBBXxmQvH_EOw3Sj",
     "name": "IMG_1106.MP4",
     "createdTime": "2026-10-25T02:42:28.200Z",
-    "modifiedTime": "2026-10-25T05:25:54.000Z"
+    "modifiedTime": "2026-10-25T05:25:54.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "43334"
+    }
    },
    {
     "mimeType": "video/mp4",
@@ -4532,7 +4547,12 @@
     "id": "1eJgPPULcIWcFTcGKCvpckLzUhYXhVgF4",
     "name": "IMG_1109.MP4",
     "createdTime": "2026-10-25T02:42:32.692Z",
-    "modifiedTime": "2026-10-25T05:25:52.000Z"
+    "modifiedTime": "2026-10-25T05:25:52.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "32434"
+    }
    },
    {
     "mimeType": "video/mp4",
@@ -4540,7 +4560,25 @@
     "id": "1TPSZ8Wg9gjB6TGeaFeMwb1IIDVl9hEVZ",
     "name": "IMG_1110.MP4",
     "createdTime": "2026-10-25T02:42:37.652Z",
-    "modifiedTime": "2026-10-25T05:25:52.000Z"
+    "modifiedTime": "2026-10-25T05:25:52.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "37601"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "14382511",
+    "id": "1nDtWQn05fKr8IjuEJk9flZmWldNBiE6N",
+    "name": "IMG_1113.MP4",
+    "createdTime": "2026-10-25T02:42:43.046Z",
+    "modifiedTime": "2026-10-25T05:25:36.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "31413"
+    }
    },
    {
     "mimeType": "image/jpeg",
@@ -4567,6 +4605,131 @@
      "height": 2048,
      "time": "2026:07:27 09:41:49"
     }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "1224161",
+    "id": "1ngCZvrTG0xxnUL2nws0jEAyRcv-u1RpR",
+    "name": "IMG_1115.MOV",
+    "createdTime": "2026-10-25T02:42:45.119Z",
+    "modifiedTime": "2026-10-25T05:25:38.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 960,
+     "durationMillis": "1904"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "7019122",
+    "id": "177PMLeM5m2Jz0z8Fe-PFP7KS5FpXyidk",
+    "name": "IMG_1116.MP4",
+    "createdTime": "2026-10-25T02:42:48.674Z",
+    "modifiedTime": "2026-10-25T05:25:36.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "15369"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "24072637",
+    "id": "15MNMxF6ooZ5fm_BtdTKlqC_K2nb06UkB",
+    "name": "IMG_1118.MP4",
+    "createdTime": "2026-10-25T02:43:06.977Z",
+    "modifiedTime": "2026-10-25T05:25:36.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "52519"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "13548628",
+    "id": "1jC5LmPkq1vQX4XhY8ODA_rFmwtN_b2mz",
+    "name": "IMG_1120.MP4",
+    "createdTime": "2026-10-25T02:43:22.978Z",
+    "modifiedTime": "2026-10-25T05:26:16.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "29344"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "6047635",
+    "id": "1RVfrLr1uaH0Y7_cZY3n0veAY_Pegi8fX",
+    "name": "IMG_1122.MP4",
+    "createdTime": "2026-10-25T02:43:10.477Z",
+    "modifiedTime": "2026-10-25T05:25:46.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "13434"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "25946838",
+    "id": "1AUs65laMTsykgCq7olVzaAO29Jac0Phx",
+    "name": "IMG_1123.MP4",
+    "createdTime": "2026-10-25T02:42:57.810Z",
+    "modifiedTime": "2026-10-25T05:25:42.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "57556"
+    }
+   },
+   {
+    "mimeType": "video/quicktime",
+    "size": "10782453",
+    "id": "105P0U9cgJZ993em2d7zuWAUIW9TuK27S",
+    "name": "IMG_1124.MOV",
+    "createdTime": "2026-10-25T02:43:16.708Z",
+    "modifiedTime": "2026-10-25T05:26:16.000Z",
+    "videoMediaMetadata": {
+     "width": 860,
+     "height": 1306,
+     "durationMillis": "6321"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "15657291",
+    "id": "1UbiSUGs_QPYYw1jcuHqSvKspGvb-sGrp",
+    "name": "IMG_1125.MP4",
+    "createdTime": "2026-10-25T02:43:47.146Z",
+    "modifiedTime": "2026-10-25T05:25:40.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "34756"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "26470612",
+    "id": "1Wxzsxxbi8bGeSa6aN84nYVtO29DWqBAd",
+    "name": "IMG_1126.MP4",
+    "createdTime": "2026-10-25T02:43:32.417Z",
+    "modifiedTime": "2026-10-25T05:25:56.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "58659"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "22561979",
+    "id": "1g0E0PTlGIT4Dtk8u3WjIV0KC6Y86YTSI",
+    "name": "IMG_1127.MP4",
+    "createdTime": "2026-10-25T02:43:41.165Z",
+    "modifiedTime": "2026-10-25T05:25:48.000Z"
    },
    {
     "mimeType": "video/quicktime",
@@ -4714,6 +4877,19 @@
    {
     "mimeType": "video/mp4",
     "size": "11513913",
+    "id": "1FLcIqKTrV19-xehRrgUcJnS0Xt3egHcD",
+    "name": "IMG_1325 (1).MP4",
+    "createdTime": "2026-10-25T02:43:51.061Z",
+    "modifiedTime": "2026-10-25T05:25:58.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "25401"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "11513913",
     "id": "1vMg0DvQ6cNcInMGwZllirCsBLxaWFDcY",
     "name": "IMG_1325.MP4",
     "createdTime": "2026-10-25T02:34:25.826Z",
@@ -4722,6 +4898,19 @@
      "width": 720,
      "height": 1280,
      "durationMillis": "25401"
+    }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "15347247",
+    "id": "1UjAoCcT6n_MVbouJcI-lgCMbkuPXhefy",
+    "name": "IMG_1337 (1).MP4",
+    "createdTime": "2026-10-25T02:43:55.777Z",
+    "modifiedTime": "2026-10-25T05:26:36.000Z",
+    "videoMediaMetadata": {
+     "width": 720,
+     "height": 1280,
+     "durationMillis": "34069"
     }
    },
    {
@@ -4753,6 +4942,14 @@
    {
     "mimeType": "video/mp4",
     "size": "20774022",
+    "id": "1LDllebD8J2ZKlCALlMvZfdoxAAnu8INA",
+    "name": "IMG_1355 (1).MP4",
+    "createdTime": "2026-10-25T02:44:01.478Z",
+    "modifiedTime": "2026-10-25T05:26:04.000Z"
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "20774022",
     "id": "1ilvbJaSPannJAS3sQOlTYhmwzpdCPuFU",
     "name": "IMG_1355.MP4",
     "createdTime": "2026-10-25T02:33:45.181Z",
@@ -4766,6 +4963,14 @@
    {
     "mimeType": "video/mp4",
     "size": "18021169",
+    "id": "1hTNClKdD3w3rnVTiyrnNnk31LdZitroc",
+    "name": "IMG_1356 (1).MP4",
+    "createdTime": "2026-10-25T02:44:06.672Z",
+    "modifiedTime": "2026-10-25T05:26:00.000Z"
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "18021169",
     "id": "1z5PksXQ30uVlcFVWsC_9QALmHb3LMyEl",
     "name": "IMG_1356.MP4",
     "createdTime": "2026-10-25T02:33:53.247Z",
@@ -4775,6 +4980,14 @@
      "height": 1280,
      "durationMillis": "39751"
     }
+   },
+   {
+    "mimeType": "video/mp4",
+    "size": "39625737",
+    "id": "1IYYCB-PvD8xIf8djG9a_71Vnu4QxFJsV",
+    "name": "IMG_1414 (1).MP4",
+    "createdTime": "2026-10-25T02:44:15.551Z",
+    "modifiedTime": "2026-10-25T05:26:38.000Z"
    },
    {
     "mimeType": "video/mp4",
