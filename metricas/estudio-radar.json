@@ -1,20 +1,20 @@
 {
- "atualizado_em": "2026-10-25T14:20:35-03:00",
+ "atualizado_em": "2026-10-26T06:35:00-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
    "canais": 4,
-   "nota_max": 80,
+   "nota_max": 84,
    "titulos": [
-    "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags",
-    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says",
-    "Boom in weight-loss drugs could lead to fall in beer sales, Heineken warns UK pubs"
+    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
+    "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal",
+    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says"
    ]
   },
   {
    "assunto": "alcool-beber-menos",
-   "tema": "comportamento",
+   "tema": "saude",
    "canais": 3,
    "nota_max": 82,
    "titulos": [
@@ -30,45 +30,52 @@
    "nota_max": 78,
    "titulos": [
     "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
-    "Tofu é eleito a melhor proteína do mundo e a de menor impacto ambiental",
-    "Os perigos do excesso de proteína para os adolescentes"
+    "Monster vai lançar bebida com proteína em 2027",
+    "Pequenos hábitos que fazem diferença: creatina, whey, cafeína"
    ]
   },
   {
-   "assunto": "vacina-cancer-melanoma",
-   "tema": "ciencia",
+   "assunto": "f1-gp-eua",
+   "tema": "esporte",
    "canais": 3,
-   "nota_max": 48,
+   "nota_max": 22,
    "titulos": [
-    "Vacina contra câncer reduz em 42% risco de morte ou recidiva de melanoma",
-    "Melanoma Vaccine Ushers in New Hope for Cancer Patients",
-    "Experimental mRNA vaccine cuts risk that melanoma returns by 42%"
-   ]
-  },
-  {
-   "assunto": "polilaminina-anvisa",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 15,
-   "titulos": [
-    "Anvisa Restringe Acesso À Polilaminina após Nove Mortes e Pesquisadora Critica Decisão",
-    "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora",
-    "Anvisa registra 9 mortes em uso compassivo de polilaminina e impõe restrições; pesquisadora questiona"
+    "Hamilton É o Mais Rápido e Completa Domínio da Ferrari em Treino Livre para GP dos EUA",
+    "F1: Hamilton lidera terceiro treino livre para o GP dos Estados Unidos",
+    "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º"
    ]
   },
   {
    "assunto": "ia-data-center",
    "tema": "tecnologia",
    "canais": 3,
-   "nota_max": 12,
+   "nota_max": 14,
    "titulos": [
+    "Big, noisy and coming to a town near you - why the data centre backlash is growing",
     "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
-    "Fox News AI Newsletter: What we saw inside a massive Texas data center",
-    "Data Centers Menores e Regulares Buscam Alternativas para Reduzir Custos"
+    "Fox News AI Newsletter: What we saw inside a massive Texas data center"
+   ]
+  },
+  {
+   "assunto": "meghan-pai",
+   "tema": "cultura",
+   "canais": 3,
+   "nota_max": 5,
+   "titulos": [
+    "Meghan ‘deeply distressed’ over child sex abuse image allegations against father",
+    "Meghan Markle Responds to Child Pornography Allegations Against Her Father",
+    "Meghan Markle’s Father Was Accused of Sexually Abusing a Child in 2018 Letter to Police: Report"
    ]
   }
  ],
  "top": [
+  {
+   "titulo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
+   "canal": "Estadão Saúde",
+   "assunto": "glp1-mercado-e-efeitos",
+   "nota": 84,
+   "gancho": "Seu pai emagreceu com a caneta. Quanto da perda foi músculo?"
+  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -96,13 +103,6 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
-  },
-  {
-   "titulo": "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags",
-   "canal": "Reuters",
-   "assunto": "glp1-mercado-e-efeitos",
-   "nota": 80,
-   "gancho": "Metade de quem usa caneta começou a tomar suplemento por conta própria."
   },
   {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
