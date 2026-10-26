@@ -1,26 +1,26 @@
 {
- "atualizado_em": "2026-10-26T06:35:00-03:00",
+ "atualizado_em": "2026-10-26T14:25:00-03:00",
  "em_alta": [
   {
-   "assunto": "glp1-mercado-e-efeitos",
-   "tema": "saude",
-   "canais": 4,
-   "nota_max": 84,
-   "titulos": [
-    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
-    "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal",
-    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says"
-   ]
-  },
-  {
    "assunto": "alcool-beber-menos",
-   "tema": "saude",
-   "canais": 3,
+   "tema": "comportamento",
+   "canais": 4,
    "nota_max": 82,
    "titulos": [
     "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
     "Just two drinks a day may be far riskier than you think",
-    "Catholic alcohol consumption drops to record low as Americans rethink moderate drinking habits"
+    "Exercise helps woman recover from partying life"
+   ]
+  },
+  {
+   "assunto": "glp1-mercado-e-efeitos",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 84,
+   "titulos": [
+    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
+    "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal",
+    "EXCLUSIVE: Heineken document reveals worries over weight-loss drugs and beer sales"
    ]
   },
   {
@@ -35,36 +35,14 @@
    ]
   },
   {
-   "assunto": "f1-gp-eua",
-   "tema": "esporte",
+   "assunto": "mercado-financeiro",
+   "tema": "negocio",
    "canais": 3,
-   "nota_max": 22,
+   "nota_max": 8,
    "titulos": [
-    "Hamilton É o Mais Rápido e Completa Domínio da Ferrari em Treino Livre para GP dos EUA",
-    "F1: Hamilton lidera terceiro treino livre para o GP dos Estados Unidos",
-    "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º"
-   ]
-  },
-  {
-   "assunto": "ia-data-center",
-   "tema": "tecnologia",
-   "canais": 3,
-   "nota_max": 14,
-   "titulos": [
-    "Big, noisy and coming to a town near you - why the data centre backlash is growing",
-    "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
-    "Fox News AI Newsletter: What we saw inside a massive Texas data center"
-   ]
-  },
-  {
-   "assunto": "meghan-pai",
-   "tema": "cultura",
-   "canais": 3,
-   "nota_max": 5,
-   "titulos": [
-    "Meghan ‘deeply distressed’ over child sex abuse image allegations against father",
-    "Meghan Markle Responds to Child Pornography Allegations Against Her Father",
-    "Meghan Markle’s Father Was Accused of Sexually Abusing a Child in 2018 Letter to Police: Report"
+    "The markets are starting to act seriously weird. Blame AI",
+    "Ather Energy posts first quarterly profit, shares rise 10%",
+    "Gestora de R$ 100 bi reduz risco no crédito privado, zera exposição à saúde e vê força em FIDCs"
    ]
   }
  ],
