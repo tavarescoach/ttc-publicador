@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-25T06:45:00-03:00",
+ "atualizado_em": "2026-10-26T06:40:00-03:00",
  "origem": "Ponto de partida tirado do que o Luan já salvou ou transformou em pauta no Radar. As referências do botão Ensinar o radar refinam a partir daqui.",
  "referencias_analisadas": [
   "450bc8ab660caf33",
@@ -31,7 +31,14 @@
   "a116c1252f0fa7bb",
   "193be3799fc5b610",
   "f74bd8ccfa85b793",
-  "de3036843337944d"
+  "de3036843337944d",
+  "b3c57b5dad93d5cc",
+  "1e9d1067b94daa83",
+  "496d2b94fc48d231",
+  "f9a0df8bafa2dcac",
+  "d9a2b4456fce4325",
+  "eeb4cca812ddd3ea",
+  "cd62321710681dd7"
  ],
  "aprendido": {
   "450bc8ab660caf33": "Hábitos e vícios do adulto (álcool, tolerância que cai com a idade) lidos pela ciência e pela cultura pop, no tom de revista masculina.",
@@ -63,9 +70,16 @@
   "a116c1252f0fa7bb": "Longevidade como autonomia e capacidade física; o 35+ quer um corpo que funcione, não virar atleta.",
   "193be3799fc5b610": "Narrativa visual: protagonista, desafio, dificuldade e desfecho; a história do aluno, com autorização.",
   "f74bd8ccfa85b793": "Escolha binária de academia faz o público se posicionar e comentar.",
-  "de3036843337944d": "Potência explosiva como capacidade que o adulto 40+ esquece de treinar."
+  "de3036843337944d": "Potência explosiva como capacidade que o adulto 40+ esquece de treinar.",
+  "b3c57b5dad93d5cc": "Reels virais de treino funcional e performance: pegar o ritmo e a demonstração, deixar a promessa de resultado.",
+  "1e9d1067b94daa83": "Divulgação científica de fisiologia, medicina e treino com alto valor educacional: mecanismo explicado em linguagem acessível.",
+  "496d2b94fc48d231": "Página de ciência que mistura notícia do mercado fitness (proteína, lançamentos) com ranking de dados citando a fonte.",
+  "f9a0df8bafa2dcac": "Autoridade acadêmica brasileira em treinamento de força e métodos de hipertrofia, que forma opinião no nicho.",
+  "d9a2b4456fce4325": "Bastidor e tendência do mercado de academias pelo olhar de quem dirige treino em grande rede.",
+  "eeb4cca812ddd3ea": "Carrossel lista (hábitos, sinais do corpo) e carrossel de reflexão sobre equilíbrio geram alcance enorme; separar o formato da simplificação.",
+  "cd62321710681dd7": "Página feminina que forma tendência com tom de cumplicidade entre mulheres e listas de ciladas que a leitora marca a amiga."
  },
- "resumo": "Você se interessa por notícias com dado concreto (estudo, número, mecanismo, métrica do relógio) que corrigem uma crença comum, e por cultura pop e celebridade quando revelam um hábito ou padrão de corpo do adulto 30–50. Gosta de guias práticos sobre recuperação, longevidade como autonomia, mobilidade de quem passa o dia sentado, álcool e treino, sempre pelo porquê, e no Instagram procura formatos de teste, bastidor, dúvida em série e história de aluno.",
+ "resumo": "Você se interessa por notícias com dado concreto (estudo, número, mecanismo, métrica do relógio) que corrigem uma crença comum, e por cultura pop e tendências de treino quando revelam um hábito ou padrão de corpo do adulto 30–50. Valoriza a divulgação científica brasileira (fisiologia, métodos de hipertrofia, mercado fitness) e no Instagram procura formatos de teste, bastidor, dúvida em série, lista com fonte e história de aluno.",
  "assuntos": [
   "perda de força e músculo com a idade",
   "longevidade como autonomia e capacidade física",
@@ -75,11 +89,11 @@
   "métricas fisiológicas (FC de repouso, VO2, dados de relógio)",
   "álcool e hábitos do adulto",
   "erros de quem treina e não evolui",
-  "guias práticos de treino, inclusive em casa",
+  "guias práticos e métodos de treino (hipertrofia, treino em casa)",
   "mobilidade e dor de quem passa o dia sentado",
   "força como cuidado da articulação",
   "potência explosiva depois dos 40",
-  "meia-idade e recomeço com ajuda de especialista",
+  "tendências e mercado fitness (Hyrox, hot sculpt, proteína) lidos com critério",
   "cultura e celebridade como espelho do padrão de corpo",
   "datas de saúde (Outubro Rosa, Novembro Azul)"
  ],
@@ -109,7 +123,12 @@
    "idade biológica",
    "mobilidade",
    "dor no ombro",
-   "potência"
+   "potência",
+   "hipertrofia",
+   "creatina",
+   "proteína",
+   "tendência fitness",
+   "métodos de treino"
   ],
   "en": [
    "strength loss",
@@ -138,7 +157,10 @@
    "fitness flex",
    "mobility",
    "hypertrophy",
-   "power training"
+   "power training",
+   "protein boom",
+   "hot workout",
+   "hybrid fitness"
   ]
  },
  "angulos": [
@@ -166,45 +188,45 @@
   "Author Archive"
  ],
  "instagram": {
-  "resumo": "Você se inspira em treinadores que falam com autoridade calma e contam o processo por bastidores, testes e histórias de aluno, mais que em perfis de academia. Gosta de formatos que mostram o resultado na tela (desafio, experimento, tutorial curto, correção científica) e de quem transforma dúvida recorrente em série; a opinião forte serve quando vem com o motivo, sem agressividade.",
+  "resumo": "Você se inspira em treinadores e divulgadores de ciência que falam com autoridade calma e contam o processo por bastidores, testes e histórias de aluno. Gosta de formatos que mostram o resultado na tela (desafio, experimento, tutorial curto, correção científica), de listas e rankings com fonte citada e de páginas femininas com tom de cumplicidade; a opinião forte serve quando vem com o motivo, sem agressividade nem promessa.",
   "formatos": [
    "desafio ao vivo",
    "bastidor de aula",
-   "pergunta do aluno",
    "mito x método",
    "talking head com dado",
    "tutorial de exercício",
-   "dúvida em série",
+   "pergunta do aluno em série",
    "história de aluno (protagonista e desfecho)",
    "notícia com tela verde",
-   "carrossel de reflexão em texto"
+   "carrossel de reflexão em texto",
+   "carrossel lista (ranking com fonte ou ciladas)"
   ],
   "ganchos": [
-   "Pergunta curta que o aluno faria, escrita na tela e respondida em segundos",
+   "Pergunta curta do aluno ou crença popular na tela, com o motivo real em segundos",
    "Duas ou três pessoas lado a lado e o teste escrito na tela antes do resultado",
    "Experimento pessoal anunciado no primeiro segundo (uma semana fazendo X)",
-   "Crença popular na tela seguida do motivo real",
    "Problema concreto (dor, execução travada) e a correção demonstrada",
    "Número da rotina do espectador (horas sentado, degraus, noites curtas)",
    "Tarefa do futuro (levantar a mala aos 75) ligada ao treino de hoje",
-   "Protagonista e desafio apresentados antes da dificuldade"
+   "Protagonista e desafio apresentados antes da dificuldade",
+   "Lista de sinais ou ciladas em que o leitor se reconhece logo na capa"
   ],
   "perfis": [
    "@jessejameswest",
    "@nickleyden",
    "@jeffnippard",
-   "@jeremyethier",
-   "@rpstrength",
-   "@leandrotwin",
    "@juliobalestrinoficial",
    "@carolborba1",
    "@thereadystate",
    "@theprehabguys",
-   "@peterattiamd",
-   "@hubermanlab",
-   "@willtenny",
    "@coach_bowman",
-   "@squat_university"
+   "@sarriamatheus",
+   "@chapadinhasdeendorfina",
+   "@ofitfeed",
+   "@desalles",
+   "@nettodudu",
+   "@marceloscience",
+   "@alanh.11"
   ],
   "aprendido": {
    "51a1a5bb24f8052c": "Formato desafio ao vivo: duas pessoas, um teste de força, resultado incerto até o fim e quebra de expectativa sobre quem é mais forte.",
@@ -230,7 +252,14 @@
    "a116c1252f0fa7bb": "Longevidade como autonomia e capacidade física; o 35+ quer um corpo que funcione, não virar atleta.",
    "193be3799fc5b610": "Narrativa visual: protagonista, desafio, dificuldade e desfecho; a história do aluno, com autorização.",
    "f74bd8ccfa85b793": "Escolha binária de academia faz o público se posicionar e comentar.",
-   "de3036843337944d": "Potência explosiva como capacidade que o adulto 40+ esquece de treinar."
+   "de3036843337944d": "Potência explosiva como capacidade que o adulto 40+ esquece de treinar.",
+   "b3c57b5dad93d5cc": "Reels virais de treino funcional e performance: pegar o ritmo e a demonstração, deixar a promessa de resultado.",
+   "1e9d1067b94daa83": "Divulgação científica de fisiologia, medicina e treino com alto valor educacional: mecanismo explicado em linguagem acessível.",
+   "496d2b94fc48d231": "Página de ciência que mistura notícia do mercado fitness (proteína, lançamentos) com ranking de dados citando a fonte.",
+   "f9a0df8bafa2dcac": "Autoridade acadêmica brasileira em treinamento de força e métodos de hipertrofia, que forma opinião no nicho.",
+   "d9a2b4456fce4325": "Bastidor e tendência do mercado de academias pelo olhar de quem dirige treino em grande rede.",
+   "eeb4cca812ddd3ea": "Carrossel lista (hábitos, sinais do corpo) e carrossel de reflexão sobre equilíbrio geram alcance enorme; separar o formato da simplificação.",
+   "cd62321710681dd7": "Página feminina que forma tendência com tom de cumplicidade entre mulheres e listas de ciladas que a leitora marca a amiga."
   }
  }
 }
