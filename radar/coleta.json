@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-10-26T15:30:01.153454+00:00",
+ "coletado_em": "2026-10-26T21:13:27.712562+00:00",
  "itens": [
   {
    "id": "5b5b49f8fe38185f",
@@ -30,6 +30,16 @@
    "publicado_em": "2026-10-25T07:15:38+00:00",
    "resumo": "Scotland editor James Cook finds out what life is like on board a ship in an untapped oil field awaiting its fate.",
    "pre": 2.0
+  },
+  {
+   "id": "4d917cff975da923",
+   "canal": "BBC News",
+   "titulo": "Political battle intensifies within Labour over Rosebank oil field",
+   "link": "https://www.bbc.co.uk/news/articles/c6zxj7dvxr5yo?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2643/live/6503a5b0-cd58-11f1-bc2e-018d645d8d21.jpg",
+   "publicado_em": "2026-10-26T18:09:49+00:00",
+   "resumo": "Scottish Labour leader Michael Marra is urging the energy secretary to approve the controversial plans.",
+   "pre": 1.0
   },
   {
    "id": "157c68a61daabb8b",
@@ -92,16 +102,6 @@
    "pre": 1.0
   },
   {
-   "id": "aad53e5670cda05c",
-   "canal": "BBC News",
-   "titulo": "The Climate Question",
-   "link": "https://www.bbc.co.uk/sounds/play/w3ct99j6?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/images/ic/240x135/p0pj7n2n.jpg",
-   "publicado_em": "2026-10-25T14:00:00+00:00",
-   "resumo": "Two doctors discuss the challenges for the medical sector from a warming world",
-   "pre": 1.0
-  },
-  {
    "id": "de70d6b141c546ee",
    "canal": "Reuters",
    "titulo": "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
@@ -122,14 +122,34 @@
    "pre": 2.0
   },
   {
-   "id": "03a10e8445fe399c",
+   "id": "02c6312ee11610db",
    "canal": "Reuters",
-   "titulo": "EXCLUSIVE: Heineken document reveals worries over weight-loss drugs and beer sales",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQkxjUl8zRFdLRXdOR1Z3SVFsSEc1WElSMG9OZHRJYW52a3hvN3BVOEJBMHk4YnZpQkRwYnRzWF9qeXhRZjF6M0o5c09xVzZ5a0dwOG1aQ2thYlpKV1RlTFBsVWNGcHdpZ2F4Sld3UWFoY1htZDVld1UwZ0x1MnJ0bnZOdVpMZDlEZ3JmRDhQa3Fsam9UZkl0TnB2eHF3eU1CNGZTWlV4Smt4NDJLbXBzQ1ExekxtWm5uTGtCRg?oc=5",
+   "titulo": "ConocoPhillips to reduce workforce in Canada",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMWFfVjhJWk9UYlNFZU9oaXdnMWQycHZhLW1mN2VCZlk4dF92VFZmbEJwVHVhTkRQcDdPM05QV0ptN0E4YU41MHlkR1ozT29qMkhYcGt5MmJ5c2JPRUt0WGJXS2xReEdFUEdFR2tJcVY1dVpCemZvdU5hZDIzSmtBQ0I2TmVvWFlaZ25vSUJWamFuajVYQlJWRXhMYXIxUQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T19:49:09+00:00",
-   "resumo": "EXCLUSIVE: Heineken document reveals worries over weight-loss drugs and beer sales Reuters",
-   "pre": 2.0
+   "publicado_em": "2026-10-26T18:02:06+00:00",
+   "resumo": "ConocoPhillips to reduce workforce in Canada Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "b349cbdad0ca91d0",
+   "canal": "Reuters",
+   "titulo": "Algeria to deploy army units to Niger to protect energy and economic interests",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOTFrSWZjQ0E0MUdTd05BVGstWk9FNUhCNTZiN21BZEhIX3B1MHgzZDdrSzFsSGt2Q2xZMGEtODdIMm5qbUNwR2EzSXpuNnFJZUk4QmZZbF9NeURyVE1yRGU2Wk5icVJOdHUzNll2ZFh5VGxIQTFpbi1vOUg3VmJLUEdpN0dzMm1Dbzl0Vi1QaUhNMGIzdmZ3UUxTUmhFZkxOVXQ5MktseVZSdHczTWg2U2V5SGdyOWtTZGJPSXZCTm5JUQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T17:46:40+00:00",
+   "resumo": "Algeria to deploy army units to Niger to protect energy and economic interests Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "dfdfeb2c38645022",
+   "canal": "Reuters",
+   "titulo": "Senior doctors in England set to strike over pay offer in November",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNTVjb2F3YlhyN296QTIzWTR5dk95WTZLNU1EUW9GRTJEV2xaaVJCLW13WjZwcE8zS1FiRGlydkxsNUsxZVdhSmtDUWdwWlFzLVBMUWsxRTRsVG42ajNUNXkzSXhIWEhPQ29mNFlINHd6ZmVXdmM4blVVY1h6ZVg4UG4xQlpwVVdGTVZ0R1ktQUlBSVpwV3gtMkdKVXJTVVZRM2hBMDY0TDhTaWpOMy1SbVRYOEU0R0E?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T14:01:48+00:00",
+   "resumo": "Senior doctors in England set to strike over pay offer in November Reuters",
+   "pre": 1.0
   },
   {
    "id": "c8ab6f6101a5c2f7",
@@ -172,34 +192,24 @@
    "pre": 1.0
   },
   {
-   "id": "d062fb20e6d44266",
+   "id": "d396d1ac43887770",
    "canal": "Reuters",
-   "titulo": "Japan's Nikkei falls for a 3rd day as tech sector weighs, energy shares rise",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUG42aUpCNmlxUXpHUzRPWFpWWVZZclY2anZvbUZ2cld4eEVRaUtPeHNkMDBCcG9SN0JJY2FaZ3RfMnNzNkZQcUNzc1JWZjhsWUVPSTZaX0Z0UmJ1SWdFQlNFMkx0dEZ3enFJMjZ6TFNCNHhwV19MYldONE44a2lTdERfLXYzMU1xR0ZNTmdURnhNUDFnc3VIOEV4ZWhHTGhxYTBmWUtuOEdyTHRJenR6cTIzajB4SGFxenc?oc=5",
+   "titulo": "World Series rematch, Indian edition: Yankees beat Dodgers in Mumbai event",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZ195Umx2b2hqdnZXRF9EVlgweXRtSm10NllwWG5tRHR0OVpud0x1ZjBYZmlob1hwZHdoYU9pTDJKcE8wTUxUTGlkalBlcEk4NUNTYS1femRGX3ZqS1c2OXNpV3FMV2Y2cnliN2hyX1o2Y2otS1hpUUFzQlpUaGZoRlVCUU14MS1FbHlVOTJLVUVrTDVKclVBQjljVXozWTNScUhhM1VoNHlzc2tJZGs1T1MyXzBxbmdoR09DYQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-26T01:27:00+00:00",
-   "resumo": "Japan's Nikkei falls for a 3rd day as tech sector weighs, energy shares rise Reuters",
+   "publicado_em": "2026-10-25T06:49:56+00:00",
+   "resumo": "World Series rematch, Indian edition: Yankees beat Dodgers in Mumbai event Reuters",
    "pre": 1.0
   },
   {
-   "id": "519f593f60ec2fac",
-   "canal": "Reuters",
-   "titulo": "UK government sets out $800 million of AI security funding",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTDJseUNYVnJGcWZWUjlPR0RUSXJHTVItRmh1dkdnNTFiZ2tmTFhUM1p3YnI1T2RGdlpFZ1JWN3BGR2dCajk3Y1pBMlBCYjNFX2dnbjJzZnNJb1BONkNGREFYamNWT1FLRFJXdjdVeEdMUFZnM3FQRXE2VFBIbFdWUVItWEJwd3F4dmFRbHpKTzE4RWpXSGRnTzY4QVdISFJj?oc=5",
+   "id": "b7d9879f929233c9",
+   "canal": "CNN",
+   "titulo": "Sen. Ossoff criticizes Trump about gas, grocery prices at Atlanta rally",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZFJqX1RPVDlkdDhaSGdzSkc0R2xUUEZ4R3Q4bHlSQjd2cGwta09USW9WUTk1TFJiU0ZWZlhEcGRsUGZDamljSk8zWmM5MkpHcW02UnJnLW9xY215WlZFeEMtamJHbGVhWU9Bdm40c0dlMU9nemc0cDVzcTNuLW5OV0t2VHR3b1VDNE5YN210LVM?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T23:03:43+00:00",
-   "resumo": "UK government sets out $800 million of AI security funding Reuters",
-   "pre": 1.0
-  },
-  {
-   "id": "be78f891b9f47d94",
-   "canal": "Reuters",
-   "titulo": "Mark Cuban says AI hack agents are like cockroaches, but can be controlled",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUkFmbWpMV3VyOS0wWUNFVjQtOWlqM29COWc3eTVzRlhTWERBNXQ4emJfS1BZNU14NjY5WmxRN3dVLWVoZ3pJeTRDbUR3ZVVTRUpQSDQtTGRFUTA4Y3NGOXhmaEpzd2h0MVh6Z0ZQSFNHZTVFbVdCWVpxaDkyUVBHRFN6Zzc3WWRSd05ETldhZWszR29pT0I1YXhYb01iRU5HWmJkeWdLM1NSdV94Y2stS2hCQ2RpMHJ6bXZzejVCYTgtVVd5S2lUQnc3ODQ4c3NjdjNHQWpDTk8?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T22:30:37+00:00",
-   "resumo": "Mark Cuban says AI hack agents are like cockroaches, but can be controlled Reuters",
-   "pre": 1.0
+   "publicado_em": "2026-10-26T18:08:47+00:00",
+   "resumo": "Sen. Ossoff criticizes Trump about gas, grocery prices at Atlanta rally CNN",
+   "pre": 2.0
   },
   {
    "id": "002a44f8aa34a3c6",
@@ -257,9 +267,19 @@
    "titulo": "Six Flags signals Goliath roller coaster will reopen — with seat belts — after fatal fall at Georgia park",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE55bEZxWjcza1ZzbFlKSmFoWm5GaHVMX0VLNmIyV0trOVJIZEZnR2gyMFdVdWlhZzQyS2l2aTROM3laN0JYNm5iRkRGRzVaMFlZekxyLXFFTXl0TTRzX3lZX29zWmtFTUFKeXZDb2ktWkpNRFZOYlV3?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-24T14:58:26+00:00",
+   "publicado_em": "2026-10-24T14:56:36+00:00",
    "resumo": "Six Flags signals Goliath roller coaster will reopen — with seat belts — after fatal fall at Georgia park CNN",
    "pre": 2.0
+  },
+  {
+   "id": "36231f514442e9c8",
+   "canal": "CNN",
+   "titulo": "Anthropic set to make stock market debut as questions swirl about safety of AI",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9TTUMzZ3kyQXlPLXRDU0hPQjlUZU9XWVhtZkhwMlBkSVRMOWVHU3MzcF8yUWJYTXc1LUdiQnZNc2ZGOWNibGt0SjBHRXBhbURnQkFOWEk1aDdIaDJhZTh5WkQ5M3kwUQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T13:04:46+00:00",
+   "resumo": "Anthropic set to make stock market debut as questions swirl about safety of AI CNN",
+   "pre": 1.0
   },
   {
    "id": "a11b16ec407c0596",
@@ -272,23 +292,13 @@
    "pre": 1.0
   },
   {
-   "id": "79b3c31105b2f009",
+   "id": "8ec597648b842c54",
    "canal": "CNN",
-   "titulo": "AI is exposing how fragile the web really is. What you can do to stay safe",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5tOUtsckc0UjJWSmszOGxSZmxuVmZpN1B2Ni1qOUZZbWJhN3dORzhIMXlEQ3h3MXJVdkFjOVZ5VzJXa1l1V1BPSWpGRkNsbkZfZWpQelU1UU5wQVhHUlV0TmxaLUpXTVZjd1pV?oc=5",
+   "titulo": "Anthropic taps a deep well of distrust as it eyes its Australian AI debut",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcGJ0WTZNWVZycEJsRzZSeVNUNF95YnlNVktLZXZlcHRYQ1NObmozZzFLQjRUbFpNSzBFTzBMODhmMm5oYkRoMzdOaWJVMmhCcHlNUEZ1YUhJZ0dQSXVqTXdpREMtU2NxMnM2XzFBckZpaXhhUUdPQVN0YjhOb0dRUlJNalJwWnU5VzF6MnllQjBMUFU?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-26T10:30:15+00:00",
-   "resumo": "AI is exposing how fragile the web really is. What you can do to stay safe CNN",
-   "pre": 1.0
-  },
-  {
-   "id": "8c05f14690eb8170",
-   "canal": "CNN",
-   "titulo": "How Title IX investigations work and why experts say the system failed Cornell’s Jane Doe",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55aEZSZ0xqSlh0VGxOQnlrLTM1WTRvWDJfb0VzWGlMZ2tPM1hXOWpSamROTHRtWmNoS2Zvd0NxT1pxV0IxbEluNnptTjZDbEV4YVdJM1RiREFCQ3pFTlJsc1pNN05ONEJiLTRiVUtjMUlJbnM?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-24T10:30:43+00:00",
-   "resumo": "How Title IX investigations work and why experts say the system failed Cornell’s Jane Doe CNN",
+   "publicado_em": "2026-10-26T04:00:15+00:00",
+   "resumo": "Anthropic taps a deep well of distrust as it eyes its Australian AI debut CNN",
    "pre": 1.0
   },
   {
@@ -342,6 +352,16 @@
    "pre": 3.0
   },
   {
+   "id": "d909e7d004244100",
+   "canal": "The Guardian",
+   "titulo": "Neighbours is being recut into a microdrama focused on Margot Robbie – and her co-stars aren’t happy",
+   "link": "https://www.theguardian.com/tv-and-radio/2026/oct/26/neighbours-soap-recut-ai-microdrama-mobile-series-feat-margot-robbie",
+   "imagem": "https://i.guim.co.uk/img/media/d850e2558a1a7a06e667ee3f5cb1123b8775f401/189_38_3166_2534/master/3166.jpg?width=140&quality=85&auto=format&fit=max&s=fe1cb9d1d4badba3ae6fe42f103a214a",
+   "publicado_em": "2026-10-25T14:00:06+00:00",
+   "resumo": "Actor’s storylines in the famous soap will be recut into vertical micro-episodes to be watched on phones – but her fellow cast members say they haven’t been consulted The long-running Australian soap opera Neighbours is being recut with AI into a microdrama designed to be watched on phones, sparking a debate among the show’s actors and the industry over the wider implications of television archive",
+   "pre": 3.0
+  },
+  {
    "id": "42ed7d46a4de8f4c",
    "canal": "The Guardian",
    "titulo": "‘Synthetic twin’: Why Socceroo Cristian Volpato is the latest footballer to license his AI clone",
@@ -352,9 +372,19 @@
    "pre": 3.0
   },
   {
+   "id": "7bccca5cc53108da",
+   "canal": "The Guardian",
+   "titulo": "Jean Phillips-Martinsson obituary",
+   "link": "https://www.theguardian.com/science/2026/oct/26/jean-phillips-martinsson-obituary",
+   "imagem": "https://i.guim.co.uk/img/media/4c9ea92e4b3ac28410dd37abd7cd7d05e5a340c8/154_0_2036_1629/master/2036.jpg?width=140&quality=85&auto=format&fit=max&s=6b35a16d3a5d5fa74842e58ca0f21594",
+   "publicado_em": "2026-10-26T19:41:00+00:00",
+   "resumo": "Founder of an international organisation to encourage research into the rare genetic disorder Prader-Willi syndrome In 1984 Jean Phillips-Martinsson, a British woman living in Sweden, came across an article in the Lancet. It was about Prader-Willi syndrome (PWS), a rare genetic condition named after Andrea Prader and Heinrich Willi, two of the three Swiss paediatricians who discovered it in 1956. ",
+   "pre": 2.0
+  },
+  {
    "id": "74d22434b93ed8a9",
    "canal": "The Guardian",
-   "titulo": "Sunlight at night: US startup’s demonstration of lighting Earth from space draws critcism",
+   "titulo": "Sunlight at night: US startup’s demonstration of lighting Earth from space draws criticism",
    "link": "https://www.theguardian.com/us-news/2026/oct/26/california-sunlight-space-mirrors-satellites",
    "imagem": "https://i.guim.co.uk/img/media/7c7f30c6c0261f04d891e2564b27d085a9617055/584_0_5840_4672/master/5840.jpg?width=140&quality=85&auto=format&fit=max&s=914ee100d36f637812775123342cb0b6",
    "publicado_em": "2026-10-26T12:00:41+00:00",
@@ -372,26 +402,6 @@
    "pre": 2.0
   },
   {
-   "id": "4aa4af5649b9ed8a",
-   "canal": "The Guardian",
-   "titulo": "On dementia, we need to tell it how it is | Letter",
-   "link": "https://www.theguardian.com/society/2026/oct/25/on-dementia-we-need-to-tell-it-how-it-is",
-   "imagem": "https://i.guim.co.uk/img/media/c3f6c4428ff01ab67455cff2e0d42119e03560c6/677_229_4685_3748/master/4685.jpg?width=140&quality=85&auto=format&fit=max&s=bd5b737f9e930b4686d2ffacffe714ba",
-   "publicado_em": "2026-10-25T17:12:58+00:00",
-   "resumo": "David Lee responds to a letter questioning the use of language about people with dementia Sally Byers takes Polly Toynbee to task ( Letters, 19 October ) for using what she considers to be “deeply troubling language” about people with dementia, in particular the phrases “glazed stares or sleeping mouths agape” and “that terrible human vacancy” in Toynbee’s article ( In Liverpool I saw the tough ch",
-   "pre": 2.0
-  },
-  {
-   "id": "9bc73d0efca09c13",
-   "canal": "The Guardian",
-   "titulo": "NHS consultants to go on two-day strike in England in November, says BMA",
-   "link": "https://www.theguardian.com/society/2026/oct/26/nhs-consultants-two-day-doctors-strike-england-november-bma",
-   "imagem": "https://i.guim.co.uk/img/media/6ba916a7c2b999d2a668ead8600d6bf99d85147e/488_0_3011_2409/master/3011.jpg?width=140&quality=85&auto=format&fit=max&s=653e52dcf95de68ba3b6744daf0781b6",
-   "publicado_em": "2026-10-26T13:33:11+00:00",
-   "resumo": "Industrial action by senior doctors to begin on 25 November with only emergency cover provided, union says England’s most senior hospital doctors will strike next month in a dispute over their pay and hours, prompting NHS bosses to warn that patients will suffer “pain, discomfort and inconvenience”. Consultant doctors, who currently earn an average of £152,000 a year, will stage a two-day walkout ",
-   "pre": 1.0
-  },
-  {
    "id": "24630d7bc165dfa6",
    "canal": "Fox News Health",
    "titulo": "Catholic drinking habits are changing as Americans rethink alcohol's risks",
@@ -400,6 +410,16 @@
    "publicado_em": "2026-10-25T13:00:04+00:00",
    "resumo": "Catholic adults now report drinking rates near the levels of Protestants as shifting health views and social habits reshape moderate drinking in America.",
    "pre": 3.0
+  },
+  {
+   "id": "b753e5a3d59d2106",
+   "canal": "Fox News Health",
+   "titulo": "New test could flag which men need aggressive prostate cancer treatment and which don't",
+   "link": "https://www.foxnews.com/health/new-test-flag-which-men-need-aggressive-prostate-cancer-treatment",
+   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2025/05/931/523/ketamine-6.jpg?ve=1&tl=1",
+   "publicado_em": "2026-10-26T21:06:25+00:00",
+   "resumo": "The Decipher genomic test could help doctors decide which high-risk prostate cancer patients need abiraterone hormone therapy and which can skip it.",
+   "pre": 2.0
   },
   {
    "id": "6fc44b4eff04dcc5",
@@ -432,16 +452,6 @@
    "pre": 2.0
   },
   {
-   "id": "5b2d94f784fd030f",
-   "canal": "Fox News Health",
-   "titulo": "Knee treatment without surgery offers lasting pain relief for 80% of arthritis patients, study finds",
-   "link": "https://www.foxnews.com/health/knee-treatment-without-surgery-offers-lasting-pain-relief-80-arthritis-patients-study",
-   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/10/931/523/knee-arthritis.jpg?ve=1&tl=1",
-   "publicado_em": "2026-10-23T20:58:38+00:00",
-   "resumo": "A non-surgical knee osteoarthritis treatment uses dissolvable gelatin particles to block excess blood vessels, reducing inflammation without implants, researchers say.",
-   "pre": 2.0
-  },
-  {
    "id": "e68bd9c197afc2f1",
    "canal": "Fox News Health",
    "titulo": "Sharpen memory and fight brain fog with simple 60-second trick from a neurologist",
@@ -470,6 +480,16 @@
    "publicado_em": "2026-10-23T23:54:55+00:00",
    "resumo": "Months after revealing her breast cancer diagnosis in April, Vanessa Trump announces she is cancer-free in an emotional video with daughter Kai Trump.",
    "pre": 1.6
+  },
+  {
+   "id": "ee6910aea5e21dad",
+   "canal": "Fox News (ciência, tech e esporte)",
+   "titulo": "Data brokers don't just collect facts. They guess about you",
+   "link": "https://www.foxnews.com/tech/data-brokers-dont-just-collect-facts-they-guess-about-you",
+   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/09/931/523/couple-looks-at-bills.jpg?ve=1&tl=1",
+   "publicado_em": "2026-10-26T20:00:09+00:00",
+   "resumo": "Data brokers assign labels predicting your health, finances and religion based on browsing and purchases, then sell those profiles to businesses.",
+   "pre": 0.7
   },
   {
    "id": "5c94775473c994fb",
@@ -622,16 +642,6 @@
    "pre": 0.7
   },
   {
-   "id": "0eb46261fdf03327",
-   "canal": "Wired",
-   "titulo": "Garmin Vivoactive 5 and Forerunner 165 Are up to 30 Percent Off (2026)",
-   "link": "https://www.wired.com/story/garmin-deals-october-2026/",
-   "imagem": "https://media.wired.com/photos/6adba70ca15e7091703dcd90/master/pass/Garmin%20Deals%20October%202026%20top%20art%20SOURCE%20Amazon.jpg",
-   "publicado_em": "2026-10-24T09:06:00+00:00",
-   "resumo": "I’ve tested almost every Garmin watch—these entry-level favorites are steeply discounted right now.",
-   "pre": 0.7
-  },
-  {
    "id": "86ce55e290b984d2",
    "canal": "Metrópoles",
    "titulo": "Pressão financeira prejudica o sono e pode afetar a saúde física e mental",
@@ -702,6 +712,16 @@
    "pre": 4.0
   },
   {
+   "id": "8e7bf0146f3e44bc",
+   "canal": "Metrópoles",
+   "titulo": "Nove em cada 10 informações sobre saúde nas redes são falsas, diz relatório",
+   "link": "https://www.metropoles.com/saude/nove-em-cada-10-informacoes-sobre-saude-nas-redes-sao-falsas-diz-relatorio",
+   "imagem": "https://images.metroimg.com/2026/10/news-capa.jpg",
+   "publicado_em": "2026-10-26T19:31:49+00:00",
+   "resumo": "Relatório reuniu 764 alegações sobre saúde e identificou falsas curas, distorções de pesquisas e uso indevido da imagem de médicos",
+   "pre": 3.0
+  },
+  {
    "id": "b2bd570a4f13003b",
    "canal": "Metrópoles",
    "titulo": "Aprenda 5 penteados fáceis e úteis para proteger o cabelo durante o treino",
@@ -719,16 +739,6 @@
    "imagem": null,
    "publicado_em": "2026-10-25T05:00:00+00:00",
    "resumo": "Geração Z cria novo conceito de festa focado no bem-estar e nos esportes Metrópoles",
-   "pre": 3.0
-  },
-  {
-   "id": "b31709baa8e8d810",
-   "canal": "Metrópoles",
-   "titulo": "F1: Hamilton lidera terceiro treino livre para o GP dos Estados Unidos",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd2hHcTNzbWJ1X3VXSHY3M0VjSVZpTGUtZDBkVXZGcVRSWGU4NGVKWi1NSUFBTDA3bGpjQ3oxMVg0S21lZjhjb3NDTWtSWjFFRzlaSloybEU5V1lub3FVUWU0MGJhTWt6MG5CUTBBXzJBQUpHc3dXYzh2RFhuMTc5bVJ2Y2VKY2pUbUVmXzFFNlBuVWxDY1Zka2V5dTk5dXdtMjJ0aXpwT20?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-24T18:42:00+00:00",
-   "resumo": "F1: Hamilton lidera terceiro treino livre para o GP dos Estados Unidos Metrópoles",
    "pre": 3.0
   },
   {
@@ -750,16 +760,6 @@
    "publicado_em": "2026-10-23T22:52:00+00:00",
    "resumo": "VÍDEOS: dicas de saúde G1",
    "pre": 1.1
-  },
-  {
-   "id": "2048e80fb6042f0d",
-   "canal": "Folha Equilíbrio",
-   "titulo": "Os perigos do excesso de proteína para os adolescentes",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/10/os-perigos-do-excesso-de-proteina-para-os-adolescentes.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2023/02/24/167727428363f92cabf38f7_1677274283_3x2_rt.jpg",
-   "publicado_em": "2026-10-23T20:00:00+00:00",
-   "resumo": "Antes restritos ao universo das academias, os produtos ricos em proteína hoje vão de shakes e barrinhas a iogurtes, pães e sobremesas . Crianças e adolescentes entraram na mira dessa indústria, impulsionando o crescimento desse mercado. Leia mais (10/23/2026 - 17h00)",
-   "pre": 12.1
   },
   {
    "id": "82051ae004a34700",
@@ -842,6 +842,16 @@
    "pre": 3.3
   },
   {
+   "id": "275aed20078287f0",
+   "canal": "Folha Equilíbrio",
+   "titulo": "A sobriedade não apaga o passado do alcoólatra",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/blogs/vida-de-alcoolatra/2026/10/a-sobriedade-nao-apaga-o-passado-do-alcoolatra.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2026/10/23/17927855856adbbcb128840_1792785585_3x2_xl.jpg",
+   "publicado_em": "2026-10-26T16:01:00+00:00",
+   "resumo": "Quando paramos de beber, não é fácil retomar amizades e até mesmo relações com parentes. Reconquistar a confiança de algumas pessoas leva um tempo, pois não é num minuto que elas esquecem as atrocidades que cometemos sob o efeito do álcool. Leia mais (10/26/2026 - 13h01)",
+   "pre": 2.2
+  },
+  {
    "id": "c93ce55a954ebbbc",
    "canal": "Folha Equilíbrio",
    "titulo": "Baixa adesão ao tratamento medicamentoso dificulta combate à hipertensão",
@@ -882,6 +892,26 @@
    "pre": 4.0
   },
   {
+   "id": "66cf92b3eb1585f8",
+   "canal": "Estadão Saúde",
+   "titulo": "Diretor do Bayern de Munique atualiza situação de Kompany após desmaio em treino",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQjcxR2xmN21pTHhqTjVQZHVmY0p3ak44MFdyVjdWb2pKMURTWk1JWnAyQi16REFIN3F2TDhyQlUwbXdOdG40aG16d1lROEFMS0x1V0hKX1pycm5UWWI2QllhTnk3c3hVS2Q2LUMyZ212aTRHYUVqM2Vkbi1TcmhUT2hBOW4zVmVNUjVYMHdCRl8yeER2cDd1dGllc0M4dUstNF81eTl6cTRWUEVsb0dTd3dEQktHYVc2Zm5OdURfY1E1dHhLOXBkanpWWUhQdw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T18:53:38+00:00",
+   "resumo": "Diretor do Bayern de Munique atualiza situação de Kompany após desmaio em treino Estadão",
+   "pre": 3.0
+  },
+  {
+   "id": "49cfa4b1519b81db",
+   "canal": "Estadão Saúde",
+   "titulo": "Na corrida da inteligência artificial, Brasil precisa ser protagonista, diz executiva da Abria",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPOXNjTFVUVFlsOXZaYTFkNHZGcllSRWdYUUUtWFhaRG5yeEE0Q242blB0VUxFVzBFQ0c2RXhYZTBnX0VCQW9YX1g1WkZySkVaUUU3MWpPMUk4Qlg1MTMwSDVRRm16NzhtTzZrVkRtX21EMDNlb240WWhhM0ZNWmtkSlJBWVFkZ2g4bEx4Wm1hdkFTelRvX0RRb2NrdE1BOURQNUZOV0lvTUF6ZTVJUE1hVlpyS1dOODRmb2FiYkczVXpzME1xTHVHTm5aSl9fQVVWMk03ZHFkYjRIWVNrblhZSkhqQW05Zw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T11:36:36+00:00",
+   "resumo": "Na corrida da inteligência artificial, Brasil precisa ser protagonista, diz executiva da Abria Estadão",
+   "pre": 3.0
+  },
+  {
    "id": "4c86052b294c7fe1",
    "canal": "Estadão Saúde",
    "titulo": "Kompany, técnico do Bayern, é levado de ambulância ao hospital após desmaiar em treino",
@@ -892,24 +922,24 @@
    "pre": 3.0
   },
   {
-   "id": "6be60f5c7c6f17de",
+   "id": "88f8bbf8040561ed",
    "canal": "Estadão Saúde",
-   "titulo": "Alvo da PF, do MP e da OAB, Nelson Wilians avalia ‘medidas’ para retomar exercício da advocacia",
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOcWR5MW5fWDVIMU5GQ09ubEdnejNFeldfN2poM3VKSjhhWjhlVHlQel9YSHhWaGJNOFR1SGkza3NjQW96YTl3QU5BNVVMaVU3aWtWdFJnVzVSdGY4VjQ1WmlMSzF1QjdERkVZX2pNaDQ1cEpiMjJRRGs2NEdMaXJmbFNJTUpYaDdlaXpydHJtTUFDc0kyLWh0eXoxcWFyOHROZjY1djhnTzJhd0FEQ3VveFdiQzRKNDYtcEtrem1XQVZicEx4clRKbHRiU1l5TmNtd3pRUk04SmF6aVRjS1ZkT1RJV2h6UEFlaXQzaTJPNA?oc=5",
+   "titulo": "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNa3gtWTgzQkN3ZVlvOUdSaWktdzhJT1VYWEFDdE5XbHBSZjJQcjVyNFdiZXRmRkRmU21kNVQ0ejc5MFAwUUJvZWN0MTJnT09TOGlTMUp2NFpmOVNva19Ia3FtN0FGY29OamQxNDFFQVFqSGZOZGJzNzEzWFRob3d2UlZVYW12dGp1U0xKeVJlMG1KOXdPYnVXQkpvSVM4dWdvS1ZEdTZTSUxpRmZkc2VQLTExVzNpRVhlOVBaQm5YeW14RlhTeUF0end5OWd6OFM0cU9RNUFn0gHWAUFVX3lxTE1reC1ZODNCQ3dlWW85R1JpaS13OElPVVhYQUN0TldscFJmMlByNXI0V2JldGZGRGZTbWQ1VDR6NzkwUDBRQm9lY3QxMmdPT1M4aVMxSnY0WmY5U29rX0hrcW03QUZjb05qZDE0MUVBUWpIZk5kYnM3MTNYVGhvd3ZSVlVhbXZ0anVTTEp5UmUwbUo5d09idVdCSm9JUzh1Z29LVkR1NlNJTGlGZmRzZVAtMTFXM2lFWGU5UFpCblh5bXhGWFN5QXR6d3k5Z3o4UzRxT1E1QWc?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-25T04:27:02+00:00",
-   "resumo": "Alvo da PF, do MP e da OAB, Nelson Wilians avalia ‘medidas’ para retomar exercício da advocacia Estadão",
+   "publicado_em": "2026-10-23T22:12:00+00:00",
+   "resumo": "Charles Leclerc, da Ferrari, domina os treinos livres do GP dos EUA de F1; Bortoleto é 11º Estadão",
    "pre": 3.0
   },
   {
-   "id": "66cf92b3eb1585f8",
+   "id": "896b425502f0383b",
    "canal": "Estadão Saúde",
-   "titulo": "Diretor do Bayern de Munique atualiza situação de Kompany após desmaio em treino",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQjcxR2xmN21pTHhqTjVQZHVmY0p3ak44MFdyVjdWb2pKMURTWk1JWnAyQi16REFIN3F2TDhyQlUwbXdOdG40aG16d1lROEFMS0x1V0hKX1pycm5UWWI2QllhTnk3c3hVS2Q2LUMyZ212aTRHYUVqM2Vkbi1TcmhUT2hBOW4zVmVNUjVYMHdCRl8yeER2cDd1dGllc0M4dUstNF81eTl6cTRWUEVsb0dTd3dEQktHYVc2Zm5OdURfY1E1dHhLOXBkanpWWUhQdw?oc=5",
+   "titulo": "Crianças e adolescentes podem tomar energético? Entenda os riscos para o coração e o aprendizado",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQN095RXJhTEt2RGVFN2JVV2gwTVJKeUxkb1h2R2R3VkVMbE4tQzVyRFlEZ2phbTVXbUQtYjAxYXdKSlMzMFNCT0dzQ3NHbUNnVElkYjlTeVRDWGZ5U1VxdThLWGNVemRDWE9ZUzFNbHdKWGNYY3VsLUFQeHVqazhlRFJLTW5NUnByMHR5T19yUDZhdXV2cWRFV2RHQ1Q4Qm9MbS1qaDA3YnhyTUNDRGF2SEZUa0JfMWY4bzhCMjh5RUQtS3I5Vm1xZUlKME43eVpuM0JhQzRCVDJ4VTTSAeABQVVfeXFMUHg4ekVjZjBSTk0zOGVpUndhVmlsQXRKSWFMbTgtbVJsQmlCX3pSMTQtLUh5alJsRW1qRTB4dGpveTFiSE9pUkV2N3F6bGRiQ2ZfZXoyYm91QjhnWEU1a3I5bDY4VXRfSmhTUjVKQkFxUlVrblJRNjR1WHVmQmp0TklfLTh6QTBTc1R4THA4TG5odzM0SVRkekt5TF90UUp1Vi1UcDVXZVBWZWJQZElsdXc2R2dzRnpmemVDd0NDT3pDTm8wNUpsY1MzUTJJNG5ObjlnZW84b2JOY240dXZhb3c?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-24T13:26:16+00:00",
-   "resumo": "Diretor do Bayern de Munique atualiza situação de Kompany após desmaio em treino Estadão",
-   "pre": 3.0
+   "publicado_em": "2026-10-26T21:04:00+00:00",
+   "resumo": "Crianças e adolescentes podem tomar energético? Entenda os riscos para o coração e o aprendizado Estadão",
+   "pre": 2.0
   },
   {
    "id": "8dfd2106c5ae4ea1",
@@ -929,26 +959,6 @@
    "imagem": null,
    "publicado_em": "2026-10-26T10:13:00+00:00",
    "resumo": "Sono ao volante? Conheça sistema da Volvo que freia caminhão sozinho Estadão",
-   "pre": 2.0
-  },
-  {
-   "id": "7304afe84afb7195",
-   "canal": "Estadão Saúde",
-   "titulo": "Medvedev busca virada, conquista ATP 250 de Almaty e fatura o 25º título da carreira",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdExVT0d1cXFDbGFiY3AtU1RBRUhUejB5R0NQREVUOVd1UUZBc2djNUZpMURtbXQ0S283TGxIYnFOcWJPcHhtQVk1RGJHZjdvenJWNjJ0RDBhbGxwczI0SlNrY2IxYWFEVnJUUnBtQWxlLUNQWkhSbkhteU9ubzlKRDhFa0t3Nm9hNzNKQmpRQVlJSm9yTEtueXhXNFFQOTRYMTVScHR30gGrAUFVX3lxTE05Vm5tOGpNRWYyYjV4VnNnMGVfZURwMHlLb0pYRDQ5V0ozVWR5eDJLMm9mOUJQY1ZLV2pJVWtidHM2aXI1cW5scjE5ckl5Ym5ZTWpMZGdkN3FySkRfOXFfZ3IwRHdFV24xLVM1bFdWRkcwRmNMaW5yRWtqZXdLYTkyVkE2T2I2Vmxlb0JWVE1yZ2t6VkdRVDFoeWZXVV9OV21sUng3NDF5a0hHWQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-25T14:24:00+00:00",
-   "resumo": "Medvedev busca virada, conquista ATP 250 de Almaty e fatura o 25º título da carreira Estadão",
-   "pre": 2.0
-  },
-  {
-   "id": "efd5b14ce93354e5",
-   "canal": "Estadão Saúde",
-   "titulo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRFRpc050aUhaOVp6R0xhM1h1bHd4QUNkdS1tYXhwWGJBTEQ3WDYzeXVSSGZId0FOQnVQQWJleHlEUklZX1Rvcm82WTVTbmlSVkg2ZVpiRzRxSG5vc1ZIaEdjTVUwSVhhWXFDQmVUU2ZkUVM5NjJfQmR3bEpoUEtzeUlXd1hDQ3ZQRC1mM1JoME9ueF9ZYkszakRKeGk2eWlaeFMyWkxRSlBwT25kRWd3RFlKdUtWX05UdFdpa1BaVmRCZFhlY05j?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-25T07:56:45+00:00",
-   "resumo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso Estadão",
    "pre": 2.0
   },
   {
@@ -1002,16 +1012,6 @@
    "pre": 4.0
   },
   {
-   "id": "38fb53ab159b455f",
-   "canal": "Nature News",
-   "titulo": "Are salaries getting worse? Many scientists think so",
-   "link": "https://www.nature.com/articles/d41586-026-03398-0",
-   "imagem": null,
-   "publicado_em": "2026-10-26T00:00:00+00:00",
-   "resumo": "Nature, Published online: 26 October 2026; doi:10.1038/d41586-026-03398-0 Nature’s survey of almost 4,000 researchers shows that you’re not alone if you struggle to make ends meet or your last pay rise is a distant memory.",
-   "pre": 1.4
-  },
-  {
    "id": "a0756b701f703d50",
    "canal": "Harvard Health",
    "titulo": "Healthy diet for cognitive fitness",
@@ -1042,26 +1042,6 @@
    "pre": 5.0
   },
   {
-   "id": "c97518d975edda5f",
-   "canal": "Harvard Health",
-   "titulo": "All Diet and nutrition Articles | Page 155",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE90bVdkdGozZlhsSVBNcTRlVlA2TzkyeDBMdHRiVXd5d00wSHZacU9zTlBuZ1lENG5XelM4eV94akItbUhGQzczRThkMTFnb3g5ZnpjbWZHRm9hcllaMFB5OTRwaGM3dG9ZLVRSOHkxbHA1LXVxM2tHcQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-20T16:54:10+00:00",
-   "resumo": "All Diet and nutrition Articles | Page 155 Harvard Health",
-   "pre": 5.0
-  },
-  {
-   "id": "9a044301db054269",
-   "canal": "Harvard Health",
-   "titulo": "All Vitamins, minerals & supplements Articles | Page 184",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR2VqNmZUYTlybmlsdXJQWVp5WEx6WVlBSE12SGhVQ082NmxUMFVMaWRyTVdzOUFNeWExM3BlZmdwR0xub1Z2YXlWS1RNaUQ3WUhiVjFVd0hadmx0OXpLNE96bzZUVGFfS251VHRkMEgwMlVqN2xhOC1oMlQzbDBQZExwZElHTU0?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-16T21:45:45+00:00",
-   "resumo": "All Vitamins, minerals & supplements Articles | Page 184 Harvard Health",
-   "pre": 5.0
-  },
-  {
    "id": "03638fdcd6fd280f",
    "canal": "Harvard Health",
    "titulo": "Hair Loss and Protein Deficiency",
@@ -1070,26 +1050,6 @@
    "publicado_em": "2026-10-19T07:00:00+00:00",
    "resumo": "Hair Loss and Protein Deficiency Harvard Health",
    "pre": 4.0
-  },
-  {
-   "id": "7082f52e1f9d0e05",
-   "canal": "Harvard Health",
-   "titulo": "Could exercise change how much of your antidepressant you need?",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTnJPVzdhY3JpaW9MYWY5Y3R1dGpyQWRUN1YyZVAwZ0dNWVJ1VEluZmhZdm85VktHWDJMOFRIZm1kWlhKZi1HdURPVU9SdWRCX3BCU2NwaEVNUEdETTV0VUVzclJuUVExVmpNbWxzXzRsSThBd1RLQnQyWmliQVoySUZhZFJxRVNEUVBsSjJ0ZHYwX016TVV2bmp5SG1HYmllN25FWHFYQXFxYXc?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-16T07:00:00+00:00",
-   "resumo": "Could exercise change how much of your antidepressant you need? Harvard Health",
-   "pre": 4.0
-  },
-  {
-   "id": "9c0fdb26f10defcb",
-   "canal": "Harvard Health",
-   "titulo": "All MIND diet Articles | Page 101",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFaXltdmpLYUM1OFV6TWJMSHVWN2tBbkphRkZmaVotU0lVckFnZk1SRlgwbTJudUJYYTJ4TTUzWENtd2hEcDhyUThBVHU4bTRYTW9iU290M1dxT2JkWGh2STE0VDJmeTZfVTd0Vw?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-24T02:03:00+00:00",
-   "resumo": "All MIND diet Articles | Page 101 Harvard Health",
-   "pre": 3.0
   },
   {
    "id": "0782b462a9b68377",
@@ -1112,6 +1072,46 @@
    "pre": 3.0
   },
   {
+   "id": "037c444f81c1baca",
+   "canal": "Harvard Health",
+   "titulo": "Body Lice",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aclRJVkxPQkp5UThxNG9zZklpREFMMm4yc2VPQ0o5N2E0YnlQSDNRSlFNa0lvMmdwUWZuZWU5Z2IyMzdqT0pPQ0pGWW4yOVdZc3IwR3gzMlhibFdhZEMzb0dMRmU?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-22T07:00:00+00:00",
+   "resumo": "Body Lice Harvard Health",
+   "pre": 3.0
+  },
+  {
+   "id": "ca5eefcfbe6445f2",
+   "canal": "Harvard Health",
+   "titulo": "Oat vs. dairy milk: Nutrition, benefits, and downsides",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNVlLT2hIOEpYT2VJSjNnOEF1VEE4QWVLRjFVdHRwLWJaVEVIOWxEMl9lV2FpanE2WUZ4bk0tWE8tVXFoX1NmNkVaLWRDOGxRM29iaTF0YlpHV0hYZFVvWHJMaTJSNDliUXR1cVhRTXdHbm0yZml2cGRhQndDNnQtVHl0djdQa0Z5TzhRZkg1VkZzSGxBTEhKSlM1VTJmUFlpaFE?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-22T04:00:00+00:00",
+   "resumo": "Oat vs. dairy milk: Nutrition, benefits, and downsides Harvard Health",
+   "pre": 3.0
+  },
+  {
+   "id": "382cc5c26f8e0973",
+   "canal": "Harvard Health",
+   "titulo": "What is tempeh? Benefits, nutrition, and how to use it",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWGJmRjBzTUVQaXhET1pKTnVMbHdWT3plbzFPTXI3eXFNTEdiMHpSRGpyTTdUWTdMazNSV2JXUy1oMnNDb2x1RjNLOVJBeFNPTldpRmlxczd1X0JYLWpRakNybmVud0dmVHd6Y05oVDM2MTVGZmxNWm9TU2xsX3Z3SkQySzlTYWFXanpuTl9YZ0NWbFc5bVVTTnI2LTdDODB2SFBr?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-20T04:00:00+00:00",
+   "resumo": "What is tempeh? Benefits, nutrition, and how to use it Harvard Health",
+   "pre": 3.0
+  },
+  {
+   "id": "5a83bea1bf4a84c2",
+   "canal": "Harvard Health",
+   "titulo": "Does diet influence the risk of developing arthritis?",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQkZWMWJJWTFBTElMZmdpZU9HREFsZDJDV3ZPMGNnYWxSX180SkhoRHpITnRndUxTVTBheWpDSzNDNDdxYmpiVlFWS0p0c0h1OUpxQWRESk1BWk1hRmJXUXZmWEZGVy1ldDI2MUFnZVBhYnUwbU1OWnREeFAyYmdaNzhoOWdqSDl5YjgtcHNBLU9MUEdGSk9DajNZYXFKeWVvckE?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-19T07:00:00+00:00",
+   "resumo": "Does diet influence the risk of developing arthritis? Harvard Health",
+   "pre": 3.0
+  },
+  {
    "id": "b6e9e5ce141c9f40",
    "canal": "NYT Well",
    "titulo": "How to Embrace a Fitness Mind-Set",
@@ -1120,16 +1120,6 @@
    "publicado_em": "2026-10-26T14:39:00+00:00",
    "resumo": "To build an effective workout habit, you have to start by changing how you see yourself.",
    "pre": 7.0
-  },
-  {
-   "id": "22cd13a3e4b385ae",
-   "canal": "NYT Well",
-   "titulo": "Melanoma Vaccine Ushers in New Hope for Cancer Patients",
-   "link": "https://www.nytimes.com/2026/10/23/well/cancer-vaccine-melanoma-study.html",
-   "imagem": "https://static01.nyt.com/images/2026/10/23/well/23Well-CANCER-VAX/23Well-CANCER-VAX-mediumSquareAt3X.jpg",
-   "publicado_em": "2026-10-23T17:43:06+00:00",
-   "resumo": "Beyond melanoma, scientists are studying cancer vaccines for glioblastoma, pancreatic cancer and more.",
-   "pre": 2.0
   },
   {
    "id": "480983c7a8e6cbbd",
@@ -1142,14 +1132,14 @@
    "pre": 3.0
   },
   {
-   "id": "f890bf213e32eadf",
+   "id": "91579ba1351728f1",
    "canal": "Forbes",
-   "titulo": "Hamilton É o Mais Rápido e Completa Domínio da Ferrari em Treino Livre para GP dos EUA",
-   "link": "https://forbes.com.br/forbes-life/forbes-sport/2026/10/hamilton-e-o-mais-rapido-e-completa-dominio-da-ferrari-em-treino-livre-para-gp-dos-eua/",
+   "titulo": "Apple Lança Novo iPad Mini com Preço a Partir de R$ 8.499",
+   "link": "https://forbes.com.br/forbes-tech/2026/10/apple-lanca-novo-ipad-mini-com-preco-a-partir-de-r-8-499/",
    "imagem": null,
-   "publicado_em": "2026-10-25T13:57:02+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Hamilton registrou o melhor tempo, ficando à frente do rival Max Verstappen, da Red Bull, e do companheiro de equipe Charles Leclerc O post Hamilton É o Mais Rápido e Completa Domínio da Ferrari em Treino Livre para GP dos EUA apareceu primeiro em Forbes Brasil .",
-   "pre": 3.0
+   "publicado_em": "2026-10-26T20:38:34+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Modelo de 8,5 polegadas é equipado com o Chip A20 Pro e possui recursos de inteligência artificial, como o Apple Intelligence e a Siri AI O post Apple Lança Novo iPad Mini com Preço a Partir de R$ 8.499 apareceu primeiro em Forbes Brasil .",
+   "pre": 2.0
   },
   {
    "id": "bcfdc4411c066ac4",
@@ -1172,73 +1162,73 @@
    "pre": 1.0
   },
   {
-   "id": "2161c795974c448f",
+   "id": "b9e3f86b32bc0dd3",
    "canal": "Forbes",
-   "titulo": "Flávio Lidera com 50,41% contra 49,59% de Lula, com 20,05% das Seções Apuradas, Diz TSE",
-   "link": "https://forbes.com.br/geral/2026/10/flavio-lidera-com-5041-contra-4959-de-lula-com-2005-das-secoes-apuradas-diz-tse/",
+   "titulo": "Plantio da Safra de Soja 2026/27 Atinge 40% da Área no Brasil",
+   "link": "https://forbes.com.br/forbes-agro/2026/10/plantio-da-safra-de-soja-2026-27-atinge-40-da-area-no-brasil/",
    "imagem": null,
-   "publicado_em": "2026-10-25T23:14:34+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Prorrogação determinada por Cristiano Zanin atendeu a pedidos das campanhas, que relataram dificuldades de transporte e impactos das chuvas em diferentes regiões do país O post Flávio Lidera com 50,41% contra 49,59% de Lula, com 20,05% das Seções Apuradas, Diz TSE apareceu primeiro em Forbes Brasil .",
+   "publicado_em": "2026-10-26T13:22:00+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Diminuição das chuvas destravou o trabalho de campo no Sul, enquanto o calor ainda restringe áreas do Cerrado O post Plantio da Safra de Soja 2026/27 Atinge 40% da Área no Brasil apareceu primeiro em Forbes Brasil .",
    "pre": 1.0
   },
   {
-   "id": "5b208c38abcc6a65",
+   "id": "a6927c777012e712",
    "canal": "Forbes",
-   "titulo": "Apuração É Retomada após Prorrogação da Votação",
-   "link": "https://forbes.com.br/geral/2026/10/apuracao-e-retomada-apos-prorrogacao-da-votacao/",
+   "titulo": "Anthropic Deve Integrar Grupo de Maiores IPOs do Mundo",
+   "link": "https://forbes.com.br/forbes-tech/2026/10/anthropic-deve-integrar-grupo-de-maiores-ipos-do-mundo/",
    "imagem": null,
-   "publicado_em": "2026-10-25T22:18:43+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Ministro Cristiano Zanin, do STF, estendeu o horário até as 19h nas seções ainda abertas, após relatos de falhas no transporte público em diversos estados O post Apuração É Retomada após Prorrogação da Votação apareceu primeiro em Forbes Brasil .",
-   "pre": 1.0
+   "publicado_em": "2026-10-26T20:48:49+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Investidores estão avaliando a empresa em cerca de US$1,5 trilhão, após divulgação de alguns detalhes financeiros O post Anthropic Deve Integrar Grupo de Maiores IPOs do Mundo apareceu primeiro em Forbes Brasil .",
+   "pre": 0.0
   },
   {
-   "id": "cfa8b9c0d21c0923",
-   "canal": "Forbes",
-   "titulo": "TSE Pausa Apuração após STF Estender Votação até as 19h",
-   "link": "https://forbes.com.br/geral/2026/10/tse-pausa-apuracao-apos-stf-estender-votacao-ate-as-19h/",
-   "imagem": null,
-   "publicado_em": "2026-10-25T21:16:34+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Decisão de Cristiano Zanin ocorreu após pedidos das campanhas de Lula e Flávio Bolsonaro por dificuldades de transporte e impactos das chuvas O post TSE Pausa Apuração após STF Estender Votação até as 19h apareceu primeiro em Forbes Brasil .",
-   "pre": 1.0
-  },
-  {
-   "id": "60b00075387da673",
-   "canal": "Forbes",
-   "titulo": "Pedido para Ampliar Horário de Votação Será Avaliado, Afirma Marques",
-   "link": "https://forbes.com.br/geral/2026/10/pedido-para-ampliar-horario-de-votacao-sera-avaliado-afirma-marques/",
-   "imagem": null,
-   "publicado_em": "2026-10-25T20:12:54+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. TSE analisa pedido após problemas no transporte de eleitores O post Pedido para Ampliar Horário de Votação Será Avaliado, Afirma Marques apareceu primeiro em Forbes Brasil .",
-   "pre": 1.0
-  },
-  {
-   "id": "d2fddc5c2dc24639",
-   "canal": "Forbes",
-   "titulo": "Lucas Pinheiro Braathen Vence Prova de Abertura do Slalom Gigante Masculino na Áustria",
-   "link": "https://forbes.com.br/forbes-life/forbes-sport/2026/10/lucas-pinheiro-braathen-vence-prova-de-abertura-do-slalom-gigante-masculino-na-austria/",
-   "imagem": null,
-   "publicado_em": "2026-10-25T14:27:21+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Campeão olímpico em Milão-Cortina, brasileiro supera Loic Meillard e Marco Odermatt em Soelden e segue invicto no slalom gigante O post Lucas Pinheiro Braathen Vence Prova de Abertura do Slalom Gigante Masculino na Áustria apareceu primeiro em Forbes Brasil .",
-   "pre": 1.0
-  },
-  {
-   "id": "76dad73d6daf255c",
-   "canal": "Forbes",
-   "titulo": "Cartórios Lançam Ferramenta Que Permite Pesquisar Imóveis no País",
-   "link": "https://forbes.com.br/forbes-money/forbes-real-estate/2026/10/cartorios-lancam-ferramenta-que-permite-pesquisar-imoveis-no-pais/",
-   "imagem": null,
-   "publicado_em": "2026-10-25T14:06:59+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Pesquisa Nacional de Bens está disponível na plataforma RI Digital O post Cartórios Lançam Ferramenta Que Permite Pesquisar Imóveis no País apareceu primeiro em Forbes Brasil .",
-   "pre": 1.0
-  },
-  {
-   "id": "41c4d89bac1ae9e7",
+   "id": "52591513dc1421f3",
    "canal": "Bloomberg",
    "titulo": "Billionaires Index",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1qVDRnb3FDZXJqM0VrUXdmZnpKSXFBaTA4NXFSeW9EWXJxMS1lTDVISGRWdnZ4TXBMV0liYjlPMkhid1BCOGMwM3hBSkNUa3ROb19fVGt6X2doa3JsT2VqWXBB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1sZzJsZzV2cXY2S2VwaHJpM29aVmZTeGtlWkt2V3ZWQnAzSXZxODQ2TjEwcWVKdTFKdHlyUl8yVXFWRkNsTTh2MzIybjNNR1V5bm56WXA3YnQ0NGxyZVV6c2pR?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T22:30:16+00:00",
+   "publicado_em": "2026-10-25T22:30:13+00:00",
    "resumo": "Billionaires Index Bloomberg.com",
+   "pre": 0.0
+  },
+  {
+   "id": "bc5395544d840036",
+   "canal": "Gq",
+   "titulo": "How Tom Rhys Harries Got Ripped for Clayface Despite a Torn ACL",
+   "link": "https://www.gq.com/story/tom-rhys-harries-clayface-workout-trainer-interview",
+   "imagem": "https://media.gq.com/photos/6adf6e99c94fd58e830ca514/master/pass/106-Clayface-Workout.jpg",
+   "publicado_em": "2026-10-26T16:10:47+00:00",
+   "resumo": "The 34-year-old Welsh actor’s trainer explains how he shredded down to 6% body fat even with a debilitating injury.",
+   "pre": 6.0
+  },
+  {
+   "id": "820ad6f392fff739",
+   "canal": "Gq",
+   "titulo": "15 Best Sweatpants for Men in 2026, According to GQ Editors",
+   "link": "https://www.gq.com/story/the-best-sweatpants",
+   "imagem": "https://media.gq.com/photos/699f7d0231c2b681d8429a4c/master/pass/GQR_Sweatpants-Lede.jpg",
+   "publicado_em": "2026-10-26T19:03:43+00:00",
+   "resumo": "Peak fleece season is upon us. Here's how to swaddle up right on the couch, at the gym, en route to the bodega, and beyond.",
+   "pre": 3.0
+  },
+  {
+   "id": "0e84b05f06a2a4ab",
+   "canal": "Gq",
+   "titulo": "Are Men Ready for the Return of the Shiny Dress Shirt?",
+   "link": "https://www.gq.com/story/the-return-of-the-shiny-dress-shirt-trend",
+   "imagem": "https://media.gq.com/photos/6adfa259aefc8b8aea6093be/master/pass/1026-Glossy-Dress-Shirts-Lede.jpg",
+   "publicado_em": "2026-10-26T20:14:53+00:00",
+   "resumo": "This isn’t an Ocean’s Eleven reboot—yet. But the glossy going-out shirts and sheeny suits of the early aughts are back with a vengeance.",
+   "pre": 0.0
+  },
+  {
+   "id": "94673faca89d1784",
+   "canal": "Gq",
+   "titulo": "The 32 Best Things to Buy at Banana Republic This Fall 2026",
+   "link": "https://www.gq.com/story/banana-republic-shopping-guide",
+   "imagem": "https://media.gq.com/photos/6adfaadaa1e2354d2ab708ac/master/pass/br%20v1.png",
+   "publicado_em": "2026-10-26T20:08:27+00:00",
+   "resumo": "Everything to buy—swaggering knitwear, superb outerwear, casual tailoring—from the legendary American outfitter.",
    "pre": 0.0
   },
   {
@@ -1260,46 +1250,6 @@
    "publicado_em": "2026-10-26T14:34:56+00:00",
    "resumo": "The host of the irreverent game show \"Interior Motives” became a minor internet celebrity for tearing into establishment politicians. Now, he's roasting his own.",
    "pre": 0
-  },
-  {
-   "id": "01318b0c297cdbc1",
-   "canal": "Gq",
-   "titulo": "What Causes Bad Breath?",
-   "link": "https://www.gq.com/story/what-causes-bad-breath",
-   "imagem": "https://media.gq.com/photos/6adbcc827bcfbf6eb8de1280/master/pass/bad%20breath%202%20copy%20.jpg",
-   "publicado_em": "2026-10-26T13:00:00+00:00",
-   "resumo": "Halitosis is way more common than you think, and learning its causes is just as important as figuring out how to fix it. We asked dentists for their expertise on the matter.",
-   "pre": 0.0
-  },
-  {
-   "id": "9f838aba69571f42",
-   "canal": "Gq",
-   "titulo": "Will Books Survive? 34 Insiders, Experts, and Icons on the State of Literature in an Age of Uncertainty",
-   "link": "https://www.gq.com/story/state-of-books-2026",
-   "imagem": "https://media.gq.com/photos/6abd1f0764fe1ae00a390027/master/pass/state%20of%20books.jpg",
-   "publicado_em": "2026-10-26T12:00:00+00:00",
-   "resumo": "Authors, publishers, critics, BookTokkers, and literary luminaries get real about the world of books in 2026—and why they’re not giving up on readers just yet.",
-   "pre": 0.0
-  },
-  {
-   "id": "7329be36a245c9c5",
-   "canal": "Gq",
-   "titulo": "5 Fall Date Night Outfits Guaranteed to Make A Great First Impression",
-   "link": "https://www.gq.com/story/fall-date-night-outfits-2026",
-   "imagem": "https://media.gq.com/photos/6adbb8382093da6969a384f1/master/pass/date%20nt%20v3.png",
-   "publicado_em": "2026-10-23T20:14:54+00:00",
-   "resumo": "Cuffing season is also dressing season.",
-   "pre": 0.0
-  },
-  {
-   "id": "deeafa169a7ec902",
-   "canal": "Gq",
-   "titulo": "The Perfect American-Made Oxford Shirt Still Exists",
-   "link": "https://www.gq.com/story/jpress-flap-pocket-oxford-shirt-three-outfits",
-   "imagem": "https://media.gq.com/photos/6ad906ea71fa9a11b2758113/master/pass/LedeDesignOxford-2.jpg",
-   "publicado_em": "2026-10-23T19:38:07+00:00",
-   "resumo": "It's hard to find a button-down crafted with the retro details Ivy-style diehards geek out over. Luckily, J.Press makes 'em just like they used to.",
-   "pre": 0.0
   },
   {
    "id": "f31447b5b93924b3",
@@ -1387,8 +1337,18 @@
    "titulo": "Marci Webber Killed Her Child. When Should the Mental Hospital Free Her?",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWFpCMHgzUVUwVDdrSjJ6WHhVc0YzaWY2amVfeWhhb3Z2XzNWU2lPRC1pMkpQcVA4RFhYd2JtSDdXMG4wQW01ZElhZ0FHRGhEN1paaHJscVNBZXdIYldtWHl5WEo2V0xDa2VlYmtqUTMyYnhsU0VMQzJQOEpLejh6VlBJMGRQVjh0MHFYcXlTUQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-26T12:36:00+00:00",
+   "publicado_em": "2026-10-26T18:16:00+00:00",
    "resumo": "Marci Webber Killed Her Child. When Should the Mental Hospital Free Her? The New York Times",
+   "pre": 1.0
+  },
+  {
+   "id": "97daa227d03a7937",
+   "canal": "Nytimes",
+   "titulo": "My Co-Worker Is Losing It Over My Religion",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSHZLVmVNeUthbjh3a1l0aVI2eTFjdTFrc2JtOGlFVldUNWhKa1phdnlrQzI2SlJxd2dnNUZrQS1NNGJXQmxPQVVLLTBVUm1wN2t0d0o4NlFCVnVNTk04Uy14MWI3S24wZlRBM3ZTQ3pfdkFsc3pWRVpUXzFkd3N6TnhybWt3Zk9jeDE5QnQzWEgxamxYMVE?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-25T09:02:00+00:00",
+   "resumo": "My Co-Worker Is Losing It Over My Religion The New York Times",
    "pre": 1.0
   },
   {
@@ -1412,24 +1372,14 @@
    "pre": 1.0
   },
   {
-   "id": "168c704edf885c31",
-   "canal": "Nytimes",
-   "titulo": "At 90, Steve Reich Remains in Good Creative Health",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wYVhFRmFRdlBCd3ZwNUtGbmlTOXg5YWRQa0dLQmQwWTU5dVI5bHVvejdXdDZhdzV1MWc2ajlnbkhhZVkxd2d2T1lkRElKMGF2dElXejhUNmZINVg1aTBvREhEdFRNRFY5aUV2TmRSVGYyM0tWMnc4YU9NNnV0U2M?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-23T17:39:21+00:00",
-   "resumo": "At 90, Steve Reich Remains in Good Creative Health The New York Times",
-   "pre": 1.0
-  },
-  {
-   "id": "89a8424f06445fa5",
+   "id": "bd0aba9c1ee23dff",
    "canal": "Globo",
-   "titulo": "Aos 91, Renato Aragão mostra rotina de treino e recebe elogios: 'Mais disposição do que eu'",
-   "link": "https://revistaquem.globo.com/saude/fitness/noticia/2026/10/renato-aragao-mostra-rotina-de-treino-aos-91-anos-e-recebe-elogios-esta-com-mais-disposicao-do-que-eu.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/HXdTLTFG96XWM3SYooo6iqwbALQ=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/a/V/eeqFaaQPSBuAARlN8XkQ/design-sem-nome-26-.jpg",
-   "publicado_em": "2026-10-23T21:14:31+00:00",
-   "resumo": "Renato Aragão, de 91 anos, mostrou que continua dedicado aos cuidados com a saúde e ao bem-estar. Em um vídeo compartilhado nas redes sociais, nesta sexta-feira (23), o eterno Didi, de Os Trapalhões, aparece realizando uma série de exercícios físicos com o acompanhamento de uma personal trainer. \"Sextou\", escreveu ele na legenda. Na gravação, o humorista realiza exercícios para trabalhar os braços",
-   "pre": 11.0
+   "titulo": "Duda Santos recebe visitas famosas no primeiro treino para viver Daiane dos Santos",
+   "link": "https://revistaquem.globo.com/entretenimento/series-e-filmes/noticia/2026/10/com-companhia-de-agatha-moreira-e-rodrigo-simas-duda-santos-inicia-preparacao-para-interpretar-daiane-dos-santos-em-filme.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/c0o515HxZ_Q7jjR3bajhlRp6Y9w=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/4/N/cd09wTRXK6N6stYBfY6A/capa-1400-x-950-80-.png",
+   "publicado_em": "2026-10-26T15:36:10+00:00",
+   "resumo": "Duda Santos viverá Daiane dos Santos em A Menina que Voa, filme biográfico que contará a trajetória da lenda da ginástica, e atriz já começou os treinos para encarar o desafio. O treinador Arthur Lemes mostrou nas redes sociais os detalhes do início do processo de preparação. No Instagram, Arthur mostrou os exercícios realizados por Duda e explicou que a preparação começou com atividades de mobili",
+   "pre": 6.0
   },
   {
    "id": "3f64bea9d142661c",
@@ -1458,7 +1408,7 @@
    "link": "https://revistaquem.globo.com/saude/fitness/noticia/2026/10/ruivinha-de-marte-exibe-piercing-no-umbigo-e-shape-chama-atencao-da-agua-para-o-vinho.ghtml",
    "imagem": "https://s2-quem.glbimg.com/rKxp3qASFkWsWV9jjShk0hoRmss=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/V/i/2kL9QhQZiw58IA3W6efg/befunky-collage-2026-10-26t115414.563.jpg",
    "publicado_em": "2026-10-26T14:58:04+00:00",
-   "resumo": "Ruivinha de Marte, de 29 anos, elevou a temperatura ao publicar uma selfie no espelho na qual aparece com a parte de cima do biquíni. No clique, é possível ver o piercing que a cantora e influenciadora possui no umbigo e também suas tatuagens. O que também chamou a atenção dos seguidores foi o shape da ruiva, que transformou o corpo ao focar na vida fitness. \"[Mudou] da água para o vinho\", comento",
+   "resumo": "Ruivinha de Marte, de 29 anos, publicou uma selfie no espelho na qual aparece com a parte de cima do biquíni. No clique, é possível ver o piercing que a cantora e influenciadora possui no umbigo e também suas tatuagens. O que também chamou a atenção dos seguidores foi o shape da ruiva, que transformou o corpo ao focar na vida fitness. \"[Mudou] da água para o vinho\", comentou uma pessoa. \"Perfeita\"",
    "pre": 5.0
   },
   {
@@ -1492,44 +1442,44 @@
    "pre": 3.0
   },
   {
-   "id": "4fdd3351ceee0f92",
+   "id": "dec2c3c6bd3fb1b0",
    "canal": "Globo",
-   "titulo": "Viúva de Rick lamenta um mês sem o cantor: 'Vazio que palavras não conseguem explicar'",
-   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/viuva-de-rick-lamenta-um-mes-sem-o-cantor-vazio-que-palavras-nao-conseguem-explicar.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/P49cS6UbUuBbM9tJhbv2XNKIGsk=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/6/7/XAwypGTVSv2C6BTeAHTg/befunky-collage-2026-10-26t080531.193.jpg",
-   "publicado_em": "2026-10-26T10:40:39+00:00",
-   "resumo": "Geralda Helena, de 62 anos, falou sobre o luto na manhã desta segunda-feira (26) em suas redes sociais. A viúva do cantor Rick, dupla de Renner, que morreu há um mês e cinco dias, enfatizou a saudade que está sentindo do marido, com quem viveu um relacionamento de 44 anos. Ela resgatou um vídeo do cantor sertanejo e falou como está se sentindo. \"No dia 21/09 o céu ganhou você. Você foi perfeito em",
+   "titulo": "Shawn Mendes dá beijão em Bruna Marquezine em novo álbum de fotos do casal",
+   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/shawn-mendes-abre-album-de-fotos-de-momentos-romanticos-ao-lado-de-bruna-marquezine.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/Zqjo4m83fKfLSQytWX5H1E3iMCQ=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/3/b/QmcuOiSVarL3AwixMuGQ/fotojet-66-.jpg",
+   "publicado_em": "2026-10-26T20:55:30+00:00",
+   "resumo": "Aguenta coração! Shawn Mendes, de 28 anos, abriu um álbum de fotos, nesta segunda-feira (26), ao lado de Bruna Marquezine, de 31, e não economizou nos registros românticos. Em uma das imagens compartilhadas nas redes sociais, o cantor canadense aparece dando um beijo na atriz, enquanto a abraça pela cintura e deixa a mão apoiada na parte de trás da calça dela. O casal foi fotografado ao ar livre, ",
    "pre": 2.0
   },
   {
-   "id": "e3ae6227e08113a7",
+   "id": "1be032e3eeee3950",
    "canal": "Globo",
-   "titulo": "Chris Brown será sentenciado por agressão com garrafa em boate e pode ser preso; entenda",
-   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/chris-brown-sera-sentenciado-por-agressao-com-garrafa-em-boate-de-londres.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/zdje8aec9UA57KOZuzMZMIvRv0Q=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/B/M/jQAU6fTvSQm3dGiqIpUw/befunky-collage-2026-10-26t065540.542.jpg",
-   "publicado_em": "2026-10-26T09:29:09+00:00",
-   "resumo": "Chris Brown, de 37 anos, será sentenciado nesta segunda-feira (26) por uma briga na qual se envolveu em uma boate de Londres, na Inglaterra, há três anos. A informação foi divulgada pela ABC News. O vencedor do Grammy agrediu o produtor musical Abraham Diaw com uma garrafa na confusão ocorrida em fevereiro de 2023. Em um primeiro momento, ele negou que tinha cometido o ato de agressão. Os promotor",
+   "titulo": "Atleta olímpico, Guilherme Caribé pede namorada norte-americana em casamento: 'Amor mais doce'",
+   "link": "https://revistaquem.globo.com/esportes/noticia/2026/10/atleta-olimpico-guilherme-caribe-pede-namorada-norte-americana-em-casamento.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/DFRUKL6mqZ-5oy4VxkOBw8SLZM0=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/K/X/UnI8F6T9aDkBpQNUAZ3g/fotojet-64-.jpg",
+   "publicado_em": "2026-10-26T19:54:59+00:00",
+   "resumo": "Medalha de ouro no amor! O nadador olímpico Guilherme Caribé, de 23 anos, e a namorada, a também nadadora norte-americana Julia Burroughs, de 22, anunciaram o noivado nas redes sociais. Os dois compartilharam fotos do pedido de casamento em um bosque, onde aparecem sorridentes e apaixonados. “A oração mais doce atendida. Deus tem sido tão bom conosco, e sou eternamente grata pela maneira como Ele ",
    "pre": 2.0
   },
   {
-   "id": "948ae7b14e3be4f5",
+   "id": "cd4b8e54c2632533",
    "canal": "Globo",
-   "titulo": "Jack Antonoff quebra o silêncio sobre fim do casamento com Margaret Qualley: 'Não tenho vergonha'",
-   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/jack-antonoff-revela-como-e-cantar-musicas-de-amor-dedicadas-a-ex-margaret-qualley.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/pCB4Jo3K7RfqH2PS_f1YWJTUssE=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/c/R/C8uHx6TZyymXLYfBKjdA/design-sem-nome-3-.jpg",
-   "publicado_em": "2026-10-26T01:28:56+00:00",
-   "resumo": "Jack Antonoff, de 42 anos, abriu o coração sobre o fim de seu casamento com a atriz Margaret Qualley, de 32. Em entrevista ao jornal britânico The Guardian, publicada neste domingo (25), o cantor, compositor e produtor musical revelou como tem sido interpretar, durante os shows de sua banda, Bleachers, as músicas de amor que escreveu sobre o relacionamento com a ex-mulher, estrela de A Substância.",
+   "titulo": "Gostosofobia? Ex-Miss Bumbum abandona curso de etiqueta após orientação para disfarçar bumbum",
+   "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/gostosofobia-ex-miss-bumbum-abandona-curso-de-etiqueta-apos-orientacao-para-disfarcar-bumbum.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/FRZeWASRU9qEfGbLcyN370s7MEI=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/W/K/LPQX0CToe80e2SF6ySgA/whatsapp-image-2026-10-26-at-12.46.02.jpeg",
+   "publicado_em": "2026-10-26T15:50:27+00:00",
+   "resumo": "A influenciadora e ex-Miss Bumbum Kerolay Chaves, de 25 anos, afirma que abandonou um curso de etiqueta on-line após interpretar orientações sobre esconder as curvas como “gostosofobia”. Segundo ela, as recomendações da tutora para disfarçar o quadril e não marcar o bumbum transmitiam a ideia de que mulheres com curvas precisam ocultar o corpo para serem consideradas chiques. Kerolay conta que com",
    "pre": 2.0
   },
   {
-   "id": "e980e48ea3b8436d",
+   "id": "04425c5e58ece70b",
    "canal": "People",
-   "titulo": "Joe Amabile Says Running NYC Marathon 3 Months After Brain Surgery Gives Him ‘Control’ Over His Body (Exclusive)",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPckQ1MzV2dU5hV1FhZTdzTFk5R0IwNW1tUnV3bDRLYlZSWm5ON2R3cDQwSENKTml1MXBHR0NrbUtQckp6NFM0ckdvWjdha0hZUm1JaWRvRmJGdDJLWkNCWXZGZUlLdF9oMUtLLXFLOGZXQnBkR09aT0ZJdm9nb2Z2emJRcU9zTE1xM3pxZlVLcjhBdGwtVFRRSjVrVkNrNW5T?oc=5",
+   "titulo": "Can GLP-1s Slow Aging? (Exclusive)",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TQnJwMDdTZGxZVjJhSk5lazZmOUZqZzU5cFdfcmo2WWstWHZIeW1fTVVYV2hlQk10RTc4N1NOOXZROVNWWTFRQkN4VUhrT3U5dVBaTUQ1Zi1RVXVHU01QeHlOaGszVnJTUm9N?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T17:32:31+00:00",
-   "resumo": "Joe Amabile Says Running NYC Marathon 3 Months After Brain Surgery Gives Him ‘Control’ Over His Body (Exclusive) People.com",
-   "pre": 7.0
+   "publicado_em": "2026-10-26T18:21:19+00:00",
+   "resumo": "Can GLP-1s Slow Aging? (Exclusive) People.com",
+   "pre": 4.0
   },
   {
    "id": "b70b1283f1cd05c8",
@@ -1542,14 +1492,34 @@
    "pre": 3.0
   },
   {
-   "id": "4f39f6b0f7049758",
+   "id": "8db9af5c89e10bce",
    "canal": "People",
-   "titulo": "Meghan Markle’s Father Was Accused of Sexually Abusing a Child in 2018 Letter to Police: Report",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdmtGejBOZUVwblVjY1ZMaXFVYkRaZzdCd1Byc0ZGX0JzWGJJVHZlTGJpX05LY0tVWHctMDJWRHdyY1hwMm1LOUJYTDBGSFVCTTFWNFptUjZScmlLRUowaV85LXFfN1Uybmp0MDBrMkNBclVDVEEtcURJNEE1ODljZjRQdF8zSU90WHRzVFkxOUo4Ym13el9rblBB?oc=5",
+   "titulo": "Meghan Markle Is ‘Really Cut Up’ by Alarming Allegations Against Her Father: ‘It’s Traumatic’ (Exclusive Source)",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNWJKTjdnbzczUnZYamxHRmpNMU5YY1BSV1Utb1RJb243WW9lQTNlZHdtUjdpYnNmeVdXeDRvSTJPRFdFSGJHdXhxS0FEbFJ1TGQwVTJ6RmlEOFhHWFFSWXdMMGZSYjV2UElhZ1NVNms4MHFHbGpQX0R1QWk1emVHRFZ0ci1mV2FEZFVTQTFuWXo2Z1FMYlJveDVZVHFfT0ZMVzZqNnpfMA?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-23T21:33:35+00:00",
-   "resumo": "Meghan Markle’s Father Was Accused of Sexually Abusing a Child in 2018 Letter to Police: Report People.com",
+   "publicado_em": "2026-10-26T19:43:43+00:00",
+   "resumo": "Meghan Markle Is ‘Really Cut Up’ by Alarming Allegations Against Her Father: ‘It’s Traumatic’ (Exclusive Source) People.com",
    "pre": 2.0
+  },
+  {
+   "id": "07bb0ee28a2048ee",
+   "canal": "People",
+   "titulo": "Kate Gosselin Claims She Visited Son Collin at Mental Health Facility ‘Every Single Time’ She Could",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQk9sUXQ5NnJSVFEyM0FSaWFjRmxTU2xsb1N6UWVGQ1NVUXZ1X3hXM0FuS1dvbUN0TmwxRFktcHU0cTY2cU0zcjl4UTlvOEpyOXdHZ2V2RDZJTnFsd3NvaDNSelRWQTFXMHFkbHBRanpRUE5YbEhJcm50cTdDLWFXS0lLMlZBUTVWXy1kVnJWc29TRE9OZC1Taw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T16:44:00+00:00",
+   "resumo": "Kate Gosselin Claims She Visited Son Collin at Mental Health Facility ‘Every Single Time’ She Could People.com",
+   "pre": 2.0
+  },
+  {
+   "id": "9fab5855cfd94fcf",
+   "canal": "People",
+   "titulo": "Teddi Mellencamp Says Brain Surgery Left Her Struggling to Write and See",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYkNLYnNjcy1qaGFzTFhSX1VmSDFSeFhWRV9MNFdrdW40a0ZZUHRQYkpMRUV0X3lUOE1PTDlRRnNVUnMwRHFFeGdHTkFxc3FkeE9aOFg4eTFFUnJ6aHpiNW0xYTd4dGVseVFKSTJDdktQWUhkejlscjJQYTdZOTRuZGk1Qi1XNGJKLWplR0JSa3JUeHUyZVRreERXaEZFRGhabFJOag?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T20:51:57+00:00",
+   "resumo": "Teddi Mellencamp Says Brain Surgery Left Her Struggling to Write and See People.com",
+   "pre": 1.0
   },
   {
    "id": "090a248bbe076d1e",
@@ -1559,16 +1529,6 @@
    "imagem": null,
    "publicado_em": "2026-10-25T23:05:35+00:00",
    "resumo": "High School Football Coach Dies After Medical Emergency During Game in Pennsylvania People.com",
-   "pre": 1.0
-  },
-  {
-   "id": "374f3a65db693183",
-   "canal": "People",
-   "titulo": "Mom Noticed Her Toddler’s Swollen Knee, but Doctors Didn’t Take It ‘Seriously’ for Months. Then Came a Shocking Diagnosis",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRG5PVnZyTFZ5UDNzQk9HXzZNYjVodlBITGJLZzNrNExlQTBGb2NJRGNrSEdHVnRWNU1MWjE5WUI1eEFFSTQ4bUh5UXMySHF6cHdSNUFaV2lfSmxFOEVWQTl0dDk3d184NUVlbEw1X0NKS0dtSHpqbUlRd1IyR0VRMzZrTFdhTnpmR2JkV25zMHE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-25T21:00:00+00:00",
-   "resumo": "Mom Noticed Her Toddler’s Swollen Knee, but Doctors Didn’t Take It ‘Seriously’ for Months. Then Came a Shocking Diagnosis People.com",
    "pre": 1.0
   },
   {
@@ -1602,13 +1562,23 @@
    "pre": 2.0
   },
   {
-   "id": "c9380f599001e101",
+   "id": "4585870508f8c080",
    "canal": "Vulture",
-   "titulo": "Shameless",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9IU0llbl9oLU9OTmN3NTlzekZUVHJDejFCa1hIMFdNOHFoeG1MdXJmZHJMZGYxMHQ2VUNBUUhYRWo3M3RBSXpxNzNWd09WQQ?oc=5",
+   "titulo": "Gossip Girl (Original) — TV Episode Recaps & News",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0yVW9lVWVHTDgzQU5zME5GV0pPcVhuOEl4cmNPd20tMGE4NFpUUU1MaXhMTFRJbFhuV1lHU1JiUGIxX2RNVWJ4bWVlaGkzb1U?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-26T14:23:16+00:00",
-   "resumo": "Shameless Vulture",
+   "publicado_em": "2026-10-26T17:03:10+00:00",
+   "resumo": "Gossip Girl (Original) — TV Episode Recaps & News Vulture",
+   "pre": 0.0
+  },
+  {
+   "id": "9067df6bbb6cccee",
+   "canal": "Vulture",
+   "titulo": "Spare Quinta Brunson Your Elaborate Pranks",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTThQLUZRWEVyWGt1b2s1UmxmV2ZlWS1YSWV2dTNCdElSWlZiZlRfaFJDREtpam8ySUdyR2ZLa2x6SlJKSjRIUHJPRGZGa1hwaE5ySVgwcFozZEg4TUpDNnlfUWsyc3RLUjZqRk8xU21PSFlnR2ZtN280bnhwQUF4M1hKZFVQZw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-10-26T16:30:27+00:00",
+   "resumo": "Spare Quinta Brunson Your Elaborate Pranks Vulture",
    "pre": 0.0
   },
   {
@@ -1627,88 +1597,78 @@
    "titulo": "TV News, TV Recaps, Episode Previews and Celebrity Interviews",
    "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE95TF8yMFBmS1Z3ZzlnRlZkcnFpSjZwNXdkREx0Z3FkM1NWZGdNWlJpdTlKSG9ERkdPckVQUmlRRHc?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-26T10:59:23+00:00",
+   "publicado_em": "2026-10-25T19:40:36+00:00",
    "resumo": "TV News, TV Recaps, Episode Previews and Celebrity Interviews Vulture",
    "pre": 0
   },
   {
-   "id": "32bdc1740663ba89",
+   "id": "a950266d9a7b0461",
    "canal": "Vulture",
-   "titulo": "Entertainment News - TV, Movies, Music, Books, Theater, Art",
-   "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5na05HdWxYQnlYMFRUTVFjSTAwdXRHOHpWUC1aeWF1WFBGdUZUOUZhWVBVN2R0Tm1COTlyOG5WX1Nadlk?oc=5",
+   "titulo": "Queen Sugar - TV Episode Recaps & News",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE15MW1pWk1yekVSN3J0TzdSX3R4WkowdmhBQU04SWFWS1Y0djNOVzFJYUxnUFZFWVF0QUd1Ukx3NGRJOFZWLW5PLTRLOHBvSDFo?oc=5",
    "imagem": null,
-   "publicado_em": "2026-10-25T04:14:49+00:00",
-   "resumo": "Entertainment News - TV, Movies, Music, Books, Theater, Art Vulture",
+   "publicado_em": "2026-10-25T07:00:00+00:00",
+   "resumo": "Queen Sugar - TV Episode Recaps & News Vulture",
    "pre": 0.0
   },
   {
-   "id": "fa81e798b123cb21",
-   "canal": "Vulture",
-   "titulo": "Robert Ben Garant to Riff on the State of Tabloid Journalism",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ESVZOQ0l3b2dsNHNjdWlza0RvVEtTQ19sYndsVnhweS1pUGt2aVBXclAwaWhZZmlTZXRfV1RfaXd5MkxNbUlTWldxSllIYnY3ZmtHVERUQVNUN1RETF9hRmpQQ2FEZzZGQ20xWTljQQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-10-24T01:04:12+00:00",
-   "resumo": "Robert Ben Garant to Riff on the State of Tabloid Journalism Vulture",
-   "pre": 0.0
-  },
-  {
-   "id": "f99191da89e17e2a",
+   "id": "6ff7afe0f3bdb140",
    "canal": "Pagesix",
-   "titulo": "Kate Gosselin’s estranged son Collin gets support from ‘real mom’ after memoir release",
-   "link": "https://pagesix.com/2026/10/26/parents/kate-gosselins-estranged-son-collin-gets-support-from-real-mom-after-memoir-release/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fcolleen-conrad-collin-gosselin-2026-146539891.jpg?w%3D580",
-   "publicado_em": "2026-10-26T15:15:32+00:00",
-   "resumo": "\"You’re kind, loving, funny and you love in a way that a real mother should,\" Collin wrote via Instagram.",
+   "titulo": "Inside Minky Couture’s cozy, reality star-packed NYC pop-up launch party",
+   "link": "https://pagesix.com/2026/10/26/entertainment/inside-minky-couture-nyc-pop-up-with-page-sixs-virtual-reali-tea/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fvikram-valluri-short-studios-step-146557954.jpg?w%3D1024",
+   "publicado_em": "2026-10-26T21:13:48+00:00",
+   "resumo": "Some reality stars were spotted getting extra cozy at the Minky Couture pop-up opening.",
    "pre": 0.0
   },
   {
-   "id": "30bbb645108c4a07",
+   "id": "a716cf298b4c28ee",
    "canal": "Pagesix",
-   "titulo": "Fox News stars Sean Hannity, Ainsley Earhardt tie the knot at church where they got engaged",
-   "link": "https://pagesix.com/2026/10/26/celebrity-news/fox-news-stars-sean-hannity-ainsley-earhardt-marry-at-church-where-they-got-engaged/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2F2026-historic-church-bethesda-by-146442466.jpg",
-   "publicado_em": "2026-10-26T14:53:42+00:00",
-   "resumo": "Hannity, 64, got down on one knee at the Church of Bethesda-by-the-Sea in Florida in December 2024, four years into dating Earhardt.",
+   "titulo": "‘SNL UK’ takes scathings digs at Meghan Markle’s dad, Shane Gillis",
+   "link": "https://pagesix.com/video/snl-uk-takes-scathings-digs-at-meghan-markles-dad-shane-gillis/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fsnl-uk_wp.png",
+   "publicado_em": "2026-10-26T20:49:20+00:00",
+   "resumo": "The latest “Saturday Night Live UK” soared with host Cynthia Erivo — and a wickedly funny “Wicked” parody. Meanwhile on “Weekend Update,” co-anchors Paddy Young and Ania Magliano took several shots at Meghan Markle’s dad Thomas Markle Sr.’s child porn scandal. Magliano also didn’t hold back last week on the Oct. 17 episode, roasting controversial...",
    "pre": 0.0
   },
   {
-   "id": "ab6ef94c0969332a",
+   "id": "ae193e15e6a5dbc1",
    "canal": "Pagesix",
-   "titulo": "Kendall Jenner swears by ‘underglazing,’ the skin care trend that ‘perfects the canvas’ for makeup",
-   "link": "https://pagesix.com/2026/10/26/style/kendall-jenner-swears-by-the-underglazing-skincare-trend-before-makeup/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fkendall-jenner-anua-2.jpg",
-   "publicado_em": "2026-10-26T14:43:57+00:00",
-   "resumo": "“Mary [Phillips] pays so much attention to the skin before she starts the makeup,\" Jenner told Page Six Style exclusively.",
+   "titulo": "Adam Brody divulges regret from Leighton Meester proposal more than a decade after popping question",
+   "link": "https://pagesix.com/2026/10/26/celebrity-news/adam-brody-shares-regret-about-leighton-meester-proposal/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fl-r-leighton-meester-adam-146557991.jpg",
+   "publicado_em": "2026-10-26T20:32:14+00:00",
+   "resumo": "The \"O.C.\" actor and the \"Gossip Girl\" actress got engaged in 2013 after less than a year of dating.",
    "pre": 0.0
   },
   {
-   "id": "7ce9d854c2258b86",
+   "id": "52dfddf49b86d1e9",
    "canal": "Pagesix",
-   "titulo": "Holland Taylor name-drops the 9-time Emmy-winning show that ‘never’ paid her ‘well’",
-   "link": "https://pagesix.com/2026/10/26/entertainment/holland-taylor-claims-two-and-a-half-men-never-paid-her-well/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fholland-taylor-2026-146541304_5ae1f9.jpg",
-   "publicado_em": "2026-10-26T14:37:59+00:00",
-   "resumo": "Taylor said the producers of the show were \"astonished\" when she let her contract expire.",
+   "titulo": "How Elizabeth Taylor’s iconic Scorpio cape wound up on Kris Jenner — and Kim Kardashian",
+   "link": "https://pagesix.com/video/how-elizabeth-taylors-iconic-scorpio-cape-wound-up-on-kris-jenner-and-kim-kardashian/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2FCT-WP-Thumb-opt-2.jpg?quality%3D90%26strip%3Dall",
+   "publicado_em": "2026-10-26T20:08:05+00:00",
+   "resumo": "From Marilyn Monroe’s glittering gown to Princess Diana’s cross pendant, Kim Kardashian’s worn many iconic pieces plucked from other celebrities’ closets. But this time, it’s mom Kris Jenner’s turn. On today’s episode of “Currently Trending,” Page Six Style & Shopping Editor Elana Fishman is breaking down the curious case of Elizabeth Taylor’s Scorpio Cape. Jenner...",
    "pre": 0.0
   },
   {
-   "id": "50cab2f382031f11",
+   "id": "9cf5658f1234665b",
    "canal": "Pagesix",
-   "titulo": "Amy Schumer and Chris Fischer finalize divorce 10 months after separating",
-   "link": "https://pagesix.com/2026/10/26/celebrity-news/amy-schumer-and-chris-fischer-finalize-divorce-10-months-after-separating/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F09%2Ffebruary-03-l-r-chris-142517019.jpg?w%3D683",
-   "publicado_em": "2026-10-26T13:56:04+00:00",
-   "resumo": "The \"I Feel Pretty\" actress — who secretly married Fischer in 2018 and welcomed their son in 2019 — confirmed their split in December 2025.",
+   "titulo": "The over-the-top wedding props Taylor Swift and Travis Kelce deemed too expensive, dangerous for $30M nuptials",
+   "link": "https://pagesix.com/2026/10/26/entertainment/taylor-swift-travis-kelce-wedding-props-deemed-too-expensive-dangerous-revealed/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Feditorial-use-l-r-travis-145960149_7e6178.jpg",
+   "publicado_em": "2026-10-26T19:52:27+00:00",
+   "resumo": "New details have emerged about Swift and Kelce's star-studded wedding nearly three months later.",
    "pre": 0.0
   },
   {
-   "id": "98d7ca8a56020cc5",
+   "id": "57826d5d181629d6",
    "canal": "Pagesix",
-   "titulo": "Bethenny Frankel swears by these caviar eye patches, so I put them to the test",
-   "link": "https://pagesix.com/style/biodance-under-eye-patches-review/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fbiodance-feature.png",
-   "publicado_em": "2026-10-26T13:48:17+00:00",
-   "resumo": "Frankly, these Frankel faves are fab.",
+   "titulo": "Pierce Brosnan’s wife, Keely Shaye Smith, stuns in satin dress in rare family pic at mom’s 82nd birthday",
+   "link": "https://pagesix.com/2026/10/26/celebrity-news/pierce-brosnans-wife-keely-shaye-smith-stuns-in-satin-dress-in-rare-family-pic/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F10%2Fpierce-brosnans-wife-keely-shaye-146555449.jpg?w%3D971",
+   "publicado_em": "2026-10-26T19:35:13+00:00",
+   "resumo": "The actor and the journalist have been married for 25 years.",
    "pre": 0.0
   },
   {
