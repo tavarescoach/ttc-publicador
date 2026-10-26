@@ -1,21 +1,32 @@
 {
- "atualizado_em": "2026-10-25T06:34:56-03:00",
+ "atualizado_em": "2026-10-25T14:20:35-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
-   "canais": 5,
-   "nota_max": 84,
+   "canais": 4,
+   "nota_max": 80,
    "titulos": [
-    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
     "As weight-loss drug users turn to dietary supplements, doctors and regulators raise flags",
-    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says"
+    "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says",
+    "Boom in weight-loss drugs could lead to fall in beer sales, Heineken warns UK pubs"
+   ]
+  },
+  {
+   "assunto": "alcool-beber-menos",
+   "tema": "comportamento",
+   "canais": 3,
+   "nota_max": 82,
+   "titulos": [
+    "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+    "Just two drinks a day may be far riskier than you think",
+    "Catholic alcohol consumption drops to record low as Americans rethink moderate drinking habits"
    ]
   },
   {
    "assunto": "boom-proteina",
    "tema": "negocio",
-   "canais": 4,
+   "canais": 3,
    "nota_max": 78,
    "titulos": [
     "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
@@ -24,14 +35,25 @@
    ]
   },
   {
+   "assunto": "vacina-cancer-melanoma",
+   "tema": "ciencia",
+   "canais": 3,
+   "nota_max": 48,
+   "titulos": [
+    "Vacina contra câncer reduz em 42% risco de morte ou recidiva de melanoma",
+    "Melanoma Vaccine Ushers in New Hope for Cancer Patients",
+    "Experimental mRNA vaccine cuts risk that melanoma returns by 42%"
+   ]
+  },
+  {
    "assunto": "polilaminina-anvisa",
    "tema": "saude",
-   "canais": 4,
+   "canais": 3,
    "nota_max": 15,
    "titulos": [
-    "Pesquisadora da polilaminina chama ciência de religião e compara cientistas críticos a ela a Mengele",
     "Anvisa Restringe Acesso À Polilaminina após Nove Mortes e Pesquisadora Critica Decisão",
-    "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora"
+    "Anvisa restringe uso compassivo da polilaminina e rebate críticas de pesquisadora",
+    "Anvisa registra 9 mortes em uso compassivo de polilaminina e impõe restrições; pesquisadora questiona"
    ]
   },
   {
@@ -44,33 +66,22 @@
     "Fox News AI Newsletter: What we saw inside a massive Texas data center",
     "Data Centers Menores e Regulares Buscam Alternativas para Reduzir Custos"
    ]
-  },
-  {
-   "assunto": "meghan-pai",
-   "tema": "cultura",
-   "canais": 3,
-   "nota_max": 5,
-   "titulos": [
-    "Meghan ‘deeply distressed’ over child sex abuse image allegations against father",
-    "Meghan Markle’s final message to dad Thomas before his child porn allegations revealed: report",
-    "Meghan Markle Responds to Child Pornography Allegations Against Her Father"
-   ]
   }
  ],
  "top": [
-  {
-   "titulo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
-   "canal": "Estadão Saúde",
-   "assunto": "glp1-mercado-e-efeitos",
-   "nota": 84,
-   "gancho": "Seu pai emagreceu com a caneta. Quanto da perda foi músculo?"
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
+  },
+  {
+   "titulo": "Just two drinks a day may be far riskier than you think",
+   "canal": "ScienceDaily",
+   "assunto": "alcool-beber-menos",
+   "nota": 82,
+   "gancho": "Duas doses por noite parecem pouco. O estudo diz outra coisa."
   },
   {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
@@ -122,11 +133,11 @@
    "gancho": "Seu iogurte ganhou 20 g de proteína. Seu músculo continua igual."
   },
   {
-   "titulo": "Millions take fish oil for brain health. A two-year study found no benefit",
-   "canal": "ScienceDaily",
-   "assunto": "omega3-cerebro",
+   "titulo": "Hormônios mudam 12 a 15 anos antes da menopausa, diz estudo",
+   "canal": "Instagram",
+   "assunto": "menopausa-terapia-hormonal",
    "nota": 78,
-   "gancho": "Dois anos de óleo de peixe. Nenhum ganho de memória."
+   "gancho": "Seus hormônios começam a mudar no fim dos 30."
   }
  ]
 }
