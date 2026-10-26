@@ -21,14 +21,14 @@
   "url": "https://www.bloomberg.com/billionaires/",
   "peso": 1.0,
   "feeds": [
-   "https://news.google.com/rss/search?q=site:bloomberg.com/billionaires+when:7d&hl=en-US&gl=US&ceid=US:en"
+   "https://news.google.com/rss/search?q=site:bloomberg.com/billionaires+(health+OR+fitness+OR+exercise+OR+sleep+OR+study)+when:7d&hl=en-US&gl=US&ceid=US:en"
   ],
   "origem": "painel",
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:47:13.769Z",
-  "coletadas": 8,
-  "aproveitadas": 6,
+  "coletadas": 1,
+  "aproveitadas": 1,
   "falhou": false
  },
  {
@@ -43,7 +43,7 @@
   "modo": "descoberto",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:47:41.417Z",
-  "coletadas": 10,
+  "coletadas": 11,
   "aproveitadas": 6,
   "falhou": false
  },
@@ -59,7 +59,7 @@
   "modo": "descoberto",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:48:14.521Z",
-  "coletadas": 10,
+  "coletadas": 15,
   "aproveitadas": 6,
   "falhou": false
  },
@@ -75,7 +75,7 @@
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:48:35.089Z",
-  "coletadas": 37,
+  "coletadas": 34,
   "aproveitadas": 6,
   "falhou": false
  },
@@ -107,8 +107,8 @@
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:49:06.961Z",
-  "coletadas": 47,
-  "aproveitadas": 10,
+  "coletadas": 46,
+  "aproveitadas": 7,
   "falhou": false
  },
  {
@@ -123,7 +123,7 @@
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:50:07.169Z",
-  "coletadas": 10,
+  "coletadas": 12,
   "aproveitadas": 6,
   "falhou": false
  },
@@ -139,7 +139,7 @@
   "modo": "descoberto",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:50:14.241Z",
-  "coletadas": 10,
+  "coletadas": 7,
   "aproveitadas": 6,
   "falhou": false
  }
