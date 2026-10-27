@@ -22,10 +22,11 @@
    "tipo": "numero",
    "fundo": "marinho",
    "rotulo": "O estudo",
-   "numero": "60.977",
+   "numero": "61",
    "titulo": "pessoas com o sono medido, acompanhadas por **cerca de 6 anos**.",
    "texto": "Pesquisadores usaram dados do UK Biobank para comparar a regularidade do sono, o quanto o horário variava de um dia para o outro, com o risco de morte no período.",
-   "fonte": "Windred et al., Sleep (2023)"
+   "fonte": "Windred et al., Sleep (2023)",
+   "unidade": "mil"
   },
   {
    "tipo": "numero",

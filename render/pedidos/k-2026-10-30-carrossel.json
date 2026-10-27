@@ -23,10 +23,11 @@
    "tipo": "numero",
    "fundo": "marinho",
    "rotulo": "O estudo",
-   "numero": "63.591",
+   "numero": "63",
    "titulo": "adultos acima de 40 anos na **Inglaterra e na Escócia**.",
    "texto": "Os pesquisadores separaram quem fazia toda a atividade da semana em uma ou duas sessões, os guerreiros de fim de semana, de quem espalhava pelos dias e de quem não se exercitava.",
-   "fonte": "O'Donovan et al., JAMA Internal Medicine (2017)"
+   "fonte": "O'Donovan et al., JAMA Internal Medicine (2017)",
+   "unidade": "mil"
   },
   {
    "tipo": "numero",
