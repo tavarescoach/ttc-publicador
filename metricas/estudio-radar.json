@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-27T06:35:00-03:00",
+ "atualizado_em": "2026-10-27T14:27:02-03:00",
  "em_alta": [
   {
    "assunto": "alcool-beber-menos",
@@ -13,25 +13,47 @@
    ]
   },
   {
-   "assunto": "fofoca-celebridade",
-   "tema": "cultura",
-   "canais": 4,
-   "nota_max": 18,
-   "titulos": [
-    "Ruivinha de Marte exibe piercing no umbigo e shape chama atenção: 'Da água para o vinho'",
-    "Jesus Luz posa nu em ensaio à beira-mar e leva web à loucura; veja fotos",
-    "Kate Gosselin Claims She Visited Son Collin at Mental Health Facility ‘Every Single Time’ She Could"
-   ]
-  },
-  {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "negocio",
-   "canais": 3,
+   "canais": 4,
    "nota_max": 68,
    "titulos": [
     "Demanda por sapateiros e alfaiates sofre impacto das canetas emagrecedoras",
     "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal",
     "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal"
+   ]
+  },
+  {
+   "assunto": "fofoca-celebridade",
+   "tema": "cultura",
+   "canais": 4,
+   "nota_max": 20,
+   "titulos": [
+    "Nicole Scherzinger desembarca em SP e faz homenagem ao Brasil antes de show com as Pussycat Dolls",
+    "Teddi Mellencamp Says Brain Surgery Left Her Struggling to Write and See",
+    "Ruivinha de Marte exibe piercing no umbigo e shape chama atenção: 'Da água para o vinho'"
+   ]
+  },
+  {
+   "assunto": "ia-mercado",
+   "tema": "tecnologia",
+   "canais": 4,
+   "nota_max": 12,
+   "titulos": [
+    "AI cuts some Deutsche Bank corporate loan decisions to minutes",
+    "AI investment boom drives US core capital goods orders, shipments higher in September",
+    "Agência de Comunicação - Na corrida da inteligência artificial, Brasil precisa ser protagonista, diz executiva da Abria"
+   ]
+  },
+  {
+   "assunto": "mercado-financeiro",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 8,
+   "titulos": [
+    "The markets are starting to act seriously weird. Blame AI",
+    "India's Bajaj Auto posts quarterly profit beat on healthy export demand",
+    "Gestora de R$ 100 bi reduz risco no crédito privado, zera exposição à saúde e vê força em FIDCs"
    ]
   }
  ],
@@ -93,18 +115,18 @@
    "gancho": "Suar mais numa sala a 35 graus mede o calor da sala."
   },
   {
+   "titulo": "Why These Athletes Don’t Stress Over Sleep Scores",
+   "canal": "Gq",
+   "assunto": "nota-de-sono-wearable",
+   "nota": 76,
+   "gancho": "Nota de sono baixa pede ajuste no treino. Raramente pede o cancelamento."
+  },
+  {
    "titulo": "Perimenopause is everywhere. How do you know if you’re in it? – podcast",
    "canal": "The Guardian",
    "assunto": "perimenopausa-sintomas",
    "nota": 74,
    "gancho": "Dormir mal aos 43 pode ter nome. E pede outro treino."
-  },
-  {
-   "titulo": "Usuários de Ozempic e Wegovy recorrem a suplementos para aliviar efeitos colaterais; entenda os riscos",
-   "canal": "g1 Saúde",
-   "assunto": "glp1-suplementos",
-   "nota": 74,
-   "gancho": "Caneta, náusea e um pote de suplemento comprado sozinho."
   }
  ]
 }
