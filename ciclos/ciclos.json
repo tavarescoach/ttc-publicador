@@ -1,0 +1,78 @@
+[
+ {
+  "id": "c-2026-10-28",
+  "inicio": "2026-10-28",
+  "fim": "2026-10-30",
+  "tema": "Estilo de vida",
+  "sigla": "EST",
+  "pontuacao": {
+   "EST": 6.768,
+   "FOR": 4.855,
+   "LON": 4.539,
+   "GLP": 4.04,
+   "ESP": 1.98,
+   "MEN": 1.818,
+   "EMA": 1.724,
+   "WEA": 0.76
+  },
+  "excluidos": [],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "EST": "Dia Mundial do AVC (29/10)"
+  },
+  "noticias_base": [
+   "1633f2b3781165ca",
+   "ig-48690842d271cc",
+   "24630d7bc165dfa6",
+   "79fe21b47c88ae21",
+   "b6e9e5ce141c9f40",
+   "53d994cd869efcf0",
+   "cd62321710681dd7",
+   "86ce55e290b984d2",
+   "eeb4cca812ddd3ea",
+   "2ad93c55af664354",
+   "d60f4d78a15bc720",
+   "172f1d5b03ddb209"
+  ],
+  "famosos": [
+   {
+    "nome": "Taylor Swift",
+    "noticia_id": "54cf760ff33397f8",
+    "titulo": "Taylor Swift Says She Was Unable to Sleep ‘for Months’ After Brad Paisley Took a Tour Prank ‘Too Far’",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPelRGUnFWSUNOVWp3Vno1aW4yVlNoZ0NzN29Tenc0SWNveHI2by15RFBMaTRYYXU4VTNLMDlSWTE3TVBtcEdvZTU2U2ticzBFWXNUVUx4d0tTRnAzT0FrUWpsWG1nelVzT29DTlJ2SVdqSG1ZZnJHRG1hZHZZa1R6T0ZUYVh1aE9mbkZ0NS1USUF0MFptQ0JweTRZQ3ZqM2F0WlJaM0lDSkZESHNRa09pQ2VJeFJrZ1U?oc=5",
+    "canal": "People",
+    "data": "2026-10-27T10:55:36+00:00",
+    "nota": 15
+   },
+   {
+    "nome": "Taylor Swift",
+    "noticia_id": "a16301c42c732948",
+    "titulo": "Taylor Swift recalls Brad Paisley’s ‘tour prank’ that left her unable to sleep ‘for months’",
+    "link": "https://pagesix.com/2026/10/26/entertainment/taylor-swift-recalls-brad-paisleys-tour-prank-gone-too-far/",
+    "canal": "Pagesix",
+    "data": "2026-10-27T02:54:40+00:00",
+    "nota": 3
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-10-28",
+    "quando": "2026-10-28T20:00:00-03:00",
+    "arquivo": "2026-10-28/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-10-28.jpg",
+    "drive_id": "1V-W2eXUJK8cIIf8uZXGi8SH8IcmCIlGz",
+    "nome": "IMG_9377.JPEG"
+   },
+   {
+    "dia": "2026-10-30",
+    "quando": "2026-10-30T20:00:00-03:00",
+    "arquivo": "2026-10-30/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-10-30.jpg",
+    "drive_id": "1615Kj-XnHROl17tg1nY8F3edDpf6uzqg",
+    "nome": "IMG_2607.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-10-27T15:13-03:00",
+  "status": "escolhido"
+ }
+]
