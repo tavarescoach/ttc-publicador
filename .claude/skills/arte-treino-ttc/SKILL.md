@@ -46,7 +46,7 @@ Camadas (`render/treino.html`): foto > logo STRAVA > rota > widget > o Luan reco
      "musica": {"...": "...", "x": 0.28, "y": 0.115, "largura": 0.38}}]
    ```
    Campos:
-   - `sticker` é separado sozinho em números, rota e logo (branco acima e abaixo do traçado laranja). Rota e logo são ampliadas com a borda nítida.
+   - `sticker` é separado sozinho em números, rota e logo (branco acima e abaixo do traçado laranja). Rota e logo são ampliadas com a borda nítida. Atividade sem mapa (esteira, bike indoor) também funciona: sem rota, números e logo são separados pelo vão entre eles.
    - As caixas são frações da arte:
      - `dados_caixa` = [centro x, topo, largura];
      - `rota_caixa` = [centro x, centro y, largura];
@@ -57,8 +57,8 @@ Camadas (`render/treino.html`): foto > logo STRAVA > rota > widget > o Luan reco
    - Sem sticker:
      - os números vão em `metricas` [{"rotulo", "valor", "unidade"}];
      - a palavra vai em `palavra` (texto);
-     - a rota vai em `rota` (pontos 0-1) ou em `rota_img` (PNG só com o traçado).
-   - `dados_sticker: false` e `logo_sticker: false` descartam essas peças do sticker. `cor_rota` troca a cor da rota desenhada por pontos.
+     - a rota vai em `rota` (pontos 0-1, no laranja do Strava, ou na cor de `cor_rota`) ou em `rota_img` (PNG já pronto, usado como está).
+   - `dados_sticker: false` e `logo_sticker: false` descartam essas peças do sticker.
    - `fundo: "desfoque"` (foto desfocada, com o Luan reduzido via `pessoa`) existe para fotos sem nenhum respiro. Não é o padrão.
 
 5. **Renderizar:** `python render/treino.py render/treinos/<data>.json`.

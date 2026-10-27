@@ -10,7 +10,7 @@ O JSON é um objeto, ou uma lista deles. Campos principais:
     palavra_caixa [centro x, base, largura]: frações da arte (largura pode passar de 1 e sangrar).
   musica: {"titulo", "subtitulo", "tempo", "resta", "x", "y", "largura"}: widget "tocando agora" do iPhone.
   Sem sticker: "metricas" [{"rotulo", "valor", "unidade"}] e "palavra" (texto) fazem o mesmo papel;
-    "rota_img" (PNG só com o traçado) ou "rota" (pontos 0-1) desenham a rota em vermelho.
+    "rota" (pontos 0-1, cor em "cor_rota", padrão o laranja do Strava) ou "rota_img" (PNG já pronto) desenham a rota.
   fundo: "foto" (padrão, a foto nítida) ou "desfoque" (foto desfocada, com o Luan reduzido conforme
     "pessoa": {"largura", "x", "base"}). marca: true põe a logo LT e o @ no alto.
 O recorte do Luan é gerado com rembg (birefnet-portrait) e guardado ao lado da foto (<nome>-recorte.png).
@@ -42,23 +42,6 @@ def recortar(foto):
     return rel
 
 
-def preparar_rota(imagem):
-    """Rota exportada do app (PNG transparente): corta no traçado e pinta no vermelho da marca."""
-    from PIL import Image, ImageChops
-    base, _ = os.path.splitext(imagem)
-    rel = base + "-vermelha.png"
-    im = Image.open(os.path.join(AQUI, imagem)).convert("RGBA")
-    # só o traçado laranja: o sticker do Strava traz também os números e a logo em branco
-    r, g, b, a = im.split()
-    mascara = ImageChops.subtract(r, b).point(lambda v: 255 if v > 90 else 0)
-    alfa = ImageChops.multiply(a, mascara)
-    alfa = alfa.crop(alfa.getbbox())
-    vermelha = Image.new("RGBA", alfa.size, (229, 56, 59, 255))
-    vermelha.putalpha(alfa)
-    vermelha.save(os.path.join(AQUI, rel))
-    return rel
-
-
 def separar_sticker(sticker):
     """Sticker do Strava (PNG transparente 1080x1920) em três peças: números, rota (laranja) e logo.
     Os números e a logo são o branco acima e abaixo do traçado laranja."""
@@ -71,7 +54,13 @@ def separar_sticker(sticker):
     laranja = (a > 20) & (r - b > 90)
     branco = (a > 20) & ~laranja
     linhas = np.where(laranja.any(1))[0]
-    topo, fundo = linhas.min(), linhas.max()
+    if len(linhas):
+        topo, fundo = linhas.min(), linhas.max()
+    else:
+        # atividade sem mapa (esteira, bike indoor): números e logo separados pelo maior vão entre eles
+        brancas = np.where(branco.any(1))[0]
+        vao = np.argmax(np.diff(brancas))
+        topo, fundo = brancas[vao] + 1, brancas[vao + 1] - 1
     pecas = {}
     for nome, mascara in (("rota", laranja), ("dados", branco & (np.arange(im.height)[:, None] < topo)),
                           ("logo", branco & (np.arange(im.height)[:, None] > fundo))):
@@ -105,8 +94,6 @@ def renderizar(artes, enviar=False):
                     a.setdefault("dados_img", pecas["dados"])
                 if a.get("logo_sticker", True) and "logo" in pecas:
                     a.setdefault("palavra_img", pecas["logo"])
-            elif a.get("rota_img"):
-                a["rota_img"] = preparar_rota(a["rota_img"])
             altura = 1350 if a.get("formato") == "feed" else 1920
             pg = nav.new_page(viewport={"width": 1080, "height": altura})
             pg.goto("file://" + os.path.join(AQUI, "treino.html") + "#" + urllib.parse.quote(json.dumps(a)))
