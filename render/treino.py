@@ -1,25 +1,19 @@
-"""Gera a arte de treino (foto do Luan + números do report) no estilo "pop-out" do story do Strava.
+"""Gera a arte de treino (foto do Luan + report) no estilo "pop-out" do story do Strava.
 
 Uso: python render/treino.py render/treinos/<data>.json [--subir]
-O JSON é um objeto, ou uma lista deles:
-{"arquivo": "midia/2026-10-27/treino-story.png", "formato": "story" | "feed",
- "foto": "treinos/fotos/2026-10-27.jpg", "foco": "50% 30%", "data": "27 out 2026",
- "palavra": "PERNAS", "palavra_base": 0.85,
- "metricas": [{"rotulo": "Distância", "valor": "6,51", "unidade": "km", "destaque": false}],
- "rota": [[0.12, 0.55], [0.3, 0.48]], "dados_topo": 330, "fundo": "desfoque", "pessoa": {"base": 1.08},
- "musica": {"titulo": "Pump It", "artista": "Black Eyed Peas", "progresso": 0.7},
- "rota_img": "treinos/rotas/2026-10-27.png", "rota_caixa": [0.5, 0.6, 0.85]}
-"foto" é relativo a render/. "foco" é o object-position da foto. "palavra" é o texto gigante atrás do Luan
-("" para não ter). "rota" são pontos de 0 a 1 (x, y) da linha vermelha, desenhada atrás do Luan.
-"rota_img" é a rota exportada do Strava (PNG transparente): cortada, pintada de vermelho e posta em
-"rota_caixa" = [centro x, centro y, largura], frações da arte (padrão [0.5, 0.55, 0.95]).
-"fundo": "desfoque" (padrão: a foto desfocada e escurecida no azul da marca, com o Luan nítido por cima,
-posto conforme "pessoa": {"largura": 1, "x": 0.5, "base": 1.08}: largura em fração da arte, base é onde fica
-borda de baixo da foto (1 = rente à base; acima de 1 desce e corta embaixo, sem mostrar as bordas da foto)) ou "foto" (a foto nítida
-em tela cheia; só para fotos com fundo limpo, como céu). "contorno": false tira a palavra vazada por cima do Luan.
-"musica": {"titulo", "artista", "capa" (opcional, relativo a render/), "tempo", "resta", "progresso" 0-1, "topo" px}
-desenha o cartão de "tocando agora". "dados_coluna": true empilha os números em vez de pô-los em linha.
-O recorte do Luan é gerado com rembg na primeira vez e guardado ao lado da foto (<nome>-recorte.png).
+O JSON é um objeto, ou uma lista deles. Campos principais:
+  arquivo, formato ("story" | "feed"), foto (relativo a render/), foco (object-position da foto)
+  sticker: o PNG que o Strava exporta para o story. É separado em números, rota (laranja) e logo,
+    usados como no story feito à mão: números pequenos no alto, rota gigante atrás do Luan,
+    logo gigante na base. "dados_sticker": false / "logo_sticker": false descartam números / logo.
+  dados_caixa [centro x, topo, largura], rota_caixa [centro x, centro y, largura],
+    palavra_caixa [centro x, base, largura]: frações da arte (largura pode passar de 1 e sangrar).
+  musica: {"titulo", "subtitulo", "tempo", "resta", "x", "y", "largura"}: widget "tocando agora" do iPhone.
+  Sem sticker: "metricas" [{"rotulo", "valor", "unidade"}] e "palavra" (texto) fazem o mesmo papel;
+    "rota_img" (PNG só com o traçado) ou "rota" (pontos 0-1) desenham a rota em vermelho.
+  fundo: "foto" (padrão, a foto nítida) ou "desfoque" (foto desfocada, com o Luan reduzido conforme
+    "pessoa": {"largura", "x", "base"}). marca: true põe a logo LT e o @ no alto.
+O recorte do Luan é gerado com rembg (birefnet-portrait) e guardado ao lado da foto (<nome>-recorte.png).
 Com --subir, cada PNG vai para o bucket "midia" do Supabase (mesmo esquema de render/story.py).
 """
 import json
@@ -65,13 +59,53 @@ def preparar_rota(imagem):
     return rel
 
 
+def separar_sticker(sticker):
+    """Sticker do Strava (PNG transparente 1080x1920) em três peças: números, rota (laranja) e logo.
+    Os números e a logo são o branco acima e abaixo do traçado laranja."""
+    import numpy as np
+    from PIL import Image
+    base, _ = os.path.splitext(sticker)
+    im = Image.open(os.path.join(AQUI, sticker)).convert("RGBA")
+    px = np.array(im).astype(int)
+    r, b, a = px[..., 0], px[..., 2], px[..., 3]
+    laranja = (a > 20) & (r - b > 90)
+    branco = (a > 20) & ~laranja
+    linhas = np.where(laranja.any(1))[0]
+    topo, fundo = linhas.min(), linhas.max()
+    pecas = {}
+    for nome, mascara in (("rota", laranja), ("dados", branco & (np.arange(im.height)[:, None] < topo)),
+                          ("logo", branco & (np.arange(im.height)[:, None] > fundo))):
+        if not mascara.any():
+            continue
+        p = px.copy()
+        p[..., 3] = np.where(mascara, p[..., 3], 0)
+        peca = Image.fromarray(p.astype("uint8"), "RGBA")
+        peca = peca.crop(peca.getbbox())
+        if nome != "dados":
+            # rota e logo vão ampliadas 3-4x na arte: amplia aqui e endurece a borda para não borrar
+            peca = peca.resize((peca.width * 4, peca.height * 4), Image.LANCZOS)
+            r_, g_, b_, a_ = peca.split()
+            peca = Image.merge("RGBA", (r_, g_, b_, a_.point(lambda v: max(0, min(255, (v - 128) * 3 + 128)))))
+        rel = f"{base}-{nome}.png"
+        peca.save(os.path.join(AQUI, rel))
+        pecas[nome] = rel
+    return pecas
+
+
 def renderizar(artes, enviar=False):
     with sync_playwright() as p:
         nav = p.chromium.launch(executable_path=os.environ.get("CHROMIUM_PATH"))
         for a in artes:
             if "recorte" not in a and not a["foto"].startswith("http"):
                 a["recorte"] = recortar(a["foto"])
-            if a.get("rota_img"):
+            if a.get("sticker"):
+                pecas = separar_sticker(a["sticker"])
+                a.setdefault("rota_img", pecas.get("rota"))
+                if a.get("dados_sticker", True) and "dados" in pecas:
+                    a.setdefault("dados_img", pecas["dados"])
+                if a.get("logo_sticker", True) and "logo" in pecas:
+                    a.setdefault("palavra_img", pecas["logo"])
+            elif a.get("rota_img"):
                 a["rota_img"] = preparar_rota(a["rota_img"])
             altura = 1350 if a.get("formato") == "feed" else 1920
             pg = nav.new_page(viewport={"width": 1080, "height": altura})
