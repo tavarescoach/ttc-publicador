@@ -181,6 +181,12 @@ Cada pauta, carrossel, reels e story leva um campo `tema` com um valor exato da 
 ## CICLO pacote (tarefa agendada "Pacote do ciclo", todo dia 15h07)
 
 Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ninguém está olhando: não pergunte nada.
+0. **O robô "Ciclo temático" pode atrasar horas** (o agendador do GitHub rodou o das 14h50 às 16h58 e às 18h53).
+   Se `ativo` for true, amanhã for o início do próximo ciclo (`fim` do último ciclo de `ciclos/ciclos.json` + 1 dia;
+   sem ciclos, `inicio` do `ciclo/config.json`) e esse ciclo ainda não estiver lá, dispare-o você:
+   `gh api -X POST repos/tavarescoach/ttc-publicador/actions/workflows/ciclo.yml/dispatches -f ref=main -f "inputs[simular]=false"`,
+   espere terminar (consulte `.../workflows/ciclo.yml/runs?per_page=1` a cada 20 s, até 10 min) e faça `git pull`.
+   Se o agendado rodar depois, ele vê que já existe o ciclo e não faz nada.
 1. `git pull`. Leia `ciclo/config.json` e `ciclos/ciclos.json`. Pare sem fazer nada ("nada a fazer") se `ativo` for false,
    ou se o último ciclo não estiver com status "escolhido", ou se o `inicio` dele não for amanhã (horário de Brasília).
 2. Leia `diretrizes/ciclo.md`, `marca.md`, `carrossel.md`, `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`.
