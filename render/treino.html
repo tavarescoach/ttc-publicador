@@ -12,8 +12,11 @@ body{font-family:"Inter Display","Inter",sans-serif;color:var(--txt);-webkit-fon
 .veu{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,22,.55) 0%,rgba(5,10,22,.12) 30%,rgba(5,10,22,0) 55%,rgba(5,10,22,.35) 100%)}
 .palavra{position:absolute;left:0;right:0;text-align:center;font-weight:900;line-height:.8;letter-spacing:-.02em;text-transform:uppercase;color:var(--txt);opacity:.94;white-space:nowrap}
 .rota{position:absolute;inset:0;width:100%;height:100%}
+.rota-img{position:absolute;transform:translate(-50%,-50%)}
 .rota path{fill:none;stroke:var(--red2);stroke-width:12;stroke-linecap:round;stroke-linejoin:round}
 .dados{position:absolute;left:0;right:0;top:var(--d0);display:flex;flex-direction:column;align-items:center;gap:22px;text-shadow:0 2px 14px rgba(0,0,0,.45)}
+.dados.esq{left:72px;right:auto;align-items:flex-start;gap:18px}
+.dados.esq .m{text-align:left}
 .dados.lado{flex-direction:row;justify-content:center;gap:64px}
 .m{text-align:center}
 .m .r{font-size:24px;font-weight:600;letter-spacing:.3px;opacity:.92}
@@ -41,9 +44,13 @@ if (S.rota && S.rota.length > 1) {
   const d = S.rota.map((p, i) => `${i ? "L" : "M"}${(p[0] * 1080).toFixed(1)} ${(p[1] * H).toFixed(1)}`).join(" ");
   h += `<svg class="rota" viewBox="0 0 1080 ${H}"><path d="${d}"/></svg>`;
 }
+if (S.rota_img) {
+  const [cx, cy, w] = S.rota_caixa || [.5, .6, .85];
+  h += `<img class="rota-img" src="${S.rota_img}" style="left:${cx * 1080}px;top:${cy * H}px;width:${w * 1080}px" alt="">`;
+}
 if (S.recorte) h += `<img class="cam" src="${S.recorte}" alt="">`;
 h += `<div class="topo"><img class="logo" src="assets/logo-lt.png" alt=""><span class="data">${S.data||""}</span></div>`;
-h += `<div class="dados${S.lado_a_lado ? " lado" : ""}">` + ms.map(m => `<div class="m${m.destaque?" dest":""}"><div class="r">${m.rotulo}</div><div class="v">${m.valor}${m.unidade?`<small>${m.unidade}</small>`:""}</div></div>`).join("") + `</div>`;
+h += `<div class="dados${S.lado_a_lado ? " lado" : ""}${S.dados_lado === "esquerda" ? " esq" : ""}">` + ms.map(m => `<div class="m${m.destaque?" dest":""}"><div class="r">${m.rotulo}</div><div class="v">${m.valor}${m.unidade?`<small>${m.unidade}</small>`:""}</div></div>`).join("") + `</div>`;
 h += `<div class="rod"><span>@tavarescoach</span><span>Corpo forte, evolução sem acaso.</span></div>`;
 document.getElementById("raiz").innerHTML = h;
 // palavra gigante: ocupa a largura (margem de 40px) e assenta em palavra_base (fração da altura: 0,85 no story, 0,93 no feed)

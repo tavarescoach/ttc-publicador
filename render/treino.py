@@ -6,9 +6,13 @@ O JSON é um objeto, ou uma lista deles:
  "foto": "treinos/fotos/2026-10-27.jpg", "foco": "50% 30%", "data": "27 out 2026",
  "palavra": "PERNAS", "palavra_base": 0.85,
  "metricas": [{"rotulo": "Distância", "valor": "6,51", "unidade": "km", "destaque": false}],
- "rota": [[0.12, 0.55], [0.3, 0.48]], "dados_topo": 340, "lado_a_lado": false}
+ "rota": [[0.12, 0.55], [0.3, 0.48]], "dados_topo": 340, "lado_a_lado": false, "dados_lado": "esquerda",
+ "rota_img": "treinos/rotas/2026-10-27.png", "rota_caixa": [0.5, 0.6, 0.85]}
 "foto" é relativo a render/. "foco" é o object-position da foto. "palavra" é o texto gigante atrás do Luan
 ("" para não ter). "rota" são pontos de 0 a 1 (x, y) da linha vermelha, desenhada atrás do Luan.
+"rota_img" é a rota exportada do Strava (PNG transparente): cortada, pintada de vermelho e posta em
+"rota_caixa" = [centro x, centro y, largura], frações da arte (padrão [0.5, 0.6, 0.85]).
+"dados_lado": "esquerda" alinha os números à esquerda (para fotos em close, com o rosto no centro ou à direita).
 O recorte do Luan é gerado com rembg na primeira vez e guardado ao lado da foto (<nome>-recorte.png).
 Com --subir, cada PNG vai para o bucket "midia" do Supabase (mesmo esquema de render/story.py).
 """
@@ -34,7 +38,24 @@ def recortar(foto):
         from PIL import Image, ImageOps
         from rembg import new_session, remove
         im = ImageOps.exif_transpose(Image.open(os.path.join(AQUI, foto)))
-        remove(im, session=new_session("u2net_human_seg")).save(destino)
+        remove(im, session=new_session("birefnet-portrait")).save(destino)
+    return rel
+
+
+def preparar_rota(imagem):
+    """Rota exportada do app (PNG transparente): corta no traçado e pinta no vermelho da marca."""
+    from PIL import Image, ImageChops
+    base, _ = os.path.splitext(imagem)
+    rel = base + "-vermelha.png"
+    im = Image.open(os.path.join(AQUI, imagem)).convert("RGBA")
+    # só o traçado laranja: o sticker do Strava traz também os números e a logo em branco
+    r, g, b, a = im.split()
+    mascara = ImageChops.subtract(r, b).point(lambda v: 255 if v > 90 else 0)
+    alfa = ImageChops.multiply(a, mascara)
+    alfa = alfa.crop(alfa.getbbox())
+    vermelha = Image.new("RGBA", alfa.size, (229, 56, 59, 255))
+    vermelha.putalpha(alfa)
+    vermelha.save(os.path.join(AQUI, rel))
     return rel
 
 
@@ -44,6 +65,8 @@ def renderizar(artes, enviar=False):
         for a in artes:
             if "recorte" not in a and not a["foto"].startswith("http"):
                 a["recorte"] = recortar(a["foto"])
+            if a.get("rota_img"):
+                a["rota_img"] = preparar_rota(a["rota_img"])
             altura = 1350 if a.get("formato") == "feed" else 1920
             pg = nav.new_page(viewport={"width": 1080, "height": altura})
             pg.goto("file://" + os.path.join(AQUI, "treino.html") + "#" + urllib.parse.quote(json.dumps(a)))

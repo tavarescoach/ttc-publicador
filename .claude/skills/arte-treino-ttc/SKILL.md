@@ -27,7 +27,7 @@ O layout está em `render/treino.html`; o render e o recorte em `render/treino.p
 
 1. **Salvar a foto** em `render/treinos/fotos/<AAAA-MM-DD>.jpg` (se já existir, acrescente `-2`, `-3`). Abra a foto com Read e anote onde estão a cabeça e os pés: isso define `foco` (`object-position`, ex. `"50% 40%"`), `dados_topo` e `palavra_base`.
 
-2. **Ler o report.** Abra o print com Read e transcreva todos os números que aparecem. Não invente, não arredonde para melhor, não converta unidade sem dizer. Número ilegível fica de fora.
+2. **Ler o report.** O caso mais comum é o **sticker do Strava** (PNG transparente de 1080x1920 que o app exporta para o story): os números e a logo vêm em **branco**, invisíveis numa prévia em fundo branco, e só a rota laranja aparece. Antes de concluir que não há números, componha o PNG sobre um fundo escuro (PIL: `Image.new("RGBA", im.size, (20, 30, 50, 255))` + `alpha_composite`) e leia de novo. Para os outros reports, abra o print com Read e transcreva todos os números que aparecem. Não invente, não arredonde para melhor, não converta unidade sem dizer. Número ilegível fica de fora.
 
 3. **Escolher 3 métricas** (no máximo 4). Prioridade:
    - Corrida/bike: Distância, Pace (ou Velocidade), Tempo. Depois FC média, Desnível.
@@ -35,7 +35,7 @@ O layout está em `render/treino.html`; o render e o recorte em `render/treino.p
    - Condicionamento: Duração, FC média, Calorias ou Strain.
    `"destaque": true` (vermelho) em no máximo uma, e só se houver um PR ou um recorde de verdade.
 
-4. **Rota** (opcional): se o report tem o mapa, olhe o traçado e escreva de 8 a 20 pontos `[x, y]` de 0 a 1 que reproduzam a forma, espalhada pela metade de baixo da arte (y entre 0,45 e 0,85), larga o bastante para passar atrás do corpo dele. Sem mapa, sem rota.
+4. **Rota** (opcional): se o report é o sticker do Strava, salve-o em `render/treinos/rotas/<data>.png` e use `"rota_img"`: o script pega só o traçado laranja (descarta números e logo), pinta no vermelho da marca e põe na `rota_caixa` `[centro x, centro y, largura]` (frações da arte). Posicione a rota para passar **atrás das cabeças ou do corpo**, com as pontas à mostra: é isso que dá o efeito do reel. Se o report é outro print com mapa, olhe o traçado e escreva de 8 a 20 pontos `[x, y]` de 0 a 1 que reproduzam a forma, espalhada pela metade de baixo da arte (y entre 0,45 e 0,85), larga o bastante para passar atrás do corpo dele. Sem mapa, sem rota.
 
 5. **Palavra**: uma palavra só, curta, do treino (CORRIDA, PERNAS, PEITO, COSTAS, TREINO) ou TTC. Ela vira texto de tela, então segue `.claude/skills/copy-social-ttc/SKILL.md` e `diretrizes/marca.md`: nada de "BORA", "MONSTRO", "SHAPE".
 
@@ -54,15 +54,16 @@ O layout está em `render/treino.html`; o render e o recorte em `render/treino.p
      {"arquivo": "midia/2026-10-27/treino-feed.png", "formato": "feed", "...": "mesmos campos"}
    ]
    ```
-   Campos: `foto` é relativo a `render/`. `palavra_base` é onde a base da palavra assenta (fração da altura; padrão 0,85 no story, 0,93 no feed); `"palavra": ""` tira a palavra. `dados_topo` é o topo dos números em px (padrão 340 no story, 150 no feed). `"lado_a_lado": true` põe os números em linha, bom quando há pouco espaço acima da cabeça. `recorte` só se quiser usar outro PNG; senão é gerado e guardado como `<foto>-recorte.png`.
+   Campos: `foto` é relativo a `render/`. `palavra_base` é onde a base da palavra assenta (fração da altura; padrão 0,85 no story, 0,93 no feed); `"palavra": ""` tira a palavra. `dados_topo` é o topo dos números em px (padrão 340 no story, 150 no feed). `"lado_a_lado": true` põe os números em linha, bom quando há pouco espaço acima da cabeça. `"dados_lado": "esquerda"` alinha os números à esquerda, para fotos em close com o rosto no centro ou à direita (aí o vão livre costuma ser o canto de cima à esquerda, abaixo da logo). `recorte` só se quiser usar outro PNG; senão é gerado e guardado como `<foto>-recorte.png`.
 
 7. **Renderizar:** `python render/treino.py render/treinos/<data>.json`
-   Precisa de `pip install playwright "rembg[cpu]"` (o modelo do rembg, ~170 MB, baixa na primeira vez). Fora do GitHub Actions, se o Playwright do Python não achar o navegador, aponte para o Chromium já instalado: `CHROMIUM_PATH=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome` (confira a pasta com `ls /opt/pw-browsers`).
+   Precisa de `pip install playwright "rembg[cpu]"` (o modelo de recorte do rembg, birefnet-portrait, ~1 GB, baixa na primeira vez). Fora do GitHub Actions, se o Playwright do Python não achar o navegador, aponte para o Chromium já instalado: `CHROMIUM_PATH=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome` (confira a pasta com `ls /opt/pw-browsers`).
 
 8. **Conferir** cada PNG com Read antes de entregar:
    - **Números fora do rosto.** Se caíram na cabeça, mude `dados_topo` (para cima do cabelo, ou para um vão ao lado do corpo) ou use `lado_a_lado`.
    - **Palavra legível.** O corpo deve cobrir no máximo um terço dela (no reel, só os pés cobrem). Se sumiu atrás do tronco, baixe `palavra_base` ou ajuste `foco`.
    - **Recorte limpo**: sem halo e sem pedaço do fundo grudado. Se o recorte falhou (fundo muito parecido com a roupa), use `"palavra": ""` e sem rota, e avise o Luan.
+   - **Rota à mostra.** Se ela sumiu atrás do corpo, mova a `rota_caixa` para um vão do fundo ou aumente a largura. Em selfie ou close, o story (9:16) corta a foto dos lados e as cabeças tomam a largura: o feed costuma ficar melhor. Diga isso ao Luan na entrega.
    - Números iguais ao report, nada cortado, rodapé livre.
    Ajuste e renderize de novo.
 
