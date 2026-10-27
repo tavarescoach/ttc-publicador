@@ -1,6 +1,6 @@
 {
  "coletado_em": "2026-10-27T14:58:19.584310+00:00",
- "aviso": null,
+ "aviso": "O token do Instagram venceu: o Radar está mostrando a última leitura. Gere um token novo (Explorador da Graph API, app TTC Radar, estendido) e salve no segredo FB_TOKEN.",
  "criterio": "posts de até 30 dias com engajamento >= 2.0x a mediana do perfil",
  "perfis": [
   {
@@ -15,7 +15,8 @@
    "taxa_engajamento": 0.09,
    "fora_da_curva": 10,
    "maior_razao": 175.7,
-   "pontos": 312.6
+   "pontos": 312.6,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "mindpumpmedia",
@@ -29,7 +30,8 @@
    "taxa_engajamento": 0.02,
    "fora_da_curva": 13,
    "maior_razao": 177.4,
-   "pontos": 270.3
+   "pontos": 270.3,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "thereadystate",
@@ -43,7 +45,8 @@
    "taxa_engajamento": 0.02,
    "fora_da_curva": 12,
    "maior_razao": 137.7,
-   "pontos": 214.0
+   "pontos": 214.0,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drvondawright",
@@ -57,7 +60,8 @@
    "taxa_engajamento": 0.03,
    "fora_da_curva": 10,
    "maior_razao": 100.9,
-   "pontos": 175.1
+   "pontos": 175.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "coach_bowman",
@@ -71,7 +75,8 @@
    "taxa_engajamento": 1.4,
    "fora_da_curva": 8,
    "maior_razao": 111.1,
-   "pontos": 143.7
+   "pontos": 143.7,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "redbull",
@@ -85,7 +90,8 @@
    "taxa_engajamento": 0.1,
    "fora_da_curva": 10,
    "maior_razao": 29.3,
-   "pontos": 87.3
+   "pontos": 87.3,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "paulomuzy",
@@ -99,7 +105,8 @@
    "taxa_engajamento": 0.02,
    "fora_da_curva": 9,
    "maior_razao": 31.0,
-   "pontos": 83.8
+   "pontos": 83.8,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drmarkhyman",
@@ -113,7 +120,8 @@
    "taxa_engajamento": 0.13,
    "fora_da_curva": 9,
    "maior_razao": 31.4,
-   "pontos": 83.8
+   "pontos": 83.8,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "nickleyden",
@@ -127,7 +135,8 @@
    "taxa_engajamento": 1.1,
    "fora_da_curva": 9,
    "maior_razao": 41.8,
-   "pontos": 82.6
+   "pontos": 82.6,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "carolborba1",
@@ -141,7 +150,8 @@
    "taxa_engajamento": 0.06,
    "fora_da_curva": 12,
    "maior_razao": 15.1,
-   "pontos": 72.5
+   "pontos": 72.5,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "theprehabguys",
@@ -155,7 +165,8 @@
    "taxa_engajamento": 0.04,
    "fora_da_curva": 11,
    "maior_razao": 20.3,
-   "pontos": 60.2
+   "pontos": 60.2,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "chapadinhasdeendorfina",
@@ -169,7 +180,8 @@
    "taxa_engajamento": 0.26,
    "fora_da_curva": 10,
    "maior_razao": 17.9,
-   "pontos": 56.5
+   "pontos": 56.5,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "gregdoucetteifbbpro",
@@ -183,7 +195,8 @@
    "taxa_engajamento": 0.12,
    "fora_da_curva": 11,
    "maior_razao": 8.8,
-   "pontos": 54.0
+   "pontos": 54.0,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "renato_cariani",
@@ -197,7 +210,8 @@
    "taxa_engajamento": 0.08,
    "fora_da_curva": 6,
    "maior_razao": 19.4,
-   "pontos": 52.1
+   "pontos": 52.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drmaryclaire",
@@ -211,7 +225,8 @@
    "taxa_engajamento": 0.05,
    "fora_da_curva": 11,
    "maior_razao": 12.8,
-   "pontos": 52.0
+   "pontos": 52.0,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "rpstrength",
@@ -225,7 +240,8 @@
    "taxa_engajamento": 0.16,
    "fora_da_curva": 10,
    "maior_razao": 7.9,
-   "pontos": 41.4
+   "pontos": 41.4,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "juliobalestrinoficial",
@@ -239,7 +255,8 @@
    "taxa_engajamento": 0.13,
    "fora_da_curva": 10,
    "maior_razao": 9.7,
-   "pontos": 37.9
+   "pontos": 37.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "nettodudu",
@@ -253,7 +270,8 @@
    "taxa_engajamento": 0.33,
    "fora_da_curva": 7,
    "maior_razao": 12.6,
-   "pontos": 37.7
+   "pontos": 37.7,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "jessejameswest",
@@ -267,7 +285,8 @@
    "taxa_engajamento": 1.05,
    "fora_da_curva": 10,
    "maior_razao": 5.8,
-   "pontos": 35.8
+   "pontos": 35.8,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "mrc_marcela",
@@ -281,7 +300,8 @@
    "taxa_engajamento": 3.97,
    "fora_da_curva": 5,
    "maior_razao": 9.6,
-   "pontos": 28.5
+   "pontos": 28.5,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "desalles",
@@ -295,7 +315,8 @@
    "taxa_engajamento": 0.18,
    "fora_da_curva": 7,
    "maior_razao": 7.2,
-   "pontos": 26.4
+   "pontos": 26.4,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "leandrotwin",
@@ -309,7 +330,8 @@
    "taxa_engajamento": 0.12,
    "fora_da_curva": 5,
    "maior_razao": 6.4,
-   "pontos": 24.4
+   "pontos": 24.4,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "marcioatalla",
@@ -323,7 +345,8 @@
    "taxa_engajamento": 0.12,
    "fora_da_curva": 5,
    "maior_razao": 9.6,
-   "pontos": 24.2
+   "pontos": 24.2,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "ofitfeed",
@@ -337,7 +360,8 @@
    "taxa_engajamento": 0.21,
    "fora_da_curva": 6,
    "maior_razao": 6.3,
-   "pontos": 23.8
+   "pontos": 23.8,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "bretcontreras1",
@@ -351,7 +375,8 @@
    "taxa_engajamento": 0.25,
    "fora_da_curva": 4,
    "maior_razao": 11.7,
-   "pontos": 23.1
+   "pontos": 23.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drgabriellelyon",
@@ -365,7 +390,8 @@
    "taxa_engajamento": 0.06,
    "fora_da_curva": 4,
    "maior_razao": 7.7,
-   "pontos": 20.2
+   "pontos": 20.2,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "biolayne",
@@ -379,7 +405,8 @@
    "taxa_engajamento": 0.18,
    "fora_da_curva": 6,
    "maior_razao": 5.4,
-   "pontos": 20.1
+   "pontos": 20.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "jeremyethier",
@@ -393,7 +420,8 @@
    "taxa_engajamento": 1.35,
    "fora_da_curva": 4,
    "maior_razao": 5.5,
-   "pontos": 16.4
+   "pontos": 16.4,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "itscoachgoodman",
@@ -407,7 +435,8 @@
    "taxa_engajamento": 0.13,
    "fora_da_curva": 6,
    "maior_razao": 3.2,
-   "pontos": 15.9
+   "pontos": 15.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "menno.henselmans",
@@ -421,7 +450,8 @@
    "taxa_engajamento": 0.6,
    "fora_da_curva": 5,
    "maior_razao": 3.0,
-   "pontos": 12.9
+   "pontos": 12.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "hubermanlab",
@@ -435,7 +465,8 @@
    "taxa_engajamento": 0.15,
    "fora_da_curva": 4,
    "maior_razao": 4.9,
-   "pontos": 12.1
+   "pontos": 12.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "alanh.11",
@@ -449,7 +480,8 @@
    "taxa_engajamento": 0.89,
    "fora_da_curva": 1,
    "maior_razao": 5.3,
-   "pontos": 6.2
+   "pontos": 6.2,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "noeldeyzel_bodybuilder",
@@ -463,7 +495,8 @@
    "taxa_engajamento": 1.25,
    "fora_da_curva": 2,
    "maior_razao": 2.7,
-   "pontos": 6.1
+   "pontos": 6.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "cbum",
@@ -477,7 +510,8 @@
    "taxa_engajamento": 2.46,
    "fora_da_curva": 1,
    "maior_razao": 2.4,
-   "pontos": 4.9
+   "pontos": 4.9,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "drstacysims",
@@ -491,7 +525,8 @@
    "taxa_engajamento": 0.23,
    "fora_da_curva": 2,
    "maior_razao": 2.3,
-   "pontos": 4.7
+   "pontos": 4.7,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "marceloscience",
@@ -505,7 +540,8 @@
    "taxa_engajamento": 0.43,
    "fora_da_curva": 1,
    "maior_razao": 3.6,
-   "pontos": 4.0
+   "pontos": 4.0,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "jeffnippard",
@@ -519,7 +555,8 @@
    "taxa_engajamento": 3.53,
    "fora_da_curva": 0,
    "maior_razao": null,
-   "pontos": 3.5
+   "pontos": 3.5,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "squat_university",
@@ -533,7 +570,8 @@
    "taxa_engajamento": 0.23,
    "fora_da_curva": 1,
    "maior_razao": 2.0,
-   "pontos": 2.2
+   "pontos": 2.2,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "peterattiamd",
@@ -547,7 +585,8 @@
    "taxa_engajamento": 0.1,
    "fora_da_curva": 0,
    "maior_razao": null,
-   "pontos": 0.1
+   "pontos": 0.1,
+   "da_leitura_anterior": true
   },
   {
    "usuario": "rodrigopolesso",
@@ -561,7 +600,8 @@
    "taxa_engajamento": 0.04,
    "fora_da_curva": 0,
    "maior_razao": null,
-   "pontos": 0.0
+   "pontos": 0.0,
+   "da_leitura_anterior": true
   }
  ],
  "posts": [
