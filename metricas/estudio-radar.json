@@ -1,10 +1,10 @@
 {
- "atualizado_em": "2026-10-26T14:25:00-03:00",
+ "atualizado_em": "2026-10-27T06:35:00-03:00",
  "em_alta": [
   {
    "assunto": "alcool-beber-menos",
    "tema": "comportamento",
-   "canais": 4,
+   "canais": 5,
    "nota_max": 82,
    "titulos": [
     "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
@@ -13,47 +13,29 @@
    ]
   },
   {
+   "assunto": "fofoca-celebridade",
+   "tema": "cultura",
+   "canais": 4,
+   "nota_max": 18,
+   "titulos": [
+    "Ruivinha de Marte exibe piercing no umbigo e shape chama atenção: 'Da água para o vinho'",
+    "Jesus Luz posa nu em ensaio à beira-mar e leva web à loucura; veja fotos",
+    "Kate Gosselin Claims She Visited Son Collin at Mental Health Facility ‘Every Single Time’ She Could"
+   ]
+  },
+  {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "negocio",
    "canais": 3,
-   "nota_max": 84,
+   "nota_max": 68,
    "titulos": [
-    "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
+    "Demanda por sapateiros e alfaiates sofre impacto das canetas emagrecedoras",
     "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal",
-    "EXCLUSIVE: Heineken document reveals worries over weight-loss drugs and beer sales"
-   ]
-  },
-  {
-   "assunto": "boom-proteina",
-   "tema": "negocio",
-   "canais": 3,
-   "nota_max": 78,
-   "titulos": [
-    "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
-    "Monster vai lançar bebida com proteína em 2027",
-    "Pequenos hábitos que fazem diferença: creatina, whey, cafeína"
-   ]
-  },
-  {
-   "assunto": "mercado-financeiro",
-   "tema": "negocio",
-   "canais": 3,
-   "nota_max": 8,
-   "titulos": [
-    "The markets are starting to act seriously weird. Blame AI",
-    "Ather Energy posts first quarterly profit, shares rise 10%",
-    "Gestora de R$ 100 bi reduz risco no crédito privado, zera exposição à saúde e vê força em FIDCs"
+    "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal"
    ]
   }
  ],
  "top": [
-  {
-   "titulo": "Canetas para obesidade na velhice: o que é preciso avaliar além do peso",
-   "canal": "Estadão Saúde",
-   "assunto": "glp1-mercado-e-efeitos",
-   "nota": 84,
-   "gancho": "Seu pai emagreceu com a caneta. Quanto da perda foi músculo?"
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -104,18 +86,25 @@
    "gancho": "Um aluno me perguntou se a esteira depois do treino come o músculo."
   },
   {
-   "titulo": "Weight-loss drugs fuel protein boom, but with more consumer scrutiny",
-   "canal": "Reuters",
-   "assunto": "boom-proteina",
-   "nota": 78,
-   "gancho": "Seu iogurte ganhou 20 g de proteína. Seu músculo continua igual."
+   "titulo": "Febre nas redes, hot sculpt leva exercícios de força a salas aquecidas a 35°C",
+   "canal": "Folha Equilíbrio",
+   "assunto": "hot-sculpt",
+   "nota": 76,
+   "gancho": "Suar mais numa sala a 35 graus mede o calor da sala."
   },
   {
-   "titulo": "Hormônios mudam 12 a 15 anos antes da menopausa, diz estudo",
-   "canal": "Instagram",
-   "assunto": "menopausa-terapia-hormonal",
-   "nota": 78,
-   "gancho": "Seus hormônios começam a mudar no fim dos 30."
+   "titulo": "Perimenopause is everywhere. How do you know if you’re in it? – podcast",
+   "canal": "The Guardian",
+   "assunto": "perimenopausa-sintomas",
+   "nota": 74,
+   "gancho": "Dormir mal aos 43 pode ter nome. E pede outro treino."
+  },
+  {
+   "titulo": "Usuários de Ozempic e Wegovy recorrem a suplementos para aliviar efeitos colaterais; entenda os riscos",
+   "canal": "g1 Saúde",
+   "assunto": "glp1-suplementos",
+   "nota": 74,
+   "gancho": "Caneta, náusea e um pote de suplemento comprado sozinho."
   }
  ]
 }
