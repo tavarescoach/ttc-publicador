@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..900&display=swap" rel="stylesheet">
+<!-- Arte de treino no estilo do story "pop-out" do Strava, igual ao que o Luan monta à mão no Instagram.
+     Camadas: foto > logo/palavra gigante > rota > widget de música > o Luan recortado > números (e marca LT, se pedida).
+     1080x1920 (story) ou 1080x1350 (feed). Uso: render/treino.py -->
+<style>
+:root{--txt:#F8FAFC;--mut:#CBD5E1;--red2:#E5383B;--navy:#0B1222}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:var(--h)}
+body{font-family:"Inter Display","Inter",sans-serif;color:var(--txt);-webkit-font-smoothing:antialiased;background:var(--navy);position:relative;overflow:hidden}
+.cheia{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 40%)}
+.veu{position:absolute;left:0;right:0;top:0;height:42%;background:linear-gradient(180deg,rgba(5,10,22,.28) 0%,rgba(5,10,22,0) 100%)}
+.desfoque{position:absolute;inset:-80px;width:calc(100% + 160px);height:calc(100% + 160px);object-fit:cover;filter:blur(30px) saturate(.95) brightness(.82)}
+.tinta{position:absolute;inset:0;background:radial-gradient(1000px 820px at 55% 45%,rgba(30,58,110,.10) 0%,rgba(11,18,34,.38) 62%,rgba(5,10,22,.78) 100%),linear-gradient(180deg,rgba(5,10,22,.62) 0%,rgba(11,18,34,.18) 32%,rgba(5,10,22,.5) 100%)}
+.peca{position:absolute;transform:translate(-50%,-50%)}
+.peca.base{transform:translate(-50%,-100%)}
+.peca.topo{transform:translate(-50%,0)}
+.sombra{filter:drop-shadow(0 1px 3px rgba(0,0,0,.35))}
+.palavra{position:absolute;left:0;right:0;text-align:center;font-weight:900;line-height:.78;letter-spacing:-.035em;text-transform:uppercase;white-space:nowrap}
+.palavra.cheio{color:var(--txt)}
+.palavra.linha{color:transparent;-webkit-text-stroke:3px rgba(248,250,252,.85)}
+.rota{position:absolute;inset:0;width:100%;height:100%}
+.rota path{fill:none;stroke:var(--cor-rota,#FD5300);stroke-width:var(--traco,26px);stroke-linecap:round;stroke-linejoin:round}
+.pessoa{position:absolute;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45))}
+/* números em texto (quando não há sticker): pilha centralizada, como o sticker do Strava */
+.dados{position:absolute;left:0;right:0;top:var(--d0);display:flex;flex-direction:column;align-items:center;gap:14px;text-shadow:0 1px 4px rgba(0,0,0,.3)}
+.dados.linha{flex-direction:row;justify-content:center;gap:56px}
+.m{text-align:center}
+.m .r{font-size:19px;font-weight:600}
+.m .v{margin-top:2px;font-size:var(--v);font-weight:700;letter-spacing:-.5px;line-height:1.05;white-space:nowrap}
+.m.dest .v{color:var(--red2)}
+/* widget "tocando agora" do iPhone */
+.ios{position:absolute;transform:translate(-50%,-50%);width:var(--iw);padding:calc(var(--iw)*.035) calc(var(--iw)*.045) calc(var(--iw)*.03);border-radius:calc(var(--iw)*.055);
+ background:rgba(96,108,122,.58);backdrop-filter:blur(26px) saturate(1.5);-webkit-backdrop-filter:blur(26px) saturate(1.5);font-size:calc(var(--iw)*.046);color:#fff}
+.ios b{display:block;text-align:center;font-weight:700;font-size:1.02em;letter-spacing:.2px;color:rgba(255,255,255,.9);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ios .sub{display:block;text-align:center;margin-top:.15em;font-size:.98em;color:rgba(235,235,245,.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ios .lin{display:flex;align-items:center;gap:.6em;margin-top:.45em;font-size:.72em;font-weight:500;color:rgba(235,235,245,.6);font-variant-numeric:tabular-nums}
+.ios .trilho{flex:1;position:relative;height:2.6em;display:flex;align-items:center}
+.ios .trilho:before{content:"";position:absolute;left:0;right:0;top:50%;height:.32em;margin-top:-.16em;border-radius:1em;background:rgba(255,255,255,.22)}
+.ios .trilho:after{content:"";position:absolute;left:0;width:var(--pr);top:50%;height:.32em;margin-top:-.16em;border-radius:1em;background:rgba(255,255,255,.75)}
+.ios .onda{position:relative;z-index:1;margin:0 auto;display:flex;align-items:center;gap:.16em;height:100%}
+.ios .onda i{width:.17em;border-radius:.1em;background:#fff}
+.ios .ctrl{display:flex;align-items:center;justify-content:center;gap:2.4em;margin-top:.5em;position:relative}
+.ios .ctrl svg{fill:#fff;height:1.55em;width:auto}
+.ios .ctrl .vol{position:absolute;right:0;height:1.15em;opacity:.6}
+.marca{position:absolute;left:72px;right:72px;top:var(--t0);display:flex;justify-content:space-between;align-items:center;font-size:24px;font-weight:600;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.marca img{height:44px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+</style></head>
+<body><div id="raiz"></div>
+<script>
+const S = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const feed = S.formato === "feed", H = feed ? 1350 : 1920, W = 1080, ms = S.metricas || [];
+const desf = S.fundo === "desfoque";
+const r = document.documentElement.style;
+r.setProperty("--h", H + "px"); r.setProperty("--t0", (feed ? 56 : 232) + "px");
+r.setProperty("--d0", (S.dados_topo ?? (feed ? 90 : 250)) + "px"); r.setProperty("--v", (S.tamanho_numeros ?? 44) + "px");
+if (S.foco) r.setProperty("--pos", S.foco);
+if (S.cor_rota) r.setProperty("--cor-rota", S.cor_rota);
+const caixa = (cls, src, [cx, cy, w]) =>
+  `<img class="peca ${cls}" src="${src}" style="left:${cx * W}px;top:${cy * H}px;width:${w * W}px" alt="">`;
+
+// pessoa: na foto nítida, o recorte cobre a arte inteira, alinhado com a foto
+const P = Object.assign({largura: 1, x: .5, base: feed ? 1.3 : 1.08}, S.pessoa || {});
+const pessoa = () => !desf ? `<img class="cheia" src="${S.recorte}" alt="">`
+  : `<img class="pessoa" src="${S.recorte}" style="width:${P.largura * W}px;left:${P.x * W}px;bottom:${(1 - P.base) * H}px;transform:translateX(-50%)" alt="">`;
+const temPalavra = !S.palavra_img && S.palavra;
+const palavra = cls => `<div class="palavra ${cls}"><span>${S.palavra}</span></div>`;
+
+let h = desf ? `<img class="desfoque" src="${S.foto}" alt=""><div class="tinta"></div>` : `<img class="cheia" src="${S.foto}" alt=""><div class="veu"></div>`;
+// 1. logo/palavra gigante na base, sangrando pelas bordas
+if (S.palavra_img) h += caixa("base", S.palavra_img, S.palavra_caixa || [.5, feed ? .985 : .9, 1.14]);
+else if (temPalavra) h += palavra("cheio");
+// 2. rota gigante
+if (S.rota_img) h += caixa("", S.rota_img, S.rota_caixa || [.5, .5, 1.3]);
+if (S.rota && S.rota.length > 1) {
+  const d = S.rota.map((p, i) => `${i ? "L" : "M"}${(p[0] * W).toFixed(1)} ${(p[1] * H).toFixed(1)}`).join(" ");
+  h += `<svg class="rota" viewBox="0 0 ${W} ${H}"><path d="${d}"/></svg>`;
+}
+// 3. widget de música
+if (S.musica) {
+  const M = S.musica, pr = M.progresso ?? .05;
+  let sem = [...(M.titulo || "")].reduce((a, c) => a * 31 + c.charCodeAt(0) >>> 0, 7);
+  const onda = Array.from({length: 34}, (_, i) => { sem = (sem * 1103515245 + 12345) >>> 0;
+    const env = Math.sin(Math.PI * (i + .5) / 34); return `<i style="height:${(.25 + .75 * env * (.35 + (sem % 100) / 155)) * 100}%"></i>`; }).join("");
+  r.setProperty("--iw", (M.largura ?? (feed ? .4 : .44)) * W + "px");
+  h += `<div class="ios" style="left:${(M.x ?? .62) * W}px;top:${(M.y ?? (feed ? .3 : .28)) * H}px;--pr:${pr * 100}%">
+    <b>${M.titulo}</b><span class="sub">${M.subtitulo || M.artista || ""}</span>
+    <div class="lin"><span>${M.tempo || "0:03"}</span><div class="trilho"><div class="onda">${onda}</div></div><span>${M.resta || "-2:16"}</span></div>
+    <div class="ctrl">
+      <svg viewBox="0 0 58 36"><path d="M28 0v36L0 18zM58 0v36L30 18z"/></svg>
+      <svg viewBox="0 0 30 40"><rect width="10" height="40" rx="2"/><rect x="20" width="10" height="40" rx="2"/></svg>
+      <svg viewBox="0 0 58 36"><path d="M0 0v36l28-18zM30 0v36l28-18z"/></svg>
+      <svg class="vol" viewBox="0 0 40 32"><path d="M0 10h8l10-9v30l-10-9H0z"/><path d="M24 9q6 7 0 14M30 4q11 12 0 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+    </div></div>`;
+}
+// 4. o Luan na frente
+if (S.recorte) h += pessoa();
+if (temPalavra && desf && S.contorno !== false) h += palavra("linha");
+// 5. números
+if (S.dados_img) h += caixa("topo sombra", S.dados_img, S.dados_caixa || [.5, feed ? .07 : .13, feed ? .2 : .22]);
+else if (ms.length) h += `<div class="dados${S.dados_linha ? " linha" : ""}">` + ms.map(m => `<div class="m${m.destaque ? " dest" : ""}"><div class="r">${m.rotulo}</div><div class="v">${m.valor}${m.unidade ? " " + m.unidade : ""}</div></div>`).join("") + `</div>`;
+if (S.marca) h += `<div class="marca"><img src="assets/logo-lt.png" alt=""><span>@tavarescoach</span></div>`;
+document.getElementById("raiz").innerHTML = h;
+
+document.fonts.ready.then(async () => {
+  await Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(ok => { i.onload = i.onerror = ok; })));
+  const base = S.palavra_base ?? (feed ? .985 : .9);
+  document.querySelectorAll(".palavra").forEach(c => {
+    const s = c.firstElementChild;
+    c.style.fontSize = "100px";
+    c.style.fontSize = Math.min(100 * 1000 / s.getBoundingClientRect().width, H * .3) + "px";
+    c.style.top = (H * base - c.offsetHeight) + "px";
+  });
+  document.body.dataset.pronto = "1";
+});
+</script></body></html>

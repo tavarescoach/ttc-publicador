@@ -2,3 +2,8 @@ render/_saida/
 render/_fotos/
 __pycache__/
 pacotes/_pdf/
+render/treinos/fotos/*
+!render/treinos/fotos/.gitkeep
+render/treinos/rotas/
+render/treinos/saida/
+render/treinos/*.json
