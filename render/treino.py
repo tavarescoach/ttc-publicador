@@ -6,13 +6,19 @@ O JSON é um objeto, ou uma lista deles:
  "foto": "treinos/fotos/2026-10-27.jpg", "foco": "50% 30%", "data": "27 out 2026",
  "palavra": "PERNAS", "palavra_base": 0.85,
  "metricas": [{"rotulo": "Distância", "valor": "6,51", "unidade": "km", "destaque": false}],
- "rota": [[0.12, 0.55], [0.3, 0.48]], "dados_topo": 340, "lado_a_lado": false, "dados_lado": "esquerda",
+ "rota": [[0.12, 0.55], [0.3, 0.48]], "dados_topo": 330, "fundo": "desfoque", "pessoa": {"base": 1.08},
+ "musica": {"titulo": "Pump It", "artista": "Black Eyed Peas", "progresso": 0.7},
  "rota_img": "treinos/rotas/2026-10-27.png", "rota_caixa": [0.5, 0.6, 0.85]}
 "foto" é relativo a render/. "foco" é o object-position da foto. "palavra" é o texto gigante atrás do Luan
 ("" para não ter). "rota" são pontos de 0 a 1 (x, y) da linha vermelha, desenhada atrás do Luan.
 "rota_img" é a rota exportada do Strava (PNG transparente): cortada, pintada de vermelho e posta em
-"rota_caixa" = [centro x, centro y, largura], frações da arte (padrão [0.5, 0.6, 0.85]).
-"dados_lado": "esquerda" alinha os números à esquerda (para fotos em close, com o rosto no centro ou à direita).
+"rota_caixa" = [centro x, centro y, largura], frações da arte (padrão [0.5, 0.55, 0.95]).
+"fundo": "desfoque" (padrão: a foto desfocada e escurecida no azul da marca, com o Luan nítido por cima,
+posto conforme "pessoa": {"largura": 1, "x": 0.5, "base": 1.08}: largura em fração da arte, base é onde fica
+borda de baixo da foto (1 = rente à base; acima de 1 desce e corta embaixo, sem mostrar as bordas da foto)) ou "foto" (a foto nítida
+em tela cheia; só para fotos com fundo limpo, como céu). "contorno": false tira a palavra vazada por cima do Luan.
+"musica": {"titulo", "artista", "capa" (opcional, relativo a render/), "tempo", "resta", "progresso" 0-1, "topo" px}
+desenha o cartão de "tocando agora". "dados_coluna": true empilha os números em vez de pô-los em linha.
 O recorte do Luan é gerado com rembg na primeira vez e guardado ao lado da foto (<nome>-recorte.png).
 Com --subir, cada PNG vai para o bucket "midia" do Supabase (mesmo esquema de render/story.py).
 """
