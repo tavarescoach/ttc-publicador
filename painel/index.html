@@ -1011,7 +1011,8 @@ function abrirEditar(tipo, id){
 async function salvarEdicao(ev){
   ev.preventDefault();
   const {tipo, alvo} = editando, campos = {};
-  for (const el of $("edCampos").querySelectorAll("input,textarea,select")){
+  // só os campos do formulário (ed_*); o calendário injeta inputs próprios sem id (ex.: "Outro horário")
+  for (const el of $("edCampos").querySelectorAll('input[id^="ed_"],textarea[id^="ed_"],select[id^="ed_"]')){
     const k = el.id.slice(3); let v = el.value;
     if (el.type === "datetime-local") v = v ? v + ":00-03:00" : null;
     campos[k] = v === "" ? null : v;
