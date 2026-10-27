@@ -13,7 +13,8 @@ O JSON é um objeto, ou uma lista deles. Campos principais:
     "rota" (pontos 0-1, cor em "cor_rota", padrão o laranja do Strava) ou "rota_img" (PNG já pronto) desenham a rota.
   fundo: "foto" (padrão, a foto nítida) ou "desfoque" (foto desfocada, com o Luan reduzido conforme
     "pessoa": {"largura", "x", "base"}). marca: true põe a logo LT e o @ no alto.
-O recorte do Luan é gerado com rembg (birefnet-portrait) e guardado ao lado da foto (<nome>-recorte.png).
+O recorte do Luan é gerado com rembg ("recorte_modelo": birefnet-portrait, padrão, ou birefnet-general quando ele
+carrega mochila, bike, prancha) e guardado ao lado da foto (<nome>-recorte*.png).
 Com --subir, cada PNG vai para o bucket "midia" do Supabase (mesmo esquema de render/story.py).
 """
 import json
@@ -29,16 +30,18 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 
 
-def recortar(foto):
-    """Recorte do Luan (fundo transparente), feito uma vez por foto."""
+def recortar(foto, modelo="birefnet-portrait"):
+    """Recorte do Luan (fundo transparente), feito uma vez por foto e modelo.
+    birefnet-portrait tem o melhor contorno de cabelo e ignora objetos do fundo, mas pode deixar de fora
+    o que ele carrega (mochila, bike, prancha); para isso, birefnet-general."""
     base, _ = os.path.splitext(foto)
-    rel = base + "-recorte.png"
+    rel = base + ("-recorte.png" if modelo == "birefnet-portrait" else f"-recorte-{modelo}.png")
     destino = os.path.join(AQUI, rel)
     if not os.path.exists(destino):
         from PIL import Image, ImageOps
         from rembg import new_session, remove
         im = ImageOps.exif_transpose(Image.open(os.path.join(AQUI, foto)))
-        remove(im, session=new_session("birefnet-portrait")).save(destino)
+        remove(im, session=new_session(modelo)).save(destino)
     return rel
 
 
@@ -86,7 +89,7 @@ def renderizar(artes, enviar=False):
         nav = p.chromium.launch(executable_path=os.environ.get("CHROMIUM_PATH"))
         for a in artes:
             if "recorte" not in a and not a["foto"].startswith("http"):
-                a["recorte"] = recortar(a["foto"])
+                a["recorte"] = recortar(a["foto"], a.get("recorte_modelo", "birefnet-portrait"))
             if a.get("sticker"):
                 pecas = separar_sticker(a["sticker"])
                 a.setdefault("rota_img", pecas.get("rota"))

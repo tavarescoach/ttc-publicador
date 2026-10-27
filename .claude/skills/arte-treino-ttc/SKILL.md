@@ -59,6 +59,7 @@ Camadas (`render/treino.html`): foto > logo STRAVA > rota > widget > o Luan reco
      - a palavra vai em `palavra` (texto);
      - a rota vai em `rota` (pontos 0-1, no laranja do Strava, ou na cor de `cor_rota`) ou em `rota_img` (PNG já pronto, usado como está).
    - `dados_sticker: false` e `logo_sticker: false` descartam essas peças do sticker.
+   - `recorte_modelo`: padrão `birefnet-portrait` (melhor contorno de cabelo, ignora objetos do fundo). Se ele **carrega** algo (mochila, bike, prancha, bola), use `birefnet-general`: o de retrato deixa a mochila semitransparente e a logo vaza por cima dela.
    - `fundo: "desfoque"` (foto desfocada, com o Luan reduzido via `pessoa`) existe para fotos sem nenhum respiro. Não é o padrão.
 
 5. **Renderizar:** `python render/treino.py render/treinos/<data>.json`.
@@ -70,7 +71,7 @@ Camadas (`render/treino.html`): foto > logo STRAVA > rota > widget > o Luan reco
    - widget inteiro legível (título, onda, botões), com no máximo uma borda coberta;
    - rota visível atrás do corpo;
    - logo gigante na base, parte atrás do corpo, sem cobrir rosto;
-   - recorte sem halo;
+   - recorte sem halo e sem nada atrás vazando por cima do corpo ou do que ele carrega (amplie a área);
    - números iguais ao sticker.
    Para conferir detalhes, recorte um trecho da arte e olhe ampliado.
 
