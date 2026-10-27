@@ -1,0 +1,84 @@
+{
+ "id": "k-2026-10-29-carrossel-noite",
+ "data": "2026-10-29",
+ "quando": "2026-10-29T20:00:00-03:00",
+ "tema": "Estilo de vida",
+ "funil": "fundo",
+ "pauta": "Guia: rotina de sono regular para quem treina",
+ "legenda": "Deitar às 23h na terça e às 2h no sábado conta mais do que parece.\n\nNum estudo com 60.977 pessoas no Reino Unido, quem tinha o sono mais regular teve de 20% a 48% menos risco de morte no período, comparado aos mais irregulares. A regularidade previu o risco melhor do que o total de horas.\n\nTrês ajustes cabem numa agenda cheia: horário fixo para deitar, alarme para lembrar e registro do sono junto com a carga do treino. Na Avaliação Estratégica, isso vira plano.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #sono #rotina #copacabana #leblon",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Dormir no **mesmo horário** pesou mais que dormir muito"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "titulo": "Agenda cheia muda **o horário de deitar**.",
+   "texto": "Reunião que atrasa, jantar tarde, celular na cama. Durante a semana o horário de dormir anda, e no sábado anda mais. Um estudo com quase 61 mil pessoas mediu o que essa variação custa."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O estudo",
+   "numero": "60.977",
+   "titulo": "pessoas com o sono medido, acompanhadas por **cerca de 6 anos**.",
+   "texto": "Pesquisadores usaram dados do UK Biobank para comparar a regularidade do sono, o quanto o horário variava de um dia para o outro, com o risco de morte no período.",
+   "fonte": "Windred et al., Sleep (2023)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "preto",
+   "rotulo": "O resultado",
+   "numero": "48",
+   "unidade": "%",
+   "titulo": "menos risco entre quem tinha o **sono mais regular**.",
+   "texto": "Comparados aos 20% mais irregulares, os demais grupos tiveram de 20% a 48% menos risco de morte. A regularidade previu o risco melhor do que a duração do sono.",
+   "fonte": "Windred et al., Sleep (2023)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "Passo 1",
+   "titulo": "Um horário fixo para **deitar**.",
+   "texto": "Conte 7 horas para trás a partir do alarme do treino. Para quem acorda às 6h, a luz apaga às 23h. Repita no sábado e no domingo, com até uma hora de folga."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Passo 2",
+   "titulo": "Alarme para **deitar**, além do de acordar.",
+   "texto": "O celular que te acorda às 6h pode avisar às 22h30 que falta meia hora. Rotina que depende de lembrar costuma escapar justamente nos dias mais cheios."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "Passo 3",
+   "titulo": "Anote o sono **junto com a carga**.",
+   "texto": "Hora que deitou, hora que acordou e a carga do dia. Em quatro semanas você enxerga em quais noites o treino rendeu e em quais ele pesou."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "Regularidade vem **antes da meta de horas**.",
+   "texto": "**O horário regular de dormir previu o risco melhor do que o total de horas.** Para agenda cheia, a primeira mudança é a mais barata: o mesmo horário todos os dias."
+  },
+  {
+   "tipo": "licao",
+   "fundo": "preto",
+   "rotulo": "Para quem treina",
+   "titulo": "Sono e treino no **mesmo plano**.",
+   "texto": "O treino das 7h começa na noite anterior. Com os dois horários definidos, a semana fica previsível e fica mais fácil ver a carga subir.",
+   "nota": "Na Avaliação Estratégica, montamos horário de treino e rotina de sono juntos, em 40 minutos, no TTC."
+  },
+  {
+   "tipo": "cta",
+   "fundo": "marinho",
+   "titulo": "Sua semana com **horário e direção**.",
+   "texto": "Agende a sua Avaliação Estratégica no TTC, em Copacabana.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}

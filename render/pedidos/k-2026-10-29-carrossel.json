@@ -1,0 +1,81 @@
+{
+ "id": "k-2026-10-29-carrossel",
+ "data": "2026-10-29",
+ "quando": "2026-10-29T12:00:00-03:00",
+ "tema": "Estilo de vida",
+ "funil": "meio",
+ "pauta": "Dia Mundial do AVC: o sono na lista de riscos",
+ "legenda": "Quem dormia menos de 5 horas por noite teve 3 vezes mais chance de AVC no estudo INTERSTROKE, comparado a quem dormia 7.\n\nO caso da manhã foi o de Gayle King, que contou dormir de 4 a 5 horas por causa do horário da TV. O estudo fala de grupos de pessoas e mostra associação, sem provar causa. Mesmo assim, o sono entra na lista do que dá para ajustar na rotina.\n\nNo Dia Mundial do AVC, comece pelo horário de deitar. Às 20h sai o guia prático para agenda cheia.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #sono #avc #estilodevida #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "O estudo que pôs o **sono** na lista de riscos do AVC"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "titulo": "4 a 5 horas por noite, **todo dia útil**.",
+   "texto": "Pela manhã, Gayle King contou que dorme de 4 a 5 horas por causa do horário da TV. É a rotina de muita gente que acorda antes das 5h. No Dia Mundial do AVC, vale ver o que a ciência mediu sobre noites curtas.",
+   "fonte": "E! Online, 22/10/2026"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O estudo",
+   "numero": "4.496",
+   "titulo": "pessoas de vários países, metade delas com **AVC recente**.",
+   "texto": "O INTERSTROKE comparou quem teve um primeiro AVC com quem não teve e perguntou sobre o sono de cada um: horas por noite, cochilos, ronco e pausas na respiração.",
+   "fonte": "McCarthy et al., Neurology (2023)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "preto",
+   "rotulo": "Sono curto",
+   "numero": "3",
+   "unidade": "vezes",
+   "titulo": "mais chance de AVC em quem dormia **menos de 5 horas**.",
+   "texto": "Comparado a quem dormia 7 horas, o grupo de sono curto teve 3,15 vezes mais chance. Quem passava de 9 horas também apareceu com chance maior. O estudo mostra associação e não prova causa.",
+   "fonte": "McCarthy et al., Neurology (2023)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O corpo no dia seguinte",
+   "numero": "21",
+   "unidade": "%",
+   "titulo": "mais cortisol depois de **uma noite em claro**.",
+   "texto": "Num estudo australiano, uma única noite sem dormir já subiu o hormônio do estresse ao longo do dia seguinte. O efeito de dormir pouco aparece rápido no corpo.",
+   "fonte": "Lamon et al., Physiological Reports (2021)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Na sua semana",
+   "titulo": "A hora de deitar decide **o treino das 7h**.",
+   "texto": "Quem treina às 7h e deita à meia-noite chega na barra com menos de 7 horas de cama. A conta começa quando você apaga a luz, e ela entra no plano da semana como qualquer sessão."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "Sono curto entrou na **conta do risco**.",
+   "texto": "**Menos de 5 horas por noite apareceu ligado a 3 vezes mais chance de AVC.** Sono é hábito de rotina, e rotina se ajusta com plano."
+  },
+  {
+   "tipo": "licao",
+   "fundo": "marinho",
+   "rotulo": "Para quem treina",
+   "titulo": "Comece pela **hora de deitar**.",
+   "texto": "Escolha um horário fixo para deitar que deixe 7 horas antes do alarme. Mantenha no fim de semana. Às 20h sai o guia com os ajustes que cabem numa agenda cheia.",
+   "nota": "Na Avaliação Estratégica, sono e horário de treino entram no mesmo plano, em 40 minutos, no TTC."
+  },
+  {
+   "tipo": "cta",
+   "fundo": "preto",
+   "titulo": "Treino e rotina no **mesmo plano**.",
+   "texto": "Avaliação Estratégica no TTC, em Copacabana.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}
