@@ -1211,5 +1211,90 @@
     "status": "pendente",
     "origem": "painel",
     "tema": "Estilo de vida"
+  },
+  {
+    "id": "2026-10-28-st-0600",
+    "quando": "2026-10-28T09:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-28/story-0600.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-10-28-st-0800",
+    "quando": "2026-10-28T11:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-28/story-0800.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-10-28-st-1000",
+    "quando": "2026-10-28T13:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-28/story-1000.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-10-28-st-1230",
+    "quando": "2026-10-28T15:30:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-10-28/story-1230.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "e-3ajn205harpkl535vbz6-carrossel",
+    "quando": "2026-10-28T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-1.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-2.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-3.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-4.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-5.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-6.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-7.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-8.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-9.png",
+      "2026-10-28/e-3ajn205harpkl535vbz6-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Três meses no mesmo pace, com cada vez mais quilômetros na planilha.\n\nA revisão de Blagrove e colegas (Sports Medicine, 2018) reuniu 24 estudos: quem somou força à corrida melhorou de 2% a 8% a economia, gastando menos energia no mesmo ritmo. Em 2024, a meta-análise com 652 corredores mostrou que o efeito veio com carga de 80% ou mais do máximo.\n\nNas lesões, a meta-análise de Lauersen (BJSM, 2014) associou o treino de força a menos de um terço das lesões no esporte. O alongamento ficou sem efeito nos ensaios.\n\nA troca que cabe na semana de quem corre: uma corrida sai, duas sessões de força com carga anotada entram. A Avaliação Estratégica monta essa semana com você, a partir do seu histórico e dos seus testes de força.\n\nMe manda MÉTODO no direct.\n\n#corridaderua #treinodeforca #copacabana #ipanema #personaltrainerrj",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Esportes"
+  },
+  {
+    "id": "e-npf59l9rfc5eh2k6cq40-carrossel",
+    "quando": "2026-10-28T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-1.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-2.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-3.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-4.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-5.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-6.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-7.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-8.png",
+      "2026-10-28/e-npf59l9rfc5eh2k6cq40-carrossel/carrossel-9.png"
+    ],
+    "legenda": "A pasta de treinos salvos cresce e a carga do agachamento continua a mesma.\n\nNesta semana, o Observatório Lupa mostrou que 667 das 764 alegações virais de saúde checadas desde 2017 eram falsas. No fitness, um estudo com 495 posts de perfis brasileiros grandes achou só 13 com uma referência que sustentava o que diziam.\n\nVocê fez o que estava ao seu alcance. A progressão aparece com um plano que dura semanas e com alguém medindo a sua carga.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #treinodeforca #personaltrainerrj #copacabana #ipanema",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Treino de força"
   }
 ]
