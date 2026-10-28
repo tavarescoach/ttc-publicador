@@ -1,0 +1,88 @@
+{
+  "id": "e-3ajn205harpkl535vbz6-carrossel",
+  "data": "2026-10-28",
+  "quando": "2026-10-28T12:00:00-03:00",
+  "tema": "Esportes",
+  "funil": "meio",
+  "pauta": "Você dobrou os quilômetros e o pace não saiu do lugar.",
+  "legenda": "Três meses no mesmo pace, com cada vez mais quilômetros na planilha.\n\nA revisão de Blagrove e colegas (Sports Medicine, 2018) reuniu 24 estudos: quem somou força à corrida melhorou de 2% a 8% a economia, gastando menos energia no mesmo ritmo. Em 2024, a meta-análise com 652 corredores mostrou que o efeito veio com carga de 80% ou mais do máximo.\n\nNas lesões, a meta-análise de Lauersen (BJSM, 2014) associou o treino de força a menos de um terço das lesões no esporte. O alongamento ficou sem efeito nos ensaios.\n\nA troca que cabe na semana de quem corre: uma corrida sai, duas sessões de força com carga anotada entram. A Avaliação Estratégica monta essa semana com você, a partir do seu histórico e dos seus testes de força.\n\nMe manda MÉTODO no direct.\n\n#corridaderua #treinodeforca #copacabana #ipanema #personaltrainerrj",
+  "slides": [
+    {
+      "tipo": "capa",
+      "fundo": "marinho",
+      "titulo": "Você dobrou os quilômetros e **o pace não saiu do lugar.**",
+      "subtitulo": "Os estudos apontam para a parte da semana que o corredor pula.",
+      "foto": "https://images.pexels.com/photos/35804005/pexels-photo-35804005.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "A orla cheia às 6h. **O relógio repetindo o pace.**",
+      "texto": "O Brasil chegou a 14,6 milhões de corredores em 2026, segundo a Ticket Sports. Em 23/10, o Estado de Minas ouviu treinadores que dão à força o mesmo peso da corrida na preparação.",
+      "foto": "https://images.pexels.com/photos/7869609/pexels-photo-7869609.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "fonte": "Máquina do Esporte (2026); Estado de Minas (23/10/2026)"
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "Economia de corrida",
+      "numero": "2 a 8",
+      "unidade": "%",
+      "titulo": "de economia a mais com **força somada à corrida.**",
+      "texto": "A revisão de Blagrove e colegas reuniu 24 estudos. Quem somou força gastou menos energia no mesmo ritmo do que quem só corria. Sobra energia para acelerar.",
+      "fonte": "Blagrove et al., Sports Medicine (2018)"
+    },
+    {
+      "tipo": "insight",
+      "fundo": "preto",
+      "rotulo": "Quanto pesa",
+      "titulo": "A carga leve **deixou a economia igual.**",
+      "texto": "**Na meta-análise de 2024 com 652 corredores, o efeito veio com 80% ou mais da carga máxima.** Com 40% a 79%, a economia ficou parecida com a de quem não fez força."
+    },
+    {
+      "tipo": "numero",
+      "fundo": "marinho",
+      "rotulo": "Lesões no esporte",
+      "numero": "68",
+      "unidade": "%",
+      "titulo": "menos lesões nos grupos **que fizeram força.**",
+      "texto": "Lauersen e colegas reuniram 25 ensaios e 26.610 participantes. Nos grupos com treino de força, as lesões no esporte caíram para menos de um terço das registradas nos grupos de controle.",
+      "fonte": "Lauersen et al., British Journal of Sports Medicine (2014)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "claro",
+      "titulo": "O alongamento antes da corrida **ficou sem efeito.**",
+      "texto": "Na mesma meta-análise, três ensaios testaram alongamento. O risco de lesão ficou praticamente igual ao de quem não alongou (RR 0,96). Alongar pode continuar na rotina, só que como proteção os ensaios não mostraram diferença.",
+      "fonte": "Lauersen et al., British Journal of Sports Medicine (2014)"
+    },
+    {
+      "tipo": "texto_foto",
+      "fundo": "preto",
+      "titulo": "Duas sessões de força **no lugar de uma corrida.**",
+      "texto": "Uma corrida sai da semana e duas sessões de força entram. As corridas que ficam ganham intenção: leve, ritmo e longa. A quilometragem sobe depois que a carga sobe."
+    },
+    {
+      "tipo": "insight",
+      "fundo": "claro",
+      "rotulo": "O que o caso revela",
+      "titulo": "O pace cai quando **a perna empurra mais forte.**",
+      "texto": "**Força com carga alta melhora a economia e está associada a menos lesões no esporte.** Somar quilômetros sem essa base repete o mesmo estímulo e aumenta o impacto em canela, joelho e tendão."
+    },
+    {
+      "tipo": "licao",
+      "fundo": "marinho",
+      "rotulo": "Para quem corre",
+      "titulo": "Comece pela **carga anotada.**",
+      "texto": "Duas sessões por semana, com carga alta e técnica conferida por um treinador. Anote carga e repetições de cada exercício. Suba a carga quando as repetições saírem completas.",
+      "nota": "Na Avaliação Estratégica, eu olho seu histórico de corrida, a quilometragem e as dores, e testo sua força antes de montar a semana."
+    },
+    {
+      "tipo": "cta",
+      "fundo": "preto",
+      "titulo": "Sua semana de corrida, **com a força medida.**",
+      "texto": "Avaliação Estratégica: 40 minutos no TTC, em Copacabana.",
+      "cta": "Me manda **MÉTODO** no direct."
+    }
+  ]
+}
