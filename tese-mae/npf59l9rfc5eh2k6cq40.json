@@ -1,0 +1,59 @@
+{
+  "id": "tm-2026-10-27-pasta-de-salvos",
+  "criacao": "npf59l9rfc5eh2k6cq40",
+  "criada_em": "2026-10-27T21:20:00-03:00",
+  "origem": "radar",
+  "reportagem": {
+    "titulo": "Nove em cada 10 informações sobre saúde nas redes são falsas, diz relatório",
+    "veiculo": "Metrópoles (Isabella França)",
+    "data": "26/10/2026",
+    "link": "https://www.metropoles.com/saude/nove-em-cada-10-informacoes-sobre-saude-nas-redes-sao-falsas-diz-relatorio"
+  },
+  "opcao_escolhida": "Informação de graça sobra, direção falta",
+  "tese": "Quem treina pelo feed tem informação de sobra e direção nenhuma, porque o conselho chega longe da fonte e longe da carga que você levantou na semana passada.",
+  "cena": "Domingo à noite você salva mais um treino de glúteo ou de peito. Segunda, às 7h, na academia, você não lembra a carga que usou na quinta e coloca a de sempre.",
+  "causa": "O treino de hoje só progride quando alguém sabe a carga da semana passada.",
+  "evidencias": [
+    {
+      "afirmacao": "Em 495 posts de 33 perfis brasileiros de saúde e fitness com mais de 100 mil seguidores (coletados em 2018), 95 citavam alguma referência e só 13 (cerca de 2,7%) traziam uma referência que sustentava o que diziam. Cerca de 44% traziam recomendação viável segundo a ciência.",
+      "fonte": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8618405"
+    },
+    {
+      "afirmacao": "No mesmo estudo, quanto mais seguidores, menor a qualificação do autor (r = −0,45).",
+      "fonte": "https://www.mdpi.com/1660-4601/18/22/11914"
+    },
+    {
+      "afirmacao": "Das 764 alegações de saúde virais checadas pela Agência Lupa entre 2017 e junho de 2026, 667 eram falsas (87,3%). Táticas mais comuns: falsa autoridade (21,6%), medo e linguagem alarmista (17%), distorção de estudos (15,7%), solução simples para problema complexo (12,6%).",
+      "fonte": "https://www.correiodamanha.com.br/nacional/2026/10/328954-quase-90-de-conteudos-virais-sobre-saude-sao-falsos-diz-estudo.html"
+    }
+  ],
+  "tipo_pauta": "tese",
+  "emocao": "reconhecimento",
+  "lacuna": "A manchete promete mostrar por que a pasta de treinos salvos cresce e a carga não muda. O conteúdo entrega o dado dos 13 em 495 posts, o motivo (a dica foi feita para outra pessoa e sem registro de carga não há progressão) e três perguntas para filtrar o próximo treino.",
+  "passo_final": "Mandar MÉTODO no direct para sair da pasta de salvos com um ponto de partida medido, porque a Avaliação Estratégica registra a carga que vira a régua das próximas semanas.",
+  "funil": "fundo",
+  "publico": "ambos",
+  "cta": "Me manda MÉTODO no direct.",
+  "pontos_de_cuidado": [
+    "Dizer sempre 'das alegações checadas pela Lupa'. Nunca '90% de tudo nas redes é falso'.",
+    "O relatório da Lupa tem peso grande em vacinas e covid: o conteúdo fica em treino e hábitos, sem entrar no debate de vacina.",
+    "Nada de citar, mostrar ou criticar perfil, colega ou marca. A crítica é ao critério, nunca à pessoa.",
+    "Marocolo et al. (2021) usa posts de 2018 e perfis grandes: citar o ano e falar em 'baixa qualidade média'. Não afirmar que a mentira engaja mais.",
+    "O dado do JAMA 2026 (Pedroso et al.) que estava na tese (77,7% acham a informação falsa) não foi confirmado nesta sessão; só os 21,6% que tomam decisões de saúde com base nas redes foram confirmados (HealthDay, 13/07/2026). Nenhuma saída usa esse estudo.",
+    "Risco de lesão ao copiar treino: nível geral, sem diagnóstico. Dor forte, que piora ou com formigamento pede avaliação de saúde.",
+    "Reconhecimento sem culpa: quem salvou o treino fez o que estava ao alcance. Sem promessa com prazo."
+  ],
+  "aprovacao": {
+    "status": "aguarda_aprovacao",
+    "em": null
+  },
+  "saidas": {
+    "carrossel": "aguarda_tese",
+    "blogpost": "pronto",
+    "video_aula": "pronto",
+    "ementa": "pronto",
+    "reels_direcao": "pronto",
+    "teleprompter": "pronto",
+    "broll_narracao": "pronto"
+  }
+}
