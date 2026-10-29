@@ -1,5 +1,17 @@
 [
  {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": null,
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": null,
+  "status": "salvo"
+ },
+ {
   "titulo": "Rodrigo Faro mostra corpo sarado em calistenia e personal posta: '53 anos'",
   "canal": "Globo",
   "tema": "cultura",
@@ -24,6 +36,12 @@
   "status": "salvo"
  },
  {
+  "titulo": "Perfil @nettodudu",
+  "canal": "Sua referência",
+  "tema": "negocio",
+  "status": "salvo"
+ },
+ {
   "titulo": "Perfil @marceloscience",
   "canal": "Sua referência",
   "tema": "ciencia",
@@ -42,12 +60,6 @@
   "status": "salvo"
  },
  {
-  "titulo": "Perfil @nettodudu",
-  "canal": "Sua referência",
-  "tema": "negocio",
-  "status": "salvo"
- },
- {
   "titulo": "Perfil @desalles",
   "canal": "Sua referência",
   "tema": "ciencia",
@@ -56,43 +68,13 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "comportamento",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "comportamento",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "esporte",
-  "status": "salvo"
- },
- {
-  "titulo": "Will Tennyson (@willtenny) • Instagram reel",
-  "canal": "Sua referência",
-  "tema": "esporte",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "esporte",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
   "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "esporte",
   "status": "salvo"
  },
  {
@@ -128,7 +110,7 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -140,6 +122,18 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
+  "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
   "tema": "saude",
   "status": "salvo"
  },
@@ -147,6 +141,24 @@
   "titulo": "Instagram",
   "canal": "Sua referência",
   "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Will Tennyson (@willtenny) • Instagram reel",
+  "canal": "Sua referência",
+  "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
@@ -194,7 +206,7 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -206,7 +218,7 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -246,10 +258,10 @@
   "status": "salvo"
  },
  {
-  "titulo": "Just 4 minutes a day can dramatically improve strength after 65",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
-  "status": "virou_pauta"
+  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
+  "canal": "The Guardian",
+  "tema": "saude",
+  "status": "salvo"
  },
  {
   "titulo": "Exercise in a pill",
@@ -258,10 +270,10 @@
   "status": "salvo"
  },
  {
-  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
-  "canal": "The Guardian",
-  "tema": "saude",
-  "status": "salvo"
+  "titulo": "Just 4 minutes a day can dramatically improve strength after 65",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "virou_pauta"
  },
  {
   "titulo": "Demi Lovato Was ‘Terrified’ to Tour After Gaining ‘a Little Weight.’ Then She Realized ‘My Worth Isn’t in My Body’",
@@ -276,10 +288,10 @@
   "status": "descartado"
  },
  {
-  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
+  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
+  "canal": "Folha Equilíbrio",
   "tema": null,
-  "status": "descartado"
+  "status": "salvo"
  },
  {
   "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
@@ -294,16 +306,16 @@
   "status": "salvo"
  },
  {
-  "titulo": "Recuperação Judicial no Agro Cai 20,7% no 2º Trimestre de 2026, Aponta Serasa",
-  "canal": "Forbes",
+  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
   "tema": null,
   "status": "descartado"
  },
  {
-  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
-  "canal": "Folha Equilíbrio",
+  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
   "tema": null,
-  "status": "salvo"
+  "status": "descartado"
  },
  {
   "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
@@ -312,21 +324,21 @@
   "status": "descartado"
  },
  {
-  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
+  "titulo": "Recuperação Judicial no Agro Cai 20,7% no 2º Trimestre de 2026, Aponta Serasa",
+  "canal": "Forbes",
   "tema": null,
   "status": "descartado"
- },
- {
-  "titulo": "Home workout",
-  "canal": "Sua referência",
-  "tema": "esporte",
-  "status": "salvo"
  },
  {
   "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
   "canal": "Sua referência",
   "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Home workout",
+  "canal": "Sua referência",
+  "tema": "esporte",
   "status": "salvo"
  },
  {
@@ -336,15 +348,15 @@
   "status": "salvo"
  },
  {
-  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Coming out midlife",
   "canal": "Sua referência",
   "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
+  "canal": "Sua referência",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -378,6 +390,30 @@
   "status": "virou_pauta"
  },
  {
+  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
+  "canal": "Fox News Health",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Is the energy of the 1990s returning to London’s art market?",
+  "canal": "The Art Newspaper",
+  "tema": "cultura",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
+  "canal": "ScienceDaily",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
   "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
   "canal": "Metrópoles",
   "tema": "saude",
@@ -396,12 +432,6 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
   "titulo": "Scientists discover how exercise reverses muscle aging",
   "canal": "ScienceDaily",
   "tema": "ciencia",
@@ -411,24 +441,6 @@
   "titulo": "A 47-year study reveals the age when your body starts losing strength",
   "canal": "ScienceDaily",
   "tema": "ciencia",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
-  "canal": "ScienceDaily",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Is the energy of the 1990s returning to London’s art market?",
-  "canal": "The Art Newspaper",
-  "tema": "cultura",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
-  "canal": "Fox News Health",
-  "tema": "saude",
   "status": "virou_pauta"
  },
  {
