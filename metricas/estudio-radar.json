@@ -1,92 +1,70 @@
 {
- "atualizado_em": "2026-10-28T06:27:57-03:00",
+ "atualizado_em": "2026-10-28T14:25:00-03:00",
  "em_alta": [
   {
-   "assunto": "alcool-beber-menos",
-   "tema": "comportamento",
-   "canais": 4,
-   "nota_max": 82,
+   "assunto": "ia-sociedade",
+   "tema": "tecnologia",
+   "canais": 6,
+   "nota_max": 15,
    "titulos": [
-    "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-    "Just two drinks a day may be far riskier than you think",
-    "Exercise helps woman recover from partying life"
+    "Researchers warn of surging law firm cyber attacks fueled by AI",
+    "How to get rid of unwanted AI on your phone",
+    "How teachers are remaking classrooms for the AI age"
    ]
   },
   {
    "assunto": "glp1-mercado-e-efeitos",
-   "tema": "negocio",
+   "tema": "saude",
    "canais": 4,
-   "nota_max": 70,
+   "nota_max": 80,
    "titulos": [
-    "Mulheres respondem melhor às canetas emagrecedoras? Dra. Tassiane Alvarenga explica possíveis motivos",
-    "Demanda por sapateiros e alfaiates sofre impacto das canetas emagrecedoras",
-    "Por que o uso de canetas emagrecedoras está afetando as vendas de produtos de beleza, segundo a L'Oreal"
+    "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
+    "Weight-loss drug could help address nighttime sleep disruptions for millions",
+    "Mulheres respondem melhor às canetas emagrecedoras? Dra. Tassiane Alvarenga explica possíveis motivos"
+   ]
+  },
+  {
+   "assunto": "politica-eua",
+   "tema": "cultura",
+   "canais": 4,
+   "nota_max": 8,
+   "titulos": [
+    "Harry on Harry: 'I did not expect that type of infatuation from the President of the United States'",
+    "Karen Bass on Nithya Raman, Her Radical Past, and the Fight to Remain LA Mayor",
+    "Midterms 2026: Jon Ossoff’s TikTok Campaign, Ken Paxton’s Texas Tour, and More Political Powermaxxing"
    ]
   },
   {
    "assunto": "fofoca-celebridade",
    "tema": "cultura",
-   "canais": 4,
-   "nota_max": 18,
+   "canais": 3,
+   "nota_max": 22,
    "titulos": [
-    "Teddi Mellencamp Says Brain Surgery Left Her Struggling to Write and See",
-    "Tatum O’Neal, 62, makes rare public outing with family 6 years after near-fatal stroke",
-    "Joy Behar Returns to The View After Month-Long Absence from Painful Injury She Calls ‘Worse Than Childbirth’"
+    "Judi Dench Gives Hilarious, Heartfelt Interview at 91: Love, Grief and the Role That Got Away (Exclusive)",
+    "Joy Behar Returns to The View After Month-Long Absence from Painful Injury She Calls ‘Worse Than Childbirth’",
+    "Whoopi Goldberg enaltece cachê na TV: 'Ninguém vai me pagar salário de homem para estar em um filme'"
    ]
   },
   {
    "assunto": "mercado-financeiro",
    "tema": "negocio",
-   "canais": 4,
-   "nota_max": 8,
-   "titulos": [
-    "The markets are starting to act seriously weird. Blame AI",
-    "Gestora de R$ 100 bi reduz risco no crédito privado, zera exposição à saúde e vê força em FIDCs",
-    "Cooper Companies CEO White steps down"
-   ]
-  },
-  {
-   "assunto": "politica-eua",
-   "tema": "comportamento",
-   "canais": 4,
-   "nota_max": 3,
-   "titulos": [
-    "US health chief RFK Jr faces widespread rebuke over his anti-Arab remarks",
-    "Midterms 2026: Jon Ossoff’s TikTok Campaign, Ken Paxton’s Texas Tour, and More Political Powermaxxing",
-    "Jon Ossoff Harnesses Short-Form Vertical Video on TikTok and Instagram to Reach Voters in the Georgia Senate Race"
-   ]
-  },
-  {
-   "assunto": "ia-sociedade",
-   "tema": "tecnologia",
    "canais": 3,
-   "nota_max": 14,
+   "nota_max": 10,
    "titulos": [
-    "The focus on AI safety disasters ignores everyday harms",
-    "The Download: everyday AI harms and the race to nuclear spaceflight",
-    "AI Emergency Alerts Are Coming. Humans Might Not Be Ready"
+    "As 100 Maiores Empresas do Agronegócio Faturam R$ 2,1 Trilhões em 2025",
+    "Resultados do 3T26 Setor Imobiliário Começam Nesta Semana; Veja Calendário",
+    "Hyundai Motor India profit slumps 24% as rising costs bite"
    ]
   },
   {
-   "assunto": "anthropic-ipo",
-   "tema": "tecnologia",
+   "assunto": "tv-entretenimento",
+   "tema": "cultura",
    "canais": 3,
-   "nota_max": 8,
+   "nota_max": 5,
    "titulos": [
-    "Anthropic taps a deep well of distrust as it eyes its Australian AI debut",
-    "Anthropic Says It Will Revolutionize Biology—Some Day",
-    "Anthropic’s Pre-IPO Filing Is the Scariest Thing You’ll Read This Halloween Season"
-   ]
-  },
-  {
-   "assunto": "ia-mercado",
-   "tema": "tecnologia",
-   "canais": 3,
-   "nota_max": 4,
-   "titulos": [
-    "Industrial Intelligence: The next growth opportunity for manufacturing",
-    "Com Custo de R$ 62 por Watt, São Paulo Vira Alternativa Global para Data Centers, diz Turner & Townsend",
-    "Guidewire to buy UK insurance AI firm hyperexponential in deal worth up to $2.1 billion"
+    "Sarah J. Maas Gave Us Part of a Book",
+    "Aaron Sorkin Thought He’d Be Better at Making Movies Too",
+    "‘RHONY’ recap: Sai de Silva snaps at Daisy Toye, Jessel shares gay rumors with Pavit"
    ]
   }
  ],
@@ -106,13 +84,6 @@
    "gancho": "Dois minutos encostado na parede baixam sua pressão."
   },
   {
-   "titulo": "Just two drinks a day may be far riskier than you think",
-   "canal": "ScienceDaily",
-   "assunto": "alcool-beber-menos",
-   "nota": 82,
-   "gancho": "Duas doses por noite parecem pouco. O estudo diz outra coisa."
-  },
-  {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
    "canal": "Sua referência",
    "assunto": "alcool-beber-menos",
@@ -125,6 +96,13 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
+  },
+  {
+   "titulo": "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
+   "canal": "Reuters",
+   "assunto": "glp1-mercado-e-efeitos",
+   "nota": 80,
+   "gancho": "A nova caneta tira mais peso. O treino decide de onde sai."
   },
   {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
@@ -148,18 +126,18 @@
    "gancho": "Um aluno me perguntou se a esteira depois do treino come o músculo."
   },
   {
+   "titulo": "Weight-loss drug could help address nighttime sleep disruptions for millions",
+   "canal": "Fox News Health",
+   "assunto": "glp1-mercado-e-efeitos",
+   "nota": 78,
+   "gancho": "Você ronca, acorda cansado e culpa a agenda. O peso conta."
+  },
+  {
    "titulo": "Want to Get Stronger Without the Male Gaze? There’s a Gym for That.",
    "canal": "NYT Well",
    "assunto": "academia-so-mulheres",
    "nota": 78,
    "gancho": "Ela quer levantar peso. O que trava é o olhar ao redor."
-  },
-  {
-   "titulo": "Want to Get Stronger Without the Male Gaze? There’s a Gym for That.",
-   "canal": "Nytimes",
-   "assunto": "academia-so-mulheres",
-   "nota": 78,
-   "gancho": "Medo de olhar torto também atrasa resultado."
   }
  ]
 }
