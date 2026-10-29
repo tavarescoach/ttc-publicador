@@ -1,48 +1,70 @@
 {
- "atualizado_em": "2026-10-28T14:25:00-03:00",
+ "atualizado_em": "2026-10-29T06:32:12-03:00",
  "em_alta": [
-  {
-   "assunto": "ia-sociedade",
-   "tema": "tecnologia",
-   "canais": 6,
-   "nota_max": 15,
-   "titulos": [
-    "Researchers warn of surging law firm cyber attacks fueled by AI",
-    "How to get rid of unwanted AI on your phone",
-    "How teachers are remaking classrooms for the AI age"
-   ]
-  },
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
-   "canais": 4,
+   "canais": 6,
    "nota_max": 80,
    "titulos": [
     "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
     "Weight-loss drug could help address nighttime sleep disruptions for millions",
-    "Mulheres respondem melhor às canetas emagrecedoras? Dra. Tassiane Alvarenga explica possíveis motivos"
+    "Anvisa aprova cinco novas canetas para tratamento de diabetes e obesidade; veja quais"
    ]
   },
   {
-   "assunto": "politica-eua",
-   "tema": "cultura",
-   "canais": 4,
-   "nota_max": 8,
+   "assunto": "ia-sociedade",
+   "tema": "tecnologia",
+   "canais": 5,
+   "nota_max": 15,
    "titulos": [
-    "Harry on Harry: 'I did not expect that type of infatuation from the President of the United States'",
-    "Karen Bass on Nithya Raman, Her Radical Past, and the Fight to Remain LA Mayor",
-    "Midterms 2026: Jon Ossoff’s TikTok Campaign, Ken Paxton’s Texas Tour, and More Political Powermaxxing"
+    "How to get rid of unwanted AI on your phone",
+    "The new frontier for ads is racist cartoon AI musical microdrama",
+    "The Download: everyday AI harms and the race to nuclear spaceflight"
    ]
   },
   {
    "assunto": "fofoca-celebridade",
    "tema": "cultura",
-   "canais": 3,
-   "nota_max": 22,
+   "canais": 4,
+   "nota_max": 25,
    "titulos": [
-    "Judi Dench Gives Hilarious, Heartfelt Interview at 91: Love, Grief and the Role That Got Away (Exclusive)",
-    "Joy Behar Returns to The View After Month-Long Absence from Painful Injury She Calls ‘Worse Than Childbirth’",
-    "Whoopi Goldberg enaltece cachê na TV: 'Ninguém vai me pagar salário de homem para estar em um filme'"
+    "Juju Salimeni exibe supercoxas em body cavado: 'Carnaval da Juju começou'",
+    "Jennifer Lawrence steps out with her son after plastic surgery reveal",
+    "Joy Behar Returns to The View After Month-Long Absence from Painful Injury She Calls ‘Worse Than Childbirth’"
+   ]
+  },
+  {
+   "assunto": "tv-entretenimento",
+   "tema": "cultura",
+   "canais": 4,
+   "nota_max": 5,
+   "titulos": [
+    "Sarah J. Maas Gave Us Part of a Book",
+    "Margareth Serrão vive climão em reality após participante citar suposto golpe de Virginia em Zé Felipe: 'Desnecessário'",
+    "Love Is Blind Recap: We’re a Team — Ever Heard of It?"
+   ]
+  },
+  {
+   "assunto": "peptideos-rfk",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 66,
+   "titulos": [
+    "RFK Jr. to Allow Broad Use of Unapproved Peptide Injections",
+    "RFK Jr. acts to ease access to unproven peptides despite opposition from FDA scientists",
+    "US Health Secretary Kennedy opens access to some unapproved peptides"
+   ]
+  },
+  {
+   "assunto": "cte-nfl",
+   "tema": "esporte",
+   "canais": 3,
+   "nota_max": 42,
+   "titulos": [
+    "New study estimates 75% of deceased ex-NFL players had brain disease CTE",
+    "New study suggests 3 in 4 former NFL players who died from 2008 to 2023 had CTE",
+    "Brain Disease Is Pervasive in N.F.L., New Estimate Suggests"
    ]
   },
   {
@@ -53,18 +75,18 @@
    "titulos": [
     "As 100 Maiores Empresas do Agronegócio Faturam R$ 2,1 Trilhões em 2025",
     "Resultados do 3T26 Setor Imobiliário Começam Nesta Semana; Veja Calendário",
-    "Hyundai Motor India profit slumps 24% as rising costs bite"
+    "Milho Cai sob Pressão de Colheita nos EUA e Preocupações Cambiais"
    ]
   },
   {
-   "assunto": "tv-entretenimento",
+   "assunto": "politica-eua",
    "tema": "cultura",
    "canais": 3,
-   "nota_max": 5,
+   "nota_max": 8,
    "titulos": [
-    "Sarah J. Maas Gave Us Part of a Book",
-    "Aaron Sorkin Thought He’d Be Better at Making Movies Too",
-    "‘RHONY’ recap: Sai de Silva snaps at Daisy Toye, Jessel shares gay rumors with Pavit"
+    "Harry on Harry: 'I did not expect that type of infatuation from the President of the United States'",
+    "Unpacking Nicki Minaj’s MAGA Style Evolution",
+    "Midterms 2026: Jon Ossoff’s TikTok Campaign, Ken Paxton’s Texas Tour, and More Political Powermaxxing"
    ]
   }
  ],
@@ -75,6 +97,13 @@
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
+  },
+  {
+   "titulo": "Mãe de 81 anos troca a fragilidade pela força em dois anos de treino (12,4x a média)",
+   "canal": "Instagram",
+   "assunto": "musculo-envelhecimento",
+   "nota": 84,
+   "gancho": "Aos 81 anos, ela voltou a andar sem apoio treinando força."
   },
   {
    "titulo": "Simple exercise done just once a week could help lower blood pressure",
@@ -98,6 +127,13 @@
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
   },
   {
+   "titulo": "Manhã ou noite: qual o melhor horário para treinar, segundo a ciência (61,3x a média)",
+   "canal": "Instagram",
+   "assunto": "horario-treino-cronotipo",
+   "nota": 82,
+   "gancho": "O melhor horário para treinar é o que você repete toda semana."
+  },
+  {
    "titulo": "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
    "canal": "Reuters",
    "assunto": "glp1-mercado-e-efeitos",
@@ -105,39 +141,25 @@
    "gancho": "A nova caneta tira mais peso. O treino decide de onde sai."
   },
   {
+   "titulo": "Homens com dieta rica em proteína animal têm menos testosterona, diz estudo",
+   "canal": "Metrópoles",
+   "assunto": "proteina-testosterona",
+   "nota": 80,
+   "gancho": "Mais carne no prato não trouxe mais testosterona nesse estudo."
+  },
+  {
+   "titulo": "Quantos degraus você deveria subir ao dia para proteger o coração? Estudo traz estimativa",
+   "canal": "Estadão Saúde",
+   "assunto": "escadas-coracao",
+   "nota": 80,
+   "gancho": "A escada do seu prédio já entra na conta do seu coração."
+  },
+  {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
    "canal": "Sua referência",
    "assunto": "frio-calor-recuperacao",
    "nota": 80,
    "gancho": "Gelo depois do treino pode atrapalhar o músculo que você quer ganhar."
-  },
-  {
-   "titulo": "Instagram",
-   "canal": "Sua referência",
-   "assunto": "longevidade-mainstream",
-   "nota": 80,
-   "gancho": "Aos 75 você vai querer levantar sua mala sozinho. O treino começa agora."
-  },
-  {
-   "titulo": "Cardio depois da musculação: atrapalha ou ajuda?",
-   "canal": "Instagram",
-   "assunto": "cardio-depois-do-treino",
-   "nota": 80,
-   "gancho": "Um aluno me perguntou se a esteira depois do treino come o músculo."
-  },
-  {
-   "titulo": "Weight-loss drug could help address nighttime sleep disruptions for millions",
-   "canal": "Fox News Health",
-   "assunto": "glp1-mercado-e-efeitos",
-   "nota": 78,
-   "gancho": "Você ronca, acorda cansado e culpa a agenda. O peso conta."
-  },
-  {
-   "titulo": "Want to Get Stronger Without the Male Gaze? There’s a Gym for That.",
-   "canal": "NYT Well",
-   "assunto": "academia-so-mulheres",
-   "nota": 78,
-   "gancho": "Ela quer levantar peso. O que trava é o olhar ao redor."
   }
  ]
 }
