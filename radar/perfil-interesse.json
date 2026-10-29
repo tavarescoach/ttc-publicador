@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-26T06:40:00-03:00",
+ "atualizado_em": "2026-10-29T14:30:00-03:00",
  "origem": "Ponto de partida tirado do que o Luan já salvou ou transformou em pauta no Radar. As referências do botão Ensinar o radar refinam a partir daqui.",
  "referencias_analisadas": [
   "450bc8ab660caf33",
@@ -38,7 +38,9 @@
   "f9a0df8bafa2dcac",
   "d9a2b4456fce4325",
   "eeb4cca812ddd3ea",
-  "cd62321710681dd7"
+  "cd62321710681dd7",
+  "25deff91084e2da3",
+  "77261b64985b8d0b"
  ],
  "aprendido": {
   "450bc8ab660caf33": "Hábitos e vícios do adulto (álcool, tolerância que cai com a idade) lidos pela ciência e pela cultura pop, no tom de revista masculina.",
@@ -77,9 +79,11 @@
   "f9a0df8bafa2dcac": "Autoridade acadêmica brasileira em treinamento de força e métodos de hipertrofia, que forma opinião no nicho.",
   "d9a2b4456fce4325": "Bastidor e tendência do mercado de academias pelo olhar de quem dirige treino em grande rede.",
   "eeb4cca812ddd3ea": "Carrossel lista (hábitos, sinais do corpo) e carrossel de reflexão sobre equilíbrio geram alcance enorme; separar o formato da simplificação.",
-  "cd62321710681dd7": "Página feminina que forma tendência com tom de cumplicidade entre mulheres e listas de ciladas que a leitora marca a amiga."
+  "cd62321710681dd7": "Página feminina que forma tendência com tom de cumplicidade entre mulheres e listas de ciladas que a leitora marca a amiga.",
+  "25deff91084e2da3": "Personal e dono de estúdio carioca com quadro em rádio: autoridade local que responde dúvida prática de academia é o lugar que o Luan quer ocupar.",
+  "77261b64985b8d0b": "Página que traduz meta-análises de força em gráfico e conclusão prática: ciência do treino com o estudo na mão."
  },
- "resumo": "Você se interessa por notícias com dado concreto (estudo, número, mecanismo, métrica do relógio) que corrigem uma crença comum, e por cultura pop e tendências de treino quando revelam um hábito ou padrão de corpo do adulto 30–50. Valoriza a divulgação científica brasileira (fisiologia, métodos de hipertrofia, mercado fitness) e no Instagram procura formatos de teste, bastidor, dúvida em série, lista com fonte e história de aluno.",
+ "resumo": "Você se interessa por notícias com dado concreto (estudo, meta-análise, número, mecanismo, métrica do relógio) que corrigem uma crença comum, e por cultura pop e tendências de treino quando revelam um hábito ou padrão de corpo do adulto 30–50. Valoriza a ciência do treino de força traduzida em decisão prática e treinadores com autoridade local que respondem dúvidas reais de academia; no Instagram procura teste, bastidor, dúvida em série, lista com fonte e história de aluno.",
  "assuntos": [
   "perda de força e músculo com a idade",
   "longevidade como autonomia e capacidade física",
@@ -88,8 +92,8 @@
   "recuperação muscular (frio, calor, descanso)",
   "métricas fisiológicas (FC de repouso, VO2, dados de relógio)",
   "álcool e hábitos do adulto",
-  "erros de quem treina e não evolui",
-  "guias práticos e métodos de treino (hipertrofia, treino em casa)",
+  "erros e dúvidas práticas de quem treina e não evolui (carga, séries, treino feito por IA)",
+  "ciência e métodos de treino de força (meta-análises, hipertrofia, treino em casa)",
   "mobilidade e dor de quem passa o dia sentado",
   "força como cuidado da articulação",
   "potência explosiva depois dos 40",
@@ -127,8 +131,8 @@
    "hipertrofia",
    "creatina",
    "proteína",
-   "tendência fitness",
-   "métodos de treino"
+   "volume de treino",
+   "quando aumentar a carga"
   ],
   "en": [
    "strength loss",
@@ -154,12 +158,12 @@
    "home workout",
    "midlife",
    "biological age",
-   "fitness flex",
+   "training volume",
    "mobility",
    "hypertrophy",
    "power training",
    "protein boom",
-   "hot workout",
+   "meta-analysis",
    "hybrid fitness"
   ]
  },
@@ -188,12 +192,12 @@
   "Author Archive"
  ],
  "instagram": {
-  "resumo": "Você se inspira em treinadores e divulgadores de ciência que falam com autoridade calma e contam o processo por bastidores, testes e histórias de aluno. Gosta de formatos que mostram o resultado na tela (desafio, experimento, tutorial curto, correção científica), de listas e rankings com fonte citada e de páginas femininas com tom de cumplicidade; a opinião forte serve quando vem com o motivo, sem agressividade nem promessa.",
+  "resumo": "Você se inspira em treinadores e divulgadores de ciência que falam com autoridade calma e contam o processo por bastidores, testes e histórias de aluno, incluindo personal trainers com estúdio e presença local. Gosta de formatos que mostram o resultado na tela, de estudo traduzido em gráfico simples, de listas com fonte e de páginas femininas com tom de cumplicidade; a opinião forte serve quando vem com o motivo, sem agressividade nem promessa.",
   "formatos": [
    "desafio ao vivo",
    "bastidor de aula",
    "mito x método",
-   "talking head com dado",
+   "talking head com dado ou gráfico de estudo",
    "tutorial de exercício",
    "pergunta do aluno em série",
    "história de aluno (protagonista e desfecho)",
@@ -212,7 +216,6 @@
    "Lista de sinais ou ciladas em que o leitor se reconhece logo na capa"
   ],
   "perfis": [
-   "@jessejameswest",
    "@nickleyden",
    "@jeffnippard",
    "@juliobalestrinoficial",
@@ -226,7 +229,8 @@
    "@desalles",
    "@nettodudu",
    "@marceloscience",
-   "@alanh.11"
+   "@rafalund",
+   "@strongerbyscience"
   ],
   "aprendido": {
    "51a1a5bb24f8052c": "Formato desafio ao vivo: duas pessoas, um teste de força, resultado incerto até o fim e quebra de expectativa sobre quem é mais forte.",
@@ -259,7 +263,9 @@
    "f9a0df8bafa2dcac": "Autoridade acadêmica brasileira em treinamento de força e métodos de hipertrofia, que forma opinião no nicho.",
    "d9a2b4456fce4325": "Bastidor e tendência do mercado de academias pelo olhar de quem dirige treino em grande rede.",
    "eeb4cca812ddd3ea": "Carrossel lista (hábitos, sinais do corpo) e carrossel de reflexão sobre equilíbrio geram alcance enorme; separar o formato da simplificação.",
-   "cd62321710681dd7": "Página feminina que forma tendência com tom de cumplicidade entre mulheres e listas de ciladas que a leitora marca a amiga."
+   "cd62321710681dd7": "Página feminina que forma tendência com tom de cumplicidade entre mulheres e listas de ciladas que a leitora marca a amiga.",
+   "25deff91084e2da3": "Personal e dono de estúdio carioca com quadro em rádio: autoridade local que responde dúvida prática de academia é o lugar que o Luan quer ocupar.",
+   "77261b64985b8d0b": "Página que traduz meta-análises de força em gráfico e conclusão prática: ciência do treino com o estudo na mão."
   }
  }
 }
