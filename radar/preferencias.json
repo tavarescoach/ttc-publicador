@@ -1,14 +1,20 @@
 [
  {
-  "titulo": "Instagram",
+  "titulo": "Perfil @vina_ruiz",
   "canal": "Sua referência",
   "tema": null,
   "status": "salvo"
  },
  {
-  "titulo": "Instagram",
+  "titulo": "Perfil @strongerbyscience: ciência do treino de força",
   "canal": "Sua referência",
-  "tema": null,
+  "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Perfil @rafalund: personal e dono de estúdio no Rio",
+  "canal": "Sua referência",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -36,24 +42,6 @@
   "status": "salvo"
  },
  {
-  "titulo": "Perfil @nettodudu",
-  "canal": "Sua referência",
-  "tema": "negocio",
-  "status": "salvo"
- },
- {
-  "titulo": "Perfil @marceloscience",
-  "canal": "Sua referência",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Perfil @ofitfeed",
-  "canal": "Sua referência",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
   "titulo": "Perfil @alanh.11",
   "canal": "Sua referência",
   "tema": "esporte",
@@ -66,15 +54,45 @@
   "status": "salvo"
  },
  {
-  "titulo": "Instagram",
+  "titulo": "Perfil @nettodudu",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "negocio",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Perfil @ofitfeed",
+  "canal": "Sua referência",
+  "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Perfil @marceloscience",
+  "canal": "Sua referência",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "esporte",
+  "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -110,7 +128,13 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -122,25 +146,19 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
   "tema": "esporte",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -152,25 +170,13 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
+  "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
   "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "ciencia",
   "status": "salvo"
  },
  {
@@ -206,7 +212,7 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -218,7 +224,7 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -258,12 +264,6 @@
   "status": "salvo"
  },
  {
-  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
-  "canal": "The Guardian",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Exercise in a pill",
   "canal": "MIT Technology Review",
   "tema": "ciencia",
@@ -274,6 +274,12 @@
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "virou_pauta"
+ },
+ {
+  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
+  "canal": "The Guardian",
+  "tema": "saude",
+  "status": "salvo"
  },
  {
   "titulo": "Demi Lovato Was ‘Terrified’ to Tour After Gaining ‘a Little Weight.’ Then She Realized ‘My Worth Isn’t in My Body’",
@@ -288,14 +294,8 @@
   "status": "descartado"
  },
  {
-  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
-  "canal": "Folha Equilíbrio",
-  "tema": null,
-  "status": "salvo"
- },
- {
-  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
-  "canal": "BBC News",
+  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
   "tema": null,
   "status": "descartado"
  },
@@ -306,20 +306,8 @@
   "status": "salvo"
  },
  {
-  "titulo": "Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
-  "tema": null,
-  "status": "descartado"
- },
- {
-  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
-  "canal": "Estadão Saúde",
-  "tema": null,
-  "status": "descartado"
- },
- {
-  "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
-  "canal": "NYT Well",
+  "titulo": "Rural lives cannot be an 'afterthought', healthcare campaigners say",
+  "canal": "BBC News",
   "tema": null,
   "status": "descartado"
  },
@@ -330,9 +318,21 @@
   "status": "descartado"
  },
  {
-  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
-  "canal": "Sua referência",
-  "tema": "saude",
+  "titulo": "The Internet Loves This Ancient Seed Oil. Is It Worth the Hype?",
+  "canal": "NYT Well",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Notícia no Seu Tempo: Em primeiro debate, Lula e Flávio recorrem à tática de reforçar rejeição do rival",
+  "canal": "Estadão Saúde",
+  "tema": null,
+  "status": "descartado"
+ },
+ {
+  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
+  "canal": "Folha Equilíbrio",
+  "tema": null,
   "status": "salvo"
  },
  {
@@ -342,21 +342,27 @@
   "status": "salvo"
  },
  {
-  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-  "canal": "Sua referência",
-  "tema": "comportamento",
-  "status": "salvo"
- },
- {
   "titulo": "Coming out midlife",
   "canal": "Sua referência",
   "tema": "comportamento",
   "status": "salvo"
  },
  {
+  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
   "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
   "canal": "Sua referência",
   "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+  "canal": "Sua referência",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
