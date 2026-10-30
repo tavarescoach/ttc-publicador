@@ -1457,5 +1457,149 @@
     "status": "erro",
     "origem": "painel",
     "erro": "API respondeu 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,646,422,730,013,202 cannot be found.\",\"fbtrace_id\":\"Abf3vRCu62tygUjYt3HUR06\"}}"
+  },
+  {
+    "id": "k-2026-10-31-estatico",
+    "quando": "2026-10-31T10:00:00+00:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-10-31/k-2026-10-31-estatico/estatico.png"
+    ],
+    "legenda": "O ator que fez o capitão Picard morreu na quarta (28), aos 86 anos, em casa, em Los Angeles.\n\nSegundo a imprensa americana, Patrick Stewart convivia com Alzheimer e demência por corpos de Lewy. A causa da morte não foi divulgada oficialmente.\n\nAo meio-dia sai o carrossel com o que um estudo com 78 mil adultos mediu sobre caminhada e risco de demência. Salva para ler depois.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #demencia #copacabana",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-11-02-foto",
+    "quando": "2026-11-02T23:00:00+00:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-11-02/foto-pessoal.jpg"
+    ],
+    "legenda": "Camiseta preta, tênis branco e o espelho da academia.\n\nTreino de força com horário fixo é parte do plano de quem quer chegar forte aos 70, 80 e 90.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #treinodeforca",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-10-31-foto",
+    "quando": "2026-10-31T23:00:00+00:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-10-31/foto-pessoal.jpg"
+    ],
+    "legenda": "Estrada no deserto, céu limpo e a placa do Trópico de Capricórnio.\n\nOs passos do dia também contam para envelhecer bem. Caminhar entra na semana de quem treina como parte do plano.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #caminhada",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-11-01-carrossel-noite",
+    "quando": "2026-11-01T23:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-1.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-2.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-3.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-4.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-5.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-6.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-7.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-8.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-9.png",
+      "2026-11-01/k-2026-11-01-carrossel-noite/carrossel-10.png"
+    ],
+    "legenda": "Uma análise de 16 estudos encontrou a maior queda no risco de morte entre 30 e 60 minutos de força por semana.\n\nQuem fazia algum treino de força teve 15% menos risco de morte no período, e a maior redução, de 10% a 20%, ficou nessa faixa de tempo. Acima de 60 minutos, o efeito ficou incerto. Força junto com aeróbico teve a associação mais forte. São estudos observacionais, com certeza da evidência ainda baixa.\n\nDois horários fixos de 30 minutos fecham a conta. Na Avaliação Estratégica, você sai com os exercícios e as cargas definidos.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #treinodeforca #longevidade #copacabana #ipanema",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-11-01-estatico",
+    "quando": "2026-11-01T10:00:00+00:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-11-01/k-2026-11-01-estatico/estatico.png"
+    ],
+    "legenda": "Primeiro dia do Novembro Azul.\n\nGeorge Kittle, 33 anos, do San Francisco 49ers, contou à revista People que o câncer de próstata do avô, diagnosticado há cerca de 10 anos, mudou a forma como ele cuida da saúde. Hoje faz exames de sangue de rotina. \"Eu não tinha nenhuma noção\", disse sobre o assunto. Ele é embaixador de uma campanha de exames de uma farmacêutica.\n\nAo meio-dia sai o carrossel com o que a força muscular mostrou num estudo com 8.762 homens. Salva para ler depois.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #novembroazul #longevidade #copacabana",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-11-02-estatico",
+    "quando": "2026-11-02T10:00:00+00:00",
+    "tipo": "IMAGEM",
+    "arquivos": [
+      "2026-11-02/k-2026-11-02-estatico/estatico.png"
+    ],
+    "legenda": "O ator australiano Richard Norton, 75 anos, morreu em março de 2025, em Melbourne, depois de uma parada cardíaca.\n\nNesta semana, o relatório do legista David Ryan concluiu que a morte foi desencadeada pela injeção de peptídeos antienvelhecimento sem aprovação do órgão regulador australiano. Segundo o relatório, ele aplicava mais do que o médico tinha prescrito. O legista recomendou que a agência reveja as regras para esses produtos.\n\nAo meio-dia sai o carrossel com o que os estudos mostram sobre envelhecer com força. Salva para ler depois.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #saude #copacabana",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-10-31-carrossel",
+    "quando": "2026-10-31T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-1.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-2.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-3.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-4.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-5.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-6.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-7.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-8.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-9.png",
+      "2026-10-31/k-2026-10-31-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Abaixo de 4 mil passos por dia, o risco de demência já apareceu 25% menor num estudo com 78.430 adultos.\n\nO caso da manhã foi o de Patrick Stewart, que morreu nesta semana aos 86 anos e, segundo a imprensa, convivia com Alzheimer e demência por corpos de Lewy. O estudo do UK Biobank mediu os passos com um sensor no pulso e acompanhou as pessoas por cerca de 7 anos. Perto de 9.800 passos por dia, o risco apareceu 51% menor. É associação, sem prova de causa.\n\nComece contando seus passos por uma semana. Amanhã, o que a força muscular tem a ver com isso.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #demencia #caminhada #copacabana",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-11-01-carrossel",
+    "quando": "2026-11-01T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-1.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-2.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-3.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-4.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-5.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-6.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-7.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-8.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-9.png",
+      "2026-11-01/k-2026-11-01-carrossel/carrossel-10.png"
+    ],
+    "legenda": "No terço mais forte de 8.762 homens, as mortes por câncer foram 32% menores em quase 19 anos de acompanhamento.\n\nO caso da manhã foi o de George Kittle, que passou a cuidar da saúde depois do câncer de próstata do avô. O estudo da Cooper Clinic, publicado no BMJ, mediu a força de cada homem no supino e no leg press e acompanhou o que aconteceu depois. O resultado se manteve com o ajuste pelo condicionamento aeróbico. É associação, sem prova de causa.\n\nNo Novembro Azul, além dos exames, anote a sua carga desta semana. Às 20h, o guia de quanto treino de força cabe na sua agenda.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #novembroazul #longevidade #treinodeforca #copacabana",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
+  },
+  {
+    "id": "k-2026-11-02-carrossel",
+    "quando": "2026-11-02T15:00:00+00:00",
+    "tipo": "CARROSSEL",
+    "arquivos": [
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-1.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-2.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-3.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-4.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-5.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-6.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-7.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-8.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-9.png",
+      "2026-11-02/k-2026-11-02-carrossel/carrossel-10.png"
+    ],
+    "legenda": "Nove pessoas com 90 anos em média quase triplicaram a força em 8 semanas de treino.\n\nO caso da manhã foi o de Richard Norton, cuja morte o legista ligou a peptídeos antienvelhecimento sem aprovação. O estudo de Fiatarone, publicado no JAMA em 1990, testou outro caminho: treino de força com carga alta, numa casa de repouso. A força subiu 174% e a marcha ficou 48% mais rápida.\n\nSe a ideia de começar depois dos 40 trava você, comece medindo onde está. Na Avaliação Estratégica, em 40 minutos, você sai com o ponto de partida e o plano.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #treinodeforca #copacabana #leblon",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "Longevidade"
   }
 ]
