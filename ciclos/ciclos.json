@@ -86,5 +86,141 @@
    "k-2026-10-30-foto"
   ],
   "pacote_em": "2026-10-27T15:45-03:00"
+ },
+ {
+  "id": "c-2026-10-31",
+  "inicio": "2026-10-31",
+  "fim": "2026-11-02",
+  "tema": "Longevidade",
+  "sigla": "LON",
+  "pontuacao": {
+   "LON": 6.386,
+   "EST": 5.634,
+   "FOR": 3.492,
+   "EMA": 3.369,
+   "GLP": 2.16,
+   "MEN": 1.498,
+   "ESP": 1.358,
+   "WEA": 0.463
+  },
+  "excluidos": [
+   "EST"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "EST": "Outubro Rosa",
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "ceb56c7d814d7190",
+   "a4696d32ebcc490c",
+   "c123df6c2c1c7fb6",
+   "ig-142e85f33513f1",
+   "a93735fd9d7281eb",
+   "99d41beffe54b177",
+   "8f8511dcaad4f07c",
+   "6127d905a5836f13",
+   "56a92bb8e266f416",
+   "8757162eb8bb3d4e",
+   "4c41f455fb1b9994",
+   "2891d0ce69d566b6",
+   "f84ba7d88b765731",
+   "da5ef5349a61d9be",
+   "8cc21db3c857b4ea"
+  ],
+  "famosos": [
+   {
+    "nome": "Richard Norton",
+    "noticia_id": "6127d905a5836f13",
+    "titulo": "Ator morreu por injeções de substância antienvelhecimento, diz legista",
+    "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/ator-morreu-por-injecoes-de-substancia-antienvelhecimento-diz-legista.ghtml",
+    "canal": "Globo",
+    "data": "2026-10-29T23:16:15+00:00",
+    "nota": 70
+   },
+   {
+    "nome": "George Kittle",
+    "noticia_id": "11154488fb32d8e8",
+    "titulo": "49ers Star George Kittle Details the Family Cancer Diagnosis That Inspired Him to Prioritize His Health (Exclusive)",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUDF4akI3cDhNdmRJNXkzQ1VxX0hSN3BiRU1YWnA5cmJoN0dZcVJveWJCTkVHY3pZNXVyQ2paeHhHVDAxaEN3czMwWmZLcUw3UTZoTVNaTDZHWUFySFd0Z2RsbDdfSDkybzdpMXhvak95M0ttQmpROHZZMnNkbktYOXhRQWJUcW9MWF91Z3V2MnlHbi12TzU3Y19MQUdyQVBNMi0yTzRtQTJHOUFCUjlucFV5RDM5Skpp?oc=5",
+    "canal": "People",
+    "data": "2026-10-30T14:38:26+00:00",
+    "nota": 56
+   },
+   {
+    "nome": "Patrick Stewart",
+    "noticia_id": "6efd5f9706eaa90f",
+    "titulo": "Morte de Patrick Stewart: o que é demência por corpos de Lewy, doença que acometeu o ator",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQb0lOWkVhWEF0NUdCMnp2a2djWHF5dFNhOFhOTVpJdElBVHlpU3V4UG9HUk83ZGJ1LVdkODVFQkpRMVp0VUJmdWRYQVFEVm5VRnhBQjJGOXJTN3NIcjZyMTZkeGpKYmdSQ2V3Mzd2OTF4d3U0U1JyR3JpOTJPdWNQaGVHLXlRTFVpdzFpNFF3VWNnbmlQRDU0VEVUVGYtNFB3MlZpUFFsUk9wMndBMEs5UTdhWWp6NHhDc0pWMk0tQ2s3MTRydURCaGpCRWZOSHJUTU1BQzBR0gHkAUFVX3lxTFBYQlpKdjlNTEtnQlBybEFjcHdReWhLWHZFVmR3bGhJaXJjdi1ENUF5VHRmMXUxZ20xYks2WlRmVzZsTEl2NnFvOTZZUFJUWEFSbFloQ2NQaFVob1dTdXdCdGI5bUxVT2VVQWNUelBwakV3eU11RmlaUUdwRHVBOUNaWjRJR25hY3pGSF9zLTdIZFRhTHlsRUJWYmt3SERYa0YzaEJXVHk2b19FZVY4YXlLUldZWXNoQVRja0xWdFdyVE80RWRmTFU5QTBHcTloYXFKMXJtckR6a2ZUS2RtVVozV2ZYTw?oc=5",
+    "canal": "g1 Saúde",
+    "data": "2026-10-29T20:09:51+00:00",
+    "nota": 46
+   },
+   {
+    "nome": "Mingau",
+    "noticia_id": "1547f330781e3000",
+    "titulo": "Mingau, do Ultraje a Rigor, fica de pé em fisioterapia 3 anos após ser baleado na cabeça",
+    "link": "https://revistaquem.globo.com/noticias/noticia/2026/10/mingau-do-ultraje-a-rigor-fica-de-pe-em-fisioterapia-3-anos-apos-ser-baleado-na-cabeca.ghtml",
+    "canal": "Globo",
+    "data": "2026-10-29T20:22:23+00:00",
+    "nota": 36
+   },
+   {
+    "nome": "Patrick Stewart",
+    "noticia_id": "07c1edae06772243",
+    "titulo": "Sir Patrick Stewart, Theater Titan and ‘Star Trek’ Captain, Dies at 86",
+    "link": "https://www.vanityfair.com/story/patrick-stewart-dies",
+    "canal": "Vanityfair",
+    "data": "2026-10-29T20:03:40+00:00",
+    "nota": 34
+   },
+   {
+    "nome": "Patrick Stewart",
+    "noticia_id": "ca042e0ec17b4ab2",
+    "titulo": "Patrick Stewart Privately Faced a ‘Brief Journey’ with Alzheimer’s Disease and Lewy Body Dementia Before His Death",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMHNhdUYwYV96WHd3RGpkeHk4eHBHUVcxczJiZ1h1WFFCOWNzb2txSDUxRVFZX2dKMXk5WTVmQlFiUjRKenlwVHFQSzNlNlEwWHZJdkdyRGdMRC1IanRxek1uM010OEtwT2VWUk0wLTI2T3B2R3p2Y2tkSEtqb0FzbFhEWm5YdzFmTU84UXZYU0JlRlJubzFYNTJaYkg5SDNTMF95SlRLUmg3VVU?oc=5",
+    "canal": "People",
+    "data": "2026-10-29T20:57:15+00:00",
+    "nota": 32
+   },
+   {
+    "nome": "Collin Gosselin",
+    "noticia_id": "e1e2544bdebc5743",
+    "titulo": "Colin Gosselin channels ‘rage’ against estranged mom Kate in brutal ‘Special Forces’ battle",
+    "link": "https://pagesix.com/2026/10/30/entertainment/colin-gosselin-channels-rage-against-estranged-mom-kate-in-brutal-special-forces-battle/",
+    "canal": "Pagesix",
+    "data": "2026-10-30T14:38:08+00:00",
+    "nota": 8
+   },
+   {
+    "nome": "Patrick Stewart",
+    "noticia_id": "d85731f1728b6c2f",
+    "titulo": "Patrick Stewart made heartbreaking confession about his ‘practically non-existent’ relationship with his kids 3 years before his death",
+    "link": "https://pagesix.com/2026/10/29/parents/patrick-stewart-talked-about-distant-relationship-with-his-kids-before-his-death/",
+    "canal": "Pagesix",
+    "data": "2026-10-30T01:56:54+00:00",
+    "nota": 4
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-10-31",
+    "quando": "2026-10-31T20:00:00-03:00",
+    "arquivo": "2026-10-31/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-10-31.jpg",
+    "drive_id": "1UgTAg-TvEoL6o-teprW-gysmXZZHocH9",
+    "nome": "IMG_8045.JPEG"
+   },
+   {
+    "dia": "2026-11-02",
+    "quando": "2026-11-02T20:00:00-03:00",
+    "arquivo": "2026-11-02/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-02.jpg",
+    "drive_id": "1XogU7rRR926tK-ZzPkuWPpMlneMC7HtI",
+    "nome": "IMG_0121.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-10-30T15:09-03:00",
+  "status": "escolhido"
  }
 ]
