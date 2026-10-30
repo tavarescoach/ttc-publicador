@@ -1,9 +1,9 @@
 {
- "atualizado_em": "2026-10-29T14:33:38-03:00",
+ "atualizado_em": "2026-10-30T06:40:00-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
-   "tema": "saude",
+   "tema": "negocio",
    "canais": 8,
    "nota_max": 80,
    "titulos": [
@@ -13,42 +13,42 @@
    ]
   },
   {
+   "assunto": "fofoca-celebridade",
+   "tema": "cultura",
+   "canais": 6,
+   "nota_max": 14,
+   "titulos": [
+    "Natalia Belloli elogia postura de Raphinha com filho no pós-parto: 'Passava a noite inteira acordado'",
+    "Heidi Klum Teases Her Latest Halloween Costume",
+    "Famosos parabenizam Sasha e João Lucas por gravidez"
+   ]
+  },
+  {
+   "assunto": "morte-patrick-stewart",
+   "tema": "saude",
+   "canais": 5,
+   "nota_max": 46,
+   "titulos": [
+    "Morte de Patrick Stewart: o que é demência por corpos de Lewy, doença que acometeu o ator",
+    "Sir Patrick Stewart, Theater Titan and ‘Star Trek’ Captain, Dies at 86",
+    "Patrick Stewart Privately Faced a ‘Brief Journey’ with Alzheimer’s Disease and Lewy Body Dementia Before His Death"
+   ]
+  },
+  {
    "assunto": "ia-sociedade",
    "tema": "tecnologia",
    "canais": 5,
    "nota_max": 15,
    "titulos": [
     "How to get rid of unwanted AI on your phone",
-    "The new frontier for ads is racist cartoon AI musical microdrama",
-    "AI hardware can be hacked so chatbots provide dangerous answers, research shows"
-   ]
-  },
-  {
-   "assunto": "fofoca-celebridade",
-   "tema": "cultura",
-   "canais": 4,
-   "nota_max": 12,
-   "titulos": [
-    "Joy Behar Returns to The View After Month-Long Absence from Painful Injury She Calls ‘Worse Than Childbirth’",
-    "Whoopi Goldberg enaltece cachê na TV: 'Ninguém vai me pagar salário de homem para estar em um filme'",
-    "Ator de 'Power Rangers' passa por cirurgia de emergência após grave lesão cerebral"
-   ]
-  },
-  {
-   "assunto": "cte-nfl",
-   "tema": "esporte",
-   "canais": 3,
-   "nota_max": 42,
-   "titulos": [
-    "New study estimates 75% of deceased ex-NFL players had brain disease CTE",
-    "New study suggests 3 in 4 former NFL players who died from 2008 to 2023 had CTE",
-    "Brain Disease Is Pervasive in N.F.L., New Estimate Suggests"
+    "OpenAI says human intent at center of updated AI model guidelines",
+    "We urgently need to monitor AI agents’ actions in real time"
    ]
   },
   {
    "assunto": "ia-mercado",
    "tema": "negocio",
-   "canais": 3,
+   "canais": 4,
    "nota_max": 12,
    "titulos": [
     "The Download: dead startups fueling AI and interspecies communication",
@@ -59,12 +59,34 @@
   {
    "assunto": "politica-eua",
    "tema": "cultura",
-   "canais": 3,
+   "canais": 4,
    "nota_max": 8,
    "titulos": [
     "Harry on Harry: 'I did not expect that type of infatuation from the President of the United States'",
     "Unpacking Nicki Minaj’s MAGA Style Evolution",
-    "Nick Fuentes Opts Out of the 2026 Midterms, Unlike Fellow Livestreamer Hasan Piker"
+    "Is that campaign merch store official? Here's how to tell"
+   ]
+  },
+  {
+   "assunto": "tv-entretenimento",
+   "tema": "cultura",
+   "canais": 4,
+   "nota_max": 6,
+   "titulos": [
+    "Noah Wyle on the ‘Impressive’ Connection Real Healthcare Workers Feel to ‘The Pitt’",
+    "Sarah J. Maas Gave Us Part of a Book",
+    "Ashley Padilla: ‘It’s Not Joke-Writing. It’s Like, How Do I Want It to Live and Breathe?’"
+   ]
+  },
+  {
+   "assunto": "peptideos-rfk",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 70,
+   "titulos": [
+    "Ator morreu por injeções de substância antienvelhecimento, diz legista",
+    "RFK Jr. to Allow Broad Use of Unapproved Peptide Injections",
+    "RFK Jr. acts to ease access to unproven peptides despite opposition from FDA scientists"
    ]
   }
  ],
@@ -75,13 +97,6 @@
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
-  },
-  {
-   "titulo": "Mãe de 81 anos troca a fragilidade pela força em dois anos de treino (12,4x a média)",
-   "canal": "Instagram",
-   "assunto": "musculo-envelhecimento",
-   "nota": 84,
-   "gancho": "Aos 81 anos, ela voltou a andar sem apoio treinando força."
   },
   {
    "titulo": "Simple exercise done just once a week could help lower blood pressure",
@@ -103,13 +118,6 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
-  },
-  {
-   "titulo": "Manhã ou noite: qual o melhor horário para treinar, segundo a ciência (61,3x a média)",
-   "canal": "Instagram",
-   "assunto": "horario-treino-cronotipo",
-   "nota": 82,
-   "gancho": "O melhor horário para treinar é o que você repete toda semana."
   },
   {
    "titulo": "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
@@ -138,6 +146,20 @@
    "assunto": "frio-calor-recuperacao",
    "nota": 80,
    "gancho": "Gelo depois do treino pode atrapalhar o músculo que você quer ganhar."
+  },
+  {
+   "titulo": "Instagram",
+   "canal": "Sua referência",
+   "assunto": "longevidade-mainstream",
+   "nota": 80,
+   "gancho": "Aos 75 você vai querer levantar sua mala sozinho. O treino começa agora."
+  },
+  {
+   "titulo": "Instagram",
+   "canal": "Sua referência",
+   "assunto": "ciencia-treino-forca",
+   "nota": 80,
+   "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   }
  ]
 }
