@@ -1454,7 +1454,8 @@
       "2026-10-30/story-1230.png"
     ],
     "legenda": "",
-    "status": "pendente",
-    "origem": "painel"
+    "status": "erro",
+    "origem": "painel",
+    "erro": "API respondeu 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,646,422,730,013,202 cannot be found.\",\"fbtrace_id\":\"Abf3vRCu62tygUjYt3HUR06\"}}"
   }
 ]
