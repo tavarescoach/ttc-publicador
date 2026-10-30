@@ -32,10 +32,11 @@
    "tipo": "numero",
    "fundo": "preto",
    "rotulo": "O estudo",
-   "numero": "78.430",
+   "numero": "78",
    "titulo": "adultos com os **passos medidos** por sensor no pulso.",
-   "texto": "Os dados vieram do UK Biobank, no Reino Unido. A idade média era 61 anos e o acompanhamento durou cerca de 7 anos. No período, 866 pessoas tiveram diagnóstico de demência.",
-   "fonte": "del Pozo Cruz et al., JAMA Neurology (2022)"
+   "texto": "Foram 78.430 adultos do UK Biobank, no Reino Unido, com idade média de 61 anos e cerca de 7 anos de acompanhamento. No período, 866 tiveram diagnóstico de demência.",
+   "fonte": "del Pozo Cruz et al., JAMA Neurology (2022)",
+   "unidade": "mil"
   },
   {
    "tipo": "numero",
