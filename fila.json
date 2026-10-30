@@ -1451,7 +1451,7 @@
   },
   {
     "id": "2026-10-30-st-1230",
-    "quando": "2026-10-30T15:30:00+00:00",
+    "quando": "2026-10-30T22:57:48+00:00",
     "tipo": "STORY",
     "arquivos": [
       "2026-10-30/story-1230.png"
@@ -1459,7 +1459,7 @@
     "legenda": "",
     "status": "erro",
     "origem": "painel",
-    "erro": "API respondeu 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,646,422,730,013,202 cannot be found.\",\"fbtrace_id\":\"Abf3vRCu62tygUjYt3HUR06\"}}"
+    "erro": "API respondeu 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,646,540,246,013,202 cannot be found.\",\"fbtrace_id\":\"AcHdFlsQydhC1xHsj1Hw-0d\"}}"
   },
   {
     "id": "k-2026-10-31-estatico",
