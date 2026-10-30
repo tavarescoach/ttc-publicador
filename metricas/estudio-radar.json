@@ -1,10 +1,10 @@
 {
- "atualizado_em": "2026-10-30T06:40:00-03:00",
+ "atualizado_em": "2026-10-30T14:25:00-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "negocio",
-   "canais": 8,
+   "canais": 9,
    "nota_max": 80,
    "titulos": [
     "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
@@ -16,39 +16,17 @@
    "assunto": "fofoca-celebridade",
    "tema": "cultura",
    "canais": 6,
-   "nota_max": 14,
+   "nota_max": 18,
    "titulos": [
+    "Gabriela Pugliesi comemora aniversário em família no Uruguai: 'Meu desejo já se realizou'",
     "Natalia Belloli elogia postura de Raphinha com filho no pós-parto: 'Passava a noite inteira acordado'",
-    "Heidi Klum Teases Her Latest Halloween Costume",
-    "Famosos parabenizam Sasha e João Lucas por gravidez"
-   ]
-  },
-  {
-   "assunto": "morte-patrick-stewart",
-   "tema": "saude",
-   "canais": 5,
-   "nota_max": 46,
-   "titulos": [
-    "Morte de Patrick Stewart: o que é demência por corpos de Lewy, doença que acometeu o ator",
-    "Sir Patrick Stewart, Theater Titan and ‘Star Trek’ Captain, Dies at 86",
-    "Patrick Stewart Privately Faced a ‘Brief Journey’ with Alzheimer’s Disease and Lewy Body Dementia Before His Death"
-   ]
-  },
-  {
-   "assunto": "ia-sociedade",
-   "tema": "tecnologia",
-   "canais": 5,
-   "nota_max": 15,
-   "titulos": [
-    "How to get rid of unwanted AI on your phone",
-    "OpenAI says human intent at center of updated AI model guidelines",
-    "We urgently need to monitor AI agents’ actions in real time"
+    "Sheinelle Jones leaves ‘Today’ viewers flabbergasted with Rockettes dance performance for Halloween: ‘You got moves’"
    ]
   },
   {
    "assunto": "ia-mercado",
    "tema": "negocio",
-   "canais": 4,
+   "canais": 5,
    "nota_max": 12,
    "titulos": [
     "The Download: dead startups fueling AI and interspecies communication",
@@ -59,34 +37,56 @@
   {
    "assunto": "politica-eua",
    "tema": "cultura",
-   "canais": 4,
+   "canais": 5,
    "nota_max": 8,
    "titulos": [
     "Harry on Harry: 'I did not expect that type of infatuation from the President of the United States'",
-    "Unpacking Nicki Minaj’s MAGA Style Evolution",
-    "Is that campaign merch store official? Here's how to tell"
-   ]
-  },
-  {
-   "assunto": "tv-entretenimento",
-   "tema": "cultura",
-   "canais": 4,
-   "nota_max": 6,
-   "titulos": [
-    "Noah Wyle on the ‘Impressive’ Connection Real Healthcare Workers Feel to ‘The Pitt’",
-    "Sarah J. Maas Gave Us Part of a Book",
-    "Ashley Padilla: ‘It’s Not Joke-Writing. It’s Like, How Do I Want It to Live and Breathe?’"
+    "Democrats and Republicans Share Dueling Health Care Messages in Final Midterms Push",
+    "Unpacking Nicki Minaj’s MAGA Style Evolution"
    ]
   },
   {
    "assunto": "peptideos-rfk",
    "tema": "saude",
-   "canais": 3,
+   "canais": 4,
    "nota_max": 70,
    "titulos": [
     "Ator morreu por injeções de substância antienvelhecimento, diz legista",
     "RFK Jr. to Allow Broad Use of Unapproved Peptide Injections",
     "RFK Jr. acts to ease access to unproven peptides despite opposition from FDA scientists"
+   ]
+  },
+  {
+   "assunto": "morte-patrick-stewart",
+   "tema": "saude",
+   "canais": 4,
+   "nota_max": 46,
+   "titulos": [
+    "Morte de Patrick Stewart: o que é demência por corpos de Lewy, doença que acometeu o ator",
+    "Sir Patrick Stewart, Theater Titan and ‘Star Trek’ Captain, Dies at 86",
+    "Patrick Stewart Privately Faced a ‘Brief Journey’ with Alzheimer’s Disease and Lewy Body Dementia Before His Death"
+   ]
+  },
+  {
+   "assunto": "ia-sociedade",
+   "tema": "negocio",
+   "canais": 4,
+   "nota_max": 15,
+   "titulos": [
+    "How to get rid of unwanted AI on your phone",
+    "More than half of Victorian lawyers use AI – but only a quarter have cut client fees as a result",
+    "AI-powered cyberattacks fuel 'Black October' fears"
+   ]
+  },
+  {
+   "assunto": "tv-entretenimento",
+   "tema": "cultura",
+   "canais": 3,
+   "nota_max": 4,
+   "titulos": [
+    "How the Movies Got So Good at Smashing Heads",
+    "Power Book III: Raising Kanan — TV Episode Recaps & News",
+    "Musicals, But Make It Weird: The Heart, Midnight, and I Became We"
    ]
   }
  ],
@@ -141,6 +141,13 @@
    "gancho": "A escada do seu prédio já entra na conta do seu coração."
   },
   {
+   "titulo": "Type 2 diabetes breakthrough as 54% achieve remission in just 6 months",
+   "canal": "ScienceDaily",
+   "assunto": "diabetes-remissao",
+   "nota": 80,
+   "gancho": "Metade entrou em remissão do diabetes em seis meses. Com treino supervisionado."
+  },
+  {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
    "canal": "Sua referência",
    "assunto": "frio-calor-recuperacao",
@@ -153,13 +160,6 @@
    "assunto": "longevidade-mainstream",
    "nota": 80,
    "gancho": "Aos 75 você vai querer levantar sua mala sozinho. O treino começa agora."
-  },
-  {
-   "titulo": "Instagram",
-   "canal": "Sua referência",
-   "assunto": "ciencia-treino-forca",
-   "nota": 80,
-   "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   }
  ]
 }
