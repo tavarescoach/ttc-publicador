@@ -1,28 +1,49 @@
 {
  "data": "2026-10-30",
- "ensaio": true,
+ "ensaio": false,
  "stories": [
   {
    "id": "2026-10-30-st-0600",
    "quando": "2026-10-30T06:00:00-03:00",
    "arquivo": "2026-10-30/story-0600.mp4",
    "decisao": "agendado",
+   "texto": "baixo",
    "problemas": [],
    "partes": [
     {
-     "video": "IMG_2393.MOV",
+     "video": "IMG_2397.MOV",
      "k": 0,
      "s": 12.0
     }
    ]
   },
   {
+   "id": "2026-10-30-st-0800",
+   "quando": "2026-10-30T08:00:00-03:00",
+   "arquivo": "2026-10-30/story-0800.png",
+   "decisao": "agendado",
+   "texto": null,
+   "problemas": [],
+   "partes": null
+  },
+  {
    "id": "2026-10-30-st-1000",
    "quando": "2026-10-30T10:00:00-03:00",
    "arquivo": "2026-10-30/story-1000.mp4",
    "decisao": "agendado",
+   "texto": "baixo",
    "problemas": [],
    "partes": [
+    {
+     "video": "IMG_1233 (1).MP4",
+     "k": 0,
+     "s": 4
+    },
+    {
+     "video": "copy_C95E38D2-F1C8-47EA-8FB0-D2D1841D0FF9.MP4",
+     "k": 0,
+     "s": 4
+    },
     {
      "video": "IMG_8039.MOV",
      "k": 0,
@@ -30,16 +51,6 @@
     },
     {
      "video": "IMG_8863.MOV",
-     "k": 0,
-     "s": 2.9
-    },
-    {
-     "video": "IMG_6336.MP4",
-     "k": 7,
-     "s": 4
-    },
-    {
-     "video": "IMG_9371.MOV",
      "k": 0,
      "s": 2.9
     }
@@ -50,6 +61,7 @@
    "quando": "2026-10-30T12:30:00-03:00",
    "arquivo": "2026-10-30/story-1230.png",
    "decisao": "agendado",
+   "texto": null,
    "problemas": [],
    "partes": null
   }
