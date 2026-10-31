@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-30T14:25:00-03:00",
+ "atualizado_em": "2026-10-31T06:31:20-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
@@ -9,7 +9,18 @@
    "titulos": [
     "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
     "Weight-loss drug could help address nighttime sleep disruptions for millions",
-    "Anvisa aprova 5 novas canetas para diabetes e obesidade; total chega a 19 em 2026"
+    "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados"
+   ]
+  },
+  {
+   "assunto": "politica-eua",
+   "tema": "saude",
+   "canais": 7,
+   "nota_max": 10,
+   "titulos": [
+    "US court lifts ruling requiring Idaho to allow some abortions to protect women's health",
+    "Democrats and Republicans Share Dueling Health Care Messages in Final Midterms Push",
+    "Unpacking Nicki Minaj’s MAGA Style Evolution"
    ]
   },
   {
@@ -20,46 +31,13 @@
    "titulos": [
     "Gabriela Pugliesi comemora aniversário em família no Uruguai: 'Meu desejo já se realizou'",
     "Natalia Belloli elogia postura de Raphinha com filho no pós-parto: 'Passava a noite inteira acordado'",
-    "Sheinelle Jones leaves ‘Today’ viewers flabbergasted with Rockettes dance performance for Halloween: ‘You got moves’"
-   ]
-  },
-  {
-   "assunto": "ia-mercado",
-   "tema": "negocio",
-   "canais": 5,
-   "nota_max": 12,
-   "titulos": [
-    "The Download: dead startups fueling AI and interspecies communication",
-    "Creating AI value with enterprise context",
-    "Pairing industrial AI autonomy and human control"
-   ]
-  },
-  {
-   "assunto": "politica-eua",
-   "tema": "cultura",
-   "canais": 5,
-   "nota_max": 8,
-   "titulos": [
-    "Harry on Harry: 'I did not expect that type of infatuation from the President of the United States'",
-    "Democrats and Republicans Share Dueling Health Care Messages in Final Midterms Push",
-    "Unpacking Nicki Minaj’s MAGA Style Evolution"
-   ]
-  },
-  {
-   "assunto": "peptideos-rfk",
-   "tema": "saude",
-   "canais": 4,
-   "nota_max": 70,
-   "titulos": [
-    "Ator morreu por injeções de substância antienvelhecimento, diz legista",
-    "RFK Jr. to Allow Broad Use of Unapproved Peptide Injections",
-    "RFK Jr. acts to ease access to unproven peptides despite opposition from FDA scientists"
+    "Heidi Klum Teases Her Latest Halloween Costume"
    ]
   },
   {
    "assunto": "morte-patrick-stewart",
    "tema": "saude",
-   "canais": 4,
+   "canais": 5,
    "nota_max": 46,
    "titulos": [
     "Morte de Patrick Stewart: o que é demência por corpos de Lewy, doença que acometeu o ator",
@@ -69,24 +47,46 @@
   },
   {
    "assunto": "ia-sociedade",
+   "tema": "tecnologia",
+   "canais": 5,
+   "nota_max": 18,
+   "titulos": [
+    "The real question we should all be asking about AI",
+    "How to get rid of unwanted AI on your phone",
+    "More than half of Victorian lawyers use AI – but only a quarter have cut client fees as a result"
+   ]
+  },
+  {
+   "assunto": "ia-mercado",
    "tema": "negocio",
    "canais": 4,
-   "nota_max": 15,
+   "nota_max": 12,
    "titulos": [
-    "How to get rid of unwanted AI on your phone",
-    "More than half of Victorian lawyers use AI – but only a quarter have cut client fees as a result",
-    "AI-powered cyberattacks fuel 'Black October' fears"
+    "The Download: dead startups fueling AI and interspecies communication",
+    "Creating AI value with enterprise context",
+    "Pairing industrial AI autonomy and human control"
    ]
   },
   {
    "assunto": "tv-entretenimento",
    "tema": "cultura",
-   "canais": 3,
-   "nota_max": 4,
+   "canais": 4,
+   "nota_max": 6,
    "titulos": [
-    "How the Movies Got So Good at Smashing Heads",
-    "Power Book III: Raising Kanan — TV Episode Recaps & News",
-    "Musicals, But Make It Weird: The Heart, Midnight, and I Became We"
+    "Noah Wyle on the ‘Impressive’ Connection Real Healthcare Workers Feel to ‘The Pitt’",
+    "After 50 years of playing video games, I’m finally starring in one",
+    "‘Criminal Minds’ ending after 20 seasons as cast breaks silence over abrupt cancellation"
+   ]
+  },
+  {
+   "assunto": "mercado-fitness",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 64,
+   "titulos": [
+    "Perfil @nettodudu",
+    "Ranking das redes de academias de alto padrão do Brasil em 2026",
+    "Nike deepens India push with new running shoe, seeking fresh growth engines"
    ]
   }
  ],
@@ -97,13 +97,6 @@
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
-  },
-  {
-   "titulo": "Simple exercise done just once a week could help lower blood pressure",
-   "canal": "Fox News Health",
-   "assunto": "isometria-pressao",
-   "nota": 82,
-   "gancho": "Dois minutos encostado na parede baixam sua pressão."
   },
   {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
@@ -134,13 +127,6 @@
    "gancho": "Mais carne no prato não trouxe mais testosterona nesse estudo."
   },
   {
-   "titulo": "Quantos degraus você deveria subir ao dia para proteger o coração? Estudo traz estimativa",
-   "canal": "Estadão Saúde",
-   "assunto": "escadas-coracao",
-   "nota": 80,
-   "gancho": "A escada do seu prédio já entra na conta do seu coração."
-  },
-  {
    "titulo": "Type 2 diabetes breakthrough as 54% achieve remission in just 6 months",
    "canal": "ScienceDaily",
    "assunto": "diabetes-remissao",
@@ -160,6 +146,20 @@
    "assunto": "longevidade-mainstream",
    "nota": 80,
    "gancho": "Aos 75 você vai querer levantar sua mala sozinho. O treino começa agora."
+  },
+  {
+   "titulo": "Instagram",
+   "canal": "Sua referência",
+   "assunto": "ciencia-treino-forca",
+   "nota": 80,
+   "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
+  },
+  {
+   "titulo": "Weight-loss drug could help address nighttime sleep disruptions for millions",
+   "canal": "Fox News Health",
+   "assunto": "glp1-mercado-e-efeitos",
+   "nota": 78,
+   "gancho": "Você ronca, acorda cansado e culpa a agenda. O peso conta."
   }
  ]
 }
