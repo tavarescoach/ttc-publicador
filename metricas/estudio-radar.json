@@ -1,37 +1,26 @@
 {
- "atualizado_em": "2026-10-31T06:31:20-03:00",
+ "atualizado_em": "2026-10-31T14:19:53-03:00",
  "em_alta": [
   {
    "assunto": "glp1-mercado-e-efeitos",
    "tema": "negocio",
-   "canais": 9,
+   "canais": 8,
    "nota_max": 80,
    "titulos": [
     "Lilly's retatrutide outshines Ozempic on weight loss, blood sugar control in trial",
-    "Weight-loss drug could help address nighttime sleep disruptions for millions",
-    "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados"
+    "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados",
+    "Anvisa aprova 5 novas canetas para diabetes e obesidade; total chega a 19 em 2026"
    ]
   },
   {
    "assunto": "politica-eua",
    "tema": "saude",
    "canais": 7,
-   "nota_max": 10,
+   "nota_max": 12,
    "titulos": [
+    "How Trump Is Dismantling America’s Scientific Research Machine",
     "US court lifts ruling requiring Idaho to allow some abortions to protect women's health",
-    "Democrats and Republicans Share Dueling Health Care Messages in Final Midterms Push",
-    "Unpacking Nicki Minaj’s MAGA Style Evolution"
-   ]
-  },
-  {
-   "assunto": "fofoca-celebridade",
-   "tema": "cultura",
-   "canais": 6,
-   "nota_max": 18,
-   "titulos": [
-    "Gabriela Pugliesi comemora aniversário em família no Uruguai: 'Meu desejo já se realizou'",
-    "Natalia Belloli elogia postura de Raphinha com filho no pós-parto: 'Passava a noite inteira acordado'",
-    "Heidi Klum Teases Her Latest Halloween Costume"
+    "Democrats and Republicans Share Dueling Health Care Messages in Final Midterms Push"
    ]
   },
   {
@@ -52,30 +41,30 @@
    "nota_max": 18,
    "titulos": [
     "The real question we should all be asking about AI",
-    "How to get rid of unwanted AI on your phone",
-    "More than half of Victorian lawyers use AI – but only a quarter have cut client fees as a result"
+    "More than half of Victorian lawyers use AI – but only a quarter have cut client fees as a result",
+    "AI-powered cyberattacks fuel 'Black October' fears"
    ]
   },
   {
-   "assunto": "ia-mercado",
-   "tema": "negocio",
-   "canais": 4,
-   "nota_max": 12,
-   "titulos": [
-    "The Download: dead startups fueling AI and interspecies communication",
-    "Creating AI value with enterprise context",
-    "Pairing industrial AI autonomy and human control"
-   ]
-  },
-  {
-   "assunto": "tv-entretenimento",
+   "assunto": "fofoca-celebridade",
    "tema": "cultura",
-   "canais": 4,
-   "nota_max": 6,
+   "canais": 5,
+   "nota_max": 18,
    "titulos": [
-    "Noah Wyle on the ‘Impressive’ Connection Real Healthcare Workers Feel to ‘The Pitt’",
-    "After 50 years of playing video games, I’m finally starring in one",
-    "‘Criminal Minds’ ending after 20 seasons as cast breaks silence over abrupt cancellation"
+    "Gabriela Pugliesi comemora aniversário em família no Uruguai: 'Meu desejo já se realizou'",
+    "Natalia Belloli elogia postura de Raphinha com filho no pós-parto: 'Passava a noite inteira acordado'",
+    "John Stamos’ Band to Replace the Beach Boys at Upcoming Show amid Mike Love’s Health Issues"
+   ]
+  },
+  {
+   "assunto": "peptideos-rfk",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 70,
+   "titulos": [
+    "Ator morreu por injeções de substância antienvelhecimento, diz legista",
+    "RFK Jr. to Allow Broad Use of Unapproved Peptide Injections",
+    "RFK Jr. acts to ease access to unproven peptides despite opposition from FDA scientists"
    ]
   },
   {
@@ -87,6 +76,17 @@
     "Perfil @nettodudu",
     "Ranking das redes de academias de alto padrão do Brasil em 2026",
     "Nike deepens India push with new running shoe, seeking fresh growth engines"
+   ]
+  },
+  {
+   "assunto": "cte-nfl",
+   "tema": "esporte",
+   "canais": 3,
+   "nota_max": 42,
+   "titulos": [
+    "New study estimates 75% of deceased ex-NFL players had brain disease CTE",
+    "Nearly 75% of NFL Players Who Died from 2008 to 2023 Had CTE, New Study Estimates",
+    "Can Scientists Make Football Safer?"
    ]
   }
  ],
@@ -118,6 +118,13 @@
    "assunto": "glp1-mercado-e-efeitos",
    "nota": 80,
    "gancho": "A nova caneta tira mais peso. O treino decide de onde sai."
+  },
+  {
+   "titulo": "US health department to remove broad black box warning from three estrogen patch products",
+   "canal": "Reuters",
+   "assunto": "menopausa-terapia-hormonal",
+   "nota": 80,
+   "gancho": "O alerta saiu do adesivo de estrogênio. O treino continua sendo a base."
   },
   {
    "titulo": "Homens com dieta rica em proteína animal têm menos testosterona, diz estudo",
@@ -153,13 +160,6 @@
    "assunto": "ciencia-treino-forca",
    "nota": 80,
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
-  },
-  {
-   "titulo": "Weight-loss drug could help address nighttime sleep disruptions for millions",
-   "canal": "Fox News Health",
-   "assunto": "glp1-mercado-e-efeitos",
-   "nota": 78,
-   "gancho": "Você ronca, acorda cansado e culpa a agenda. O peso conta."
   }
  ]
 }
