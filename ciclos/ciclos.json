@@ -233,5 +233,96 @@
    "k-2026-11-02-carrossel",
    "k-2026-11-02-foto"
   ]
+ },
+ {
+  "id": "c-2026-11-03",
+  "inicio": "2026-11-03",
+  "fim": "2026-11-05",
+  "tema": "Treino de força",
+  "sigla": "FOR",
+  "pontuacao": {
+   "LON": 6.009,
+   "FOR": 3.008,
+   "EMA": 1.986,
+   "GLP": 1.71,
+   "EST": 1.626,
+   "WEA": 1.397,
+   "MEN": 0.684,
+   "ESP": 0.198
+  },
+  "excluidos": [
+   "EST",
+   "LON"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "2e26773f91f06839",
+   "4e3d1ae9b3937be6",
+   "ig-c20f257aa1c1a0",
+   "d0b72eb7baa51cc8",
+   "e4f9307cb3db4932"
+  ],
+  "famosos": [
+   {
+    "nome": "Grazi Massafera",
+    "noticia_id": "cedcf827b674a825",
+    "titulo": "Grazi Massafera mostra tanquinho e pernas 'quilométricas': 'Mais de 15 dias sem fazer nada'",
+    "link": "https://revistaquem.globo.com/saude/fitness/noticia/2026/10/grazi-massafera-mostra-tanquinho-e-pernas-quilometricas-bora-magrela.ghtml",
+    "canal": "Globo",
+    "data": "2026-10-30T01:22:55+00:00",
+    "nota": 62,
+    "pessoa_br": false,
+    "imagem": "https://s2-quem.glbimg.com/yc8NW0Fua_gqYs1lzD7BNmlyd6U=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/A/O/xhzdiZSkGGcmhe3hCANQ/gm.jpg"
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-03",
+    "quando": "2026-11-03T20:00:00-03:00",
+    "arquivo": "2026-11-03/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-03.jpg",
+    "drive_id": "1TaIh88a8mcH8L9oVm0IezqIDGYyOTjnb",
+    "nome": "IMG_9911.JPEG"
+   },
+   {
+    "dia": "2026-11-05",
+    "quando": "2026-11-05T20:00:00-03:00",
+    "arquivo": "2026-11-05/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-05.jpg",
+    "drive_id": "1n7mfg5FX2bJaou8_WYKwc2zcoesWtIFW",
+    "nome": "IMG_3965.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-03/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-03-acervo-1.jpg",
+    "drive_id": "18zM4heolfxthaA8Qm0t6wABKj-33ZFQN",
+    "nome": "IMG_3519.JPEG"
+   },
+   {
+    "arquivo": "2026-11-03/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-03-acervo-2.jpg",
+    "drive_id": "1Hcw0u4B_8_NfoW_VbyYaDnPgcye50Xmf",
+    "nome": "IMG_8271.JPEG"
+   },
+   {
+    "arquivo": "2026-11-03/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-03-acervo-3.jpg",
+    "drive_id": "1NotOyUj2U0BKVlwkGAjUV17Wq4YWWBUU",
+    "nome": "IMG_9468.JPEG"
+   },
+   {
+    "arquivo": "2026-11-03/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-03-acervo-4.jpg",
+    "drive_id": "1O4Kh3N4qqBnMav0Ag4hTqlKtwB9mM2WU",
+    "nome": "IMG_0349.JPG"
+   }
+  ],
+  "escolhido_em": "2026-11-02T15:09-03:00",
+  "status": "escolhido"
  }
 ]
