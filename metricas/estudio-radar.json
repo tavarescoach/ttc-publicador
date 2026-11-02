@@ -1,70 +1,37 @@
 {
- "atualizado_em": "2026-11-01T06:24:23-03:00",
+ "atualizado_em": "2026-11-02T14:58:39-03:00",
  "em_alta": [
   {
+   "assunto": "ia-mercado",
+   "tema": "negocio",
+   "canais": 5,
+   "nota_max": 6,
+   "titulos": [
+    "US tech stocks see sharp falls as AI spending nears $1tn",
+    "OpenAI slashes funding target by $10 billion amid tech rout, FT reports (Oct. 30)",
+    "HSBC to open Hong Kong AI Institute following Singapore launch"
+   ]
+  },
+  {
    "assunto": "ia-sociedade",
-   "tema": "tecnologia",
-   "canais": 8,
+   "tema": "negocio",
+   "canais": 4,
    "nota_max": 18,
    "titulos": [
-    "The real question we should all be asking about AI",
+    "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
     "These firms you've never heard of are feeding fears the AI bubble could burst",
-    "More than half of Victorian lawyers use AI – but only a quarter have cut client fees as a result"
+    "When You Should—and Shouldn’t—Use AI to Search the Web"
    ]
   },
   {
    "assunto": "politica-eua",
-   "tema": "ciencia",
-   "canais": 8,
-   "nota_max": 12,
+   "tema": "negocio",
+   "canais": 4,
+   "nota_max": 5,
    "titulos": [
-    "How Trump Is Dismantling America’s Scientific Research Machine",
-    "US court lifts ruling requiring Idaho to allow some abortions to protect women's health",
-    "Por que bilionários do Vale do Silício estão financiando políticos pró-IA"
-   ]
-  },
-  {
-   "assunto": "glp1-mercado-e-efeitos",
-   "tema": "saude",
-   "canais": 7,
-   "nota_max": 78,
-   "titulos": [
-    "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados",
-    "Anvisa aprova 5 novas canetas para diabetes e obesidade; total chega a 19 em 2026",
-    "Ainda sem aprovação, retatrutida supera Ozempic em estudo clínico"
-   ]
-  },
-  {
-   "assunto": "morte-patrick-stewart",
-   "tema": "saude",
-   "canais": 5,
-   "nota_max": 46,
-   "titulos": [
-    "Morte de Patrick Stewart: o que é demência por corpos de Lewy, doença que acometeu o ator",
-    "Sir Patrick Stewart, Theater Titan and ‘Star Trek’ Captain, Dies at 86",
-    "Patrick Stewart Privately Faced a ‘Brief Journey’ with Alzheimer’s Disease and Lewy Body Dementia Before His Death"
-   ]
-  },
-  {
-   "assunto": "fofoca-celebridade",
-   "tema": "cultura",
-   "canais": 5,
-   "nota_max": 18,
-   "titulos": [
-    "Gabriela Pugliesi comemora aniversário em família no Uruguai: 'Meu desejo já se realizou'",
-    "‘American Idol’ star Bo Bice trades signature rocker look for new image as fans sound off",
-    "Virginia Fonseca surge com rosto inchado e de topless após festa em NY"
-   ]
-  },
-  {
-   "assunto": "tv-entretenimento",
-   "tema": "cultura",
-   "canais": 5,
-   "nota_max": 15,
-   "titulos": [
-    "Fabão: 'Não quero que a minha existência seja resumida a uma história de superação'",
-    "Noah Wyle on the ‘Impressive’ Connection Real Healthcare Workers Feel to ‘The Pitt’",
-    "After 50 years of playing video games, I’m finally starring in one"
+    "A record number of health professionals are running for office. Could they help heal US politics?",
+    "What AI chatbots are saying about the midterms",
+    "Unvetted foreign workers at AI firms raise national security alarms, advocates warn"
    ]
   },
   {
@@ -79,18 +46,25 @@
    ]
   },
   {
-   "assunto": "longevidade-mainstream",
+   "assunto": "glp1-mercado-e-efeitos",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 82,
+   "nota_max": 78,
    "titulos": [
-    "Longevity medicine mainstream",
-    "Instagram",
-    "Mercado de saúde premium aposta em check-up mental, exames preditivos e anéis inteligentes"
+    "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados",
+    "Anvisa aprova cinco novas canetas para tratamento do diabetes e da obesidade",
+    "Anvisa Aprova 5 Novas Canetas para Tratamento de Diabetes e Obesidade"
    ]
   }
  ],
  "top": [
+  {
+   "titulo": "Adriane Galisteu sobre descoberta da menopausa: 'Não estava me reconhecendo'",
+   "canal": "Globo",
+   "assunto": "menopausa-sintomas",
+   "nota": 85,
+   "gancho": "Adriane Galisteu não se reconhecia mais. Era a menopausa chegando."
+  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -127,13 +101,6 @@
    "gancho": "Cansar na escada é normal. Demorar para voltar não é."
   },
   {
-   "titulo": "Type 2 diabetes breakthrough as 54% achieve remission in just 6 months",
-   "canal": "ScienceDaily",
-   "assunto": "diabetes-remissao",
-   "nota": 80,
-   "gancho": "Metade entrou em remissão do diabetes em seis meses. Com treino supervisionado."
-  },
-  {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
    "canal": "Sua referência",
    "assunto": "frio-calor-recuperacao",
@@ -155,11 +122,11 @@
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   },
   {
-   "titulo": "Ainda sem aprovação, retatrutida supera Ozempic em estudo clínico",
-   "canal": "Metrópoles",
+   "titulo": "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados",
+   "canal": "Estadão Saúde",
    "assunto": "glp1-mercado-e-efeitos",
    "nota": 78,
-   "gancho": "Nova caneta tira mais peso. Seu músculo vai junto se você não treinar."
+   "gancho": "A balança desce com a caneta. O músculo desce junto."
   }
  ]
 }
