@@ -1,3 +1,59 @@
 {
- "_doc": "Etiquetas das fotos do acervo (diretrizes/conteudo.md, seção 4). Chave = drive_id. Quem gera o pacote do ciclo etiqueta cada foto que abre. Campos: expressao (serio|rindo|desconfiado|surpreso|concentrado|neutro), contexto (treino|ttc|praia|viagem|natureza|casa|trabalho|evento), sem_camisa (bool), aluno (bool), autorizado (bool, só quando o Luan registrou), evitar (bool: fora de contexto; o robô não escolhe mais), nota (1 frase)."
+ "_doc": "Etiquetas das fotos do acervo (diretrizes/conteudo.md, seção 4). Chave = drive_id. Quem gera o pacote do ciclo etiqueta cada foto que abre. Campos: expressao (serio|rindo|desconfiado|surpreso|concentrado|neutro), contexto (treino|ttc|praia|viagem|natureza|casa|trabalho|evento), sem_camisa (bool), aluno (bool), autorizado (bool, só quando o Luan registrou), evitar (bool: fora de contexto; o robô não escolhe mais), nota (1 frase).",
+ "1TaIh88a8mcH8L9oVm0IezqIDGYyOTjnb": {
+  "expressao": "neutro",
+  "contexto": "treino",
+  "sem_camisa": false,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Selfie pós-treino na escada, rashguard preta e faixa roxa no ombro, rosto suado; usada na foto das 20h de 03/11."
+ },
+ "1n7mfg5FX2bJaou8_WYKwc2zcoesWtIFW": {
+  "expressao": "neutro",
+  "contexto": "natureza",
+  "sem_camisa": false,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Trilha com mochila cargueira diante de paredão de pedra; rosto pequeno, de óculos escuros; usada no slide 8 do carrossel de 04/11."
+ },
+ "18zM4heolfxthaA8Qm0t6wABKj-33ZFQN": {
+  "expressao": "rindo",
+  "contexto": "praia",
+  "sem_camisa": true,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Calçadão de Copacabana, sem camisa, de short e meião laranja, sorrindo; contexto de vida; usada no meme de 05/11."
+ },
+ "1Hcw0u4B_8_NfoW_VbyYaDnPgcye50Xmf": {
+  "expressao": "rindo",
+  "contexto": "viagem",
+  "sem_camisa": false,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Lagoa no altiplano (Atacama), jaqueta caramelo e gorro, sorrindo; usada no slide 8 do carrossel de 03/11."
+ },
+ "1NotOyUj2U0BKVlwkGAjUV17Wq4YWWBUU": {
+  "expressao": "rindo",
+  "contexto": "viagem",
+  "sem_camisa": false,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Selfie em Paris com a Torre Eiffel e os anéis olímpicos ao fundo, camiseta azul; usada no slide 8 do carrossel de 05/11."
+ },
+ "1O4Kh3N4qqBnMav0Ag4hTqlKtwB9mM2WU": {
+  "expressao": "concentrado",
+  "contexto": "treino",
+  "sem_camisa": true,
+  "aluno": false,
+  "evitar": true,
+  "nota": "Agachamento unilateral em box de cross, sem camisa, com pessoas ao fundo; sem camisa em academia fica fora pela regra de 02/11."
+ },
+ "1xhYI3GO8omrv0jB8Cg0rzgX5X1JE9OZ-": {
+  "expressao": "rindo",
+  "contexto": "casa",
+  "sem_camisa": false,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Sentado em café, blusa cinza de zíper, parede de tijolo, sorrindo; usada na capa do carrossel das 20h de 04/11."
+ }
 }
