@@ -18,18 +18,26 @@ Roda 2x por dia (~6h17 e ~14h17, Brasília), 30 min depois da coleta. Ninguém e
 - Curadorias anteriores (`radar/curadoria/*.json`): notícia com o mesmo id já avaliada nas últimas 24 h mantém nota, motivo,
   pitch e cluster (recalcule só `em_alta`). Avalie de verdade só o que é novo.
 
+## Diretrizes v2 (02/11/2026)
+Leia `diretrizes/conteudo.md`, seção 1. O que mais funciona no perfil é famoso **brasileiro** com história pessoal ligada a
+corpo, saúde, treino ou rotina (2 mil a 12 mil visualizações); famoso de fora rende pouco e estudo sem personagem rende
+quase nada. Pergunta de corte: o leitor comentaria isso no almoço do trabalho?
+
 ## Para cada notícia
 - `nota` 0–100: encaixe com o público (executivo 30–45 e mulher 30–50 da Zona Sul do Rio), potencial de conteúdo que gere valor
   real e ponte para a venda, credibilidade da fonte, atualidade. Fofoca, política, crime e assuntos sem ponte com corpo/saúde/
   performance/rotina: abaixo de 30. Estudo novo sobre treino de força, sono, obesidade/GLP-1, longevidade, saúde do homem 35+,
   menopausa: tende a 70+.
+  Ajustes v2: famoso brasileiro com história pessoal (fez, sentiu, mediu ou confessou algo) ligada a corpo/saúde/treino/
+  rotina: +15 (não conta como fofoca, mesmo em veículo de celebridade). Famoso de fora pouco conhecido no Brasil: −10.
+  Estudo sem pessoa nem cena do leitor: teto 65. Reprovado na pergunta do almoço: teto 45.
 - `tema`: saude | ciencia | tecnologia | esporte | cultura | comportamento | negocio
 - `publico`: "executivo 30–45" | "mulher 30–50" | "ambos"
 - `motivo`: 1 frase dizendo por que serve (ou não serve) ao público.
 - `pitch` (só quando nota ≥ 50; senão null), com palavras SUAS:
   {"angulo": "o ângulo da marca (método acima de motivação, anti-caos)",
    "formato": "carrossel decodificado | reels mito x método | reels erro comum | bastidor | story/enquete | estático",
-   "gancho": "frase de abertura pronta, até ~12 palavras, no tom da marca",
+   "gancho": "frase de abertura pronta, até ~12 palavras: nome conhecido + fato concreto (diretrizes/conteudo.md)",
    "ponte": "como liga ao personal / Avaliação Estratégica"}
 - `tema_editorial` (ciclo temático, diretrizes/ciclo.md): a sigla do tema editorial que a notícia alimenta, uma de
   FOR (treino de força), EMA (emagrecimento), EST (estilo de vida: sono, rotina, postura, exercício no dia a dia),
@@ -37,6 +45,7 @@ Roda 2x por dia (~6h17 e ~14h17, Brasília), 30 min depois da coleta. Ninguém e
   MEN (saúde mental), WEA (tecnologia e dados: wearables, apps, IA). Use null quando nada servir. Nunca FAM.
 - `pessoa`: nome da pessoa conhecida no centro do fato (atleta, artista, executivo, figura pública), ou null. Só quando
   a notícia é sobre ela; citação de especialista não conta. Menor de idade: sempre null.
+- `pessoa_br`: true quando a `pessoa` é brasileira (ou muito conhecida no Brasil como se fosse); false ou null nos outros casos.
 - `cluster`: um slug curto do ASSUNTO (ex.: "glp1-perda-muscular"). Notícias de canais diferentes sobre a mesma história recebem o
   mesmo cluster. `em_alta`: true quando o cluster aparece em 3 ou mais canais diferentes.
 - Na dúvida sobre um fato, use WebFetch no link (no máximo ~5 por rodada, nas notas mais altas).
@@ -112,7 +121,7 @@ Varie o público (pelo menos uma para a mulher 30–50 quando houver notícia bo
 
 ## Saída
 1. Escreva `radar/curadoria/AAAA-MM-DD-HH.json` (horário de Brasília): {"gerado_em": "...", "itens": [ {id, canal, titulo, link,
-   imagem, publicado_em, tema, tema_editorial, pessoa, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
+   imagem, publicado_em, tema, tema_editorial, pessoa, pessoa_br, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
 2. Apague arquivos de curadoria com mais de 3 dias.
 3. `git pull --rebase`, commit ("radar: curadoria AAAA-MM-DD HH h", incluindo `radar/perfil-interesse.json` e
    `radar/perfis-instagram.json` se mudaram) e push. O robô "Radar de notícias" aplica no painel.

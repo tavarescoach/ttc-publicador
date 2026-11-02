@@ -104,7 +104,7 @@ def main():
     p = json.load(open(caminho, encoding="utf-8"))
     if p.get("formato") == "foto":
         return entregar_foto(p, local)
-    slides = p["slides"]
+    slides = p.get("slides") or []
     pasta_rel = f"{p['data']}/{p['id']}"
     saida = os.path.join(RAIZ, "render", "_saida", pasta_rel)
     fotos = os.path.join(RAIZ, "render", "_fotos")
@@ -114,6 +114,9 @@ def main():
     fotos_falharam, cortes = [], []
     reels = p.get("formato") == "reels"
     estatico = p.get("formato") == "estatico"
+    meme = p.get("formato") == "meme"  # diretrizes/conteudo.md, seção 5
+    if meme:
+        slides = p["slides"] = [{"tipo": "meme", "frase": p.get("frase"), "foto": p.get("foto"), "foco": p.get("foco")}]
     if estatico:
         slides = p["slides"] = slides[:1]
     W, H = (1080, 1920) if reels else (1080, 1350)
@@ -128,7 +131,13 @@ def main():
             if achada:
                 s.update(achada)
                 print(f"Foto do Commons: {achada['pagina_origem']} ({achada['licenca']})")
+            elif s.get("foto_reproducao"):  # reserva aceita pelo Luan em 02/11/2026: foto da notícia, com crédito
+                s.update({"foto": s["foto_reproducao"], "licenca": "reproducao",
+                          "credito": s.get("credito_reproducao") or "Foto: Reprodução",
+                          "pagina_origem": s.get("origem_reproducao") or s.get("link_noticia")})
+                print(f"Sem foto no Commons; usando reprodução de {s['pagina_origem']}")
             else:
+                s["foto_nao_achada"] = True  # a revisão manda para "Precisa de você" (capa sem rosto)
                 print(f"Sem foto liberada de {s['pessoa']} no Commons; capa só com texto")
     for i, s in enumerate(slides, 1):  # foto do repositório (quadro do vídeo) -> caminho absoluto
         if (s.get("foto") or "").startswith("render/"):
@@ -146,7 +155,7 @@ def main():
                 fotos_falharam.append(i)
 
     arquivos = []
-    modelo = "file://" + os.path.join(AQUI, "capa-reels.html" if reels else "carrossel.html")
+    modelo = "file://" + os.path.join(AQUI, "capa-reels.html" if reels else "meme.html" if meme else "carrossel.html")
     with sync_playwright() as pw:
         nav = pw.chromium.launch()
         pg = nav.new_page(viewport={"width": W, "height": H})
@@ -164,12 +173,12 @@ def main():
             }""")
             if cortado:
                 cortes.append(i)
-            nome = "reels-capa.png" if reels else "estatico.png" if estatico else f"carrossel-{i}.png"
+            nome = "reels-capa.png" if reels else "estatico.png" if estatico else "meme.png" if meme else f"carrossel-{i}.png"
             pg.screenshot(path=os.path.join(saida, nome))
             arquivos.append(f"{pasta_rel}/{nome}")
             pg.close()
             pg = nav.new_page(viewport={"width": W, "height": H})
-            if reels or estatico:
+            if reels or estatico or meme:
                 break
         nav.close()
     print(f"{len(arquivos)} slides gerados em {saida}")
@@ -209,7 +218,7 @@ def main():
     etapa = "agendado" if rev["decisao"] == "agendado" else "pronto"
     if reels:
         gravar_card(p, [p["video"]], capa=arquivos[0], tipo="REELS", etapa=etapa)
-    elif estatico:
+    elif estatico or meme:
         gravar_card(p, arquivos, tipo="IMAGEM", etapa=etapa)
     else:
         gravar_card(p, arquivos, etapa=etapa)

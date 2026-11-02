@@ -17,7 +17,8 @@ import sys
 BRT = dt.timezone(dt.timedelta(hours=-3))
 JANELA_MIN_H = 3  # horas mínimas entre a revisão e a publicação para dar tempo de vetar
 
-PROIBIDAS = ["bora", "foco força e fé", "foco, força e fé", "no pain no gain", "monstro", "shape", "maromba",
+# "bora" e "shape" liberados em 02/11/2026: voz informal no gancho e na legenda (diretrizes/conteudo.md)
+PROIBIDAS = ["foco força e fé", "foco, força e fé", "no pain no gain", "monstro", "maromba",
              "projeto verão", "resultado garantido", "garantimos", "100% garantido", "últimas vagas", "só hoje"]
 SENSIVEIS = [r"horm[oô]n", r"testosteron", r"estrog[eê]n", r"suplement", r"creatina", r"\bwhey\b", r"glp-?1",
              r"ozempic", r"mounjaro", r"wegovy", r"semaglut", r"tirzepat", r"rem[eé]dio", r"medicament",
@@ -31,6 +32,11 @@ EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿]")
 
 # Foto de terceiros: só licença que permite uso comercial (decisão do Luan, 24/10/2026)
 LICENCAS_OK = {"cc-by", "cc-by-sa", "dominio-publico", "cc0"}
+# Desde 02/11/2026 (decisão do Luan, diretrizes/conteudo.md): foto da notícia como reprodução ou divulgação oficial,
+# sempre com crédito na arte e página de origem.
+LICENCAS_EDITORIAIS = {"reproducao", "divulgacao"}
+MIDIA = "supabase.co/storage/v1/object/public/midia/"  # fotos do acervo do Luan (bucket)
+MAX_PALAVRAS_MEME = 8
 
 # Vícios de texto de IA (skill copy-social-ttc, seção 4). Barram o agendamento automático.
 VICIOS_IA = [
@@ -53,7 +59,7 @@ def _txt(s):
 def textos_slides(p):
     out = []
     for s in p.get("slides", []):
-        for c in ("titulo", "texto", "nota", "rotulo", "numero", "unidade", "cta", "subtitulo"):
+        for c in ("titulo", "texto", "nota", "rotulo", "numero", "unidade", "cta", "subtitulo", "frase"):
             if s.get(c):
                 out.append(_txt(s[c]))
     return out
@@ -64,7 +70,7 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
     reels = p.get("formato") == "reels"
     slides = p.get("slides", [])
     legenda = p.get("legenda") or ""
-    tudo = "\n".join(textos_slides(p) + [legenda, p.get("pauta") or ""])
+    tudo = "\n".join(textos_slides(p) + [legenda, p.get("pauta") or "", _txt(p.get("frase"))])
     baixo = tudo.lower()
     problemas, atencao, avisos = [], [], []
 
@@ -123,6 +129,10 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
     formato = p.get("formato")
     if formato == "estatico":
         problemas += revisar_estatico(p)
+    elif formato == "meme":
+        problemas += revisar_meme(p)
+        if "MÉTODO" not in legenda.upper():
+            avisos.append("Legenda do meme sem MÉTODO.")
     elif formato == "foto":
         if not p.get("arquivo"):
             problemas.append("Foto pessoal sem arquivo.")
@@ -155,13 +165,16 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
         capa = slides[0] if slides and slides[0].get("tipo") == "capa" else None
         if capa:
             foto = capa.get("foto_url") or capa.get("foto") or ""
-            banco = foto.startswith(("render/", "file://")) or re.search(r"pexels\.com|unsplash\.com", foto)
-            if foto and not banco:
-                if not capa.get("credito") or not capa.get("licenca"):
-                    problemas.append("Foto da capa de fora dos bancos sem crédito ou licença registrada.")
-                elif capa.get("licenca") not in LICENCAS_OK:
-                    problemas.append(f"Foto da capa com licença '{capa.get('licenca')}': só vale licença com uso comercial "
-                                     "(cc-by, cc-by-sa, dominio-publico). Troque a foto ou faça a capa sem foto.")
+            banco = foto.startswith(("render/", "file://")) or re.search(r"pexels\.com|unsplash\.com", foto) or MIDIA in foto
+            if not foto and _vai_buscar(capa):
+                avisos.append("Foto da capa será buscada no render (Commons ou reprodução).")
+            elif not foto:
+                problemas.append("Capa sem foto: a capa precisa de rosto (famoso, Luan ou aluno autorizado).")
+            elif not banco:
+                problemas += _licenca_foto(capa, "da capa")
+        # slide "o que eu faço" com foto do Luan (diretrizes/carrossel.md v2)
+        if not any(MIDIA in (s.get("foto_url") or s.get("foto") or "") for s in slides):
+            avisos.append("Sem foto do Luan do acervo (slide \"o que eu faço\").")
             if "método" in _txt(capa).lower():
                 problemas.append("A capa tem MÉTODO: o convite fica só no último slide.")
         # fundos: nunca 3 iguais seguidos
@@ -204,18 +217,57 @@ def revisar_estatico(p):
         out.append("Estático sem a fonte da notícia na arte (veículo e data).")
     if not c.get("link_noticia"):
         out.append("Estático sem o link da notícia (link_noticia).")
-    if c.get("foto"):
+    if not c.get("foto") and _vai_buscar(c):
+        pass  # o render busca no Commons ou usa a reprodução; se não achar, marca foto_nao_achada
+    elif not c.get("foto"):
+        out.append("Estático sem foto: a capa precisa do rosto da pessoa (Commons ou reprodução com crédito).")
+    else:
         foto = c.get("foto_url") or c.get("foto") or ""
-        banco = re.search(r"pexels\.com|unsplash\.com", foto)
+        banco = re.search(r"pexels\.com|unsplash\.com", foto) or MIDIA in foto
         if not banco:
             if not c.get("credito") or "foto:" not in c.get("credito", "").lower():
-                out.append("Estático com foto e sem o crédito \"Foto: autor / origem (licença)\" na arte.")
-            if c.get("licenca") not in LICENCAS_OK:
-                out.append(f"Foto do estático com licença '{c.get('licenca')}': só cc-by, cc-by-sa ou domínio público.")
-            if not c.get("pagina_origem"):
-                out.append("Foto do estático sem a página de origem (pagina_origem).")
+                out.append("Estático com foto e sem o crédito \"Foto: autor / origem\" na arte.")
+            out += _licenca_foto(c, "do estático")
     if "método" in _txt(c).lower():
         out.append("O estático é editorial: sem MÉTODO na arte (vai na legenda).")
+    return out
+
+
+def _vai_buscar(c):
+    """Pedido ainda não renderizado: a foto vem do Commons (pessoa) ou da reprodução (foto_reproducao)."""
+    return bool((c.get("pessoa") or c.get("foto_reproducao")) and not c.get("foto_nao_achada"))
+
+
+def _licenca_foto(c, onde):
+    """Foto de terceiros: licença livre, ou reprodução/divulgação com crédito e origem (02/11/2026)."""
+    lic = c.get("licenca")
+    if not c.get("credito") or not lic:
+        return [f"Foto {onde} sem crédito ou licença registrada."]
+    if lic in LICENCAS_OK:
+        return [] if c.get("pagina_origem") or onde == "da capa" else [f"Foto {onde} sem a página de origem (pagina_origem)."]
+    if lic in LICENCAS_EDITORIAIS:
+        out = []
+        if not (c.get("pagina_origem") or c.get("link_noticia")):
+            out.append(f"Foto {onde} em reprodução sem a página de origem.")
+        if lic == "reproducao" and "reprodu" not in c.get("credito", "").lower():
+            out.append(f"Foto {onde} em reprodução sem \"Reprodução\" no crédito.")
+        return out
+    return [f"Foto {onde} com licença '{lic}': use cc-by, cc-by-sa, domínio público, cc0, divulgação ou reprodução com crédito."]
+
+
+def revisar_meme(p):
+    """Meme (diretrizes/conteudo.md, seção 5): frase curta + foto do Luan."""
+    out = []
+    frase = _txt(p.get("frase"))
+    n = len(re.findall(r"\w+", frase))
+    if not frase:
+        out.append("Meme sem frase.")
+    elif n > MAX_PALAVRAS_MEME:
+        out.append(f"Frase do meme com {n} palavras (máximo {MAX_PALAVRAS_MEME}).")
+    if not p.get("foto"):
+        out.append("Meme sem foto.")
+    elif MIDIA not in str(p.get("foto")) and not str(p.get("foto")).startswith(("file://", "render/")):
+        out.append("A foto do meme precisa ser do acervo do Luan (bucket midia).")
     return out
 
 

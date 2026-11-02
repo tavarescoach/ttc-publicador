@@ -7,7 +7,8 @@ Na véspera:
 1. pontua os 8 temas com as notícias do Radar das últimas 72 h (radar/curadoria/*.json);
 2. aplica as regras (2 ciclos anteriores fora; depois de 2 cruzados, só centrais; empate = usado há mais tempo);
 3. lista as notícias com pessoa conhecida do tema (para o estático das 7h);
-4. escolhe as fotos pessoais dos dias 1 e 3 (20h), sem repetir até usar todas, e sobe para o bucket;
+4. escolhe as fotos pessoais dos dias 1 e 3 (20h) e as extras do acervo (slide "o que eu faço" e meme, diretrizes/conteudo.md),
+   sem repetir até usar todas, e sobe para o bucket;
 5. grava o ciclo em ciclos/ciclos.json (status "escolhido"). A tarefa "Pacote do ciclo" (15h07) escreve o conteúdo.
 Com "ativo": false em ciclo/config.json (ou --simular), só grava ciclos/simulacao.json.
 """
@@ -29,6 +30,7 @@ CFG = os.path.join(AQUI, "config.json")
 CICLOS = os.path.join(RAIZ, "ciclos", "ciclos.json")
 ROTACAO = os.path.join(RAIZ, "ciclos", "rotacao.json")
 SIMULACAO = os.path.join(RAIZ, "ciclos", "simulacao.json")
+TAGS = os.path.join(RAIZ, "acervo", "tags.json")
 
 
 def ler(c, padrao):
@@ -152,8 +154,9 @@ def _ord(d):
 
 # ------------------------------------------------------------ fotos pessoais
 def escolher_fotos(n, data_ref, rotacao):
+    evitar = {k for k, v in ler(TAGS, {}).items() if isinstance(v, dict) and v.get("evitar")}
     fotos = [f for f in ler(os.path.join(RAIZ, "acervo", "indice.json"), {}).get("pastas", {}).get("fotos", [])
-             if f.get("mimeType") in ("image/jpeg", "image/png")]
+             if f.get("mimeType") in ("image/jpeg", "image/png") and f.get("id") not in evitar]
     usadas = {u["id"]: u["data"] for u in rotacao.get("fotos", [])}
     if not fotos:
         return []
@@ -219,15 +222,30 @@ def main(argv):
     famosos = []
     for h in (24, 72, 168):
         famosos = [{"nome": it["pessoa"], "noticia_id": it["id"], "titulo": it.get("titulo"), "link": it.get("link"),
-                    "canal": it.get("canal"), "data": it.get("publicado_em"), "nota": it.get("nota")}
+                    "canal": it.get("canal"), "data": it.get("publicado_em"), "nota": it.get("nota"),
+                    "pessoa_br": bool(it.get("pessoa_br")), "imagem": it.get("imagem")}
                    for it in noticias(agora, h) if it.get("pessoa") and tema_do_item(it, cfg) == sigla]
         if famosos:
             break
-    famosos.sort(key=lambda f: -(f.get("nota") or 0))
+    famosos.sort(key=lambda f: (not f.get("pessoa_br"), -(f.get("nota") or 0)))  # brasileiro primeiro (02/11/2026)
 
     rotacao = ler(ROTACAO, {"trechos": [], "fotos": []})
-    fotos = []
-    for n, arq in zip(cfg["foto_dias"], escolher_fotos(len(cfg["foto_dias"]), inicio.isoformat(), rotacao)):
+    fotos, acervo = [], []
+    n_extras = int(cfg.get("fotos_extras", 4))
+    escolhidas = escolher_fotos(len(cfg["foto_dias"]) + n_extras, inicio.isoformat(), rotacao)
+    for k, arq in enumerate(escolhidas[len(cfg["foto_dias"]):], 1):  # extras: slide "o que eu faço" e meme
+        bucket = f"{inicio}/acervo-{k}.jpg"
+        try:
+            preparar_foto(arq, os.path.join(RAIZ, "ciclos", "fotos", f"{inicio}-acervo-{k}.jpg"), bucket, simular)
+        except Exception as e:
+            print(f"::warning::foto extra {arq.get('name')} não preparou ({e})")
+            continue
+        acervo.append({"arquivo": bucket, "previa": f"ciclos/fotos/{inicio}-acervo-{k}.jpg",
+                       "drive_id": arq["id"], "nome": arq["name"]})
+        if not simular:
+            rotacao.setdefault("fotos", []).append({"id": arq["id"], "nome": arq["name"], "data": inicio.isoformat(),
+                                                   "uso": "acervo"})
+    for n, arq in zip(cfg["foto_dias"], escolhidas):
         dia = (inicio + dt.timedelta(days=n - 1)).isoformat()
         bucket = f"{dia}/foto-pessoal.jpg"
         preparar_foto(arq, os.path.join(RAIZ, "ciclos", "fotos", f"{dia}.jpg"), bucket, simular)
@@ -240,7 +258,7 @@ def main(argv):
              "tema": cfg["temas"][sigla], "sigla": sigla,
              "pontuacao": dict(sorted(pts.items(), key=lambda x: -x[1])),
              "excluidos": [c["sigla"] for c in ciclos[-2:]], "regra": regra, "bonus_calendario": bonus,
-             "noticias_base": base[sigla][:15], "famosos": famosos[:8], "fotos": fotos,
+             "noticias_base": base[sigla][:15], "famosos": famosos[:8], "fotos": fotos, "acervo": acervo,
              "escolhido_em": agora.isoformat(timespec="minutes"), "status": "escolhido"}
     if simular:
         gravar(SIMULACAO, ciclo)
@@ -249,7 +267,7 @@ def main(argv):
     ciclos.append(ciclo)
     gravar(CICLOS, ciclos)
     gravar(ROTACAO, rotacao)
-    print(f"Ciclo {ciclo['id']} ({inicio}–{fim}): {ciclo['tema']} · {len(famosos)} notícia(s) com pessoa · {len(fotos)} foto(s)")
+    print(f"Ciclo {ciclo['id']} ({inicio}–{fim}): {ciclo['tema']} · {len(famosos)} notícia(s) com pessoa · {len(fotos)} foto(s) + {len(acervo)} extra(s)")
     return 0
 
 

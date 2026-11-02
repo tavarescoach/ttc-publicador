@@ -1,0 +1,3 @@
+{
+ "_doc": "Etiquetas das fotos do acervo (diretrizes/conteudo.md, seção 4). Chave = drive_id. Quem gera o pacote do ciclo etiqueta cada foto que abre. Campos: expressao (serio|rindo|desconfiado|surpreso|concentrado|neutro), contexto (treino|ttc|praia|viagem|natureza|casa|trabalho|evento), sem_camisa (bool), aluno (bool), autorizado (bool, só quando o Luan registrou), evitar (bool: fora de contexto; o robô não escolhe mais), nota (1 frase)."
+}

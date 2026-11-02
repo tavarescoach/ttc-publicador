@@ -169,6 +169,9 @@ Fluxo que o Luan usa a cada tema. Cada etapa tem um estado em `criacoes` e um ef
 O tipo vem do campo `tipo_pauta` da tese (`noticia` | `tese` | `guia`). Sem tipo definido, usar 1.200 como padrão.
 
 ### Regras que valem em toda etapa
+- Diretrizes v2 (`diretrizes/conteudo.md`, 02/11/2026) valem para pautas, teses, textos e artes: pilares conexão,
+  autoridade e desejo; famoso brasileiro primeiro; voz informal no gancho e na legenda; capa sempre com rosto; slide
+  "o que eu faço" com foto do Luan nos carrosséis.
 - Número sem fonte confirmada bloqueia a aprovação da tese (campo `fontes` em cada evidência).
 - Prova com aluno e temas de saúde (hormônio, suplemento, remédio, lesão, gravidez, menopausa) exigem aprovação explícita do Luan, em qualquer saída.
 - Público da notícia diferente de 30–50 anos deve virar ponte para o público da marca (`pontos_de_cuidado` da tese).
@@ -189,7 +192,8 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    Se o agendado rodar depois, ele vê que já existe o ciclo e não faz nada.
 1. `git pull`. Leia `ciclo/config.json` e `ciclos/ciclos.json`. Pare sem fazer nada ("nada a fazer") se `ativo` for false,
    ou se o último ciclo não estiver com status "escolhido", ou se o `inicio` dele não for amanhã (horário de Brasília).
-2. Leia `diretrizes/ciclo.md`, `marca.md`, `carrossel.md`, `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`.
+2. Leia `diretrizes/conteudo.md` (v2, 02/11/2026: vale sobre as outras), `diretrizes/ciclo.md`, `marca.md`, `carrossel.md`,
+   `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`. Pilares: 07h conexão, 12h autoridade, 20h desejo.
    Todo item leva `tema` = o `tema` do ciclo. Saúde: só afirmação defensável, com fonte; sem prescrição nem promessa.
    **Arco do ciclo (como os 3 dias conversam):** um tema, três ângulos que avançam. D1 = o caso (o fato da pessoa
    conhecida e o estudo que explica). D2 = o mecanismo e a aplicação (por que funciona e como entra na semana;
@@ -202,9 +206,14 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    - **Estático 07h** de cada dia (`k-<dia>-estatico`): notícia de pessoa conhecida ligada ao tema. Comece por
      `famosos` do ciclo; sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
      Abra a matéria (WebFetch) e confirme o fato numa segunda fonte. Três pessoas ou fatos diferentes nos 3 dias.
+     **Brasileiro primeiro** (`pessoa_br`; a lista `famosos` já vem nessa ordem). Gancho: nome + fato concreto.
      Foto: escreva `"pessoa": "<nome como aparece no Commons>"` na capa e deixe `foto` vazio. O robô "Renderizar
      artes" busca no Wikimedia Commons, confere a licença pelos metadados (só CC BY, CC BY-SA, CC0 ou domínio
-     público) e preenche foto, crédito, licença e página de origem. Sem foto liberada, a capa sai só com texto.
+     público) e preenche foto, crédito, licença e página de origem. Preencha SEMPRE a reserva para quando o Commons
+     não tiver foto: `"foto_reproducao": "<URL da imagem da matéria ou do post da pessoa>"`, `"credito_reproducao":
+     "Foto: Reprodução/<veículo ou @perfil>"` e `"origem_reproducao": "<link da matéria ou do post>"` (a `imagem` do
+     item do radar costuma servir; confira que a foto mostra a pessoa e não é de menor). Sem nenhuma foto, a capa
+     sai só com texto e vai para "Precisa de você".
      Depois do render, confira na prévia se a foto é mesmo da pessoa; se não for, troque o nome ou ponha `"pessoa": null`.
      Pedido: `{"formato": "estatico", "id", "data", "quando": "<dia>T07:00:00-03:00", "tema", "funil": "topo", "pauta",
      "legenda", "slides": [{"tipo": "capa", "titulo" (nomeia a pessoa, até ~60 caracteres, 1–3 palavras em **destaque**),
@@ -213,16 +222,28 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      "pagina_origem", "foco"}]}`. Só o que a notícia afirma sobre a pessoa; nunca sugerir que ela usa ou recomenda o
      método; notícia negativa em tom informativo; menor de idade nunca. Sem MÉTODO na arte (vai na legenda).
    - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): aprofunda o gancho do estático daquele dia, padrão
-     Decodificado de `diretrizes/carrossel.md` (9–10 slides, fontes, CTA MÉTODO). A capa pode usar a mesma foto, com o
-     mesmo crédito e licença.
+     Decodificado v2 de `diretrizes/carrossel.md` (arco conexão → ciência → o que eu faço → desejo → MÉTODO). A capa
+     pode usar a mesma foto, com o mesmo crédito e licença. Slide 8 "O QUE EU FAÇO COM MEUS ALUNOS": `texto_foto` com
+     uma foto do `acervo` do ciclo (abra as `previa` com Read, escolha a que combina e use
+     `https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/<arquivo>`). Nunca a mesma foto do
+     acervo em dois posts do ciclo.
    - **Carrossel 20h** do D2 (`k-<D2>-carrossel-noite`, quando 20:00): outro ângulo do tema (guia, aplicação, objeção).
-   - **Foto pessoal 20h** do D1 e do D3 (`k-<dia>-foto`): use `fotos` do ciclo. Abra a `previa` com Read e escreva a
+   - **Meme 20h** do D3 (`k-<D3>-meme`, no lugar da foto pessoal do D3): frase de situação de treino com até 8 palavras,
+     de preferência ecoando a notícia do ciclo; foto do `acervo` com a expressão certa (URL do bucket como acima).
+     Pedido: `{"formato": "meme", "id", "data", "quando": "<D3>T20:00:00-03:00", "tema", "pauta", "frase", "foto",
+     "foco" (opcional), "legenda"}`. Legenda: 1 linha de humor + 1–2 de ensinamento + "Me manda MÉTODO no direct." +
+     3 hashtags. Sem foto adequada no acervo, faça a foto pessoal do D3 no lugar.
+   - **Foto pessoal 20h** do D1 (e do D3 se não houver meme) (`k-<dia>-foto`): use `fotos` do ciclo. Sem camisa: só em
+     contexto de vida (praia, viagem, natureza) e no máximo uma vez por ciclo; se vier outra, troque por uma do `acervo`. Abra a `previa` com Read e escreva a
      legenda: 2 a 4 linhas curtas, só o que a foto mostra (não invente lugar, aluno nem história), a ligação com o
      tema do ciclo, "Me manda MÉTODO no direct." e 3 hashtags. Pedido: `{"formato": "foto", "id", "data", "quando",
      "arquivo", "tema", "pauta", "legenda"}`.
    - Escreva `render/fontes/<id>.json` para estáticos e carrosséis (diretrizes/carrossel.md, seção Fontes).
    - Stories: nada a fazer; o robô "Preparar stories" monta os do dia seguinte sozinho.
 4. Rode `python render/revisar.py render/pedidos/<id>.json` em cada pedido e corrija todo "problema".
+4a. Etiquete em `acervo/tags.json` (chave = `drive_id`) cada foto de `fotos` e `acervo` que você abriu: expressao,
+    contexto, sem_camisa, aluno, evitar (true para foto fora de contexto ou pose de exibição; o robô não escolhe mais),
+    nota. Não marque `autorizado`: só o Luan registra autorização de aluno.
 5. Marque o ciclo em `ciclos/ciclos.json`: `status` "pacote_pronto", `pecas` (lista de ids). `git pull --rebase`,
    commit ("ciclo: pacote <id>") e push. Até 3 tentativas; confira em origin/main. Se não der, deixe `status` "erro" com
    `erro` (1 frase) e termine a resposta com "CICLO NÃO ENTREGUE: <motivo>".

@@ -9,6 +9,16 @@ Você escreve como o Luan Tavares: personal trainer e Diretor Técnico do TTC, e
 
 Base desta skill: as skills `social` e `copywriting` de Corey Haines (marketingskills), adaptadas ao português, ao Instagram fitness e à marca. Em caso de conflito, a marca (`diretrizes/marca.md` ou o Guia de Conteúdo do Project) vale para tom, público e palavras; esta skill vale para estrutura e para os vícios de IA.
 
+## 0. Diretrizes v2 (02/11/2026, valem sobre o resto desta skill)
+
+Leia `diretrizes/conteudo.md`. Em resumo:
+- **Pilares:** todo post serve a um de três: conexão (famoso brasileiro com o mesmo problema do leitor), autoridade (ciência + o que o Luan aplica com os alunos) ou desejo (saúde, resultado, corpo bonito).
+- **Voz:** informal no gancho e na legenda, do jeito que o Luan fala; gíria e humor liberados ("Eita ferro", "Confia, pae", "meti o shape"). "Calma = autoridade" passa a valer só para o miolo técnico.
+- **Gancho:** nome conhecido + fato concreto + vontade de saber o resto. Nada abstrato ou de estudo sem personagem.
+- **Legenda:** a 1ª linha é opinião do Luan, em primeira pessoa.
+- **Meme:** frase de até 8 palavras; o porquê vai na legenda.
+- Os vícios de IA da seção 4 continuam proibidos.
+
 ## 1. Antes de escrever
 
 Leia, se existirem: `diretrizes/marca.md` (marca, público, palavras proibidas), a diretriz do formato (`diretrizes/carrossel.md`, `diretrizes/reels.md`), o pacote da semana e `metricas/painel.json` (o que mais funcionou nos últimos 30 dias). Anote em uma linha cada:
@@ -85,6 +95,7 @@ Valem para slides, telas de reels, stories, legendas e roteiros falados.
 
 O gancho tem um trabalho: fazer a pessoa certa parar. Preencha sempre com fato, número ou cena real.
 
+- **Famoso + fato (padrão desde 02/11/2026):** "O marido de Simone Mendes chegou a 350 de LDL." Nome que o brasileiro reconhece, número ou confissão concreta.
 - **Número medido:** "Uma noite em claro corta 18% da construção de músculo."
 - **Cena:** "Segunda, 7h, você chega na academia sem saber a carga de quinta passada."
 - **Erro com custo:** "Treinar só com o espelho de régua custou quatro anos a um aluno meu." (só com caso real)
@@ -137,7 +148,7 @@ Siga `stories-estrategia.md` (arco do dia, eco e prelúdio, pontes manuais). Par
 
 ## 10. Legenda
 
-- **1ª linha:** gancho diferente do slide 1, mesma ideia. É o texto que aparece antes do "mais" e que a busca do Instagram lê.
+- **1ª linha:** opinião do Luan em primeira pessoa (v2), diferente do slide 1, mesma ideia. É o texto que aparece antes do "mais" e que a busca do Instagram lê.
 - **Corpo:** 2–3 parágrafos curtos com o porquê e a prova. Fonte citada pelo nome quando houver número.
 - **CTA pelo funil:** topo "Salva para a próxima vez que alguém disser que não tem tempo." / "Manda para quem treina com você." · meio "Segue para ver a parte 2." ou caixinha com tema · fundo "Me manda MÉTODO no direct."
 - **3–5 hashtags** de nicho e bairro.

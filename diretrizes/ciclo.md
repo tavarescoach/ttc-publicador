@@ -12,6 +12,14 @@ Vale para toda sessão que mexa em pacote, feed, stories ou revisão. Estado da 
 - Foto de terceiros só com licença que permite uso comercial (Wikimedia Commons CC BY, CC BY-SA ou domínio público). Sem foto liberada, a arte sai tipográfica.
 - Dados de saúde: só afirmações defensáveis, baseadas em evidência, com fonte.
 
+## Decisões do Luan (02/11/2026, diretrizes/conteudo.md)
+- Pilares: 07h conexão (famoso brasileiro), 12h autoridade (carrossel com "o que eu faço" e foto do Luan), 20h desejo (foto pessoal ou meme).
+- Famosos: brasileiro primeiro (`pessoa_br` na curadoria). Foto: Commons primeiro; senão a foto da notícia como reprodução, com crédito (substitui "só licença comercial" de 24/10).
+- Capa sem rosto não agenda sozinha.
+- Meme (`formato` "meme") uma vez por ciclo, no lugar da foto pessoal do D3. Até 8 palavras na frase.
+- Foto sem camisa: só em contexto de vida (praia, viagem, natureza), no máximo uma por ciclo.
+- O robô do ciclo prepara também 4 fotos extras do acervo (`acervo` no ciclo) para o slide "o que eu faço" e o meme.
+
 ## 1. Escolha do tema
 - Quando: no último dia de cada ciclo, às 14h50 (depois da curadoria das 14h17). O post das 7h seguinte fica pronto com mais de 3 h de folga.
 - Onde: `ciclo/escolher.py`, num robô do GitHub. Conta fixa, sem IA.
@@ -47,13 +55,13 @@ Escolha, nesta ordem:
 | 10:00 | Story: time-lapse de treino + CTA MÉTODO | direct | auto |
 | 12:00 | Carrossel Decodificado (diretrizes/carrossel.md) | — | auto |
 | 12:30 | Story: capa do carrossel + "deslize no perfil" | carrossel | auto |
-| 20:00 | Dia 2: carrossel · dias 1 e 3: foto pessoal | — | auto |
+| 20:00 | Dia 2: carrossel · dia 1: foto pessoal · dia 3: meme (ou foto pessoal) | — | auto |
 
 Robô de publicação roda aos :07 e :37: o story das 6h sai às 6h07.
 
 Estático das 7h:
 - Notícia: radar das últimas 24 h; senão 72 h; senão 7 dias. A sessão confirma o fato numa segunda fonte.
-- Foto: só Wikimedia Commons com licença comercial. Sem foto, arte tipográfica.
+- Foto: Wikimedia Commons primeiro; senão a foto da notícia como reprodução, com crédito "Foto: Reprodução/..." (02/11/2026). Sem foto, não agenda sozinho.
 - Na arte: "Foto: autor / Wikimedia Commons (licença)" e "Fonte: veículo, data". Só o que a notícia afirma sobre a pessoa; nunca sugerir que ela usa ou recomenda o método.
 
 Foto pessoal: nenhuma repete até as 300 terem saído. Publicada sem edição (só redimensionada). A sessão do pacote abre a foto e escreve legenda curta ligada ao tema, MÉTODO só no fim.

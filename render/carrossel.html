@@ -66,7 +66,7 @@ if (S.tipo === "capa"){
   marca = !S.foto;
 } else if (S.tipo === "texto_foto"){
   h = `${topo}<div class="corpo" style="justify-content:${S.foto ? "flex-start" : "center"};gap:40px">
-      <h1 class="${S.foto ? "t-m" : tam(S.titulo)}">${fmt(S.titulo)}</h1>
+      ${S.rotulo ? `<div class="rot">${fmt(S.rotulo)}</div>` : ""}<h1 class="${S.foto ? "t-m" : tam(S.titulo)}">${fmt(S.titulo)}</h1>
       ${S.foto ? `<div class="foto" style="background-image:url('${S.foto}')"></div>` : ""}
       ${S.texto ? `<p>${fmt(S.texto)}</p>` : ""}${S.fonte ? `<div class="fonte">${fmt(S.fonte)}</div>` : ""}</div>${rod}`;
   marca = !S.foto && fundo !== "claro";
