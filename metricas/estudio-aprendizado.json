@@ -1,12 +1,25 @@
 {
  "pares": [
   {
+   "headline": "Você já viveu a magreza dos anos 90 uma vez.",
+   "formato": "carrossel",
+   "quando": "2026-11-02",
+   "alcance": 230,
+   "valor": 4,
+   "taxa": 1.7,
+   "parcial": true,
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
+  },
+  {
    "headline": "Você dobrou os quilômetros e o pace não saiu do lugar.",
    "formato": "carrossel",
    "quando": "2026-10-28",
-   "alcance": 186,
+   "alcance": 191,
    "valor": 4,
-   "taxa": 2.2,
+   "taxa": 2.1,
    "parcial": false,
    "notas": {
     "atualidade": 2,
@@ -38,7 +51,7 @@
    "headline": "Cintia Dicker parou a musculação na Europa.",
    "formato": "carrossel",
    "quando": "2026-10-25",
-   "alcance": 1223,
+   "alcance": 1225,
    "valor": 16,
    "taxa": 1.3,
    "parcial": false,
@@ -72,9 +85,9 @@
    "headline": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 213,
+   "alcance": 229,
    "valor": 3,
-   "taxa": 1.4,
+   "taxa": 1.3,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -85,7 +98,7 @@
    "headline": "O marido de Simone Mendes chegou a 350 de LDL.",
    "formato": "carrossel",
    "quando": "2026-10-27",
-   "alcance": 8335,
+   "alcance": 8341,
    "valor": 81,
    "taxa": 1.0,
    "parcial": false,
@@ -119,7 +132,7 @@
    "headline": "A Heineken já fez conta da sua caneta.",
    "formato": "carrossel",
    "quando": "2026-10-26",
-   "alcance": 235,
+   "alcance": 236,
    "valor": 4,
    "taxa": 1.7,
    "parcial": false,
@@ -153,22 +166,9 @@
    "headline": "Mudar o treino toda semana parece inteligente.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 115,
+   "alcance": 122,
    "valor": 2,
-   "taxa": 1.7,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
-  },
-  {
-   "headline": "Ela passa o dia sem comer.",
-   "formato": "carrossel",
-   "quando": "2026-10-23",
-   "alcance": 385,
-   "valor": 5,
-   "taxa": 1.3,
+   "taxa": 1.6,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -179,7 +179,7 @@
    "headline": "Seu treino de segunda começa no bar de sábado.",
    "formato": "carrossel",
    "quando": "2026-10-26",
-   "alcance": 208,
+   "alcance": 209,
    "valor": 9,
    "taxa": 4.3,
    "parcial": false,
@@ -213,9 +213,9 @@
    "headline": "Três sinais de que o seu treino veio do feed.",
    "formato": "carrossel",
    "quando": "2026-10-28",
-   "alcance": 270,
-   "valor": 6,
-   "taxa": 2.2,
+   "alcance": 278,
+   "valor": 7,
+   "taxa": 2.5,
    "parcial": false,
    "notas": {
     "atualidade": 1,
@@ -244,36 +244,36 @@
    ]
   },
   {
-   "headline": "Cinco minutos de pé a cada meia hora.",
+   "headline": "Treino de modelo não é treino para você.",
    "formato": "carrossel",
-   "quando": "2026-10-24",
-   "alcance": 312,
-   "valor": 3,
-   "taxa": 1.0,
-   "parcial": false,
+   "quando": "2026-11-02",
+   "alcance": 77,
+   "valor": 1,
+   "taxa": 1.3,
+   "parcial": true,
    "notas": {
-    "atualidade": 2,
-    "clareza": 8,
-    "curiosidade": 8,
+    "atualidade": 3,
+    "clareza": 9,
+    "curiosidade": 7,
     "historico": 6,
-    "marca": 8,
+    "marca": 9,
     "publico": 8,
-    "venda": 7
+    "venda": 8
    },
-   "total": 71,
-   "seguiu_recomendada": true,
+   "total": 74,
+   "seguiu_recomendada": false,
    "alternativas": [
     {
-     "titulo": "Pesquisadores sentaram 11 adultos por 8 horas.",
-     "total": 55
+     "titulo": "Copiar a rotina de quem treina para uma passarela não é disciplina.",
+     "total": 71
     },
     {
-     "titulo": "Levantar a cada hora não mexeu na glicose.",
-     "total": 57
+     "titulo": "Por que o treino que funciona para ela quebra a sua semana.",
+     "total": 74
     },
     {
-     "titulo": "O tamanho do bloco sentado pesa.",
-     "total": 60
+     "titulo": "Treino viral é treino de outra pessoa.",
+     "total": 72
     }
    ]
   },
@@ -281,22 +281,9 @@
    "headline": "Parte do seu treino acontece na cama",
    "formato": "reels",
    "quando": "2026-10-28",
-   "alcance": 292,
+   "alcance": 299,
    "valor": 50,
-   "taxa": 17.1,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
-  },
-  {
-   "headline": "Reels: capa e legenda",
-   "formato": "reels",
-   "quando": "2026-10-24",
-   "alcance": 3264,
-   "valor": 348,
-   "taxa": 10.7,
+   "taxa": 16.7,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -308,8 +295,8 @@
    "formato": "reels",
    "quando": "2026-10-25",
    "alcance": 1977,
-   "valor": 259,
-   "taxa": 13.1,
+   "valor": 260,
+   "taxa": 13.2,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -320,8 +307,8 @@
    "headline": "Reels: capa e legenda",
    "formato": "reels",
    "quando": "2026-10-28",
-   "alcance": 13547,
-   "valor": 1317,
+   "alcance": 13986,
+   "valor": 1360,
    "taxa": 9.7,
    "parcial": false,
    "notas": null,
@@ -333,9 +320,9 @@
    "headline": "Tico Santta Cruz, 49, compara a ressaca a uma dengue.",
    "formato": "carrossel",
    "quando": "2026-10-26",
-   "alcance": 1036,
+   "alcance": 1046,
    "valor": 38,
-   "taxa": 3.7,
+   "taxa": 3.6,
    "parcial": false,
    "notas": {
     "atualidade": 9,
@@ -364,31 +351,23 @@
    ]
   }
  ],
- "medidos": 15,
- "com_notas": 8,
+ "medidos": 12,
+ "com_notas": 7,
  "mediana_taxa_perfil": 4.3,
  "correlacao_taxa": {
-  "curiosidade": 0.5,
-  "clareza": 0.46,
-  "marca": 0.28,
-  "publico": 0.52,
+  "curiosidade": 0.61,
+  "clareza": 0.56,
+  "marca": 0.37,
+  "publico": 0.61,
   "venda": 0.51,
-  "historico": 0.07,
-  "atualidade": 0.37
+  "historico": 0.22,
+  "atualidade": 0.28
  },
- "pesos_sugeridos": {
-  "curiosidade": 21,
-  "clareza": 16,
-  "marca": 14,
-  "publico": 16,
-  "venda": 16,
-  "historico": 8,
-  "atualidade": 10
- },
+ "pesos_sugeridos": null,
  "recomendada": {
-  "seguiu": 4,
+  "seguiu": 3,
   "nao_seguiu": 4,
-  "taxa_seguiu": 2.3,
+  "taxa_seguiu": 2.7,
   "taxa_nao_seguiu": 2.1
  }
 }

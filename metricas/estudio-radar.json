@@ -1,37 +1,26 @@
 {
- "atualizado_em": "2026-11-02T14:58:39-03:00",
+ "atualizado_em": "2026-11-03T06:23:58-03:00",
  "em_alta": [
   {
-   "assunto": "ia-mercado",
-   "tema": "negocio",
+   "assunto": "maratona-nyc",
+   "tema": "esporte",
    "canais": 5,
-   "nota_max": 6,
+   "nota_max": 52,
    "titulos": [
-    "US tech stocks see sharp falls as AI spending nears $1tn",
-    "OpenAI slashes funding target by $10 billion amid tech rout, FT reports (Oct. 30)",
-    "HSBC to open Hong Kong AI Institute following Singapore launch"
+    "‘Runner’s calm’ steadies two first-time NYC marathoners without a home",
+    "Which Miles Are the Toughest at the NYC Marathon?",
+    "Influenciadora corre maratona e faz pausa pra amamentar a filha; vídeos"
    ]
   },
   {
-   "assunto": "ia-sociedade",
-   "tema": "negocio",
-   "canais": 4,
-   "nota_max": 18,
-   "titulos": [
-    "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
-    "These firms you've never heard of are feeding fears the AI bubble could burst",
-    "When You Should—and Shouldn’t—Use AI to Search the Web"
-   ]
-  },
-  {
-   "assunto": "politica-eua",
+   "assunto": "ia-mercado",
    "tema": "negocio",
    "canais": 4,
    "nota_max": 5,
    "titulos": [
-    "A record number of health professionals are running for office. Could they help heal US politics?",
-    "What AI chatbots are saying about the midterms",
-    "Unvetted foreign workers at AI firms raise national security alarms, advocates warn"
+    "Palantir forecasts strong quarterly revenue on AI demand",
+    "HSBC to open Hong Kong AI Institute following Singapore launch",
+    "Stop counting tokens, start counting what ships"
    ]
   },
   {
@@ -46,25 +35,62 @@
    ]
   },
   {
-   "assunto": "glp1-mercado-e-efeitos",
+   "assunto": "ia-saude",
+   "tema": "tecnologia",
+   "canais": 3,
+   "nota_max": 40,
+   "titulos": [
+    "OpenAI says its AI is getting better at doing things humans do, like shopping and meal planning",
+    "Microsoft AI beats doctors in simulated diagnosis test",
+    "Estudo da Afya investiga potencial de buscas médicas para gerar alertas epidemiológicos precoces"
+   ]
+  },
+  {
+   "assunto": "cancer-pesquisa",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 78,
+   "nota_max": 35,
    "titulos": [
-    "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados",
-    "Anvisa aprova cinco novas canetas para tratamento do diabetes e da obesidade",
-    "Anvisa Aprova 5 Novas Canetas para Tratamento de Diabetes e Obesidade"
+    "Aos 25, homem descobre câncer após culpar suplemento de ferro por sintomas",
+    "New cancer treatment approach could help immune cells fight tumors longer",
+    "Proteína pode indicar resistência de câncer de mama a tratamento"
+   ]
+  },
+  {
+   "assunto": "politica-eua",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 20,
+   "titulos": [
+    "Trump Praises Iowa Candidate’s Weight Loss at Rally: ‘She Was a Little Bit Heavier’",
+    "Trump Administration to Slash Workplace Protections for Pregnant Employees: Report",
+    "A record number of health professionals are running for office. Could they help heal US politics?"
+   ]
+  },
+  {
+   "assunto": "sarampo",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 20,
+   "titulos": [
+    "New York child dies from measles in state’s first fatal case in 30 years",
+    "Child Dies From Measles in New York State’s First Fatal Case in 30 Years",
+    "Measles made a stealthy return as another virus took the spotlight"
+   ]
+  },
+  {
+   "assunto": "seguranca-digital",
+   "tema": "tecnologia",
+   "canais": 3,
+   "nota_max": 10,
+   "titulos": [
+    "Identity thieves don’t need your password anymore; here are 6 new account takeover threats",
+    "A Startup Que Ajuda a Manter os Segredos da Empresa Longe dos Agentes de IA",
+    "AI-powered malware ‘highly likely’ to be used to hack UK infrastructure by 2028"
    ]
   }
  ],
  "top": [
-  {
-   "titulo": "Adriane Galisteu sobre descoberta da menopausa: 'Não estava me reconhecendo'",
-   "canal": "Globo",
-   "assunto": "menopausa-sintomas",
-   "nota": 85,
-   "gancho": "Adriane Galisteu não se reconhecia mais. Era a menopausa chegando."
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -85,6 +111,13 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
+  },
+  {
+   "titulo": "Virginia revela qual exercício repete “todo dia” para ter bumbum definido",
+   "canal": "Metrópoles",
+   "assunto": "famosas-treino-gluteo",
+   "nota": 80,
+   "gancho": "Virginia faz o mesmo exercício todo dia pelo bumbum. Funciona?"
   },
   {
    "titulo": "O teste simples de fitness que prevê o seu risco de morte",
@@ -122,11 +155,11 @@
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   },
   {
-   "titulo": "Canetas emagrecedoras acendem alerta para perda de massa muscular; nutricionista explica cuidados",
+   "titulo": "Anvisa aprova cinco novas canetas para tratamento do diabetes e da obesidade",
    "canal": "Estadão Saúde",
    "assunto": "glp1-mercado-e-efeitos",
-   "nota": 78,
-   "gancho": "A balança desce com a caneta. O músculo desce junto."
+   "nota": 76,
+   "gancho": "A caneta ficou mais fácil de comprar. O músculo, não."
   }
  ]
 }
