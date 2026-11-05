@@ -1,15 +1,18 @@
 {
  "id": "k-2026-11-07-carrossel",
  "data": "2026-11-07",
- "fotos": [],
- "decisao": "precisa",
- "problemas": [
-  "A foto do slide 1 não baixou."
+ "fotos": [
+  {
+   "slide": 1,
+   "hash": "c8e2963cb49b9872"
+  }
  ],
+ "decisao": "agendado",
+ "problemas": [],
  "atencao": [],
  "avisos": [
   "Sem foto do Luan do acervo (slide \"o que eu faço\")."
  ],
  "quando": "2026-11-07T15:00:00+00:00",
- "revisado_em": "2026-11-05T16:11-03:00"
+ "revisado_em": "2026-11-05T16:22-03:00"
 }
