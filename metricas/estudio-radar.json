@@ -1,6 +1,17 @@
 {
- "atualizado_em": "2026-11-05T06:40:00-03:00",
+ "atualizado_em": "2026-11-05T14:30:00-03:00",
  "em_alta": [
+  {
+   "assunto": "wegovy-comprimido-anvisa",
+   "tema": "negocio",
+   "canais": 7,
+   "nota_max": 78,
+   "titulos": [
+    "Anvisa aprova Wegovy em comprimido, a primeira pílula de semaglutida para tratar obesidade no Brasil",
+    "Ready State: no GLP-1 a fome some, mas proteína e fruta continuam valendo",
+    "Anvisa aprova primeira versão em comprimidos da caneta emagrecedora Wegovy"
+   ]
+  },
   {
    "assunto": "maratona-nyc-rabdomiolise",
    "tema": "saude",
@@ -13,58 +24,25 @@
    ]
   },
   {
-   "assunto": "wegovy-comprimido-anvisa",
-   "tema": "negocio",
-   "canais": 6,
-   "nota_max": 78,
-   "titulos": [
-    "Anvisa aprova Wegovy em comprimido, a primeira pílula de semaglutida para tratar obesidade no Brasil",
-    "Anvisa aprova primeira versão em comprimidos da caneta emagrecedora Wegovy",
-    "Anvisa aprova Wegovy em comprimido: o que falta para versão oral da caneta emagrecedora chegar às farmácias do Brasil?"
-   ]
-  },
-  {
    "assunto": "eleicoes-eua",
    "tema": "negocio",
-   "canais": 4,
-   "nota_max": 3,
+   "canais": 6,
+   "nota_max": 5,
    "titulos": [
+    "Video: Democratic Health Professionals Win Seats in Congress",
     "Michigan voter says healthcare is a top issue for her",
-    "Elon Musk Sofre Derrota Política nos EUA e Enfrenta Pressão sobre Negócios no Texas",
-    "Trump’s billionaire-blue collar coalition has been smashed by class politics | Aditya Chakrabortty"
+    "Elon Musk Sofre Derrota Política nos EUA e Enfrenta Pressão sobre Negócios no Texas"
    ]
   },
   {
-   "assunto": "mercado-fitness",
+   "assunto": "ia-mercado",
    "tema": "negocio",
    "canais": 3,
-   "nota_max": 64,
+   "nota_max": 3,
    "titulos": [
-    "Perfil @nettodudu",
-    "Agência de Comunicação - UFit investe R$ 8 mi e soma 24 academias",
-    "Leandro Twin anuncia Black Friday da consultoria com 'comente QUERO'"
-   ]
-  },
-  {
-   "assunto": "formula-1",
-   "tema": "esporte",
-   "canais": 3,
-   "nota_max": 30,
-   "titulos": [
-    "GP de São Paulo Terá Dois Pilotos Brasileiros na Fórmula 1 Após Uma Década",
-    "Verstappen e Lawson são punidos pela FIA após incidente em treino no GP do México",
-    "Piloto da F1, Pierre Gasly participa de evento de moda em SP ao lado de Guga e Cafu"
-   ]
-  },
-  {
-   "assunto": "cancer-pesquisa",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 25,
-   "titulos": [
-    "New cancer treatment approach could help immune cells fight tumors longer",
-    "Doctors in England launch primary-care trial of blood tests for spotting cancer early",
-    "Scientists discover that some “unhealthy” diets can boost cancer immunotherapy in mice"
+    "The Download: controlling AI agents and “Super Intelligence” loyalty tests",
+    "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+    "Shares in Musk's SpaceX plunge as tech and AI stocks fall"
    ]
   }
  ],
