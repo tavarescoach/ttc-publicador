@@ -36,6 +36,13 @@ p strong{font-weight:700;opacity:1}
 .capa .sub{font-size:38px;line-height:1.3;margin-top:22px;font-weight:500}
 .capa .corpo .fonte{margin-top:18px}
 .capa .cred{font-size:20px;color:var(--mut);letter-spacing:.3px}
+/* capa "recorte": foto no alto em bloco, título em fundo sólido embaixo (carrossel, para não repetir o visual do estático) */
+.capa.recorte{padding:0}
+.capa.recorte .topo{position:absolute;top:78px;left:96px;right:96px}
+.capa.recorte .bloco{height:830px;background:center/cover no-repeat;filter:contrast(1.05)}
+.capa.recorte .baixo{flex:1;display:flex;flex-direction:column;padding:44px 96px 72px}
+.capa.recorte .corpo{justify-content:flex-start;padding:0;gap:22px}
+.capa.recorte h1{font-size:92px}
 /* número gigante */
 .num{font-weight:900;letter-spacing:-.06em;line-height:.85;font-size:300px;color:var(--txt)}
 .s.claro .num{color:var(--escuro)}
@@ -57,7 +64,14 @@ const len = t => (t || "").replace(/\*\*/g, "").length;
 const tam = t => len(t) > 90 ? "t-m" : len(t) > 55 ? "t-l" : "t-xl";
 let h = "", fundo = S.fundo || "marinho", marca = false;
 
-if (S.tipo === "capa"){
+if (S.tipo === "capa" && S.layout === "recorte" && S.foto){
+  const pag = N > 1 ? `<span>${I}/${N}</span>` : `<span>@tavarescoach</span>`;
+  const rodCapa = S.credito ? `<div class="rod"><span class="cred">${esc(S.credito)}</span>${pag}</div>` : rod;
+  h = `<div class="bloco" style="background-image:url('${S.foto}');background-position:${esc(S.foco || "center 25%")}"></div>${topo}
+    <div class="baixo"><div class="corpo"><h1>${fmt(S.titulo)}</h1>${S.subtitulo ? `<p class="sub">${fmt(S.subtitulo)}</p>` : ""}</div>${rodCapa}</div>`;
+  fundo = S.fundo || "preto";
+  S.tipo = "capa recorte";
+} else if (S.tipo === "capa"){
   // estático (N === 1): sem numeração; "subtitulo" chama para o carrossel e "fonte" traz o veículo e a data da notícia
   const pag = N > 1 ? `<span>${I}/${N}</span>` : `<span>@tavarescoach</span>`;
   const rodCapa = S.credito ? `<div class="rod"><span class="cred">${esc(S.credito)}</span>${pag}</div>` : rod;

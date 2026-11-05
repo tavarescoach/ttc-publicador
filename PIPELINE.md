@@ -223,7 +223,9 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      método; notícia negativa em tom informativo; menor de idade nunca. Sem MÉTODO na arte (vai na legenda).
    - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): aprofunda o gancho do estático daquele dia, padrão
      Decodificado v2 de `diretrizes/carrossel.md` (arco conexão → ciência → o que eu faço → desejo → MÉTODO). A capa
-     pode usar a mesma foto, com o mesmo crédito e licença. Slide 8 "O QUE EU FAÇO COM MEUS ALUNOS": `texto_foto` com
+     NUNCA usa a mesma foto do estático (05/11/2026): use outra foto da pessoa (outra matéria, outro evento) ou uma
+     foto do Luan do `acervo`, com `"layout": "recorte"` na capa (foto em bloco no alto, título em fundo sólido) para o
+     visual não repetir o do estático; ajuste `foco` para o rosto ficar no bloco. Slide 8 "O QUE EU FAÇO COM MEUS ALUNOS": `texto_foto` com
      uma foto do `acervo` do ciclo (abra as `previa` com Read, escolha a que combina e use
      `https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/<arquivo>`). Nunca a mesma foto do
      acervo em dois posts do ciclo.
@@ -241,6 +243,9 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    - Escreva `render/fontes/<id>.json` para estáticos e carrosséis (diretrizes/carrossel.md, seção Fontes).
    - Stories: nada a fazer; o robô "Preparar stories" monta os do dia seguinte sozinho.
 4. Rode `python render/revisar.py render/pedidos/<id>.json` em cada pedido e corrija todo "problema".
+   A revisão barra foto já usada em outro post do feed nos últimos 21 dias (mesmo link; no render, também a mesma
+   imagem vinda de outro link). Cada foto aparece em um post só: estático, carrossel, foto pessoal e meme do ciclo
+   com fotos diferentes entre si e das peças já publicadas. Foto pessoal de ciclo anterior não volta em slide.
 4a. Etiquete em `acervo/tags.json` (chave = `drive_id`) cada foto de `fotos` e `acervo` que você abriu: expressao,
     contexto, sem_camisa, aluno, evitar (true para foto fora de contexto ou pose de exibição; o robô não escolhe mais),
     nota. Não marque `autorizado`: só o Luan registra autorização de aluno.

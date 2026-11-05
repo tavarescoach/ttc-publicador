@@ -54,7 +54,8 @@ Arco do carrossel: famoso (conexão) → o que a ciência diz → o que eu faço
 9. **Kit de modelos:** capa com foto, texto, número, "o que eu faço", CTA e meme (`render/carrossel.html`, `render/meme.html`). Mudança de modelo passa pelo Luan.
 10. **Foto de famoso:** primeiro Wikimedia Commons (licença livre); senão a foto da própria notícia como **reprodução**, com crédito na arte ("Foto: Reprodução/veículo ou @perfil") e `pagina_origem`. Decisão do Luan em 02/11, substitui a exigência de licença comercial de 24/10. Menor de idade nunca.
 11. **Sem camisa:** liberado em contexto de vida (praia, viagem, natureza), no pilar Desejo, no máximo uma vez por ciclo. Fora: pose de exibição em academia ou espelho e enquadramento sensual.
-12. **Etiquetas do acervo** em `acervo/tags.json` (quem gera o pacote etiqueta cada foto que abre), para escolher a foto certa.
+12. **Uma foto, um post (05/11/2026):** a mesma foto não aparece em dois posts do feed em 21 dias, nem por outro link. Estático e carrossel do mesmo dia têm fotos diferentes; a capa do carrossel usa o layout `recorte` para não repetir o visual do estático. A revisão barra.
+13. **Etiquetas do acervo** em `acervo/tags.json` (quem gera o pacote etiqueta cada foto que abre), para escolher a foto certa.
 
 ## 5. Meme (formato `meme`)
 - Tarja branca no topo com frase de situação de treino; foto do Luan do acervo embaixo; logo LT e @tavarescoach no rodapé.

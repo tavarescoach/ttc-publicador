@@ -32,6 +32,15 @@ KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 UA = {"User-Agent": "Mozilla/5.0 (ttc-publicador render)"}
 
 
+def dhash(caminho):
+    """Impressão da imagem (64 bits, hex) para achar a mesma foto vinda de outro link."""
+    from PIL import Image
+    im = Image.open(caminho).convert("L").resize((9, 8))
+    px = list(im.getdata())
+    bits = "".join("1" if px[r * 9 + c] > px[r * 9 + c + 1] else "0" for r in range(8) for c in range(8))
+    return f"{int(bits, 2):016x}"
+
+
 def baixar_foto(url, destino):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=60) as r, open(destino, "wb") as f:
@@ -154,6 +163,15 @@ def main():
                 s["foto"] = None
                 fotos_falharam.append(i)
 
+    hashes = {}
+    for i, s in enumerate(slides, 1):  # impressão de cada foto (revisão de foto repetida)
+        f = s.get("foto") or ""
+        if f.startswith("file://"):
+            try:
+                hashes[i] = dhash(f[7:])
+            except Exception as e:
+                print(f"[aviso] sem impressão da foto do slide {i}: {e}")
+
     arquivos = []
     modelo = "file://" + os.path.join(AQUI, "capa-reels.html" if reels else "meme.html" if meme else "carrossel.html")
     with sync_playwright() as pw:
@@ -202,7 +220,7 @@ def main():
     aprovado = atual.get("etapa") == "agendado" or na_fila is not None
     quando_valido = atual.get("quando") if atual.get("etapa") == "agendado" else (na_fila or {}).get("quando")
     p_rev = dict(p, quando=quando_valido or p.get("quando")) if aprovado else p
-    rev = revisar(p_rev, cortes=cortes, fotos_falharam=fotos_falharam)
+    rev = revisar(p_rev, cortes=cortes, fotos_falharam=fotos_falharam, hashes=hashes)
     if aprovado and not rev["problemas"] and rev["decisao"] != "agendado":
         rev["decisao"] = "agendado"
         rev["avisos"].append("Já aprovado no painel; a nova versão manteve a aprovação.")

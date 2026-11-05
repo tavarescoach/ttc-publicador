@@ -31,7 +31,7 @@ com os alunos, com foto dele do acervo (autoridade) → o resultado possível (d
 - marinho / preto / claro. Nunca o mesmo fundo em 3 slides seguidos. Claro no máximo 2 vezes.
 
 ## Tipos de slide (campos do JSON)
-- capa: titulo, foto
+- capa: titulo, foto, layout (opcional: "recorte" = foto em bloco no alto e título em fundo sólido; padrão = foto em tela cheia). Nunca a mesma foto do estático do dia nem de outro post dos últimos 21 dias.
 - texto_foto: rotulo (opcional), titulo, texto, foto (opcional; sem foto o texto centraliza), fonte (opcional)
 - numero: rotulo, numero, unidade (opcional, ex.: "semanas"), titulo, texto, fonte
 - insight: rotulo, titulo, texto (pode abrir com **frase em destaque**)

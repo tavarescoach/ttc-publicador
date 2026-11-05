@@ -10,7 +10,9 @@ ou se vai para "Precisa de você", com os motivos.
 Usado por render/render.py. Também roda sozinho: python render/revisar.py render/pedidos/<id>.json
 """
 import datetime as dt
+import glob
 import json
+import os
 import re
 import sys
 
@@ -37,6 +39,11 @@ LICENCAS_OK = {"cc-by", "cc-by-sa", "dominio-publico", "cc0"}
 LICENCAS_EDITORIAIS = {"reproducao", "divulgacao"}
 MIDIA = "supabase.co/storage/v1/object/public/midia/"  # fotos do acervo do Luan (bucket)
 MAX_PALAVRAS_MEME = 8
+# Foto repetida (05/11/2026: estático e carrossel do mesmo dia saíram com a mesma foto do Bruninho).
+# A mesma foto não entra em dois posts do feed dentro desta janela, nem por outro link (comparação por imagem).
+JANELA_FOTO_DIAS = 21
+HASH_PARECIDA = 10  # bits diferentes no dHash de 64 bits; até isso, é a mesma foto
+AQUI = os.path.dirname(os.path.abspath(__file__))
 
 # Vícios de texto de IA (skill copy-social-ttc, seção 4). Barram o agendamento automático.
 VICIOS_IA = [
@@ -65,7 +72,85 @@ def textos_slides(p):
     return out
 
 
-def revisar(p, cortes=None, fotos_falharam=None, agora=None):
+def _norm_foto(u):
+    u = re.sub(r"[?#].*$", "", str(u or "")).replace("http://", "https://")
+    if "/object/public/" in u:  # bucket: midia/<data>/<arquivo>, igual ao "arquivo" das fotos pessoais
+        u = u.split("/object/public/", 1)[1]
+    return u
+
+
+def fotos_do_pedido(p):
+    """[(slide, foto normalizada)] de um pedido: slides, meme e foto pessoal."""
+    out = []
+    if p.get("foto"):
+        out.append((1, _norm_foto(p.get("foto"))))
+    if p.get("arquivo"):
+        out.append((1, "midia/" + p["arquivo"]))
+    for i, sl in enumerate(p.get("slides") or [], 1):
+        u = sl.get("foto_url") or sl.get("foto")
+        if u and not str(u).startswith("file://"):
+            out.append((i, _norm_foto(u)))
+    return [(i, u) for i, u in out if u]
+
+
+def _dist(a, b):
+    try:
+        return bin(int(a, 16) ^ int(b, 16)).count("1")
+    except (TypeError, ValueError):
+        return 99
+
+
+def _data(x):
+    try:
+        return dt.date.fromisoformat(str(x)[:10])
+    except ValueError:
+        return None
+
+
+def fotos_repetidas(p, hashes=None, raiz=None, janela=JANELA_FOTO_DIAS):
+    """Problemas de foto já usada em outro post do feed (mesmo link ou mesma imagem) dentro da janela."""
+    raiz = raiz or os.path.dirname(AQUI)
+    meu_id, minha = p.get("id"), _data(p.get("data") or p.get("quando"))
+    if not minha:
+        return []
+    meu_q = str(p.get("quando") or minha)
+    perto = lambda d: d and abs((d - minha).days) <= janela
+    # quem sai primeiro fica com a foto: só conta post que sai antes deste (ou no mesmo horário, com id menor)
+    antes = lambda o: (str(o.get("quando") or o.get("data") or ""), str(o.get("id"))) < (meu_q, str(meu_id))
+    usados = {}  # foto normalizada -> id
+    for arq in glob.glob(os.path.join(raiz, "render", "pedidos", "*.json")):
+        try:
+            o = json.load(open(arq, encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if o.get("id") == meu_id or str(o.get("id", "")).startswith(("teste", "e-teste")):
+            continue
+        if perto(_data(o.get("data") or o.get("quando"))) and antes(o):
+            for _, u in fotos_do_pedido(o):
+                usados.setdefault(u, o.get("id"))
+    out, vistos = [], set()
+    for i, u in fotos_do_pedido(p):
+        if u in usados and u not in vistos:
+            vistos.add(u)
+            out.append(f"Slide {i}: foto já usada em {usados[u]}. Troque por outra foto da pessoa ou do acervo.")
+    if hashes:
+        for arq in glob.glob(os.path.join(raiz, "render", "revisoes", "*.json")):
+            try:
+                r = json.load(open(arq, encoding="utf-8"))
+            except (OSError, ValueError):
+                continue
+            if (r.get("id") == meu_id or not perto(_data(r.get("data"))) or not antes(r)
+                    or str(r.get("id", "")).startswith(("teste", "e-teste"))):
+                continue
+            for f in r.get("fotos") or []:
+                for i, h in hashes.items():
+                    if _dist(h, f.get("hash")) <= HASH_PARECIDA and i not in vistos:
+                        vistos.add(i)
+                        out.append(f"Slide {i}: a mesma imagem já saiu em {r['id']}. Troque por outra foto.")
+    return out
+
+
+def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
     agora = agora or dt.datetime.now(BRT)
     reels = p.get("formato") == "reels"
     slides = p.get("slides", [])
@@ -194,9 +279,14 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None):
         problemas += revisar_saude(tudo, tem_fonte)
         avisos.append("Tema de saúde (" + ", ".join(achados[:4]) + "): passou pela revisão de saúde.")
 
+    # foto repetida em outro post do feed (vale para todos os formatos)
+    problemas += fotos_repetidas(p, hashes=hashes)
+
     ok = not problemas and not atencao
     return {
         "id": p.get("id"),
+        "data": p.get("data") or str(p.get("quando") or "")[:10],
+        "fotos": [{"slide": i, "hash": h} for i, h in sorted((hashes or {}).items())],
         "decisao": "agendado" if ok else "precisa",
         "problemas": problemas,
         "atencao": atencao,
