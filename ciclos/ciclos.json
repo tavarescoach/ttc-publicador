@@ -335,5 +335,120 @@
    "k-2026-11-05-carrossel",
    "k-2026-11-05-meme"
   ]
+ },
+ {
+  "id": "c-2026-11-06",
+  "inicio": "2026-11-06",
+  "fim": "2026-11-08",
+  "tema": "Estilo de vida",
+  "sigla": "EST",
+  "pontuacao": {
+   "FOR": 5.097,
+   "EST": 3.956,
+   "GLP": 3.762,
+   "LON": 3.328,
+   "EMA": 2.548,
+   "ESP": 1.8,
+   "MEN": 0.486,
+   "WEA": 0.385
+  },
+  "excluidos": [
+   "LON",
+   "FOR"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "ac1dc3f663853140",
+   "c4c601a90651ae40",
+   "f358ab5b55cc086d",
+   "b378078f4e2b71b3",
+   "f9a127a2f8a748d5",
+   "32694909ac214e30",
+   "cd6e187db0c998d7"
+  ],
+  "famosos": [
+   {
+    "nome": "Tiago Scheuer",
+    "noticia_id": "f9a127a2f8a748d5",
+    "titulo": "Apresentador do 'Hora 1' revela seu ritual de sono: 'Vivendo no perigo'",
+    "link": "https://revistaquem.globo.com/noticias/noticia/2026/11/apresentador-do-hora-1-revela-seu-ritual-de-sono-vivendo-no-perigo.ghtml",
+    "canal": "Globo",
+    "data": "2026-11-05T08:57:59+00:00",
+    "nota": 74,
+    "pessoa_br": true,
+    "imagem": "https://s2-quem.glbimg.com/f5rTLrPL6EDIbtPUXoPyaq5XD1o=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/Y/E/0ojeJSQcC2zluq8WCAow/whatsapp-image-2026-11-05-at-05.51.50.jpeg"
+   },
+   {
+    "nome": "Lázaro Ramos",
+    "noticia_id": "c410ade7b09875c0",
+    "titulo": "Lázaro Ramos: 'Tenho uma vida que superou as minhas primeiras expectativas'",
+    "link": "https://revistaquem.globo.com/capas/noticia/2026/11/lazaro-ramos-tenho-uma-vida-que-superou-as-minhas-primeiras-expectativas.ghtml",
+    "canal": "Globo",
+    "data": "2026-11-05T11:59:59+00:00",
+    "nota": 35,
+    "pessoa_br": true,
+    "imagem": "https://s2-quem.glbimg.com/X-a9F4-Vbu2GLhamEnjdpGpc4q4=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/A/Z/SPkSqlTlOwJGcN8BVcQw/thumb-capa-lazaro.png"
+   },
+   {
+    "nome": "Daniella Cicarelli",
+    "noticia_id": "c631315e512ac271",
+    "titulo": "Daniella Cicarelli curte praia na Bahia: 'Energia especial'",
+    "link": "https://revistaquem.globo.com/noticias/famosos-na-praia/noticia/2026/11/daniella-cicarelli-curte-praia-na-bahia-energia-especial.ghtml",
+    "canal": "Globo",
+    "data": "2026-11-05T15:11:27+00:00",
+    "nota": 30,
+    "pessoa_br": true,
+    "imagem": "https://s2-quem.glbimg.com/cKB2BRC_VOMgZ-pTMkAAfqQk4Go=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/l/R/BCyIs5RKA5em0614W8jw/cicarelli.jpg"
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-06",
+    "quando": "2026-11-06T20:00:00-03:00",
+    "arquivo": "2026-11-06/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-06.jpg",
+    "drive_id": "1eZDxfpiK99sTB_izDz-0mtLg3F3P3UbO",
+    "nome": "IMG_7639.JPEG"
+   },
+   {
+    "dia": "2026-11-08",
+    "quando": "2026-11-08T20:00:00-03:00",
+    "arquivo": "2026-11-08/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-08.jpg",
+    "drive_id": "1s2o7S3rGpOTGxKLnfi0io2Ury-lHYAUb",
+    "nome": "IMG_4594.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-06/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-06-acervo-1.jpg",
+    "drive_id": "1Jk72Z-5ZyFGA2emyaNyo1AYn1yeRvFgT",
+    "nome": "IMG_3983.JPEG"
+   },
+   {
+    "arquivo": "2026-11-06/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-06-acervo-2.jpg",
+    "drive_id": "1usAyktO7tz18n7zMrhcDYFYJdrLdu9Cw",
+    "nome": "IMG_4816.JPEG"
+   },
+   {
+    "arquivo": "2026-11-06/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-06-acervo-3.jpg",
+    "drive_id": "1rFmzHvFT6pBgJZ3QlL98tUiUXqJPI5sb",
+    "nome": "IMG_2791.JPEG"
+   },
+   {
+    "arquivo": "2026-11-06/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-06-acervo-4.jpg",
+    "drive_id": "13BdV9WYDW3ucraJsu-evOUEYJrVz2VdI",
+    "nome": "IMG_9230.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-05T15:08-03:00",
+  "status": "escolhido"
  }
 ]
