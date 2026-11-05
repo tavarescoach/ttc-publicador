@@ -1,0 +1,89 @@
+{
+ "id": "k-2026-11-07-carrossel-noite",
+ "data": "2026-11-07",
+ "quando": "2026-11-07T20:00:00-03:00",
+ "tema": "Estilo de vida",
+ "funil": "fundo",
+ "pauta": "Guia: quantos passos por dia e como encaixar na semana",
+ "legenda": "Eu peço a média de passos do celular antes de montar qualquer treino.\n\nUma meta-análise com 47.471 adultos de 15 estudos comparou quem andava pouco com quem andava mais. O grupo de 5.800 passos por dia já teve 40% menos risco de morte que o de 3.500, e o de 10.900 teve 53% menos. Antes dos 60 anos, o benefício estabilizou entre 8 e 10 mil passos; depois dos 60, entre 6 e 8 mil. São estudos observacionais.\n\nO maior ganho veio de quem saiu do quase parado. Dez minutos depois das refeições já mexem nessa conta.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #caminhada #estilodevida #copacabana #leblon",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Quantos passos por dia o estudo de **47 mil pessoas** aponta",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-08/foto-pessoal.jpg"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "A cena",
+   "titulo": "Carro, elevador, mesa e **sofá**.",
+   "texto": "Num dia de escritório, os passos somem sem ninguém perceber. O celular conta cada um deles, e quase ninguém abre o número no fim do dia."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O estudo",
+   "numero": "47.471",
+   "titulo": "adultos de 15 estudos tiveram **os passos contados**.",
+   "texto": "A meta-análise juntou coortes de vários países e acompanhou o grupo por uma mediana de 7 anos, comparando faixas de passos por dia com o risco de morte.",
+   "fonte": "Paluch et al., Lancet Public Health (2022)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "preto",
+   "rotulo": "O risco",
+   "numero": "53",
+   "unidade": "%",
+   "titulo": "menos risco de morte no grupo que **mais andava**.",
+   "texto": "Quem dava em média 10.900 passos por dia foi comparado com quem dava 3.500. Os grupos de 5.800 e 7.800 passos também tiveram menos risco.",
+   "fonte": "Paluch et al., Lancet Public Health (2022)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O platô",
+   "numero": "10",
+   "unidade": "mil",
+   "titulo": "passos por dia: onde o benefício **estabilizou** antes dos 60.",
+   "texto": "Para quem tem menos de 60 anos, o risco parou de cair entre 8 e 10 mil passos. Depois dos 60, o platô veio antes, entre 6 e 8 mil.",
+   "fonte": "Paluch et al., Lancet Public Health (2022)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Na prática",
+   "titulo": "Os passos cabem em **pedaços do dia**.",
+   "texto": "Dez minutos andando depois de cada refeição, a reunião por telefone feita em pé e caminhando, a escada no lugar do elevador. Somados, viram alguns milhares de passos."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "O maior ganho vem de **sair do quase parado**.",
+   "texto": "**De 3.500 para 5.800 passos por dia, o risco já caiu 40%.** A primeira meta de quem anda pouco é andar um pouco mais, todo dia."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com meus alunos",
+   "titulo": "Eu olho **os seus passos** antes do treino.",
+   "texto": "Na avaliação, peço a média de passos da última semana no relógio ou no celular. Se está baixa, a primeira meta é andar mais, junto com dois treinos de força por semana."
+  },
+  {
+   "tipo": "licao",
+   "fundo": "marinho",
+   "rotulo": "O que muda em você",
+   "titulo": "Perna pronta **no fim do dia**.",
+   "texto": "Você chega em casa com as costas menos travadas da cadeira e com disposição para o treino da manhã seguinte.",
+   "nota": "Na Avaliação Estratégica, em 40 minutos no TTC, você sai com o seu ponto de partida e o plano das próximas semanas."
+  },
+  {
+   "tipo": "cta",
+   "fundo": "preto",
+   "titulo": "Seus passos **entram no plano**.",
+   "texto": "Personal no TTC, em Copacabana, com planos de 2x e 3x por semana, das 7h às 10h.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}
