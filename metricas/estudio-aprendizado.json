@@ -4,10 +4,10 @@
    "headline": "Você já viveu a magreza dos anos 90 uma vez.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 230,
+   "alcance": 270,
    "valor": 4,
-   "taxa": 1.7,
-   "parcial": true,
+   "taxa": 1.5,
+   "parcial": false,
    "notas": null,
    "total": null,
    "seguiu_recomendada": null,
@@ -17,9 +17,9 @@
    "headline": "Você dobrou os quilômetros e o pace não saiu do lugar.",
    "formato": "carrossel",
    "quando": "2026-10-28",
-   "alcance": 191,
-   "valor": 4,
-   "taxa": 2.1,
+   "alcance": 195,
+   "valor": 7,
+   "taxa": 3.6,
    "parcial": false,
    "notas": {
     "atualidade": 2,
@@ -48,127 +48,25 @@
    ]
   },
   {
-   "headline": "Cintia Dicker parou a musculação na Europa.",
-   "formato": "carrossel",
-   "quando": "2026-10-25",
-   "alcance": 1225,
-   "valor": 16,
-   "taxa": 1.3,
-   "parcial": false,
-   "notas": {
-    "atualidade": 2,
-    "clareza": 7,
-    "curiosidade": 8,
-    "historico": 4,
-    "marca": 8,
-    "publico": 7,
-    "venda": 7
-   },
-   "total": 66,
-   "seguiu_recomendada": false,
-   "alternativas": [
-    {
-     "titulo": "Uma sessão por semana segurou o músculo por 32 semanas.",
-     "total": 56
-    },
-    {
-     "titulo": "A musa do Salgueiro perdeu músculo na Europa.",
-     "total": 47
-    },
-    {
-     "titulo": "Parar a musculação cobra primeiro na definição.",
-     "total": 72
-    }
-   ]
-  },
-  {
    "headline": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 229,
+   "alcance": 248,
    "valor": 3,
-   "taxa": 1.3,
+   "taxa": 1.2,
    "parcial": false,
    "notas": null,
    "total": null,
    "seguiu_recomendada": null,
    "alternativas": []
-  },
-  {
-   "headline": "O marido de Simone Mendes chegou a 350 de LDL.",
-   "formato": "carrossel",
-   "quando": "2026-10-27",
-   "alcance": 8341,
-   "valor": 81,
-   "taxa": 1.0,
-   "parcial": false,
-   "notas": {
-    "atualidade": 2,
-    "clareza": 6,
-    "curiosidade": 7,
-    "historico": 3,
-    "marca": 4,
-    "publico": 6,
-    "venda": 5
-   },
-   "total": 51,
-   "seguiu_recomendada": false,
-   "alternativas": [
-    {
-     "titulo": "Kaká Diniz, 41, viu o LDL chegar a 350.",
-     "total": 61
-    },
-    {
-     "titulo": "Treino baixa o LDL em 7 pontos, em média.",
-     "total": 65
-    },
-    {
-     "titulo": "350 de LDL aos 41 anos.",
-     "total": 67
-    }
-   ]
-  },
-  {
-   "headline": "A Heineken já fez conta da sua caneta.",
-   "formato": "carrossel",
-   "quando": "2026-10-26",
-   "alcance": 236,
-   "valor": 4,
-   "taxa": 1.7,
-   "parcial": false,
-   "notas": {
-    "atualidade": 9,
-    "clareza": 9,
-    "curiosidade": 8,
-    "historico": 5,
-    "marca": 8,
-    "publico": 8,
-    "venda": 8
-   },
-   "total": 80,
-   "seguiu_recomendada": true,
-   "alternativas": [
-    {
-     "titulo": "A Heineken já faz conta da sua caneta.",
-     "total": 80
-    },
-    {
-     "titulo": "A caneta chegou ao balcão do bar.",
-     "total": 65
-    },
-    {
-     "titulo": "O remédio do apetite também mexe na cerveja.",
-     "total": 60
-    }
-   ]
   },
   {
    "headline": "Mudar o treino toda semana parece inteligente.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 122,
+   "alcance": 130,
    "valor": 2,
-   "taxa": 1.6,
+   "taxa": 1.5,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -176,46 +74,12 @@
    "alternativas": []
   },
   {
-   "headline": "Seu treino de segunda começa no bar de sábado.",
-   "formato": "carrossel",
-   "quando": "2026-10-26",
-   "alcance": 209,
-   "valor": 9,
-   "taxa": 4.3,
-   "parcial": false,
-   "notas": {
-    "atualidade": 6,
-    "clareza": 9,
-    "curiosidade": 8,
-    "historico": 8,
-    "marca": 9,
-    "publico": 9,
-    "venda": 9
-   },
-   "total": 84,
-   "seguiu_recomendada": true,
-   "alternativas": [
-    {
-     "titulo": "A cerveja de sábado chega no treino de segunda.",
-     "total": 73
-    },
-    {
-     "titulo": "A Heineken mudou a dose para o cliente de caneta.",
-     "total": 63
-    },
-    {
-     "titulo": "Quatro mil pessoas dormiram com um medidor no peito.",
-     "total": 69
-    }
-   ]
-  },
-  {
    "headline": "Três sinais de que o seu treino veio do feed.",
    "formato": "carrossel",
    "quando": "2026-10-28",
-   "alcance": 278,
+   "alcance": 286,
    "valor": 7,
-   "taxa": 2.5,
+   "taxa": 2.4,
    "parcial": false,
    "notas": {
     "atualidade": 1,
@@ -247,10 +111,10 @@
    "headline": "Treino de modelo não é treino para você.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 77,
+   "alcance": 141,
    "valor": 1,
-   "taxa": 1.3,
-   "parcial": true,
+   "taxa": 0.7,
+   "parcial": false,
    "notas": {
     "atualidade": 3,
     "clareza": 9,
@@ -281,22 +145,9 @@
    "headline": "Parte do seu treino acontece na cama",
    "formato": "reels",
    "quando": "2026-10-28",
-   "alcance": 299,
+   "alcance": 303,
    "valor": 50,
-   "taxa": 16.7,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
-  },
-  {
-   "headline": "Reels: capa e legenda",
-   "formato": "reels",
-   "quando": "2026-10-25",
-   "alcance": 1977,
-   "valor": 260,
-   "taxa": 13.2,
+   "taxa": 16.5,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -307,67 +158,25 @@
    "headline": "Reels: capa e legenda",
    "formato": "reels",
    "quando": "2026-10-28",
-   "alcance": 13986,
-   "valor": 1360,
-   "taxa": 9.7,
+   "alcance": 14353,
+   "valor": 1403,
+   "taxa": 9.8,
    "parcial": false,
    "notas": null,
    "total": null,
    "seguiu_recomendada": null,
    "alternativas": []
-  },
-  {
-   "headline": "Tico Santta Cruz, 49, compara a ressaca a uma dengue.",
-   "formato": "carrossel",
-   "quando": "2026-10-26",
-   "alcance": 1046,
-   "valor": 38,
-   "taxa": 3.6,
-   "parcial": false,
-   "notas": {
-    "atualidade": 9,
-    "clareza": 7,
-    "curiosidade": 8,
-    "historico": 3,
-    "marca": 5,
-    "publico": 7,
-    "venda": 5
-   },
-   "total": 64,
-   "seguiu_recomendada": false,
-   "alternativas": [
-    {
-     "titulo": "Tico Santta Cruz parou de beber antes dos shows aos 44.",
-     "total": 60
-    },
-    {
-     "titulo": "Depois dos 40, a ressaca parece dengue.",
-     "total": 59
-    },
-    {
-     "titulo": "A mesma cerveja pesa mais aos 49.",
-     "total": 81
-    }
-   ]
   }
  ],
- "medidos": 12,
- "com_notas": 7,
+ "medidos": 8,
+ "com_notas": 3,
  "mediana_taxa_perfil": 4.3,
- "correlacao_taxa": {
-  "curiosidade": 0.61,
-  "clareza": 0.56,
-  "marca": 0.37,
-  "publico": 0.61,
-  "venda": 0.51,
-  "historico": 0.22,
-  "atualidade": 0.28
- },
+ "correlacao_taxa": {},
  "pesos_sugeridos": null,
  "recomendada": {
-  "seguiu": 3,
-  "nao_seguiu": 4,
-  "taxa_seguiu": 2.7,
-  "taxa_nao_seguiu": 2.1
+  "seguiu": 1,
+  "nao_seguiu": 2,
+  "taxa_seguiu": 3.6,
+  "taxa_nao_seguiu": 1.5
  }
 }
