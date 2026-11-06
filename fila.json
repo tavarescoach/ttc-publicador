@@ -2237,5 +2237,49 @@
     "status": "pendente",
     "origem": "painel",
     "tema": "Estilo de vida"
+  },
+  {
+    "id": "2026-11-06-st-0600",
+    "quando": "2026-11-06T09:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-06/story-0600.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-06-st-0800",
+    "quando": "2026-11-06T11:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-06/story-0800.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-06-st-1000",
+    "quando": "2026-11-06T13:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-06/story-1000.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-06-st-1230",
+    "quando": "2026-11-06T15:30:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-06/story-1230.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
   }
 ]
