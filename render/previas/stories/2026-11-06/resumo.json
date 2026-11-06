@@ -1,0 +1,64 @@
+{
+ "data": "2026-11-06",
+ "ensaio": false,
+ "stories": [
+  {
+   "id": "2026-11-06-st-0600",
+   "quando": "2026-11-06T06:00:00-03:00",
+   "arquivo": "2026-11-06/story-0600.mp4",
+   "decisao": "agendado",
+   "texto": "baixo",
+   "problemas": [],
+   "partes": [
+    {
+     "video": "IMG_2391.MOV",
+     "k": 0,
+     "s": 12.0
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-st-0800",
+   "quando": "2026-11-06T08:00:00-03:00",
+   "arquivo": "2026-11-06/story-0800.png",
+   "decisao": "agendado",
+   "texto": null,
+   "problemas": [],
+   "partes": null
+  },
+  {
+   "id": "2026-11-06-st-1000",
+   "quando": "2026-11-06T10:00:00-03:00",
+   "arquivo": "2026-11-06/story-1000.mp4",
+   "decisao": "agendado",
+   "texto": "baixo",
+   "problemas": [],
+   "partes": [
+    {
+     "video": "12d01a69-96f1-47a1-b093-f927f2ee4738 (1).mp4",
+     "k": 0,
+     "s": 4
+    },
+    {
+     "video": "IMG_0368 (1).MP4",
+     "k": 0,
+     "s": 4
+    },
+    {
+     "video": "IMG_0371 (1).MP4",
+     "k": 0,
+     "s": 4
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-st-1230",
+   "quando": "2026-11-06T12:30:00-03:00",
+   "arquivo": "2026-11-06/story-1230.png",
+   "decisao": "agendado",
+   "texto": null,
+   "problemas": [],
+   "partes": null
+  }
+ ]
+}
