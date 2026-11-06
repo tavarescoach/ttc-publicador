@@ -1,10 +1,21 @@
 {
- "atualizado_em": "2026-11-05T14:30:00-03:00",
+ "atualizado_em": "2026-11-06T06:24:36-03:00",
  "em_alta": [
+  {
+   "assunto": "maratona-nyc-rabdomiolise",
+   "tema": "esporte",
+   "canais": 6,
+   "nota_max": 80,
+   "titulos": [
+    "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de corredora de maratona em Nova York",
+    "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de atleta dos EUA",
+    "NYC marathon runner, 24, dies just 2 miles from finish line after sending dad chilling texts"
+   ]
+  },
   {
    "assunto": "wegovy-comprimido-anvisa",
    "tema": "negocio",
-   "canais": 7,
+   "canais": 6,
    "nota_max": 78,
    "titulos": [
     "Anvisa aprova Wegovy em comprimido, a primeira pílula de semaglutida para tratar obesidade no Brasil",
@@ -13,25 +24,47 @@
    ]
   },
   {
-   "assunto": "maratona-nyc-rabdomiolise",
-   "tema": "saude",
-   "canais": 6,
-   "nota_max": 80,
-   "titulos": [
-    "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de corredora de maratona em Nova York",
-    "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de atleta dos EUA",
-    "Corredora que faleceu na maratona de Nova York teve lesão muscular grave"
-   ]
-  },
-  {
    "assunto": "eleicoes-eua",
-   "tema": "negocio",
+   "tema": "cultura",
    "canais": 6,
    "nota_max": 5,
    "titulos": [
-    "Video: Democratic Health Professionals Win Seats in Congress",
-    "Michigan voter says healthcare is a top issue for her",
-    "Elon Musk Sofre Derrota Política nos EUA e Enfrenta Pressão sobre Negócios no Texas"
+    "The Blue Tsunami Swept Doctors and Scientists Into Office",
+    "Scott Colom’s Mississippi Votes Are Still Rolling In—and So Are the Views on His Viral Campaign Ads",
+    "Michigan voter says healthcare is a top issue for her"
+   ]
+  },
+  {
+   "assunto": "vacinas-eua",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 20,
+   "titulos": [
+    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find",
+    "US infant bleeding episodes jump as vitamin K refusals rise, two studies find",
+    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find"
+   ]
+  },
+  {
+   "assunto": "ebola",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 10,
+   "titulos": [
+    "UK doctor with Ebola returns from Congo to London for treatment",
+    "UK doctor infected with Ebola being treated at London hospital",
+    "British Ebola patient evacuated from DR Congo arrives at London hospital"
+   ]
+  },
+  {
+   "assunto": "series-tv",
+   "tema": "cultura",
+   "canais": 3,
+   "nota_max": 5,
+   "titulos": [
+    "Sam Rockwell Breaks Down Scenes From His Career, Including ‘Charlie’s Angels’ and ‘The White Lotus’",
+    "Jalen Brunson drops Knicks reference on ‘Law & Order: SVU’ debut with pal Mariska Hargitay",
+    "War Recap: I Smell a Rat"
    ]
   },
   {
@@ -42,11 +75,18 @@
    "titulos": [
     "The Download: controlling AI agents and “Super Intelligence” loyalty tests",
     "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
-    "Shares in Musk's SpaceX plunge as tech and AI stocks fall"
+    "Securing the agentic enterprise with data lineage"
    ]
   }
  ],
  "top": [
+  {
+   "titulo": "Cardiologista explica diagnóstico de Márcia Goldschmidt, que fez angioplastia de emergência para artéria obstruída em 71%",
+   "canal": "Globo",
+   "assunto": "marcia-goldschmidt-coracao",
+   "nota": 88,
+   "gancho": "Márcia Goldschmidt descobriu a artéria 71% fechada. Sem aviso."
+  },
   {
    "titulo": "Adriane Galisteu reflete sobre envelhecimento: 'Não me sinto com a idade que tenho'",
    "canal": "Globo",
@@ -109,13 +149,6 @@
    "assunto": "wegovy-comprimido-anvisa",
    "nota": 78,
    "gancho": "Caneta virou comprimido no Brasil. Seu músculo ainda depende de você."
-  },
-  {
-   "titulo": "Corredora que faleceu na maratona de Nova York teve lesão muscular grave",
-   "canal": "Metrópoles",
-   "assunto": "maratona-nyc-rabdomiolise",
-   "nota": 76,
-   "gancho": "Corredora de 24 anos morreu no km 39. Rabdomiólise explica."
   }
  ]
 }

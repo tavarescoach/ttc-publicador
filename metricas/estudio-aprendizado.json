@@ -4,9 +4,9 @@
    "headline": "Você já viveu a magreza dos anos 90 uma vez.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 270,
+   "alcance": 281,
    "valor": 4,
-   "taxa": 1.5,
+   "taxa": 1.4,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -17,7 +17,7 @@
    "headline": "Você dobrou os quilômetros e o pace não saiu do lugar.",
    "formato": "carrossel",
    "quando": "2026-10-28",
-   "alcance": 195,
+   "alcance": 196,
    "valor": 7,
    "taxa": 3.6,
    "parcial": false,
@@ -51,7 +51,7 @@
    "headline": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 248,
+   "alcance": 257,
    "valor": 3,
    "taxa": 1.2,
    "parcial": false,
@@ -61,10 +61,44 @@
    "alternativas": []
   },
   {
+   "headline": "Depois dos 40, perder força não é só idade. É falta do estímulo certo.",
+   "formato": "carrossel",
+   "quando": "2026-11-05",
+   "alcance": 126,
+   "valor": 5,
+   "taxa": 4.0,
+   "parcial": true,
+   "notas": {
+    "atualidade": 8,
+    "clareza": 9,
+    "curiosidade": 7,
+    "historico": 6,
+    "marca": 9,
+    "publico": 9,
+    "venda": 9
+   },
+   "total": 82,
+   "seguiu_recomendada": true,
+   "alternativas": [
+    {
+     "titulo": "Ela congelou os óvulos aos 37 e escolheu o próprio tempo aos 48.",
+     "total": 69
+    },
+    {
+     "titulo": "Escolher o próprio tempo não é liberdade. É preparo.",
+     "total": 75
+    },
+    {
+     "titulo": "Gravidez é um teste de estresse de nove meses. Seu corpo está pronto para o seu?",
+     "total": 58
+    }
+   ]
+  },
+  {
    "headline": "Mudar o treino toda semana parece inteligente.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 130,
+   "alcance": 131,
    "valor": 2,
    "taxa": 1.5,
    "parcial": false,
@@ -77,7 +111,7 @@
    "headline": "Três sinais de que o seu treino veio do feed.",
    "formato": "carrossel",
    "quando": "2026-10-28",
-   "alcance": 286,
+   "alcance": 287,
    "valor": 7,
    "taxa": 2.4,
    "parcial": false,
@@ -111,9 +145,9 @@
    "headline": "Treino de modelo não é treino para você.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 141,
+   "alcance": 154,
    "valor": 1,
-   "taxa": 0.7,
+   "taxa": 0.6,
    "parcial": false,
    "notas": {
     "atualidade": 3,
@@ -158,9 +192,9 @@
    "headline": "Reels: capa e legenda",
    "formato": "reels",
    "quando": "2026-10-28",
-   "alcance": 14353,
-   "valor": 1403,
-   "taxa": 9.8,
+   "alcance": 14563,
+   "valor": 1411,
+   "taxa": 9.7,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -170,7 +204,7 @@
  ],
  "medidos": 8,
  "com_notas": 3,
- "mediana_taxa_perfil": 4.3,
+ "mediana_taxa_perfil": 3.4,
  "correlacao_taxa": {},
  "pesos_sugeridos": null,
  "recomendada": {
