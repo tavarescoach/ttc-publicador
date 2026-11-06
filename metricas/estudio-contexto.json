@@ -1,27 +1,27 @@
 {
- "atualizado_em": "2026-11-05T23:28-03:00",
- "seguidores": 9676,
+ "atualizado_em": "2026-11-06T14:30-03:00",
+ "seguidores": 9691,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 250.0,
+  "alcance": 252.0,
   "valor": 7.0,
-  "taxa": 3.4
+  "taxa": 3.5
  },
  "por_tipo": {
   "IMAGEM": {
-   "posts": 14,
-   "alcance_medio": 808,
-   "valor_medio": 161.6
+   "posts": 13,
+   "alcance_medio": 867,
+   "valor_medio": 174.9
   },
   "REELS": {
    "posts": 7,
-   "alcance_medio": 2659,
-   "valor_medio": 248.0
+   "alcance_medio": 2672,
+   "valor_medio": 249.9
   },
   "CARROSSEL": {
-   "posts": 19,
-   "alcance_medio": 145,
-   "valor_medio": 3.9
+   "posts": 20,
+   "alcance_medio": 148,
+   "valor_medio": 4.2
   }
  },
  "posts": [
@@ -30,12 +30,12 @@
    "titulo": "Cadeira na areia, guarda-sóis abertos e céu azul.",
    "tipo": "IMAGEM",
    "quando": "2026-10-28",
-   "alcance": 6252,
-   "views": 10921,
-   "salvos": 160,
+   "alcance": 6296,
+   "views": 10989,
+   "salvos": 161,
    "compart": 84,
    "comentarios": 37,
-   "valor": 1964,
+   "valor": 1978,
    "taxa": 31.4,
    "parcial": false
   },
@@ -44,12 +44,12 @@
    "titulo": "Por que pagar por algo que eu posso fazer sozinho?",
    "tipo": "REELS",
    "quando": "2026-10-28",
-   "alcance": 14563,
-   "views": 19655,
-   "salvos": 142,
-   "compart": 188,
+   "alcance": 14642,
+   "views": 19748,
+   "salvos": 144,
+   "compart": 189,
    "comentarios": 26,
-   "valor": 1411,
+   "valor": 1422,
    "taxa": 9.7,
    "parcial": false
   },
@@ -58,8 +58,8 @@
    "titulo": "Me humilhando pra tentar fazer algo que o vi na internet.",
    "tipo": "REELS",
    "quando": "2026-11-01",
-   "alcance": 1753,
-   "views": 2011,
+   "alcance": 1758,
+   "views": 2016,
    "salvos": 14,
    "compart": 6,
    "comentarios": 2,
@@ -72,8 +72,8 @@
    "titulo": "Sol forte, toalha na cintura e o corpo ainda molhado.",
    "tipo": "IMAGEM",
    "quando": "2026-10-30",
-   "alcance": 810,
-   "views": 1588,
+   "alcance": 811,
+   "views": 1590,
    "salvos": 1,
    "compart": 1,
    "comentarios": 8,
@@ -86,13 +86,13 @@
    "titulo": "Vou lançar aquele treino completo de peitoral nos stories. Quem tá comigo?",
    "tipo": "REELS",
    "quando": "2026-11-03",
-   "alcance": 408,
-   "views": 546,
+   "alcance": 411,
+   "views": 550,
    "salvos": 1,
    "compart": 13,
    "comentarios": 2,
-   "valor": 62,
-   "taxa": 15.2,
+   "valor": 63,
+   "taxa": 15.3,
    "parcial": false
   },
   {
@@ -100,13 +100,13 @@
    "titulo": "Camiseta preta, tênis branco e o espelho da academia.",
    "tipo": "IMAGEM",
    "quando": "2026-11-02",
-   "alcance": 344,
-   "views": 657,
+   "alcance": 347,
+   "views": 661,
    "salvos": 1,
    "compart": 0,
    "comentarios": 6,
    "valor": 61,
-   "taxa": 17.7,
+   "taxa": 17.6,
    "parcial": false
   },
   {
@@ -128,13 +128,13 @@
    "titulo": "Você treina, ajusta a alimentação e faz tudo direitinho. Quando o resultado demora, a primeira suspeita cai so",
    "tipo": "REELS",
    "quando": "2026-10-28",
-   "alcance": 303,
-   "views": 328,
+   "alcance": 305,
+   "views": 329,
    "salvos": 0,
    "compart": 10,
    "comentarios": 3,
    "valor": 50,
-   "taxa": 16.5,
+   "taxa": 16.4,
    "parcial": false
   },
   {
@@ -142,13 +142,13 @@
    "titulo": "Faixa roxa no ombro e o suor do treino ainda no rosto.",
    "tipo": "IMAGEM",
    "quando": "2026-11-03",
-   "alcance": 221,
-   "views": 395,
+   "alcance": 227,
+   "views": 413,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
    "valor": 45,
-   "taxa": 20.4,
+   "taxa": 19.8,
    "parcial": false
   },
   {
@@ -156,13 +156,27 @@
    "titulo": "Você acha que está treinando uma perna de cada vez? Talvez esteja dividindo o trabalho entre as duas sem perce",
    "tipo": "REELS",
    "quando": "2026-11-04",
-   "alcance": 363,
-   "views": 523,
+   "alcance": 367,
+   "views": 529,
    "salvos": 1,
    "compart": 2,
    "comentarios": 2,
-   "valor": 31,
-   "taxa": 8.5,
+   "valor": 32,
+   "taxa": 8.7,
+   "parcial": false
+  },
+  {
+   "id": "18030509603860920",
+   "titulo": "Modo Olimpíada ligado no calçadão de Copacabana.",
+   "tipo": "IMAGEM",
+   "quando": "2026-11-05",
+   "alcance": 540,
+   "views": 991,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 0,
+   "valor": 29,
+   "taxa": 5.4,
    "parcial": true
   },
   {
@@ -170,8 +184,8 @@
    "titulo": "Estrada no deserto, céu limpo e a placa do Trópico de Capricórnio.",
    "tipo": "IMAGEM",
    "quando": "2026-10-31",
-   "alcance": 445,
-   "views": 776,
+   "alcance": 446,
+   "views": 782,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
@@ -198,28 +212,14 @@
    "titulo": "Eita ferro, o Ferrugem chegou no ponto que eu mais gosto de ver em quem treina: a academia virou lazer.",
    "tipo": "IMAGEM",
    "quando": "2026-11-03",
-   "alcance": 783,
-   "views": 1452,
+   "alcance": 791,
+   "views": 1457,
    "salvos": 2,
    "compart": 1,
    "comentarios": 3,
    "valor": 24,
-   "taxa": 3.1,
+   "taxa": 3.0,
    "parcial": false
-  },
-  {
-   "id": "18030509603860920",
-   "titulo": "Modo Olimpíada ligado no calçadão de Copacabana.",
-   "tipo": "IMAGEM",
-   "quando": "2026-11-05",
-   "alcance": 372,
-   "views": 680,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 0,
-   "valor": 24,
-   "taxa": 6.5,
-   "parcial": true
   },
   {
    "id": "18449918374121024",
@@ -240,8 +240,8 @@
    "titulo": "Alarme às 3h24 em todo dia de trabalho. É a rotina de Gayle King, 71 anos, apresentadora do CBS Mornings, cont",
    "tipo": "IMAGEM",
    "quando": "2026-10-29",
-   "alcance": 567,
-   "views": 959,
+   "alcance": 568,
+   "views": 961,
    "salvos": 0,
    "compart": 0,
    "comentarios": 2,
@@ -250,17 +250,31 @@
    "parcial": false
   },
   {
+   "id": "18575495890079603",
+   "titulo": "Duas sessões de 30 minutos por semana, durante oito meses. Mulheres com média de 65 anos ganharam 2,9% de dens",
+   "tipo": "CARROSSEL",
+   "quando": "2026-11-05",
+   "alcance": 175,
+   "views": 350,
+   "salvos": 1,
+   "compart": 1,
+   "comentarios": 0,
+   "valor": 8,
+   "taxa": 4.6,
+   "parcial": true
+  },
+  {
    "id": "17897812095418641",
    "titulo": "No terço mais forte de 8.762 homens, as mortes por câncer foram 32% menores em quase 19 anos de acompanhamento",
    "tipo": "CARROSSEL",
    "quando": "2026-11-01",
-   "alcance": 145,
-   "views": 334,
+   "alcance": 148,
+   "views": 340,
    "salvos": 0,
    "compart": 2,
    "comentarios": 0,
    "valor": 8,
-   "taxa": 5.5,
+   "taxa": 5.4,
    "parcial": false
   },
   {
@@ -278,32 +292,18 @@
    "parcial": false
   },
   {
-   "id": "18416173924083119",
-   "titulo": "Três meses no mesmo pace, com cada vez mais quilômetros na planilha.",
-   "tipo": "CARROSSEL",
-   "quando": "2026-10-28",
-   "alcance": 196,
-   "views": 397,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 1,
-   "valor": 7,
-   "taxa": 3.6,
-   "parcial": false
-  },
-  {
    "id": "18116893820119454",
    "titulo": "Eu prefiro mil vezes uma aluna de 55 levantando carga com técnica a uma aluna fazendo exercício leve com medo",
    "tipo": "CARROSSEL",
    "quando": "2026-11-04",
-   "alcance": 193,
-   "views": 389,
+   "alcance": 202,
+   "views": 408,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 7,
-   "taxa": 3.6,
-   "parcial": true
+   "taxa": 3.5,
+   "parcial": false
   }
  ]
 }
