@@ -1,14 +1,14 @@
 {
- "atualizado_em": "2026-11-06T06:24:36-03:00",
+ "atualizado_em": "2026-11-06T14:20:42-03:00",
  "em_alta": [
   {
    "assunto": "maratona-nyc-rabdomiolise",
    "tema": "esporte",
-   "canais": 6,
-   "nota_max": 80,
+   "canais": 7,
+   "nota_max": 76,
    "titulos": [
-    "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de corredora de maratona em Nova York",
     "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de atleta dos EUA",
+    "Rachel Apa caiu no km 39 da Maratona de NY e morreu; a história dela",
     "NYC marathon runner, 24, dies just 2 miles from finish line after sending dad chilling texts"
    ]
   },
@@ -24,58 +24,69 @@
    ]
   },
   {
+   "assunto": "ia-mercado",
+   "tema": "negocio",
+   "canais": 5,
+   "nota_max": 8,
+   "titulos": [
+    "The Download: a humanoid cleans house and Samsung builds for the AI boom",
+    "Reações Negativas em Relação À IA Podem Atrasar IPO da Anthropic, Dizem Potenciais Investidores",
+    "Could the US midterms burst the AI bubble?"
+   ]
+  },
+  {
    "assunto": "eleicoes-eua",
    "tema": "cultura",
-   "canais": 6,
+   "canais": 5,
    "nota_max": 5,
    "titulos": [
     "The Blue Tsunami Swept Doctors and Scientists Into Office",
     "Scott Colom’s Mississippi Votes Are Still Rolling In—and So Are the Views on His Viral Campaign Ads",
-    "Michigan voter says healthcare is a top issue for her"
+    "Fox News Digital's News Quiz: November 6, 2026"
    ]
   },
   {
-   "assunto": "vacinas-eua",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 20,
-   "titulos": [
-    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find",
-    "US infant bleeding episodes jump as vitamin K refusals rise, two studies find",
-    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find"
-   ]
-  },
-  {
-   "assunto": "ebola",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 10,
-   "titulos": [
-    "UK doctor with Ebola returns from Congo to London for treatment",
-    "UK doctor infected with Ebola being treated at London hospital",
-    "British Ebola patient evacuated from DR Congo arrives at London hospital"
-   ]
-  },
-  {
-   "assunto": "series-tv",
-   "tema": "cultura",
-   "canais": 3,
-   "nota_max": 5,
-   "titulos": [
-    "Sam Rockwell Breaks Down Scenes From His Career, Including ‘Charlie’s Angels’ and ‘The White Lotus’",
-    "Jalen Brunson drops Knicks reference on ‘Law & Order: SVU’ debut with pal Mariska Hargitay",
-    "War Recap: I Smell a Rat"
-   ]
-  },
-  {
-   "assunto": "ia-mercado",
+   "assunto": "glp1-mercado-farma",
    "tema": "negocio",
    "canais": 3,
-   "nota_max": 3,
+   "nota_max": 72,
    "titulos": [
-    "The Download: controlling AI agents and “Super Intelligence” loyalty tests",
-    "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
-    "Securing the agentic enterprise with data lineage"
+    "SemaClique: nova caneta de semaglutida chega às farmácias por R$ 464,81",
+    "Indian drugmaker Dr Reddy's gets Brazil regulator nod to sell generic Ozempic",
+    "Lilly to sell obesity drugs directly on Hims & Hers site"
+   ]
+  },
+  {
+   "assunto": "divulgacao-cientifica",
+   "tema": "ciencia",
+   "canais": 3,
+   "nota_max": 72,
+   "titulos": [
+    "Perfil @marceloscience",
+    "Perfil @ofitfeed",
+    "Paulo Muzy anuncia nova descoberta na saúde"
+   ]
+  },
+  {
+   "assunto": "dor-lombar-forca",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 70,
+   "titulos": [
+    "Instagram",
+    "What causes back pain? The surprising triggers, from stress to sitting up straight – and what you can do about it",
+    "Quatro exercícios de pilates para fazer em casa e aliviar dores na lombar"
+   ]
+  },
+  {
+   "assunto": "mercado-fitness",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 64,
+   "titulos": [
+    "Perfil @nettodudu",
+    "4 dicas para se diferenciar dos concorrentes: o que o mercado fitness pode aprender com a Academia Gaviões 24h",
+    "Leandro Twin anuncia Black Friday da consultoria com 'comente QUERO'"
    ]
   }
  ],
@@ -116,13 +127,6 @@
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
   },
   {
-   "titulo": "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de corredora de maratona em Nova York",
-   "canal": "g1 Saúde",
-   "assunto": "maratona-nyc-rabdomiolise",
-   "nota": 80,
-   "gancho": "Corredora de 24 anos morreu no km 39. Rabdomiólise explica."
-  },
-  {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
    "canal": "Sua referência",
    "assunto": "frio-calor-recuperacao",
@@ -149,6 +153,13 @@
    "assunto": "wegovy-comprimido-anvisa",
    "nota": 78,
    "gancho": "Caneta virou comprimido no Brasil. Seu músculo ainda depende de você."
+  },
+  {
+   "titulo": "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de atleta dos EUA",
+   "canal": "g1 Saúde",
+   "assunto": "maratona-nyc-rabdomiolise",
+   "nota": 76,
+   "gancho": "Corredora de 24 anos morreu no km 39. Rabdomiólise explica."
   }
  ]
 }
