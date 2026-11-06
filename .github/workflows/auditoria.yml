@@ -1,0 +1,45 @@
+name: Auditoria do Instagram
+
+# Coleta ampla para a auditoria (posts dos últimos 60 dias com legenda e insights completos,
+# série diária da conta e público). Grava auditoria/dados/. Roda quando disparado
+# (pela tarefa de reanálise ou manualmente).
+
+on:
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: "Quantos dias olhar para trás"
+        required: false
+        default: "60"
+
+concurrency:
+  group: auditoria
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  auditoria:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Coletar dados da auditoria
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          DIAS: ${{ github.event.inputs.dias || '60' }}
+        run: python auditoria/coletar.py
+      - name: Salvar no repositório
+        if: always()
+        run: |
+          git add auditoria
+          if ! git diff --cached --quiet; then
+            git config user.name "ttc-publicador"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "auditoria: coleta"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
