@@ -4,9 +4,9 @@
    "headline": "Você já viveu a magreza dos anos 90 uma vez.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 281,
-   "valor": 4,
-   "taxa": 1.4,
+   "alcance": 290,
+   "valor": 5,
+   "taxa": 1.7,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -14,46 +14,12 @@
    "alternativas": []
   },
   {
-   "headline": "Você dobrou os quilômetros e o pace não saiu do lugar.",
-   "formato": "carrossel",
-   "quando": "2026-10-28",
-   "alcance": 196,
-   "valor": 7,
-   "taxa": 3.6,
-   "parcial": false,
-   "notas": {
-    "atualidade": 2,
-    "clareza": 8,
-    "curiosidade": 8,
-    "historico": 4,
-    "marca": 8,
-    "publico": 9,
-    "venda": 8
-   },
-   "total": 72,
-   "seguiu_recomendada": true,
-   "alternativas": [
-    {
-     "titulo": "Alongar antes de correr não reduziu lesão em 3 ensaios.",
-     "total": 67
-    },
-    {
-     "titulo": "O corredor que só soma quilômetros paga com o joelho.",
-     "total": 65
-    },
-    {
-     "titulo": "Treinadores dizem que quilometragem sozinha não basta.",
-     "total": 62
-    }
-   ]
-  },
-  {
    "headline": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 257,
+   "alcance": 262,
    "valor": 3,
-   "taxa": 1.2,
+   "taxa": 1.1,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -64,9 +30,9 @@
    "headline": "Depois dos 40, perder força não é só idade. É falta do estímulo certo.",
    "formato": "carrossel",
    "quando": "2026-11-05",
-   "alcance": 126,
-   "valor": 5,
-   "taxa": 4.0,
+   "alcance": 211,
+   "valor": 9,
+   "taxa": 4.3,
    "parcial": true,
    "notas": {
     "atualidade": 8,
@@ -98,7 +64,7 @@
    "headline": "Mudar o treino toda semana parece inteligente.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 131,
+   "alcance": 134,
    "valor": 2,
    "taxa": 1.5,
    "parcial": false,
@@ -111,7 +77,7 @@
    "headline": "Três sinais de que o seu treino veio do feed.",
    "formato": "carrossel",
    "quando": "2026-10-28",
-   "alcance": 287,
+   "alcance": 288,
    "valor": 7,
    "taxa": 2.4,
    "parcial": false,
@@ -145,9 +111,9 @@
    "headline": "Treino de modelo não é treino para você.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 154,
-   "valor": 1,
-   "taxa": 0.6,
+   "alcance": 164,
+   "valor": 2,
+   "taxa": 1.2,
    "parcial": false,
    "notas": {
     "atualidade": 3,
@@ -179,9 +145,9 @@
    "headline": "Parte do seu treino acontece na cama",
    "formato": "reels",
    "quando": "2026-10-28",
-   "alcance": 303,
+   "alcance": 306,
    "valor": 50,
-   "taxa": 16.5,
+   "taxa": 16.3,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -192,9 +158,9 @@
    "headline": "Reels: capa e legenda",
    "formato": "reels",
    "quando": "2026-10-28",
-   "alcance": 14563,
-   "valor": 1411,
-   "taxa": 9.7,
+   "alcance": 14785,
+   "valor": 1423,
+   "taxa": 9.6,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -202,15 +168,15 @@
    "alternativas": []
   }
  ],
- "medidos": 8,
- "com_notas": 3,
- "mediana_taxa_perfil": 3.4,
+ "medidos": 7,
+ "com_notas": 2,
+ "mediana_taxa_perfil": 3.9,
  "correlacao_taxa": {},
  "pesos_sugeridos": null,
  "recomendada": {
-  "seguiu": 1,
+  "seguiu": 0,
   "nao_seguiu": 2,
-  "taxa_seguiu": 3.6,
-  "taxa_nao_seguiu": 1.5
+  "taxa_seguiu": null,
+  "taxa_nao_seguiu": 1.8
  }
 }

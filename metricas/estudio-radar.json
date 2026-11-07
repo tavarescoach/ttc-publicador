@@ -1,21 +1,10 @@
 {
- "atualizado_em": "2026-11-06T14:20:42-03:00",
+ "atualizado_em": "2026-11-07T06:30:00-03:00",
  "em_alta": [
   {
-   "assunto": "maratona-nyc-rabdomiolise",
-   "tema": "esporte",
-   "canais": 7,
-   "nota_max": 76,
-   "titulos": [
-    "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de atleta dos EUA",
-    "Rachel Apa caiu no km 39 da Maratona de NY e morreu; a história dela",
-    "NYC marathon runner, 24, dies just 2 miles from finish line after sending dad chilling texts"
-   ]
-  },
-  {
    "assunto": "wegovy-comprimido-anvisa",
-   "tema": "negocio",
-   "canais": 6,
+   "tema": "saude",
+   "canais": 5,
    "nota_max": 78,
    "titulos": [
     "Anvisa aprova Wegovy em comprimido, a primeira pílula de semaglutida para tratar obesidade no Brasil",
@@ -24,25 +13,36 @@
    ]
   },
   {
+   "assunto": "maratona-nyc-rabdomiolise",
+   "tema": "esporte",
+   "canais": 5,
+   "nota_max": 76,
+   "titulos": [
+    "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de atleta dos EUA",
+    "Rachel Apa caiu no km 39 da Maratona de NY e morreu; a história dela",
+    "Corredora que faleceu na maratona de Nova York teve lesão muscular grave"
+   ]
+  },
+  {
    "assunto": "ia-mercado",
    "tema": "negocio",
    "canais": 5,
    "nota_max": 8,
    "titulos": [
+    "Why the US midterms sparked an AI stock selloff",
     "The Download: a humanoid cleans house and Samsung builds for the AI boom",
-    "Reações Negativas em Relação À IA Podem Atrasar IPO da Anthropic, Dizem Potenciais Investidores",
-    "Could the US midterms burst the AI bubble?"
+    "Reações Negativas em Relação À IA Podem Atrasar IPO da Anthropic, Dizem Potenciais Investidores"
    ]
   },
   {
    "assunto": "eleicoes-eua",
    "tema": "cultura",
-   "canais": 5,
+   "canais": 4,
    "nota_max": 5,
    "titulos": [
     "The Blue Tsunami Swept Doctors and Scientists Into Office",
-    "Scott Colom’s Mississippi Votes Are Still Rolling In—and So Are the Views on His Viral Campaign Ads",
-    "Fox News Digital's News Quiz: November 6, 2026"
+    "Fox News Digital's News Quiz: November 6, 2026",
+    "El-Sayed slams Vance as a ‘coward’ but says he would work with him for Michigan"
    ]
   },
   {
@@ -68,29 +68,36 @@
    ]
   },
   {
-   "assunto": "dor-lombar-forca",
-   "tema": "saude",
+   "assunto": "f1-interlagos",
+   "tema": "esporte",
    "canais": 3,
-   "nota_max": 70,
+   "nota_max": 22,
    "titulos": [
-    "Instagram",
-    "What causes back pain? The surprising triggers, from stress to sitting up straight – and what you can do about it",
-    "Quatro exercícios de pilates para fazer em casa e aliviar dores na lombar"
+    "Piloto brasileiro Gabriel Bortoleto leva a namorada para treino livre de Fórmula 1",
+    "F1: Bortoleto mostra força e Câmara evolui em treino livre marcado por névoa e erros no S do Senna",
+    "Após polêmica sobre masculinidade, João Lucas marca presença em treino do GP de São Paulo"
    ]
   },
   {
-   "assunto": "mercado-fitness",
-   "tema": "negocio",
+   "assunto": "vacinas-eua",
+   "tema": "saude",
    "canais": 3,
-   "nota_max": 64,
+   "nota_max": 20,
    "titulos": [
-    "Perfil @nettodudu",
-    "4 dicas para se diferenciar dos concorrentes: o que o mercado fitness pode aprender com a Academia Gaviões 24h",
-    "Leandro Twin anuncia Black Friday da consultoria com 'comente QUERO'"
+    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find",
+    "US infant bleeding episodes jump as vitamin K refusals rise, two studies find",
+    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find"
    ]
   }
  ],
  "top": [
+  {
+   "titulo": "Thaila Ayala revela diagnóstico precoce de perimenopausa aos 39 anos: 'Eu deprimi'; Grazi Massafera diz viver mesma fase",
+   "canal": "Globo",
+   "assunto": "perimenopausa-famosas",
+   "nota": 90,
+   "gancho": "Thaila Ayala entrou na perimenopausa aos 39. Você sabe reconhecer os sinais?"
+  },
   {
    "titulo": "Cardiologista explica diagnóstico de Márcia Goldschmidt, que fez angioplastia de emergência para artéria obstruída em 71%",
    "canal": "Globo",
@@ -99,11 +106,11 @@
    "gancho": "Márcia Goldschmidt descobriu a artéria 71% fechada. Sem aviso."
   },
   {
-   "titulo": "Adriane Galisteu reflete sobre envelhecimento: 'Não me sinto com a idade que tenho'",
+   "titulo": "Paolla Oliveira mostra treino pesado em casa: 'Exercitando o corpo pra manter a cabeça no lugar'",
    "canal": "Globo",
-   "assunto": "galisteu-menopausa",
-   "nota": 84,
-   "gancho": "Galisteu, 53, sobre a menopausa: \"Não me sinto com a idade que tenho\"."
+   "assunto": "paolla-treino-casa",
+   "nota": 86,
+   "gancho": "Paolla Oliveira treina pesado no quintal pra manter a cabeça no lugar. E você?"
   },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
@@ -153,13 +160,6 @@
    "assunto": "wegovy-comprimido-anvisa",
    "nota": 78,
    "gancho": "Caneta virou comprimido no Brasil. Seu músculo ainda depende de você."
-  },
-  {
-   "titulo": "Rabdomiólise: o que é a lesão muscular apontada como causa da morte de atleta dos EUA",
-   "canal": "g1 Saúde",
-   "assunto": "maratona-nyc-rabdomiolise",
-   "nota": 76,
-   "gancho": "Corredora de 24 anos morreu no km 39. Rabdomiólise explica."
   }
  ]
 }
