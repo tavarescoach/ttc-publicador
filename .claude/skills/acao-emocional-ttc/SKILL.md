@@ -18,8 +18,11 @@ Base: estudos de compartilhamento (emoção de alta ativação, utilidade, surpr
 | Reconhecimento | Cena que o leitor vive | A cena em uma frase, sem julgamento | Não culpar a pessoa |
 | Urgência de perda | Custo concreto de adiar (tempo, massa, energia) | Custo medido, não catastrófico | Nada de medo sobre saúde; sem promessa com prazo |
 | Pertencimento | Quem treina com critério | "Quem registra a carga faz X" | Não criar grupo que exclui |
+| Riso / autoironia (06/11) | Situação de treino ou da rotina do Luan | O Luan rindo de si mesmo, gíria, meme | Não rir do aluno nem do corpo de ninguém |
+| Provocação / orgulho (06/11) | Desculpa comum do leitor | Cutucada direta ("Qual é a sua desculpa mesmo?") | Provocar a desculpa, nunca humilhar a pessoa |
+| Desejo (06/11) | Corpo, energia, vida que o método dá | O Luan em situação real (praia, viagem, treino) | Sem pose de exibição nem promessa com prazo |
 
-Regra: medo e ansiedade sobre saúde ficam de fora. Em saúde, usar admiração e reconhecimento. Sono, suplementos, hormônio e lesão exigem aprovação do Luan (já vale para todos os formatos).
+Desde 06/11/2026 o gancho pode perguntar, provocar e brincar (`diretrizes/ganchos.md`): a emoção escolhida aqui tem que aparecer já na primeira linha. Regra: medo e ansiedade sobre saúde ficam de fora. Em saúde, usar admiração e reconhecimento. Sono, suplementos, hormônio e lesão exigem aprovação do Luan (já vale para todos os formatos).
 
 ## 2. Abrir a lacuna (na manchete ou gancho)
 

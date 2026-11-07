@@ -17,11 +17,11 @@ Luan Tavares, personal trainer e Diretor Técnico do TTC Centro de Performance (
 
 ## Tom de voz
 - Desde 02/11/2026: voz informal no gancho e na legenda, como o Luan fala (gíria e humor liberados). 1ª linha da legenda é opinião dele. Miolo informativo, com fonte.
-- Afirmar, não perguntar. Frases curtas e diretas, com ritmo variado (nem toda linha precisa bater). Sempre o porquê. Simples na superfície, técnico por trás. Fala com uma pessoa ("você"). Calma = autoridade.
+- Desde 06/11/2026: **gancho com emoção** (diretrizes/ganchos.md). No gancho valem pergunta, provocação, contraste, autoironia, gíria e até 2 palavras em caixa alta. No miolo: afirmar, frases curtas, sempre o porquê, simples na superfície e técnico por trás, falar com uma pessoa ("você").
 - Fórmula da marca (desde 18/10/2026): **Cena → Causa → Movimento.** A cena que o leitor vive; a causa real dita como fato, com número ou mecanismo; o que muda na semana dele. A frase da Causa é a frase-assinatura: uma por post.
 - Aposentado: "[crença] não é [causa falsa]. É [causa real]." e "Não foi sorte. Foi método." (contraste encenado, marca nº 1 de texto de IA). Nada de "não é X, é Y", "sem X, sem Y", "O resultado? …", "O segredo: …" nem travessão.
 - Usar: método, critério, direção, processo, previsível, evolução, controle, estrutura, consistência, corpo forte.
-- Evitar: "foco força e fé", "no pain no gain", "monstro", "maromba", "projeto verão", culpa alimentar, promessa com prazo, emoji em excesso, CAPS em texto corrido, escassez falsa.
+- Evitar: "foco força e fé", "no pain no gain", "monstro", "maromba", "projeto verão", culpa alimentar, promessa com prazo, emoji em excesso, CAPS no miolo (no gancho, até 2 palavras), escassez falsa, alarme de saúde.
 - Saúde: sono, suplementos, hormônios e alimentação em nível geral e ético, sem prescrever.
 
 ## Público

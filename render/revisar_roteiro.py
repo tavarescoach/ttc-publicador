@@ -100,7 +100,10 @@ def revisar_reels(nome, texto):
         if re.search(r"\d", voz):
             probs.append(f"{rot}: algarismo na voz; escreva como se fala (\"quarenta\", \"dezoito por cento\")")
         baixo = voz.lower()
-        for padrao, desc in VICIOS_IA + VICIOS_FALA:
+        gancho = b["ini"] < 3  # 0–3 s: pergunta, provocação e contraste liberados (06/11/2026)
+        for padrao, desc, livre in VICIOS_IA + [(p_, d_, False) for p_, d_ in VICIOS_FALA]:
+            if livre and gancho:
+                continue
             m = re.search(padrao, baixo)
             if m:
                 probs.append(f"{rot}: {desc} em \"{m.group(0)[:50]}\"")

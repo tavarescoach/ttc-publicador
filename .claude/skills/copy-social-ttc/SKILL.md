@@ -17,7 +17,14 @@ Leia `diretrizes/conteudo.md`. Em resumo:
 - **Gancho:** nome conhecido + fato concreto + vontade de saber o resto. Nada abstrato ou de estudo sem personagem.
 - **Legenda:** a 1ª linha é opinião do Luan, em primeira pessoa.
 - **Meme:** frase de até 8 palavras; o porquê vai na legenda.
-- Os vícios de IA da seção 4 continuam proibidos.
+- Os vícios de IA da seção 4 continuam proibidos no miolo.
+
+## 0.1 Gancho com emoção (06/11/2026, vale sobre o resto desta skill)
+
+Decisão do Luan depois da auditoria: os posts estavam corretos e sem graça. **O gancho tem que provocar emoção.** Leia `diretrizes/ganchos.md` (régua, 9 tipos, antes e depois) antes de escrever qualquer capa, gancho de reels, 1ª tela de story ou 1ª linha de legenda.
+- **Liberado no gancho:** pergunta, provocação, contraste, autoironia, gíria, humor e até 2 palavras em CAIXA ALTA. As regras 1, 3 e 4 da seção 4 não valem no gancho.
+- **Freio que fica:** número com fonte, nada de inventar aluno, resultado ou fala, nada de alarme de saúde ("isso mata"), nada de promessa com prazo.
+- "Afirmar, não perguntar" e "calma = autoridade" passam a valer só para o miolo.
 
 ## 1. Antes de escrever
 
@@ -69,7 +76,7 @@ Três sim: mantém. Dois: afia a fraca. Um ou nenhum: reescreve a partir dos fat
 
 ## 4. Vícios de IA — proibidos
 
-Valem para slides, telas de reels, stories, legendas e roteiros falados.
+Valem para slides, telas de reels, stories, legendas e roteiros falados, **fora do gancho** (veja 0.1: no gancho, as regras 1, 3 e 4 estão liberadas).
 
 1. **Contraste encenado.** "Não é X. É Y." / "Não é sobre X, é sobre Y." / "Não porque X. Porque Y." / "Não só X, mas Y." / "Menos X, mais Y." / "X? Pense de novo." → Afirme Y com o motivo.
 2. **Lista de ausências.** "Sem dieta, sem sofrimento, sem academia lotada." → Diga o que acontece. Uma ausência real, uma vez, perto do CTA, pode.
@@ -93,7 +100,7 @@ Valem para slides, telas de reels, stories, legendas e roteiros falados.
 
 ## 6. Ganchos (capa, 3 primeiros segundos, 1ª linha da legenda)
 
-O gancho tem um trabalho: fazer a pessoa certa parar. Preencha sempre com fato, número ou cena real.
+O gancho tem um trabalho: fazer a pessoa certa parar **sentindo alguma coisa** (riso, choque, cutucada no orgulho, curiosidade, identificação, desejo). Preencha sempre com fato, número ou cena real. Os 9 tipos com prova estão em `diretrizes/ganchos.md`; os da lista abaixo continuam valendo.
 
 - **Famoso + fato (padrão desde 02/11/2026):** "O marido de Simone Mendes chegou a 350 de LDL." Nome que o brasileiro reconhece, número ou confissão concreta.
 - **Número medido:** "Uma noite em claro corta 18% da construção de músculo."
@@ -104,7 +111,12 @@ O gancho tem um trabalho: fazer a pessoa certa parar. Preencha sempre com fato, 
 - **Prova:** resultado medido do aluno, com autorização.
 - **Opinião do Luan:** "Eu não passo treino sem saber como você dormiu." (posição dele, com motivo logo depois)
 
-Evite gancho de promessa com prazo ("em 30 dias"), de segredo ("o que ninguém te conta") e de choque vazio.
+- **Pergunta-objeção:** "Por que pagar por algo que eu posso fazer sozinho?"
+- **Provocação:** "Você não treina. Você frequenta academia."
+- **Autoironia:** "Me humilhando pra tentar fazer algo que vi na internet."
+- **Gíria:** "Confia na 'bahea', pae!"
+
+Evite gancho de promessa com prazo ("em 30 dias"), de segredo ("o que ninguém te conta"), de medo sobre saúde e de choque sem entrega.
 
 ## 7. Carrossel
 

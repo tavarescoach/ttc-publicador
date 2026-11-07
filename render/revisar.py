@@ -46,17 +46,48 @@ HASH_PARECIDA = 10  # bits diferentes no dHash de 64 bits; até isso, é a mesma
 AQUI = os.path.dirname(os.path.abspath(__file__))
 
 # Vícios de texto de IA (skill copy-social-ttc, seção 4). Barram o agendamento automático.
+# 3º campo: True = liberado no GANCHO (capa/slide 1, tela 1 do story e 1ª linha da legenda).
+# Decisão do Luan em 06/11/2026: pergunta, provocação, contraste, autoironia, gíria e caixa alta liberados no gancho;
+# no miolo as regras continuam.
 VICIOS_IA = [
-    (r"\bn[ãa]o (?:é|foi|era|s[óo]|está)\b[^.!?\n]{1,70}[.!?,;]\s+(?:é|foi|era|mas)\b", "contraste encenado (\"não é X. É Y.\")"),
-    (r"\bn[ãa]o é sobre\b", "contraste encenado (\"não é sobre…\")"),
-    (r"\bn[ãa]o porque\b[^.!?\n]*[.!?]\s*porque\b", "contraste encenado (\"não porque… porque…\")"),
-    (r"\bmas sim\b", "contraste encenado (\"mas sim\")"),
-    (r"\b(?:menos|nada de) [^.,!?\n]{1,25}[.,]\s*mais\b", "contraste encenado (\"menos X, mais Y\")"),
-    (r"\bsem [^,.!?\n]{1,30}, sem [^,.!?\n]{1,30}", "lista de ausências (\"sem X, sem Y\")"),
-    (r"\b(?:o resultado|a verdade|o segredo|a resposta|o motivo|a diferença|o detalhe|o problema)\?\s", "pergunta respondida pelo próprio texto"),
-    (r"\b(?:o segredo|a verdade|spoiler|a real|a melhor parte)\s*:", "revelação com dois-pontos"),
-    (r"isso muda tudo|simples assim|leia de novo|ninguém te conta|pouca gente sabe|vamos falar sobre|próximo nível|virar a chave|desbloque|jornada|potencializ|ressignific", "frase de fábrica"),
+    (r"\bn[ãa]o (?:é|foi|era|s[óo]|está)\b[^.!?\n]{1,70}[.!?,;]\s+(?:é|foi|era|mas)\b", "contraste encenado (\"não é X. É Y.\")", True),
+    (r"\bn[ãa]o é sobre\b", "contraste encenado (\"não é sobre…\")", True),
+    (r"\bn[ãa]o porque\b[^.!?\n]*[.!?]\s*porque\b", "contraste encenado (\"não porque… porque…\")", True),
+    (r"\bmas sim\b", "contraste encenado (\"mas sim\")", True),
+    (r"\b(?:menos|nada de) [^.,!?\n]{1,25}[.,]\s*mais\b", "contraste encenado (\"menos X, mais Y\")", True),
+    (r"\bsem [^,.!?\n]{1,30}, sem [^,.!?\n]{1,30}", "lista de ausências (\"sem X, sem Y\")", False),
+    (r"\b(?:o resultado|a verdade|o segredo|a resposta|o motivo|a diferença|o detalhe|o problema)\?\s", "pergunta respondida pelo próprio texto", True),
+    (r"\b(?:o segredo|a verdade|spoiler|a real|a melhor parte)\s*:", "revelação com dois-pontos", True),
+    (r"isso muda tudo|simples assim|leia de novo|ninguém te conta|pouca gente sabe|vamos falar sobre|próximo nível|virar a chave|desbloque|jornada|potencializ|ressignific", "frase de fábrica", False),
 ]
+
+# Gancho com alarme de saúde (medo como isca) não sai sozinho: vai para "Precisa de você".
+ALARME_SAUDE = r"\b(?:mata|matar|matando|vai morrer|morrer|morre cedo|infarto|avc|c[âa]ncer|dem[êe]ncia|derrame|morte s[úu]bita)\b"
+MAX_CAIXA_ALTA_GANCHO = 2  # palavras em caixa alta permitidas no gancho (fora siglas)
+
+
+def _gancho(textos, legenda):
+    """Separa o gancho (1º texto e 1ª linha da legenda) do miolo."""
+    linhas = [l for l in (legenda or "").splitlines() if l.strip()]
+    primeira = linhas[0] if linhas else ""
+    resto_leg = "\n".join(linhas[1:])
+    g = "\n".join(([textos[0]] if textos else []) + [primeira])
+    m = "\n".join(textos[1:] + [resto_leg])
+    return g, m
+
+
+def _vicios(gancho, miolo):
+    out = []
+    for padrao, nome, livre_no_gancho in VICIOS_IA:
+        alvo = miolo.lower() if livre_no_gancho else (gancho + "\n" + miolo).lower()
+        m = re.search(padrao, alvo)
+        if m:
+            out.append(f'Soa como IA: {nome} em "{m.group(0).strip()[:60]}".')
+    return out
+
+
+def _caixa_alta(texto):
+    return {w for w in re.findall(r"\b[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{4,}\b", texto) if w not in SIGLAS}
 
 
 def _txt(s):
@@ -181,20 +212,24 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
         if re.search(r"(?<!\w)" + re.escape(w) + r"(?!\w)", baixo):
             problemas.append(f'Palavra fora da marca: "{w}".')
 
-    # vícios de texto de IA (slides, legenda e título)
-    for padrao, nome in VICIOS_IA:
-        m = re.search(padrao, baixo)
-        if m:
-            problemas.append(f'Soa como IA: {nome} em "{m.group(0).strip()[:60]}".')
+    # vícios de texto de IA: no gancho, pergunta/contraste/provocação liberados (06/11/2026); no miolo, não
+    gancho, miolo = _gancho(textos_slides(p), legenda)
+    miolo = miolo + "\n" + (p.get("pauta") or "") + "\n" + _txt(p.get("frase"))
+    problemas += _vicios(gancho, miolo)
     if "—" in tudo:
         problemas.append("Travessão (—) no texto: troque por ponto, vírgula ou quebra de linha.")
+    m = re.search(ALARME_SAUDE, gancho.lower())
+    if m:
+        problemas.append(f'Gancho com alarme de saúde ("{m.group(0)}"): provocação sim, medo não. Confira antes de sair.')
 
-    # caixa alta em texto corrido (a capa já sai em caixa alta pelo modelo)
+    # caixa alta: até 2 palavras no gancho da legenda (a capa já sai em caixa alta pelo modelo); no miolo, até 2
+    linhas = [l for l in legenda.splitlines() if l.strip()]
+    g_leg = _caixa_alta(linhas[0] if linhas else "")
+    if len(g_leg) > MAX_CAIXA_ALTA_GANCHO:
+        problemas.append("Caixa alta demais no gancho da legenda: " + ", ".join(sorted(g_leg)[:5]) + ".")
     gritos = set()
-    for t in textos_slides(p)[1:] + [legenda]:
-        for w in re.findall(r"\b[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{4,}\b", t):
-            if w not in SIGLAS:
-                gritos.add(w)
+    for t in textos_slides(p)[1:] + ["\n".join(linhas[1:])]:
+        gritos |= _caixa_alta(t)
     if len(gritos) > 2:
         problemas.append("Caixa alta em texto corrido: " + ", ".join(sorted(gritos)[:5]) + ".")
 
@@ -400,13 +435,20 @@ def revisar_story(t, agora=None):
     for w in PROIBIDAS:
         if re.search(r"(?<!\w)" + re.escape(w) + r"(?!\w)", baixo):
             problemas.append(f'Palavra fora da marca: "{w}".')
-    for padrao, nome in VICIOS_IA:
-        m = re.search(padrao, baixo)
-        if m:
-            problemas.append(f'Soa como IA: {nome} em "{m.group(0).strip()[:60]}".')
+    titulo = _txt(t.get("titulo"))
+    g_story = titulo or (tela[0] if tela else "")
+    m_story = "\n".join(x for x in tela if x != g_story)
+    problemas += _vicios(g_story, m_story)
     if "—" in tudo:
         problemas.append("Travessão (—) no texto.")
-    gritos = {w for w in re.findall(r"\b[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{4,}\b", " ".join(tela[1:] if t.get("rotulo") else tela)) if w not in SIGLAS}
+    m = re.search(ALARME_SAUDE, g_story.lower())
+    if m:
+        problemas.append(f'Gancho com alarme de saúde ("{m.group(0)}"): provocação sim, medo não.')
+    # caixa alta: 1 palavra liberada na primeira tela; nas outras, nenhuma
+    corpo_caps = tela[1:] if t.get("rotulo") else tela
+    gritos = _caixa_alta(" ".join(corpo_caps[1:])) if corpo_caps else set()
+    if len(_caixa_alta(corpo_caps[0] if corpo_caps else "")) > 1:
+        gritos |= _caixa_alta(corpo_caps[0])
     if gritos:
         problemas.append("Caixa alta em texto corrido: " + ", ".join(sorted(gritos)[:5]) + ".")
     if len(EMOJI.findall(tudo)) > 1:

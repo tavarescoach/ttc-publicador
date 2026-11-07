@@ -38,7 +38,8 @@ Arco do carrossel: famoso (conexão) → o que a ciência diz → o que eu faço
 - Continuam proibidos: os vícios de IA da skill copy-social-ttc (seção 4), promessa com prazo, culpa, escassez falsa.
 
 ## 3. Gancho
-- Fórmula: nome conhecido + fato concreto + vontade de saber o resto.
+- **Desde 06/11/2026: o gancho provoca emoção.** Régua, 9 tipos e exemplos em `diretrizes/ganchos.md`. Pergunta, provocação, contraste, autoironia, gíria e até 2 palavras em caixa alta liberados no gancho. Freio: número com fonte, nada inventado, nada de alarme de saúde.
+- Fórmula com famoso: nome conhecido + fato concreto + cutucada no leitor ("O Bruninho tem 40 anos. Qual é a sua desculpa mesmo?").
 - "A faixa de força semanal ligada a menos mortes" vira "30 minutos de musculação por semana mudam quanto tempo você vive".
 - Proibido: gancho abstrato, de estudo, ou que qualquer perfil poderia postar.
 

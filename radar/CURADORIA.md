@@ -79,7 +79,8 @@ amarrada a uma notícia em alta da coleta.
    últimos 30 dias com engajamento >= 2x a mediana do próprio perfil (`razao`), com legenda, curtidas e comentários, e
    `perfis` já ordenados por `pontos` (perfil em alta). Os posts têm prioridade: vire item da curadoria (mesmo `id`) os que
    têm ponte com o nicho, analisando pela legenda (e WebFetch no link, se abrir), e cite a `razao` no `motivo`
-   ("4,3x a média do perfil"). Para os 9 primeiros perfis sem `erro`, escreva no arquivo da curadoria a chave
+   ("4,3x a média do perfil") e o tipo de gancho de `diretrizes/ganchos.md` ("gancho tipo 3, autoironia"); um gancho
+   viral com ponte clara com o nicho entra na tabela de antes e depois de `diretrizes/ganchos.md`, em português e sem copiar. Para os 9 primeiros perfis sem `erro`, escreva no arquivo da curadoria a chave
    `instagram_perfis`: {"usuario": {"motivo": "1 frase: por que o Luan deve olhar este perfil agora",
    "inspirar": "1 frase: o que pegar dele (formato, gancho, edição, tom), sem copiar"}}. Mantenha
    `radar/perfis-instagram.json` vivo: tire perfis que voltaram com erro e acrescente (no máximo 3 por rodada) perfis
