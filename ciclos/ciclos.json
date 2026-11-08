@@ -461,5 +461,106 @@
    "k-2026-11-08-carrossel",
    "k-2026-11-08-meme"
   ]
+ },
+ {
+  "id": "c-2026-11-09",
+  "inicio": "2026-11-09",
+  "fim": "2026-11-11",
+  "tema": "Longevidade",
+  "sigla": "LON",
+  "pontuacao": {
+   "LON": 7.437,
+   "EST": 3.67,
+   "FOR": 2.787,
+   "GLP": 2.676,
+   "EMA": 1.594,
+   "MEN": 1.532,
+   "ESP": 0.414,
+   "WEA": 0.0
+  },
+  "excluidos": [
+   "FOR",
+   "EST"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "565fee8fe0a28df6",
+   "ac199c2151aeab30",
+   "6d7d6d2f15a1bb97",
+   "ig-7692dfa732f389",
+   "3e3b8109e521cd5c",
+   "1fd05e91f435f81b",
+   "f1ae2f99364d9110",
+   "e82e03193c2298bd",
+   "77666b5ce5819c59",
+   "43ce0c1604bdcdd7",
+   "396a11f48629cec0",
+   "8907fcee94b18eb9",
+   "ig-c1f2641b833236",
+   "cbcfa3874ed51cc7",
+   "8ea7633b22977858"
+  ],
+  "famosos": [
+   {
+    "nome": "Josh Brolin",
+    "noticia_id": "8ea7633b22977858",
+    "titulo": "Josh Brolin shows off ripped physique while renewing vows with wife Kathryn in Vegas for 10th wedding anniversary",
+    "link": "https://pagesix.com/2026/11/07/celebrity-news/josh-brolin-renews-vows-with-wife-kathryn-in-vegas-for-10th-anniversary/",
+    "canal": "Pagesix",
+    "data": "2026-11-08T01:13:00+00:00",
+    "nota": 58,
+    "pessoa_br": false,
+    "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fjosh-brolin-shows-off-ripped-147918022.jpg"
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-09",
+    "quando": "2026-11-09T20:00:00-03:00",
+    "arquivo": "2026-11-09/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-09.jpg",
+    "drive_id": "1ffXk5-oNjtSCdgatDg4pS1sZUCGnimCt",
+    "nome": "798733d6-3e00-4828-8fed-3c6e5c50ad43.jpg"
+   },
+   {
+    "dia": "2026-11-11",
+    "quando": "2026-11-11T20:00:00-03:00",
+    "arquivo": "2026-11-11/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-11.jpg",
+    "drive_id": "1qfQSzednYd94qkr4fp1va_MPY0Emji7R",
+    "nome": "IMG_8326.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-09/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-09-acervo-1.jpg",
+    "drive_id": "15JwUu-N2AkUTkY_rv-ZYI5RxkH9Y093L",
+    "nome": "IMG_2491.JPEG"
+   },
+   {
+    "arquivo": "2026-11-09/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-09-acervo-2.jpg",
+    "drive_id": "1hYrH4HM8sduAup3UL7CHmhU9GYZ9Xayb",
+    "nome": "IMG_1840.JPEG"
+   },
+   {
+    "arquivo": "2026-11-09/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-09-acervo-3.jpg",
+    "drive_id": "14c_BvSZD3HOFe3ozEaxkWbAEx3BlPg3Z",
+    "nome": "IMG_8063.JPEG"
+   },
+   {
+    "arquivo": "2026-11-09/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-09-acervo-4.jpg",
+    "drive_id": "1lH74oO4coRcYJOnB--OuJUaSu-wgSe2v",
+    "nome": "IMG_0470.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-08T15:08-03:00",
+  "status": "escolhido"
  }
 ]
