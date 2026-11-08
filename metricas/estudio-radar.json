@@ -1,21 +1,32 @@
 {
- "atualizado_em": "2026-11-08T06:35:00-03:00",
+ "atualizado_em": "2026-11-08T14:20:59-03:00",
  "em_alta": [
   {
    "assunto": "ia-mercado",
    "tema": "negocio",
-   "canais": 7,
+   "canais": 6,
    "nota_max": 12,
    "titulos": [
     "AI nerves reinforce age-old investing lesson: Get diversified",
     "Environmental groups embrace AI, even as they warn of data center impacts",
-    "Why the US midterms sparked an AI stock selloff"
+    "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports"
+   ]
+  },
+  {
+   "assunto": "f1-interlagos",
+   "tema": "esporte",
+   "canais": 4,
+   "nota_max": 40,
+   "titulos": [
+    "As 3 Lições de Kimi Antonelli Para Ter Sucesso Dentro e Fora das Pistas",
+    "Mariana Becker abre o jogo ao contar bastidores da Fórmula 1: 'Já passei por muitos perrengues'",
+    "Ferrari Busca Acertar os Ponteiros após Acidente entre Hamilton e Leclerc"
    ]
   },
   {
    "assunto": "eleicoes-eua",
    "tema": "cultura",
-   "canais": 5,
+   "canais": 4,
    "nota_max": 5,
    "titulos": [
     "The Blue Tsunami Swept Doctors and Scientists Into Office",
@@ -24,25 +35,14 @@
    ]
   },
   {
-   "assunto": "f1-interlagos",
-   "tema": "esporte",
-   "canais": 4,
-   "nota_max": 35,
-   "titulos": [
-    "Mariana Becker abre o jogo ao contar bastidores da Fórmula 1: 'Já passei por muitos perrengues'",
-    "Ferrari Busca Acertar os Ponteiros após Acidente entre Hamilton e Leclerc",
-    "F1: Verstappen lidera 3º treino em São Paulo; Bortoleto é 10º e Câmara 15º"
-   ]
-  },
-  {
    "assunto": "glp1-mercado-farma",
    "tema": "negocio",
    "canais": 3,
-   "nota_max": 72,
+   "nota_max": 82,
    "titulos": [
+    "Anvisa aprova primeiro GLP-1 em comprimido para tratamento da obesidade",
     "SemaClique: nova caneta de semaglutida chega às farmácias por R$ 464,81",
-    "Indian drugmaker Dr Reddy's gets Brazil regulator nod to sell generic Ozempic",
-    "Lilly to sell obesity drugs directly on Hims & Hers site"
+    "Indian drugmaker Dr Reddy's gets Brazil regulator nod to sell generic Ozempic"
    ]
   },
   {
@@ -68,14 +68,14 @@
    ]
   },
   {
-   "assunto": "series-tv",
+   "assunto": "artes",
    "tema": "cultura",
    "canais": 3,
-   "nota_max": 5,
+   "nota_max": 8,
    "titulos": [
-    "Sam Rockwell Breaks Down Scenes From His Career, Including ‘Charlie’s Angels’ and ‘The White Lotus’",
-    "Future of ‘Heated Rivalry’ revealed ahead of wildly popular gay hockey romance’s hotly anticipated second season",
-    "Jason Priestley reveals what could have saved Shannen Doherty from getting fired from ‘Beverly Hills, 90210’"
+    "How Elizabeth Taylor’s Childhood and Career Were Defined by Her Overbearing Mother",
+    "Do Yourself a Favor and See ‘Raise the Red Lantern’",
+    "A new book looks at how Marcel Duchamp’s ‘impossible’ love for the sculptor Maria Martins changed his work"
    ]
   }
  ],
@@ -100,6 +100,13 @@
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
+  },
+  {
+   "titulo": "Anvisa aprova primeiro GLP-1 em comprimido para tratamento da obesidade",
+   "canal": "Estadão Saúde",
+   "assunto": "glp1-mercado-farma",
+   "nota": 82,
+   "gancho": "O Wegovy agora é COMPRIMIDO. E quem segura o seu músculo?"
   },
   {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
@@ -142,13 +149,6 @@
    "assunto": "ciencia-treino-forca",
    "nota": 80,
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
-  },
-  {
-   "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",
-   "canal": "Instagram",
-   "assunto": "forca-saude-homem",
-   "nota": 76,
-   "gancho": "Mais músculo, melhor ereção. Tem estudo sobre isso."
   }
  ]
 }
