@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-07T14:30:00-03:00",
+ "atualizado_em": "2026-11-08T06:35:00-03:00",
  "em_alta": [
   {
    "assunto": "ia-mercado",
    "tema": "negocio",
-   "canais": 6,
-   "nota_max": 10,
+   "canais": 7,
+   "nota_max": 12,
    "titulos": [
+    "AI nerves reinforce age-old investing lesson: Get diversified",
     "Environmental groups embrace AI, even as they warn of data center impacts",
-    "Why the US midterms sparked an AI stock selloff",
-    "The Download: a humanoid cleans house and Samsung builds for the AI boom"
+    "Why the US midterms sparked an AI stock selloff"
    ]
   },
   {
@@ -24,28 +24,6 @@
    ]
   },
   {
-   "assunto": "maratona-nyc-rabdomiolise",
-   "tema": "saude",
-   "canais": 4,
-   "nota_max": 74,
-   "titulos": [
-    "Rachel Apa caiu no km 39 da Maratona de NY e morreu; a história dela",
-    "Corredora que faleceu na maratona de Nova York teve lesão muscular grave",
-    "How Could a 24-Year-Old in ‘Perfect Health’ Collapse During a Marathon? An Expert Explains Rhabdomyolysis (Exclusive)"
-   ]
-  },
-  {
-   "assunto": "wegovy-comprimido-anvisa",
-   "tema": "saude",
-   "canais": 4,
-   "nota_max": 74,
-   "titulos": [
-    "Ready State: no GLP-1 a fome some, mas proteína e fruta continuam valendo",
-    "Anvisa aprova Wegovy em comprimido: o que falta para versão oral da caneta emagrecedora chegar às farmácias do Brasil?",
-    "Anvisa aprova Wegovy em comprimido: o que falta para versão oral da caneta emagracedora chegar às farmácias do Brasil?"
-   ]
-  },
-  {
    "assunto": "f1-interlagos",
    "tema": "esporte",
    "canais": 4,
@@ -53,7 +31,18 @@
    "titulos": [
     "Mariana Becker abre o jogo ao contar bastidores da Fórmula 1: 'Já passei por muitos perrengues'",
     "Ferrari Busca Acertar os Ponteiros após Acidente entre Hamilton e Leclerc",
-    "Piloto brasileiro Gabriel Bortoleto leva a namorada para treino livre de Fórmula 1"
+    "F1: Verstappen lidera 3º treino em São Paulo; Bortoleto é 10º e Câmara 15º"
+   ]
+  },
+  {
+   "assunto": "glp1-mercado-farma",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 72,
+   "titulos": [
+    "SemaClique: nova caneta de semaglutida chega às farmácias por R$ 464,81",
+    "Indian drugmaker Dr Reddy's gets Brazil regulator nod to sell generic Ozempic",
+    "Lilly to sell obesity drugs directly on Hims & Hers site"
    ]
   },
   {
@@ -79,14 +68,14 @@
    ]
   },
   {
-   "assunto": "ebola",
-   "tema": "saude",
+   "assunto": "series-tv",
+   "tema": "cultura",
    "canais": 3,
-   "nota_max": 12,
+   "nota_max": 5,
    "titulos": [
-    "British Doctor Infected With Ebola While Working on Outbreak Evacuated to U.K.",
-    "British Ebola patient evacuated from DR Congo arrives at London hospital",
-    "British healthcare worker with Ebola to be evacuated from Congo to UK, document shows"
+    "Sam Rockwell Breaks Down Scenes From His Career, Including ‘Charlie’s Angels’ and ‘The White Lotus’",
+    "Future of ‘Heated Rivalry’ revealed ahead of wildly popular gay hockey romance’s hotly anticipated second season",
+    "Jason Priestley reveals what could have saved Shannen Doherty from getting fired from ‘Beverly Hills, 90210’"
    ]
   }
  ],

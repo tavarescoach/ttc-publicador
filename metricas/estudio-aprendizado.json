@@ -4,7 +4,7 @@
    "headline": "Você já viveu a magreza dos anos 90 uma vez.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 290,
+   "alcance": 291,
    "valor": 5,
    "taxa": 1.7,
    "parcial": false,
@@ -17,7 +17,7 @@
    "headline": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 262,
+   "alcance": 275,
    "valor": 3,
    "taxa": 1.1,
    "parcial": false,
@@ -30,10 +30,10 @@
    "headline": "Depois dos 40, perder força não é só idade. É falta do estímulo certo.",
    "formato": "carrossel",
    "quando": "2026-11-05",
-   "alcance": 211,
+   "alcance": 239,
    "valor": 9,
-   "taxa": 4.3,
-   "parcial": true,
+   "taxa": 3.8,
+   "parcial": false,
    "notas": {
     "atualidade": 8,
     "clareza": 9,
@@ -64,9 +64,9 @@
    "headline": "Mudar o treino toda semana parece inteligente.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 134,
+   "alcance": 138,
    "valor": 2,
-   "taxa": 1.5,
+   "taxa": 1.4,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -74,44 +74,10 @@
    "alternativas": []
   },
   {
-   "headline": "Três sinais de que o seu treino veio do feed.",
-   "formato": "carrossel",
-   "quando": "2026-10-28",
-   "alcance": 288,
-   "valor": 7,
-   "taxa": 2.4,
-   "parcial": false,
-   "notas": {
-    "atualidade": 1,
-    "clareza": 9,
-    "curiosidade": 8,
-    "historico": 3,
-    "marca": 7,
-    "publico": 8,
-    "venda": 8
-   },
-   "total": 68,
-   "seguiu_recomendada": false,
-   "alternativas": [
-    {
-     "titulo": "A pasta de treinos salvos cresce e a carga do agachamento continua a mesma.",
-     "total": 72
-    },
-    {
-     "titulo": "Conteúdo de graça tem um custo, a semana que você perde testando.",
-     "total": 61
-    },
-    {
-     "titulo": "A dica certa para outra pessoa pode estar errada para você.",
-     "total": 67
-    }
-   ]
-  },
-  {
    "headline": "Treino de modelo não é treino para você.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 164,
+   "alcance": 168,
    "valor": 2,
    "taxa": 1.2,
    "parcial": false,
@@ -140,43 +106,17 @@
      "total": 72
     }
    ]
-  },
-  {
-   "headline": "Parte do seu treino acontece na cama",
-   "formato": "reels",
-   "quando": "2026-10-28",
-   "alcance": 306,
-   "valor": 50,
-   "taxa": 16.3,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
-  },
-  {
-   "headline": "Reels: capa e legenda",
-   "formato": "reels",
-   "quando": "2026-10-28",
-   "alcance": 14785,
-   "valor": 1423,
-   "taxa": 9.6,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
   }
  ],
- "medidos": 7,
+ "medidos": 5,
  "com_notas": 2,
- "mediana_taxa_perfil": 3.9,
+ "mediana_taxa_perfil": 3.4,
  "correlacao_taxa": {},
  "pesos_sugeridos": null,
  "recomendada": {
-  "seguiu": 0,
-  "nao_seguiu": 2,
-  "taxa_seguiu": null,
-  "taxa_nao_seguiu": 1.8
+  "seguiu": 1,
+  "nao_seguiu": 1,
+  "taxa_seguiu": 3.8,
+  "taxa_nao_seguiu": 1.2
  }
 }
