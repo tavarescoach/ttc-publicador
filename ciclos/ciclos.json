@@ -561,6 +561,17 @@
    }
   ],
   "escolhido_em": "2026-11-08T15:08-03:00",
-  "status": "escolhido"
+  "status": "pacote_pronto",
+  "pecas": [
+   "k-2026-11-09-estatico",
+   "k-2026-11-09-carrossel",
+   "k-2026-11-09-foto",
+   "k-2026-11-10-estatico",
+   "k-2026-11-10-carrossel",
+   "k-2026-11-10-carrossel-noite",
+   "k-2026-11-11-estatico",
+   "k-2026-11-11-carrossel",
+   "k-2026-11-11-meme"
+  ]
  }
 ]

@@ -1,0 +1,91 @@
+{
+ "id": "k-2026-11-10-carrossel-noite",
+ "data": "2026-11-10",
+ "quando": "2026-11-10T20:00:00-03:00",
+ "tema": "Longevidade",
+ "funil": "fundo",
+ "pauta": "Guia: o dia sentado e as pausas que entram na conta da longevidade",
+ "legenda": "Eu treino aluno às 7h que passa as dez horas seguintes na cadeira, e por isso a tarde dele também entra no plano.\n\nNum estudo com 7.985 adultos acima de 45 anos, o acelerômetro registrou 77% das horas acordadas paradas, e quem levantava antes de completar 30 minutos sentado teve o menor risco de morte. No laboratório da Columbia, 5 minutos de caminhada leve a cada meia hora reduziram em 58% o pico de glicose depois das refeições. São estudos pequenos ou observacionais, que mostram associação.\n\nUm alarme de 30 minutos e uma caminhada na ligação já começam a mudar o seu dia.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #rotina #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Treinou às 7h e sentou **até as 18h**?",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-09/acervo-3.jpg",
+   "foco": "center 35%"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "A cena",
+   "titulo": "Reunião, almoço na mesa, **trânsito**.",
+   "texto": "Muita gente treina cedo e passa as horas seguintes sentada. O treino da manhã conta, e o resto do dia também entra na conta da longevidade."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O ponto de partida",
+   "numero": "77",
+   "unidade": "%",
+   "titulo": "das horas acordadas, **parados**.",
+   "texto": "Foi o que o acelerômetro registrou em 7.985 adultos acima de 45 anos. Quem levantava antes de completar 30 minutos sentado teve o menor risco de morte no período.",
+   "fonte": "Diaz et al., Annals of Internal Medicine (2017)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "preto",
+   "rotulo": "A dose que mexeu",
+   "numero": "58",
+   "unidade": "%",
+   "titulo": "menos pico de glicose **depois das refeições**.",
+   "texto": "Onze adultos de 40 a 60 e poucos anos repetiram o mesmo dia no laboratório. Cinco minutos de caminhada leve a cada meia hora baixaram o açúcar no sangue e a pressão no mesmo dia.",
+   "fonte": "Duran et al., Med. Sci. Sports Exerc. (2023)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O total do dia",
+   "numero": "60 a 75",
+   "unidade": "min",
+   "titulo": "de atividade por dia **apagaram o risco extra**.",
+   "texto": "Em mais de 1 milhão de pessoas, o risco extra de quem passava 8 horas ou mais sentado sumiu em quem somava essa atividade moderada por dia.",
+   "fonte": "Ekelund et al., The Lancet (2016)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Na prática",
+   "titulo": "Um alarme **de 30 minutos**.",
+   "texto": "Quando tocar, levante por 5 minutos. Ande durante a ligação, suba um lance de escada ou encha a garrafa de água longe da mesa."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "O dia inteiro **entra na conta**.",
+   "texto": "**Treino de manhã e pausas à tarde somam no mesmo corpo.** A força fica nos dias fixos, e o movimento se espalha pelo resto da agenda."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com meus alunos",
+   "titulo": "Eu monto **a sua tarde** junto com o treino.",
+   "texto": "Com aluno que passa o dia na mesa, a gente combina as pausas no mesmo papel do treino: em que horário ele levanta, o que faz em 5 minutos e onde a caminhada entra no trajeto."
+  },
+  {
+   "tipo": "licao",
+   "fundo": "marinho",
+   "rotulo": "O que muda em você",
+   "titulo": "Chegar no fim do dia **com energia**.",
+   "texto": "Você sai da última reunião com disposição para o treino ou para a família, e o corpo para de pagar a conta de dez horas na cadeira.",
+   "nota": "Na Avaliação Estratégica, em 40 minutos no TTC, você sai com o seu ponto de partida e o plano das próximas semanas."
+  },
+  {
+   "tipo": "cta",
+   "fundo": "preto",
+   "titulo": "Sua rotina **entra no plano**.",
+   "texto": "Avaliação Estratégica no TTC, em Copacabana. Horários fixos de manhã, das 7h às 10h.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}
