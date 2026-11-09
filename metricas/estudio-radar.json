@@ -1,99 +1,52 @@
 {
- "atualizado_em": "2026-11-08T14:20:59-03:00",
+ "atualizado_em": "2026-11-09T06:40:00-03:00",
  "em_alta": [
   {
    "assunto": "ia-mercado",
    "tema": "negocio",
-   "canais": 6,
+   "canais": 5,
    "nota_max": 12,
    "titulos": [
     "AI nerves reinforce age-old investing lesson: Get diversified",
-    "Environmental groups embrace AI, even as they warn of data center impacts",
-    "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports"
+    "RBA's Hunter says AI has yet to deliver productivity boost, trigger job losses",
+    "CORRECTED Environmental groups embrace AI, even as they warn of data center impacts"
+   ]
+  },
+  {
+   "assunto": "glp1-mercado-farma",
+   "tema": "negocio",
+   "canais": 4,
+   "nota_max": 82,
+   "titulos": [
+    "Anvisa aprova primeiro GLP-1 em comprimido para tratamento da obesidade",
+    "SemaClique: nova caneta de semaglutida chega às farmácias por R$ 464,81",
+    "Nova caneta emagrecedora Semaclique chega às farmácias com preço a partir de R$ 333"
    ]
   },
   {
    "assunto": "f1-interlagos",
    "tema": "esporte",
    "canais": 4,
-   "nota_max": 40,
+   "nota_max": 35,
    "titulos": [
-    "As 3 Lições de Kimi Antonelli Para Ter Sucesso Dentro e Fora das Pistas",
     "Mariana Becker abre o jogo ao contar bastidores da Fórmula 1: 'Já passei por muitos perrengues'",
-    "Ferrari Busca Acertar os Ponteiros após Acidente entre Hamilton e Leclerc"
+    "Ferrari Busca Acertar os Ponteiros após Acidente entre Hamilton e Leclerc",
+    "F1: Verstappen lidera 3º treino em São Paulo; Bortoleto é 10º e Câmara 15º"
    ]
   },
   {
-   "assunto": "eleicoes-eua",
-   "tema": "cultura",
-   "canais": 4,
-   "nota_max": 5,
-   "titulos": [
-    "The Blue Tsunami Swept Doctors and Scientists Into Office",
-    "Papa Leão Diz Que Votou nas Eleições dos EUA Porque Tem “Orgulho de Ser Norte-americano”",
-    "Fox News Digital's News Quiz: November 6, 2026"
-   ]
-  },
-  {
-   "assunto": "glp1-mercado-farma",
-   "tema": "negocio",
+   "assunto": "baena-fisiculturismo",
+   "tema": "esporte",
    "canais": 3,
-   "nota_max": 82,
+   "nota_max": 60,
    "titulos": [
-    "Anvisa aprova primeiro GLP-1 em comprimido para tratamento da obesidade",
-    "SemaClique: nova caneta de semaglutida chega às farmácias por R$ 464,81",
-    "Indian drugmaker Dr Reddy's gets Brazil regulator nod to sell generic Ozempic"
-   ]
-  },
-  {
-   "assunto": "divulgacao-cientifica",
-   "tema": "ciencia",
-   "canais": 3,
-   "nota_max": 72,
-   "titulos": [
-    "Perfil @marceloscience",
-    "Perfil @ofitfeed",
-    "Paulo Muzy anuncia nova descoberta na saúde"
-   ]
-  },
-  {
-   "assunto": "vacinas-eua",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 20,
-   "titulos": [
-    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find",
-    "US infant bleeding episodes jump as vitamin K refusals rise, two studies find",
-    "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find"
-   ]
-  },
-  {
-   "assunto": "artes",
-   "tema": "cultura",
-   "canais": 3,
-   "nota_max": 8,
-   "titulos": [
-    "How Elizabeth Taylor’s Childhood and Career Were Defined by Her Overbearing Mother",
-    "Do Yourself a Favor and See ‘Raise the Red Lantern’",
-    "A new book looks at how Marcel Duchamp’s ‘impossible’ love for the sculptor Maria Martins changed his work"
+    "Filho de Schwarzenegger é top 5 em estreia profissional no fisiculturismo",
+    "Arnold Schwarzenegger’s Son Joseph Baena Places in Top 5 in ‘Pro Debut’ at Natural Bodybuilding Competition",
+    "Arnold Schwarzenegger’s son Joseph Baena, 29, places in top 5 at bodybuilding competition"
    ]
   }
  ],
  "top": [
-  {
-   "titulo": "Thaila Ayala revela diagnóstico precoce de perimenopausa aos 39 anos: 'Eu deprimi'; Grazi Massafera diz viver mesma fase",
-   "canal": "Globo",
-   "assunto": "perimenopausa-famosas",
-   "nota": 90,
-   "gancho": "Thaila Ayala entrou na perimenopausa aos 39. Você sabe reconhecer os sinais?"
-  },
-  {
-   "titulo": "Paolla Oliveira mostra treino pesado em casa: 'Exercitando o corpo pra manter a cabeça no lugar'",
-   "canal": "Globo",
-   "assunto": "paolla-treino-casa",
-   "nota": 86,
-   "gancho": "Paolla Oliveira treina pesado no quintal pra manter a cabeça no lugar. E você?"
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -149,6 +102,20 @@
    "assunto": "ciencia-treino-forca",
    "nota": 80,
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
+  },
+  {
+   "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",
+   "canal": "Instagram",
+   "assunto": "forca-saude-homem",
+   "nota": 76,
+   "gancho": "Mais músculo, melhor ereção. Tem estudo sobre isso."
+  },
+  {
+   "titulo": "Bret Contreras: corpo inteiro 2x por semana é o treino mais eficiente",
+   "canal": "Instagram",
+   "assunto": "treino-minimo-eficaz",
+   "nota": 76,
+   "gancho": "Dois treinos por semana. Pra quase todo mundo, dá conta."
   }
  ]
 }
