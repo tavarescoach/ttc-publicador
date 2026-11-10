@@ -1,26 +1,26 @@
 {
- "atualizado_em": "2026-11-09T17:46-03:00",
+ "atualizado_em": "2026-11-10T01:08-03:00",
  "seguidores": 9739,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 265,
+  "alcance": 279,
   "valor": 8,
   "taxa": 3.3
  },
  "por_tipo": {
   "REELS": {
    "posts": 5,
-   "alcance_medio": 684,
-   "valor_medio": 53.4
+   "alcance_medio": 724,
+   "valor_medio": 54.6
   },
   "IMAGEM": {
    "posts": 16,
-   "alcance_medio": 510,
-   "valor_medio": 27.4
+   "alcance_medio": 513,
+   "valor_medio": 28.7
   },
   "CARROSSEL": {
    "posts": 19,
-   "alcance_medio": 209,
+   "alcance_medio": 214,
    "valor_medio": 5.5
   }
  },
@@ -58,13 +58,13 @@
    "titulo": "Jaqueta verde, óculos escuros e a pose que a vitrine pediu.",
    "tipo": "IMAGEM",
    "quando": "2026-11-06",
-   "alcance": 831,
-   "views": 1671,
+   "alcance": 835,
+   "views": 1678,
    "salvos": 0,
    "compart": 1,
    "comentarios": 6,
    "valor": 67,
-   "taxa": 8.1,
+   "taxa": 8.0,
    "parcial": false
   },
   {
@@ -96,44 +96,44 @@
    "parcial": false
   },
   {
-   "id": "18083136059352183",
-   "titulo": "Faixa roxa no ombro e o suor do treino ainda no rosto.",
-   "tipo": "IMAGEM",
-   "quando": "2026-11-03",
-   "alcance": 264,
-   "views": 461,
-   "salvos": 0,
-   "compart": 3,
-   "comentarios": 0,
-   "valor": 48,
-   "taxa": 18.2,
-   "parcial": false
-  },
-  {
    "id": "17914191849579802",
    "titulo": "Você está fazendo o búlgaro errado. 👀",
    "tipo": "REELS",
    "quando": "2026-11-09",
-   "alcance": 321,
-   "views": 464,
+   "alcance": 520,
+   "views": 712,
    "salvos": 0,
-   "compart": 4,
+   "compart": 5,
    "comentarios": 8,
-   "valor": 45,
-   "taxa": 14.0,
+   "valor": 51,
+   "taxa": 9.8,
    "parcial": true
+  },
+  {
+   "id": "18083136059352183",
+   "titulo": "Faixa roxa no ombro e o suor do treino ainda no rosto.",
+   "tipo": "IMAGEM",
+   "quando": "2026-11-03",
+   "alcance": 271,
+   "views": 462,
+   "salvos": 0,
+   "compart": 3,
+   "comentarios": 0,
+   "valor": 48,
+   "taxa": 17.7,
+   "parcial": false
   },
   {
    "id": "17891002500479706",
    "titulo": "Eu no meu momento de lazer, versão rio.",
    "tipo": "IMAGEM",
    "quando": "2026-11-08",
-   "alcance": 499,
-   "views": 991,
+   "alcance": 527,
+   "views": 1040,
    "salvos": 1,
    "compart": 0,
    "comentarios": 0,
-   "valor": 36,
+   "valor": 38,
    "taxa": 7.2,
    "parcial": true
   },
@@ -142,8 +142,8 @@
    "titulo": "Modo Olimpíada ligado no calçadão de Copacabana.",
    "tipo": "IMAGEM",
    "quando": "2026-11-05",
-   "alcance": 728,
-   "views": 1328,
+   "alcance": 731,
+   "views": 1332,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
@@ -184,8 +184,8 @@
    "titulo": "Eita ferro, o Ferrugem chegou no ponto que eu mais gosto de ver em quem treina: a academia virou lazer.",
    "tipo": "IMAGEM",
    "quando": "2026-11-03",
-   "alcance": 825,
-   "views": 1508,
+   "alcance": 826,
+   "views": 1515,
    "salvos": 2,
    "compart": 1,
    "comentarios": 3,
@@ -212,13 +212,27 @@
    "titulo": "Eu fico feliz quando alguém descobre isso num exame, e não numa emergência.",
    "tipo": "IMAGEM",
    "quando": "2026-11-09",
-   "alcance": 1076,
-   "views": 1974,
-   "salvos": 0,
+   "alcance": 1164,
+   "views": 2117,
+   "salvos": 1,
    "compart": 2,
    "comentarios": 0,
-   "valor": 19,
-   "taxa": 1.8,
+   "valor": 22,
+   "taxa": 1.9,
+   "parcial": true
+  },
+  {
+   "id": "18140711710668185",
+   "titulo": "Estrada vazia, montanha com neve no fundo e eu de gorro, rindo do frio.",
+   "tipo": "IMAGEM",
+   "quando": "2026-11-09",
+   "alcance": 137,
+   "views": 268,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 0,
+   "valor": 18,
+   "taxa": 13.1,
    "parcial": true
   },
   {
@@ -226,27 +240,27 @@
    "titulo": "Eu peço a média de passos do celular antes de montar qualquer treino.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-07",
-   "alcance": 383,
-   "views": 765,
+   "alcance": 392,
+   "views": 782,
    "salvos": 1,
    "compart": 0,
    "comentarios": 0,
    "valor": 15,
-   "taxa": 3.9,
-   "parcial": true
+   "taxa": 3.8,
+   "parcial": false
   },
   {
    "id": "18643284154051106",
    "titulo": "Eu prefiro o aluno que falta um dia e volta no seguinte ao que treina perfeito por três semanas e some.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-07",
-   "alcance": 167,
-   "views": 377,
+   "alcance": 169,
+   "views": 380,
    "salvos": 0,
    "compart": 1,
    "comentarios": 1,
    "valor": 11,
-   "taxa": 6.6,
+   "taxa": 6.5,
    "parcial": false
   },
   {
@@ -254,13 +268,13 @@
    "titulo": "Eu não passo carga pesada para aluno que me conta que foi dormir às 2h.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-06",
-   "alcance": 443,
-   "views": 945,
+   "alcance": 445,
+   "views": 949,
    "salvos": 0,
    "compart": 1,
    "comentarios": 0,
    "valor": 10,
-   "taxa": 2.3,
+   "taxa": 2.2,
    "parcial": false
   },
   {
@@ -268,13 +282,13 @@
    "titulo": "Duas sessões de 30 minutos por semana, durante oito meses. Mulheres com média de 65 anos ganharam 2,9% de dens",
    "tipo": "CARROSSEL",
    "quando": "2026-11-05",
-   "alcance": 265,
-   "views": 523,
+   "alcance": 269,
+   "views": 529,
    "salvos": 1,
    "compart": 1,
    "comentarios": 0,
    "valor": 9,
-   "taxa": 3.4,
+   "taxa": 3.3,
    "parcial": false
   },
   {
@@ -289,20 +303,6 @@
    "comentarios": 0,
    "valor": 9,
    "taxa": 5.7,
-   "parcial": false
-  },
-  {
-   "id": "18116893820119454",
-   "titulo": "Eu prefiro mil vezes uma aluna de 55 levantando carga com técnica a uma aluna fazendo exercício leve com medo",
-   "tipo": "CARROSSEL",
-   "quando": "2026-11-04",
-   "alcance": 246,
-   "views": 483,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 0,
-   "valor": 8,
-   "taxa": 3.3,
    "parcial": false
   }
  ]
