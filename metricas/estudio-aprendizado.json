@@ -4,7 +4,7 @@
    "headline": "Você já viveu a magreza dos anos 90 uma vez.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 294,
+   "alcance": 298,
    "valor": 5,
    "taxa": 1.7,
    "parcial": false,
@@ -17,7 +17,7 @@
    "headline": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
    "formato": "carrossel",
    "quando": "2026-10-30",
-   "alcance": 276,
+   "alcance": 279,
    "valor": 3,
    "taxa": 1.1,
    "parcial": false,
@@ -30,9 +30,9 @@
    "headline": "Depois dos 40, perder força não é só idade. É falta do estímulo certo.",
    "formato": "carrossel",
    "quando": "2026-11-05",
-   "alcance": 254,
+   "alcance": 269,
    "valor": 9,
-   "taxa": 3.5,
+   "taxa": 3.3,
    "parcial": false,
    "notas": {
     "atualidade": 8,
@@ -61,25 +61,12 @@
    ]
   },
   {
-   "headline": "Mudar o treino toda semana parece inteligente.",
-   "formato": "carrossel",
-   "quando": "2026-10-30",
-   "alcance": 139,
-   "valor": 2,
-   "taxa": 1.4,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
-  },
-  {
    "headline": "Treino de modelo não é treino para você.",
    "formato": "carrossel",
    "quando": "2026-11-02",
-   "alcance": 172,
+   "alcance": 179,
    "valor": 2,
-   "taxa": 1.2,
+   "taxa": 1.1,
    "parcial": false,
    "notas": {
     "atualidade": 3,
@@ -108,7 +95,7 @@
    ]
   }
  ],
- "medidos": 5,
+ "medidos": 4,
  "com_notas": 2,
  "mediana_taxa_perfil": 3.3,
  "correlacao_taxa": {},
@@ -116,7 +103,7 @@
  "recomendada": {
   "seguiu": 1,
   "nao_seguiu": 1,
-  "taxa_seguiu": 3.5,
-  "taxa_nao_seguiu": 1.2
+  "taxa_seguiu": 3.3,
+  "taxa_nao_seguiu": 1.1
  }
 }
