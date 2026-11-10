@@ -37,6 +37,7 @@ Decisão do Luan em 06/11/2026, depois da auditoria (`auditoria/relatorios/2026-
 | Se você não lembra a carga do agachamento de quinta passada… | Você não treina. Você frequenta academia. | 2 |
 | Dormir às 17h eu não encaro, mas a regra do Tiago Scheuer eu assino embaixo. | O âncora do Hora 1 dorme às 17h. E eu dou razão pra ele. | 8 |
 | Abaixo de 4 mil passos por dia, o risco de demência já apareceu 25% menor… | Quantos passos você deu hoje? Chuta antes de olhar o celular. | 7 |
+| Dormir bem pode reduzir o risco de 90 doenças, diz estudo. | Dormiu à meia-noite e acorda às 6? A conta não fecha. | 7 |
 | Decodificando a recuperação. | Treinar todo dia te deixa mais fraco? Às vezes, sim. | 1 |
 
 ## CTA por palavra no comentário (para testar)
