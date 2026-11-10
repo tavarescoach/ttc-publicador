@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-10T06:26:41-03:00",
+ "atualizado_em": "2026-11-10T14:21:28-03:00",
  "em_alta": [
   {
    "assunto": "alcool-beber-menos",
@@ -24,18 +24,47 @@
    ]
   },
   {
-   "assunto": "ia-australia-openai",
-   "tema": "tecnologia",
+   "assunto": "glp1-alerta-visao",
+   "tema": "saude",
    "canais": 3,
-   "nota_max": 6,
+   "nota_max": 70,
    "titulos": [
-    "Australia to mandate AI breach reporting, create regulator after OpenAI breach",
-    "Australia considers criminal penalties for rogue AI in wake of OpenAI hack",
-    "Mandatory AI safety and security protections announced after OpenAI breach of Medicare – video"
+    "EUA exigem alerta de risco de perda de visão nas bulas de Ozempic e Mounjaro",
+    "US FDA orders new eye risk warnings for Ozempic, Zepbound",
+    "US FDA orders new eye risk warnings for Ozempic, Zepbound"
+   ]
+  },
+  {
+   "assunto": "proteina-alimentos",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 65,
+   "titulos": [
+    "Da atividade física ao envelhecimento, por que a proteína importa?",
+    "Bars, beans and tins: the best-tasting protein foods we’d buy again and again",
+    "Who Put Pickles and Protein Powder in My Advent Calendar?"
+   ]
+  },
+  {
+   "assunto": "ia-energia",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 8,
+   "titulos": [
+    "The Download: Pelosi’s successor targets AI and data centers face power woes",
+    "The Download: empty AI climate claims, and an Nvidia investigation",
+    "Where there’s AI, there’ll be energy"
    ]
   }
  ],
  "top": [
+  {
+   "titulo": "Ícone dos anos 80, Carla Camuratti se exercita em praia carioca",
+   "canal": "Globo",
+   "assunto": "carla-camurati-praia",
+   "nota": 86,
+   "gancho": "Carla Camurati, 66 anos, treinando em Copacabana. E você, vai quando?"
+  },
   {
    "titulo": "Claudia Ohana desabafa sobre mudanças no corpo no envelhecimento",
    "canal": "Metrópoles",
@@ -98,13 +127,6 @@
    "assunto": "ciencia-treino-forca",
    "nota": 80,
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
-  },
-  {
-   "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",
-   "canal": "Instagram",
-   "assunto": "forca-saude-homem",
-   "nota": 76,
-   "gancho": "Mais músculo, melhor ereção. Tem estudo sobre isso."
   }
  ]
 }
