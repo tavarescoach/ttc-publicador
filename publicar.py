@@ -85,7 +85,14 @@ def esperar_pronto(container_id, limite_seg=600):
     """Vídeos precisam ser processados pelo Instagram antes de publicar."""
     inicio = time.time()
     while True:
-        st = chamar("GET", container_id, {"fields": "status_code,status"})
+        try:
+            st = chamar("GET", container_id, {"fields": "status_code,status"})
+        except ErroPublicacao as e:
+            # Container recém-criado às vezes ainda não "existe" na API (erro 2207006): espera e tenta de novo
+            if "2207006" in str(e) and time.time() - inicio < 90:
+                time.sleep(10)
+                continue
+            raise
         code = st.get("status_code")
         if code == "FINISHED":
             return
@@ -151,7 +158,7 @@ def publicar(item):
         try:
             return chamar("POST", f"{IG_ID}/media_publish", {"creation_id": cid}).get("id")
         except ErroPublicacao as e:
-            if "9007" in str(e) and tentativa < 5:
+            if ("9007" in str(e) or "2207006" in str(e)) and tentativa < 5:
                 time.sleep(10)
                 continue
             raise
