@@ -80,31 +80,13 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "comportamento",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
   "tema": "saude",
   "status": "salvo"
  },
  {
-  "titulo": "Mind Pump | Build Muscle & Lose Fat (@mindpumpmedia) • Instagram reel",
-  "canal": "Sua referência",
-  "tema": "comportamento",
-  "status": "salvo"
- },
- {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "esporte",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
@@ -123,36 +105,54 @@
   "titulo": "Instagram",
   "canal": "Sua referência",
   "tema": "esporte",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "esporte",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "saude",
   "status": "salvo"
  },
  {
   "titulo": "Will Tennyson (@willtenny) • Instagram reel",
   "canal": "Sua referência",
   "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "esporte",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Mind Pump | Build Muscle & Lose Fat (@mindpumpmedia) • Instagram reel",
+  "canal": "Sua referência",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -206,7 +206,7 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -224,7 +224,7 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "comportamento",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -270,15 +270,15 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
-  "canal": "The Guardian",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Exercise in a pill",
   "canal": "MIT Technology Review",
   "tema": "ciencia",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
+  "canal": "The Guardian",
+  "tema": "saude",
   "status": "salvo"
  },
  {
@@ -300,21 +300,15 @@
   "status": "salvo"
  },
  {
-  "titulo": "Home workout",
+  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
   "canal": "Sua referência",
-  "tema": "esporte",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
   "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
   "canal": "Sua referência",
   "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-  "canal": "Sua referência",
-  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -327,6 +321,12 @@
   "titulo": "Coming out midlife",
   "canal": "Sua referência",
   "tema": "comportamento",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Home workout",
+  "canal": "Sua referência",
+  "tema": "esporte",
   "status": "salvo"
  },
  {
@@ -354,10 +354,52 @@
   "status": "virou_pauta"
  },
  {
+  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
+  "canal": "Fox News Health",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
+  "canal": "Folha Equilíbrio",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
+  "canal": "Fox News Health",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
   "titulo": "Scientists discover how exercise reverses muscle aging",
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "virou_pauta"
+ },
+ {
+  "titulo": "Is the energy of the 1990s returning to London’s art market?",
+  "canal": "The Art Newspaper",
+  "tema": "cultura",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
+  "canal": "Metrópoles",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
+  "canal": "ScienceDaily",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Longevity medicine mainstream",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
  },
  {
   "titulo": "A 47-year study reveals the age when your body starts losing strength",
@@ -370,47 +412,5 @@
   "canal": "ScienceDaily",
   "tema": "ciencia",
   "status": "salvo"
- },
- {
-  "titulo": "Is the energy of the 1990s returning to London’s art market?",
-  "canal": "The Art Newspaper",
-  "tema": "cultura",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
-  "canal": "Fox News Health",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
-  "canal": "Metrópoles",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
-  "canal": "Folha Equilíbrio",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Longevity medicine mainstream",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Weight-loss drugs may fight 7 serious health problems before the pounds even come off",
-  "canal": "Fox News Health",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
-  "canal": "ScienceDaily",
-  "tema": "saude",
-  "status": "virou_pauta"
  }
 ]
