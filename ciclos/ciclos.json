@@ -573,5 +573,118 @@
    "k-2026-11-11-carrossel",
    "k-2026-11-11-meme"
   ]
+ },
+ {
+  "id": "c-2026-11-12",
+  "inicio": "2026-11-12",
+  "fim": "2026-11-14",
+  "tema": "Treino de força",
+  "sigla": "FOR",
+  "pontuacao": {
+   "FOR": 6.513,
+   "LON": 6.315,
+   "EMA": 5.623,
+   "EST": 3.687,
+   "GLP": 3.438,
+   "MEN": 1.825,
+   "ESP": 0.33,
+   "WEA": 0.0
+  },
+  "excluidos": [
+   "EST",
+   "LON"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul",
+   "EMA": "Dia Mundial do Diabetes (14/11)"
+  },
+  "noticias_base": [
+   "09315b5966cdc04e",
+   "5b754afac9911aa0",
+   "b8fcc0ccec373f71",
+   "b29fcc2a91761f66",
+   "a3686f01058d2e48",
+   "8c8c0c6c090db341",
+   "31861e62398f1158",
+   "c6818419faf79fc5",
+   "c0a261bb43c7d87c",
+   "dd68617f0b2a5a6a",
+   "b7a64017b21d5641",
+   "47763ab246c4747b",
+   "4e03585ce93b9dc9",
+   "4ba2accff00911b2",
+   "35bbde3043ffe884"
+  ],
+  "famosos": [
+   {
+    "nome": "Hugh Jackman",
+    "noticia_id": "4e03585ce93b9dc9",
+    "titulo": "Hugh Jackman mostra shape em praia com a namorada e seu personal trainer",
+    "link": "https://revistaquem.globo.com/noticias/famosos-na-praia/noticia/2026/11/hugh-jackman-mostra-shape-em-praia-com-a-namorada-e-seu-personal-trainer.ghtml",
+    "canal": "Globo",
+    "data": "2026-11-11T00:11:35+00:00",
+    "nota": 72,
+    "pessoa_br": false,
+    "imagem": "https://s2-quem.glbimg.com/ehpaIxpygW0aTQHddRSqVNJSuG8=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/5/i/jvtZICTk6iAx9DML3igw/hugh.jpg"
+   },
+   {
+    "nome": "Hugh Jackman",
+    "noticia_id": "4ba2accff00911b2",
+    "titulo": "58 year-old Hugh Jackman puts his ripped physique on display and more star snaps",
+    "link": "https://pagesix.com/2026/11/11/photos/58-year-old-hugh-jackman-puts-his-ripped-physique-on-display-and-more-star-snaps/",
+    "canal": "Pagesix",
+    "data": "2026-11-11T16:10:57+00:00",
+    "nota": 60,
+    "pessoa_br": false,
+    "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fpremium-exclusive-sydney-australia-hugh-148238155.jpg"
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-12",
+    "quando": "2026-11-12T20:00:00-03:00",
+    "arquivo": "2026-11-12/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-12.jpg",
+    "drive_id": "1_D5TZ6XzquaH1uW1Lav_x_CPgXJAMw79",
+    "nome": "IMG_4502.JPEG"
+   },
+   {
+    "dia": "2026-11-14",
+    "quando": "2026-11-14T20:00:00-03:00",
+    "arquivo": "2026-11-14/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-14.jpg",
+    "drive_id": "1i4Jkjy75x0muYoXRhu7bE2GniGwKbfxF",
+    "nome": "IMG_2167.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-12/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-12-acervo-1.jpg",
+    "drive_id": "1o_KGW3U9H0VPwEGY7VS135UYUGbUqibm",
+    "nome": "IMG_9876.JPEG"
+   },
+   {
+    "arquivo": "2026-11-12/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-12-acervo-2.jpg",
+    "drive_id": "1Dfr28gNCxkqFozDUFzfAhjqKoPqFTsFw",
+    "nome": "IMG_2270.JPEG"
+   },
+   {
+    "arquivo": "2026-11-12/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-12-acervo-3.jpg",
+    "drive_id": "1CslRsDA3fmbF7mGGrbzdHzYVKptg_8NG",
+    "nome": "IMG_2335.JPEG"
+   },
+   {
+    "arquivo": "2026-11-12/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-12-acervo-4.jpg",
+    "drive_id": "1Zs3JFAS9ftGM2b4Rd6lmEeBSHGTgHME4",
+    "nome": "IMG_8525.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-11T15:09-03:00",
+  "status": "escolhido"
  }
 ]
