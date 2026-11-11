@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-10T14:21:28-03:00",
+ "atualizado_em": "2026-11-11T14:22:19-03:00",
  "em_alta": [
   {
-   "assunto": "alcool-beber-menos",
-   "tema": "comportamento",
-   "canais": 3,
-   "nota_max": 82,
+   "assunto": "glp1-alerta-visao",
+   "tema": "saude",
+   "canais": 5,
+   "nota_max": 70,
    "titulos": [
-    "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-    "Ready State: a gente bebe menos ou se encontra menos? Isolamento pesa como cigarro",
-    "The Truth About Gen Z’s Alcohol Habits"
+    "EUA exigem alerta de risco de perda de visão nas bulas de Ozempic e Mounjaro",
+    "EUA exigem alerta sobre perda de visão na bula de canetas emagrecedoras",
+    "Bulas de Ozempic, Wegovy e outros da classe GLP-1 terão novo alerta sobre risco raro de perda da visão"
    ]
   },
   {
@@ -24,30 +24,52 @@
    ]
   },
   {
-   "assunto": "glp1-alerta-visao",
+   "assunto": "obesidade-nova-definicao-imc",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 70,
+   "nota_max": 72,
    "titulos": [
-    "EUA exigem alerta de risco de perda de visão nas bulas de Ozempic e Mounjaro",
-    "US FDA orders new eye risk warnings for Ozempic, Zepbound",
-    "US FDA orders new eye risk warnings for Ozempic, Zepbound"
+    "IMC não basta para saber quem tem obesidade e deixa escapar parte dos casos",
+    "Move over BMI: new obesity definition is better for predicting your health",
+    "BMI alternative for identifying obesity ‘could prevent misdiagnosis in millions’"
    ]
   },
   {
    "assunto": "proteina-alimentos",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 65,
+   "nota_max": 62,
    "titulos": [
-    "Da atividade física ao envelhecimento, por que a proteína importa?",
-    "Bars, beans and tins: the best-tasting protein foods we’d buy again and again",
-    "Who Put Pickles and Protein Powder in My Advent Calendar?"
+    "Eating less protein could slow aging, review of 350 studies finds",
+    "We taste-tested 42 ways to get more protein. These 6 were the best",
+    "Advent Calendars Go Beyond Chocolate, From Pickles to Protein Powder"
+   ]
+  },
+  {
+   "assunto": "glp1-politica-publica",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 62,
+   "titulos": [
+    "Canetas para obesidade podem chegar ao SUS em 2027, diz ministro; entenda próximos passos",
+    "Justiça libera retomada do 'Bolsa Mounjaro' em Urupês com tirzepatida manipulada",
+    "Justiça autoriza retomada do 'Bolsa Mounjaro' após recurso de Prefeitura de Urupês (SP)"
+   ]
+  },
+  {
+   "assunto": "diabetes-risco-percepcao",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 58,
+   "titulos": [
+    "Brasileiros com risco de diabetes subestimam chance de ter a doença, diz pesquisa internacional",
+    "Diabetes: 252 milhões de adultos no mundo vivem sem saber que têm a doença",
+    "Diabetes: pesquisa aponta baixa percepção de risco e obstáculos para avaliação"
    ]
   },
   {
    "assunto": "ia-energia",
-   "tema": "negocio",
+   "tema": "tecnologia",
    "canais": 3,
    "nota_max": 8,
    "titulos": [
@@ -59,13 +81,6 @@
  ],
  "top": [
   {
-   "titulo": "Ícone dos anos 80, Carla Camuratti se exercita em praia carioca",
-   "canal": "Globo",
-   "assunto": "carla-camurati-praia",
-   "nota": 86,
-   "gancho": "Carla Camurati, 66 anos, treinando em Copacabana. E você, vai quando?"
-  },
-  {
    "titulo": "Claudia Ohana desabafa sobre mudanças no corpo no envelhecimento",
    "canal": "Metrópoles",
    "assunto": "claudia-ohana-envelhecimento",
@@ -73,25 +88,11 @@
    "gancho": "A Claudia Ohana sentiu o corpo mudar aos 63. E você, aos 40?"
   },
   {
-   "titulo": "Deborah Secco relembra loucuras que fez para entrar no padrão de beleza: 'Estética inatingível'",
-   "canal": "Globo",
-   "assunto": "deborah-secco-padrao-beleza",
-   "nota": 84,
-   "gancho": "A Deborah Secco já fez loucura pelo corpo. Quem nunca?"
-  },
-  {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
-  },
-  {
-   "titulo": "Viviane Araújo mostra treino intenso em preparação para o Carnaval de 2027",
-   "canal": "Globo",
-   "assunto": "viviane-araujo-carnaval",
-   "nota": 82,
-   "gancho": "Viviane Araújo tem 51 e já treina pesado pro Carnaval. E você?"
   },
   {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
@@ -106,6 +107,13 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
+  },
+  {
+   "titulo": "Sabrina Parlatore fala sobre o desafio da menopausa após o câncer de mama: 'Resto da vida'",
+   "canal": "Globo",
+   "assunto": "menopausa-precoce",
+   "nota": 80,
+   "gancho": "A Sabrina Parlatore disse que a menopausa é pro resto da vida. E o treino?"
   },
   {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
@@ -127,6 +135,20 @@
    "assunto": "ciencia-treino-forca",
    "nota": 80,
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
+  },
+  {
+   "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",
+   "canal": "Instagram",
+   "assunto": "forca-saude-homem",
+   "nota": 76,
+   "gancho": "Mais músculo, melhor ereção. Tem estudo sobre isso."
+  },
+  {
+   "titulo": "Bret Contreras: corpo inteiro 2x por semana é o treino mais eficiente",
+   "canal": "Instagram",
+   "assunto": "treino-minimo-eficaz",
+   "nota": 76,
+   "gancho": "Dois treinos por semana. Pra quase todo mundo, dá conta."
   }
  ]
 }
