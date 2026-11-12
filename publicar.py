@@ -36,6 +36,17 @@ class ErroPublicacao(Exception):
     pass
 
 
+MAX_TENTATIVAS = 3  # erros passageiros do Instagram: tenta de novo nas próximas rodadas antes de marcar "erro"
+
+
+def erro_passageiro(msg):
+    """Erros do lado do Instagram que costumam sumir sozinhos (mídia ainda não visível, instabilidade, 5xx).
+    Nesses casos um container novo na rodada seguinte resolve; não há risco de post duplicado."""
+    m = str(msg)
+    return any(k in m for k in ("2207006", "9007", '"is_transient":true', "API respondeu 5",
+                                 "timed out", "URLError", "tempo esgotado"))
+
+
 def agora():
     return datetime.now(BRT)
 
@@ -288,11 +299,18 @@ def main():
             if link:
                 item["permalink"] = link
             item.pop("erro", None)
+            item.pop("ultimo_erro", None)
             print(f"  OK, media_id={media_id}")
-        except ErroPublicacao as e:
-            item.update(status="erro", erro=str(e))
-            erros += 1
-            print(f"  [ERRO] {e}")
+        except (ErroPublicacao, urllib.error.URLError, TimeoutError) as e:
+            tent = int(item.get("tentativas", 0)) + 1
+            if erro_passageiro(f"{e.__class__.__name__} {e}") and tent < MAX_TENTATIVAS:
+                # fica pendente e sai na próxima rodada (~30 min); não vira alerta vermelho nem e-mail
+                item.update(tentativas=tent, ultimo_erro=str(e)[:300])
+                print(f"  [PASSAGEIRO] tentativa {tent}/{MAX_TENTATIVAS}, volta na próxima rodada: {e}")
+            else:
+                item.update(status="erro", erro=str(e), tentativas=tent)
+                erros += 1
+                print(f"  [ERRO] {e}")
         mudou = True
 
     # completa o link de posts publicados antes desta função existir (até 10 por rodada)

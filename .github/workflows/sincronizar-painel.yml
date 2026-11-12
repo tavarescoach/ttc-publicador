@@ -1,7 +1,8 @@
 name: Sincronizar painel
 
 # Copia fila.json (e pautas.json, se existir) para a tabela "conteudos" do Supabase,
-# que alimenta o painel. Roda quando a fila muda, depois de cada publicação e manualmente.
+# que alimenta o painel. Roda quando a fila muda por push e manualmente.
+# Depois de cada publicação a sincronização roda dentro do próprio robô "Publicar no Instagram".
 # Como toca o Supabase várias vezes por dia, também evita que o projeto Free pause.
 
 on:
@@ -14,9 +15,6 @@ on:
       - "pacotes/**"
       - "render/pedidos/**"
       - "saude.py"
-  workflow_run:
-    workflows: ["Publicar no Instagram"]
-    types: [completed]
   workflow_dispatch: {}
 
 concurrency:

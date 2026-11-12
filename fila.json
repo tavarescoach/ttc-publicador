@@ -2629,9 +2629,9 @@
       "2026-11-09/story-0800.png"
     ],
     "legenda": "",
-    "status": "erro",
+    "status": "cancelado",
     "origem": "painel",
-    "erro": "API respondeu 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,649,963,330,013,202 cannot be found.\",\"fbtrace_id\":\"AyH7KT-Bn6poldy0zTchBQK\"}}"
+    "erro_original": "API respondeu 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"erro"
   },
   {
     "id": "2026-11-09-st-1000",

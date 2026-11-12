@@ -12,6 +12,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   publicar:
@@ -38,6 +39,28 @@ jobs:
             git config user.email "actions@users.noreply.github.com"
             git add fila.json
             git commit -m "fila: status atualizado"
-            git pull --rebase
-            git push
+            # outro robô pode ter gravado no meio: tenta de novo até 4 vezes
+            for i in 1 2 3 4; do
+              git pull --rebase && git push && exit 0
+              echo "push recusado, tentando de novo ($i)"; sleep $((i * 5))
+            done
+            exit 1
           fi
+      # Antes isso era um robô separado ("Sincronizar painel") disparado depois de cada rodada,
+      # o que dobrava os minutos gastos no GitHub. Agora roda aqui, no mesmo job (custa segundos).
+      - name: Enviar fila para o painel
+        if: always()
+        continue-on-error: true
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python sincronizar_painel.py
+      - name: Saúde do sistema (faixa do topo do painel)
+        if: always()
+        continue-on-error: true
+        env:
+          SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python saude.py
