@@ -2860,5 +2860,49 @@
     "status": "pendente",
     "origem": "painel",
     "capa": "2026-11-12/r-2611111749-qhn/reels-capa.png"
+  },
+  {
+    "id": "2026-11-12-st-0600",
+    "quando": "2026-11-12T09:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-12/story-0600.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-12-st-0800",
+    "quando": "2026-11-12T11:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-12/story-0800.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-12-st-1000",
+    "quando": "2026-11-12T13:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-12/story-1000.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-12-st-1230",
+    "quando": "2026-11-12T15:30:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-12/story-1230.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
   }
 ]
