@@ -1,15 +1,26 @@
 {
- "atualizado_em": "2026-11-11T14:22:19-03:00",
+ "atualizado_em": "2026-11-12T14:25:00-03:00",
  "em_alta": [
   {
-   "assunto": "glp1-alerta-visao",
+   "assunto": "obesidade-nova-definicao-imc",
    "tema": "saude",
    "canais": 5,
-   "nota_max": 70,
+   "nota_max": 72,
    "titulos": [
-    "EUA exigem alerta de risco de perda de visão nas bulas de Ozempic e Mounjaro",
-    "EUA exigem alerta sobre perda de visão na bula de canetas emagrecedoras",
-    "Bulas de Ozempic, Wegovy e outros da classe GLP-1 terão novo alerta sobre risco raro de perda da visão"
+    "IMC não basta para saber quem tem obesidade e deixa escapar parte dos casos",
+    "Move over BMI: new obesity definition is better for predicting your health",
+    "Estudo diz que obesidade nem sempre significa ter problemas de saúde"
+   ]
+  },
+  {
+   "assunto": "nvidia-huang",
+   "tema": "negocio",
+   "canais": 4,
+   "nota_max": 6,
+   "titulos": [
+    "How AI visionary Jensen Huang was undone by his own bad decisions",
+    "Rumores de Divórcio: Escândalo Pode Dividir Fortuna de US$ 155 Bilhões de Jensen Huang",
+    "'The craziest corporate espionage story': CNN's business experts react to Nvidia CEO scandal"
    ]
   },
   {
@@ -24,14 +35,14 @@
    ]
   },
   {
-   "assunto": "obesidade-nova-definicao-imc",
+   "assunto": "glp1-alerta-visao",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 72,
+   "nota_max": 70,
    "titulos": [
-    "IMC não basta para saber quem tem obesidade e deixa escapar parte dos casos",
-    "Move over BMI: new obesity definition is better for predicting your health",
-    "BMI alternative for identifying obesity ‘could prevent misdiagnosis in millions’"
+    "EUA exigem alerta de risco de perda de visão nas bulas de Ozempic e Mounjaro",
+    "EUA exigem alerta sobre perda de visão na bula de canetas emagrecedoras",
+    "Bulas de Ozempic, Wegovy e outros da classe GLP-1 terão novo alerta sobre risco raro de perda da visão"
    ]
   },
   {
@@ -42,7 +53,7 @@
    "titulos": [
     "Eating less protein could slow aging, review of 350 studies finds",
     "We taste-tested 42 ways to get more protein. These 6 were the best",
-    "Advent Calendars Go Beyond Chocolate, From Pickles to Protein Powder"
+    "Who Put Pickles and Protein Powder in My Advent Calendar?"
    ]
   },
   {
@@ -68,25 +79,18 @@
    ]
   },
   {
-   "assunto": "ia-energia",
-   "tema": "tecnologia",
+   "assunto": "antidepressivos-longo-prazo",
+   "tema": "ciencia",
    "canais": 3,
-   "nota_max": 8,
+   "nota_max": 42,
    "titulos": [
-    "The Download: Pelosi’s successor targets AI and data centers face power woes",
-    "The Download: empty AI climate claims, and an Nvidia investigation",
-    "Where there’s AI, there’ll be energy"
+    "Which antidepressants are the most effective?",
+    "New Research Compares Long-Term Relief From 21 Antidepressants",
+    "New Research Compares Long-Term Relief From 21 Antidepressants"
    ]
   }
  ],
  "top": [
-  {
-   "titulo": "Claudia Ohana desabafa sobre mudanças no corpo no envelhecimento",
-   "canal": "Metrópoles",
-   "assunto": "claudia-ohana-envelhecimento",
-   "nota": 84,
-   "gancho": "A Claudia Ohana sentiu o corpo mudar aos 63. E você, aos 40?"
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -107,6 +111,13 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
+  },
+  {
+   "titulo": "Na força do ódio? Maisa treina pesado na academia e diz que prefere pilates; vídeos",
+   "canal": "Globo",
+   "assunto": "maisa-treino-academia",
+   "nota": 80,
+   "gancho": "Maisa treina pesado e diz que prefere pilates. Eu entendo, viu?"
   },
   {
    "titulo": "Sabrina Parlatore fala sobre o desafio da menopausa após o câncer de mama: 'Resto da vida'",
