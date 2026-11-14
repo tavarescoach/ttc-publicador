@@ -697,5 +697,105 @@
    "k-2026-11-14-carrossel",
    "k-2026-11-14-meme"
   ]
+ },
+ {
+  "id": "c-2026-11-15",
+  "inicio": "2026-11-15",
+  "fim": "2026-11-17",
+  "tema": "Emagrecimento",
+  "sigla": "EMA",
+  "pontuacao": {
+   "EMA": 0.598,
+   "LON": 0.57,
+   "GLP": 0.527,
+   "FOR": 0.312,
+   "EST": 0.205,
+   "ESP": 0.0,
+   "MEN": 0.0,
+   "WEA": 0.0
+  },
+  "excluidos": [
+   "LON",
+   "FOR"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "725e61d04a366223",
+   "1da1da736312a4de",
+   "1f5d219e5fbc4869"
+  ],
+  "famosos": [
+   {
+    "nome": "Josi Cappucho",
+    "noticia_id": "1f5d219e5fbc4869",
+    "titulo": "Miss DF, musa do Porto da Pedra rejeita pressão por curvas no Carnaval: 'Presença e samba vão além das medidas'",
+    "link": "https://revistaquem.globo.com/eventos/carnaval/noticia/2026/11/miss-df-musa-do-porto-da-pedra-rejeita-pressao-por-curvas-no-carnaval-presenca-e-samba-vao-alem-das-medidas.ghtml",
+    "canal": "Globo",
+    "data": "2026-11-12T09:56:17+00:00",
+    "nota": 55,
+    "pessoa_br": true,
+    "imagem": "https://s2-quem.glbimg.com/Fg25ZEp-HhE7fU32mhR-QUf6vOw=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/d/o/J2JcDES8KY8EnsnbM8MA/josi.cappucho-1792344144-4010793651453348209-1160221633-1-.jpg"
+   },
+   {
+    "nome": "Tess Holliday",
+    "noticia_id": "e90fa3b49b38cf38",
+    "titulo": "Tess Holliday Shuts Down Critics of Her Weight with Gym Video: ‘Ruining Someone’s Idea of What Fitness Looks Like’",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWUhkRjIxSjJTbUhKY3ZLWTBaWHgyRGNETzVjY3g4Nzl5UUctVVdBTXo4M1RJWEhfWDlMS3I3ZHJfcUQzLVVZLTdiLWtlRG9WS2taUll5T2lCdUZNeHZmLXNDZklOVlBmZndTVUxKWUM3bzFlTkJGSE50Zl9rR0M1bmJ3MlV5X0Zra3JOR0FWVUJpbnM?oc=5",
+    "canal": "People",
+    "data": "2026-11-11T21:58:32+00:00",
+    "nota": 46,
+    "pessoa_br": false,
+    "imagem": null
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-15",
+    "quando": "2026-11-15T20:00:00-03:00",
+    "arquivo": "2026-11-15/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-15.jpg",
+    "drive_id": "1jWsdfu_G9MZEMAN2ccO_m-ptPgBJx_1x",
+    "nome": "IMG_2555.JPEG"
+   },
+   {
+    "dia": "2026-11-17",
+    "quando": "2026-11-17T20:00:00-03:00",
+    "arquivo": "2026-11-17/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-17.jpg",
+    "drive_id": "1Q5GWzJbzD_eOFNa2djN2obChpcuTGiAj",
+    "nome": "IMG_5434.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-15/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-15-acervo-1.jpg",
+    "drive_id": "1HHKqAEJUkjCmAmjK_94Zhons0ztMjzHS",
+    "nome": "IMG_0992.JPEG"
+   },
+   {
+    "arquivo": "2026-11-15/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-15-acervo-2.jpg",
+    "drive_id": "1LXy7b7IA-X_lig7cfGoRgvrR7VCOjDXn",
+    "nome": "IMG_6162.JPEG"
+   },
+   {
+    "arquivo": "2026-11-15/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-15-acervo-3.jpg",
+    "drive_id": "1F6xVFDZG0N2UVetlkQZdbwtCdV8bBzC1",
+    "nome": "IMG_2608-1.JPEG"
+   },
+   {
+    "arquivo": "2026-11-15/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-15-acervo-4.jpg",
+    "drive_id": "1le11mB0tZ6haLn4uW05jL3RVfYvZyLT6",
+    "nome": "IMG_8324.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-14T18:41-03:00",
+  "status": "escolhido"
  }
 ]
