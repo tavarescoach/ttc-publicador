@@ -27,8 +27,8 @@
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:47:13.769Z",
-  "coletadas": 3,
-  "aproveitadas": 3,
+  "coletadas": 2,
+  "aproveitadas": 2,
   "falhou": false
  },
  {
@@ -43,7 +43,7 @@
   "modo": "descoberto",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:47:41.417Z",
-  "coletadas": 20,
+  "coletadas": 14,
   "aproveitadas": 6,
   "falhou": false
  },
@@ -59,7 +59,7 @@
   "modo": "descoberto",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:48:14.521Z",
-  "coletadas": 20,
+  "coletadas": 19,
   "aproveitadas": 6,
   "falhou": false
  },
@@ -69,14 +69,14 @@
   "url": "https://www.nytimes.com/section/magazine",
   "peso": 1.0,
   "feeds": [
-   "https://news.google.com/rss/search?q=site:nytimes.com+(health+OR+fitness+OR+exercise+OR+sleep+OR+study)+when:7d&hl=en-US&gl=US&ceid=US:en"
+   "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/magazine/rss.xml"
   ],
   "origem": "painel",
-  "modo": "google_news",
+  "modo": "descoberto",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:48:35.089Z",
-  "coletadas": 63,
-  "aproveitadas": 10,
+  "coletadas": 7,
+  "aproveitadas": 6,
   "falhou": false
  },
  {
@@ -107,8 +107,8 @@
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:49:06.961Z",
-  "coletadas": 60,
-  "aproveitadas": 9,
+  "coletadas": 66,
+  "aproveitadas": 8,
   "falhou": false
  },
  {
@@ -123,8 +123,8 @@
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:50:07.169Z",
-  "coletadas": 6,
-  "aproveitadas": 6,
+  "coletadas": 5,
+  "aproveitadas": 5,
   "falhou": false
  },
  {
