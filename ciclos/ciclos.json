@@ -796,6 +796,13 @@
    }
   ],
   "escolhido_em": "2026-11-14T18:41-03:00",
-  "status": "escolhido"
+  "status": "pacote_pronto",
+  "pecas": [
+   "k-2026-11-16-carrossel-noite",
+   "k-2026-11-17-estatico",
+   "k-2026-11-17-carrossel",
+   "k-2026-11-17-meme"
+  ],
+  "nota_pacote": "Pacote gerado com atraso em 16/11 17h30 a pedido do Luan: 15/11 e as 7h/12h de 16/11 ficaram sem post."
  }
 ]

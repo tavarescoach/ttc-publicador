@@ -1,0 +1,99 @@
+{
+ "id": "k-2026-11-17-carrossel",
+ "data": "2026-11-17",
+ "quando": "2026-11-17T12:00:00-03:00",
+ "tema": "Emagrecimento",
+ "funil": "fundo",
+ "pauta": "A objeção 'já tentei de tudo': o custo da dieta extrema e o músculo que segura o resultado (caso Deborah Secco)",
+ "legenda": "Eu já perdi a conta de quantos alunos chegaram dizendo \"já tentei de tudo\".\n\nDe manhã foi a Deborah Secco, que aos 46 falou dos anos de pressão estética e contou, numa entrevista em agosto, que o maior investimento dela agora é em massa muscular. Os participantes do The Biggest Loser perderam em média 58 kg em 30 semanas e, seis anos depois, tinham recuperado 41 kg. Em 160 adultos mais velhos em dieta, o grupo do treino de força perdeu 2% de massa magra, contra 5% no grupo só de aeróbico.\n\nO músculo é o que segura o resultado, e o primeiro passo é saber onde você está.\n\nMe manda MÉTODO no direct e eu te explico como funciona a Avaliação Estratégica.\n\n#tavarescoach #emagrecimento #treinodeforca #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Deborah Secco, 46: o investimento agora é **massa muscular**",
+   "foto": "https://agorarn.com.br/files/uploads/2026/08/Deborah-Secco.jpg",
+   "credito": "Foto: Reprodução/Agora RN",
+   "licenca": "reproducao",
+   "pagina_origem": "https://agorarn.com.br/cultura/abandonei-ha-tempos-a-ideia-de-ser-perfeita-diz-deborah-secco-sobre-pressao-estetica/",
+   "link_noticia": "https://agorarn.com.br/cultura/abandonei-ha-tempos-a-ideia-de-ser-perfeita-diz-deborah-secco-sobre-pressao-estetica/",
+   "foco": "center 25%",
+   "layout": "recorte"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O caso",
+   "titulo": "Anos de **pressão estética**.",
+   "texto": "De manhã, a Deborah Secco. Aos 46, ela contou que está se curando de anos de pressão estética. Em agosto, disse que o maior investimento agora é em massa muscular, para acompanhar os netos, viajar e namorar.",
+   "fonte": "Uai, 08/11/2026; Agora RN, 19/08/2026"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "A objeção",
+   "titulo": "\"Eu já tentei **de tudo**.\"",
+   "texto": "É a frase de quem passou anos entre a dieta da moda e a balança. O peso desce, volta, e a cada volta a vontade de recomeçar fica menor."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "preto",
+   "rotulo": "O custo da pressa",
+   "numero": "41",
+   "unidade": "kg",
+   "titulo": "do peso perdido **voltou** em seis anos.",
+   "texto": "Catorze participantes do reality The Biggest Loser perderam em média 58 kg em 30 semanas. Seis anos depois, tinham recuperado em média 41 kg.",
+   "fonte": "Fothergill et al., Obesity (2016)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "O metabolismo",
+   "numero": "499",
+   "unidade": "kcal",
+   "titulo": "a menos de gasto por dia, **seis anos depois**.",
+   "texto": "O gasto em repouso seguiu cerca de 500 kcal por dia abaixo do esperado para o tamanho do corpo deles. É um caso extremo, com 14 pessoas, e mostra o preço da perda rápida.",
+   "fonte": "Fothergill et al., Obesity (2016)"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "preto",
+   "rotulo": "O que segura",
+   "numero": "2",
+   "unidade": "%",
+   "titulo": "de massa magra perdida com **treino de força**.",
+   "texto": "Em 160 adultos mais velhos com obesidade, 6 meses de dieta tiraram 9% do peso de todos os grupos com exercício. No grupo só de aeróbico, a massa magra caiu 5%.",
+   "fonte": "Villareal et al., New England Journal of Medicine (2017)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "O músculo **segura o resultado**.",
+   "texto": "**Força é o que fica quando a dieta acaba.** A Deborah falou em envelhecer acompanhando os netos e viajando, e é isso que a carga semanal constrói."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com meus alunos",
+   "titulo": "Eu meço **antes da balança**.",
+   "texto": "Na primeira conversa, eu olho força, medidas e a rotina real do aluno. O treino de força entra fixo na semana, o prato segue o que cabe na vida dele, e a gente acompanha a carga junto com a cintura.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-17/foto-pessoal.jpg",
+   "foco": "60% 30%"
+  },
+  {
+   "tipo": "licao",
+   "fundo": "marinho",
+   "rotulo": "O que muda em você",
+   "titulo": "Emagrecer **uma vez só**.",
+   "texto": "Você perde gordura mantendo a força, sobe a escada sem parar no meio e para de viver entre a dieta e a desistência.",
+   "nota": "Na Avaliação Estratégica, em 40 minutos no TTC, você sai com o seu ponto de partida e o plano das próximas semanas."
+  },
+  {
+   "tipo": "cta",
+   "fundo": "preto",
+   "titulo": "Seu primeiro passo **é saber onde você está**.",
+   "texto": "Avaliação Estratégica de 40 minutos no TTC, em Copacabana: você sai com o ponto de partida e o plano. Horários fixos de manhã.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}
