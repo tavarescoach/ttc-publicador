@@ -1,0 +1,51 @@
+{
+ "data": "2026-11-16",
+ "ensaio": false,
+ "stories": [
+  {
+   "id": "2026-11-16-st-0600",
+   "quando": "2026-11-16T06:00:00-03:00",
+   "arquivo": "2026-11-16/story-0600.mp4",
+   "decisao": "agendado",
+   "texto": "baixo",
+   "problemas": [],
+   "partes": [
+    {
+     "video": "IMG_2397.MOV",
+     "k": 0,
+     "s": 12.0
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-st-1000",
+   "quando": "2026-11-16T10:00:00-03:00",
+   "arquivo": "2026-11-16/story-1000.mp4",
+   "decisao": "agendado",
+   "texto": "baixo",
+   "problemas": [],
+   "partes": [
+    {
+     "video": "IMG_1174.MOV",
+     "k": 0,
+     "s": 2.9
+    },
+    {
+     "video": "IMG_1296 (1).MP4",
+     "k": 0,
+     "s": 4
+    },
+    {
+     "video": "IMG_0385.MOV",
+     "k": 0,
+     "s": 2.9
+    },
+    {
+     "video": "IMG_1678.MOV",
+     "k": 0,
+     "s": 4
+    }
+   ]
+  }
+ ]
+}
