@@ -1,96 +1,70 @@
 {
- "atualizado_em": "2026-11-12T14:25:00-03:00",
+ "atualizado_em": "2026-11-17T06:28:00-03:00",
  "em_alta": [
   {
-   "assunto": "obesidade-nova-definicao-imc",
+   "assunto": "canetas-obesidade-novidades",
    "tema": "saude",
-   "canais": 5,
-   "nota_max": 72,
-   "titulos": [
-    "IMC não basta para saber quem tem obesidade e deixa escapar parte dos casos",
-    "Move over BMI: new obesity definition is better for predicting your health",
-    "Estudo diz que obesidade nem sempre significa ter problemas de saúde"
-   ]
-  },
-  {
-   "assunto": "nvidia-huang",
-   "tema": "negocio",
    "canais": 4,
-   "nota_max": 6,
+   "nota_max": 74,
    "titulos": [
-    "How AI visionary Jensen Huang was undone by his own bad decisions",
-    "Rumores de Divórcio: Escândalo Pode Dividir Fortuna de US$ 155 Bilhões de Jensen Huang",
-    "'The craziest corporate espionage story': CNN's business experts react to Nvidia CEO scandal"
+    "Canetas para obesidade podem chegar ao SUS em 2027, diz ministro; entenda próximos passos",
+    "Aposta da Novo Nordisk contra o Mounjaro, CagriSema leva a perda de 25% do peso em pacientes que respondem rápido ao tratamento",
+    "Novo's Wegovy pill helps patients lose about 6% of weight in three months, real-world data show"
    ]
   },
   {
    "assunto": "sono-qualidade-saude",
-   "tema": "ciencia",
+   "tema": "saude",
    "canais": 3,
    "nota_max": 74,
    "titulos": [
     "Sarria: a que horas acordar conforme a hora que você dormiu",
-    "Dormir bem pode reduzir o risco de desenvolver 90 doenças, diz estudo",
-    "Médico que revolucionou a pesquisa do sono no Brasil conta o que faz para dormir melhor"
+    "Your body uses light to help figure out what time it is. What are you telling it at 10 p",
+    "Ronca demais? Apneia do sono cresce em SP e pode afetar coração, memória e até desempenho sexual"
    ]
   },
   {
-   "assunto": "glp1-alerta-visao",
+   "assunto": "sarampo-eua",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 70,
+   "nota_max": 8,
    "titulos": [
-    "EUA exigem alerta de risco de perda de visão nas bulas de Ozempic e Mounjaro",
-    "EUA exigem alerta sobre perda de visão na bula de canetas emagrecedoras",
-    "Bulas de Ozempic, Wegovy e outros da classe GLP-1 terão novo alerta sobre risco raro de perda da visão"
+    "Measles Is Sickening More Pregnant Women and Newborns, Alarming Doctors",
+    "Measles Is Sickening More Pregnant Women and Newborns, Alarming Doctors",
+    "EUA podem perder status de país livre do sarampo"
    ]
   },
   {
-   "assunto": "proteina-alimentos",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 62,
-   "titulos": [
-    "Eating less protein could slow aging, review of 350 studies finds",
-    "We taste-tested 42 ways to get more protein. These 6 were the best",
-    "Who Put Pickles and Protein Powder in My Advent Calendar?"
-   ]
-  },
-  {
-   "assunto": "glp1-politica-publica",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 62,
-   "titulos": [
-    "Canetas para obesidade podem chegar ao SUS em 2027, diz ministro; entenda próximos passos",
-    "Justiça libera retomada do 'Bolsa Mounjaro' em Urupês com tirzepatida manipulada",
-    "Justiça autoriza retomada do 'Bolsa Mounjaro' após recurso de Prefeitura de Urupês (SP)"
-   ]
-  },
-  {
-   "assunto": "diabetes-risco-percepcao",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 58,
-   "titulos": [
-    "Brasileiros com risco de diabetes subestimam chance de ter a doença, diz pesquisa internacional",
-    "Diabetes: 252 milhões de adultos no mundo vivem sem saber que têm a doença",
-    "Diabetes: pesquisa aponta baixa percepção de risco e obstáculos para avaliação"
-   ]
-  },
-  {
-   "assunto": "antidepressivos-longo-prazo",
+   "assunto": "suprema-corte-pesquisa",
    "tema": "ciencia",
    "canais": 3,
-   "nota_max": 42,
+   "nota_max": 3,
    "titulos": [
-    "Which antidepressants are the most effective?",
-    "New Research Compares Long-Term Relief From 21 Antidepressants",
-    "New Research Compares Long-Term Relief From 21 Antidepressants"
+    "‘Orwellian’: HIV scientist’s ordeal lays bare Trump officials’ interference in grant-making",
+    "US Supreme Court rebuffs White House effort to cut research grants",
+    "Supreme Court declines Trump push to cut research grants related to DEI"
+   ]
+  },
+  {
+   "assunto": "datacenters-energia",
+   "tema": "ciencia",
+   "canais": 3,
+   "nota_max": 3,
+   "titulos": [
+    "Surge of US datacenters adds equivalent of Denmark’s annual emissions, study finds",
+    "Just 400 US Data Centers Use More Electricity Than Michigan",
+    "Carbon Emissions of Biggest U.S. Data Centers Already Rival Entire Countries, Study Reveals"
    ]
   }
  ],
  "top": [
+  {
+   "titulo": "Suzanna Freitas após perder 26 kg: 'Achava tóxico quem ia para academia e falava que está endorfinado'",
+   "canal": "Globo",
+   "assunto": "suzanna-freitas-26kg",
+   "nota": 88,
+   "gancho": "Ela achava tóxico quem curtia academia. Perdeu 26 kg e mudou de lado"
+  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -113,20 +87,6 @@
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
   },
   {
-   "titulo": "Na força do ódio? Maisa treina pesado na academia e diz que prefere pilates; vídeos",
-   "canal": "Globo",
-   "assunto": "maisa-treino-academia",
-   "nota": 80,
-   "gancho": "Maisa treina pesado e diz que prefere pilates. Eu entendo, viu?"
-  },
-  {
-   "titulo": "Sabrina Parlatore fala sobre o desafio da menopausa após o câncer de mama: 'Resto da vida'",
-   "canal": "Globo",
-   "assunto": "menopausa-precoce",
-   "nota": 80,
-   "gancho": "A Sabrina Parlatore disse que a menopausa é pro resto da vida. E o treino?"
-  },
-  {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
    "canal": "Sua referência",
    "assunto": "frio-calor-recuperacao",
@@ -146,6 +106,13 @@
    "assunto": "ciencia-treino-forca",
    "nota": 80,
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
+  },
+  {
+   "titulo": "Solteira e sem make, Marina Ruy Barbosa treina e personal elogia: 'Máquina de beleza'",
+   "canal": "Globo",
+   "assunto": "marina-ruy-barbosa-treino",
+   "nota": 78,
+   "gancho": "A Marina Ruy Barbosa treinou no feriado. E você, foi pra praia?"
   },
   {
    "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",

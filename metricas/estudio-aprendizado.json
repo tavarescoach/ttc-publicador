@@ -1,38 +1,12 @@
 {
  "pares": [
   {
-   "headline": "Você já viveu a magreza dos anos 90 uma vez.",
-   "formato": "carrossel",
-   "quando": "2026-11-02",
-   "alcance": 298,
-   "valor": 5,
-   "taxa": 1.7,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
-  },
-  {
-   "headline": "Uma atleta olímpica precisou reorganizar a vida inteira em torno da saúde.",
-   "formato": "carrossel",
-   "quando": "2026-10-30",
-   "alcance": 279,
-   "valor": 3,
-   "taxa": 1.1,
-   "parcial": false,
-   "notas": null,
-   "total": null,
-   "seguiu_recomendada": null,
-   "alternativas": []
-  },
-  {
    "headline": "Depois dos 40, perder força não é só idade. É falta do estímulo certo.",
    "formato": "carrossel",
    "quando": "2026-11-05",
-   "alcance": 269,
-   "valor": 9,
-   "taxa": 3.3,
+   "alcance": 290,
+   "valor": 10,
+   "taxa": 3.4,
    "parcial": false,
    "notas": {
     "atualidade": 8,
@@ -61,49 +35,28 @@
    ]
   },
   {
-   "headline": "Treino de modelo não é treino para você.",
-   "formato": "carrossel",
-   "quando": "2026-11-02",
-   "alcance": 179,
-   "valor": 2,
-   "taxa": 1.1,
+   "headline": "Reels: capa e legenda",
+   "formato": "reels",
+   "quando": "2026-11-12",
+   "alcance": 605,
+   "valor": 56,
+   "taxa": 9.3,
    "parcial": false,
-   "notas": {
-    "atualidade": 3,
-    "clareza": 9,
-    "curiosidade": 7,
-    "historico": 6,
-    "marca": 9,
-    "publico": 8,
-    "venda": 8
-   },
-   "total": 74,
-   "seguiu_recomendada": false,
-   "alternativas": [
-    {
-     "titulo": "Copiar a rotina de quem treina para uma passarela não é disciplina.",
-     "total": 71
-    },
-    {
-     "titulo": "Por que o treino que funciona para ela quebra a sua semana.",
-     "total": 74
-    },
-    {
-     "titulo": "Treino viral é treino de outra pessoa.",
-     "total": 72
-    }
-   ]
+   "notas": null,
+   "total": null,
+   "seguiu_recomendada": null,
+   "alternativas": []
   }
  ],
- "medidos": 4,
- "com_notas": 2,
- "mediana_taxa_perfil": 3.3,
+ "medidos": 2,
+ "com_notas": 1,
+ "mediana_taxa_perfil": 3.2,
  "correlacao_taxa": {},
  "pesos_sugeridos": null,
  "recomendada": {
   "seguiu": 1,
-  "nao_seguiu": 1,
-  "taxa_seguiu": 3.3,
-  "taxa_nao_seguiu": 1.1
+  "nao_seguiu": 0,
+  "taxa_seguiu": 3.4,
+  "taxa_nao_seguiu": null
  }
 }
