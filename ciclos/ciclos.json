@@ -804,5 +804,100 @@
    "k-2026-11-17-meme"
   ],
   "nota_pacote": "Pacote gerado com atraso em 16/11 17h30 a pedido do Luan: 15/11 e as 7h/12h de 16/11 ficaram sem post."
+ },
+ {
+  "id": "c-2026-11-18",
+  "inicio": "2026-11-18",
+  "fim": "2026-11-20",
+  "tema": "Longevidade",
+  "sigla": "LON",
+  "pontuacao": {
+   "LON": 4.189,
+   "EST": 4.099,
+   "FOR": 3.773,
+   "GLP": 2.517,
+   "MEN": 1.787,
+   "EMA": 0.88,
+   "ESP": 0.408,
+   "WEA": 0.0
+  },
+  "excluidos": [
+   "FOR",
+   "EMA"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "c82c68d6adff8942",
+   "a991f32641f4d987",
+   "b886affc1b066340",
+   "5f808af90a4d1f7d",
+   "b7b9cc3c8156fb53",
+   "e65fce33f02ce233",
+   "7d5a71e349a9e2dc",
+   "a427f39e1ca5f9f2",
+   "7abfc695cab368fa"
+  ],
+  "famosos": [
+   {
+    "nome": "Gio Benitez",
+    "noticia_id": "7abfc695cab368fa",
+    "titulo": "Gio Benitez Thought His Heart Was Healthy. Then a 3-Minute Test Revealed a Frightening Diagnosis (Exclusive)",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT1pKV254S1ctOFdlYmRaOTJXbndrYjFrUnRMLV9SanhDZDdreDUtbWVPb0l4bUpNeW1HeWZrQlo1TXJSNTdoOUczd0VNVjd0SVVra1pPckVnTWFjbHVLTldjQlVNVndmeFUxYzc2bk5zNWM2T3NGUjdmZkJhVEM4QW4zbkpBUTRHZUNHaE1uN3hkM3Z0ckZB?oc=5",
+    "canal": "People",
+    "data": "2026-11-17T12:40:00+00:00",
+    "nota": 55,
+    "pessoa_br": false,
+    "imagem": null
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-18",
+    "quando": "2026-11-18T20:00:00-03:00",
+    "arquivo": "2026-11-18/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-18.jpg",
+    "drive_id": "1kikC48Q93PyuATlhtBRKTcIk1vLICOvK",
+    "nome": "FullSizeRender.JPEG"
+   },
+   {
+    "dia": "2026-11-20",
+    "quando": "2026-11-20T20:00:00-03:00",
+    "arquivo": "2026-11-20/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-20.jpg",
+    "drive_id": "1zizM0wU-Qz0rQvEujqMgwypB9p4qMWrB",
+    "nome": "IMG_2180.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-18/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-18-acervo-1.jpg",
+    "drive_id": "1LG7leqoK6pUNRZosl8rAzIkR94EdvT95",
+    "nome": "IMG_4503.JPEG"
+   },
+   {
+    "arquivo": "2026-11-18/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-18-acervo-2.jpg",
+    "drive_id": "1ngsTgF5DfBgTCg7zefzJ7-ntjCZVv_MD",
+    "nome": "IMG_6950.JPEG"
+   },
+   {
+    "arquivo": "2026-11-18/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-18-acervo-3.jpg",
+    "drive_id": "1RwdYaZiYFu9zopLc7lksTNPhcZBO9lgd",
+    "nome": "IMG_8973.JPEG"
+   },
+   {
+    "arquivo": "2026-11-18/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-18-acervo-4.jpg",
+    "drive_id": "16Ms2FNXJhDVbstjfULS5FYEnYgFMANJP",
+    "nome": "IMG_6705.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-17T15:09-03:00",
+  "status": "escolhido"
  }
 ]
