@@ -59,7 +59,7 @@
   "modo": "descoberto",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:48:14.521Z",
-  "coletadas": 20,
+  "coletadas": 19,
   "aproveitadas": 6,
   "falhou": false
  },
@@ -101,14 +101,14 @@
   "url": "https://people.com/",
   "peso": 1.0,
   "feeds": [
-   "https://news.google.com/rss/search?q=site:people.com+(health+OR+fitness+OR+exercise+OR+sleep+OR+study)+when:7d&hl=en-US&gl=US&ceid=US:en"
+   "https://news.google.com/rss/search?q=site:people.com+when:7d&hl=en-US&gl=US&ceid=US:en"
   ],
   "origem": "painel",
   "modo": "google_news",
   "ativa": true,
   "adicionado_em": "2026-10-18T15:49:06.961Z",
-  "coletadas": 72,
-  "aproveitadas": 9,
+  "coletadas": 86,
+  "aproveitadas": 10,
   "falhou": false
  },
  {

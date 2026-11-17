@@ -1,6 +1,16 @@
 {
- "coletado_em": "2026-11-17T17:18:41.283997+00:00",
+ "coletado_em": "2026-11-17T17:55:30.818576+00:00",
  "itens": [
+  {
+   "id": "3cd2478394c4e44d",
+   "canal": "BBC News",
+   "titulo": "William and Kate celebrate Earthshot Prize winners in Mumbai",
+   "link": "https://www.bbc.co.uk/news/articles/cqlykve012d1o?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7619/live/c9b38b90-e2ae-11f1-99b6-a35a62fa4264.jpg",
+   "publicado_em": "2026-11-17T17:25:23+00:00",
+   "resumo": "The Prince and Princess of Wales were joined by sporting and acting stars for the annual environmental awards ceremony.",
+   "pre": 3.0
+  },
   {
    "id": "f6d6d71d4d55ff4c",
    "canal": "BBC News",
@@ -27,7 +37,7 @@
    "titulo": "NHS gets £500m boost in Wales' first budget under Plaid Cymru",
    "link": "https://www.bbc.co.uk/news/articles/cm9308z78p7ko?at_medium=RSS&at_campaign=rss",
    "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5664/live/61fe51d0-e289-11f1-b166-176de21e2352.png",
-   "publicado_em": "2026-11-17T14:50:38+00:00",
+   "publicado_em": "2026-11-17T17:23:17+00:00",
    "resumo": "Health spending will rise, but the government says it is grappling with \"tight\" public finances.",
    "pre": 1.0
   },
@@ -92,26 +102,6 @@
    "pre": 1.0
   },
   {
-   "id": "3dc2e0addfe5a89f",
-   "canal": "BBC News",
-   "titulo": "OpenAI sued by California over Hugging Face attack",
-   "link": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ce1a/live/7c81aa70-e211-11f1-a541-6d0c391a4254.jpg",
-   "publicado_em": "2026-11-16T23:12:24+00:00",
-   "resumo": "Attorney General Rob Bonta alleges that the artificial intelligence misled and endangered the public.",
-   "pre": 1.0
-  },
-  {
-   "id": "d3adb3703dbd6429",
-   "canal": "Reuters",
-   "titulo": "Disney tops earnings estimates on theme park, NFL strength; to boost content spend",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSlF0VGEwNkwyNXpITHVnR1pROEVQdnMtNXZoU2JyczE2TzE3QkI1MGVfcEJ5R2tKWnc5b0RpSTJEbnVXM3NfUEM5d3RaTkNwOVA4WnZIOXQzWkNUanJ1VXU4aWZnSDlSS3pGSlBrUU9PVEIzYlFNQlFpWkdabFhaUDVTWkw5b1o4ZWlRaDNYLUNES2hIZXJCVWJRNnR1Z09pTjNrQlp3NldiSkQ2?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-17T15:48:32+00:00",
-   "resumo": "Disney tops earnings estimates on theme park, NFL strength; to boost content spend Reuters",
-   "pre": 3.0
-  },
-  {
    "id": "83c78eedf432e8d0",
    "canal": "Reuters",
    "titulo": "Mexico keen to strengthen cooperation with China, president says",
@@ -147,18 +137,18 @@
    "titulo": "Nike targets 2029 sales growth as CEO Hill steps up turnaround",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSDN1UWpRMlJnYTJMY1gxQ0RGMUNfUU1rS0xrVzhXZUtGdmpRSXREcTNJNzBGVnpldktmRUU3aC1QN3EydHNhMVV4bFVPRTRlNWdFWmkyRjVlVVRaWFJxdEdPVFktTEN0dGhhcDJQRkFPQXRXMjFDNjFzbnZrODJncmZVb3BjdHJNTlA4NkM3S1J4NFU4UW1vS2NPdnRRb3BjM21rYlBWMGE0UFhyUzVJMTJtLTdBdw?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-17T15:48:46+00:00",
+   "publicado_em": "2026-11-17T17:16:06+00:00",
    "resumo": "Nike targets 2029 sales growth as CEO Hill steps up turnaround Reuters",
    "pre": 2.0
   },
   {
-   "id": "4513eb150a02bb2c",
+   "id": "6fc6d41aa3dc8eed",
    "canal": "Reuters",
-   "titulo": "Citigroup boosting global corporate banking headcount, top banker says",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbXlqNlVaNDRKakQzdkVBbzhzZDdDQ1dNRlNob0E2cjZDWXNKdlo0bFlwNXY1UGlYd3Z5TGdQLTF5LXVfYnhfbENLYS1DQ0poYTk5TDhQd0RpcFlwUlMzSFE0UUFrTllpTS1DYmtRck1ZQkJaZjNfUzhUcXZxSHFDTmtLWGJFX25fY0VnUEUzbS1zY0xHUDd0RzlSdWdVY2ZJME9DbENNa1NTRFhfb2YzRERXb1FIaUNNdVN1d1RJOA?oc=5",
+   "titulo": "Giga Energy signs $1 billion lease for Texas AI data center with cloud provider",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUXJVZ2hsSFRHcWk0UzI0VUJkVGx2QjRna3I1R0kwU2pnbDVkWlA1SzhxLXZKTElCdWczQjc5VUhzd214OG51Zm9kaFFRbmU3VTItUTJkZ0d2bkVsOWtwaUFraXRLOERhNUNLVHE1MG0xMkFVTTVWNDFsNWhZQkJ5aDhlLWZNc01TamVhVnNlbDZmbmlLV05pRFV3X0g5OHdkZGs2blNEQ2REMDVoS29hbHpFZlRYaHRUdnZxMTN5RTBxSHdD?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-17T07:00:00+00:00",
-   "resumo": "Citigroup boosting global corporate banking headcount, top banker says Reuters",
+   "publicado_em": "2026-11-17T14:08:09+00:00",
+   "resumo": "Giga Energy signs $1 billion lease for Texas AI data center with cloud provider Reuters",
    "pre": 2.0
   },
   {
@@ -172,33 +162,43 @@
    "pre": 2.0
   },
   {
-   "id": "ec204c49dcea5df4",
+   "id": "cb9234f587e67b82",
    "canal": "Reuters",
-   "titulo": "Novo's Wegovy pill helps patients lose about 6% of weight in three months, real-world data show",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQkdyMW8wZ1VqOEc4U1NpVGM1MU95bENTYXZzb0Z4SmhpamNyWlFyQlNWWVdWbk9WMW1NemttalZtbThJQVg5czVCRXM4cDJwT0hWYlJSc253T3JNSmxnWTFac1p5QjhWRU90ZXByVENNdmtCWGdBRmt2WXQtb3luQ1dwN2o3MnJtQmR4YmEwNG82WERJa2FHRW9YUUtGN1RiM0w1Y1F6eDlQWmpETmdwOU1SVmtXa0xzYk1OcnhiMXFiSVZCQ1NCYUh4dDdJNkt4a0FlQW14ZDlCRWJqNkd2WDVn?oc=5",
+   "titulo": "Highly classified US national security communications network is down, CNN reports",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQc2ZFQXV3ZUxOU0hNN0lPMXA2Z0l6aTNFekJ5cXpuNEVOZk92a0RVOUhZNmVOdXJURUV6Q0VDNzk1Q0ZRYkMyeW1KS0pxcGlESzJ6dER0QWlDdXNTY3pyV1l6NzcyWnhhUkhpYlJwRXMxU3YwdmE4RTZvRFZNbnZwX2ktaDdtTEllZmdlN0ktancwenNjSDhKZ2RpT3lxbXhmdXNkVGZybkFxeDNOeldCbFpQcWhjMi03LXVOeA?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-14T17:24:10+00:00",
-   "resumo": "Novo's Wegovy pill helps patients lose about 6% of weight in three months, real-world data show Reuters",
-   "pre": 2.0
-  },
-  {
-   "id": "6a8b00c8c8895bc0",
-   "canal": "Reuters",
-   "titulo": "Saudi's Delta Energy to explore $30 billion energy investment in Pakistan",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPN0pXXzZmdzBxM201cG9rM2UxQmZNUE9pUGxDRUZNTEN6VjliWHdHMjJPbjd5TEx3Q1VhT3RLMG1veEJ6UFIwYms3Vm54amRYbVFIUTBXdDJTSUFQbVlrVzVCN1A5eXdXeHRrVVdzRUYtMWNDLUVDQWMxVUZfLUtieURpa0tWM29jSzB5WEdzQnZsc0cyTUpoSEZkVEpZYkF3LTVfcTZyNVplcFNmN1Vod2U3SlhkYUFx?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-17T10:13:46+00:00",
-   "resumo": "Saudi's Delta Energy to explore $30 billion energy investment in Pakistan Reuters",
+   "publicado_em": "2026-11-17T16:13:50+00:00",
+   "resumo": "Highly classified US national security communications network is down, CNN reports Reuters",
    "pre": 1.0
   },
   {
-   "id": "c38f000384505101",
+   "id": "c53c778baa1c106a",
    "canal": "Reuters",
-   "titulo": "Baidu CEO says AI investment must deliver profits to avoid bubble",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS0wwd1hrZzVDQzBrY1U3RmtldGU1VnZ4SFItdTc4V3dNZFZud2V3RURfZ2M3MlczakxBX2Rxd3FhdUt0X1BjMmoxX0pacDJTOFpFR2lxby1lS2dKSWI0NXV1VnlCVWJPM2ZEdWR0RjNrbldGUzNJNTFoRUJCN1VYQlNWMHg4T0N2QVN4YUliMXp0Q1lRQzZ3RXJtclEwdk5MejEzdk5QT1FUbE01WEZ6eXpMYkJacUwtWlhXYzRB?oc=5",
+   "titulo": "Amazon to invest $7 billion in renewable energy in India",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX2VQM2lmenVrZWFWR0hYWjNMUWlkdTVBOGVpSERjX05QZldrcnZGWE0ybHJxeE5Id3VSblZwU1A0Vmx2VkkzN0RyanlrN2R6R2xOcGpwemVVZ0owMTdwNW9WUzFTRkdVNlQzRG5lYXNQclJ1eGNyT0ZlZDJrOFpDcGtPTmNTTmlpLTdxRHk0SFpCX0V5MzJyZVNpVkhuc0U?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-17T07:18:00+00:00",
-   "resumo": "Baidu CEO says AI investment must deliver profits to avoid bubble Reuters",
+   "publicado_em": "2026-11-17T11:57:02+00:00",
+   "resumo": "Amazon to invest $7 billion in renewable energy in India Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "67168b7da28229df",
+   "canal": "Reuters",
+   "titulo": "Wildlife whereabouts lost as Russian researchers cut off from satellite tracking",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNGRYbVF5ZkFldHlybFNwMlJBYXl3bFBlQzZybndtdEhfSVhhWVF5czE4YnM4Z2pzNTc4VWNUMk1FTDR0ZmE4WjhMaERQUTMwMFBWVm5hQW1DS2k2U3NoUzl3aFpyTHJmUlZRVVNReDAzNkV1clQ2aGdiRUE0SmRSN0E4VlVIc2NwNW1XS3hkcy1hdEZKZjJ5LUw3ZHNPblpyWmNSeldwQTduUjZhNDd6a1VKd2ZoZ2lTbG04ejdQQVRUeG1DdGlCWg?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-17T07:05:00+00:00",
+   "resumo": "Wildlife whereabouts lost as Russian researchers cut off from satellite tracking Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "29fca7dd3547355f",
+   "canal": "Reuters",
+   "titulo": "Developing economies risk missing out on defence and AI boom, EBRD warns",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQa0tqRWVLRnBRQzNkRS1paVdlZDRNY1AyWmhPdk1vZTdQTmZJVkVXVjk0eUFycC1oeFcwYlJuWU90ekhlLWhCU3pIYmlUbjdJS1Zudkp2NWZQM3JHMjJLaUd3Y2VDZFFTWGh3b3lRcEpWdVNDbHBpVmtYVkNOdTFjT0FUczRvTS03c3g0blNHanJLb3FXYTZxOFJHMzhXcUhWZk4zeXdaQ241VFcybXFCZ2N2TURKQWxi?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-17T06:04:00+00:00",
+   "resumo": "Developing economies risk missing out on defence and AI boom, EBRD warns Reuters",
    "pre": 1.0
   },
   {
@@ -242,14 +242,14 @@
    "pre": 2.0
   },
   {
-   "id": "cd339d9d5155d0a6",
+   "id": "84926c7e8ad2760e",
    "canal": "CNN",
-   "titulo": "‘No answer’: Messaging failures worsened the air traffic freeze and sowed distrust in government",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZ1o3a2ZkeVFnNDkwT3V5Vy15b0J1QzY2ZGRqai1nNTZ3MVgyYzk2bG0teGpodTVhaHI2YnFqOWFBY1pVYXBVM0pSVGFFUFlrOGkwLVE2emVidnl4bktKeUZfTGh3T3FvQzlJalNrN05qZlZ2NWFVVExURzNVYmZPQ3dTU1o?oc=5",
+   "titulo": "Mullin flew to a football game while Americans were stranded after FAA ground stop",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UdjdDR1JPcEoxMTJ1S3BteEtlSXFBNWQ1Tll4WVJXS0JUNDBSdm1qbEVNR0FDUTRnQnlnNDNOekJVRVRackJiWW1WYmZHRTJqWFFNQnpxUDhTSkZBTDZMOWRfdUNWUVYyWkpOLWQ5blpwR01VcFVCckE5eWE?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-14T18:28:33+00:00",
-   "resumo": "‘No answer’: Messaging failures worsened the air traffic freeze and sowed distrust in government CNN",
-   "pre": 2.0
+   "publicado_em": "2026-11-17T16:19:08+00:00",
+   "resumo": "Mullin flew to a football game while Americans were stranded after FAA ground stop CNN",
+   "pre": 1.0
   },
   {
    "id": "c80f70ea435e4630",
@@ -392,13 +392,13 @@
    "pre": 3.0
   },
   {
-   "id": "c78fde4315052dbc",
+   "id": "0b16ca38f2af0a94",
    "canal": "The Guardian",
-   "titulo": "Would more hands-on dads create a more peaceful world? This pioneering scientist thinks so",
-   "link": "https://www.theguardian.com/lifeandstyle/2026/nov/17/would-more-hands-on-dads-create-a-more-peaceful-world-this-pioneering-scientist-thinks-so",
-   "imagem": "https://i.guim.co.uk/img/media/40c0c920738f41915f503bc0fa668bb53b5043d9/1513_352_3221_2577/master/3221.jpg?width=140&quality=85&auto=format&fit=max&s=84d70fa115ac14ba21e008f31480f58f",
-   "publicado_em": "2026-11-17T10:00:10+00:00",
-   "resumo": "Sarah Blaffer Hrdy unpicked Darwinian sexism to rewrite the story of evolution. Now, she’s turned her attention to the nature of fatherhood ‘Spit here, dear,” Sarah Blaffer Hrdy said to her husband, Dan, handing him a vial when he arrived in New York after the birth of the couple’s first grandchild. It was 2014 and Hrdy was conducting an experiment. Having recorded a 63% jump in oxytocin in her sa",
+   "titulo": "Sleep paralysis: when you’re awake, but can’t move – or even breathe | Letters",
+   "link": "https://www.theguardian.com/lifeandstyle/2026/nov/17/sleep-paralysis-when-youre-awake-but-cant-move-or-even-breathe",
+   "imagem": "https://i.guim.co.uk/img/media/8ddce07e370aee590f81e21bbd1a602c15a7432c/210_0_4694_3755/master/4694.jpg?width=140&quality=85&auto=format&fit=max&s=55ba116a4f1859a10e16fb08a1de2b88",
+   "publicado_em": "2026-11-17T17:52:53+00:00",
+   "resumo": "Readers recount their terrifying experiences of sleep paralysis in response to an article by Amy Fleming I experienced sleep paralysis and hypnagogic hallucinations from childhood and into adulthood, with the episodes only waning in my 30s ( Touch of evil: the terrifying truth about sleep paralysis, 11 November ). I never spoke about them to anyone. I experienced hallucinations in the form of seve",
    "pre": 2.0
   },
   {
@@ -732,6 +732,16 @@
    "pre": 3.0
   },
   {
+   "id": "8c1b05a746670966",
+   "canal": "Metrópoles",
+   "titulo": "Covid: variante PJ.2.1 aumenta no Brasil e entra no radar de vacinas da OMS",
+   "link": "https://www.metropoles.com/saude/covid-variante-pj-2-1-aumenta-no-brasil-e-entra-no-radar-de-vacinas-da-oms",
+   "imagem": "https://images.metroimg.com/2026/11/virus.jpg",
+   "publicado_em": "2026-11-17T17:21:38+00:00",
+   "resumo": "OMS vai incluir PJ.2.1 em análises sobre vacinas. Brasil registra alta de casos em 18 unidades da Federação, aponta Ministério da Saúde",
+   "pre": 2.0
+  },
+  {
    "id": "223f6dea8df5b082",
    "canal": "Metrópoles",
    "titulo": "Mulher descobre câncer após confundir menstruação intensa com perimenopausa",
@@ -739,16 +749,6 @@
    "imagem": "https://images.metroimg.com/2026/11/cncer-perimenopausa-sintomas.jpg",
    "publicado_em": "2026-11-17T15:05:02+00:00",
    "resumo": "Shaline Manhertz tinha sangramento intenso e cansaço antes do diagnóstico de mieloma múltiplo, um câncer que afeta a medula óssea",
-   "pre": 2.0
-  },
-  {
-   "id": "7d5a71e349a9e2dc",
-   "canal": "Metrópoles",
-   "titulo": "Você toma café todos os dias? Saiba como a bebida pode afetar o coração",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNnYtcE5XWklLSXYtcUdiek9ualBGLUtWSjEzek4wRHU0UGk2eUo4Q2RJZk45OEJjekV0R3pULXI0TFBFMVV4d2lxMFZVZUljZkRvUUp1c3pzdVJka1FJR1kxLU93X1lacnd0emgtam5aWFBzdml5djBmbm1Ec2VPM21Jd1JZR1V3STE4VTcyZE95eEVaU2lnYm4wM2cxek10alhrNERQN2lXZXpMbnIyMjgwM0V2SkxRcl9PZDI1WQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-17T13:50:00+00:00",
-   "resumo": "Você toma café todos os dias? Saiba como a bebida pode afetar o coração Metrópoles",
    "pre": 2.0
   },
   {
@@ -1002,16 +1002,6 @@
    "pre": 4.0
   },
   {
-   "id": "8c8981ba3d40a286",
-   "canal": "Estadão Saúde",
-   "titulo": "Canetas para obesidade podem chegar ao SUS em 2027, diz ministro; entenda próximos passos",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSXVwX0pKajJFcnQyY3g1Rng3d3UxYmlST21LbFlxSTA2b21URWJKX1lBdk9uckxSTjEwWUFOelZsQmpwWTkzejU5VXpzQ0ZNdnQzOS11VU8zbEQwN2tYU0lSa0Q0VXdjTk5IeXI1M051YTlsOEFaOHRNQjVIbDkydjhYZE5tQnI3Sm9GeXRrUmREY3Z5aWVBZ0luZXpsV1piQ2J3WTFJTVVWWjgwdVhNQzdfZUM?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-15T21:35:26+00:00",
-   "resumo": "Canetas para obesidade podem chegar ao SUS em 2027, diz ministro; entenda próximos passos Estadão",
-   "pre": 4.0
-  },
-  {
    "id": "ae97189f0ab4d453",
    "canal": "Estadão Saúde",
    "titulo": "Como a descoberta da insulina transformou o tratamento do diabetes",
@@ -1029,6 +1019,16 @@
    "imagem": null,
    "publicado_em": "2026-11-17T11:52:00+00:00",
    "resumo": "Vini Jr. marca três, quarteto ofensivo funciona e Brasil goleia em ritmo de treino a fraca Singapura Estadão",
+   "pre": 3.0
+  },
+  {
+   "id": "a780463d124b91d6",
+   "canal": "Estadão Saúde",
+   "titulo": "Lost & Found promove primeira edição de festival ‘gratiluz’ com música, esporte e bem-estar",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYWg4Tjh3YlNFcW5LQmQ4cDVVSkMtRFdBY1VBUk1TOENrZkFDMU9TNWlVVHZYelRBNnFQdHFKZFdaM015Y21VNm9hcl9EZmZBOVVhaVVfZk94OWdyVm9fenpwdTBIM3pkMWZyaUdFRHNUQllYUFl0X25nNUV6UGNKRjJtaEI2QTdxaG5Zb0hNUWpzYVo2V2tQT3huTVdPWTVkVmN2Ym5RcllrdktwczlQTnRLbkZWblFVdS12bzlmb1FRVy12VkZDV9IBzgFBVV95cUxPeFZkRWl4S0VZSnB4WEpmTmpteWNtamdlYjhsc3lTSW1XQkUxS3FrQ1FaeUdTaHlvYnh5V3lYSE5MSEo3XzlPUGFkdXJoS3FvbDZkelUzSUlwbkx5VkN3OGxjRnI3M1lSTWthMDhWUEEydzJYb2ZCcnhieHB5ajRtRDZ0cDhpSjM4Um1EaGx6U1BjNmw0WWt5YUpZRkNlRXZRSFRFQjItaXZpLTB1MHA0UXd3V2ZVcTJEd2RwRmVWZkRSQ2lWVkF6OVJlemtadw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-15T17:19:00+00:00",
+   "resumo": "Lost & Found promove primeira edição de festival ‘gratiluz’ com música, esporte e bem-estar Estadão",
    "pre": 3.0
   },
   {
@@ -1086,7 +1086,7 @@
    "canal": "ScienceDaily",
    "titulo": "Vitamin C could help block cancer-linked chemicals in your stomach, study finds",
    "link": "https://www.sciencedaily.com/releases/2026/11/261114202236.htm",
-   "imagem": null,
+   "imagem": "https://www.sciencedaily.com/images/1920/vitamin-c-supplement-capsules.webp",
    "publicado_em": "2026-11-15T14:13:18+00:00",
    "resumo": "Scientists have discovered that vitamin C may help prevent potentially cancer-causing chemicals from forming in the stomach after eating foods containing nitrates and nitrites. A new mathematical model suggests that taking vitamin C after meals could reduce these harmful reactions, offering a possible new strategy for lowering cancer risk.",
    "pre": 4.0
@@ -1246,8 +1246,8 @@
    "canal": "NYT Well",
    "titulo": "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
    "link": "https://www.nytimes.com/2026/11/17/well/us-measles-elimination-status.html",
-   "imagem": "https://static01.nyt.com/images/2026/11/17/multimedia/17WELL-ELIMINATION-STATUS-MEASLES3-kwgf/17WELL-ELIMINATION-STATUS-MEASLES3-kwgf-mediumSquareAt3X.jpg",
-   "publicado_em": "2026-11-17T17:15:05+00:00",
+   "imagem": "https://static01.nyt.com/images/2026/11/17/17visualUploader-93473-cover/17visualUploader-93473-cover-mediumSquareAt3X-v2.jpg",
+   "publicado_em": "2026-11-17T17:35:06+00:00",
    "resumo": "The nation was once regarded as a global leader for reining in the highly contagious virus. Now, large outbreaks that sicken thousands could become routine.",
    "pre": 1.0
   },
@@ -1454,7 +1454,7 @@
   {
    "id": "48a0b563d08b1f20",
    "canal": "Gq",
-   "titulo": "Why The Hunger Games Star Joseph Zada Looks Up to Robert Pattinson",
+   "titulo": "Why 'Hunger Games' Star Joseph Zada Looks Up to Robert Pattinson",
    "link": "https://www.gq.com/story/joseph-zada-hunger-games-get-ready-with-me",
    "imagem": "https://media.gq.com/photos/6afc7cd6e901397a85749e01/master/pass/2611_JosephZada-GQ-GRWM_BowenFernie_07.jpg",
    "publicado_em": "2026-11-17T17:04:39+00:00",
@@ -1512,14 +1512,34 @@
    "pre": 0.0
   },
   {
-   "id": "a683cc742652d34e",
+   "id": "b52e60231de9ffdb",
    "canal": "Vanityfair",
-   "titulo": "Timothée Chalamet Talks ‘Dune 3,’ the Knicks, and His Hollywood Inspirations",
-   "link": "https://www.vanityfair.com/story/timothee-chalamet-cover-story",
-   "imagem": "https://media.vanityfair.com/photos/6af350eb378da0f9afbcf847/master/pass/122026_Timothee_Chalamet_01.jpg",
+   "titulo": "Timothée Chalamet Came Over for Lunch—and a Cover Story",
+   "link": "https://www.vanityfair.com/story/timothee-chalamet-editors-letter",
+   "imagem": "https://media.vanityfair.com/photos/6af350eb063ab8e30f3d7155/master/pass/122026_Timothee_Chalamet_03.jpg",
    "publicado_em": "2026-11-17T13:00:00+00:00",
-   "resumo": "From the deserts of Arrakis to the lonely fjords of Iceland, Timothée Chalamet doesn’t do anything halfway. Mark Guiducci invites a celebrity of celestial proportions into his home for a chat about the Knicks, Dune, and everything after.",
-   "pre": 0
+   "resumo": "Vanity Fair editor Mark Guiducci welcomes the actor into his home—and readers to the 2026 Holiday Issue.",
+   "pre": 0.0
+  },
+  {
+   "id": "20bd104edf74bce4",
+   "canal": "Nytimes",
+   "titulo": "How the Haber-Bosch Process Changed the World",
+   "link": "https://www.nytimes.com/interactive/2026/11/16/magazine/haber-bosch-process-ammonia-fertilizer.html",
+   "imagem": null,
+   "publicado_em": "2026-11-17T17:41:35+00:00",
+   "resumo": "The Haber-Bosch process is the reason three-to-four billion of us are alive today.",
+   "pre": 0.0
+  },
+  {
+   "id": "fd52bc0f10f89132",
+   "canal": "Nytimes",
+   "titulo": "10 Days That Changed the World",
+   "link": "https://www.nytimes.com/interactive/2026/11/16/magazine/ten-days-175-years.html",
+   "imagem": null,
+   "publicado_em": "2026-11-17T17:32:45+00:00",
+   "resumo": "There have been 63,978 days since the New York Times began publishing. We chose the most important ones.",
+   "pre": 0.0
   },
   {
    "id": "87ad9b47adb2d9f3",
@@ -1552,16 +1572,6 @@
    "pre": 0.0
   },
   {
-   "id": "fd52bc0f10f89132",
-   "canal": "Nytimes",
-   "titulo": "10 Days That Changed the World",
-   "link": "https://www.nytimes.com/interactive/2026/11/16/magazine/ten-days-175-years.html",
-   "imagem": null,
-   "publicado_em": "2026-11-17T16:48:54+00:00",
-   "resumo": "There have been 63,978 days since the New York Times began publishing. We chose the most important ones.",
-   "pre": 0.0
-  },
-  {
    "id": "6a5c20b67b825cde",
    "canal": "Nytimes",
    "titulo": "How the 15th Amendment Changed the World",
@@ -1569,16 +1579,6 @@
    "imagem": null,
    "publicado_em": "2026-11-17T16:48:54+00:00",
    "resumo": "The 15th Amendment was a bold declaration that democracy belonged to everyone, a vision the country has struggled to realize.",
-   "pre": 0.0
-  },
-  {
-   "id": "8e65b31d6637c494",
-   "canal": "Nytimes",
-   "titulo": "How Thomas Edison Changed the World",
-   "link": "https://www.nytimes.com/interactive/2026/11/16/magazine/electric-grid-edison-light-power.html",
-   "imagem": null,
-   "publicado_em": "2026-11-17T16:48:54+00:00",
-   "resumo": "When Thomas Edison first lit up the Financial District, it opened up the night and birthed the modern technological age.",
    "pre": 0.0
   },
   {
@@ -1652,16 +1652,6 @@
    "pre": 4.0
   },
   {
-   "id": "62ec677001f6b1ff",
-   "canal": "Globo",
-   "titulo": "Seu Jorge surge em clique raro com a primogênita, Flor, em desfile da Misci, em SP; veja mais famosos",
-   "link": "https://revistaquem.globo.com/moda-e-beleza/noticia/2026/11/seu-jorge-posa-com-a-filha-flor-em-desfile-da-misci-em-sao-paulo-veja-mais-famosos.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/yR8gQyhnrhz46C7s3aqYJ35MYFo=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/L/V/c2PnB9QKS5DSqT91KpBA/seu-jorge-e-flor-438.jpg",
-   "publicado_em": "2026-11-17T15:54:02+00:00",
-   "resumo": "Seu Jorge protagonizou um momento de carinho com a filha, Flor de Maria Jorge, de 24 anos, durante o desfile de verão 2027 da Misci, realizado na manhã desta terça-feira (16), na Casa Domschke, em São Paulo. Os dois se abraçaram e posaram juntos para fotos no evento. Flor seguiu os passos do pai na música e constrói carreira como cantora. Flor mora em Los Angeles, nos Estados Unidos, desde os 10 a",
-   "pre": 3.0
-  },
-  {
    "id": "1c977f1121b319f2",
    "canal": "Globo",
    "titulo": "Anitta é indicada ao Grammy 2027 com 'EQUILIBRIVM'",
@@ -1682,6 +1672,26 @@
    "pre": 3.0
   },
   {
+   "id": "ea8401080687e171",
+   "canal": "Globo",
+   "titulo": "Fernando Fernandes mostra resultado de transplante capilar após meses de tratamento; fotos exclusivas",
+   "link": "https://revistaquem.globo.com/moda-e-beleza/estetica/noticia/2026/11/fernando-fernandes-mostra-resultado-de-transplante-capilar-apos-meses-de-tratamento-fotos-exclusivas.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/D0OG1KDggVPLkY3kntJ-RTjyydE=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/t/u/EvyS95SyOBz4tM9iEazQ/antes-6-.png",
+   "publicado_em": "2026-11-17T17:05:37+00:00",
+   "resumo": "Fernando Fernandes, de 45 anos, recentemente deu uma repaginada no visual ao realizar um transplante capilar -- cirurgia pouco invasiva que implanta cabelo em regiões com pouca ou nenhuma densidade de fios A Quem teve acesso a fotos exclusivas que mostram a evolução do atleta em meio ao tratamento. O procedimento foi realizado pelo médico Felipe Blanco, que compartilhou o depoimento de Fernando so",
+   "pre": 2.0
+  },
+  {
+   "id": "9cfdfb3d49bebcae",
+   "canal": "People",
+   "titulo": "High School Football Player, 15, Declared Brain Dead Hours After Collapsing During Gym Class",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQlcyOEJwT1pxX2F3WVpwT1lqZ3FzcGd2aGtSM3htVmZ2ZVhzVFZya3RsLVE3Z0ZCMzZBWHZweW1TUG9RTWdvY19GUmhMbFdrQnl1UG5FS2FrVWhNLTBLQWJROGRPVEV4cm11aEhTVDBfV0NQQUxJcWpNZ05ERjgxZ1Z5eUN0MUp2VEtVSi1oVTJEOGZEeTJ4WE92VXZKSnlDMk9GN1JKYzdkWVpPZ0JtZ1gtWUpEaWpfTFpr?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-14T21:30:57+00:00",
+   "resumo": "High School Football Player, 15, Declared Brain Dead Hours After Collapsing During Gym Class People.com",
+   "pre": 5.0
+  },
+  {
    "id": "7abfc695cab368fa",
    "canal": "People",
    "titulo": "Gio Benitez Thought His Heart Was Healthy. Then a 3-Minute Test Revealed a Frightening Diagnosis (Exclusive)",
@@ -1692,24 +1702,14 @@
    "pre": 3.0
   },
   {
-   "id": "d84435d7662b0779",
+   "id": "e744eea7653327e7",
    "canal": "People",
-   "titulo": "Veteran, 100, Reveals Secret to Longevity, Daryl Hall Being His Nephew (Exclusive)",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWmltR01nMlFlOWxpUU52elg4amw2dEpkcXRScEE5YUw1NTBYRndqR3B2N3RqRmZBejJvV0lLWjRaaXg0YkZINUJ3XzdYbUVGQ2RwVW1GMzRXZXlQWWdrZlRxbHlkVkJmT1BLckEwVWtVamFJeVhteHJTczV2SkVjRk95UnBZQkxpb1IyNGVFNDNkdkN5clhYRTEwaFVPN05yeV9JdUdtQjM?oc=5",
+   "titulo": "Father Sent Haunting Text to Ex Before Allegedly Burying Their Baby Alive: ‘I Want Us to Be a Family’",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNemM0cnJIaUY5NW1pMWd3TWc5UG1NZl95ZEdUV0VLLWIxZWlCVlpXSjNBNUQwcUJXdTUxOGNyMkRtR0pKYXRxYmRfVGZ0ZjE2VkNZVm1EdUZpejlDQ0RjRjhGemU0NjFQeEJmcm4tWW9DMGFMQXhWUFNlWWxfUnlNMmFqWmlFLXpGUXpqSVpQS0M?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-15T21:00:00+00:00",
-   "resumo": "Veteran, 100, Reveals Secret to Longevity, Daryl Hall Being His Nephew (Exclusive) People.com",
-   "pre": 3.0
-  },
-  {
-   "id": "b89d2cd92e886331",
-   "canal": "People",
-   "titulo": "High School Senior, 17, Flung from Car Sunroof During Parking Lot Stunt, Suffers Severe Brain Injury",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2FWODktUGFiel9hSDlWbUplMXlSeHBEQ3I1RDVPSU4zcUUxaFZ2X3ZZZWpqTmxuMDFER1RPOHlTQXhpcW84cDlvbmM2QjRMMnRwd1hXb2NTTzRIZEU5NFBxY21mdm1hcDY4N0R2ZUhXcW1Yd2hKN2NTTlp5azlEMVlBRXVnWklhUkF6d2JjTDljYVN4dE1tRUlVdFB4LWtITTc2LVlNc3NHdDlrUTdRVUlwazhzUQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-14T20:32:11+00:00",
-   "resumo": "High School Senior, 17, Flung from Car Sunroof During Parking Lot Stunt, Suffers Severe Brain Injury People.com",
-   "pre": 3.0
+   "publicado_em": "2026-11-16T22:24:56+00:00",
+   "resumo": "Father Sent Haunting Text to Ex Before Allegedly Burying Their Baby Alive: ‘I Want Us to Be a Family’ People.com",
+   "pre": 2.0
   },
   {
    "id": "59b03a306fc225db",
@@ -1722,13 +1722,23 @@
    "pre": 2.0
   },
   {
-   "id": "0303cd906018c5df",
+   "id": "5e05ee1594d08f0e",
    "canal": "People",
-   "titulo": "Pete Shaw Opens Up About Pain and Heart Disease: ‘I’m Fighting This’",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5fX05CZERSY3RrR3RLRnlVLUIzdy0zUW52X2w2ckpEZ25xTERpZm1vRW0ybHZ5UzFEb2x2MEUtZGxKbEc1bE5mWlhESlBlZlROZ3JmTWI4dGpRUFE3X0NBWmlTM2xMbkpnYS04TUNuaFdycFhoWmpqbTFEWQ?oc=5",
+   "titulo": "‘SLOMW: OC’ Star Salomé Andrea Welcomes Third Baby, a Girl, with Husband Aaron: ‘Everybody Is in Love’ (Exclusive)",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcGhKNmQ3WHVXeGRRSF9rMWJ4dXpXNEtwMlU1aUQ5TVZrZWZQelFCcTFzOWtVNUVnTmFad2pLMmtkeFA3UXlRRGM0cHBrdjZJanBIQV8wQTR5dHdXa2xZYjZodUx4eXJ0M0lremt3ZVVpdHR1VHhQSGNST3lmbHFQcHpGTnZBaGQtVDU1bDE2SlRHWWFoVUNxVXkyZE9nUzlCWXpGZWFFQjNOUQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-16T14:00:00+00:00",
-   "resumo": "Pete Shaw Opens Up About Pain and Heart Disease: ‘I’m Fighting This’ People.com",
+   "publicado_em": "2026-11-16T18:00:00+00:00",
+   "resumo": "‘SLOMW: OC’ Star Salomé Andrea Welcomes Third Baby, a Girl, with Husband Aaron: ‘Everybody Is in Love’ (Exclusive) People.com",
+   "pre": 2.0
+  },
+  {
+   "id": "8c93d7a3ab1ec7af",
+   "canal": "People",
+   "titulo": "Patricia Heaton On What ‘Everybody Loves Raymond’ Family Would Be Up To Now (Exclusive)",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPa3gxUTEzbGQyTTBPaUpwY1J1Nnk5cTNiV3VObk9pb2VmVmdiSmJVU2o0S3hSNlVtYWdqVVBYSkthWWdqNHFIVTNrSVZudUxTbkgwUXFnN1JBbXJnVGR6UEFJdzdqeDZXT3Z6SjltazlnLUNjemV5ZVo3OTA1bVNDMHN4ZkVFX0o0RmhteDNPdm9DbkhmUXBVd3g5dHRnZDJ0UHNDT040QTRJQzZYZ2pVNjFBQ3Z1WXRSNG40Z2dVQzBpclM3WkRaTU5tRFlFRlJ5QV9Xcng2OXJ4bm04LXdPVi1IbDRjdVppWnV5c2ozcWFfbERhN3c?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-15T18:30:00+00:00",
+   "resumo": "Patricia Heaton On What ‘Everybody Loves Raymond’ Family Would Be Up To Now (Exclusive) People.com",
    "pre": 2.0
   },
   {
@@ -1742,33 +1752,33 @@
    "pre": 2.0
   },
   {
-   "id": "235c681ec1142349",
+   "id": "4288a0ba985b7a11",
    "canal": "People",
-   "titulo": "Nicholas Hoult Shares How Being a Father of 4 ‘Informs’ His Acting (Exclusive)",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVUE5bzZDY2FFUVVyQ0MwdHkwS1NsXzNISnJic3hteHB6elVUSDd1bmFsRWhhNHc2NV8wVU1vV0g5QVNyMWJ2U3ZsNzdxcTZMNmtfSU5VbV9HUkd2d041cm5tOF91SHJpSEg3aHlETjBtdW9pUzlGMXJuNWZ4SmZzVUlhamdqODhnVk95Q1hhdmxLNC03MGszZkpjNVZtakh6aUwwQw?oc=5",
+   "titulo": "Single Mom Says Marathon Shirt Has Her DMs ‘Flooded’ with Potential Dates",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ1BTYlRpQ25Gc096aXplVXhmLUV2em5hSDFpOHNtVmRHdF9xcl9LX3hEcnZ1MVVlZU54bUJFSERUX3QxZHRaTUtMb2haUHRqZVVMeWd1SGZLVnlKN2w5N3AyUm9QV1NQTjdTeGdtZ2F1LVVBdGktY2xlYXdyQjlwTnRIdV9nTEkzQkpRTk9TSUtlTmtYWlFvYkRvNV9zNWst?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-14T19:30:00+00:00",
-   "resumo": "Nicholas Hoult Shares How Being a Father of 4 ‘Informs’ His Acting (Exclusive) People.com",
+   "publicado_em": "2026-11-15T09:32:00+00:00",
+   "resumo": "Single Mom Says Marathon Shirt Has Her DMs ‘Flooded’ with Potential Dates People.com",
    "pre": 2.0
   },
   {
-   "id": "d0cec7e368516933",
+   "id": "cc64e2c8d7ca851a",
    "canal": "People",
-   "titulo": "Randy Travis Faced a ‘1% Chance of Survival’ from Doctors amid Multiple Health Concerns, Wife Says",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaHdhYkdERlhGUm1OOGJsMTFPTVhadTAxYlZkaGE1akI2QURFbXFyWHVmU0JCWjhjX25TMXJ2WnVsZThBdVQ3SkZuTGJibTF3NnAtOE0xRXpNaW5UVkxfZUVwQzVBR1FJUUNBbkdKa3RWd2xDdUE2VEtLdVd6d1Q2TGlZc0dvcnFZc2lSS2lLS2VlWnRNZzF3TXgyTjVZM0h6RjVWTnZhRlRrd05LODVuaFVUMA?oc=5",
+   "titulo": "King Charles Reflects on Aging, and Reveals ‘Terrible Problem’ That Comes with It, as He Celebrates His 78th Birthday",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVmlkX3NwTGtKLVl4VHFwREhTOG4ydUZreGJ4VmZGcFp3Zm9peFduV1ZoTmJuN21xdWhNY2E2ZGtXS3p5Tlp3ZWhFMGFlbF9COS1hcENVd1AyVFVXeWp5YUlFQlllamotazNDLW1pSGtGbk5wX0c1OXdfc2dyMk8zNy1wd0VFdEdmRzV1ckVTR2MwbDYyOFNJ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-14T19:11:05+00:00",
-   "resumo": "Randy Travis Faced a ‘1% Chance of Survival’ from Doctors amid Multiple Health Concerns, Wife Says People.com",
+   "publicado_em": "2026-11-14T20:09:00+00:00",
+   "resumo": "King Charles Reflects on Aging, and Reveals ‘Terrible Problem’ That Comes with It, as He Celebrates His 78th Birthday People.com",
    "pre": 2.0
   },
   {
-   "id": "6d72865fb0c34798",
+   "id": "de7e500d7477d16d",
    "canal": "People",
-   "titulo": "Phil Collins, 75, Opens Up About His Health Struggles During Rare Public Appearance",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVVpMeUpYWlVqZnE3OXA3Xzh3aGhTWWFBaGxHMW4zRDNwZjIwbXA5bDNsX2ZsTGd5cms5dU5QZkxpYzBXSUg2R3I3bmJzSkM1NHpWMk1Jbmd3aFlUdDl1cWltZ08zZDdHWjdET2kxRFRoNzNzUWwtQkMtX3owMFlvUkg0SkNHM2owMzVmVktOM3EyNWtPN2FjNEp6Qkt5SjR4T1QyeFlFU1dzWjJ0aFhsM2VWV1p6dklwZks2ZWlCUQ?oc=5",
+   "titulo": "Billy Porter Shares Health Update 1 Year After Sepsis Left Him on His ‘Deathbed’: ‘The Bitch Is Back, Honey’ (Exclusive)",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTnNSWUVZYS1mZnBHaUJhV2RobkFjM3NLQWI1aUw4ZG1TSEFueHdOM1gzRS1USG1DeEZxQmlmdE9pUjlFTk5weDFhc2RRSDg2N25zYmxxcWJjcFhyVTZsdUxadlIyMXR2OTZubWRrOXZIRkZ5djVrcWtCWE9OSWJaWS1iUmo0d0daYTlYMThTMjRnSG5xcTVMLUlwTGtkdU5PVW94RS1VT1pubDBkNmFuY0NTSnYtMFJvbWlN?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-15T17:11:44+00:00",
-   "resumo": "Phil Collins, 75, Opens Up About His Health Struggles During Rare Public Appearance People.com",
+   "publicado_em": "2026-11-17T10:50:54+00:00",
+   "resumo": "Billy Porter Shares Health Update 1 Year After Sepsis Left Him on His ‘Deathbed’: ‘The Bitch Is Back, Honey’ (Exclusive) People.com",
    "pre": 1.0
   },
   {
@@ -1822,14 +1832,44 @@
    "pre": 4.0
   },
   {
-   "id": "0d63e1c71461320f",
+   "id": "91f9813298ed9af9",
    "canal": "Pagesix",
-   "titulo": "Mckenna Grace’s ‘Sunrise on the Reaping’ press tour wardrobe is a scavenger hunt of ‘Hunger Games’ nods",
-   "link": "https://pagesix.com/style/mckenna-grace-hunger-games-sunrise-on-the-reaping-red-carpet-looks/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fnewspress-collage-a06pehkl4-1794929864188.jpg?quality%3D90%26strip%3Dall%261794911930%261794911930",
-   "publicado_em": "2026-11-17T15:58:00+00:00",
-   "resumo": "From a Katniss-inspired wedding gown in Paris to a beaded arena landscape in London, the 20-year-old has worked Panem into every outfit.",
+   "titulo": "Antonio Sabàto Jr.’s son Jack bails himself out of jail under strict conditions after fatal hit-and-run arrest",
+   "link": "https://pagesix.com/2026/11/17/celebrity-news/antonio-sabato-jr-s-son-jack-bails-himself-out-of-jail-under-strict-conditions-after-fatal-hit-and-run-arrest/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2F35-m-monday-morning-pedestrian-148338505_54fd0b.jpg?w%3D1024",
+   "publicado_em": "2026-11-17T17:48:10+00:00",
+   "resumo": "A bond transaction of $5,000 was paid by Jack last Friday, according to court documents exclusively obtained by Page Six",
+   "pre": 2.0
+  },
+  {
+   "id": "5cbafa4a73a4b927",
+   "canal": "Pagesix",
+   "titulo": "Broadway legend Billy Porter, 57, shares major health update after terrifying illness left him on his ‘deathbed’",
+   "link": "https://pagesix.com/2026/11/17/celebrity-news/broadway-legend-billy-porter-57-shares-major-health-update-after-terrifying-illness-left-him-on-his-deathbed/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fbilly-porter-attends-press-night-149104979.jpg?w%3D772",
+   "publicado_em": "2026-11-17T17:37:44+00:00",
+   "resumo": "The actor was diagnosed with the life-threatening illness last year.",
    "pre": 1.0
+  },
+  {
+   "id": "9a7dcf587f2defcc",
+   "canal": "Pagesix",
+   "titulo": "Kate Middleton dazzles in Queen Elizabeth’s emeralds on Earthshot Prize Awards 2026 red carpet in India",
+   "link": "https://pagesix.com/2026/11/17/style/kate-middleton-dazzles-in-queen-elizabeths-emeralds-on-earthshot-prize-awards-2026-red-carpet-in-india/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2F2026-mumbai-india-prince-princess-149091869.jpg?w%3D755",
+   "publicado_em": "2026-11-17T17:40:26+00:00",
+   "resumo": "The Princess of Wales looked stunning at her first appearance at the event in four years.",
+   "pre": 0.0
+  },
+  {
+   "id": "b40d68aa24b6ed05",
+   "canal": "Pagesix",
+   "titulo": "Only Page Six readers can shop TruSkin’s Black Friday deals early with this exclusive code",
+   "link": "https://pagesix.com/2026/11/17/style/truskin-black-friday-starts-early-with-our-exclusive-20-off-code/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fnewspress-collage-z6mo5ok49-1794935599896.jpg?quality%3D90%26strip%3Dall%261794917982%261794917982",
+   "publicado_em": "2026-11-17T17:25:55+00:00",
+   "resumo": "There's a reason the brand has caught beauty lovers' attention.",
+   "pre": 0.0
   },
   {
    "id": "f6433ae363880eb1",
@@ -1839,36 +1879,6 @@
    "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fparis-france-british-actor-robert-149090611.jpg",
    "publicado_em": "2026-11-17T17:07:25+00:00",
    "resumo": "The \"Twilight\" actor may have always been the favorite to be the next 007, according to a new report.",
-   "pre": 0.0
-  },
-  {
-   "id": "a9c74da56e79f6e2",
-   "canal": "Pagesix",
-   "titulo": "Martin Short, Marcello Hernández are twinning in NYC and more star snaps",
-   "link": "https://pagesix.com/2026/11/17/photos/martin-short-marcello-hernandez-are-twinning-in-nyc-and-more-star-snaps/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fsteve-martin-martin-short-marcello-149105512.jpg",
-   "publicado_em": "2026-11-17T17:06:49+00:00",
-   "resumo": "Bella Hadid plays in the snow, Pamela Anderson hosts a Friendsgiving and more snaps...",
-   "pre": 0.0
-  },
-  {
-   "id": "f5c8b6bce3f5eeaa",
-   "canal": "Pagesix",
-   "titulo": "Anthony Mackie, 48, claims ‘women don’t like older men’ as he shares dating woes",
-   "link": "https://pagesix.com/2026/11/17/celebrity-news/anthony-mackie-48-claims-women-dont-like-older-men-as-he-shares-dating-woes/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fanthony-mackie-48-claims-women-149103500.jpg?w%3D1024",
-   "publicado_em": "2026-11-17T17:03:33+00:00",
-   "resumo": "The \"Captain America\" star's sentiment left \"WWHL\" host Andy Cohen in shock.",
-   "pre": 0.0
-  },
-  {
-   "id": "886bdd038c07e6b0",
-   "canal": "Pagesix",
-   "titulo": "Heidi Gardner leaning on friends amid shocking death of boyfriend Ray Tintori at 43",
-   "link": "https://pagesix.com/2026/11/17/celebrity-news/heidi-gardner-leaning-on-friends-amid-shocking-death-of-boyfriend-ray-tintori-at-43/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fheidi-gardner-ray-tintori-jul-149007631_826f77.jpg?w%3D769",
-   "publicado_em": "2026-11-17T16:52:50+00:00",
-   "resumo": "The \"Saturday Night Live\" star's boyfriend's death was announced Monday.",
    "pre": 0.0
   },
   {
