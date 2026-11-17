@@ -1,13 +1,16 @@
 {
  "id": "k-2026-11-18-estatico",
  "data": "2026-11-18",
- "fotos": [],
- "decisao": "precisa",
- "problemas": [
-  "A foto do slide 1 não baixou."
+ "fotos": [
+  {
+   "slide": 1,
+   "hash": "676c64e4c0c2e247"
+  }
  ],
+ "decisao": "agendado",
+ "problemas": [],
  "atencao": [],
  "avisos": [],
  "quando": "2026-11-18T07:00:00-03:00",
- "revisado_em": "2026-11-17T15:25-03:00"
+ "revisado_em": "2026-11-17T15:29-03:00"
 }
