@@ -1,5 +1,5 @@
 {
- "coletado_em": "2026-11-18T17:18:53.559712+00:00",
+ "coletado_em": "2026-11-18T17:36:50.310336+00:00",
  "itens": [
   {
    "id": "55ffa21d5bb3f0ed",
@@ -192,13 +192,13 @@
    "pre": 1.0
   },
   {
-   "id": "8a223603598eb7f8",
+   "id": "c5a6d66a2e8d36c2",
    "canal": "Reuters",
-   "titulo": "Putin says EU's Russian energy ban caused a 'humiliating' fall in EU living standards",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPckNCbEpERmpHdVJoY0h6eVo0X3JPRmlwaUFtYWFkbG41eVpCMEo1M1RwVTJheXlvSHJKY295bFkyOXVOdktyNFJTaG5XcUt0eUsxTFAtM3F2U25ncndzSV9icGdHb3hESlRIVkR5bHRDQnI4OXQweWZzRUJTV0N2NlFHeFlLS281bmVkRUNPZ0pIbzNTcE5zNTVtLTZQQ3NrSkxzUEo1UjdNVE9nZ0hMR29DRkVwR2IyZ0dPVDZ0RmZLMWZ5c2RVVw?oc=5",
+   "titulo": "China seeks advanced Nvidia chips for AI weapons despite US curbs, report says",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN0Vsd0FkMFJLZl8zbklveDFFQW9XSEc3Q3dHMEZ6NjJFZ0dyYUIzOVdkam50a0lSYy00NEt5OGpCaG8wQTZ4RDlyTGVvaU1VMTlGNjk3aTdiZHVXcnloamEyTUZqbEhJWTlHbFJqTHNDWmVGN2JBT2FYTG44bWRIVXFfQ1E3LVdmeGRlczZETDFIUXlUSy04RXk0bDBlTHlIVm1ld2V3TnltenZZSXdBTm1ZV3NxUFVnTTRZWWRn?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-18T13:50:10+00:00",
-   "resumo": "Putin says EU's Russian energy ban caused a 'humiliating' fall in EU living standards Reuters",
+   "publicado_em": "2026-11-18T12:25:43+00:00",
+   "resumo": "China seeks advanced Nvidia chips for AI weapons despite US curbs, report says Reuters",
    "pre": 1.0
   },
   {
@@ -209,6 +209,16 @@
    "imagem": null,
    "publicado_em": "2026-11-17T17:10:09+00:00",
    "resumo": "Social media algorithms are encouraging Americans to freak out about the tech outages CNN",
+   "pre": 3.0
+  },
+  {
+   "id": "8bc04106d18856ac",
+   "canal": "CNN",
+   "titulo": "Is it perimenopause? Why doctors miss the signs and how to get help",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTGdMeEpYdXN3NGFYdmI1RW56YWNlaHEyN0g0MnE1eW1jdzU3M2h1SVlpc2N2c1dxellHQTVyNnNsVjgySDJQMGlFZ3QtV19xT2hiWmNwdF82cFBKOWtOdS1Ha05Vb0xEMzNjdGczV1Y1RjdWSjhGOEM5ek13R05zSU1wQ1FNUlhlc3c4S2dEcw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-16T13:02:09+00:00",
+   "resumo": "Is it perimenopause? Why doctors miss the signs and how to get help CNN",
    "pre": 3.0
   },
   {
@@ -292,16 +302,6 @@
    "pre": 1.0
   },
   {
-   "id": "f0b74ac87ac85df0",
-   "canal": "CNN",
-   "titulo": "Supreme Court declines Trump push to cut research grants related to DEI",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40c0JkdnJ6U1pMM3RUTjQyLVVvNG9fR004TndiTWZqTUpHREZCbWd5WW1iV2tKaDdqTzFnanpNRFZXdWVZU0I2NklwZnFYT2IwQzhHVmdYRlN2U2w1OVB5T0VoYVRTUWNvQ1gxLTl1bjVHdGlu?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-16T15:00:53+00:00",
-   "resumo": "Supreme Court declines Trump push to cut research grants related to DEI CNN",
-   "pre": 1.0
-  },
-  {
    "id": "e65fce33f02ce233",
    "canal": "The Guardian",
    "titulo": "Menopause symptoms aren’t always taken seriously. These female lawmakers plan to change that",
@@ -310,6 +310,16 @@
    "publicado_em": "2026-11-17T12:00:35+00:00",
    "resumo": "From Utah to Louisiana, US states are making menopause care more affordable and accessible for midlife women Melissa Shusterman was desperate for help with her menopausal symptoms: body aches, lethargy and brain fog, which she described as feeling “not myself”. The Pennsylvania state representative saw a gynecologist, a physical therapist, a chiropractor and a urologist. One doctor gave her lubric",
    "pre": 10.0
+  },
+  {
+   "id": "4bdb9bdf6bbd8043",
+   "canal": "The Guardian",
+   "titulo": "BMI was never meant to evaluate an individual’s health | Letter",
+   "link": "https://www.theguardian.com/society/2026/nov/18/bmi-was-never-meant-to-evaluate-an-individuals-health",
+   "imagem": "https://i.guim.co.uk/img/media/5ff60220ea2449589c57f9ecb7c865772fc2af82/657_0_6584_5267/master/6584.jpg?width=140&quality=85&auto=format&fit=max&s=49da52cc8f6875e5c0dea818c053adb1",
+   "publicado_em": "2026-11-18T17:24:39+00:00",
+   "resumo": "Clinicians should start with the patient in front of them to identify obesity, not rely on a 200-year-old method that was aimed at entire populations, says James Capon Your report on a better way to diagnose obesity is welcome, though it is worth remembering how we came to rely on body mass index (BMI) in the first place ( BMI alternative for identifying obesity ‘could prevent misdiagnosis in mill",
+   "pre": 5.0
   },
   {
    "id": "f0f608db8626685b",
@@ -342,6 +352,16 @@
    "pre": 4.0
   },
   {
+   "id": "2559e1aba1f83760",
+   "canal": "The Guardian",
+   "titulo": "Bacterial toxin produced by E coli leading suspect in rise in bowel cancer among under-50s",
+   "link": "https://www.theguardian.com/science/2026/nov/18/bacterial-toxin-e-coli-bowel-cancer-under-50s",
+   "imagem": "https://i.guim.co.uk/img/media/9b061507eda9b71765369364741ee42b18781380/0_139_4572_3654/master/4572.jpg?width=140&quality=85&auto=format&fit=max&s=d64463183811f4a5dfb881fdd69ee95d",
+   "publicado_em": "2026-11-18T17:21:26+00:00",
+   "resumo": "Scientists tell Commons committee that exposure to colibactin in early life is a potential driver of early onset colorectal cancer Exposure to a bacterial toxin in early life has emerged as a leading suspect in the rise of bowel cancer amongs those under 50, MPs have heard. Cases of early onset bowel cancer have doubled in many countries in the past two decades, and while rising obesity and a fall",
+   "pre": 3.0
+  },
+  {
    "id": "60fbb837a588ce41",
    "canal": "The Guardian",
    "titulo": "‘Deeply concerning’: NHS in England reports more than 3,000 incidents of staff snooping on patients’ records",
@@ -372,16 +392,6 @@
    "pre": 3.0
   },
   {
-   "id": "fe125fe61fb05f62",
-   "canal": "The Guardian",
-   "titulo": "Surge of US datacenters adds equivalent of Denmark’s annual emissions, study finds",
-   "link": "https://www.theguardian.com/us-news/2026/nov/16/datacenter-emissions-study",
-   "imagem": "https://i.guim.co.uk/img/media/ddf959b831576c7e97a80916695eafca3a8e4ef4/251_0_7465_5971/master/7465.jpg?width=140&quality=85&auto=format&fit=max&s=3e040e505fc0d81bbb9e1092e5a029d8",
-   "publicado_em": "2026-11-16T16:00:47+00:00",
-   "resumo": "‘Hyperscaler’ datacenters across country draw upon dirtier power sources to meet vast energy needs, research shows The frantic buildout of “hyperscaler” datacenters in the US has collectively caused planet-heating emissions of about the same scale as Denmark emits in a year, new research has found. In that period, 403 “hyperscalers” – the largest datacenters used primarily to handle the growth of ",
-   "pre": 3.0
-  },
-  {
    "id": "954ee0e9a685ea16",
    "canal": "The Guardian",
    "titulo": "‘Orwellian’: HIV scientist’s ordeal lays bare Trump officials’ interference in grant-making",
@@ -390,16 +400,6 @@
    "publicado_em": "2026-11-16T13:00:01+00:00",
    "resumo": "Researchers forced to scrap original studies as NIH rethinks grants not in ‘alignment’ with administration’s priorities Dr Jade Pagkas-Bather received her first grant from the National Institutes of Health (NIH) in June 2025 – a milestone in any researcher’s career. She planned to study basic income as a medical intervention: her randomized control trial would test whether monthly grants of $500-c",
    "pre": 3.0
-  },
-  {
-   "id": "679837f1aed33e9a",
-   "canal": "The Guardian",
-   "titulo": "Doctor whose evidence helped to convict Lucy Letby was barred from treating patients during trial",
-   "link": "https://www.theguardian.com/uk-news/2026/nov/18/doctor-whose-evidence-helped-to-convict-lucy-letby-was-barred-from-treating-patients-during-trial",
-   "imagem": "https://i.guim.co.uk/img/media/3c48972bd53bc9a25bae4884014f89108084ef40/0_0_2399_1920/master/2399.jpg?width=140&quality=85&auto=format&fit=max&s=bfd53ab76e36531be8a7aaa1103e741d",
-   "publicado_em": "2026-11-18T12:45:13+00:00",
-   "resumo": "Exclusive: Jury was never told that Prof Peter Hindmarsh was barred from practising over concerns for patients’ safety A senior doctor whose evidence helped to convict Lucy Letby and who was held up by prosecutors as a pre-eminent expert was barred from treating patients during the trial over fears he posed a risk to their safety. Prof Peter Hindmarsh, a specialist in hormones in children, was cru",
-   "pre": 2.0
   },
   {
    "id": "20285afeedba67c5",
@@ -1342,16 +1342,6 @@
    "pre": 2.0
   },
   {
-   "id": "1ad42162194152e4",
-   "canal": "Forbes",
-   "titulo": "Accor Incorpora O Icônico Treasure Island, Em Las Vegas, À Handwritten Collection",
-   "link": "https://forbes.com.br/forbes-life/2026/11/accor-incorpora-o-iconico-treasure-island-em-las-vegas-a-handwritten-collection/",
-   "imagem": null,
-   "publicado_em": "2026-11-17T13:00:00+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Hotel com mais de 30 anos de história passa a integrar o portfólio da Accor, levando sua trajetória e personalidade próprias à Handwritten Collection O post Accor Incorpora O Icônico Treasure Island, Em Las Vegas, À Handwritten Collection apareceu primeiro em Forbes Brasil .",
-   "pre": 2.0
-  },
-  {
    "id": "65e5dec300e84e45",
    "canal": "Forbes",
    "titulo": "Países na Mesa da COP31 Divergem sobre Combustíveis Fósseis e Financiamento Climático",
@@ -1462,16 +1452,6 @@
    "pre": 2.0
   },
   {
-   "id": "3454aa3c4883e99f",
-   "canal": "Gq",
-   "titulo": "How Astronaut Reid Wiseman Keeps His Cool in Outer Space",
-   "link": "https://www.gq.com/story/reid-wiseman-routine-excellence",
-   "imagem": "https://media.gq.com/photos/6af488c9246604d2c1b45617/master/pass/Reid-Wiseman-Routine-Excellence-Lede.jpg",
-   "publicado_em": "2026-11-16T13:00:00+00:00",
-   "resumo": "The commander of NASA’s Artemis II mission—which took humankind farther into space than we’d ever been—prepares for high-stakes scenarios by microdosing stress.",
-   "pre": 2.0
-  },
-  {
    "id": "779ad01ac2242af0",
    "canal": "Gq",
    "titulo": "Why Men Are Taking Thirst Traps in Red Light Face Masks",
@@ -1490,16 +1470,6 @@
    "publicado_em": "2026-11-16T18:52:35+00:00",
    "resumo": "As a Dior ambassador and one of the most interesting dressers in Hollywood, Pattinson is poised to bring a new high-fashion energy to the 007 aesthetic.",
    "pre": 1.0
-  },
-  {
-   "id": "2d0740fb7fcdcc03",
-   "canal": "Vanityfair",
-   "titulo": "Sam Altman Is “Still Unknowable” to Andrew Garfield, Even After Playing the OpenAI Co-Founder in Artificial",
-   "link": "https://www.vanityfair.com/story/andrew-garfield-luca-guadagnino-artificial-screening-room",
-   "imagem": "https://media.vanityfair.com/photos/6af97c862bec9292bebe664c/master/pass/20261114_VF_SCREENING_ROOM_LA_ARTIFICIAL_HunterAbramsStudiosLLC-35.jpg",
-   "publicado_em": "2026-11-15T17:26:39+00:00",
-   "resumo": "“It's a remarkable thing to have the resilience to go and sleep every night, knowing that you're really doing a lot of damage,” Garfield said of Altman during a discussion at Vanity Fair’s Screening Room at LACMA.",
-   "pre": 3.0
   },
   {
    "id": "8b817604d66c3d91",
@@ -1549,6 +1519,16 @@
    "imagem": "https://media.vanityfair.com/photos/6afc7a204c67f3c877d5d10d/master/pass/vfnovember_great_men_myth_cz.jpg",
    "publicado_em": "2026-11-17T21:48:04+00:00",
    "resumo": "Three years after Sam Altman triumphed over a failed board coup at OpenAI, investors are lobbying to reinstate Jensen Huang to his role as Nvidia CEO following the revelation of several compromising affairs. Are we really going to keep letting flawed founders hold our economy hostage?",
+   "pre": 0.0
+  },
+  {
+   "id": "f3c0a0ce5462bcd0",
+   "canal": "Vanityfair",
+   "titulo": "Vanity Fair Announces New Hires and Promotions Across Departments",
+   "link": "https://www.vanityfair.com/story/vanity-fair-new-hires-2026",
+   "imagem": "https://media.vanityfair.com/photos/698f5cc15112d7f1d4b442e7/master/pass/VF-Logotype-2025_Social_Square_Black.png",
+   "publicado_em": "2026-11-17T21:39:35+00:00",
+   "resumo": "Emily Shugerman, Jack Holmes, and others join the magazine’s masthead, as Maggie Coughlan is promoted.",
    "pre": 0.0
   },
   {
@@ -1912,6 +1892,16 @@
    "pre": 0.0
   },
   {
+   "id": "78270f30025ea3ee",
+   "canal": "Pagesix",
+   "titulo": "Backstreet Boys’ AJ McLean reconciles with estranged wife nearly 2 years after divorce announcement",
+   "link": "https://pagesix.com/2026/11/18/celebrity-news/backstreet-boys-aj-mclean-reconciles-with-estranged-wife-nearly-2-years-after-divorce-announcement/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Faj-mclean-rochelle-karidis-oct-149118294.jpg",
+   "publicado_em": "2026-11-18T17:26:10+00:00",
+   "resumo": "\"They are back together,\" a source told Page Six exclusively. \"It's been a while!\"",
+   "pre": 0.0
+  },
+  {
    "id": "80a757420a9cdf62",
    "canal": "Pagesix",
    "titulo": "Miss Universe 2026 contestants are seen tripping and stumbling along makeshift beach runaway in mortifying video",
@@ -1959,16 +1949,6 @@
    "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fjones-road-black-friday-sale-2026-1.jpg?quality%3D90%26strip%3Dall%261794996485%261794996485",
    "publicado_em": "2026-11-18T16:40:48+00:00",
    "resumo": "Founder Bobbi Brown practically invented minimalist makeup.",
-   "pre": 0.0
-  },
-  {
-   "id": "8508ee8a2d9cff0d",
-   "canal": "Pagesix",
-   "titulo": "Hunter Schafer given major boost in bid to be next Bond girl — as she breaks her silence on race for iconic role",
-   "link": "https://pagesix.com/2026/11/18/entertainment/hunter-schafer-given-boost-in-bid-to-be-next-bond-girl-breaks-silence-on-race-for-role/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2F2099-special-screening-held-odeon-149207879.jpg?w%3D683",
-   "publicado_em": "2026-11-18T16:35:10+00:00",
-   "resumo": "News broke Monday that Robert Pattinson was cast as James Bond, with the \"Twilight\" star beating out Callum Turner, Jack Lowden and more actors.",
    "pre": 0.0
   },
   {
@@ -2084,6 +2064,20 @@
    "site": "Instagram"
   },
   {
+   "id": "cbe72aeada1af703",
+   "canal": "Sua referência",
+   "titulo": "Instagram",
+   "link": "https://www.instagram.com/itscoachgoodman/",
+   "imagem": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+   "publicado_em": "2026-10-23T16:41:42.413Z",
+   "resumo": "Create an account or log in to Instagram - Share what you're into with the people who get you.",
+   "pre": 99,
+   "referencia": true,
+   "tipo": "instagram_perfil",
+   "nota_luan": "",
+   "site": "Instagram"
+  },
+  {
    "id": "ec04562928c28a89",
    "canal": "Sua referência",
    "titulo": "Strength & Conditioning Coach - Nick Leyden (@nickleyden) • Instagram reel",
@@ -2165,6 +2159,20 @@
    "referencia": true,
    "tipo": "instagram_perfil",
    "nota_luan": "Estude a organização visual das explicações, as demonstrações de exercícios e a maneira como um problema específico é transformado em conteúdo educativo. É uma boa inspiração para Reels que ensinam alguma coisa rapidamente e, ao mesmo tempo, demonstram competência profissional.",
+   "site": "Instagram"
+  },
+  {
+   "id": "2501c1e9f2d3a61a",
+   "canal": "Sua referência",
+   "titulo": "Instagram",
+   "link": "https://www.instagram.com/leandrotwin/",
+   "imagem": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+   "publicado_em": "2026-10-24T16:18:43.327Z",
+   "resumo": "Create an account or log in to Instagram - Share what you're into with the people who get you.",
+   "pre": 99,
+   "referencia": true,
+   "tipo": "instagram_perfil",
+   "nota_luan": "Estude a capacidade de transformar dúvidas muito específicas em temas de conteúdo. O público fitness costuma pesquisar coisas como quantidade de séries, frequência, execução e alimentação. Cada dúvida recorrente pode render uma série de vídeos, em vez de uma publicação isolada.",
    "site": "Instagram"
   },
   {
