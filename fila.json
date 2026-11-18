@@ -3341,5 +3341,27 @@
     "status": "pendente",
     "origem": "painel",
     "tema": "Longevidade"
+  },
+  {
+    "id": "2026-11-18-st-0800",
+    "quando": "2026-11-18T11:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-18/story-0800.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-18-st-1230",
+    "quando": "2026-11-18T15:30:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-18/story-1230.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
   }
 ]
