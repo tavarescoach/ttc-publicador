@@ -1,6 +1,17 @@
 {
- "atualizado_em": "2026-11-18T06:27:04-03:00",
+ "atualizado_em": "2026-11-18T14:29:19-03:00",
  "em_alta": [
+  {
+   "assunto": "canetas-obesidade-novidades",
+   "tema": "saude",
+   "canais": 5,
+   "nota_max": 65,
+   "titulos": [
+    "Canetas emagrecedoras ajudam pacientes a conter reganho após bariátrica",
+    "Aposta da Novo Nordisk contra o Mounjaro, CagriSema leva a perda de 25% do peso em pacientes que respondem rápido ao tratamento",
+    "Pode trocar a caneta para obesidade por outra marca ou pelo GLP-1 oral? Veja os cuidados"
+   ]
+  },
   {
    "assunto": "sarampo-eua",
    "tema": "saude",
@@ -8,8 +19,8 @@
    "nota_max": 25,
    "titulos": [
     "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
-    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
-    "RFK Jr. faces fierce backlash after US loses measles-free status for first time in 26 years"
+    "‘I’m heartbroken’: experts dismayed as US loses long-held measles elimination status",
+    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health"
    ]
   },
   {
@@ -24,14 +35,36 @@
    ]
   },
   {
-   "assunto": "canetas-obesidade-novidades",
+   "assunto": "caminhada-ritmo-passos",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 65,
+   "nota_max": 76,
    "titulos": [
-    "Canetas emagrecedoras ajudam pacientes a conter reganho após bariátrica",
-    "Aposta da Novo Nordisk contra o Mounjaro, CagriSema leva a perda de 25% do peso em pacientes que respondem rápido ao tratamento",
-    "Como canetas emagrecedoras têm 'revolucionado' o tratamento de diabetes"
+    "Vonda Wright: caminhar é bom pro coração, seu osso pede impacto",
+    "Caminhar mais rápido ou dar mais passos? Saiba o que é melhor para a saúde",
+    "Caminhada pode dar pistas sobre a saúde do fígado e a qualidade do sono"
+   ]
+  },
+  {
+   "assunto": "menopausa-cuidado",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 72,
+   "titulos": [
+    "Mary Claire Haver: a esquete \"Sister\" e a mulher que cuida de todos menos dela",
+    "Por que o colesterol pode aumentar na menopausa e como controlar o quadro",
+    "Mary Claire Haver: estratégias para a barriga da menopausa"
+   ]
+  },
+  {
+   "assunto": "apagao-tecnologia-eua",
+   "tema": "tecnologia",
+   "canais": 3,
+   "nota_max": 10,
+   "titulos": [
+    "Hacks, AI or just overdue updates - why have there been so many outages?",
+    "Social media algorithms are encouraging Americans to freak out about the tech outages",
+    "Apple, Chase, United Outages: What’s Going On?"
    ]
   },
   {
@@ -43,28 +76,6 @@
     "Nvidia’s Jensen Huang May Just Survive His Scandal",
     "Nvidia says it won't reinstate Huang as it reports soaring sales",
     "Nvidia Descarta Retorno de Huang, Conforme Cresce Campanha por Seu Retorno"
-   ]
-  },
-  {
-   "assunto": "apagao-tecnologia-eua",
-   "tema": "tecnologia",
-   "canais": 3,
-   "nota_max": 5,
-   "titulos": [
-    "Social media algorithms are encouraging Americans to freak out about the tech outages",
-    "Apple, Chase, United Outages: What’s Going On?",
-    "Apple works to restore services after outage caused by internal update"
-   ]
-  },
-  {
-   "assunto": "datacenters-energia",
-   "tema": "ciencia",
-   "canais": 3,
-   "nota_max": 3,
-   "titulos": [
-    "Surge of US datacenters adds equivalent of Denmark’s annual emissions, study finds",
-    "Just 400 US Data Centers Use More Electricity Than Michigan",
-    "Carbon Emissions of Biggest U.S. Data Centers Already Rival Entire Countries, Study Reveals"
    ]
   }
  ],
@@ -133,11 +144,11 @@
    "gancho": "Dois treinos por semana. Pra quase todo mundo, dá conta."
   },
   {
-   "titulo": "Caminhar mais rápido ou dar mais passos? Saiba o que é melhor para a saúde",
-   "canal": "Folha Equilíbrio",
+   "titulo": "Vonda Wright: caminhar é bom pro coração, seu osso pede impacto",
+   "canal": "Instagram",
    "assunto": "caminhada-ritmo-passos",
-   "nota": 74,
-   "gancho": "10 mil passos devagar ou 4 mil no pique? Chuta aí"
+   "nota": 76,
+   "gancho": "Só caminhada? Seu coração agradece. Seu osso, nem tanto."
   }
  ]
 }
