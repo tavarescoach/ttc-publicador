@@ -1,43 +1,76 @@
 {
- "atualizado_em": "2026-11-17T14:25:58-03:00",
+ "atualizado_em": "2026-11-18T06:27:04-03:00",
  "em_alta": [
+  {
+   "assunto": "sarampo-eua",
+   "tema": "saude",
+   "canais": 5,
+   "nota_max": 25,
+   "titulos": [
+    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
+    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
+    "RFK Jr. faces fierce backlash after US loses measles-free status for first time in 26 years"
+   ]
+  },
+  {
+   "assunto": "alcool-beber-menos",
+   "tema": "saude",
+   "canais": 4,
+   "nota_max": 82,
+   "titulos": [
+    "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
+    "Wine, beer, or spirits? Massive study reveals a surprising health divide",
+    "Ready State: menos gente bebendo e também menos gente se encontrando"
+   ]
+  },
   {
    "assunto": "canetas-obesidade-novidades",
    "tema": "saude",
-   "canais": 4,
-   "nota_max": 74,
-   "titulos": [
-    "Canetas para obesidade podem chegar ao SUS em 2027, diz ministro; entenda próximos passos",
-    "Canetas emagrecedoras ajudam pacientes a conter reganho após bariátrica",
-    "Aposta da Novo Nordisk contra o Mounjaro, CagriSema leva a perda de 25% do peso em pacientes que respondem rápido ao tratamento"
-   ]
-  },
-  {
-   "assunto": "sono-qualidade-saude",
-   "tema": "saude",
    "canais": 3,
-   "nota_max": 74,
+   "nota_max": 65,
    "titulos": [
-    "Sarria: a que horas acordar conforme a hora que você dormiu",
-    "Your body uses light to help figure out what time it is. What are you telling it at 10 p",
-    "Dia Mundial do Diabetes: o que suas noites de sono têm a ver com a glicose?"
+    "Canetas emagrecedoras ajudam pacientes a conter reganho após bariátrica",
+    "Aposta da Novo Nordisk contra o Mounjaro, CagriSema leva a perda de 25% do peso em pacientes que respondem rápido ao tratamento",
+    "Como canetas emagrecedoras têm 'revolucionado' o tratamento de diabetes"
    ]
   },
   {
-   "assunto": "suprema-corte-pesquisa",
+   "assunto": "nvidia-jensen-huang",
+   "tema": "negocio",
+   "canais": 3,
+   "nota_max": 5,
+   "titulos": [
+    "Nvidia’s Jensen Huang May Just Survive His Scandal",
+    "Nvidia says it won't reinstate Huang as it reports soaring sales",
+    "Nvidia Descarta Retorno de Huang, Conforme Cresce Campanha por Seu Retorno"
+   ]
+  },
+  {
+   "assunto": "apagao-tecnologia-eua",
+   "tema": "tecnologia",
+   "canais": 3,
+   "nota_max": 5,
+   "titulos": [
+    "Social media algorithms are encouraging Americans to freak out about the tech outages",
+    "Apple, Chase, United Outages: What’s Going On?",
+    "Apple works to restore services after outage caused by internal update"
+   ]
+  },
+  {
+   "assunto": "datacenters-energia",
    "tema": "ciencia",
    "canais": 3,
    "nota_max": 3,
    "titulos": [
-    "‘Orwellian’: HIV scientist’s ordeal lays bare Trump officials’ interference in grant-making",
-    "US Supreme Court rebuffs White House effort to cut research grants",
-    "Supreme Court declines Trump push to cut research grants related to DEI"
+    "Surge of US datacenters adds equivalent of Denmark’s annual emissions, study finds",
+    "Just 400 US Data Centers Use More Electricity Than Michigan",
+    "Carbon Emissions of Biggest U.S. Data Centers Already Rival Entire Countries, Study Reveals"
    ]
   }
  ],
  "top": [
   {
-   "titulo": "Suzanna Freitas após perder 26 kg: 'Achava tóxico quem ia para academia e falava que está endorfinado'",
+   "titulo": "Suzanna Freitas após perder 26 kg: 'Achava tóxico quem vai para academia e fala que está endorfinado'",
    "canal": "Globo",
    "assunto": "suzanna-freitas-26kg",
    "nota": 88,
@@ -86,13 +119,6 @@
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   },
   {
-   "titulo": "Solteira e sem make, Marina Ruy Barbosa treina e personal elogia: 'Máquina de beleza'",
-   "canal": "Globo",
-   "assunto": "marina-ruy-barbosa-treino",
-   "nota": 78,
-   "gancho": "A Marina Ruy Barbosa treinou no feriado. E você, foi pra praia?"
-  },
-  {
    "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",
    "canal": "Instagram",
    "assunto": "forca-saude-homem",
@@ -105,6 +131,13 @@
    "assunto": "treino-minimo-eficaz",
    "nota": 76,
    "gancho": "Dois treinos por semana. Pra quase todo mundo, dá conta."
+  },
+  {
+   "titulo": "Caminhar mais rápido ou dar mais passos? Saiba o que é melhor para a saúde",
+   "canal": "Folha Equilíbrio",
+   "assunto": "caminhada-ritmo-passos",
+   "nota": 74,
+   "gancho": "10 mil passos devagar ou 4 mil no pique? Chuta aí"
   }
  ]
 }
