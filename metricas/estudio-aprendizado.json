@@ -1,46 +1,12 @@
 {
  "pares": [
   {
-   "headline": "Depois dos 40, perder força não é só idade. É falta do estímulo certo.",
-   "formato": "carrossel",
-   "quando": "2026-11-05",
-   "alcance": 293,
-   "valor": 10,
-   "taxa": 3.4,
-   "parcial": false,
-   "notas": {
-    "atualidade": 8,
-    "clareza": 9,
-    "curiosidade": 7,
-    "historico": 6,
-    "marca": 9,
-    "publico": 9,
-    "venda": 9
-   },
-   "total": 82,
-   "seguiu_recomendada": true,
-   "alternativas": [
-    {
-     "titulo": "Ela congelou os óvulos aos 37 e escolheu o próprio tempo aos 48.",
-     "total": 69
-    },
-    {
-     "titulo": "Escolher o próprio tempo não é liberdade. É preparo.",
-     "total": 75
-    },
-    {
-     "titulo": "Gravidez é um teste de estresse de nove meses. Seu corpo está pronto para o seu?",
-     "total": 58
-    }
-   ]
-  },
-  {
    "headline": "Reels: capa e legenda",
    "formato": "reels",
    "quando": "2026-11-12",
-   "alcance": 608,
-   "valor": 56,
-   "taxa": 9.2,
+   "alcance": 615,
+   "valor": 57,
+   "taxa": 9.3,
    "parcial": false,
    "notas": null,
    "total": null,
@@ -48,15 +14,15 @@
    "alternativas": []
   }
  ],
- "medidos": 2,
- "com_notas": 1,
- "mediana_taxa_perfil": 3.0,
+ "medidos": 1,
+ "com_notas": 0,
+ "mediana_taxa_perfil": 3.2,
  "correlacao_taxa": {},
  "pesos_sugeridos": null,
  "recomendada": {
-  "seguiu": 1,
+  "seguiu": 0,
   "nao_seguiu": 0,
-  "taxa_seguiu": 3.4,
+  "taxa_seguiu": null,
   "taxa_nao_seguiu": null
  }
 }
