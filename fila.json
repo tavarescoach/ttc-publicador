@@ -3281,9 +3281,11 @@
       "2026-11-20/k-2026-11-20-carrossel/carrossel-10.png"
     ],
     "legenda": "Eu queria que toda mulher acima dos 50 ouvisse a Halle Berry.\n\nAos 60, ela contou que trocou boa parte do cardio pelos pesos, pelo menos duas vezes por semana, para manter a massa muscular depois da menopausa. No estudo LIFTMOR, 101 mulheres na pós-menopausa com massa óssea baixa fizeram 8 meses de treino pesado e supervisionado. A densidade da coluna subiu 2,9% em quem treinou e caiu 1,2% no grupo controle.\n\nCom técnica e progressão, começar depois dos 50 ainda constrói osso e músculo.\n\nMe manda MÉTODO no direct e eu te explico como funciona a Avaliação Estratégica.\n\n#tavarescoach #longevidade #menopausa #mulheresquetreinam #copacabana",
-    "status": "pendente",
+    "status": "erro",
     "origem": "painel",
-    "tema": "Longevidade"
+    "tema": "Longevidade",
+    "erro": "API respondeu 400: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Media download has failed. The media URI doesn't meet our requirements.\",\"error_user_msg\":\"The media could not be fetched from this URI: https:\\/\\/txiszakrpssubgvzpdcx.supabase.co\\/storage\\/v1\\/object\\/public\\/midia\\/2026-11-20\\/k-2026-11-20-carrossel\\/carrossel-2.png.Please check the limitations section in our development d",
+    "tentativas": 1
   },
   {
     "id": "k-2026-11-20-estatico",
