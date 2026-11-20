@@ -910,5 +910,113 @@
    "k-2026-11-20-carrossel",
    "k-2026-11-20-meme"
   ]
+ },
+ {
+  "id": "c-2026-11-21",
+  "inicio": "2026-11-21",
+  "fim": "2026-11-23",
+  "tema": "Estilo de vida",
+  "sigla": "EST",
+  "pontuacao": {
+   "EST": 4.034,
+   "LON": 3.997,
+   "FOR": 3.857,
+   "GLP": 1.522,
+   "MEN": 1.352,
+   "EMA": 1.113,
+   "WEA": 0.174,
+   "ESP": 0.0
+  },
+  "excluidos": [
+   "EMA",
+   "LON"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "4a15bbdb03befda2",
+   "0180bf6d741456ab",
+   "83be911f3fb860e9",
+   "8bee49897d15cdcc",
+   "a6832e4df87b7fc6",
+   "9624258b6994df87",
+   "c91483bb35b76d6d",
+   "3036e2049610fdd2",
+   "126e4ecf5d7f9dc9",
+   "ig-3b17c031461d70",
+   "ig-a6c8f41dd3ebd5"
+  ],
+  "famosos": [
+   {
+    "nome": "Bruna Marquezine",
+    "noticia_id": "126e4ecf5d7f9dc9",
+    "titulo": "Bruna Marquezine pega firme nos treinos após 'chutar o balde' em Noronha; vídeos",
+    "link": "https://revistaquem.globo.com/saude/fitness/noticia/2026/11/bruna-marquezine-volta-a-treinar-apos-chutar-o-balde-em-noronha-videos.ghtml",
+    "canal": "Globo",
+    "data": "2026-11-20T06:05:15+00:00",
+    "nota": 78,
+    "pessoa_br": true,
+    "imagem": "https://s2-quem.glbimg.com/-qyPZrfrGzftSokZ-KvHPgQ4hzw=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/n/A/BXV4ABTbmeh21jaf7MTA/bm2.jpg"
+   },
+   {
+    "nome": "Donald Trump",
+    "noticia_id": "f7b2d7c741a48ccf",
+    "titulo": "White House Says Trump Was Reading Papers When He Appeared to Sleep in Summit",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV09uRy1OSkhQTjBuYlVfQkJIUWRzempHbHlpNEo3dnNsaHFlYjBDT0o1alJlbENDRlVZSE1rbDFXWDczTFFocllXWFJWSEhxNGZCZDhkakQ0WGRlMUJ6YUdrM0JEUDZDUmR1RkZTXzhrcmQwVTFMdHNFQTJ0ek9IOEQ5MF9uMmRTaDZaQUZoQjZ3aTNxbUZIbFIzNG5fZTNma1NyM0tDUzc?oc=5",
+    "canal": "People",
+    "data": "2026-11-19T18:58:01+00:00",
+    "nota": 10,
+    "pessoa_br": false,
+    "imagem": null
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-21",
+    "quando": "2026-11-21T20:00:00-03:00",
+    "arquivo": "2026-11-21/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-21.jpg",
+    "drive_id": "14eq1QKZ_6QhNZ2yGq5B9Ado2bC-DKdyF",
+    "nome": "IMG_3952.JPEG"
+   },
+   {
+    "dia": "2026-11-23",
+    "quando": "2026-11-23T20:00:00-03:00",
+    "arquivo": "2026-11-23/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-23.jpg",
+    "drive_id": "1_0HEA7C3kHL9k4UXbda3EdkE2AZtY-CU",
+    "nome": "IMG_7836.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-21/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-21-acervo-1.jpg",
+    "drive_id": "11tCw03qlr0SQA0C0PE6R25WyRDHiyMBU",
+    "nome": "IMG_7704.JPEG"
+   },
+   {
+    "arquivo": "2026-11-21/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-21-acervo-2.jpg",
+    "drive_id": "1uNQix5INFjkHiaZvaggWKT-wJWZqYGxx",
+    "nome": "IMG_7485.JPEG"
+   },
+   {
+    "arquivo": "2026-11-21/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-21-acervo-3.jpg",
+    "drive_id": "1M3DgC8sdVoS2IfFP0xS5k4jd_GKzRKR8",
+    "nome": "IMG_3223.JPEG"
+   },
+   {
+    "arquivo": "2026-11-21/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-21-acervo-4.jpg",
+    "drive_id": "1ytN56N49M5mu61IXCPSJfvWYB7uLjUET",
+    "nome": "IMG_0385.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-20T15:08-03:00",
+  "status": "escolhido"
  }
 ]
