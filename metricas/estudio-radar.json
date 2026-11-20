@@ -1,98 +1,87 @@
 {
- "atualizado_em": "2026-11-19T14:25:00-03:00",
+ "atualizado_em": "2026-11-20T06:33:30-03:00",
  "em_alta": [
   {
    "assunto": "canetas-obesidade-novidades",
-   "tema": "saude",
-   "canais": 5,
-   "nota_max": 65,
+   "tema": "negocio",
+   "canais": 7,
+   "nota_max": 80,
    "titulos": [
-    "Canetas emagrecedoras ajudam pacientes a conter reganho após bariátrica",
-    "Aposta da Novo Nordisk contra o Mounjaro, CagriSema leva a perda de 25% do peso em pacientes que respondem rápido ao tratamento",
-    "Pode trocar a caneta para obesidade por outra marca ou pelo GLP-1 oral? Veja os cuidados"
+    "Lifting weights reduces muscle loss from obesity drugs",
+    "Caneta emagrecedora muda consumo de comida e bebida de 1 em cada 3 adultos no Brasil, diz pesquisa",
+    "Why don't weight-loss drugs like Ozempic and Wegovy work for everyone?"
    ]
   },
   {
-   "assunto": "sarampo-eua",
-   "tema": "saude",
-   "canais": 5,
-   "nota_max": 25,
+   "assunto": "anthropic-ipo",
+   "tema": "negocio",
+   "canais": 6,
+   "nota_max": 15,
    "titulos": [
-    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
-    "‘I’m heartbroken’: experts dismayed as US loses long-held measles elimination status",
-    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health"
+    "Do Skype À Anthropic: Como Ashton Kutcher Virou Investidor Bilionário",
+    "Anthropic’s Wall Street debut marks a new chapter for AI",
+    "Anthropic's blockbuster debut tests Wall Street's faith in AI boom"
+   ]
+  },
+  {
+   "assunto": "gta-vi-lancamento",
+   "tema": "comportamento",
+   "canais": 5,
+   "nota_max": 62,
+   "titulos": [
+    "How to Play GTA VI All Weekend Without Destroying Your Body",
+    "GTA 6 fez pesquisas com ‘marombas’ para montar academias realistas no gameplay",
+    "'Grand Theft Auto VI' mania comes with serious health risks, doctors warn"
+   ]
+  },
+  {
+   "assunto": "longevidade-mainstream",
+   "tema": "saude",
+   "canais": 4,
+   "nota_max": 82,
+   "titulos": [
+    "Longevity medicine mainstream",
+    "Instagram",
+    "The Longevity Obsession Has Gone Too Far, Some Experts Say"
    ]
   },
   {
    "assunto": "alcool-beber-menos",
    "tema": "saude",
-   "canais": 4,
+   "canais": 3,
    "nota_max": 82,
    "titulos": [
     "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-    "Wine, beer, or spirits? Massive study reveals a surprising health divide",
+    "Popular alcoholic drinks linked to sudden kidney damage in 14-year study",
     "Ready State: menos gente bebendo e também menos gente se encontrando"
    ]
   },
   {
-   "assunto": "caminhada-ritmo-passos",
+   "assunto": "sarampo-eua",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 76,
+   "nota_max": 25,
    "titulos": [
-    "Vonda Wright: caminhar é bom pro coração, seu osso pede impacto",
-    "Caminhar mais rápido ou dar mais passos? Saiba o que é melhor para a saúde",
-    "Caminhada pode dar pistas sobre a saúde do fígado e a qualidade do sono"
-   ]
-  },
-  {
-   "assunto": "menopausa-cuidado",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 72,
-   "titulos": [
-    "Mary Claire Haver: a esquete \"Sister\" e a mulher que cuida de todos menos dela",
-    "Por que o colesterol pode aumentar na menopausa e como controlar o quadro",
-    "Mary Claire Haver: estratégias para a barriga da menopausa"
-   ]
-  },
-  {
-   "assunto": "apagao-tecnologia-eua",
-   "tema": "tecnologia",
-   "canais": 3,
-   "nota_max": 10,
-   "titulos": [
-    "Hacks, AI or just overdue updates - why have there been so many outages?",
-    "Social media algorithms are encouraging Americans to freak out about the tech outages",
-    "Apple, Chase, United Outages: What’s Going On?"
-   ]
-  },
-  {
-   "assunto": "nvidia-jensen-huang",
-   "tema": "negocio",
-   "canais": 3,
-   "nota_max": 5,
-   "titulos": [
-    "Nvidia’s Jensen Huang May Just Survive His Scandal",
-    "Nvidia says it won't reinstate Huang as it reports soaring sales",
-    "Nvidia Descarta Retorno de Huang, Conforme Cresce Campanha por Seu Retorno"
+    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
+    "‘I’m heartbroken’: experts dismayed as US loses long-held measles elimination status",
+    "RFK Jr faces fierce backlash after US loses measles-free status for first time in 26 years"
    ]
   }
  ],
  "top": [
-  {
-   "titulo": "Suzanna Freitas após perder 26 kg: 'Achava tóxico quem vai para academia e fala que está endorfinado'",
-   "canal": "Globo",
-   "assunto": "suzanna-freitas-26kg",
-   "nota": 88,
-   "gancho": "Ela achava tóxico quem curtia academia. Perdeu 26 kg e mudou de lado"
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
+  },
+  {
+   "titulo": "Letticia Munniz se orgulha de braços musculosos após falar de dedicação fitness extrema",
+   "canal": "Globo",
+   "assunto": "letticia-munniz-bracos",
+   "nota": 82,
+   "gancho": "Letticia Munniz mostrou o braço. Ainda tem medo de 'ficar grande'?"
   },
   {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
@@ -107,6 +96,13 @@
    "assunto": "longevidade-mainstream",
    "nota": 82,
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
+  },
+  {
+   "titulo": "Lifting weights reduces muscle loss from obesity drugs",
+   "canal": "Nature News",
+   "assunto": "canetas-obesidade-novidades",
+   "nota": 80,
+   "gancho": "Tá na caneta? A Nature mostrou o que segura seu músculo."
   },
   {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
@@ -130,25 +126,18 @@
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   },
   {
+   "titulo": "Bruna Marquezine pega firme nos treinos após 'chutar o balde' em Noronha; vídeos",
+   "canal": "Globo",
+   "assunto": "marquezine-volta-treino",
+   "nota": 78,
+   "gancho": "Bruna Marquezine chutou o balde em Noronha. E voltou pro treino."
+  },
+  {
    "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",
    "canal": "Instagram",
    "assunto": "forca-saude-homem",
    "nota": 76,
    "gancho": "Mais músculo, melhor ereção. Tem estudo sobre isso."
-  },
-  {
-   "titulo": "Bret Contreras: corpo inteiro 2x por semana é o treino mais eficiente",
-   "canal": "Instagram",
-   "assunto": "treino-minimo-eficaz",
-   "nota": 76,
-   "gancho": "Dois treinos por semana. Pra quase todo mundo, dá conta."
-  },
-  {
-   "titulo": "Vonda Wright: caminhar é bom pro coração, seu osso pede impacto",
-   "canal": "Instagram",
-   "assunto": "caminhada-ritmo-passos",
-   "nota": 76,
-   "gancho": "Só caminhada? Seu coração agradece. Seu osso, nem tanto."
   }
  ]
 }
