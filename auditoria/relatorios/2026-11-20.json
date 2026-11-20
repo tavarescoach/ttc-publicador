@@ -1,0 +1,395 @@
+{
+ "gerado_em": "2026-11-20T08:55-03:00",
+ "periodo": [
+  "2026-11-06",
+  "2026-11-19"
+ ],
+ "conta": {
+  "username": "tavarescoach",
+  "seguidores": 9815,
+  "seguindo": 4336,
+  "posts": 1931
+ },
+ "semanas": [
+  {
+   "semana": "2026-09-21",
+   "alcance_dia_mediana": 160,
+   "visitas_perfil": 154,
+   "saldo_seguidores": -2,
+   "posts_feed": 0
+  },
+  {
+   "semana": "2026-09-28",
+   "alcance_dia_mediana": 169,
+   "visitas_perfil": 142,
+   "saldo_seguidores": -15,
+   "posts_feed": 1
+  },
+  {
+   "semana": "2026-10-05",
+   "alcance_dia_mediana": 130,
+   "visitas_perfil": 103,
+   "saldo_seguidores": -14,
+   "posts_feed": 0
+  },
+  {
+   "semana": "2026-10-12",
+   "alcance_dia_mediana": 209,
+   "visitas_perfil": 175,
+   "saldo_seguidores": -26,
+   "posts_feed": 12
+  },
+  {
+   "semana": "2026-10-19",
+   "alcance_dia_mediana": 1632,
+   "visitas_perfil": 1175,
+   "saldo_seguidores": 152,
+   "posts_feed": 27
+  },
+  {
+   "semana": "2026-10-26",
+   "alcance_dia_mediana": 2815,
+   "visitas_perfil": 1626,
+   "saldo_seguidores": 226,
+   "posts_feed": 32
+  },
+  {
+   "semana": "2026-11-02",
+   "alcance_dia_mediana": 1330,
+   "visitas_perfil": 560,
+   "saldo_seguidores": 88,
+   "posts_feed": 25
+  },
+  {
+   "semana": "2026-11-09",
+   "alcance_dia_mediana": 1173,
+   "visitas_perfil": 417,
+   "saldo_seguidores": 73,
+   "posts_feed": 22
+  },
+  {
+   "semana": "2026-11-16",
+   "alcance_dia_mediana": 669,
+   "visitas_perfil": 194,
+   "saldo_seguidores": 20,
+   "posts_feed": 11
+  }
+ ],
+ "todos": {
+  "n": 40,
+  "alcance_mediana": 430,
+  "alcance_media": 473,
+  "alcance_max": 1578,
+  "salvos_compart_por_post": 1.4,
+  "seguidores_ganhos": 3,
+  "visitas_perfil": 165
+ },
+ "formato_origem": {
+  "CARROSSEL AUTO": {
+   "n": 16,
+   "alcance_mediana": 278,
+   "alcance_media": 308,
+   "alcance_max": 543,
+   "salvos_compart_por_post": 1,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 20
+  },
+  "CARROSSEL MAN": {
+   "n": 1,
+   "alcance_mediana": 444,
+   "alcance_media": 444,
+   "alcance_max": 444,
+   "salvos_compart_por_post": 6,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 14
+  },
+  "IMAGEM AUTO": {
+   "n": 18,
+   "alcance_mediana": 456,
+   "alcance_media": 591,
+   "alcance_max": 1578,
+   "salvos_compart_por_post": 0.6,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 79
+  },
+  "IMAGEM MAN": {
+   "n": 1,
+   "alcance_mediana": 923,
+   "alcance_media": 923,
+   "alcance_max": 923,
+   "salvos_compart_por_post": 14,
+   "seguidores_ganhos": 3,
+   "visitas_perfil": 52
+  },
+  "REELS AUTO": {
+   "n": 1,
+   "alcance_mediana": 619,
+   "alcance_media": 619,
+   "alcance_max": 619,
+   "salvos_compart_por_post": 1,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 0
+  },
+  "REELS MAN": {
+   "n": 3,
+   "alcance_mediana": 408,
+   "alcance_media": 459,
+   "alcance_max": 683,
+   "salvos_compart_por_post": 2.7,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 0
+  }
+ },
+ "hora_auto_feed": {
+  "07": {
+   "n": 10,
+   "alcance_mediana": 456,
+   "alcance_media": 652,
+   "alcance_max": 1578,
+   "salvos_compart_por_post": 0.8,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 18
+  },
+  "08": null,
+  "09": null,
+  "11": null,
+  "12": {
+   "n": 11,
+   "alcance_mediana": 341,
+   "alcance_media": 343,
+   "alcance_max": 543,
+   "salvos_compart_por_post": 1.4,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 14
+  },
+  "13": null,
+  "17": {
+   "n": 1,
+   "alcance_mediana": 171,
+   "alcance_media": 171,
+   "alcance_max": 171,
+   "salvos_compart_por_post": 0,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 0
+  },
+  "20": {
+   "n": 11,
+   "alcance_mediana": 401,
+   "alcance_media": 455,
+   "alcance_max": 895,
+   "salvos_compart_por_post": 0.4,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 67
+  },
+  "21": {
+   "n": 1,
+   "alcance_mediana": 105,
+   "alcance_media": 105,
+   "alcance_max": 105,
+   "salvos_compart_por_post": 0,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 0
+  }
+ },
+ "tema_auto": {
+  "Emagrecimento": {
+   "n": 4,
+   "alcance_mediana": 362,
+   "alcance_media": 602,
+   "alcance_max": 1578,
+   "salvos_compart_por_post": 0.5,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 6
+  },
+  "Estilo de vida": {
+   "n": 9,
+   "alcance_mediana": 476,
+   "alcance_media": 513,
+   "alcance_max": 895,
+   "salvos_compart_por_post": 0.7,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 38
+  },
+  "Longevidade": {
+   "n": 12,
+   "alcance_mediana": 425,
+   "alcance_media": 464,
+   "alcance_max": 1364,
+   "salvos_compart_por_post": 1.2,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 41
+  },
+  "Treino de força": {
+   "n": 9,
+   "alcance_mediana": 277,
+   "alcance_media": 331,
+   "alcance_max": 573,
+   "salvos_compart_por_post": 0.4,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 14
+  },
+  "sem tema": {
+   "n": 1,
+   "alcance_mediana": 619,
+   "alcance_media": 619,
+   "alcance_max": 619,
+   "salvos_compart_por_post": 1,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 0
+  }
+ },
+ "abertura_auto": {
+  "Decodificando": null,
+  "Opinião em 1ª pessoa": {
+   "n": 24,
+   "alcance_mediana": 412,
+   "alcance_media": 418,
+   "alcance_max": 1364,
+   "salvos_compart_por_post": 0.9,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 48
+  },
+  "Número na 1ª linha": {
+   "n": 1,
+   "alcance_mediana": 638,
+   "alcance_media": 638,
+   "alcance_max": 638,
+   "salvos_compart_por_post": 0,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 3
+  },
+  "Outra": {
+   "n": 10,
+   "alcance_mediana": 409,
+   "alcance_media": 552,
+   "alcance_max": 1578,
+   "salvos_compart_por_post": 0.6,
+   "seguidores_ganhos": 0,
+   "visitas_perfil": 48
+  }
+ },
+ "feed_por_dia_media": 3.1,
+ "seguidores_top3_pct": 100,
+ "reels_tempo_medio_mediana_s": 7.9,
+ "publico": {
+  "seguidores_rio_pct": 24,
+  "engajados_rio_pct": 12,
+  "seguidores_homens_pct": 50,
+  "engajados_homens_pct": 75,
+  "seguidores_25_44_pct": 73
+ },
+ "melhores": [
+  {
+   "quando": "2026-11-13T13:58-03:00",
+   "tipo": "IMAGEM",
+   "origem": "MAN",
+   "alcance": 923,
+   "salvos": 4,
+   "compart": 10,
+   "seguiu": 3,
+   "abertura": "Sauna e recovery em Copacabana é no @tavarescoachtrainingcenter ",
+   "link": "https://www.instagram.com/p/DfsHO1yRnUo/"
+  },
+  {
+   "quando": "2026-11-09T07:02-03:00",
+   "tipo": "IMAGEM",
+   "origem": "AUTO",
+   "alcance": 1364,
+   "salvos": 1,
+   "compart": 2,
+   "seguiu": 0,
+   "abertura": "Eu fico feliz quando alguém descobre isso num exame, e não numa emergência.",
+   "link": "https://www.instagram.com/p/DfhEfR6ltV8/"
+  },
+  {
+   "quando": "2026-11-14T09:16-03:00",
+   "tipo": "CARROSSEL",
+   "origem": "MAN",
+   "alcance": 444,
+   "salvos": 5,
+   "compart": 1,
+   "seguiu": 0,
+   "abertura": "Packzinho de abs para vocês. ",
+   "link": "https://www.instagram.com/p/DfuLzmiG0Mv/"
+  },
+  {
+   "quando": "2026-11-09T11:18-03:00",
+   "tipo": "REELS",
+   "origem": "MAN",
+   "alcance": 683,
+   "salvos": 0,
+   "compart": 5,
+   "seguiu": null,
+   "abertura": "Você está fazendo o búlgaro errado. 👀",
+   "link": "https://www.instagram.com/reel/DfhhpwixiGg/"
+  },
+  {
+   "quando": "2026-11-10T12:02-03:00",
+   "tipo": "CARROSSEL",
+   "origem": "AUTO",
+   "alcance": 461,
+   "salvos": 0,
+   "compart": 5,
+   "seguiu": 0,
+   "abertura": "Eu vejo isso toda semana: aluna que chega achando que é preguiça, quando o corpo está muda",
+   "link": "https://www.instagram.com/p/DfkLniBlOkN/"
+  }
+ ],
+ "piores": [
+  {
+   "quando": "2026-11-06T17:02-03:00",
+   "tipo": "CARROSSEL",
+   "origem": "AUTO",
+   "alcance": 171,
+   "salvos": 0,
+   "compart": 0,
+   "seguiu": 0,
+   "abertura": "Se você não lembra a carga do agachamento de quinta passada, o treino de hoje está sendo d",
+   "link": "https://www.instagram.com/p/Dfaazx7H8bV/"
+  },
+  {
+   "quando": "2026-11-18T12:32-03:00",
+   "tipo": "CARROSSEL",
+   "origem": "AUTO",
+   "alcance": 166,
+   "salvos": 0,
+   "compart": 0,
+   "seguiu": 0,
+   "abertura": "Eu queria que todo mundo fizesse esse teste antes de dizer que está bem.",
+   "link": "https://www.instagram.com/p/Df41bU9lo5W/"
+  },
+  {
+   "quando": "2026-11-10T20:02-03:00",
+   "tipo": "CARROSSEL",
+   "origem": "AUTO",
+   "alcance": 148,
+   "salvos": 0,
+   "compart": 0,
+   "seguiu": 0,
+   "abertura": "Eu treino aluno às 7h que passa as dez horas seguintes na cadeira, e por isso a tarde dele",
+   "link": "https://www.instagram.com/p/DflCjzMiQfW/"
+  },
+  {
+   "quando": "2026-11-14T12:02-03:00",
+   "tipo": "CARROSSEL",
+   "origem": "AUTO",
+   "alcance": 144,
+   "salvos": 0,
+   "compart": 0,
+   "seguiu": 0,
+   "abertura": "Eu escuto \"passei da idade\" toda semana, e os estudos discordam.",
+   "link": "https://www.instagram.com/p/DfueyFVlfkL/"
+  },
+  {
+   "quando": "2026-11-16T21:30-03:00",
+   "tipo": "CARROSSEL",
+   "origem": "AUTO",
+   "alcance": 105,
+   "salvos": 0,
+   "compart": 0,
+   "seguiu": 0,
+   "abertura": "Eu me preocupo mais com o que sai do seu corpo do que com o número da balança.",
+   "link": "https://www.instagram.com/p/Df0pbU2Ghu3/"
+  }
+ ]
+}
