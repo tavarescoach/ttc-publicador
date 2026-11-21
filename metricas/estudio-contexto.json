@@ -1,27 +1,27 @@
 {
- "atualizado_em": "2026-11-21T00:13-03:00",
- "seguidores": 9814,
+ "atualizado_em": "2026-11-21T14:35-03:00",
+ "seguidores": 9806,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 415.0,
+  "alcance": 420.5,
   "valor": 13.5,
-  "taxa": 3.5
+  "taxa": 3.4
  },
  "por_tipo": {
   "IMAGEM": {
    "posts": 19,
-   "alcance_medio": 555,
-   "valor_medio": 24.1
+   "alcance_medio": 566,
+   "valor_medio": 24.5
   },
   "REELS": {
    "posts": 4,
    "alcance_medio": 504,
-   "valor_medio": 43.0
+   "valor_medio": 43.2
   },
   "CARROSSEL": {
    "posts": 17,
-   "alcance_medio": 300,
-   "valor_medio": 11.4
+   "alcance_medio": 302,
+   "valor_medio": 11.5
   }
  },
  "posts": [
@@ -30,13 +30,13 @@
    "titulo": "Sauna e recovery em Copacabana é no @tavarescoachtrainingcenter",
    "tipo": "IMAGEM",
    "quando": "2026-11-13",
-   "alcance": 939,
-   "views": 1943,
+   "alcance": 947,
+   "views": 1949,
    "salvos": 4,
    "compart": 10,
    "comentarios": 3,
    "valor": 152,
-   "taxa": 16.2,
+   "taxa": 16.1,
    "parcial": false
   },
   {
@@ -44,13 +44,13 @@
    "titulo": "Fim de tarde na praia, com o morro de pedra lá atrás e a onda quebrando nas pedras.",
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
-   "alcance": 413,
-   "views": 849,
+   "alcance": 424,
+   "views": 864,
    "salvos": 0,
    "compart": 0,
    "comentarios": 1,
-   "valor": 69,
-   "taxa": 16.7,
+   "valor": 73,
+   "taxa": 17.2,
    "parcial": false
   },
   {
@@ -72,13 +72,13 @@
    "titulo": "Packzinho de abs para vocês.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-14",
-   "alcance": 454,
-   "views": 1114,
+   "alcance": 455,
+   "views": 1119,
    "salvos": 5,
    "compart": 1,
    "comentarios": 0,
    "valor": 62,
-   "taxa": 13.7,
+   "taxa": 13.6,
    "parcial": false
   },
   {
@@ -142,13 +142,13 @@
    "titulo": "Estrada vazia, montanha com neve no fundo e eu de gorro, rindo do frio.",
    "tipo": "IMAGEM",
    "quando": "2026-11-09",
-   "alcance": 292,
-   "views": 536,
+   "alcance": 294,
+   "views": 541,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 25,
-   "taxa": 8.6,
+   "taxa": 8.5,
    "parcial": false
   },
   {
@@ -198,13 +198,13 @@
    "titulo": "Dia 364.000 837.000 olhando na internet pra promover um aplicativo que eu fiz completo com a inteligência arti",
    "tipo": "REELS",
    "quando": "2026-11-18",
-   "alcance": 294,
-   "views": 431,
+   "alcance": 295,
+   "views": 437,
    "salvos": 0,
    "compart": 1,
    "comentarios": 3,
-   "valor": 21,
-   "taxa": 7.1,
+   "valor": 22,
+   "taxa": 7.5,
    "parcial": false
   },
   {
@@ -212,13 +212,13 @@
    "titulo": "Eita ferro, essa meta do Rodrigo Faro eu assino embaixo.",
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
-   "alcance": 597,
-   "views": 1084,
+   "alcance": 605,
+   "views": 1100,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
    "valor": 20,
-   "taxa": 3.4,
+   "taxa": 3.3,
    "parcial": false
   },
   {
@@ -268,14 +268,28 @@
    "titulo": "Eu quando o aluno para de pesar todo dia e começa a anotar a carga.",
    "tipo": "IMAGEM",
    "quando": "2026-11-17",
-   "alcance": 393,
-   "views": 664,
+   "alcance": 402,
+   "views": 679,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 15,
-   "taxa": 3.8,
+   "taxa": 3.7,
    "parcial": false
+  },
+  {
+   "id": "18096104066275323",
+   "titulo": "Eu conferindo no espelho se o shape aguenta até os 80.",
+   "tipo": "IMAGEM",
+   "quando": "2026-11-20",
+   "alcance": 444,
+   "views": 802,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 0,
+   "valor": 13,
+   "taxa": 2.9,
+   "parcial": true
   },
   {
    "id": "18643284154051106",
@@ -290,20 +304,6 @@
    "valor": 12,
    "taxa": 6.0,
    "parcial": false
-  },
-  {
-   "id": "18096104066275323",
-   "titulo": "Eu conferindo no espelho se o shape aguenta até os 80.",
-   "tipo": "IMAGEM",
-   "quando": "2026-11-20",
-   "alcance": 295,
-   "views": 547,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 0,
-   "valor": 10,
-   "taxa": 3.4,
-   "parcial": true
   }
  ]
 }
