@@ -3585,7 +3585,9 @@
       "2026-11-23/story-1000.mp4"
     ],
     "legenda": "",
-    "status": "pendente",
-    "origem": "painel"
+    "status": "erro",
+    "origem": "painel",
+    "erro": "Instagram não processou a mídia: ERROR",
+    "tentativas": 1
   }
 ]
