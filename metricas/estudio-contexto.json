@@ -1,26 +1,26 @@
 {
- "atualizado_em": "2026-11-22T14:51-03:00",
- "seguidores": 9805,
+ "atualizado_em": "2026-11-22T23:46-03:00",
+ "seguidores": 9802,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 412.0,
-  "valor": 10.5,
-  "taxa": 3.2
+  "alcance": 417,
+  "valor": 12,
+  "taxa": 3.1
  },
  "por_tipo": {
   "IMAGEM": {
    "posts": 19,
-   "alcance_medio": 563,
-   "valor_medio": 26.2
+   "alcance_medio": 587,
+   "valor_medio": 28.6
   },
   "REELS": {
    "posts": 4,
    "alcance_medio": 508,
-   "valor_medio": 43.2
+   "valor_medio": 43.5
   },
   "CARROSSEL": {
    "posts": 17,
-   "alcance_medio": 308,
+   "alcance_medio": 309,
    "valor_medio": 11.5
   }
  },
@@ -30,13 +30,13 @@
    "titulo": "Sauna e recovery em Copacabana é no @tavarescoachtrainingcenter",
    "tipo": "IMAGEM",
    "quando": "2026-11-13",
-   "alcance": 959,
-   "views": 1985,
+   "alcance": 977,
+   "views": 2021,
    "salvos": 4,
    "compart": 10,
    "comentarios": 3,
    "valor": 153,
-   "taxa": 16.0,
+   "taxa": 15.7,
    "parcial": false
   },
   {
@@ -44,14 +44,28 @@
    "titulo": "Fim de tarde na praia, com o morro de pedra lá atrás e a onda quebrando nas pedras.",
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
-   "alcance": 449,
-   "views": 913,
+   "alcance": 457,
+   "views": 930,
    "salvos": 0,
    "compart": 0,
    "comentarios": 1,
    "valor": 77,
-   "taxa": 17.1,
+   "taxa": 16.8,
    "parcial": false
+  },
+  {
+   "id": "18181294186433300",
+   "titulo": "Hyrox é Hyrox.. eu já participei dessa hive! ⚡️⚡️⚡️",
+   "tipo": "IMAGEM",
+   "quando": "2026-11-22",
+   "alcance": 535,
+   "views": 1067,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 6,
+   "valor": 75,
+   "taxa": 14.0,
+   "parcial": true
   },
   {
    "id": "17914191849579802",
@@ -59,7 +73,7 @@
    "tipo": "REELS",
    "quando": "2026-11-09",
    "alcance": 687,
-   "views": 955,
+   "views": 956,
    "salvos": 0,
    "compart": 5,
    "comentarios": 12,
@@ -72,13 +86,13 @@
    "titulo": "Packzinho de abs para vocês.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-14",
-   "alcance": 456,
-   "views": 1127,
+   "alcance": 459,
+   "views": 1129,
    "salvos": 5,
    "compart": 1,
    "comentarios": 0,
    "valor": 62,
-   "taxa": 13.6,
+   "taxa": 13.5,
    "parcial": false
   },
   {
@@ -108,20 +122,6 @@
    "valor": 45,
    "taxa": 7.0,
    "parcial": false
-  },
-  {
-   "id": "18181294186433300",
-   "titulo": "Hyrox é Hyrox.. eu já participei dessa hive! ⚡️⚡️⚡️",
-   "tipo": "IMAGEM",
-   "quando": "2026-11-22",
-   "alcance": 159,
-   "views": 447,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 2,
-   "valor": 31,
-   "taxa": 19.5,
-   "parcial": true
   },
   {
    "id": "18080260409444486",
@@ -166,12 +166,26 @@
    "parcial": false
   },
   {
+   "id": "18160027474513292",
+   "titulo": "Veleiro, mar calmo e eu pendurado no cabo de óculos escuros, rindo à toa.",
+   "tipo": "IMAGEM",
+   "quando": "2026-11-12",
+   "alcance": 326,
+   "views": 631,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 0,
+   "valor": 24,
+   "taxa": 7.4,
+   "parcial": false
+  },
+  {
    "id": "18108809456288704",
    "titulo": "Eu quando alguém usa o tio de 80 anos como plano de treino.",
    "tipo": "IMAGEM",
    "quando": "2026-11-11",
-   "alcance": 640,
-   "views": 1166,
+   "alcance": 642,
+   "views": 1168,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
@@ -184,7 +198,7 @@
    "titulo": "Eu vejo isso toda semana: aluna que chega achando que é preguiça, quando o corpo está mudando.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-10",
-   "alcance": 463,
+   "alcance": 464,
    "views": 958,
    "salvos": 0,
    "compart": 5,
@@ -194,31 +208,17 @@
    "parcial": false
   },
   {
-   "id": "18160027474513292",
-   "titulo": "Veleiro, mar calmo e eu pendurado no cabo de óculos escuros, rindo à toa.",
-   "tipo": "IMAGEM",
-   "quando": "2026-11-12",
-   "alcance": 326,
-   "views": 628,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 0,
-   "valor": 23,
-   "taxa": 7.1,
-   "parcial": false
-  },
-  {
    "id": "18015580701002395",
    "titulo": "Dia 364.000 837.000 olhando na internet pra promover um aplicativo que eu fiz completo com a inteligência arti",
    "tipo": "REELS",
    "quando": "2026-11-18",
-   "alcance": 305,
-   "views": 446,
+   "alcance": 308,
+   "views": 451,
    "salvos": 0,
    "compart": 1,
    "comentarios": 3,
-   "valor": 22,
-   "taxa": 7.2,
+   "valor": 23,
+   "taxa": 7.5,
    "parcial": false
   },
   {
@@ -226,13 +226,13 @@
    "titulo": "Eita ferro, essa meta do Rodrigo Faro eu assino embaixo.",
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
-   "alcance": 615,
-   "views": 1117,
+   "alcance": 617,
+   "views": 1126,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
    "valor": 20,
-   "taxa": 3.3,
+   "taxa": 3.2,
    "parcial": false
   },
   {
@@ -250,12 +250,26 @@
    "parcial": false
   },
   {
+   "id": "18096104066275323",
+   "titulo": "Eu conferindo no espelho se o shape aguenta até os 80.",
+   "tipo": "IMAGEM",
+   "quando": "2026-11-20",
+   "alcance": 561,
+   "views": 1056,
+   "salvos": 0,
+   "compart": 0,
+   "comentarios": 0,
+   "valor": 15,
+   "taxa": 2.7,
+   "parcial": false
+  },
+  {
    "id": "18137193064738195",
    "titulo": "Eu não preciso que você treine como o Wolverine, só de dois horários fixos na sua agenda.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-13",
-   "alcance": 546,
-   "views": 1274,
+   "alcance": 547,
+   "views": 1278,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
@@ -282,28 +296,14 @@
    "titulo": "Eu quando o aluno para de pesar todo dia e começa a anotar a carga.",
    "tipo": "IMAGEM",
    "quando": "2026-11-17",
-   "alcance": 411,
-   "views": 696,
+   "alcance": 417,
+   "views": 709,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 15,
    "taxa": 3.6,
    "parcial": false
-  },
-  {
-   "id": "18096104066275323",
-   "titulo": "Eu conferindo no espelho se o shape aguenta até os 80.",
-   "tipo": "IMAGEM",
-   "quando": "2026-11-20",
-   "alcance": 525,
-   "views": 994,
-   "salvos": 0,
-   "compart": 0,
-   "comentarios": 0,
-   "valor": 13,
-   "taxa": 2.5,
-   "parcial": true
   }
  ]
 }
