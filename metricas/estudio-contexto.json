@@ -1,27 +1,27 @@
 {
- "atualizado_em": "2026-11-24T03:04-03:00",
- "seguidores": 9797,
+ "atualizado_em": "2026-11-24T17:40-03:00",
+ "seguidores": 9789,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
-  "alcance": 420,
-  "valor": 12,
+  "alcance": 454,
+  "valor": 15,
   "taxa": 3.1
  },
  "por_tipo": {
   "IMAGEM": {
    "posts": 19,
-   "alcance_medio": 601,
-   "valor_medio": 29.3
+   "alcance_medio": 606,
+   "valor_medio": 29.4
   },
   "REELS": {
-   "posts": 4,
-   "alcance_medio": 510,
-   "valor_medio": 43.5
+   "posts": 5,
+   "alcance_medio": 432,
+   "valor_medio": 36.8
   },
   "CARROSSEL": {
-   "posts": 17,
-   "alcance_medio": 312,
-   "valor_medio": 11.5
+   "posts": 16,
+   "alcance_medio": 320,
+   "valor_medio": 11.4
   }
  },
  "posts": [
@@ -30,13 +30,13 @@
    "titulo": "Sauna e recovery em Copacabana é no @tavarescoachtrainingcenter",
    "tipo": "IMAGEM",
    "quando": "2026-11-13",
-   "alcance": 1008,
-   "views": 2080,
+   "alcance": 1024,
+   "views": 2101,
    "salvos": 4,
    "compart": 10,
    "comentarios": 3,
-   "valor": 156,
-   "taxa": 15.5,
+   "valor": 157,
+   "taxa": 15.3,
    "parcial": false
   },
   {
@@ -44,26 +44,26 @@
    "titulo": "Hyrox é Hyrox.. eu já participei dessa hive! ⚡️⚡️⚡️",
    "tipo": "IMAGEM",
    "quando": "2026-11-22",
-   "alcance": 661,
-   "views": 1302,
+   "alcance": 683,
+   "views": 1353,
    "salvos": 0,
    "compart": 0,
    "comentarios": 6,
    "valor": 83,
-   "taxa": 12.6,
-   "parcial": true
+   "taxa": 12.2,
+   "parcial": false
   },
   {
    "id": "17964046800250118",
    "titulo": "Fim de tarde na praia, com o morro de pedra lá atrás e a onda quebrando nas pedras.",
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
-   "alcance": 465,
-   "views": 940,
+   "alcance": 471,
+   "views": 952,
    "salvos": 0,
    "compart": 0,
    "comentarios": 1,
-   "valor": 78,
+   "valor": 79,
    "taxa": 16.8,
    "parcial": false
   },
@@ -86,8 +86,8 @@
    "titulo": "Packzinho de abs para vocês.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-14",
-   "alcance": 459,
-   "views": 1132,
+   "alcance": 460,
+   "views": 1133,
    "salvos": 5,
    "compart": 1,
    "comentarios": 0,
@@ -100,13 +100,13 @@
    "titulo": "Eu treino sozinho, mas nunca treino em silêncio.",
    "tipo": "REELS",
    "quando": "2026-11-12",
-   "alcance": 628,
+   "alcance": 630,
    "views": 1021,
    "salvos": 0,
    "compart": 1,
    "comentarios": 1,
    "valor": 57,
-   "taxa": 9.1,
+   "taxa": 9.0,
    "parcial": false
   },
   {
@@ -170,8 +170,8 @@
    "titulo": "Veleiro, mar calmo e eu pendurado no cabo de óculos escuros, rindo à toa.",
    "tipo": "IMAGEM",
    "quando": "2026-11-12",
-   "alcance": 327,
-   "views": 632,
+   "alcance": 329,
+   "views": 634,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
@@ -180,12 +180,26 @@
    "parcial": false
   },
   {
+   "id": "18015580701002395",
+   "titulo": "Dia 364.000 837.000 olhando na internet pra promover um aplicativo que eu fiz completo com a inteligência arti",
+   "tipo": "REELS",
+   "quando": "2026-11-18",
+   "alcance": 313,
+   "views": 463,
+   "salvos": 0,
+   "compart": 1,
+   "comentarios": 3,
+   "valor": 24,
+   "taxa": 7.7,
+   "parcial": false
+  },
+  {
    "id": "18108809456288704",
    "titulo": "Eu quando alguém usa o tio de 80 anos como plano de treino.",
    "tipo": "IMAGEM",
    "quando": "2026-11-11",
-   "alcance": 643,
-   "views": 1169,
+   "alcance": 645,
+   "views": 1170,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
@@ -208,26 +222,12 @@
    "parcial": false
   },
   {
-   "id": "18015580701002395",
-   "titulo": "Dia 364.000 837.000 olhando na internet pra promover um aplicativo que eu fiz completo com a inteligência arti",
-   "tipo": "REELS",
-   "quando": "2026-11-18",
-   "alcance": 310,
-   "views": 458,
-   "salvos": 0,
-   "compart": 1,
-   "comentarios": 3,
-   "valor": 23,
-   "taxa": 7.4,
-   "parcial": false
-  },
-  {
    "id": "18647922244019229",
    "titulo": "Eita ferro, essa meta do Rodrigo Faro eu assino embaixo.",
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
-   "alcance": 620,
-   "views": 1134,
+   "alcance": 621,
+   "views": 1136,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
@@ -240,8 +240,8 @@
    "titulo": "Eu quando alguém de 45 anos me diz que passou da idade.",
    "tipo": "IMAGEM",
    "quando": "2026-11-14",
-   "alcance": 584,
-   "views": 955,
+   "alcance": 589,
+   "views": 960,
    "salvos": 1,
    "compart": 0,
    "comentarios": 2,
@@ -254,13 +254,13 @@
    "titulo": "Eu conferindo no espelho se o shape aguenta até os 80.",
    "tipo": "IMAGEM",
    "quando": "2026-11-20",
-   "alcance": 608,
-   "views": 1114,
+   "alcance": 617,
+   "views": 1127,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 15,
-   "taxa": 2.5,
+   "taxa": 2.4,
    "parcial": false
   },
   {
@@ -268,8 +268,8 @@
    "titulo": "Eu não preciso que você treine como o Wolverine, só de dois horários fixos na sua agenda.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-13",
-   "alcance": 548,
-   "views": 1284,
+   "alcance": 550,
+   "views": 1288,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
@@ -296,13 +296,13 @@
    "titulo": "Eu quando o aluno para de pesar todo dia e começa a anotar a carga.",
    "tipo": "IMAGEM",
    "quando": "2026-11-17",
-   "alcance": 420,
-   "views": 716,
+   "alcance": 425,
+   "views": 729,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
    "valor": 15,
-   "taxa": 3.6,
+   "taxa": 3.5,
    "parcial": false
   }
  ]
