@@ -1018,5 +1018,156 @@
   ],
   "escolhido_em": "2026-11-20T15:08-03:00",
   "status": "escolhido"
+ },
+ {
+  "id": "c-2026-11-25",
+  "inicio": "2026-11-25",
+  "fim": "2026-11-27",
+  "tema": "Esportes",
+  "sigla": "ESP",
+  "pontuacao": {
+   "FOR": 0.0,
+   "EMA": 0.0,
+   "EST": 0.0,
+   "ESP": 0.0,
+   "GLP": 0.0,
+   "LON": 0.0,
+   "MEN": 0.0,
+   "WEA": 0.0
+  },
+  "excluidos": [
+   "LON",
+   "EST"
+  ],
+  "regra": "2 ciclos anteriores fora; sem notícia pontuada: central usado há mais tempo",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [],
+  "famosos": [
+   {
+    "nome": "Vini Jr.",
+    "noticia_id": "73f5e6562780cc99",
+    "titulo": "Vini Jr. marca três, quarteto ofensivo funciona e Brasil goleia em ritmo de treino a fraca Singapura",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSXYzaFM5bmJOR1dJaFl2eWllWmJXcWxQYlBFMHdkRGt6bkxXTUo0ZDJOS3J3UHp2b3FoRGNvUlFkWE9Kc3poelZKZGt3WjR4UUJJY3ZpWVM4dXNUeXV6WG9ENGpFYU9HWW1JSnYzVG0xVUVHYVQxWTk3TUhNX3pHc29LZTBtRFZUTGdtYjVXY1BzNDlnODNCd2czVzlnSGlVUndRakpmRFkzX0U4Q3NxTjBtRF9QZDJrdFBxR3ZRRnNkekZDbmtKU2FCcEZPcHhxR0xvV2FyclVNNGvSAeABQVVfeXFMTUpnREhGUFV0SEFfR1Q4U2RsYXRMT0NXVnVfTGJDUGdYVUViUXhKWEdvMkRLb1E0ZlVEZ1M0QmR2ajY4eDE1WHdtcGlkYmVuUngtYnlCM1l5ck5QZmFrMVRtb0cwbkFtZW1ZSVpGOXdPWkNFbGtQNEVDcFlZZFRNTk93VEs4VXdMTlg5UTJwX2tUYnFYcjdHOUdmTXJnY2NtM1JkZjZMcTc0TG5vRWNHRHViUGVaZlBLWEEwdzliZjY0R3Y5eVAzbVlNbE96QnJFRGVUQ05zckZTX0E5Rjg5MmE?oc=5",
+    "canal": "Estadão Saúde",
+    "data": "2026-11-17T11:52:00+00:00",
+    "nota": 35,
+    "pessoa_br": true,
+    "imagem": null
+   },
+   {
+    "nome": "Gabriel Bortoleto",
+    "noticia_id": "63e75d5acbbe25d1",
+    "titulo": "F1: Russell lidera 2º treino em Las Vegas; Bortoleto é 20º e Câmara 22°",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNamVqdEo3Yk15RnJXb2VMSy1SdnhCMzdPNWIwRmw3Zk9NeHl6ZlJZa254MjRmTm1tSG90OVFBYkJPVnpPTEZWV2pJdmVWenh1WW95REJBLTJ6U0dNVGRrb0JUV0d1amM0ZnNXTzRmQWZSbTVTSk1tU0xFVmNJblBxWVYtNWNvZjYzeTBuUmNpR05IQnQ5LURKWW1XbDM5QnVCSkxScU9uWQ?oc=5",
+    "canal": "Metrópoles",
+    "data": "2026-11-20T05:08:00+00:00",
+    "nota": 15,
+    "pessoa_br": true,
+    "imagem": null
+   },
+   {
+    "nome": "Papa Leão XIV",
+    "noticia_id": "c9073d7bf4d854b3",
+    "titulo": "Pope Leo dispels health concerns with marathon South America tour",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSzN2WWNMVzBfaWpXWnBjeFIwQlJIQ3ZVZDlSZ1RKOHZ6T0x2ZTI3RzRqMG5EeUtYejY3T3VTTFhfNUNWekFDWWdUM3hCSG5sX01JU0pNY09HTVd6bUdGYXE3S082SHpkZkVZZ1gyRDgwUlhET0pCZHpuV1EzZjZzVWpvN29QRWNNUWVyQlVHUkNtTXRnNEN2cWxndm9lZDdHcGNUZ2EzOGpkYkE?oc=5",
+    "canal": "Reuters",
+    "data": "2026-11-17T04:01:00+00:00",
+    "nota": 30,
+    "pessoa_br": false,
+    "imagem": null
+   },
+   {
+    "nome": "Travis Kelce",
+    "noticia_id": "ae226f2cd05fddec",
+    "titulo": "Travis Kelce Speculates If He Was Targeted in Hit That Took Him Out of Chiefs Game with Ankle Injury",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcS1JYTlQdUpxWk1CU0U4cFV6d1JsUEgxeWp6LTN0NElVQzVNWjdhcG9aY21yaGdhc1FoVUtnVkFjaGZtWFlsVTNnTWt6MnFpRGRGU0hZSS1GM0RBQzRDZTRXSzhQV25MdmQ4aWZydHNqUVhBdGp0R2g5SUgwUWI3UzRVYzdDdVVaTi1XSjhCNVUtY2Y4OGJmRVhNcEJOZw?oc=5",
+    "canal": "People",
+    "data": "2026-11-18T13:44:23+00:00",
+    "nota": 25,
+    "pessoa_br": false,
+    "imagem": null
+   },
+   {
+    "nome": "James Franklin",
+    "noticia_id": "e48aca365a621c0c",
+    "titulo": "James Franklin dreams of longer runways. Is college football travel really that bad?",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT20wVkJGdThPQ2FwVXF4YklrRFdQcVNkbmxxRXM1dTZ4X3NXZUlRcnl1RUJ5Wk5pZjRXSFQyRndIUC1BSC00VkVWT2xiUXVGWXMwa1RpdFg0MDZxLTllMDcxdXdpdF9rZEtOdkxtZzAxaElvZnU5UXdoV05BaWJ5aWZ5NVIya2VpbjR4UnNiTmphbUxWcDJ2VER3UjJSbFhBVEk2QzFIbEoyVy1NQzBDbQ?oc=5",
+    "canal": "Nytimes",
+    "data": "2026-11-17T10:00:17+00:00",
+    "nota": 8,
+    "pessoa_br": false,
+    "imagem": null
+   },
+   {
+    "nome": "Patrick Mahomes",
+    "noticia_id": "b56eda50f5a88ed2",
+    "titulo": "Patrick and Brittany Mahomes reveal sex of baby No. 4",
+    "link": "https://pagesix.com/2026/11/17/parents/patrick-and-brittany-mahomes-reveal-sex-of-baby-no-4/",
+    "canal": "Pagesix",
+    "data": "2026-11-18T02:55:49+00:00",
+    "nota": 5,
+    "pessoa_br": false,
+    "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fpatrick-mahomes-brittany-mahomes-sports-148274209_03b716.jpg"
+   },
+   {
+    "nome": "Markwayne Mullin",
+    "noticia_id": "84926c7e8ad2760e",
+    "titulo": "Mullin flew to a football game while Americans were stranded after FAA ground stop",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UdjdDR1JPcEoxMTJ1S3BteEtlSXFBNWQ1Tll4WVJXS0JUNDBSdm1qbEVNR0FDUTRnQnlnNDNOekJVRVRackJiWW1WYmZHRTJqWFFNQnpxUDhTSkZBTDZMOWRfdUNWUVYyWkpOLWQ5blpwR01VcFVCckE5eWE?oc=5",
+    "canal": "CNN",
+    "data": "2026-11-17T16:19:08+00:00",
+    "nota": 2,
+    "pessoa_br": false,
+    "imagem": null
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-25",
+    "quando": "2026-11-25T20:00:00-03:00",
+    "arquivo": "2026-11-25/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-25.jpg",
+    "drive_id": "1oSereORaT91WYN8gnAs3CRoLXV_DdjRk",
+    "nome": "IMG_2600 (1).JPEG"
+   },
+   {
+    "dia": "2026-11-27",
+    "quando": "2026-11-27T20:00:00-03:00",
+    "arquivo": "2026-11-27/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-27.jpg",
+    "drive_id": "10ABc4JJ4wN4ERAhJFvH6lXtTz3_hwrst",
+    "nome": "IMG_6557.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-25/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-25-acervo-1.jpg",
+    "drive_id": "1DVJoQji08UPS-GIfAiqiDUYQt0KOQuhV",
+    "nome": "IMG_1844.JPEG"
+   },
+   {
+    "arquivo": "2026-11-25/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-25-acervo-2.jpg",
+    "drive_id": "1t3UMTHVKVU6lADxRv4AlLpSlxa-13bLm",
+    "nome": "IMG_5305.JPEG"
+   },
+   {
+    "arquivo": "2026-11-25/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-25-acervo-3.jpg",
+    "drive_id": "1rdW7YiY22MoJJ7WbxV3G6Ve99MQpfiBw",
+    "nome": "Bauru-1048.JPEG"
+   },
+   {
+    "arquivo": "2026-11-25/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-25-acervo-4.jpg",
+    "drive_id": "1DzVYLMXqB3DkFdzJfwUCDM8uIRw8r0aZ",
+    "nome": "IMG_5408.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-24T00:28-03:00",
+  "status": "escolhido"
  }
 ]
