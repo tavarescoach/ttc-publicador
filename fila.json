@@ -3589,5 +3589,27 @@
     "origem": "painel",
     "erro": "Instagram não processou a mídia: ERROR",
     "tentativas": 1
+  },
+  {
+    "id": "2026-11-25-st-0600",
+    "quando": "2026-11-25T09:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-25/story-0600.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-25-st-1000",
+    "quando": "2026-11-25T13:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-25/story-1000.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
   }
 ]
