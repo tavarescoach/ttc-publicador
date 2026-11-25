@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-24T17:40-03:00",
+ "atualizado_em": "2026-11-25T01:53-03:00",
  "seguidores": 9789,
  "explica": "valor = salvos x3 + compartilhamentos x3 + comentários x2 + curtidas; taxa = valor por 100 contas alcançadas; parcial = post com menos de 48 h, números ainda subindo",
  "medianas": {
@@ -10,17 +10,17 @@
  "por_tipo": {
   "IMAGEM": {
    "posts": 19,
-   "alcance_medio": 606,
-   "valor_medio": 29.4
+   "alcance_medio": 607,
+   "valor_medio": 29.5
   },
   "REELS": {
    "posts": 5,
-   "alcance_medio": 432,
-   "valor_medio": 36.8
+   "alcance_medio": 448,
+   "valor_medio": 37.2
   },
   "CARROSSEL": {
    "posts": 16,
-   "alcance_medio": 320,
+   "alcance_medio": 321,
    "valor_medio": 11.4
   }
  },
@@ -30,13 +30,13 @@
    "titulo": "Sauna e recovery em Copacabana é no @tavarescoachtrainingcenter",
    "tipo": "IMAGEM",
    "quando": "2026-11-13",
-   "alcance": 1024,
-   "views": 2101,
+   "alcance": 1028,
+   "views": 2113,
    "salvos": 4,
    "compart": 10,
-   "comentarios": 3,
-   "valor": 157,
-   "taxa": 15.3,
+   "comentarios": 4,
+   "valor": 159,
+   "taxa": 15.5,
    "parcial": false
   },
   {
@@ -44,13 +44,13 @@
    "titulo": "Hyrox é Hyrox.. eu já participei dessa hive! ⚡️⚡️⚡️",
    "tipo": "IMAGEM",
    "quando": "2026-11-22",
-   "alcance": 683,
-   "views": 1353,
+   "alcance": 695,
+   "views": 1374,
    "salvos": 0,
    "compart": 0,
    "comentarios": 6,
    "valor": 83,
-   "taxa": 12.2,
+   "taxa": 11.9,
    "parcial": false
   },
   {
@@ -59,7 +59,7 @@
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
    "alcance": 471,
-   "views": 952,
+   "views": 955,
    "salvos": 0,
    "compart": 0,
    "comentarios": 1,
@@ -86,13 +86,13 @@
    "titulo": "Packzinho de abs para vocês.",
    "tipo": "CARROSSEL",
    "quando": "2026-11-14",
-   "alcance": 460,
-   "views": 1133,
+   "alcance": 464,
+   "views": 1136,
    "salvos": 5,
    "compart": 1,
    "comentarios": 0,
    "valor": 62,
-   "taxa": 13.5,
+   "taxa": 13.4,
    "parcial": false
   },
   {
@@ -101,7 +101,7 @@
    "tipo": "REELS",
    "quando": "2026-11-12",
    "alcance": 630,
-   "views": 1021,
+   "views": 1023,
    "salvos": 0,
    "compart": 1,
    "comentarios": 1,
@@ -185,7 +185,7 @@
    "tipo": "REELS",
    "quando": "2026-11-18",
    "alcance": 313,
-   "views": 463,
+   "views": 466,
    "salvos": 0,
    "compart": 1,
    "comentarios": 3,
@@ -227,7 +227,7 @@
    "tipo": "IMAGEM",
    "quando": "2026-11-18",
    "alcance": 621,
-   "views": 1136,
+   "views": 1137,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
@@ -254,8 +254,8 @@
    "titulo": "Eu conferindo no espelho se o shape aguenta até os 80.",
    "tipo": "IMAGEM",
    "quando": "2026-11-20",
-   "alcance": 617,
-   "views": 1127,
+   "alcance": 621,
+   "views": 1137,
    "salvos": 0,
    "compart": 0,
    "comentarios": 0,
@@ -269,7 +269,7 @@
    "tipo": "CARROSSEL",
    "quando": "2026-11-13",
    "alcance": 550,
-   "views": 1288,
+   "views": 1291,
    "salvos": 0,
    "compart": 3,
    "comentarios": 0,
