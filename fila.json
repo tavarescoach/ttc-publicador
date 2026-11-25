@@ -3611,5 +3611,27 @@
     "legenda": "",
     "status": "pendente",
     "origem": "painel"
+  },
+  {
+    "id": "2026-11-26-st-0600",
+    "quando": "2026-11-26T09:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-26/story-0600.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
+  },
+  {
+    "id": "2026-11-26-st-1000",
+    "quando": "2026-11-26T13:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-26/story-1000.mp4"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel"
   }
 ]
