@@ -1,6 +1,16 @@
 {
- "coletado_em": "2026-11-24T19:43:52.567129+00:00",
+ "coletado_em": "2026-11-25T18:51:23.070664+00:00",
  "itens": [
+  {
+   "id": "0774f534f2f8c54e",
+   "canal": "BBC News",
+   "titulo": "Zoe Kleinman: Nobody is irreplaceable - unless you're Jensen Huang",
+   "link": "https://www.bbc.co.uk/news/articles/c3rrgqj2zx5yo?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bde3/live/fa4083e0-e8b6-11f1-9e64-bddd508b9881.jpg",
+   "publicado_em": "2026-11-25T10:03:12+00:00",
+   "resumo": "The BBC's technology and AI editor on how Nvidia's boss made himself impossible to fire.",
+   "pre": 3.0
+  },
   {
    "id": "c242d6d798e91a2b",
    "canal": "BBC News",
@@ -9,16 +19,6 @@
    "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1e19/live/7721db50-e819-11f1-a094-5fdc692f3e33.jpg",
    "publicado_em": "2026-11-24T09:33:00+00:00",
    "resumo": "Meta wants Muse to do for AI what WhatsApp did for messaging - here's what the BBC's technology editor found when she used it.",
-   "pre": 3.0
-  },
-  {
-   "id": "cb570aa73b546d73",
-   "canal": "BBC News",
-   "titulo": "Health expert's advice on checking your baby's sleeping bag",
-   "link": "https://www.bbc.co.uk/news/videos/cmqx54px4n1eo?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e2ce/live/4ae2ee60-e659-11f1-99a1-253766e7ad8b.jpg",
-   "publicado_em": "2026-11-22T09:56:37+00:00",
-   "resumo": "Registered health visitor Ruth Watts explains what parents should check before buying a baby's sleeping bag.",
    "pre": 3.0
   },
   {
@@ -52,24 +52,34 @@
    "pre": 2.0
   },
   {
-   "id": "96c3e54ffb8a4058",
+   "id": "bb16378dc24ee27c",
    "canal": "BBC News",
-   "titulo": "School wins mental health and wellbeing award",
-   "link": "https://www.bbc.co.uk/news/articles/c5n4eyv9wv7zo?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/18ad/live/932767f0-e500-11f1-a8e4-b1e12a49db15.jpg",
-   "publicado_em": "2026-11-22T12:10:39+00:00",
-   "resumo": "The opening of a wellbeing room for students at Blanchelande College is recognised by judges.",
-   "pre": 2.0
+   "titulo": "NHS Grampian surgeon was ready to operate on patient while recovering from medical procedure",
+   "link": "https://www.bbc.co.uk/news/articles/cx30g76yvl1zo?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1c42/live/b88e7ac0-dedd-11f1-93e1-3b657b665bcf.jpg",
+   "publicado_em": "2026-11-25T16:13:33+00:00",
+   "resumo": "The doctor had to be driven to Dr Gray's hospital in Elgin because he felt unable to drive himself.",
+   "pre": 1.0
   },
   {
-   "id": "e57b63aaee8ad22f",
+   "id": "8039534391b63843",
    "canal": "BBC News",
-   "titulo": "Men's fishing group is the hook to better mental health",
-   "link": "https://www.bbc.co.uk/news/videos/c68x0qxxw4xjo?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0031/live/c56c5ce0-e4db-11f1-99a1-253766e7ad8b.jpg",
-   "publicado_em": "2026-11-22T08:33:55+00:00",
-   "resumo": "The men's fishing group that's helping their mental health.",
-   "pre": 2.0
+   "titulo": "Asian women 'never heard' on health, says director",
+   "link": "https://www.bbc.co.uk/news/articles/cq1j6gn6lj43o?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b228/live/9ec86d80-e73e-11f1-a094-5fdc692f3e33.png",
+   "publicado_em": "2026-11-25T06:08:39+00:00",
+   "resumo": "Women react to a report saying poor female health in Luton develops five years earlier than average.",
+   "pre": 1.0
+  },
+  {
+   "id": "1c46ac3bcd19cd94",
+   "canal": "BBC News",
+   "titulo": "Tech Life",
+   "link": "https://www.bbc.co.uk/sounds/play/w3ct8jyx?at_medium=RSS&at_campaign=rss",
+   "imagem": "https://ichef.bbci.co.uk/images/ic/240x135/p0ppq4sx.jpg",
+   "publicado_em": "2026-11-24T21:00:00+00:00",
+   "resumo": "Experts from around the world plot the progress of AI development every five years.",
+   "pre": 1.0
   },
   {
    "id": "abd65dad40d054f5",
@@ -92,16 +102,6 @@
    "pre": 1.0
   },
   {
-   "id": "14c38604cb823eec",
-   "canal": "BBC News",
-   "titulo": "GP surgery suspends routine appointments due to 'tsunami' of demand",
-   "link": "https://www.bbc.co.uk/news/articles/cm62pze6xn37o?at_medium=RSS&at_campaign=rss",
-   "imagem": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fca8/live/4160e700-e7e6-11f1-8b26-c1adae33e7f2.jpg",
-   "publicado_em": "2026-11-24T18:12:52+00:00",
-   "resumo": "Aberfoyle Medical Practice in Derry says its doctors are treating 60 patients each every day.",
-   "pre": 1.0
-  },
-  {
    "id": "e088c988721be989",
    "canal": "Reuters",
    "titulo": "US FDA approves BridgeBio's drug for rare muscle disease",
@@ -110,6 +110,26 @@
    "publicado_em": "2026-11-23T22:42:46+00:00",
    "resumo": "US FDA approves BridgeBio's drug for rare muscle disease Reuters",
    "pre": 3.0
+  },
+  {
+   "id": "d1f0deadacccb0ca",
+   "canal": "Reuters",
+   "titulo": "Deutsche Bank, India's PNB sign deal to finance Indian corporate acquisitions",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYzE4SEtJMDhrSjBlUlB3MWN1RnBRUXFHbkJlNzRRSlRKOXNjazBCTXpqYXBhcl9ZRnVqdEhVa2FKMjFoSDVKNzhNRjVtRXhmQjJrX25GNlVTMkNsQkZ0RzZ6STAtT09kZFYxTTJRbkJQelFnZUd6TkZkTmdQZ0Vxc094UEtXNnljSmpvMldRc2hyUGdXcDhYZnRHTHVqNWFyNGF5ZEdibVNwc01TcFZDUHk5MVpyZG5hYmFSMQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T14:40:30+00:00",
+   "resumo": "Deutsche Bank, India's PNB sign deal to finance Indian corporate acquisitions Reuters",
+   "pre": 2.0
+  },
+  {
+   "id": "dbf691a031dbbc9e",
+   "canal": "Reuters",
+   "titulo": "Hims launches testosterone treatments in the United Kingdom",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTXBYRTgwM3dHZFlfTGRYblNrYndQVG1TdHdoVnZCU09PVEwxeXQyRmZiXzR0NWZWa05Tb1BsNGtHY0g5RlFqZThJazdnd3NiaHB3YnQ3NlFRYmhWNHJQMnBUT1RSdFpEMW1XQ0E5UkZ3c09MQWZ4QXE1MW1xMkUtNGV4b1NSUkgwa2hSVmFGS3lKdWlFNXJrLUJNZmo1eTNyM2YzSERiamY1TF93bXBpaXJ3S3lYd1IxUHBNLTdIeEdqZw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T19:17:11+00:00",
+   "resumo": "Hims launches testosterone treatments in the United Kingdom Reuters",
+   "pre": 2.0
   },
   {
    "id": "20ca79e6dd3c1546",
@@ -122,13 +142,43 @@
    "pre": 2.0
   },
   {
-   "id": "77442772cb6dcd3a",
+   "id": "f6913f466529a91b",
    "canal": "Reuters",
-   "titulo": "China urges Britain to support free trade, provide favourable business environment",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT2otaUM0a09JTlpaVGx6ek9ySzBBRW5seUhvMldlc2tmN0ZxczExZFhNTTlzeGJXa2dUbHE3R3J5c19xWEIyUGRnZjZaZWxMaE55TzZrR1VGNG0ycVBWUm5wYlE4QlNKQjRtQVpFWUFRY3ZLMXg3Rkg4RXpsYnZESG56U0E1UFo3LWR5RkhPYURibk1Ga3d6bG9wV3RZb3FRMldxZ1plRl9nSHBnZEdRMUlteEVfZ3RPaGVGSG94Ujk?oc=5",
+   "titulo": "BoE's Bailey sees lower inflation peak if energy prices stabilise",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTmItUFQ0TDJDczBHR3RFWDhnTWd1MkVMcjcwOVAwSmxxYTNqcWlqUEpYY21kZXFnUWtBMndyWW9JeUtHdVB1dV9hVUtMQUtVcDVFTk9XLW5McVNxcnNCdGpOd3oyTDBlbnJpQndONWpFNVRSYk40R2gycHVIQ0p1blVGWmFDeS1CdUxEZ3FvcThZZHZmWENsODYzY1M4UklWVU5SLWI2NGwyLVhFSGc?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T15:03:43+00:00",
-   "resumo": "China urges Britain to support free trade, provide favourable business environment Reuters",
+   "publicado_em": "2026-11-25T16:20:48+00:00",
+   "resumo": "BoE's Bailey sees lower inflation peak if energy prices stabilise Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "f00e1b23a7d07ab8",
+   "canal": "Reuters",
+   "titulo": "Xi's graft probe of Shanghai rising star upends traditional path to power in China",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZFRBRjBBclN4REFaZHc4ZTlnbHJ2ZENzczBjZ1BCTVFOTkJXUlpHTTZoZHpEdVhFc0drVUNfYXUwTFhTbVA4ZC1FM0Vsdl85c2dJcGFaZGdxNDc1YUgxaTNUVlRmSTNNNk8xTHMtQWRyOEFZY3g1YlBJS1BDUUJaajZYSFpTaXVERVVrcU95TS1oMU5KTkZBVmx0V19QTldPS3ZyMHJHSmVYcWNhQnZObmJZWUpoNWRuRDBCeg?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T12:52:35+00:00",
+   "resumo": "Xi's graft probe of Shanghai rising star upends traditional path to power in China Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "328d26fecdfd4f47",
+   "canal": "Reuters",
+   "titulo": "World stocks tumble as Trump tariffs rattle markets, AI rally fades",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRFVsTjFROGtER0loSkZOcnF2NDRLUWFmcjBHZ01ybE51N19idjFFMXI1dnFqZ21JYS1HVVpicTJ1V1RfVU4zd3pkVEZMWHdqMUJWRENOQWJ2VjFqT1Y3WS0xYTV3bzd2RnRraFhtOVpzVE9yYThzdV9tdWxJbUpjNzFraw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T01:50:00+00:00",
+   "resumo": "World stocks tumble as Trump tariffs rattle markets, AI rally fades Reuters",
+   "pre": 1.0
+  },
+  {
+   "id": "c72d5f24322bf448",
+   "canal": "Reuters",
+   "titulo": "WHO chief calls on US to lift oil blockade on Cuba, citing health impact",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQenFOcnIxTVk4RGhvcVZBTzl5NFpZWGIzWnYtai1QdEVicGl5bjR5N2IzZzUtUVdvdldyMHM3NzVkclUtVl9UZmVrTXZEd0o2Tjh3QWJpemNwaVF3R3JtZzFVQnpGdHppMFM1Tl8zZ1hjNEJ0S2xoRlpjenhXRjR0czItcWRBcEVXZE04VG9qQ2FnYl9GWW1Ydjk2OUFycnVhcm4zeGRCZHVwT1h3aDZXODlaX3Vqdw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T19:27:43+00:00",
+   "resumo": "WHO chief calls on US to lift oil blockade on Cuba, citing health impact Reuters",
    "pre": 1.0
   },
   {
@@ -142,26 +192,6 @@
    "pre": 1.0
   },
   {
-   "id": "39ff2e44659775cb",
-   "canal": "Reuters",
-   "titulo": "German economy minister urges industry to seize AI opportunity",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOemI0SEZ3NEEzNTVYYzBfWUxlemJ3cWdDNUh3WnMzSWpmVHUyaHpubXBSYWlwalY1dWpqbnNkbEl2RGVRWlpLR2x2WkJWdzBsLTRIT3JVOW5YNXpKdVdld3FqNUVkS0oyMjJBTS1iMzZQRk1uMTV0YUpsTlFSc0FuRG9WeVZPTHJKeE1FR1JpdUMyTl90cVVlZFpzdjJhS2pJY0kzekZ6V3Z0QQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T11:25:45+00:00",
-   "resumo": "German economy minister urges industry to seize AI opportunity Reuters",
-   "pre": 1.0
-  },
-  {
-   "id": "91e4379352450dd6",
-   "canal": "Reuters",
-   "titulo": "Hyundai Motor India, Tata Motors Passenger Vehicles to raise prices from December 1",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOT1dNS0RJeDVvNU9rMUE0VEhSemhDZm5hUVQ2NkVUQzVnUXlMQmFCWjU4dDg1YWVwSkRrSTJxdm8tMWFVdkUtMllzeEF1dFhtSmxzX3dmZzRaTU9GSzZwbHkyQy1PeHJNdUlCMGNmcnp6dzBWaTFkTW01MXBCZHhMckdfZ05DZVBHbW1FanU1QWhLRDhXLTNQS3hpWFJQSmgtb2ZUUHdwV0RRcFNRX0hRazhuRF9naFBxZVdLUm1ZUQ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T10:19:46+00:00",
-   "resumo": "Hyundai Motor India, Tata Motors Passenger Vehicles to raise prices from December 1 Reuters",
-   "pre": 1.0
-  },
-  {
    "id": "37705f6b8bad628d",
    "canal": "Reuters",
    "titulo": "EXCLUSIVE: Peltz's Trian presses Solventum to spin off health information unit unless sale tops range",
@@ -172,44 +202,14 @@
    "pre": 1.0
   },
   {
-   "id": "a9b8f28b9cfa9194",
-   "canal": "Reuters",
-   "titulo": "Huang's Nvidia return sparks relief for battered AI trade, but questions remain",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdllUY1JjNjA0T3ZBYjdac2FIVFZWQlF1dUhuclNlcDRfU2gxQzFoQ0kzUk9rcXMxbTJvRXdpZUNVM2ZJTXljQ1B6bjQ3NmxqSmxXTmhqV2JIMFphcGhwQ2dlSGI1Vm56ZUhBcGZMSDdmOVM2eXMyVjMtS19DbWJIVm40U044V0dxR3hPU1NmeldKdGl6VHh0UDVVcnlqUEVudEVrV0MxS1A2UnV6M2U3QldjQjV1OGpV?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T20:35:00+00:00",
-   "resumo": "Huang's Nvidia return sparks relief for battered AI trade, but questions remain Reuters",
-   "pre": 1.0
-  },
-  {
-   "id": "ca1a1894230c6930",
-   "canal": "Reuters",
-   "titulo": "Trump saw Nvidia's Huang as protector of open-weight AI models, sources say",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPam9EWkNKUkVWckNXeXJpWmh0OEhTcy1reWhiOWRkUHllZWZtc1V0N0l1UWJLMEtjSUR5V3F6YXlJdXRYaTZyQ0Z6ZGp2UjJnc1FfSExfaUNtblB5eUg4WG9QQm9XdUxPTmdMb3diZGl5LU53c2l4aXdXaTkyaUJnNVprM1Y3UWdjMjd6M0dLc2RmbXY5ZUFPaWwwRXR2SXZreTdZMmM2M2MtVFJqelI2MmxB?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T19:23:26+00:00",
-   "resumo": "Trump saw Nvidia's Huang as protector of open-weight AI models, sources say Reuters",
-   "pre": 1.0
-  },
-  {
-   "id": "cb51b944daa29bc8",
-   "canal": "Reuters",
-   "titulo": "AI rally set to add $2 trillion to Nasdaq-100 as Huang returns to Nvidia helm",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWk01bk9iRUpaaEhTQ1RKTXVXdEQyblBoSjRFb1FBZjBjbzJZdi03REh0RHpKTnFBSnQzRGdoMXNSLWMyVEtQaDBjN2dMVS1zR2otTXhPRzVQeWJaRmZiaXZ6R1dkcUFFSGRYTTRMSWtsWGhEQmhrUmgyaGgtZWRjbjQ5MUl2T3ZuSEhFUDVOY2pNbHRaWG5KMmJydmk3UmZib3djVnV4QXlEcnh2ZUE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T17:48:53+00:00",
-   "resumo": "AI rally set to add $2 trillion to Nasdaq-100 as Huang returns to Nvidia helm Reuters",
-   "pre": 1.0
-  },
-  {
-   "id": "fe8473288617bada",
+   "id": "f54f5551a4b06e8e",
    "canal": "CNN",
-   "titulo": "From automation to autonomy: Putting trust at the heart of industrial AI",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBTdjZqUmstZTViM1hzZjlic1BRbzV1dmpmV2M5QURVQXkxTUdFMEpXRFQxeHkzcWZnVjNCeDhZam5IbTh2ekFlVUZCbGJHN0toWmVzcFNhdWU5TlhrdXdlWUU5RGVmNThrMzllenNudWRHTVQ5cjdjQg?oc=5",
+   "titulo": "How to deal with diet talk at Thanksgiving",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd1c5TmdoRlhQZlY0NkFxcWxXSmVtRC1rQ0xCczdtWUdlV0RycXZ6dGk3VWpBWDVsN2d6R3JJWV9JV2g0WTBzVnpDZWh1Z1BpVFYxM0J0M0RGQVNhSEVxaGNHZ2NDUTd1QmY4eHktN2xnR3pVUDRZd3BTWks0b21PR0pmazg?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T02:16:14+00:00",
-   "resumo": "From automation to autonomy: Putting trust at the heart of industrial AI CNN",
-   "pre": 3.0
+   "publicado_em": "2026-11-25T09:00:15+00:00",
+   "resumo": "How to deal with diet talk at Thanksgiving CNN",
+   "pre": 2.0
   },
   {
    "id": "ac26983ef1aa3aab",
@@ -229,6 +229,16 @@
    "imagem": null,
    "publicado_em": "2026-11-24T09:00:16+00:00",
    "resumo": "Walking habits that could improve your blood sugar CNN",
+   "pre": 2.0
+  },
+  {
+   "id": "d8ee04e91c25fd76",
+   "canal": "CNN",
+   "titulo": "Rep.-elect Chuck Hubbard on securing major Dem flip: ‘Nobody gets to pick on my daughter’",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeVlQNVE2c3laTFlUZ3pwWmhwcFV5NzFQWGoxclhRZU85RVZ2WmRpMDAzSmlMYllneldXUklWZVZuakRGNHJONW03c2UtbE4zNk1jOXlmSDdOcGdFUkhCTkFCQnNxNlI4SVNPQWVjUXJRSUx1dmEzTjFfVnZGWmxRYVBhNDdaNzFVOFYxVTJsR3p4enJCdk4yU0ljdVd4MlRpSzk0dW9TeFB4MjZVMFJDMVFzbWI0NWFfcFhFOHBkUWlUNjUyeTVENGdWVQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T02:56:19+00:00",
+   "resumo": "Rep.-elect Chuck Hubbard on securing major Dem flip: ‘Nobody gets to pick on my daughter’ CNN",
    "pre": 2.0
   },
   {
@@ -252,64 +262,64 @@
    "pre": 2.0
   },
   {
-   "id": "e1e9568f4f997df5",
+   "id": "56f14548d85a4e41",
    "canal": "CNN",
-   "titulo": "How to stop doomscrolling before bed and get better sleep",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLWxuemNkaXpoTDlTTm90ZHEyRXZlaXU1NjQ1UVdvOHJfS0NLcXpLN1Z5R1N5LXZNTnV6TXVoaHBJTzJuODJqZXZuaGpvQUZya2RaaFJlMkU2MFA0UDhYOWFzUjdzQllJejRiSkxlUVRKQTJ6QzR5dkpLekh3M0xNU3Fkc0U?oc=5",
+   "titulo": "Tech stock sell-off deepens as AI fears outweigh Huang’s Nvidia return",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQ1FuS01WaVlhenhqc2I2M2hUckJlTm9fUjZ3N2ZjSmtTM3pCSkktYzlUM094TkV2NFROMjBseXlla2R3US1xRjh1QktLalI3dmVHZ2dpWGY4UEVXa2lKemFvX2doTXZ3d0FOTkV3NW5aYlZBWk9HZzhUa19aZW1GbWVmWFlvQQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-22T11:30:15+00:00",
-   "resumo": "How to stop doomscrolling before bed and get better sleep CNN",
-   "pre": 2.0
-  },
-  {
-   "id": "c1d79f4df7cca7ee",
-   "canal": "CNN",
-   "titulo": "Immigration officers make arrests at Seattle airport in ‘distressing’ scene, delaying flight",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQmN2WGowYmtXVnBSRWtCYW5ROTRlOW91ZXBLd043aEVDU1lHMkEzSDJ0d01rN0Y0UDI1ZFE4RnFUWGVxbXdVM3UxMWdTUDVwSC1SS0JTbVZYck1fRzA2bzBKc0wtMWxtRExtTGxBUkxiSWM0NlhFdmNlcVVPU1Y5OU5KWWg?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-22T02:36:00+00:00",
-   "resumo": "Immigration officers make arrests at Seattle airport in ‘distressing’ scene, delaying flight CNN",
-   "pre": 2.0
-  },
-  {
-   "id": "22c9e3b441ecf84c",
-   "canal": "CNN",
-   "titulo": "In China’s tech mecca, Trump and Xi touted AI cooperation. Now comes the harsh reality",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWXQ2YmRXMWcxSG5FQ0s4LXBFNnZwb3A2ZVVXQkFsLUFKcXI3RjJDSnRsakI5V3JzcXNFMFhac2x0d1M4S1BfOUxhT2hHN293aXlNd3RHSTUyYTZCVzRPV0V0eUdtS05TaUhVUV9VSTlhN0lXTkd4ZEYxNGI3d2llTg?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-22T05:01:15+00:00",
-   "resumo": "In China’s tech mecca, Trump and Xi touted AI cooperation. Now comes the harsh reality CNN",
+   "publicado_em": "2026-11-25T14:02:14+00:00",
+   "resumo": "Tech stock sell-off deepens as AI fears outweigh Huang’s Nvidia return CNN",
    "pre": 1.0
   },
   {
-   "id": "065b16dad3fdde8c",
+   "id": "90c045ac12084ae1",
    "canal": "The Guardian",
-   "titulo": "Mamdani questions AI economy as Jensen Huang returns to Nvidia – video",
-   "link": "https://www.theguardian.com/technology/video/2026/nov/24/mamdani-questions-ai-economy-as-jensen-huang-returns-to-nvidia-video",
-   "imagem": "https://i.guim.co.uk/img/media/526ad4b151eda4ee611778e9331242738273d7c0/229_0_2281_1825/master/2281.jpg?width=140&quality=85&auto=format&fit=max&s=973d87bb3555567599736eb15e929c72",
-   "publicado_em": "2026-11-24T16:30:07+00:00",
-   "resumo": "New York City mayor Zohran Mamdani weighed in on the corporate turbulence surrounding Nvidia and the chipmaker’s chief executive officer, Jensen Huang, saying he does not think working Americans 'signed up for their pensions being tied to the question of Huang’s fidelity to his marriage'. The mayor said Huang 'had a massive impact', with Nvidia’s share price dropping dramatically after he stepped ",
+   "titulo": "‘Nobody showed up but me’: will Friendsgiving survive gen Z?",
+   "link": "https://www.theguardian.com/lifeandstyle/2026/nov/25/friendsgiving-gen-z",
+   "imagem": "https://i.guim.co.uk/img/media/0cc0c758dfb88ba1a8c777776c384c80b2bd0b7c/186_0_7652_6123/master/7652.jpg?width=140&quality=85&auto=format&fit=max&s=660dec1972324f76bc926022b4b3f46d",
+   "publicado_em": "2026-11-25T14:00:29+00:00",
+   "resumo": "A generation known for loneliness is putting their own spin on a millennial-made tradition that requires socializing It’s a TikTok scene straight out of a stress dream: two men stand in their freshly cleaned apartment, explaining how all but one of the people they invited to Friendsgiving flaked out at the last minute. There is a can of whipped cream on the table and a 6lb ham in the oven. Accordi",
    "pre": 4.0
   },
   {
-   "id": "24384649709a5f8a",
+   "id": "0cd7868fa52029ef",
    "canal": "The Guardian",
-   "titulo": "Meta launches Muse in UK – the AI agent that can do your Christmas shopping",
-   "link": "https://www.theguardian.com/technology/2026/nov/24/meta-launches-muse-uk-ai-agent-do-christmas-shopping",
-   "imagem": "https://i.guim.co.uk/img/media/54771ca72dfba09d32535c72c90ff667400f9d2e/405_0_3242_2593/master/3242.jpg?width=140&quality=85&auto=format&fit=max&s=16d8db7d6c55c8ea74f0c30b47e1dd75",
-   "publicado_em": "2026-11-24T14:36:32+00:00",
-   "resumo": "Users can give agents tasks such as booking travel or buying presents, but glitches have been reported Have you downloaded Meta’s AI assistant Muse or do you plan to? Want to avoid the Christmas shopping hordes? Then let your AI agent do the shopping for you. Mark Zuckerberg’s Meta is launching its Muse AI assistant in the UK and is encouraging users to let it loose on your apps – and the high str",
+   "titulo": "‘Nature’s Ozempic’: oat sales soar as shoppers seek out foods that mimic effect of GLP-1s",
+   "link": "https://www.theguardian.com/business/2026/nov/25/natures-ozempic-oat-sales-soar-shoppers-seek-out-foods-mimic-effect-glp-1s",
+   "imagem": "https://i.guim.co.uk/img/media/46412bfdde78571242f47b0ed20b1777bbee2ca9/581_46_5177_4141/master/5177.jpg?width=140&quality=85&auto=format&fit=max&s=d913d80d2a41b928920e3b4894e5c8e3",
+   "publicado_em": "2026-11-25T07:00:10+00:00",
+   "resumo": "Porridge emerges as trend’s poster child with consumers looking to foods that help them feel full for longer, says Waitrose Sales of filling foods such as porridge oats that mimic the effect of taking weight-loss medication are booming on the back of social media hype billing them as “nature’s Ozempic” or “oatzempic”. Sales of Waitrose Scottish Oats are up 124% this year, according to the retailer",
    "pre": 4.0
   },
   {
-   "id": "17f5857e2ae67ba4",
+   "id": "5e0a85d71ba54886",
    "canal": "The Guardian",
-   "titulo": "Mamdani says Nvidia drama shows stock market is overly dependent on AI",
-   "link": "https://www.theguardian.com/us-news/2026/nov/24/mamdani-nvidia-stock-market-ai",
-   "imagem": "https://i.guim.co.uk/img/media/2af8dc339680254d727ae111d98215911e512776/312_0_2916_2333/master/2916.jpg?width=140&quality=85&auto=format&fit=max&s=32f228532d7a6e19b342c594d9be44fd",
-   "publicado_em": "2026-11-24T14:22:17+00:00",
-   "resumo": "New York City mayor notes ‘massive impact’ on working Americans’ lives when Jensen Huang stepped down as CEO Zohran Mamdani , New York City ’s mayor, on Monday weighed in on the corporate turbulence surrounding Nvidia and the chipmaker’s chief executive officer, Jensen Huang , saying he does not think working Americans “signed up for their pensions being tied to the question of … Huang’s fidelity ",
+   "titulo": "In Waves review – love, grief and surfing at heart of profoundly moving animated tale",
+   "link": "https://www.theguardian.com/film/2026/nov/25/in-waves-review-love-grief-and-surfing-at-heart-of-profoundly-moving-animated-tale",
+   "imagem": "https://i.guim.co.uk/img/media/e38e315d6935238b8fc62ecddcf384cf8dbce0d0/1276_0_2007_1606/master/2007.jpg?width=140&quality=85&auto=format&fit=max&s=c881a1bcef6161f7d932a0013ea5a60f",
+   "publicado_em": "2026-11-25T07:00:10+00:00",
+   "resumo": "Tenderly drawn story combines a history of surfing with an emotional account of losing a partner to bone cancer aged 24 This gently moving and beautifully animated drama is adapted from an award-winning graphic novel by Californian illustrator AJ Dungo . His book combines a history of surfing with a memoir of love and grief; it is an account of his girlfriend Kristen Tuason, who died from bone can",
    "pre": 4.0
+  },
+  {
+   "id": "b85262f13ae75d6d",
+   "canal": "The Guardian",
+   "titulo": "Dolphins with active social lives and big friendship groups live longer, Australian researchers discover",
+   "link": "https://www.theguardian.com/environment/2026/nov/25/dolphins-with-active-social-lives-and-big-friendship-groups-live-longer",
+   "imagem": "https://i.guim.co.uk/img/media/45ead2ae66ed2fd7239f098b276e0e94a0ecd3ae/1252_423_1540_1232/master/1540.jpg?width=140&quality=85&auto=format&fit=max&s=67b55567990115f79cc20e2b8bef7bc4",
+   "publicado_em": "2026-11-25T06:02:05+00:00",
+   "resumo": "Decades of data collected at WA’s Shark Bay shows level of socialising may affect longevity for Indo-Pacific bottlenose dolphins Dolphins who spend time socialising in large and consistently sized social groups tend to live longer, new research has found. Indo-Pacific bottlenose dolphins are marine mammals that can live for more than 50 years and have complex social lives. They spend time socialis",
+   "pre": 4.0
+  },
+  {
+   "id": "132a1c505ee0ddee",
+   "canal": "The Guardian",
+   "titulo": "Botty? AI helps resurrect voice of John Motson for football video game",
+   "link": "https://www.theguardian.com/media/2026/nov/25/ai-helps-resurrect-voice-john-motson-football-video-game-fc27",
+   "imagem": "https://i.guim.co.uk/img/media/d52e8fa78cedadca70c70f6e59bfcd90f9e39367/57_0_2250_1800/master/2250.jpg?width=140&quality=85&auto=format&fit=max&s=3114b2b42e73428bec0fd49db5beb3e5",
+   "publicado_em": "2026-11-25T15:13:10+00:00",
+   "resumo": "Late broadcaster’s family allows EA Sports to create digital version of ‘Motty’ to commentate on popular FC27 First it was Val Kilmer, then Greta Garbo, but finally AI has resurrected a star the terraces can cheer for: John Motson, the BBC football pundit who died in February 2023, is coming back to commentate on the next generation of footballers – at least on a video game. The legendary commenta",
+   "pre": 3.0
   },
   {
    "id": "cb955dee6e0c6d8a",
@@ -332,64 +342,34 @@
    "pre": 3.0
   },
   {
-   "id": "0a0f3bf5b617476f",
+   "id": "cb17abedd7441093",
    "canal": "The Guardian",
-   "titulo": "NHS trusts to be investigated over ‘repeated failures’ to admit treatment errors",
-   "link": "https://www.theguardian.com/society/2026/nov/24/nhs-trusts-to-be-investigated-over-repeated-failures-to-admit-treatment-errors",
-   "imagem": "https://i.guim.co.uk/img/media/98188206702ae2066d69c35bfb0dbd6fc8cc3748/388_0_4321_3456/master/4321.jpg?width=140&quality=85&auto=format&fit=max&s=c82550cad62914c6c794f0bd26af2406",
-   "publicado_em": "2026-11-24T19:35:30+00:00",
-   "resumo": "Failing in their legal duty of candour adds to the distress of patients and families and damages trust, says England’s public service ombudsman Hospitals will be investigated for regularly breaching their legal duty to tell patients and their relatives when mistakes have happened. The public service ombudsman for England is launching an investigation into “repeated failures” by NHS trusts to disch",
+   "titulo": "We’re in a flaking epidemic. No wonder no one wants to host gatherings | Chelsea Flagan",
+   "link": "https://www.theguardian.com/commentisfree/2026/nov/25/flaking-epidemic-hosting-mental-health",
+   "imagem": "https://i.guim.co.uk/img/media/3fe69780bb9f334e9c9056244691c912150fc494/572_0_3493_2794/master/3493.jpg?width=140&quality=85&auto=format&fit=max&s=bc7fa6252a615a174a8539581d5aa288",
+   "publicado_em": "2026-11-25T11:00:47+00:00",
+   "resumo": "We point to self-care as we skip out on activities – but routinely staying home poses its own risk to our mental health You might have heard by now, but Americans are quite lonely , especially if they’re young. The kind of low-effort, high-frequency hanging out we used to rely on – dropping by for dinner, meeting up at the park, watching each other’s kids – has all but evaporated from our lives, l",
    "pre": 2.0
   },
   {
-   "id": "530eaa08afbc98c4",
+   "id": "bede548f512c8e9f",
    "canal": "The Guardian",
-   "titulo": "Trump, Nvidia and power: could we be nearing the end of tech’s Gilded Age?",
-   "link": "https://www.theguardian.com/technology/2026/nov/24/trump-nvidia-gilded-age",
-   "imagem": "https://i.guim.co.uk/img/media/ff56fa52c937e43cf50c68e8e45bc1f53dfcba5a/688_0_6880_5504/master/6880.jpg?width=140&quality=85&auto=format&fit=max&s=867721205df12e4dff5d79250316677f",
-   "publicado_em": "2026-11-24T08:00:11+00:00",
-   "resumo": "Oligarchs believe they’re untouchable – the blue wave offers hope that the rampant corruption of the Trump era may soon be over Nvidia staff: what do you think of Jensen Huang’s return as chief executive? One can imagine high-fives all around Nvidia’s boardroom after the board reinstated Jensen Huang to the CEO suite. The market gave the move a fat thumbs-up, boosting Nvidia’s share price by about",
+   "titulo": "‘It’s been really a mess’: Meta insiders concerned over push to AI content moderation",
+   "link": "https://www.theguardian.com/technology/2026/nov/25/meta-insiders-concerned-push-to-ai-content-moderation",
+   "imagem": "https://i.guim.co.uk/img/media/534fcd6f2a9a97fae39f19c96472abe6ec41e0b9/0_819_3766_3013/master/3766.jpg?width=140&quality=85&auto=format&fit=max&s=632f0b0606f2a8be0dc94de85ed6a7ee",
+   "publicado_em": "2026-11-25T07:00:08+00:00",
+   "resumo": "Several employees say rapid speed at which algorithms work means mistakes can happen at greater scale Meta employees have expressed concern at the company’s push to replace human moderators with artificial intelligence, claiming the technology is leading to mistakes with the potential for sweeping political consequences. The social media company, which owns Facebook and Instagram, has been experim",
    "pre": 2.0
   },
   {
-   "id": "373c1cc837029028",
+   "id": "494939b7d9505bf7",
    "canal": "The Guardian",
-   "titulo": "Is it true that … we only use 10% of our brains?",
-   "link": "https://www.theguardian.com/lifeandstyle/2026/nov/23/is-it-true-we-only-use-10-per-cent-brain",
-   "imagem": "https://i.guim.co.uk/img/media/3dbb2a753af996af9aca0ec247769a138adb2223/0_0_2060_1648/master/2060.jpg?width=140&quality=85&auto=format&fit=max&s=614e6c88ab7fbb6ddcd6b24cbcdc1ba5",
-   "publicado_em": "2026-11-23T08:00:51+00:00",
-   "resumo": "The idea that we access a fraction of our cognitive potential goes back decades, but does medical science agree? This idea really bugs Dr Mary Spiller , senior lecturer in the University of East London’s Department of Psychology and Human Development, who’s shocked by how prevalent it remains, despite being untrue. Spiller says the myth’s origins can partly be traced to the work of William James, ",
+   "titulo": "Middle-aged women in England least likely to successfully quit smoking, study finds",
+   "link": "https://www.theguardian.com/society/2026/nov/25/middle-aged-women-quit-smoking-england-study",
+   "imagem": "https://i.guim.co.uk/img/media/ba552a1b57408ce45632af7702e5886772f0e0fb/354_0_2504_2004/master/2504.jpg?width=140&quality=85&auto=format&fit=max&s=610676c92f7ab90919ef3d20aab6b8c2",
+   "publicado_em": "2026-11-25T01:00:01+00:00",
+   "resumo": "Of nearly 8,000 women who tried to stop, only 18% of those aged 45 to 60 managed to give up Middle-aged women in England are the least likely to successfully give up smoking, according to research . Smoking is the leading cause of preventable death and illness in the UK. While overall smoking rates in England have declined in recent decades, rates in some regions have increased. About 6.75 million",
    "pre": 2.0
-  },
-  {
-   "id": "cd078dd643252a99",
-   "canal": "The Guardian",
-   "titulo": "CEO of funding agency for UK science and research criticised by union over cuts",
-   "link": "https://www.theguardian.com/education/2026/nov/22/prospect-union-leader-uk-funding-agency-science-research-ukri",
-   "imagem": "https://i.guim.co.uk/img/media/9350c277cd73ad7cf6c87f3b2d28a0d673278d82/1297_0_7200_5760/master/7200.jpg?width=140&quality=85&auto=format&fit=max&s=c8366ae3c1a6cdb0ed17451e19d541ff",
-   "publicado_em": "2026-11-22T12:00:28+00:00",
-   "resumo": "Exclusive: Prospect’s Mike Clancy tells Ian Chapman at UKRI that union has ‘lost confidence’ in his leadership A trade union that counts scientists and engineers among its members says it has lost confidence in the leader of the UK’s national funding agency for science and research, citing concerns about plans for major cuts. The letter from Mike Clancy, the general secretary of Prospect, to Ian C",
-   "pre": 2.0
-  },
-  {
-   "id": "6f6874e5642cd01b",
-   "canal": "The Guardian",
-   "titulo": "Life expectancy in Cuba falls for first time since 1950 amid economic crisis",
-   "link": "https://www.theguardian.com/world/2026/nov/24/cuba-life-expectancy-decline",
-   "imagem": "https://i.guim.co.uk/img/media/3b11d19a0b33be33833eb4b1d5b03400462e0fcb/799_0_4001_3200/master/4001.jpg?width=140&quality=85&auto=format&fit=max&s=b2a835ed36b4131c0a7af3d9f5794987",
-   "publicado_em": "2026-11-24T19:07:26+00:00",
-   "resumo": "WHO chief says life expectancy has fallen from 78.8 years in 2020 to 74.4 in 2025, figures that predate US fuel blockade Life expectancy has fallen for the first time in Cuba since 1950 as the island reels from a severe economic crisis, the head of the World Health Organization (WHO) said on Tuesday. On a visit to Havana, WHO chief Tedros Adhanom Ghebreyesus said life expectancy had fallen from 78",
-   "pre": 1.0
-  },
-  {
-   "id": "aa1c513ae4d86d90",
-   "canal": "Fox News Health",
-   "titulo": "Iconic MTV star turns 60, shares her no-guilt approach to fitness, food and aging well",
-   "link": "https://www.foxnews.com/health/iconic-mtv-star-turns-60-shares-no-guilt-approach-fitness-food-aging-well",
-   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/11/931/523/daisy-fuentes-split.jpg?ve=1&tl=1",
-   "publicado_em": "2026-11-22T13:00:58+00:00",
-   "resumo": "Daisy Fuentes shares her 20-minute strength training routine, menopause sleep tips and the guilt-free \"anti-hustle era\" that keeps her strong at 60.",
-   "pre": 12.0
   },
   {
    "id": "0b2d9ac78680a5ed",
@@ -410,6 +390,26 @@
    "publicado_em": "2026-11-22T20:30:36+00:00",
    "resumo": "A PLOS One study of 3,287 US adults with heart disease links sleeping nine or more hours to a 51% higher risk of all-cause mortality over 15 years.",
    "pre": 5.0
+  },
+  {
+   "id": "80f9b58d857c9bed",
+   "canal": "Fox News Health",
+   "titulo": "How skipping breakfast to save room for dinner shocks your blood sugar and metabolism",
+   "link": "https://www.foxnews.com/health/skipping-breakfast-save-room-dinner-shocks-blood-sugar-metabolism",
+   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/11/931/523/woman-refusing-breakfast.jpg?ve=1&tl=1",
+   "publicado_em": "2026-11-25T11:00:16+00:00",
+   "resumo": "Dietitian Gabrielle Kishner warns that skipping breakfast before Thanksgiving causes blood sugar crashes, carb cravings and overeating at the holiday meal.",
+   "pre": 4.0
+  },
+  {
+   "id": "3004365901897691",
+   "canal": "Fox News Health",
+   "titulo": "Popular actor says bladder cancer discovery followed one strange bathroom symptom",
+   "link": "https://www.foxnews.com/health/popular-actor-says-bladder-cancer-discovery-followed-strange-bathroom-symptom",
+   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/11/931/523/jonathan-frakes-hallmark-channel-event.jpg?ve=1&tl=1",
+   "publicado_em": "2026-11-24T20:33:08+00:00",
+   "resumo": "Jonathan Frakes says the sight of pink urine led to a cystoscopy and a high-grade non-muscle-invasive bladder cancer diagnosis caught in time.",
+   "pre": 3.0
   },
   {
    "id": "7352177aa8c4d067",
@@ -442,6 +442,16 @@
    "pre": 2.0
   },
   {
+   "id": "b4a2f7852d62ba77",
+   "canal": "Fox News Health",
+   "titulo": "FDA approves first new breast cancer hormone therapy in over two decades",
+   "link": "https://www.foxnews.com/health/fda-approves-first-new-breast-cancer-hormone-therapy-over-two-decades",
+   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/01/931/523/breast-cancer-patient-survivor.jpg?ve=1&tl=1",
+   "publicado_em": "2026-11-25T00:14:19+00:00",
+   "resumo": "Genentech says its oral drug Wilserdly reduced recurrence or death risk by 30% compared to standard endocrine therapy in the Phase III lidERA breast cancer trial.",
+   "pre": 1.0
+  },
+  {
    "id": "1f9352d445725272",
    "canal": "Fox News (ciência, tech e esporte)",
    "titulo": "Google AI smartwatch could flag high blood pressure",
@@ -452,14 +462,14 @@
    "pre": 3.5
   },
   {
-   "id": "17642ca560f60ce7",
+   "id": "88c1b4fa7f06108a",
    "canal": "Fox News (ciência, tech e esporte)",
-   "titulo": "FDA clears tiny surgical robot to remove bladder tumors",
-   "link": "https://www.foxnews.com/tech/fda-clears-tiny-surgical-robot-remove-bladder-tumors",
-   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/11/931/523/fda-clears-surgical-robot-bladder-tumors.jpg?ve=1&tl=1",
-   "publicado_em": "2026-11-22T17:32:22+00:00",
-   "resumo": "The FDA-authorized Virtuoso Endoscopy System uses needle-sized robotic arms to remove bladder tumors intact, helping pathologists assess detrusor muscle.",
-   "pre": 2.1
+   "titulo": "Joel Klatt's CFP Reaction: Does Indiana Still Have CFP Path? Klatt's Playoff Tiers",
+   "link": "https://www.foxnews.com/sports/joel-klatts-college-football-playoff-reaction-does-indiana-still-have-cfp-hopes-alabama-ucla-georgia",
+   "imagem": "https://a57.foxnews.com/statics.foxsports.com/www.foxsports.com/content/uploads/2026/11/931/523/cfpthumb1124_updated.jpg?ve=1&tl=1",
+   "publicado_em": "2026-11-25T04:49:21+00:00",
+   "resumo": "Alabama, UCLA both fall and Indiana's College Football Playoff path might be over after the fourth CFP rankings of the season.",
+   "pre": 0.7
   },
   {
    "id": "80f040c730799f46",
@@ -489,16 +499,6 @@
    "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2025/12/931/523/hacker-photo-1.jpg?ve=1&tl=1",
    "publicado_em": "2026-11-23T11:25:17+00:00",
    "resumo": "The FBI warns the ARTEX AI hacking tool can give criminals privileged access in under three hours, targeting Microsoft 365 and financial firms.",
-   "pre": 0.7
-  },
-  {
-   "id": "7307f64ac9b74f65",
-   "canal": "Fox News (ciência, tech e esporte)",
-   "titulo": "What really happens when you need help restoring your identity",
-   "link": "https://www.foxnews.com/tech/what-really-happens-when-you-need-help-restoring-your-identity",
-   "imagem": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/04/931/523/social-security-fraud-001.jpg?ve=1&tl=1",
-   "publicado_em": "2026-11-22T14:43:41+00:00",
-   "resumo": "Identity theft restoration involves credit freezes, fraud alerts and disputing fraudulent records. Here's how the recovery process works, step by step.",
    "pre": 0.7
   },
   {
@@ -532,6 +532,16 @@
    "pre": 1.0
   },
   {
+   "id": "9e12e1e1bd54e7bf",
+   "canal": "The Art Newspaper",
+   "titulo": "Van Gogh's record-breaking 'Blossoming Chestnut Trees': the $190m sale and the restitution claim that nearly upended it",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRFhGQ0tFWG1DeU5MbTdKNGRNdWpRMHpWTkZUTnJ3NjhmZ21VWi03aXd4OTU2OXVVTTNBQ0V5a25rbXc1ZGlWQmRqM3p6bjFKOWpQb095cGZXN2gwNU5Mcko5QkpQWmFUVDFzSFAxNjh3QWZpNUhITVhEOVBTSElUbEVKaWRFbW9CM1ZZeFlDYnNTUm9KVEloLTlNblFRd2N3SHNocjFqTkI0andwakppR3dqUlZYTVB0Mk1OYnVsUjQ5ZC1ISGVNZjdaeV9YaEE?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-20T11:57:32+00:00",
+   "resumo": "Van Gogh's record-breaking 'Blossoming Chestnut Trees': the $190m sale and the restitution claim that nearly upended it The Art Newspaper",
+   "pre": 1.0
+  },
+  {
    "id": "32c566fa0f576309",
    "canal": "The Art Newspaper",
    "titulo": "Van Gogh’s record-breaking ‘Blossoming Chestnut Trees’: the $190m sale and the restitution claim that nearly upended it",
@@ -542,24 +552,44 @@
    "pre": 1.0
   },
   {
-   "id": "690d2edfa4108f5a",
+   "id": "9c64a3b6c458f730",
    "canal": "The Art Newspaper",
-   "titulo": "Does international art sell in India? Dealers at Art Mumbai encounter deep pockets but local tastes",
-   "link": "https://www.theartnewspaper.com/2026/11/18/does-international-art-sell-in-india-dealers-at-art-mumbai-encounter-deep-pockets-but-local-tastes",
-   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/feb9fe580208bcbef86311de0df8a6394f15738d-3452x2302.jpg?w=140",
-   "publicado_em": "2026-11-18T16:25:39+00:00",
-   "resumo": "The fair's fourth edition proved successful for India's top galleries, while those bringing subtler works or lesser-known names struggled",
-   "pre": 1.0
+   "titulo": "A brush with... Zanele Muholi—podcast",
+   "link": "https://www.theartnewspaper.com/2026/11/25/a-brush-with-zanele-muholipodcast",
+   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/e9da3b762588eeb1ef853826130e848e8e0ea6e6-3024x4032.jpg?w=140",
+   "publicado_em": "2026-11-25T13:06:52+00:00",
+   "resumo": "It’s our 150th episode and in this podcast, Zanele Muholi talks to Ben Luke about their influences—from writers to musicians, and, of course, other artists—and the cultural experiences that have shaped their life and work",
+   "pre": 0.5
   },
   {
-   "id": "58d80b9c3570d497",
+   "id": "dd25566f9661b5ef",
    "canal": "The Art Newspaper",
-   "titulo": "Harvard museum returns human remains to Brazil",
-   "link": "https://www.theartnewspaper.com/2026/11/17/harvard-museum-returns-human-remains-brazil",
-   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/d87c954a8676934a5ce3d5043115c482adabfeee-1920x2569.jpg?w=140",
-   "publicado_em": "2026-11-17T20:18:16+00:00",
-   "resumo": "The remains of a man and a woman, both thought to have been enslaved, were in the collection of the Peabody Museum of Archaeology and Ethnology for more than 150 years",
-   "pre": 1.0
+   "titulo": "Tate Liverpool to reopen with Surrealism survey after two-year delay",
+   "link": "https://www.theartnewspaper.com/2026/11/25/tate-liverpool-announces-reopening-following-two-year-delay",
+   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/be4881a444c9a4f2142aac1d1750c4fbd19ba995-2967x2182.jpg?w=140",
+   "publicado_em": "2026-11-25T13:06:00+00:00",
+   "resumo": "The autumn 2027 reopening will also include a retrospective of work by Chila Kumari Singh Burman and a major commission by Asad Raza",
+   "pre": 0.5
+  },
+  {
+   "id": "88d732c63613ace7",
+   "canal": "The Art Newspaper",
+   "titulo": "Thelma Golden will step down as leader of the Studio Museum in Harlem after 21 years",
+   "link": "https://www.theartnewspaper.com/2026/11/25/studio-museum-harlem-director-thelma-golden-to-step-down",
+   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/516d2d0bda0cf44ccdfe5439d4136838facbb972-2000x1334.jpg?w=140",
+   "publicado_em": "2026-11-25T10:33:04+00:00",
+   "resumo": "The director and chief curator, who first worked at the institution as an undergrad intern, has raised its profile internationally, and oversaw a $322m campaign and major expansion",
+   "pre": 0.5
+  },
+  {
+   "id": "fe2ae1c0e17aeb3d",
+   "canal": "The Art Newspaper",
+   "titulo": "Frida Kahlo-inspired health initiative and Ukrainian veterans exhibition among winners of prize celebrating innovative cultural projects",
+   "link": "https://www.theartnewspaper.com/2026/11/24/frida-kahlo-inspired-health-initiative-ukrainian-veterans-exhibition-among-winners-art-explora-awards",
+   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/86a874cc2021a73f66fdb593d239874b4651fc5d-5102x3406.jpg?w=140",
+   "publicado_em": "2026-11-24T20:30:00+00:00",
+   "resumo": "Five non-profit cultural organisations from across Europe have won the 2026 Art Explora awards, enjoying a share of €180,000 in total prize funds",
+   "pre": 0.5
   },
   {
    "id": "52e8a984148cddf4",
@@ -572,44 +602,24 @@
    "pre": 0.5
   },
   {
-   "id": "45f0287dbba922a1",
-   "canal": "The Art Newspaper",
-   "titulo": "‘I want the experiences I had to be available forever’: arts figures and scientists hit out at proposed job cuts at Tasmanian Museum and Art Gallery",
-   "link": "https://www.theartnewspaper.com/2026/11/23/arts-figures-scientists-hit-out-at-proposed-job-cuts-tasmanian-museum-and-art-gallery",
-   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/a060646c820ca089dfedc4b3a99892a25181e1bc-1280x698.jpg?w=140",
-   "publicado_em": "2026-11-23T13:00:24+00:00",
-   "resumo": "Scientists, a former Tasmanian premier and the director of Hobart’s Museum of Old and New Art have all expressed concerns over the state government’s proposals",
-   "pre": 0.5
-  },
-  {
-   "id": "bdb43a40814f8aff",
-   "canal": "The Art Newspaper",
-   "titulo": "Conservation of the ‘Sistine Chapel of the Andes’ nears completion",
-   "link": "https://www.theartnewspaper.com/2026/11/20/bolivia-church-sistine-chapel-andes-conservation-nearly-complete",
-   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/68c7a0c06c2861d5b6a3dab2f7705445cd98fd14-1400x933.jpg?w=140",
-   "publicado_em": "2026-11-20T21:13:19+00:00",
-   "resumo": "Famous for its murals, the Bolivian church of Santiago de Curahuara de Carangas has undergone restoration work on its roofs, buttresses and walls",
-   "pre": 0.5
-  },
-  {
-   "id": "9cb319d0a050b35a",
-   "canal": "The Art Newspaper",
-   "titulo": "National Gallery of Canada receives major gift of modern and contemporary glass art",
-   "link": "https://www.theartnewspaper.com/2026/11/20/national-gallery-canada-glass-art-gift-endowment-bronfman-family",
-   "imagem": "https://cdn.sanity.io/images/cxgd3urn/production/2907470baf472524e1079f0c8f6cb04928a04180-2000x2000.jpg?w=140",
-   "publicado_em": "2026-11-20T17:00:00+00:00",
-   "resumo": "A promised donation of 56 glass works from the Bronfman family, accompanied by an endowment for a new curatorial position, marks a significant expansion of the museum’s decorative arts holdings",
-   "pre": 0.5
-  },
-  {
-   "id": "22d7270e7a589d95",
+   "id": "ddad6bd46fa1aff8",
    "canal": "MIT Technology Review",
-   "titulo": "Raising the stakes for enterprise networks with AI modernization",
-   "link": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
-   "imagem": "https://wp.technologyreview.com/wp-content/uploads/2026/11/TataSocialCard-1200v3.png?resize=1200,600",
-   "publicado_em": "2026-11-24T15:15:16+00:00",
-   "resumo": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an estimated 450% more network traffic than the same tasks done by human workers. As…",
-   "pre": 1.6
+   "titulo": "How data centers are driving a US natural-gas boom",
+   "link": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/",
+   "imagem": "https://wp.technologyreview.com/wp-content/uploads/2026/11/261124_RichlandParishDataCenter.jpg?resize=1200,600",
+   "publicado_em": "2026-11-25T17:00:00+00:00",
+   "resumo": "In May 2025, my colleague David Rotman wrote a feature story describing how AI could keep us dependent on natural gas. Just 18 months later, I’ve lost count of how many times he’s already been proved right. Sure, it’s technically possible to meet the world’s rising electricity demand with other power sources, including renewables like…",
+   "pre": 0.8
+  },
+  {
+   "id": "79d027e2e048db81",
+   "canal": "MIT Technology Review",
+   "titulo": "The Download: AI swamping open records, and firefighting for permafrost",
+   "link": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/",
+   "imagem": "https://wp.technologyreview.com/wp-content/uploads/2026/11/loc-sales2a.jpg?resize=1200,600",
+   "publicado_em": "2026-11-25T13:10:00+00:00",
+   "resumo": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI is straining America’s open records systems AI has intensified investors’ interest in public records. Over the last few years, venture-backed startups have raised upwards of $100 million to collect data…",
+   "pre": 0.8
   },
   {
    "id": "9f04eb00d9b24339",
@@ -642,16 +652,6 @@
    "pre": 0.8
   },
   {
-   "id": "4a7fdd933ff1d56d",
-   "canal": "Wired",
-   "titulo": "Alo Discount Code: 20% Off November 2026",
-   "link": "https://www.wired.com/story/alo-yoga-discount-code/",
-   "imagem": "https://media.wired.com/photos/67b63b98fb14553f0ebd9ffd/master/pass/WIRED-Coupons-R2_15.png",
-   "publicado_em": "2026-11-24T06:00:00+00:00",
-   "resumo": "Refresh your workout wardrobe. Save on buttery-soft leggings, chic streetwear, and activewear essentials with verified Alo Yoga discount codes, free shipping, and loyalty program perks.",
-   "pre": 2.8
-  },
-  {
    "id": "7e1434396ffa688e",
    "canal": "Wired",
    "titulo": "Now There’s a GLP-1 in Chocolate Form",
@@ -660,6 +660,26 @@
    "publicado_em": "2026-11-24T11:30:00+00:00",
    "resumo": "A telehealth clinic is offering orforglipron, the active ingredient in Eli Lilly’s prescription weight-loss pill Foundayo, in edible chocolate squares. Lilly is not amused.",
    "pre": 2.1
+  },
+  {
+   "id": "c1d874f7065576bb",
+   "canal": "Wired",
+   "titulo": "The Iowa Lead Detonation Happened. Now the Real Work Begins to Study It",
+   "link": "https://www.wired.com/story/iowa-lead-detonation-real-monitoring-work-begins/",
+   "imagem": "https://media.wired.com/photos/6b070bb9c3af37e5a5192585/master/pass/GettyImages-2306835116.jpg",
+   "publicado_em": "2026-11-25T18:38:12+00:00",
+   "resumo": "Early results indicate minimal signs of lead in the environment, though it will take days for more rigorous testing.",
+   "pre": 1.4
+  },
+  {
+   "id": "82ec994589c72b0d",
+   "canal": "Wired",
+   "titulo": "Noom Promo Codes: 50% Off Best Deals for November 2026",
+   "link": "https://www.wired.com/story/noom-promo-code/",
+   "imagem": "https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png",
+   "publicado_em": "2026-11-25T06:00:00+00:00",
+   "resumo": "Discover the best ways to save on Noom subscriptions, including free trials, limited-time offers for GLP-1Rx Plus, and essential tips for redeeming your Noom discount.",
+   "pre": 1.4
   },
   {
    "id": "1a4db0a69568f791",
@@ -672,14 +692,14 @@
    "pre": 1.4
   },
   {
-   "id": "f722247dbde4b133",
+   "id": "f1d12a18d603ec12",
    "canal": "Wired",
-   "titulo": "Layla Sleep Coupon: Save Up to $600 in November 2026",
-   "link": "https://www.wired.com/story/layla-sleep-coupon/",
-   "imagem": "https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png",
-   "publicado_em": "2026-11-24T06:00:00+00:00",
-   "resumo": "Upgrade your sleep setup with the latest Layla promo codes. Save on flippable mattresses, copper-infused pillows, and adjustable bases in November 2026.",
-   "pre": 1.4
+   "titulo": "Klook Promo Code: 20% Off November 2026",
+   "link": "https://www.wired.com/story/klook-promo-code/",
+   "imagem": "https://media.wired.com/photos/67b63b909468ebbf8f0cbc77/master/pass/WIRED-Coupons-R2_8.png",
+   "publicado_em": "2026-11-25T06:00:00+00:00",
+   "resumo": "Maximize your travel budget with our expert guide to finding Klook coupons, app-exclusive deals, and payment discounts on tours, hotels, and transport.",
+   "pre": 0.7
   },
   {
    "id": "20074569b7fa1cf3",
@@ -689,26 +709,6 @@
    "imagem": "https://media.wired.com/photos/6b04d279470266bfec0ce812/master/pass/Be-the-Friend-Who-Gives-the-Good-Gifts.jpg",
    "publicado_em": "2026-11-24T12:03:00+00:00",
    "resumo": "These are the WIRED-tested gadgets, kitchen tools, and cozy comforts I’d actually buy for my own inner circle.",
-   "pre": 0.7
-  },
-  {
-   "id": "5157fbab3758c571",
-   "canal": "Wired",
-   "titulo": "GPS Dog Collar for Less: Fi Black Friday Sale (2026)",
-   "link": "https://www.wired.com/story/fi-pet-trackers-deal-11-2026/",
-   "imagem": "https://media.wired.com/photos/6b04df229ef0144d4a1179b7/master/pass/Our-Favorite-Pet-Trackers-Are-Half-Off-for-Black-Friday.jpg",
-   "publicado_em": "2026-11-24T11:15:00+00:00",
-   "resumo": "Get Fi’s lineup of GPS and health trackers for cats and dogs at 50 percent off right now for Black Friday.",
-   "pre": 0.7
-  },
-  {
-   "id": "afd04ec842fbe6f4",
-   "canal": "Wired",
-   "titulo": "Chegg Coupon Codes November 2026: Save on Study, Textbooks, & More",
-   "link": "https://www.wired.com/story/chegg-coupon-code/",
-   "imagem": "https://media.wired.com/photos/66ea077015aa1d8092e99428/master/pass/WIRED-Coupons-6.jpg",
-   "publicado_em": "2026-11-24T06:00:00+00:00",
-   "resumo": "Unlock Chegg promo codes, student discounts, and free trials for Chegg Study and Chegg Writing.",
    "pre": 0.7
   },
   {
@@ -722,24 +722,64 @@
    "pre": 0.7
   },
   {
-   "id": "4cae423ce55f4124",
-   "canal": "Wired",
-   "titulo": "Scientists Tried to Kill This Dirt, but It Wouldn’t Die",
-   "link": "https://www.wired.com/story/scientists-tried-to-kill-this-dirt-but-it-wouldnt-die/",
-   "imagem": "https://media.wired.com/photos/6afec80a658c126f4fca9f94/master/pass/Abiotic-metabolism%20cr-Samuel%20Velasco-Lede.jpg",
-   "publicado_em": "2026-11-22T10:30:00+00:00",
-   "resumo": "Biologically important chemical reactions persisted in the sterilized soil for six years—offering clues to how life on Earth may have gotten its start.",
-   "pre": 0.7
+   "id": "2c039794ebdfd8cd",
+   "canal": "Metrópoles",
+   "titulo": "EUA atualiza diretrizes de colesterol e recomenda exames desde a infância",
+   "link": "https://www.metropoles.com/saude/eua-atualiza-diretrizes-de-colesterol-e-recomenda-exames-desde-a-infancia",
+   "imagem": "https://images.metroimg.com/2025/12/08181622/colesterol-alto-destaque.jpg",
+   "publicado_em": "2026-11-25T17:30:07+00:00",
+   "resumo": "Novas regras orientam medir a lipoproteína (a) ao menos uma vez na vida e avaliar o risco cardiovascular para iniciar o tratamento mais cedo",
+   "pre": 12.0
   },
   {
-   "id": "5d1ce13737d3e8be",
+   "id": "d3330e6d7e047ff3",
    "canal": "Metrópoles",
    "titulo": "Projeto verão: dieta restritiva e treino exagerado podem prejudicar a saúde",
-   "link": "https://www.metropoles.com/saude/projeto-verao-dieta-restritiva-e-treino-exagerado-podem-prejudicar-a-saude",
-   "imagem": "https://images.metroimg.com/2026/11/projeto-verao-metropoles.jpg",
-   "publicado_em": "2026-11-23T05:00:30+00:00",
-   "resumo": "Dietas restritivas e treino exagerado só no verão aumentam o risco de lesões, perda muscular e alterações hormonais e metabólicas",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNd05kU3RJdkxraExWdU85MFFoQ0V1b2t1cjhRbkNSSmI2dzlWcFZoa2tqTGN5NzFtTXdia2pCeno1S1A4anV5ckJvSHZ2VFg4dXo1ZEZFSTd3ZFhJbGNwR2dGTEZ4bWhyOXItMnpTa1ctZmhMTmV5Qnlka3prZG1FZnhlbE8yZEhYMjEweGhKWWhuY25rVGlVNnUwUEhsa1U3RmNzTUI2RnlfTmc?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-23T05:00:00+00:00",
+   "resumo": "Projeto verão: dieta restritiva e treino exagerado podem prejudicar a saúde Metrópoles",
    "pre": 8.0
+  },
+  {
+   "id": "53b774d732f703db",
+   "canal": "Metrópoles",
+   "titulo": "Saúde de Goiás anuncia canetas emagrecedoras gratuitas para jovens no SUS",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMEZWQ2ZjTkJPZUo0LW5Uc3RodGxYSG9IUlcwYU9rdkhXYVBmcjBxcUh2TmM1OU1MUUtXUkxENHk3RzJjVFFIeU1CcWxtTWptM3RxTnlpSkwxRm15eTZWUzA0RHl4VzZubklRSUFQcDRtSndUaDEtYk1EdnAyMm4tU251YkktcmppcWdSOXFEUmR6WnEwTlhLd1dnZlBGRTAtUk5FelZZOTZ2c05EN3J3OGhVUzFaOExfaHB2X09mUWYyVmM?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T11:07:00+00:00",
+   "resumo": "Saúde de Goiás anuncia canetas emagrecedoras gratuitas para jovens no SUS Metrópoles",
+   "pre": 5.0
+  },
+  {
+   "id": "9dd12b79e72b75cc",
+   "canal": "Metrópoles",
+   "titulo": "Violência constante pode manter cérebro em alerta e afetar memória e emoção",
+   "link": "https://www.metropoles.com/saude/violencia-constante-pode-manter-cerebro-em-alerta-e-afetar-memoria-e-emocao",
+   "imagem": "https://images.metroimg.com/2026/11/violencia-contra-a-mulher.jpg",
+   "publicado_em": "2026-11-25T05:00:23+00:00",
+   "resumo": "Exposição contínua à violência pode alterar o cérebro, prejudicar a memória, o sono, as decisões e elevar riscos à saúde mental em mulheres",
+   "pre": 5.0
+  },
+  {
+   "id": "94b986ccfd95da7c",
+   "canal": "Metrópoles",
+   "titulo": "Justiça revoga prisão de homem acusado de se masturbar em academia de SP",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNlU1eklMUWc5UlRVQUJnM3Z5TXVSd3Yzc0doWXFuNmFESDI0QlFzQ0t2YjJCQ3hmaFVadXZRYmxXRXNkWEhQa0s3My1tNnFfODZEM0tmZjRtbTI1alhPZWQzdkU3V1BIdzgzRlh2cDAxWDZkWkdidGljSzhFQ1FrUmJvOHZ3U3VGQ0tGTGpzNmE1OS1iRi13TXQ1TjdhMy1nLTI5c1ZYdWRWeTRVSHc?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T02:14:00+00:00",
+   "resumo": "Justiça revoga prisão de homem acusado de se masturbar em academia de SP Metrópoles",
+   "pre": 3.0
+  },
+  {
+   "id": "7e97cde935012576",
+   "canal": "Metrópoles",
+   "titulo": "Pesquisa revela como o cérebro prepara as palavras antes da fala",
+   "link": "https://www.metropoles.com/saude/pesquisa-revela-como-o-cerebro-prepara-as-palavras-antes-da-fala",
+   "imagem": "https://images.metroimg.com/2026/11/cerebro-fala-metropoles.jpg",
+   "publicado_em": "2026-11-24T23:34:52+00:00",
+   "resumo": "Estudo revela que o cérebro gera um rascunho da palavra antes dela ser falada, desafiando a ideia de sistemas isolados para ouvir e falar",
+   "pre": 3.0
   },
   {
    "id": "8708c24b0b75c919",
@@ -772,64 +812,14 @@
    "pre": 3.0
   },
   {
-   "id": "4c9e85b4274523fe",
+   "id": "d0e62c0edf7f37b7",
    "canal": "Metrópoles",
-   "titulo": "Richard Rasmussen nega internação por overdose de Mounjaro",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRGJHOVBtZ1VOeWdzaXROdHY1MG9sMTYzenRFT3N4WWwxSHQ3LVB4MGdNQkdKeXhZeVg5THlYWHNaOWttQjBYejN5aFJ3LVl1VzdINHBtaW1wREZpczQ2NUVQUEZVZWRhbi1iekdWQlZnUFFKUVFmN0NMX01LXzB2VjEzMkpNNHhiRHhaS1NWT0ZHdGJ4SUEtZnpaSi12NUE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T14:14:00+00:00",
-   "resumo": "Richard Rasmussen nega internação por overdose de Mounjaro Metrópoles",
+   "titulo": "Caso Rasmussen: superdosagem de Mounjaro pode exacerbar efeitos colaterais",
+   "link": "https://www.metropoles.com/saude/caso-rasmussen-superdosagem-de-mounjaro-pode-exacerbar-efeitos-colaterais",
+   "imagem": "https://images.metroimg.com/2026/11/richard-rasmussen.jpg",
+   "publicado_em": "2026-11-25T17:22:45+00:00",
+   "resumo": "Biólogo tomou duas canetas de Mounjaro com dois dias de intervalo. Rasmussen diz ter esquecido aplicação prévia do medicamento",
    "pre": 2.0
-  },
-  {
-   "id": "f987e000198ead34",
-   "canal": "Metrópoles",
-   "titulo": "Ícaro, dupla de Gilmar, comemora melhora em lesão na perna: \"Milagre\"",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNmNxV1pTUmt6MzVMSHpFZzA5N3hkOC02c25kdE9aeG1yUWlmV1ctbk9laUhvcnUtSU9wWmFXN1pibzl1aFc0alZkTjRtLWN2U1VQZmkwNEVwVjg3RUtsYUdsajZKc3dCaXI2NDBTLXFFOFdrTHU5d1Nqc1hMeVB1YTJpNzVtS1ZhOEdhbEk1RjhtT21jWnkwNlZUMnd0TjFSM2R4anh6bw?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T10:08:00+00:00",
-   "resumo": "Ícaro, dupla de Gilmar, comemora melhora em lesão na perna: \"Milagre\" Metrópoles",
-   "pre": 2.0
-  },
-  {
-   "id": "1f3e9e8585e13ecd",
-   "canal": "Metrópoles",
-   "titulo": "Diabetes tipo 2 está ligada a maior risco de câncer em homens e mulheres",
-   "link": "https://www.metropoles.com/saude/diabetes-tipo-2-esta-ligada-a-maior-risco-de-cancer-em-homens-e-mulheres",
-   "imagem": "https://images.metroimg.com/2025/11/26160404/diabetes-tipo-2.jpg",
-   "publicado_em": "2026-11-22T14:18:43+00:00",
-   "resumo": "Na Dinamarca, a incidência de câncer foi 12% maior entre homens com diabetes e 22% maior entre mulheres com a doença metabólica",
-   "pre": 2.0
-  },
-  {
-   "id": "b0c8905c184a1671",
-   "canal": "Metrópoles",
-   "titulo": "Além da estética, silicone em homens pode restaurar a anatomia corporal",
-   "link": "https://www.metropoles.com/saude/alem-da-estetica-silicone-em-homens-pode-restaurar-a-anatomia-corporal",
-   "imagem": "https://images.metroimg.com/2026/11/silicone-masculino.jpg",
-   "publicado_em": "2026-11-22T05:00:52+00:00",
-   "resumo": "Indicação do silicone para homens deve ser feita por um profissional e leva em consideração alterações anatômicas, congênitas ou adquiridas",
-   "pre": 2.0
-  },
-  {
-   "id": "e20b51daf2a83f97",
-   "canal": "Metrópoles",
-   "titulo": "Presos recebem atendimento médico após motim em penitenciária de Tremembé",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMXUxYjdSYzdmTUswWDVsMVMtYXNMTHZNVDZtc3puQ3p1czc1NmpONTZYNjdTZTNIalFzNHZxX2tDeWc4NjlyVWpPSGFZZHM3TVBwN0lCRGpEZ2V4bTUtNmpFRzhLMmZ0NWl5MUVTOXNnVWk2QnB0SzRoR0hRcWMxdkxpbjh5YTBSSWk0M1lMS3MtUmdXdnFPc1pxVzZsaUY1U2hGNFloM2s?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T19:11:00+00:00",
-   "resumo": "Presos recebem atendimento médico após motim em penitenciária de Tremembé Metrópoles",
-   "pre": 1.0
-  },
-  {
-   "id": "be9cae7d78bdc247",
-   "canal": "Metrópoles",
-   "titulo": "Sem previsão de alta: veja boletim com atualização da saúde de Bolsonaro",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd3l2TUQxRE9iVUlxUXVTZEh3TGFOa1IwVEtxSjJxcDZwNGtBcENyLThnVFBwR0lDdUNYZ0U0c0tpeXd4LTVTSG1vdVl0cWFfTWFMdGJIMkF2NThjOHNFRmNlNk9jNjNJdDVDWXdrelpDYlhFeE0wUG1uajk1Tkl2YVpBTmdDTDJIVEJLdXRJOFhqYWs2aFRvRDZTZjhQNF9JejhmbGF0UTg?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T17:49:00+00:00",
-   "resumo": "Sem previsão de alta: veja boletim com atualização da saúde de Bolsonaro Metrópoles",
-   "pre": 1.0
   },
   {
    "id": "d2c4181afdbeb779",
@@ -842,14 +832,34 @@
    "pre": 4.4
   },
   {
-   "id": "502b61c31dc1d297",
+   "id": "d43ae3c18bc5aa9c",
    "canal": "g1 Saúde",
-   "titulo": "Por que grande parte da fibra que seu corpo precisa acaba no lixo (e como aproveitá-la melhor em suas refeições)",
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPWVRKTVFfeXRVb1d0OU5adXdwd2FyUUZOSmxPLVZCYUpjaG56eHpfUkRZUUxVRHNxbWtxemtVaS1QY09WLXB1NWpFMFN1dzdmcm0wdHV2alZHd05XUEJLeTFQdEVMUUJtUlpVaGtOYlhaQThWNVdrNGVTWGc5R0todTMzMDdvaWgwOVJZR0EyNWVBSGNwM0g0R0xpbE5nSTlnLUxRRkZBbTc2QkNfSVBieGFkOXdjSkliUGpGWkdNLU9zXzJxV0VxdjlDUWFreWZmRHpUVUJDdWphSXRoNlZGcERRQUFzZnN2TnlJMV81RDFzQlps0gGDAkFVX3lxTE9BZXkxSWJzS1NXbmJPbUFwbkNIeGthUkdHbUZwcmhiNFNmTFhQdE15S3hvOERHWlhCSU9idnVyb3ltWk0xQVpqUk5GS3ZZajhWMTFVZ3lxSEpNLXU0UG9KWEl3eUc3TGxrd3lGeVF1RTQ2aTlMdHZrUGx1SDdNaDlVLV8xWkZIWEF5cUFjNkdmZW54enIwanlNelNGcEtCRmRQeTlWTWpJM25XT1poVEJfazVBcTZxRklJZTZ3NnJVMDU0S1JIVTdEc3lIdmowdFRMXzhzbGo0Mkt2VUxKVUJUUUVzZFMteUNTNUh5NGp4MXVvQ2tub1h5MFBMS0JfSHZxZDg?oc=5",
+   "titulo": "Anvisa proíbe anabolizantes sem registro, medicamentos falsificados e suplementos sem procedência; veja produtos",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObmZmVlc4Y0J0S1FuNlRyUlBlQ0lRV2tZX3RCQ2pRR3VpVzRHbVpTX0ZHRmxQYWtVZzdFaXZIUk5PVlNtNVp4S2NhRUZxSmVqWUs4c2xuWXV6X09NOXAzbExDQXU5NVJ6TDM2V2NzR29EMFNlbWVtMnpqd3lXclM1VjJacElDSGpicEpETVZWdVNDUU5HaGVtZHkwaGVXOUdfSk1zUl83MmxYOEFXalZTMG9VUFVlR3Z2bXl0Ny04OURrSUZ4TzF3YU9BQkd6cEdGSHc4dHVMVEI5NnBrSThaOGZEVGxYT3FWbk9ZV3FVZkViRzhK0gGDAkFVX3lxTE52VGhUS19lNk01NjVPUFkxa3FidUt2eVVQdEkwSUp1UmNBQkZqYjFfbklqZDVzUDA2TlhkR2dJSVdzTjhHcEhBRXFySTFscDZXUVB1OHVUdTJjVTlqUkhTSm1IUEgtbHJ3NW9HdHlfNTlVcU95endfQXdOemhhZUtGN0lyN1dTc3BKdVE2bl8xNjBIdmpTOFRaaFZhdEVZTENCRU5MZUlwbE03S1d5XzlxN1dBMTJtaXYyYmlJZUlnV1ZJNllES0pjOE5GTlk4Y01NbFRpSGhGSDY4UHZYb2pQN1VhakZkaTVfcTF0STlnTWdiWVMtZ05MR3Z4a1M1QkdOM2s?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-22T17:47:13+00:00",
-   "resumo": "Por que grande parte da fibra que seu corpo precisa acaba no lixo (e como aproveitá-la melhor em suas refeições) G1",
+   "publicado_em": "2026-11-25T09:40:34+00:00",
+   "resumo": "Anvisa proíbe anabolizantes sem registro, medicamentos falsificados e suplementos sem procedência; veja produtos G1",
    "pre": 2.2
+  },
+  {
+   "id": "4520276e195f2432",
+   "canal": "g1 Saúde",
+   "titulo": "Fluoxetina, escitalopram e duloxetina: estudo mostra diferenças na ação de antidepressivos",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWmNjd295WDRzX0huSE1qR2xSLWk3ZHFxcWxkVXNGNl9ocFBoZzRTTDFtSVZXTHBDdHZ4SkVkcE1XUG9qUE5DWW1qanFXZXJQUlNHQnNDQkFTZVBfN1gxb0VHTTUyTTItVGd0MHlVY0w4WDRSelFVUjBCQWpoU1A5LUZoTlBiRVVCclZBUE5xQ2hfTXBYN05WbjZmZV9RTGlCaGZQUWUwZzE0OXRSdUdia04wNkxJV1F2aDFlWTlXQVhsci1QekFFclYxNjVYUTBYUEJXc29XSdIB5gFBVV95cUxNMVczcnEzcXJxczA4MzI2bXRIRGxValRMYkZYSUx4UmtWRF9xZGd2TURQMmREMzc5cTZmWlFVTkUyUG5vY2haZ0RVOFJIQjNDSU9aTWMzbGVTcEp5Snh5eWRnbDN6R0dWdDV0dlpEZjFvSktDTU5tUFJ4cjBkMUp6WUdRTE5IcmVWUWFkRWpScUZ1MmV2R094Y2dJeU9QNWVObFBtR244ZW9kQzVSNXFiVDJEQmk5b3ZCbUpMQUFmdVVWUU5YMFNOTEF5cENGcFRVTFF2Mjhfa3VPMVRvb3BmMWZVdmZaQQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T07:00:56+00:00",
+   "resumo": "Fluoxetina, escitalopram e duloxetina: estudo mostra diferenças na ação de antidepressivos G1",
+   "pre": 1.1
+  },
+  {
+   "id": "c4fd14bd79cbc159",
+   "canal": "g1 Saúde",
+   "titulo": "Um em cada três jovens de 16 a 24 anos nunca fez sexo, mostra pesquisa britânica; no Brasil, adolescentes também estão adiando a primeira vez",
+   "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQMEV4d2YxVld1Nm9ER1owWE4zU2s4RjZEdnJBYnNvVy1fZ1g5LUdQT1EyOEZKQWh5UThtaDIwV3NIQkhVUDN5a1hoWWxhWkJrMHh6NWNDN005SnlheWtJelVhT0FkWFBfZXRKUmlDMEtRa09jcENxdUdYTXd1NUw1cFgxb1JwSnhpb1ZNYVZSb0FIdmpSX1JuZWpnbTA2M3V1Sk1fc3kyODdIMmNjUHlnbnJCNnpnQndyMVBvV2xPOE8wdjd5M1J2dVJaZng5Rm1LY2hWM1Zlc1hOVEZRZGJFdDVhWlBvZkQ2VVd5a2Fub0VMNUJ4TlZOUjVIay1ObUVNMVo1WC0yVDA2ZWRtelRiY2lBX29vWk1qRUHSAagCQVVfeXFMTm5nUzQwbEdhX2R4VzdLTDFTeXNvcXJUbTNJSlAyUnJmN1ZpSk5lUnV0MGZMM3NhbUNnTWx1MTRNVXA0MkFuaGtlcWxfZ3R2U1lndmtJeTgxYTQ4dTVBMVRRYkFMVjNnTExIaHVOZTBxVVhoU1lKbndwUmdVcmNmTVAxMV9pTGJvbklCU0NQUjRlTFREQkQyeXZPTEhRdmR2MnIxM0pWdURUUHhka2xPTjA2TUptcWUyeVQwQWhRbTlLRkN3Q0pEbE5OakZBczZHR2RhajAwazFORExBZkVwX1ZjbEVVczg4NUJQVmNwc3BxZlhpU2o1X2d4TWo0X1NRWDRoQ3lyVEZaSWU0OXZkdUUtR3Q0Y2d4NlNPeDlDbThtRDVDWTdDdjA?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T03:00:00+00:00",
+   "resumo": "Um em cada três jovens de 16 a 24 anos nunca fez sexo, mostra pesquisa britânica; no Brasil, adolescentes também estão adiando a primeira vez G1",
+   "pre": 1.1
   },
   {
    "id": "97a8034c39406025",
@@ -862,16 +872,6 @@
    "pre": 1.1
   },
   {
-   "id": "66d9c7e6f29015e8",
-   "canal": "Folha Equilíbrio",
-   "titulo": "Substâncias em uva, jabuticaba e berinjela podem beneficiar o coração",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/11/substancias-em-uva-jabuticaba-e-berinjela-podem-beneficiar-o-coracao.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2026/08/04/17858592776a720ccd622bd_1785859277_3x2_rt.jpg",
-   "publicado_em": "2026-11-22T00:00:00+00:00",
-   "resumo": "Além de acrescentar tons vermelhos, roxos e azuis em frutos e hortaliças, as antocianinas têm se destacado pelos efeitos cardioprotetores . Uma nova pesquisa, publicada no periódico científico American Journal of Clinical Nutrition , aponta associação entre o maior consumo dessas substâncias e um menor risco de males como infarto e hipertensão , além do diabetes tipo 2. Leia mais (11/21/2026 - 21h",
-   "pre": 9.9
-  },
-  {
    "id": "dd4d17e4e63db377",
    "canal": "Folha Equilíbrio",
    "titulo": "Controle rigoroso da pressão reduz complicações em pacientes após mini-AVC",
@@ -879,16 +879,6 @@
    "imagem": "https://f.i.uol.com.br/fotografia/2023/10/25/1698235603653904d3697a7_1698235603_3x2_rt.jpg",
    "publicado_em": "2026-11-23T14:00:00+00:00",
    "resumo": "A hipertensão é um dos principais fatores de risco para eventos cardiovasculares, inclusive os que atingem o cérebro. Quando não é controlada, pode danificar os vasos sanguíneos que irrigam o órgão, aumentar o risco de acidente vascular cerebral (AVC) e até contribuir para o declínio cognitivo. O cuidado é especialmente importante para prevenir novos episódios em quem já sofreu AVC isquêmico ou at",
-   "pre": 7.7
-  },
-  {
-   "id": "7cf9e4229c56fc7d",
-   "canal": "Folha Equilíbrio",
-   "titulo": "Resultados de canetas emagrecedoras em crianças pequenas dividem médicos sobre riscos",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/11/resultados-de-canetas-emagrecedoras-em-criancas-pequenas-dividem-medicos-sobre-riscos.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2026/11/19/17951113226aff399ae096e_1795111322_3x2_rt.jpg",
-   "publicado_em": "2026-11-21T21:00:00+00:00",
-   "resumo": "Novos resultados de um ensaio clínico mostraram que medicamentos para perda de peso são eficazes para crianças a partir dos 6 anos, abrindo caminho para mais prescrições e acendendo um debate sobre a melhor forma de tratar a obesidade infantil . Leia mais (11/21/2026 - 18h00)",
    "pre": 7.7
   },
   {
@@ -902,14 +892,34 @@
    "pre": 5.5
   },
   {
-   "id": "0abd7408e1d7013a",
+   "id": "bdfc5fde9578dcd4",
    "canal": "Folha Equilíbrio",
-   "titulo": "Anvisa avalia proibir clínicas de aplicarem canetas emagrecedoras de farmácias de manipulação",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/11/anvisa-avalia-proibir-clinicas-de-aplicarem-canetas-emagrecedoras-de-farmacias-de-manipulacao.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2026/11/05/17939091026aece16ecd07e_1793909102_3x2_lg.jpg",
-   "publicado_em": "2026-11-22T07:00:00+00:00",
-   "resumo": "A Anvisa (Agência Nacional de Vigilância Sanitária) pode proibir que clínicas vendam ou apliquem medicamentos de canetas emagrecedoras que tenham sido produzidos por farmácias de manipulação. Leia mais (11/22/2026 - 04h00)",
+   "titulo": "Black Friday reforça gatilhos de consumo e dificulta frear impulsos",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/11/black-friday-reforca-gatilhos-de-consumo-e-dificulta-frear-impulsos.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2020/11/20/16059086605fb838b407034_1605908660_3x2_rt.jpg",
+   "publicado_em": "2026-11-25T15:36:00+00:00",
+   "resumo": "A compra de um cosmético novo, a expectativa pela chegada de uma encomenda e a busca por promoções na internet começaram como uma forma de passar o tempo para a especialista em marketing e criadora de conteúdo Giovanna Barrant, de 29 anos. Em 2020, recém-formada e com os processos seletivos para iniciar a carreira suspensos devido à pandemia, ela encontrou nas pesquisas de produtos e nas compras o",
    "pre": 4.4
+  },
+  {
+   "id": "176b427587b933a9",
+   "canal": "Folha Equilíbrio",
+   "titulo": "Compartilhar 'derrotas do ano' vira moda nas redes sociais, mas exposição pede cautela",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/11/compartilhar-derrotas-do-ano-vira-moda-nas-redes-sociais-mas-exposicao-pede-cautela.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2026/11/24/17955513826b05f0966f146_1795551382_3x2_rt.jpg",
+   "publicado_em": "2026-11-25T02:00:00+00:00",
+   "resumo": "Quais foram os seus fracassos em 2026 ? Para alguns foi não conseguir economizar dinheiro ou ter um desempenho abaixo do esperado no trabalho. Para outros, os livros que ficaram por ler ou a rotina de exercícios que nunca engrenou. Nas redes sociais, essas e outras frustrações têm sido compartilhadas em uma nova trend, a de expor as derrotas do ano que se aproxima do fim. Leia mais (11/24/2026 - 2",
+   "pre": 4.4
+  },
+  {
+   "id": "0c20548197037b55",
+   "canal": "Folha Equilíbrio",
+   "titulo": "Contato com a natureza melhora bem-estar nas cidades, indica estudo",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/11/contato-com-a-natureza-melhora-bem-estar-nas-cidades-indica-estudo.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2021/01/08/16101149135ff8676192690_1610114913_3x2_rt.jpg",
+   "publicado_em": "2026-11-25T14:16:00+00:00",
+   "resumo": "Escutar os pássaros, perceber a brisa na pele e observar uma árvore são maneiras de se aproximar da natureza que cabem na vida de quem vive em uma grande cidade. E há cada vez mais evidência de como isso pode beneficiar a saúde . Uma análise abrangente da literatura científica publicada em 2026 na Nature Human Behaviour encontrou resultados favoráveis em indicadores de ansiedade , sintomas depress",
+   "pre": 3.3
   },
   {
    "id": "25f6272a1fd38daf",
@@ -932,24 +942,14 @@
    "pre": 3.3
   },
   {
-   "id": "45beb819e0f6e402",
+   "id": "4039563ff4393607",
    "canal": "Folha Equilíbrio",
-   "titulo": "Interromper antidepressivo na gravidez pode aumentar riscos à saúde mental",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/11/interromper-antidepressivo-na-gravidez-pode-aumentar-riscos-a-saude-mental.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2025/11/13/17630463086915f3a4bc21b_1763046308_3x2_rt.jpg",
-   "publicado_em": "2026-11-22T18:30:00+00:00",
-   "resumo": "Interromper o uso de antidepressivos durante a gravidez está associado a uma maior frequência de atendimentos de emergência por questões de saúde mental , tanto ao longo da gestação quanto no período após o parto. Essa é a conclusão de um estudo que identificou uma frequência quase duas vezes maior de atendimentos de emergência entre mulheres que suspenderam o tratamento em comparação com aquelas ",
-   "pre": 3.3
-  },
-  {
-   "id": "f3674e90e6e1dc11",
-   "canal": "Folha Equilíbrio",
-   "titulo": "Agressor havia bebido em 3 de cada 10 casos de violência atendidos pelo SUS em SP",
-   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/11/agressor-havia-bebido-em-3-de-cada-10-casos-de-violencia-atendidos-pelo-sus-em-sp.shtml",
-   "imagem": "https://f.i.uol.com.br/fotografia/2023/06/07/16861627986480cd6e5d7c4_1686162798_3x2_rt.jpg",
-   "publicado_em": "2026-11-22T07:00:00+00:00",
-   "resumo": "Em quase 3 de cada 10 (29%) agressões atendidas nas unidades de saúde do estado de São Paulo há a suspeita de que o agressor havia consumido bebida alcoólica. Entre 2023 e 2024, foram 62 mil casos. Somadas às quase 15 mil lesões autoprovocadas com consumo de álcool, são 77 mil notificações de violência ligadas a bebida. Leia mais (11/22/2026 - 04h00)",
-   "pre": 3.3
+   "titulo": "Expectativa de vida em Cuba cai pela primeira vez em quase 80 anos, diz OMS",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/expectativa-de-vida-em-cuba-cai-pela-primeira-vez-em-quase-80-anos-diz-oms.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2026/08/21/17873481546a88c4bacd3d5_1787348154_3x2_rt.jpg",
+   "publicado_em": "2026-11-25T12:48:00+00:00",
+   "resumo": "A expectativa de vida em Cuba caiu pela primeira vez desde o início dos registros, em 1950, segundo o diretor-geral da Organização Mundial da Saúde (OMS), Tedros Adhanom Ghebreyesus. De 2020 a 2025, o indicador recuou 4,4 anos, passando de 78,8 para 74,4 anos, após a piora da crise econômica e das dificuldades enfrentadas pelo sistema de saúde do país . Leia mais (11/25/2026 - 09h48)",
+   "pre": 2.2
   },
   {
    "id": "2fad55ec207d8bf9",
@@ -962,23 +962,43 @@
    "pre": 2.2
   },
   {
-   "id": "00f4f1461e37c02a",
-   "canal": "Estadão Saúde",
-   "titulo": "Pode trocar a caneta para obesidade por outra marca ou pelo GLP-1 oral? Veja os cuidados",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPQlFZb2UtQTlxVWxvN0wyYWNYTnF1dTRIOEgzUTJCcy05cElNSTVYOERDY0dRWkw5Rkt3ZkVaVnlYby1GbFgyWmlpTVA2VWdxYm9XQTJfWlhERUhrZUVOMENjRlROYm5HcEQ4RmFaSjA0YXEwU2ZucnNvMm8wWEV2Wkl5WGpOVWVKbVNNeU9qS2l0eHJMNjhrMVVCV05BTHNWWGRWV1NZRW5hVzRaeW5ZYVVHSGdwOXpEWkMyNWdxNU1BUFE5clU4Y2R0SkQxQUVIa3pudHA0XzNmRV9XRXRNNnFoclhyWTlZ?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-22T01:03:31+00:00",
-   "resumo": "Pode trocar a caneta para obesidade por outra marca ou pelo GLP-1 oral? Veja os cuidados Estadão",
-   "pre": 4.0
+   "id": "d2304e52b039f021",
+   "canal": "Folha Equilíbrio",
+   "titulo": "Pente experimental estimula crescimento capilar e supera tratamentos convencionais contra calvície",
+   "link": "https://redir.folha.com.br/redir/online/equilibrioesaude/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/11/pente-experimental-estimula-crescimento-capilar-e-supera-tratamentos-convencionais.shtml",
+   "imagem": "https://f.i.uol.com.br/fotografia/2026/11/24/17955621266b061a8e7b1df_1795562126_3x2_lg.jpg",
+   "publicado_em": "2026-11-23T23:53:00+00:00",
+   "resumo": "Um grupo de pesquisadores da Universidade de Beihang, em Pequim , desenvolveu um pente experimental capaz de estimular o crescimento do cabelo . Batizado de Detangle, o dispositivo apresentou resultados superiores aos de tratamentos amplamente usados contra a alopecia, como o minoxidil . Leia mais (11/23/2026 - 20h53)",
+   "pre": 2.2
   },
   {
-   "id": "bc7b71f9d91f71c2",
+   "id": "9ad718c819837dc3",
    "canal": "Estadão Saúde",
-   "titulo": "Agência de Comunicação - Yangtze River Pharmaceutical conquista cinco prêmios ouro na 51ª Convenção Internacional sobre Círculos de Controle de Qualidade, reforçando sua expansão global orientada pela qualidade",
-   "link": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQa3ZOLUxOOXZTVV9JbUpjczBBX0J1dVpVSmJSMllRNDd2ZmtHMGtnYS1YR0o3bWFZU1NFOFFJT3hydE1vbTZSdWdYUE9sUjZXZlg1YWZoMlhSY085RHRDUTNWOE1CT082WGFIMXNvM3RmdVRNRHItWFd3VFI5RmtiSlhYSVRfWEtOZElfQU5fYnROMmtsdV8zYnpjM0tXaFlEYU8wanM5N1M1d1FydFRnbzZ5eWcwdGtrc1BGUmlsQVJxc0NrdkZlb3M2ZjYtcXZqQlBQY096OXhBelQ4WDRwWUZocWUyWmhWUjNPVUpFNGdSQ3htU1MtUXhBVFNCbXZOaHJRVVZQMHNlX1QwM2ZfWlRYdVdsdi05a2xSYmFObGRDLXhRbjVySkhteUZoOWRnSUJKLURQb19OcFdnWlhXenpMclhJcFFTRHBxalF6SkZfcmZyS2ZCSmxGQWJWU2s5Y1lPbGlfaGszV3YweGc?oc=5",
+   "titulo": "Não tem academia? Veja como transformar uma cadeira em equipamento de treino",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOU1FDakdXM3ZWUXVjaGxzNkN0eVEtV182R2FzNWhMc1dCQ29FRUd2Q3ZyT190UVYtYXAxWTZmeWZqMzR1VnJzeDNHN1E3WUY5NEFkSmtkZ2JfTUtKN0lSNFQ0MHF5c3NzRVRDbktsVExxY3hsLXQwejA5THUxWHpsVy1lTFR4Wm1RZWhOQ08tYWtPNnpSYklnUEVSNTJITGxlVGNYN0xQVDg4eXNyUFZ0NnNtb19tYXQ0Q3IzaVZn0gHDAUFVX3lxTE1OWTFhdEpvYTc0SzA4a1J3UEJ6ZmNOTGt4czVuMnhxVkkxTGdpMlZfOXhOSURnem9YdnlFNUhibVMyMFVpbVJUM1gycjlxeC1UODFPdlpyWVlTczJuRTdNWUZRMHFPbWZPVzhVMWl1NDlBNTNLZkMtZnFzQU1oOXY3ZFFkNFFDMkFpYnhVSjN5M2E5Nmg4bDZGeWljOUdlMlZGQmVBVmZFMk5pak9QNGJ2d1hIUThSXzllVHlLWURsZ1dUaw?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T18:38:41+00:00",
-   "resumo": "Agência de Comunicação - Yangtze River Pharmaceutical conquista cinco prêmios ouro na 51ª Convenção Internacional sobre Círculos de Controle de Qualidade, reforçando sua expansão global orientada pela qualidade Estadão Blue Studio",
+   "publicado_em": "2026-11-25T13:00:00+00:00",
+   "resumo": "Não tem academia? Veja como transformar uma cadeira em equipamento de treino Estadão",
+   "pre": 6.0
+  },
+  {
+   "id": "82818cf2d15037db",
+   "canal": "Estadão Saúde",
+   "titulo": "Cruzeiro joga em ritmo de treino e vence por 2 a 1 a lanterna Chapecoense",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVXV5MDhLbE9GNWVkVllzeWtZRmt0NmxVS3c3d3o0UVNIX2NmUzItWkxRMWxYOThZZGdkckxyUGhpVUtpU1UwRldfQzJCdldQZklvTUpVeG1SSkpiVENUeHRTcmxSaDRIaTFLR1htei1SOF9SQlFvOHhma1pQcVFYSzAtZUJtWUtTcGxWNlZMdzNKY1R1N1p6MFRWS3YyQks5NGVjZXBaUFVUUF9fYXRlVjZvdHRvM0lLR0ZYZ2Q5YnJmU2FX?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T16:41:26+00:00",
+   "resumo": "Cruzeiro joga em ritmo de treino e vence por 2 a 1 a lanterna Chapecoense Estadão",
+   "pre": 3.0
+  },
+  {
+   "id": "50f900aecd5b071c",
+   "canal": "Estadão Saúde",
+   "titulo": "Canetas para obesidade em crianças: o que dizem novos estudos",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNRHJfQkRiRXdhMEpRZUpSdDBYYUYydjRPOFpWSDc1a1ZyN3BYcXAxVDNtOTF3T2JVUVRhUmVLV0xva05tUFI0NUZYRlc4YUdlNFd1MF9VN2dOem1tbUp1bE1ra193WWpFWDNoSk9uazBRNFBLT0JNVzJWckpEM0w0SVoxb1FUZ3BvNjAtNzNJTGpKV1FCU3NIRV8tR3pVdk9oOGhsZWJSNGI4aFJES09hVUlqQ0JXZ2Y4b2RsWXJ1eVBPckJ0c21GcW1LTWluOTN2M3IxOVY2Nml5YkVj?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T10:28:51+00:00",
+   "resumo": "Canetas para obesidade em crianças: o que dizem novos estudos Estadão",
    "pre": 3.0
   },
   {
@@ -992,52 +1012,32 @@
    "pre": 3.0
   },
   {
-   "id": "82818cf2d15037db",
+   "id": "541f2df916c81dd3",
    "canal": "Estadão Saúde",
-   "titulo": "Cruzeiro joga em ritmo de treino e vence por 2 a 1 a lanterna Chapecoense",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVXV5MDhLbE9GNWVkVllzeWtZRmt0NmxVS3c3d3o0UVNIX2NmUzItWkxRMWxYOThZZGdkckxyUGhpVUtpU1UwRldfQzJCdldQZklvTUpVeG1SSkpiVENUeHRTcmxSaDRIaTFLR1htei1SOF9SQlFvOHhma1pQcVFYSzAtZUJtWUtTcGxWNlZMdzNKY1R1N1p6MFRWS3YyQks5NGVjZXBaUFVUUF9fYXRlVjZvdHRvM0lLR0ZYZ2Q5YnJmU2FX?oc=5",
+   "titulo": "Fruta inteira ou suco: qual é melhor para o coração?",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZkRLa3h5TFI0aEJyRTZ5QVBzcnM0YVMtWmRab3dHMVRQcmJma0JvbVNUSzR0T012N3htZ2N1TjFfVnVyM3FMYUFMbDM2TEVPZHZtWXVtVVFWMFBfVHY1bkhzQUZ3bzFwRmNOXy1BNVVwOXprSHEyUXdFWlNGM1JHcDBXeFU0QWNBT0ozSDNmZ0dzTjlPZi1nVtIBngFBVV95cUxQZjRDdmhWZVZqZ3dWNmZNWTBTSDlOd2JiZGZlaFlOV1drSEU0M3BoeXBPRXJsdS1VZVZhdlRSVUFTbjI5dUVsNVhVcHA0NUZ1ZjgyYmJfTGcza3VLRHVac2h5czJQSmM0OHI0bnl5R1hESWkzVlNkVjQ0MEpjZU5ENTE3WXlMQ1l1bVFFRVdLbS1PUGRqWm5kMVFLRzM3UQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T01:38:19+00:00",
-   "resumo": "Cruzeiro joga em ritmo de treino e vence por 2 a 1 a lanterna Chapecoense Estadão",
-   "pre": 3.0
-  },
-  {
-   "id": "50f900aecd5b071c",
-   "canal": "Estadão Saúde",
-   "titulo": "Canetas para obesidade em crianças: o que dizem novos estudos",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNRHJfQkRiRXdhMEpRZUpSdDBYYUYydjRPOFpWSDc1a1ZyN3BYcXAxVDNtOTF3T2JVUVRhUmVLV0xva05tUFI0NUZYRlc4YUdlNFd1MF9VN2dOem1tbUp1bE1ra193WWpFWDNoSk9uazBRNFBLT0JNVzJWckpEM0w0SVoxb1FUZ3BvNjAtNzNJTGpKV1FCU3NIRV8tR3pVdk9oOGhsZWJSNGI4aFJES09hVUlqQ0JXZ2Y4b2RsWXJ1eVBPckJ0c21GcW1LTWluOTN2M3IxOVY2Nml5YkVj?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T21:05:05+00:00",
-   "resumo": "Canetas para obesidade em crianças: o que dizem novos estudos Estadão",
-   "pre": 3.0
-  },
-  {
-   "id": "0168538f177b26f2",
-   "canal": "Estadão Saúde",
-   "titulo": "Caminhar mais rápido ou dar mais passos? Saiba o que é melhor para a saúde",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcEY5dGkxelQxWVk1UGZHLWF2THNLeVBUT190Y2JnRExUQU1iSW9HUk9iME9LVzZFNjZ6QUtSMHNCZnBnUmdTakFxbmRHdXlCNk9tT2JUVzE0QVNtLV9zck9fSGJHc1RQX3FaY2NvalRDS0ZMZ1otRUFmZEI2cUVDTzFKNTBqLW0tQVBDd1kwLXl5VjN5ejZZOVd3Mm13S29HaVRxcW1HZUhwaVFVYzFZQVBBTExCY05oRkNWcnhxNnVUNXpR0gHKAUFVX3lxTFBaQy1DMmdzbUhpV3FCcDlweFdqdkZhN2ZvVEl3WF83YmpBSHBJbENpYlA2eVFtd1U2bnVoaXdxdDFVYUZMM29IeDBucWphRmh1am5hbmdYV3FTLTIwOGZOZ01JdkV3d1BrTDU1QjZiU2xlbmNObmxWWWhZcTJON1BOeVd5QTNyRmxVQkFhS29wM3A5REN3N0JWLV9SZEdtM0hfOERqbDV6aC10d2dPTGZCYURvSlNPLVV4cWlSRW9tVVdwZDctRmF5NVE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-22T18:00:00+00:00",
-   "resumo": "Caminhar mais rápido ou dar mais passos? Saiba o que é melhor para a saúde Estadão",
-   "pre": 3.0
-  },
-  {
-   "id": "5a7717d9c5687380",
-   "canal": "Estadão Saúde",
-   "titulo": "O QUE O PARKINSON DO VOCALISTA DO A-HA NOS ENSINA SOBRE AS LIMITAÇÕES DO CORPO",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT1NPZ2IydFBlalV6UFdobTZmQ2Z3NUphV1pzVVdURjlZcXNjUGRRRnJaa0RSNmdqY3oxWm9TWGtIemRkQ3ZxMl9FeFdKamJmMWpTc3VvZW5sc3hjNnB3QV80RUJtTEJZaXJEYmI3dHBfc19tYTYwLWR5a2NqZV9zS2JMUUhtaDhoLWNJM0cyX2ttVlZzX19kRzBqM0Y5X3JlTjRwd29paVFqYm5OVWJGVWh1Sk05OEgyX3c?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T19:28:01+00:00",
-   "resumo": "O QUE O PARKINSON DO VOCALISTA DO A-HA NOS ENSINA SOBRE AS LIMITAÇÕES DO CORPO Estadão",
+   "publicado_em": "2026-11-25T16:01:00+00:00",
+   "resumo": "Fruta inteira ou suco: qual é melhor para o coração? Estadão",
    "pre": 2.0
   },
   {
-   "id": "04f80963571e4de4",
+   "id": "1b1ef63a5af63259",
+   "canal": "Estadão Saúde",
+   "titulo": "Fatz Delícias abre espaço para menus degustação em parceria com Marabôca",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcnlhSDNyLU1HSkVZdmlmbG9nbmVCV1V0dEhsWlpGZkxYNV96NFlvX0lsYXNVcWhrTEZGZkJxcFlqVW81Rktrc2hRX0pGdzMtOWFBclRQNXFSaHVMV25BeVcySVV1VmlFamNsejdjZVBzZnp5U1lVUTU1U0E3WHBOZDE1YjBXZHo4ZGVETmFRdnhvZmhPMU9abXZrVWdhM1l4b09vdjB3NzJlcTZkZnBNdThjaVRhN2o3ZzdrZzc0TGFyRXI0VEQ4amM5cUd0NzJ6VVE?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T15:13:59+00:00",
+   "resumo": "Fatz Delícias abre espaço para menus degustação em parceria com Marabôca Estadão",
+   "pre": 2.0
+  },
+  {
+   "id": "d9d38adbb17f0200",
    "canal": "Estadão Saúde",
    "titulo": "Fatz Delícias celebra seis anos e abre espaço para menus degustação; estreia é com Marabôca",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQUFJUX1FYcHNaWXJJMlFFOUlLdE9kdzJPeklaa0VVUktzTHZQWUZ2MkJDNGxpaTV1TnA2N042alpaeG5LWlRKTF9qSnI3eWh4VElNWVJpNTBmb2M5M1ZieEhaSDE3WnE3VnhDbm55RnRERjNMdDJMSWQtTG80VjhjbWtCUVc4d2RPem10cnNEWU1KcUNMZlVfcTNUdkhxRHlMLWNPNUJ1UVhzQkh1bjJmUTNVV3R5UnZXbE82QndneWMyTUE5dEs2YW5FLS3SAcwBQVVfeXFMUFBSVF9RWHBzWllySTJRRTlJS3RPZHcyT3pJWmtFVVJLc0x2UFlGdjJCQzRsaWk1dU5wNjdONmpaWnhuS1pUSkxfakpyN3loeFRJTVlSaTUwZm9jOTNWYnhIWkgxN1pxN1Z4Q25ueUZ0REYzTHQyTElkLUxvNFY4Y21rQlFXOHdkT3ptdHJzRFlNSnFDTGZVX3EzVHZIcUR5TC1jTzVCdVFYc0JIdW4yZlEzVVd0eVJ2V2xPNkJ3Z3ljMk1BOXRLNmFuRS0t?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSXQ5cUpJSTVqbEFrdmJyUFM5OHZ5Q2JUcVh4ZkF2MF9ZRFZWZUlOb19oRVlCcDdsaXBJajk0OVJOUzZmUDdKRUt2T2hQbndmZHowQTNsOFNldEU3WGhtY0RTLThxS3VYeVdhQzllV3B2ckt0dTNsQktfMFlnWFlOcVBVVWZfVzVnRTZQT283VFVGTE84VU9SN05pbENJOW5EX09TZjZnRjBUbUZHekcxc2J5TnEyQ2l1cnpSaDdVQk1jd3VOeXhN0gHMAUFVX3lxTFBQUlRfUVhwc1pZckkyUUU5SUt0T2R3Mk96SVprRVVSS3NMdlBZRnYyQkM0bGlpNXVOcDY3TjZqWlp4bktaVEpMX2pKcjd5aHhUSU1ZUmk1MGZvYzkzVmJ4SFpIMTdacTdWeENubnlGdERGM0x0MkxJZC1MbzRWOGNta0JRVzh3ZE96bXRyc0RZTUpxQ0xmVV9xM1R2SHFEeUwtY081QnVRWHNCSHVuMmZRM1VXdHlSdldsTzZCd2d5YzJNQTl0SzZhbkUtLQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T14:59:00+00:00",
+   "publicado_em": "2026-11-24T15:01:38+00:00",
    "resumo": "Fatz Delícias celebra seis anos e abre espaço para menus degustação; estreia é com Marabôca Estadão",
    "pre": 2.0
   },
@@ -1062,14 +1062,44 @@
    "pre": 2.0
   },
   {
-   "id": "3560ece3c3347bde",
-   "canal": "ScienceDaily",
-   "titulo": "A common blood pressure drug has a surprising effect on calorie-burning brown fat",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261119194558.htm",
-   "imagem": "https://www.sciencedaily.com/images/1920/weight-loss-fat-burn-in-human-adipose-tissue.webp",
-   "publicado_em": "2026-11-22T01:54:11+00:00",
-   "resumo": "Scientists have discovered that a common blood pressure drug can activate calorie-burning brown fat in mice, potentially opening a new path toward improving metabolic health. An analysis of more than 100,000 patients also revealed surprising links between brown fat and lower rates of heart disease, diabetes, anxiety, and depression.",
-   "pre": 10.0
+   "id": "dbcdaf80e6071bba",
+   "canal": "Estadão Saúde",
+   "titulo": "Agência de Comunicação - Arcera Life Sciences e Innogen Pharmaceuticals assinam acordo de licenciamento exclusivo para ampliar o acesso aos cuidados cardiometabólicos nos mercados internacionais",
+   "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQNzA5bzdmSFZIOTBmZXBXYWZYYkZnM2hyMTJ5YUFwRXRvcWMzdzdIRWw3QTRSN0N1ZHlPSGtGdUxLc0RuaF9YOU40Sy1zY2pISHp0aGktYmlmR2xjYzlna2NiZ2w2UlJ0N2w3ZFpKeXBzel9VcGNrNTNCX3BSNEo5OUU3OUlXZHh1UUd4QXFQUUotNG1UaFlHd1RCeFdwSFhJX0E3UGxqQi1nbGpwbXJ3cVg5WGdkUVEtdXRfWFp1Z1NObUw2QTZPeERwVHBvdEU2WEszZlNjMEVhYnpCd0hHdnFvVWRVQW03aFpBZloxZklzRkhuemx1YzhwMm5LU0I0ajkzdDl6TkVpSWRQZFZfTk81Zl9jWThvRG9Gaml3dkpHaF95ekRwVUs4SnRsanpHdlp3UEJCeXhXbjhaU21OZ0RqdEc0MUhJVFJYVC1rUWtsTldHZFg0ZFFB?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-23T19:11:09+00:00",
+   "resumo": "Agência de Comunicação - Arcera Life Sciences e Innogen Pharmaceuticals assinam acordo de licenciamento exclusivo para ampliar o acesso aos cuidados cardiometabólicos nos mercados internacionais Estadão Blue Studio",
+   "pre": 2.0
+  },
+  {
+   "id": "881a7b2eb8bf9154",
+   "canal": "Nature News",
+   "titulo": "Clinical landscape of cardiometabolic heart failure with preserved ejection fraction",
+   "link": "https://www.nature.com/articles/s41586-026-11231-x",
+   "imagem": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41586-026-11231-x/MediaObjects/41586_2026_11231_Fig1_HTML.png",
+   "publicado_em": "2026-11-25T00:00:00+00:00",
+   "resumo": "Nature, Published online: 25 November 2026; doi:10.1038/s41586-026-11231-x This Review covers the current state of research into heart failure with preserved ejection fraction (HFpEF) from a variety of perspectives, focusing on the clinical context.",
+   "pre": 3.5
+  },
+  {
+   "id": "9088e5c5cb44a54f",
+   "canal": "Nature News",
+   "titulo": "Watch out, AlphaFold: Claude and ChatGPT’s new biology skills wow scientists",
+   "link": "https://www.nature.com/articles/d41586-026-03836-z",
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03836-z/d41586-026-03836-z_54015654.jpg",
+   "publicado_em": "2026-11-24T00:00:00+00:00",
+   "resumo": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03836-z Anthropic and OpenAI’s language models can design proteins and predict their sequences and structures — capabilities previously seen only in specialized AI tools.",
+   "pre": 3.5
+  },
+  {
+   "id": "e3c71495cb16f384",
+   "canal": "Nature News",
+   "titulo": "A gut–brain sensory-motor circuit regulates sugar ingestion in Drosophila",
+   "link": "https://www.nature.com/articles/s41586-026-11315-8",
+   "imagem": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41586-026-11315-8/MediaObjects/41586_2026_11315_Fig1_HTML.png",
+   "publicado_em": "2026-11-25T00:00:00+00:00",
+   "resumo": "Nature, Published online: 25 November 2026; doi:10.1038/s41586-026-11315-8 In flies, sugar-sensing enteric neurons activate brain neurons that inhibit crop duct motor neurons, relaxing the foregut muscles to facilitate food transfer to the crop, which sustains ingestion and regulates food intake.",
+   "pre": 2.8
   },
   {
    "id": "a1cdb80120c1f59e",
@@ -1092,11 +1122,21 @@
    "pre": 2.8
   },
   {
+   "id": "04f07bca719afc01",
+   "canal": "Nature News",
+   "titulo": "Helsinki puts trust at the heart of its smart-city model",
+   "link": "https://www.nature.com/articles/d41586-026-03469-2",
+   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03469-2/d41586-026-03469-2_53912692.png",
+   "publicado_em": "2026-11-25T00:00:00+00:00",
+   "resumo": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03469-2 Open urban data, recycled data-centre heat and a public AI register are helping the Finnish capital develop responsible urban technology.",
+   "pre": 2.1
+  },
+  {
    "id": "e06d10b3361af22a",
    "canal": "Nature News",
    "titulo": "Who did figure 3? Why scientists should make experimental contributions visible",
    "link": "https://www.nature.com/articles/d41586-026-03542-w",
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03542-w/d41586-026-03542-w_53940372.jpg",
+   "imagem": null,
    "publicado_em": "2026-11-24T00:00:00+00:00",
    "resumo": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03542-w Research papers rarely make plain which authors performed which experiments. That’s a missed opportunity, says Tito Calì.",
    "pre": 2.1
@@ -1106,80 +1146,40 @@
    "canal": "Nature News",
    "titulo": "Pregnancy rewires the brain — scientists are finally mapping it",
    "link": "https://www.nature.com/articles/d41586-026-03804-7",
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03804-7/d41586-026-03804-7_54010920.jpg",
+   "imagem": null,
    "publicado_em": "2026-11-24T00:00:00+00:00",
    "resumo": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03804-7 Brain scans show what healthy pregnancy looks like, and offer clues about how depression and pre-eclampsia arise.",
    "pre": 2.1
   },
   {
-   "id": "8604febdc31983a3",
+   "id": "2ef7619bc9ef558b",
    "canal": "Nature News",
-   "titulo": "I t’s our duty to promote ourselves: even to other scientists. Am I wrong?",
-   "link": "https://www.nature.com/articles/d41586-026-02203-2",
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02203-2/d41586-026-02203-2_53935928.jpg",
-   "publicado_em": "2026-11-23T00:00:00+00:00",
-   "resumo": "Nature, Published online: 23 November 2026; doi:10.1038/d41586-026-02203-2 A jury weighs in on whether it’s a researcher’s responsibility to convince colleagues that their work matters — or whether others should come to them instead.",
-   "pre": 2.1
-  },
-  {
-   "id": "3a210c7fdc06e479",
-   "canal": "Nature News",
-   "titulo": "Ayanna Howard thinks ‘everyone has to be part of’ building ethical AI tools",
-   "link": "https://www.nature.com/articles/d41586-026-03721-9",
-   "imagem": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03721-9/d41586-026-03721-9_54002850.jpg",
-   "publicado_em": "2026-11-23T00:00:00+00:00",
-   "resumo": "Nature, Published online: 23 November 2026; doi:10.1038/d41586-026-03721-9 The researcher and educator explains why she’s optimistic about the future of work and what individuals can do to thrive alongside artificial intelligence.",
-   "pre": 2.1
-  },
-  {
-   "id": "4de07222c73fc68b",
-   "canal": "Nature News",
-   "titulo": "Fight AI slop without punishing legitimate researchers",
-   "link": "https://www.nature.com/articles/d41586-026-03824-3",
+   "titulo": "Can Beijing scale up its smart-city ambitions?",
+   "link": "https://www.nature.com/articles/d41586-026-03470-9",
    "imagem": null,
-   "publicado_em": "2026-11-24T00:00:00+00:00",
-   "resumo": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03824-3 Fight AI slop without punishing legitimate researchers",
+   "publicado_em": "2026-11-25T00:00:00+00:00",
+   "resumo": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03470-9 The world’s leading science city is testing AI and intelligent transport at scale, but linking data across its innovation hubs remains a challenge.",
    "pre": 1.4
   },
   {
-   "id": "45a865e5b9f4aad8",
+   "id": "a30a111bf9a5ba6f",
    "canal": "Nature News",
-   "titulo": "Chemistry giant George Whitesides dies: one of the most influential researchers of his generation",
-   "link": "https://www.nature.com/articles/d41586-026-03808-3",
+   "titulo": "A guide to the Nature Index",
+   "link": "https://www.nature.com/articles/d41586-026-03474-5",
    "imagem": null,
-   "publicado_em": "2026-11-23T00:00:00+00:00",
-   "resumo": "Nature, Published online: 23 November 2026; doi:10.1038/d41586-026-03808-3 Beloved intellectual mentored hundreds of scientists and switched fields many times to solve global challenges.",
+   "publicado_em": "2026-11-25T00:00:00+00:00",
+   "resumo": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03474-5 A description of the terminology and methodology used in this supplement, and a guide to the functionality that is available free online at natureindex.com.",
    "pre": 1.4
   },
   {
-   "id": "dff60e2cb6121ed0",
-   "canal": "Nature News",
-   "titulo": "The science on AI consciousness must acknowledge uncertainty",
-   "link": "https://www.nature.com/articles/d41586-026-03822-5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T00:00:00+00:00",
-   "resumo": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03822-5 The science on AI consciousness must acknowledge uncertainty",
-   "pre": 0.7
-  },
-  {
-   "id": "39b063d76aa93fb9",
-   "canal": "Nature News",
-   "titulo": "Submission caps aren’t enough to tackle AI slop",
-   "link": "https://www.nature.com/articles/d41586-026-03823-4",
-   "imagem": null,
-   "publicado_em": "2026-11-24T00:00:00+00:00",
-   "resumo": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03823-4 Submission caps aren’t enough to tackle AI slop",
-   "pre": 0.7
-  },
-  {
-   "id": "f6d97463de5be4c7",
+   "id": "52805223fd8cd8eb",
    "canal": "NYT Well",
-   "titulo": "A Short Workout to Strengthen Your Neck",
-   "link": "https://www.nytimes.com/2026/11/21/well/move/neck-strengthening-workout.html",
-   "imagem": "https://static01.nyt.com/images/2026/11/20/well/NECK-STRENGTHENING_ART-01/NECK-STRENGTHENING-35367-mediumSquareAt3X.jpg",
-   "publicado_em": "2026-11-22T00:09:48+00:00",
-   "resumo": "Build muscle and fight the effects of bad posture with a few simple exercises.",
-   "pre": 15.0
+   "titulo": "How Fitness Experts Make Time to Exercise Over the Holidays",
+   "link": "https://www.nytimes.com/2026/11/25/well/move/exercise-workout-holidays.html",
+   "imagem": "https://static01.nyt.com/images/2026/11/25/well/25Well-Fitness-Holidays/25Well-Fitness-Holidays-mediumSquareAt3X.jpg",
+   "publicado_em": "2026-11-25T10:00:33+00:00",
+   "resumo": "Try these strategies to end the year feeling strong.",
+   "pre": 6.0
   },
   {
    "id": "b8464870d6677372",
@@ -1190,6 +1190,16 @@
    "publicado_em": "2026-11-23T19:42:41+00:00",
    "resumo": "Experts speak out against the quest to turn back time.",
    "pre": 3.0
+  },
+  {
+   "id": "d58088a3a5f16ac1",
+   "canal": "NYT Well",
+   "titulo": "What’s Actually in Those Gas Station Drugs?",
+   "link": "https://www.nytimes.com/video/well/100000011088461/gas-station-drugs-vape-weed-kratom-hallucinogens.html",
+   "imagem": null,
+   "publicado_em": "2026-11-24T21:19:53+00:00",
+   "resumo": "Inside gas station convenience stores and smoke shops across the country, a new generation of drugs is for sale. It can be difficult to know what’s actually inside these items, which come wrapped in candy-colored packaging and are often readily accessible to the everyday consumer. To better understand this phenomenon, The New York Times purchased and lab-tested 28 products. Matt Richtel, a reporte",
+   "pre": 2.0
   },
   {
    "id": "1cfca548a720a2b1",
@@ -1212,22 +1222,12 @@
    "pre": 2.0
   },
   {
-   "id": "d58088a3a5f16ac1",
-   "canal": "NYT Well",
-   "titulo": "What’s Actually in Those Gas Station Drugs?",
-   "link": "https://www.nytimes.com/video/well/100000011088461/gas-station-drugs-vape-weed-kratom-hallucinogens.html",
-   "imagem": null,
-   "publicado_em": "2026-11-23T17:47:37+00:00",
-   "resumo": "Inside gas station convenience stores and smoke shops across the country, a new generation of drugs is for sale. It can be difficult to know what’s actually inside these items, which come wrapped in candy-colored packaging and are often readily accessible to the everyday consumer. To better understand this phenomenon, The New York Times purchased and lab-tested 28 products. Matt Richtel, a reporte",
-   "pre": 2.0
-  },
-  {
    "id": "76bebe2ad86b2b53",
    "canal": "NYT Well",
    "titulo": "The Mortality Gap Between Black and White Americans Is Shrinking",
    "link": "https://www.nytimes.com/2026/11/24/well/black-white-americans-health-death-rates.html",
    "imagem": "https://static01.nyt.com/images/2026/11/24/multimedia/24WELL-DISPARITIES1-ztmq/24WELL-DISPARITIES1-ztmq-mediumSquareAt3X.jpg",
-   "publicado_em": "2026-11-24T18:59:59+00:00",
+   "publicado_em": "2026-11-24T19:00:00+00:00",
    "resumo": "A new report shows significant progress on racial health disparities, though many still persist.",
    "pre": 1.0
   },
@@ -1252,24 +1252,34 @@
    "pre": 1.0
   },
   {
-   "id": "95ace39692a5a3a4",
+   "id": "28362ba6022b9a5a",
    "canal": "Forbes",
-   "titulo": "Molina, da MBRF, Prevê um dos Melhores Natais para o Varejo com Recuo das Bets",
-   "link": "https://forbes.com.br/forbes-agro/2026/11/molina-da-mbrf-preve-um-dos-melhores-natais-para-o-varejo-com-recuo-das-bets/",
+   "titulo": "Uso de Telas Prejudica o Sono de Um em Cada Três Brasileiros, Aponta Pesquisa",
+   "link": "https://forbes.com.br/forbes-tech/2026/11/uso-de-telas-prejudica-o-sono-de-um-em-cada-tres-brasileiros-aponta-pesquisa/",
    "imagem": null,
-   "publicado_em": "2026-11-23T20:56:53+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Empresa controlada por Marcos Molina prevê mesa mais farta nesta reta final de ano, enquanto companhia amplia sua maior operação sazonal de oferta de proteínas O post Molina, da MBRF, Prevê um dos Melhores Natais para o Varejo com Recuo das Bets apareceu primeiro em Forbes Brasil .",
-   "pre": 8.0
+   "publicado_em": "2026-11-25T08:04:00+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Estudo de Renata Rivetti com o Instituto IDEIA mostra que 54,7% olham o celular na meia hora antes de dormir O post Uso de Telas Prejudica o Sono de Um em Cada Três Brasileiros, Aponta Pesquisa apareceu primeiro em Forbes Brasil .",
+   "pre": 4.0
   },
   {
-   "id": "87fc18cab923acdc",
+   "id": "bdf1729afe011503",
    "canal": "Forbes",
-   "titulo": "56% das Mulheres Confundem Efeitos da Menopausa com Envelhecimento",
-   "link": "https://forbes.com.br/forbes-mulher/2026/11/56-das-mulheres-confundem-efeitos-da-menopausa-com-envelhecimento/",
+   "titulo": "Black Friday Chega com 81,6% das Famílias Brasileiras Endividadas; Especialistas Alertam para Riscos à Saúde Mental",
+   "link": "https://forbes.com.br/forbes-saude/2026/11/black-friday-2026-endividamento-saude-mental-compras-por-impulso/",
    "imagem": null,
-   "publicado_em": "2026-11-24T08:00:00+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Pesquisa revela falta de informação sobre os efeitos da menopausa na saúde e na aparência da pele O post 56% das Mulheres Confundem Efeitos da Menopausa com Envelhecimento apareceu primeiro em Forbes Brasil .",
-   "pre": 6.0
+   "publicado_em": "2026-11-25T08:00:00+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Pressão pelo consumo e busca por satisfação imediata podem agravar problemas financeiros e emocionais O post Black Friday Chega com 81,6% das Famílias Brasileiras Endividadas; Especialistas Alertam para Riscos à Saúde Mental apareceu primeiro em Forbes Brasil .",
+   "pre": 4.0
+  },
+  {
+   "id": "2c18dad88f4d0d53",
+   "canal": "Forbes",
+   "titulo": "Lula Sanciona sem Vetos Pacote Fiscal de R$ 50 Bilhões para 2027",
+   "link": "https://forbes.com.br/forbes-money/2026/11/lula-sanciona-sem-vetos-pacote-fiscal-de-r-50-bilhoes-para-2027/",
+   "imagem": null,
+   "publicado_em": "2026-11-24T19:59:34+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Lei cria mecanismos para reforçar o cumprimento da meta fiscal, prevê contingenciamento adicional de despesas, limita compensações tributárias e reduz benefícios fiscais O post Lula Sanciona sem Vetos Pacote Fiscal de R$ 50 Bilhões para 2027 apareceu primeiro em Forbes Brasil .",
+   "pre": 3.0
   },
   {
    "id": "1c1717896262ec87",
@@ -1282,14 +1292,24 @@
    "pre": 3.0
   },
   {
-   "id": "d02f60d2a2fe160d",
+   "id": "abaa9d2b346b1314",
    "canal": "Forbes",
-   "titulo": "Magic Paula Receberá Maior Honraria do Esporte Olímpico Brasileiro",
-   "link": "https://forbes.com.br/forbes-life/forbes-sport/2026/11/magic-paula-recebera-maior-honraria-do-esporte-olimpico-brasileiro/",
+   "titulo": "Petrobras Buscará Outras Empresas de Etanol de Milho após Compra de Fatia na Neomille, Dizem Fontes",
+   "link": "https://forbes.com.br/forbes-agro/2026/11/petrobras-buscara-outras-empresas-de-etanol-de-milho-apos-compra-de-fatia-na-neomille-dizem-fontes-2/",
    "imagem": null,
-   "publicado_em": "2026-11-24T16:49:32+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Estrela do basquete receberá o Troféu Adhemar Ferreira da Silva de 2026, maior prêmio do esporte olímpico brasileiro O post Magic Paula Receberá Maior Honraria do Esporte Olímpico Brasileiro apareceu primeiro em Forbes Brasil .",
-   "pre": 3.0
+   "publicado_em": "2026-11-25T14:25:25+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Grupo do agronegócio informou que prevê aumentar sua capacidade de produção em cerca de 80% nos próximos dois anos O post Petrobras Buscará Outras Empresas de Etanol de Milho após Compra de Fatia na Neomille, Dizem Fontes apareceu primeiro em Forbes Brasil .",
+   "pre": 2.0
+  },
+  {
+   "id": "5a8fb6a9302199fe",
+   "canal": "Forbes",
+   "titulo": "Astrônomos Identificam um Quasar Recordista no Universo Primitivo",
+   "link": "https://forbes.com.br/forbes-tech/2026/11/astronomos-identificam-um-quasar-recordista-no-universo-primitivo/",
+   "imagem": null,
+   "publicado_em": "2026-11-24T19:50:38+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Detectado pelo telescópio Euclid, corpo celeste tem um buraco negro com massa 360 milhões de vezes maior que a do Sol O post Astrônomos Identificam um Quasar Recordista no Universo Primitivo apareceu primeiro em Forbes Brasil .",
+   "pre": 2.0
   },
   {
    "id": "abc7aeea4f3bdcc9",
@@ -1302,73 +1322,43 @@
    "pre": 2.0
   },
   {
-   "id": "60f9c10661efc4b5",
+   "id": "54a453a9a16ae4cb",
    "canal": "Forbes",
-   "titulo": "Investidores Institucionais Retiram R$ 50,8 Bi da Bolsa em 2026; Movimento Alerta sobre Risco Fiscal",
-   "link": "https://forbes.com.br/forbes-money/2026/11/saida-investidores-bolsa-brasileira-risco-brasil-2027/",
+   "titulo": "Veruschka, Supermodelo da Década de 60, Morre Aos 87 Anos",
+   "link": "https://forbes.com.br/forbes-life/2026/11/veruschka-supermodelo-da-decada-de-60-morre-aos-87-anos/",
    "imagem": null,
-   "publicado_em": "2026-11-24T08:00:00+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Em meio aos juros elevados e às incertezas fiscais, especialistas analisam os fatores por trás das vendas de ações e as perspectivas para 2027 O post Investidores Institucionais Retiram R$ 50,8 Bi da Bolsa em 2026; Movimento Alerta sobre Risco Fiscal apareceu primeiro em Forbes Brasil .",
-   "pre": 2.0
-  },
-  {
-   "id": "9c4f74bc705052aa",
-   "canal": "Forbes",
-   "titulo": "Ministro da Fazenda Prevê Superávit de até 2% do PIB Ao Fim do Mandato",
-   "link": "https://forbes.com.br/forbes-money/2026/11/ministro-da-fazenda-preve-superavit-de-ate-2-do-pib-ao-fim-do-mandato/",
-   "imagem": null,
-   "publicado_em": "2026-11-23T20:59:14+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Dario Durigan defendeu que nas próximas duas semanas sejam encaminhadas ao Congresso os temas ligados à área fiscal O post Ministro da Fazenda Prevê Superávit de até 2% do PIB Ao Fim do Mandato apareceu primeiro em Forbes Brasil .",
-   "pre": 2.0
-  },
-  {
-   "id": "9455cdb9cb5012bc",
-   "canal": "Forbes",
-   "titulo": "A Ciência por Trás da Raiva",
-   "link": "https://forbes.com.br/colunas/2026/11/a-ciencia-por-tras-da-raiva/",
-   "imagem": null,
-   "publicado_em": "2026-11-24T19:05:58+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Embora seja vista como uma emoção negativa, a raiva pode aumentar a motivação e a persistência diante de obstáculos, segundo pesquisadores O post A Ciência por Trás da Raiva apareceu primeiro em Forbes Brasil .",
+   "publicado_em": "2026-11-25T16:59:40+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Aclamada internacionalmente como uma das mulheres mais bonitas do mundo, a modelo alemã misturava moda, fotografia e arte em seus trabalhos O post Veruschka, Supermodelo da Década de 60, Morre Aos 87 Anos apareceu primeiro em Forbes Brasil .",
    "pre": 1.0
   },
   {
-   "id": "d88e42d894687667",
+   "id": "13f930c4a99c6a30",
    "canal": "Forbes",
-   "titulo": "Agroflorestas na Amazônia Armazenam até 219 Toneladas de Carbono por Hectare",
-   "link": "https://forbes.com.br/forbes-agro/2026/11/agroflorestas-na-amazonia-armazenam-ate-219-toneladas-de-carbono-por-hectare/",
+   "titulo": "Argentina Corre em Busca do Milho Precoce para Fugir do El Niño, de Olho em Biocombustíveis",
+   "link": "https://forbes.com.br/forbes-agro/2026/11/argentina-corre-em-busca-do-milho-precoce-para-fugir-do-el-nino-de-olho-em-biocombustiveis/",
    "imagem": null,
-   "publicado_em": "2026-11-24T14:28:28+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Estudo da Embrapa realizado em Rondônia mostra como o cultivo consorciado de espécies florestais contribui para a regulação climática e a geração de renda no campo O post Agroflorestas na Amazônia Armazenam até 219 Toneladas de Carbono por Hectare apareceu primeiro em Forbes Brasil .",
+   "publicado_em": "2026-11-25T08:26:00+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Cultivo do cereal precoce no país supera amplamente os registros das safras anteriores, com agenda futura pautada na bioenergia O post Argentina Corre em Busca do Milho Precoce para Fugir do El Niño, de Olho em Biocombustíveis apareceu primeiro em Forbes Brasil .",
    "pre": 1.0
   },
   {
-   "id": "5151bf4768715d05",
+   "id": "40662345c877ae47",
    "canal": "Forbes",
-   "titulo": "Confiança do Consumidor Brasileiro Cai Ao Menor Nível em Mais de Quatro Anos, Diz FGV",
-   "link": "https://forbes.com.br/forbes-money/2026/11/confianca-do-consumidor-brasileiro-cai-ao-menor-nivel-em-mais-de-quatro-anos-diz-fgv/",
+   "titulo": "Gestão do Parque Ibirapuera é Aprovada até por Quem é Contra Concessões Privadas, Mostra Pesquisa da Nexus",
+   "link": "https://forbes.com.br/forbes-money/forbes-real-estate/2026/11/pesquisa-parque-ibirapuera-sp/",
    "imagem": null,
-   "publicado_em": "2026-11-24T13:49:59+00:00",
-   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Indicador recuou 1,2 ponto em novembro, pressionado pelo aperto no orçamento das famílias O post Confiança do Consumidor Brasileiro Cai Ao Menor Nível em Mais de Quatro Anos, Diz FGV apareceu primeiro em Forbes Brasil .",
+   "publicado_em": "2026-11-25T08:00:00+00:00",
+   "resumo": "Forbes, a mais conceituada revista de negócios e economia do mundo. Levantamento da Nexus mostra que 67% dos paulistanos aprovam a gestão privada da Urbia e 76% preferem o parque com marcas e grandes eventos O post Gestão do Parque Ibirapuera é Aprovada até por Quem é Contra Concessões Privadas, Mostra Pesquisa da Nexus apareceu primeiro em Forbes Brasil .",
    "pre": 1.0
   },
   {
-   "id": "52591513dc1421f3",
+   "id": "896d4d44c121a01e",
    "canal": "Bloomberg",
    "titulo": "Billionaires Index",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1sZzJsZzV2cXY2S2VwaHJpM29aVmZTeGtlWkt2V3ZWQnAzSXZxODQ2TjEwcWVKdTFKdHlyUl8yVXFWRkNsTTh2MzIybjNNR1V5bm56WXA3YnQ0NGxyZVV6c2pR?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5tWnB3bEttdTJKeWNidUFYaFJVd09wWFd1VHNGNmFfMzNKR3hiQ0lralFLZkc4T2RDWlYzVFdsMXVFRXA1Vm1HdGpLdHFtRWoyTG5BVHZvNi1NamhjUmt6bzZzQQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-23T22:03:06+00:00",
+   "publicado_em": "2026-11-24T22:03:03+00:00",
    "resumo": "Billionaires Index Bloomberg.com",
-   "pre": 0.0
-  },
-  {
-   "id": "8d361ade86344441",
-   "canal": "Bloomberg",
-   "titulo": "Richest People in United States: Bloomberg Billionaires Index",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00TW9iNHNsaEdSSjh4dmhNVUhjTllHSmxvek10bWdqZUE0T1h2VTZxSXMtbnhZc1A3YlpfbV82eWRoR2dMU3hzR0pOMWYyY3A4UXhCN0p5c0NDLTlxTUtlVDVTaUtGdFJMbF9zZw?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T22:03:06+00:00",
-   "resumo": "Richest People in United States: Bloomberg Billionaires Index Bloomberg.com",
    "pre": 0.0
   },
   {
@@ -1382,14 +1372,14 @@
    "pre": 8.0
   },
   {
-   "id": "baab92ddbe936745",
+   "id": "87d295649870bde4",
    "canal": "Gq",
-   "titulo": "How to Improve Brain Health with 5 Daily Exercises",
-   "link": "https://www.gq.com/story/how-to-combat-brain-aging-with-5-daily-exercises",
-   "imagem": "https://media.gq.com/photos/6aff5dca24c6d3a440330fd8/master/pass/brain%20aging%20copy.jpg",
-   "publicado_em": "2026-11-23T14:00:00+00:00",
-   "resumo": "A neuropsychologist explains how our minds change with age (and stress) and what habits can help us maintain mental agility.",
-   "pre": 8.0
+   "titulo": "Why Weed Might Actually Be Bad for Your Sleep",
+   "link": "https://www.gq.com/story/cannabis-sleep-study",
+   "imagem": "https://media.gq.com/photos/6b062c0672d69eee259058d2/master/pass/cannabis3.jpg",
+   "publicado_em": "2026-11-25T14:00:00+00:00",
+   "resumo": "That nighttime joint or edible might help you fall asleep faster, but new research suggests it could be disrupting your sleep quality without you even realizing it.",
+   "pre": 3.0
   },
   {
    "id": "bfe414f88ed96488",
@@ -1402,94 +1392,104 @@
    "pre": 1.0
   },
   {
-   "id": "a706bc316d391e09",
+   "id": "37b8c93780d02fe0",
    "canal": "Gq",
-   "titulo": "What GQ Editors Impulse-Bought in November",
-   "link": "https://www.gq.com/gallery/what-gq-editors-impulse-bought-november-2026",
-   "imagem": "https://media.gq.com/photos/6b05db91979161a41ae35e7b/master/pass/impulse-lede-art.png",
-   "publicado_em": "2026-11-24T19:14:35+00:00",
-   "resumo": "In-between bouts of menswear proselytizing, we do a lot of knee-jerk shopping of our own.",
+   "titulo": "Fellas, the J.Crew Black Friday 2026 Sale Is Just Flat-Out Absurd",
+   "link": "https://www.gq.com/story/jcrew-black-friday-sale-11-25-2026",
+   "imagem": "https://media.gq.com/photos/6b0716e9d5e3072d1267c196/master/pass/JCrew-lede-art.png",
+   "publicado_em": "2026-11-25T18:44:35+00:00",
+   "resumo": "At this point, it's starting to feel like we're the ones making money.",
    "pre": 0.0
   },
   {
-   "id": "78214a884bb18cc3",
+   "id": "5aae8f6911eb17e9",
    "canal": "Gq",
-   "titulo": "Two Menswear Darlings Just Made the Most Covetable Boots of 2026",
-   "link": "https://www.gq.com/story/viberg-gauthier-borsarello-boots-11-24-2026",
-   "imagem": "https://media.gq.com/photos/6b05d12c82fea772b3ad5aa8/master/pass/gauthier_viberg__022-hr.jpg",
-   "publicado_em": "2026-11-24T19:09:45+00:00",
-   "resumo": "Viberg teamed up with vintage savant Gauthier Borsarello to reimagine a legendary WWI-era boot.",
+   "titulo": "The Luxury Business of Las Vegas F1 Is Booming",
+   "link": "https://www.gq.com/story/2026-f1-las-vegas-grand-prix-photo-diary",
+   "imagem": "https://media.gq.com/photos/6b0708a805dfddd1a40432ae/master/pass/2611-GQ_Vegas_Canon_01363.jpg",
+   "publicado_em": "2026-11-25T18:25:19+00:00",
+   "resumo": "At the Formula 1 Grand Prix in Sin City, victory comes with an extra heaping of caviar.",
    "pre": 0.0
   },
   {
-   "id": "dbbb1cf4073106d6",
+   "id": "147c498b0011fd58",
    "canal": "Gq",
-   "titulo": "Jensen Huang Traded His Leather Jacket for a Humble Cotton Zip-Up During His Nvidia Return",
-   "link": "https://www.gq.com/story/jensen-huang-dior-cotton-jacket-nvidia-reinstated",
-   "imagem": "https://media.gq.com/photos/6b05cb6fed5a25de5d75bfd0/master/pass/2279157035",
-   "publicado_em": "2026-11-24T18:31:31+00:00",
-   "resumo": "The disgraced tech exec opted for a modest new look.",
+   "titulo": "20+ Huckberry Black Friday 2026 Deals to Help You Get Outside",
+   "link": "https://www.gq.com/story/huckberry-black-friday-sale-11-25-2026",
+   "imagem": "https://media.gq.com/photos/6b0716adf9acffa4026859ee/master/pass/huckberry%20v1.png",
+   "publicado_em": "2026-11-25T17:33:21+00:00",
+   "resumo": "For a limited time, score the adventure store's best deals of the year and kit yourself out like a champ.",
    "pre": 0.0
   },
   {
-   "id": "5fbb24f09d77095e",
+   "id": "66f336ba15fb2658",
    "canal": "Vanityfair",
-   "titulo": "Are the World’s Top Literary Scholars Being Targeted by a Chinese Spy Op?",
-   "link": "https://www.vanityfair.com/story/worlds-top-literary-scholars-targeted-by-chinese-spy-op",
-   "imagem": "https://media.vanityfair.com/clips/6b047934de841a1b576deec1/master/pass/IvySpyScam.mp4",
-   "publicado_em": "2026-11-24T16:41:21+00:00",
-   "resumo": "A mysterious literary academy with ties to China has claimed some of the biggest Ivy League and Oxbridge academics as its members. But US intelligence experts tell Vanity Fair they suspect the society is being used for ulterior motives.",
+   "titulo": "Listings for Sex Work Have Infiltrated Google Maps. Could It Be the New Craigslist?",
+   "link": "https://www.vanityfair.com/story/google-maps-sex-work-listings",
+   "imagem": "https://media.vanityfair.com/photos/6b04ab8f8e2e267e3cb61414/master/pass/vfnovember_google_map_sex_cz.jpg",
+   "publicado_em": "2026-11-25T14:00:14+00:00",
+   "resumo": "When Vanessa Grigoriadis opened up the map app, she was seeking a therapeutic massage for her ailing 84-year-old mother. Instead, she found a string of illicit massage services—from New York to Los Angeles. In an effort to better understand why the algorithm was retrieving these illegitimate listings, she reached out to Google and spoke to several experts about how this became a systemic issue.",
+   "pre": 1.0
+  },
+  {
+   "id": "0f6cd9cda2d93885",
+   "canal": "Vanityfair",
+   "titulo": "This Year, Macy’s Thanksgiving Day Parade Is Doing Broadway a Little Differently",
+   "link": "https://www.vanityfair.com/story/100th-macys-thanksgiving-day-parade-broadway",
+   "imagem": "https://media.vanityfair.com/photos/6b07111c75a0d0bdf5364135/master/pass/NUP_212429_00048.JPG",
+   "publicado_em": "2026-11-25T17:20:34+00:00",
+   "resumo": "More than 250 theater professionals are joining forces for a supersized musical number featuring nine Broadway shows. The creative team behind the medley, composer Tom Kitt and creative producer Sarah O’Gleby, exclusively tell Vanity Fair how they pulled it all together.",
    "pre": 0.0
   },
   {
-   "id": "d18665ad760a3f12",
+   "id": "d90a30936578b0e9",
    "canal": "Vanityfair",
-   "titulo": "Sell Thy Neighbor: Trump Official Howard Lutnick and the Clandestine Deal to Sell NYC’s Glamorous Pierre Hotel",
-   "link": "https://www.vanityfair.com/story/pierre-hotel-howard-lutnick-deal",
-   "imagem": "https://media.vanityfair.com/photos/6a88872a9c9f149a6f413982/master/pass/GettyImages-2288537343.jpg",
-   "publicado_em": "2026-11-24T13:00:00+00:00",
-   "resumo": "Everyone from Michael Eisner to Tory Burch to Larry Ellison owns an apartment—sometimes two—at the landmark Pierre Hotel overlooking Central Park South. Noah Shachtman traces the rise and fall of a controversial deal involving Trump’s commerce secretary and a Saudi buyer to hawk the building and force out all the residents and staff.",
+   "titulo": "Lucia’s Rise: Grand Theft Auto Forces Gamers to Grow Up—nd Punishes Them With Narrative Consequences If They Refuse",
+   "link": "https://www.vanityfair.com/story/grand-theft-auto-lucia",
+   "imagem": "https://media.vanityfair.com/photos/6b05a7b3e23ea46a20b100e6/master/pass/Jason_and_Lucia_03.jpg",
+   "publicado_em": "2026-11-25T16:55:51+00:00",
+   "resumo": "What Lucia, the first female protagonist in gaming’s biggest franchise, really means.",
    "pre": 0.0
   },
   {
-   "id": "4ee373a0625c5beb",
+   "id": "70ed62064bb6bab4",
    "canal": "Vanityfair",
-   "titulo": "The Return of Malin Akerman and Brittany Snow’s Twisted ‘Hunting Wives’ Love Story",
-   "link": "https://www.vanityfair.com/story/hunting-wives-showrunner-interview",
-   "imagem": "https://media.vanityfair.com/photos/6b04b0cf4761e612e3a9a2c4/master/pass/HUNTING_205_Unit_01974RC.jpg",
-   "publicado_em": "2026-11-24T12:00:00+00:00",
-   "resumo": "The cult-favorite lesbian sex romp, complete with Texan spins on the Melanias and Kristi Noems in our midst, returns for a second season. “Not that my show is a deep dive on Trump,” showrunner Rebecca Cutter tells Vanity Fair, “but maybe there is an element that’s sort of looking under the hood.”",
+   "titulo": "Ryan Grim Is Bringing the Manosphere Bros and Socialists Together",
+   "link": "https://www.vanityfair.com/story/ryan-grim-podcast-bros-midterms-interview",
+   "imagem": "https://media.vanityfair.com/photos/6b0603dde7163015a2048025/master/pass/Election_2026_Progressive_Media_26208713916846.jpg",
+   "publicado_em": "2026-11-25T12:00:00+00:00",
+   "resumo": "The Drop Site News cofounder explains why Steve Bannon and other MAGA loyalists like his journalism, why leftists should give Jerry Seinfeld a break, what everyone got wrong about the midterms, and what conservative Phish fans can teach us about political tolerance.",
    "pre": 0.0
   },
   {
-   "id": "5784ff8813d66be3",
+   "id": "50f4f060df038cd5",
    "canal": "Vanityfair",
-   "titulo": "Prince William Reportedly Wants to Strip Prince Harry of His Titles",
-   "link": "https://www.vanityfair.com/story/prince-william-prince-harry-titles",
-   "imagem": "https://media.vanityfair.com/photos/6b0462c48e2e267e3cb61004/master/pass/GettyImages-1425512661.jpg",
-   "publicado_em": "2026-11-23T20:57:41+00:00",
-   "resumo": "Prince William, heir to the British throne, reportedly has major “restructuring” plans for his reign.",
+   "titulo": "What’s Real and What’s Not in Netflix’s ‘The Altruists’",
+   "link": "https://www.vanityfair.com/story/fact-fiction-netflix-the-altruists",
+   "imagem": "https://media.vanityfair.com/photos/6b05fe98c6ef5e153ccc521b/master/pass/The_Altruists_n_S1_E6_00_10_28_05_R-(1).jpg",
+   "publicado_em": "2026-11-24T22:31:16+00:00",
+   "resumo": "Breaking down what’s ripped from the headlines and what’s creative license in the new SBF series—and what the show can tell us about the Anthropic IPO.",
    "pre": 0.0
   },
   {
-   "id": "27768721ce3825cb",
+   "id": "28f56e78f627333b",
    "canal": "Vanityfair",
-   "titulo": "Holiday 2026 U.S. Credits",
-   "link": "https://www.vanityfair.com/story/holiday-2026-us-credits",
-   "imagem": "https://media.vanityfair.com/photos/6af20a08c16158eab34f472e/master/pass/01.jpg",
-   "publicado_em": "2026-11-23T20:48:24+00:00",
-   "resumo": "Vanity Fair's Holiday 2026 issue",
+   "titulo": "Meet the Biggest Ralph Lauren Fan in France",
+   "link": "https://www.vanityfair.com/story/severin-naudet-ralph-lauren",
+   "imagem": "https://media.vanityfair.com/photos/6afc698e4cfd6fd19e49e38d/master/pass/Severin-Naudet-Photo_Bruno_MAZODIER-8591.jpg",
+   "publicado_em": "2026-11-24T21:59:15+00:00",
+   "resumo": "Séverin Naudet is known in France as a digital entrepreneur and political adviser, but he is also known for his loyalty, bordering on an obsession, to one particular American brand and designer: Ralph Lauren. In Naudet’s words, “He created the dream family that we all want to belong to.”",
    "pre": 0.0
   },
   {
-   "id": "64b1f7d2874849a6",
-   "canal": "Vanityfair",
-   "titulo": "Decoding Kate Middleton’s “Tourdrobe” for Her Trip to India",
-   "link": "https://www.vanityfair.com/story/kate-middleton-india-trip-fashion",
-   "imagem": "https://media.vanityfair.com/photos/6b0454ecf6c693110c589f12/master/pass/2305502495",
-   "publicado_em": "2026-11-23T15:11:02+00:00",
-   "resumo": "From a pistachio double-breasted blazer to a suite of matching jewels, “never has Catherine looked more like a queen in waiting,” British fashion designer Amanda Wakeley tells Vanity Fair.",
-   "pre": 0.0
+   "id": "c4946751ee185fef",
+   "canal": "Nytimes",
+   "titulo": "Corporate Oversight Revs Up as Washington Turns Blue Again",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQYmpvMXo1LXM5cFZWY1dYTWJJQnZfY0RUX29fdklCdXpZZlZrVXhRcHIxZFEySEU1UEs1ZU1QS2JnQkJNYno2RE40ZVA4ZzdsZm43RzhySDlsZngtZHpFRGNCczV3Nk1QbW5xVjVULUFEZEh0NlZ2NjdBSEZ2QlZEd1hR?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-25T16:43:21+00:00",
+   "resumo": "Corporate Oversight Revs Up as Washington Turns Blue Again The New York Times",
+   "pre": 2.0
   },
   {
    "id": "6de0249b6466aa4b",
@@ -1497,7 +1497,7 @@
    "titulo": "Protecting Child Actors’ Mental Health",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQnFtWmFvRzZmd2pHcVRMbEtUX2FtTmIyeG5ZdW5TTlN5Zi1XTkxzaVV0cDU0X1VTYjRERTdmNENvSUJYczFLZU5CRGIyaVB3Z2RLVlBEZnNTd3JaNG9lX3c0THlXVDZNMlJLTVl6TF9QOFdfeDJHQms2Z0pscEVKdlF5WVVQTkdnT1dJ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T15:20:53+00:00",
+   "publicado_em": "2026-11-24T10:04:11+00:00",
    "resumo": "Protecting Child Actors’ Mental Health The New York Times",
    "pre": 2.0
   },
@@ -1509,6 +1509,36 @@
    "imagem": null,
    "publicado_em": "2026-11-24T10:01:58+00:00",
    "resumo": "Why So Many of Us Have Chronic Back Pain, and Why It Won’t Go Away The New York Times",
+   "pre": 2.0
+  },
+  {
+   "id": "b4a417d5923278c4",
+   "canal": "Nytimes",
+   "titulo": "F1 will broadcast drivers’ heart rates live. They don’t all want fans to see them",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQndhcWxVckloYTRuTHhQOEN6MEhQZm5tYjFUcWdoSlJfSDhMaHZzeFdJSVFwVWVLZFN2MEtyc3R1Rk0zNTJpaUJoWTNqcXpZeGtDSFpuZ1A3V2d5TWVwRVljVTVvSERjSmJPSDVyQzR6YjlLbDNVcjduLTNVYzNqMXR1LWQxWi1YN21kMjNfVFR6enZjd3c?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T10:00:48+00:00",
+   "resumo": "F1 will broadcast drivers’ heart rates live. They don’t all want fans to see them The New York Times",
+   "pre": 2.0
+  },
+  {
+   "id": "01a3ad41d6dbe2a5",
+   "canal": "Nytimes",
+   "titulo": "Is There Such a Thing as Too Much Sleep?",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5tT0lsdVRYVzRzcVQ4TG9CWl90aVNiRjdqbVBfSHBxMzRERkdHNG8wUHdyRDFzZUx6TUx6bHNxeEtBS0ZaQmdfRFFiT1lQT192M3dDaUMyNUw1WWJUdlZjLVYxZjMyQ3VZN1BJ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T10:00:42+00:00",
+   "resumo": "Is There Such a Thing as Too Much Sleep? The New York Times",
+   "pre": 2.0
+  },
+  {
+   "id": "9ef6712cdb91ab68",
+   "canal": "Nytimes",
+   "titulo": "What Personality Can Tell Us About Mental Health",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sOU9qLWFjbG1sZDljdV9XSlljc1pOSTJWNEd6ZVBQdlpQODZMTktIak5OQ3U1Nm93RngtNFIza2JNT2NqaG9PYlJKZEJVV3hSR3JFVkROOVEtaGxRWlVPM0htRzBCeno0eG96cndQdU8yaU9BczJpdXV5UWRJdw?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T08:00:13+00:00",
+   "resumo": "What Personality Can Tell Us About Mental Health The New York Times",
    "pre": 2.0
   },
   {
@@ -1532,64 +1562,34 @@
    "pre": 2.0
   },
   {
-   "id": "9ef6712cdb91ab68",
+   "id": "8f6d40f39adde536",
    "canal": "Nytimes",
-   "titulo": "Mental Illness Is Clearly Influenced by Personality. But How?",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sOU9qLWFjbG1sZDljdV9XSlljc1pOSTJWNEd6ZVBQdlpQODZMTktIak5OQ3U1Nm93RngtNFIza2JNT2NqaG9PYlJKZEJVV3hSR3JFVkROOVEtaGxRWlVPM0htRzBCeno0eG96cndQdU8yaU9BczJpdXV5UWRJdw?oc=5",
+   "titulo": "Bayern Munich say Jamal Musiala’s ‘health comes first’ after chiefs’ comments on condition",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa1JrNTByVFhPNVV3aXF6VnNZemY5TDM5RjJuLU04TnZ3SEhNTzNrZ0xxSTZJaHpjeExycTFkbnFWRmFYZ0xiM1dYU1c5by1lZXFtLTNpbTBfTm1HTGFiNGZlUlJJbEhiQmVFdmNpY3dfZGJTN2Z4Smh2WkhNSUVhbWZ2eDVabEVQTWRvZXltMldRQTE0OF9B?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T08:00:12+00:00",
-   "resumo": "Mental Illness Is Clearly Influenced by Personality. But How? The New York Times",
+   "publicado_em": "2026-11-25T12:07:53+00:00",
+   "resumo": "Bayern Munich say Jamal Musiala’s ‘health comes first’ after chiefs’ comments on condition The New York Times",
    "pre": 1.0
   },
   {
-   "id": "b0572e80bd180b7b",
+   "id": "91ce2a20300272d6",
    "canal": "Nytimes",
-   "titulo": "More American Women Are Turning to Natural Family Planning, Study Shows",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5jNWRYLXVhM1M1UlFSalN5eUwyMEVXenk2QUoteFk4TGVaLUZzRHdKNGt5b2lHRExHZ0FvbFpVVTZKM3BOYkFWUW1kNVBCWkY1c2hYUDJ2UXFhTUI5aWwxcXYtTzczb2kwUm0xMGIteWo4d3JCbmVFV19OLVk?oc=5",
+   "titulo": "Opinion | Donate This Holiday Season: Build Health International Needs Your Help",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMWl3WTZQYzRmMzFLUDBOZ0s0Ry1QT1NMWmJwLWM5dV9tNFdJRzBKb3dMeE5qRDlBWWNhNUx2ejBIbVdXUVloS0MxYVBaM0ItTF9rQjltNm1KbTc0OE9xd204Vk8xM2JjZjVuTnNrUVhDcURFbWE5bE5WQ3ppQy1LNlNDbFoyLV95SWxVeQ?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-24T03:06:01+00:00",
-   "resumo": "More American Women Are Turning to Natural Family Planning, Study Shows The New York Times",
+   "publicado_em": "2026-11-25T10:04:21+00:00",
+   "resumo": "Opinion | Donate This Holiday Season: Build Health International Needs Your Help The New York Times",
    "pre": 1.0
   },
   {
-   "id": "26f08af77e05fcd6",
-   "canal": "Nytimes",
-   "titulo": "Musiala wanted privacy and support over health issues. Some Bayern legends aren’t giving him that",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRGtLYVhNY3lVUExXbThLdDFLU1I3OU1PSk42dzZ0dDl1RHlodUxUQzdJczNsSmZTOFZBOWlOOTRtdlJ0WXBBcnZRa1pGZGhaSTAzTVlIQ25sODBYcUhrSThlMy1nLU56eG9Qclc2YzNXNGF0YXBPNF9iVGUtdVJHWXgwTUh2cm9fa1lnenlydWdKQS1rclV5N0tuWlVtZw?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T16:48:52+00:00",
-   "resumo": "Musiala wanted privacy and support over health issues. Some Bayern legends aren’t giving him that The New York Times",
-   "pre": 1.0
-  },
-  {
-   "id": "4e46828e36a81a79",
-   "canal": "Nytimes",
-   "titulo": "CVS Health’s Planned Breakup Hasn’t Quieted Antitrust Critics",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRGk4a0diSTNQaHV3LWw2Zk5haEVsa0FqcjU0T1lVYjJqQnlUSThaQlJBMDR6Q1p6UkU2N2ZXMlRpc3RFdUxHODdwTE0tckRveVItVGxoYU85YjdDeHJaek1GU3Jlem82dGIyOEJnZktjd3VnNFdjRGR4Q1MwNlhNRVJhM01ZOHRqSWlyajF1SmZNMmdPWHVuUmhCWjY1SGtTSWVR?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T10:03:27+00:00",
-   "resumo": "CVS Health’s Planned Breakup Hasn’t Quieted Antitrust Critics The New York Times",
-   "pre": 1.0
-  },
-  {
-   "id": "506356cd2a1fb8a3",
-   "canal": "Nytimes",
-   "titulo": "International Mission Arrives at Mercury to Study Its Mysteries",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KTTFHbk1uMmN2OERKTGNCY21RNEw5Z1pPNURBTEljNThyTTdRWUo2YjVCOHRNV1UzS2F6XzlKbHhQWHhhbDltZVRfbjBCT252MTBXVjFDTm5yWF95ZHU0TmRNQzRDTVkteVE2TzdJd2VKUVNINS1NbkIxamhrQ2c?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T08:00:00+00:00",
-   "resumo": "International Mission Arrives at Mercury to Study Its Mysteries The New York Times",
-   "pre": 1.0
-  },
-  {
-   "id": "064e1cb9362812cc",
+   "id": "1d6959ca265629b7",
    "canal": "Globo",
-   "titulo": "'Molenga': Lore Improta mostra corpo pós-parto e cirurgias e inicia missão para recuperar o shape",
-   "link": "https://revistaquem.globo.com/saude/fitness/noticia/2026/11/lore-improta-fala-sobre-vida-fitness-no-pos-parto.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/hxDGoCNHZOr0fWgaa6KOoYlB-fA=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/F/t/YOiJBMQBWv5LYhFuNGEw/befunky-collage.png",
-   "publicado_em": "2026-11-23T11:32:22+00:00",
-   "resumo": "Lore Improta usou as redes sociais no último domingo (22) para falar sem filtro sobre a recuperação do corpo. Cinco meses depois do parto e cerca de um mês depois de passar por uma cirurgia para trocar a prótese de silicone e corrigir a diástase abdominal, a dançarina contou que ainda sente desconforto e que o treino na academia está bem limitado. Initial plugin text \"Eu ainda tô sentindo muito re",
-   "pre": 8.0
+   "titulo": "Ellen Rocche perde 12 kg e mostra antes e depois; confira",
+   "link": "https://revistaquem.globo.com/saude/fitness/noticia/2026/11/ellen-rocche-perde-12-kg-mostra-ante-e-depois-e-celebra-tao-feliz.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/Reff-90dAnZ4kBtyP7ZNJZ1uQCg=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/A/0/0ZV2CbR52c0kh5WHQZ6w/ellen-roche-844.jpg",
+   "publicado_em": "2026-11-25T09:53:28+00:00",
+   "resumo": "Ellen Rocche, de 47 anos, exibiu a transformação do seu shape após eliminar 12 kg. A atriz e ex-assistente de palco deixou claro que não emagreceu com dietas questionáveis, mas sim com acompanhamento médico especializado, focado na saúde e respeitando o ritmo do seu corpo. A artista também deixou claro que manteve uma constância após a mudança de hábitos. \"Estou tão feliz\", declarou Ellen. Nas fot",
+   "pre": 10.0
   },
   {
    "id": "6c02bc4b2d10d7cb",
@@ -1602,44 +1602,14 @@
    "pre": 6.0
   },
   {
-   "id": "48c10f55ef12eed7",
+   "id": "624f42ca190e58eb",
    "canal": "Globo",
-   "titulo": "Ícaro, dupla de Gilmar, detalha próximos passos após diagnóstico de síndrome compartimental na perna",
-   "link": "https://revistaquem.globo.com/saude/noticia/2026/11/icaro-dupla-de-gilmar-detalha-proximos-passos-apos-diagnostico-de-sindrome-compartimental-na-perna.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/wYeOIXVANGFtM0NFjKESp0WI7rg=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/R/b/8ytvHvQiCTt8DesK55WQ/design-sem-nome-13-.jpg",
-   "publicado_em": "2026-11-24T02:19:49+00:00",
-   "resumo": "Ícaro, da dupla sertaneja com Gilmar, atualizou seu estado de saúde, nesta segunda-feira (23), após ser diagnosticado com síndrome compartimental na perna direita. Em um vídeo publicado nas redes sociais, o cantor contou que uma ressonância magnética apontou uma piora da lesão e que chegou a ser considerada a possibilidade de internação para uma cirurgia. No entanto, um novo exame apresentou uma p",
-   "pre": 6.0
-  },
-  {
-   "id": "45f4d2fe37ec70b9",
-   "canal": "Globo",
-   "titulo": "Mariana Goldfarb arranca elogios com cliques de biquíni e academia: 'Tão linda sem filtro'",
-   "link": "https://revistaquem.globo.com/noticias/noticia/2026/11/mariana-goldfarb-arranca-elogios-com-cliques-de-biquini-e-academia-tao-linda-sem-filtro.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/B2RXZ-3k8wwr2A17WkPlvIB4Fcw=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/p/A/baRJ3FTW6g5BJ4BPuobw/stories-instagram-2026-11-23t173127.413.png",
-   "publicado_em": "2026-11-23T20:31:51+00:00",
-   "resumo": "Mariana Goldfarb, de 35 anos, compartilhou um álbum de fotos nas redes sociais nesta segunda-feira (23) e recebeu uma enxurrada de elogios dos seguidores. A modelo e influenciadora reuniu registros de momentos variados da rotina, que vão de dias de praia a treinos na academia. Mariana Goldfarb Reprodução Instagram Em um dos cliques, Mariana aparece de biquíni vermelho, sentada em uma pedra à beira",
-   "pre": 6.0
-  },
-  {
-   "id": "8dcd6f4d2024b349",
-   "canal": "Globo",
-   "titulo": "Ruivinha de Marte revela parte do corpo que ainda não gosta: 'Quando seca, seca tudo'",
-   "link": "https://revistaquem.globo.com/saude/fitness/noticia/2026/11/de-fio-dental-cavado-ruivinha-de-marte-diz-o-que-quer-mudar-no-corpo.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/xBKlbtUzfUil9rPYlrirb67zxKM=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/N/d/UDkSkVTi2zYa7WgASPhw/ruiv2.jpg",
-   "publicado_em": "2026-11-24T03:44:25+00:00",
-   "resumo": "A influenciadora Ruivinha de Marte, de 29 anos, usou seu Instagram, nesta segunda-feira (23), para postar um vídeo em que aparece com o coach fitness Luiz Salles e fala sobre o que quer mudar em seu corpo com a ajuda do profissional. No registro, ela mostra o shape de biquíni cavado e fio-dental em todos os ângulos. \"Quais são os pontos na frente do seu físico que você não gosta?\", questiona ele. ",
-   "pre": 5.0
-  },
-  {
-   "id": "e5bc0003ecd8a4ed",
-   "canal": "Globo",
-   "titulo": "Zé Felipe explica volta de dores por doença autoimune e sem cura: 'O corpo inflamou e apitou'",
-   "link": "https://revistaquem.globo.com/saude/noticia/2026/11/ze-felipe-fala-sobre-dores.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/35EJ7dJAPPzCax_29pZCRnjdsIc=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/m/I/DhVhMqSBeGyTSJnN0iIQ/befunky-collage.png",
-   "publicado_em": "2026-11-23T12:49:31+00:00",
-   "resumo": "Zé Felipe, de 28 anos, usou as redes sociais na manhã desta segunda-feira (23) para falar sobre a espondilite, doença inflamatória com a qual convive. O cantor contou que as dores voltaram depois de uma temporada nos Estados Unidos, quando deixou de lado os exercícios e a alimentação regrada. Initial plugin text \"Galera, conversar com vocês aqui. Vocês lembram que eu tava falando da dor que eu tav",
-   "pre": 5.0
+   "titulo": "Leilão de Ronaldo Fenômeno: lances de R$ 470 mil, decoração temática e famosos",
+   "link": "https://revistaquem.globo.com/noticias/noticia/2026/11/saiba-tudo-o-que-rolou-no-leilao-beneficente-de-ronaldo-fenomeno.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/O7cgqmoS71f2K7OJhoSbhlnCBjo=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/r/k/1VpGMAQfGScYHUCBPSCA/design-sem-nome-29-.jpg",
+   "publicado_em": "2026-11-25T03:00:00+00:00",
+   "resumo": "O ex-jogador de futebol e empresário Ronaldo, de 50 anos, e a esposa, a modelo Celina Locks, de 36 anos, reuniram um timaço de famosos na noite desta terça-feira (24), no Clube Monte Líbano, em São Paulo, na 3ª edição do Leilão Galácticos. A iniciativa beneficente arrecada recursos para a Fundação Fenômenos, fundada pelo ex-atleta. A Quem acompanhou os bastidores do evento, que teve decoração temá",
+   "pre": 4.0
   },
   {
    "id": "8d6d271417860aa2",
@@ -1662,14 +1632,44 @@
    "pre": 4.0
   },
   {
-   "id": "b7fa85ffd7af1d6d",
+   "id": "af200310ed191aa7",
    "canal": "Globo",
-   "titulo": "Namorada de Rayssa Leal comemora novo ouro da skatista: 'Meu coração transborda'",
-   "link": "https://revistaquem.globo.com/noticias/noticia/2026/11/namorada-de-rayssa-leal-comemora-novo-ouro-da-skatista-meu-coracao-transborda.ghtml",
-   "imagem": "https://s2-quem.glbimg.com/38iKleOkNDJJDqwkzNej18StlAk=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/z/g/On6MEnRaAHeTSBsjYs5w/rayssa-leal-duda-wilken.jpg",
-   "publicado_em": "2026-11-23T11:40:02+00:00",
-   "resumo": "Rayssa Leal tem um novo título: a skatista conquistou ouro na etapa da Copa do Mundo de skate street em Utsunomiya, no Japão, nesta segunda-feira (23), superando a atual campeã olímpica Coco Yoshizawa, que competia em casa e terminou a disputa em terceiro lugar. A prata ficou com a atleta australiana Chloe Covell. Fora da pista, Duda Wilken, namorada da brasileira, comemorou a vitória dela por mei",
-   "pre": 4.0
+   "titulo": "Carnaval 2027: Karol Conká terá o Bloko Conká em SP",
+   "link": "https://revistaquem.globo.com/eventos/carnaval/noticia/2026/11/carnaval-2027-karol-conka-tera-o-bloko-conka-em-sp.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/YhcEaiJSkJZ0rB0ttVVCOS7pmME=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/j/p/rFgZfRR3qTnsjSB7GSVA/karol-conka.jpg",
+   "publicado_em": "2026-11-25T15:36:13+00:00",
+   "resumo": "Karol Conká, 40 anos, vai estrear no circuito dos blocos de rua de São Paulo no Carnaval 2027. Com uma proposta que coloca música, diversidade e liberdade de expressão nas ruas, o Bloko Conká será lançado para as comemorações dos 25 anos de carreira da cantora, revisitando sua trajetória musical. Antes da apresentação carnavalesca, ela realizará um \"eskenta\" no dia 11 de dezembro, no High Club São",
+   "pre": 3.0
+  },
+  {
+   "id": "29b9455f488d16e6",
+   "canal": "Globo",
+   "titulo": "Gabriela Pugliesi reage a crítica por se dizer conservadora e estar no 3º casamento",
+   "link": "https://revistaquem.globo.com/noticias/noticia/2026/11/gabriela-pugliesi-reage-a-critica-por-se-dizer-conservadora-e-estar-no-3o-casamento-sou-livre.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/26iYAIhn0iqkxnJ0-VtvZam8O78=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/B/2/8FEgqpQR2NMPh1fZxczA/whatsapp-image-2026-11-25-at-07.40.20-1-.jpeg",
+   "publicado_em": "2026-11-25T10:45:49+00:00",
+   "resumo": "Gabriela Pugliesi abriu uma caixinha de perguntas em seu Instagram, na terça-feira (24), especialmente destinada aos haters. A musa fitness, de 41 anos, reagiu a uma crítica por se definir como conservadora e estar no terceiro casamento, por ter voltado a consumir carne após anos vegetariana e a uma observação sobre o público não esquecer o sobrenome com o qual fez sua carreira midiática, já que o",
+   "pre": 3.0
+  },
+  {
+   "id": "87a755bfd7caa932",
+   "canal": "Globo",
+   "titulo": "Leonardo fala de 33 dias sem álcool e relembra: 'Pandemia quase me matou'",
+   "link": "https://revistaquem.globo.com/saude/noticia/2026/11/leonardo-fala-de-33-dias-sem-alcool-e-relembra-pandemia-quase-me-matou-de-tanto-beber.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/BtNuBA87p9VuvEHv_bBLHPjnIdc=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/H/L/mboXljQiC8RmITfCkoBQ/leonardo.jpg",
+   "publicado_em": "2026-11-25T06:27:21+00:00",
+   "resumo": "O cantor sertanejo Leonardo, de 63 anos, que está a bordo do Navio Cabaré, cruzeiro dele que está em sua 5ª edição, falou com o público, na madrugada desta quarta-feira (25), ao se apresentar pros fãs na embarcação de luxo. No palco, ele falou sobre o projeto musical, cuja atual edição começou na última segunda (23) e vai até esta quinta (26). \"Eu já fui a muito cabaré na minha vida, mas em alto-m",
+   "pre": 3.0
+  },
+  {
+   "id": "70b3ed44f0712388",
+   "canal": "Globo",
+   "titulo": "Poliana usa look com body de renda transparente no navio de Leonardo",
+   "link": "https://revistaquem.globo.com/noticias/noticia/2026/11/poliana-rocha-usa-look-a-la-lingerie-de-renda-transparente-pra-navio-de-leonardo.ghtml",
+   "imagem": "https://s2-quem.glbimg.com/3oP-PrIVfba8V2_FWOxhDSTDvqg=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/P/i/LAj6FGTRCBXUGEDxvnOQ/poliana.jpg",
+   "publicado_em": "2026-11-25T01:42:14+00:00",
+   "resumo": "Poliana Rocha, de 50 anos de idade, optou por um look estilo burlesque para curtir show do maridão, o cantor Leonardo, de 63 anos, no navio Cabaré, na noite desta terça-feira (24). A influenciadora combinou um body de renda transparente e saia dourada para a segunda noite de shows da embarcação de luxo. O Navio Cabaré chega à sua 5ª edição em 2026 e começou nessa segunda-feira (23), quando Leonard",
+   "pre": 3.0
   },
   {
    "id": "5a8774370d9832ca",
@@ -1679,6 +1679,26 @@
    "imagem": "https://s2-quem.glbimg.com/AMfdJsTLrKLXIMx9jfYkQsLI7Ag=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/Z/S/qBIeAYQyAQSgpvr2TNsA/befunky-collage-2026-11-24t130246.873.jpg",
    "publicado_em": "2026-11-24T15:48:33+00:00",
    "resumo": "Virginia Fonseca, de 27 anos, recebeu uma massagem relaxante em sua mansão nesta terça-feira (24) após treinar pesado na sua própria rede de academia, em Goiânia. Nos Stories do Instagram, a influenciadora compartilhou um vídeo mostrando sua barriga definida enquanto recebia a massagem, aparentemente nua. Ela acrescentou um emoji que representa suspiros no post. Mais cedo, Virginia mostrou parte d",
+   "pre": 3.0
+  },
+  {
+   "id": "06121ffce7ee055f",
+   "canal": "People",
+   "titulo": "Barbara Eden Reveals Her Fitness and Diet Tips at Age 95",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5jSUo1clVUcHBJVmhlcUkzbGdlTmhsOUdSdTRETTNCNmo3dVVvX1g0NDRLY25lYk9sSHNRRDJOLUpxOFhKWWFFSXptSFhFUWs5c2IxSFkyVlRHLVkyc25ISk0wXzU3N25XQS1VT0VpZ0Rrd3FKYUI3b1B1eUI?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-23T15:56:12+00:00",
+   "resumo": "Barbara Eden Reveals Her Fitness and Diet Tips at Age 95 People.com",
+   "pre": 5.0
+  },
+  {
+   "id": "4a21bd0a68ed7a54",
+   "canal": "People",
+   "titulo": "Kaitlyn Bristowe’s Dog Faces New Health Scare Weeks After Surviving Near-Fatal Overdose",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQc25YVWd2Z3E5enZSWF9yeXFjV1Jac0FiU09zb1cwNk52aFMtVTdoOHFSZUowcWRTVVVRM0dhTWlvMktHdDZoUDlqN3J3dEFBMThYRlpvZlFpN01xdkJ5Y1ZxSGxIM0NmQkpvS2p6aV9yVUFQN1RUdVFZeUZVSlNFNkFreTVkYkkweTJXNG9rQmlJNWNXSnBPanRBckgzb3puWHMwSnJ3djZRUWIwTjNZZVNIRjNTQQ?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T21:20:05+00:00",
+   "resumo": "Kaitlyn Bristowe’s Dog Faces New Health Scare Weeks After Surviving Near-Fatal Overdose People.com",
    "pre": 3.0
   },
   {
@@ -1692,13 +1712,13 @@
    "pre": 2.0
   },
   {
-   "id": "255a926500680487",
+   "id": "aa85c862c52ca7f2",
    "canal": "People",
-   "titulo": "Patrick Clancy’s Wrongful Death Lawsuit Against Lindsay’s Mental Health Providers Can Proceed, Judge Rules",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPby1yVTdjZXM4cUdwM0sybXQySS14d0I1cVZPMEM3NXJjTmNYeU8tMEtxcWpUV1pKcnNxcDB6QzNGUnNmOV9Gcm80ckFsRFFHeGFNSTV3d2k3VFRwRzZXV1JfbVFaMXBqcVlNd1pVTFBmWktKVG5nX2pScV9CMFl3TTRhbW5NLVpyUmFnenlYcw?oc=5",
+   "titulo": "Leanne Morgan Feels ‘More Confident’ at 61 Since Losing Weight on GLP-1 Pills (Exclusive)",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSXRLanVwWTJIVGZvLXFac3REXy13RHJUaXROdnF2MDJCTWpjT21rdGhXYnoxM243WmFKeWtFSElyZllzd0loTUZnd1MwUTFFdjR0YlZDajd1UGFRaFM5YVRuRVJuTndWbUF1bUtEOVFQMHlVcVJ3NEFydGpyQXRvb1hSQWZ2cEZVYUdubjQxaDVKWklBRk52b0ZGTjhKdw?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-23T19:57:52+00:00",
-   "resumo": "Patrick Clancy’s Wrongful Death Lawsuit Against Lindsay’s Mental Health Providers Can Proceed, Judge Rules People.com",
+   "publicado_em": "2026-11-24T14:00:00+00:00",
+   "resumo": "Leanne Morgan Feels ‘More Confident’ at 61 Since Losing Weight on GLP-1 Pills (Exclusive) People.com",
    "pre": 2.0
   },
   {
@@ -1732,53 +1752,33 @@
    "pre": 2.0
   },
   {
-   "id": "007d32e0546577b8",
+   "id": "930737e93527dde5",
    "canal": "People",
-   "titulo": "Deaf Student-Athlete Earns 10 College Scholarship Offers Following Successful High School Football Career",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMV80YnBnNzZLZ0tkWUlEM2tQTlk2a3RXWTF4ZXVkUnlSUHRhRGV1RUxxWGdmSFZPazJDNFpBaER1UmRqd01uLWQ4dTRtdDdpUktsN0kxRXRkeFJncVdETXJlcDZGQmN1YTREc1hpcUt6eGs1RnFCQ2MzMktfUlZERkpQWUZyNmxiT2VpbENkWXhJUWVuUUxlQmxLbV9zTHQ3VVU4T2FldmRNX3JMdmxvTG1hcw?oc=5",
+   "titulo": "Army Detonates 5 Tons of Toxic Lead Explosives Near Iowa Town, Posing Alarming Health Risks",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeEdRWDFIeXlaTk9aRVpDOXltcElodVNsNTg1U0NoS2hiRWtYd1JMZFA5UDhycFNRRjFpNVRFZW1NRGFTc29CMGFuNmw5Q2thaEFrRG5fVUFiWlItdThidEM3ZFhlNGgwTjVVRk9iUHNPZjZucV9Mc1o0S2s5cVNNYnl1U21OSUpxcDVJeEg4RkwtM2M?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-22T11:00:00+00:00",
-   "resumo": "Deaf Student-Athlete Earns 10 College Scholarship Offers Following Successful High School Football Career People.com",
-   "pre": 2.0
+   "publicado_em": "2026-11-25T16:37:00+00:00",
+   "resumo": "Army Detonates 5 Tons of Toxic Lead Explosives Near Iowa Town, Posing Alarming Health Risks People.com",
+   "pre": 1.0
   },
   {
-   "id": "7a01fcf4e5e2c766",
+   "id": "add010ccc803bc74",
    "canal": "People",
-   "titulo": "Woman Details How She Kept Half Marathon Training Secret from Husband (Exclusive)",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcXRlY2M1Q3NXd1BzTnBtMFVWTmV5cXhBZ01MbzVQRmhDRkROOVh1SVJkX3AtMXpjcXBKZGFRSmZSNVFvMVRieWJfOTBHOG5WWEFMc3hBN3RJY1htRURidG8yZ1BmUW5qamo4bTQ3SjQ2Sl81emtFRjA2OVlpTGtIcDNCZkFseXpac1BkREFGOGpsQ1dTTTdXZnM1amJpalZVYko4c2MxMndlLTQ?oc=5",
+   "titulo": "Doctors Warn of Eye Risks After Woman’s Pickleball Accident",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wdVVjSTltdE5KRGhqWnlBcXhXTTNhZ01qU1N0Z1dKWFQ0S0tfalhuTktrZ25NS2locjhEV012VHFLTkxmeFhOcTFNX3hod2tQdEhaV2JLZWIzN2Y0SGpJR2xHS1NfUTc3MUlCblVFeVQ0cDhFQ0pyLW8yZmt4ZG8?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-22T09:59:00+00:00",
-   "resumo": "Woman Details How She Kept Half Marathon Training Secret from Husband (Exclusive) People.com",
-   "pre": 2.0
+   "publicado_em": "2026-11-24T22:11:16+00:00",
+   "resumo": "Doctors Warn of Eye Risks After Woman’s Pickleball Accident People.com",
+   "pre": 1.0
   },
   {
-   "id": "fa771ae1ac8ffdfa",
+   "id": "ab91b9db987689e7",
    "canal": "People",
-   "titulo": "The Exact Retinal Kylie Jenner Uses Is Just $14 for Black Friday — Plus, More Amazon Anti-Aging Skincare Deals",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNEQ4NGlZclZabnFsaWNzTlNxOU5NOG9pV0FKbnJRVmdJMTZ4cFBvRGJwb0d4RUxySHZnTWRjZG1jQ2tzVXNpSHM3Y1BpWmlBWkNtdjRlbkhNSmJ6TVByQ1pOWk13dUtRUTBxZklJQlJJTkFwRld2N3dFaXhlaFlLMTdkdVJZVTRyYWVHRVFTcmE?oc=5",
+   "titulo": "Kayla Cardona’s Son Undergoes Emergency Surgery amid Health Scare",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeXRYb3lHdHNBanY4b191OEhlWk43WEhBYmhTWGg1U1l1ZlVmWi1Td1ViQUJibzVRMWVVZmxlLUllNGJoaF9kUUlfX0pWa0V4MEJON21xTElZeVVydXp3S1k3RWRYb1BaVHUyU1psRjJ6cnBKX2NRMGFWREFhTFZKMElOa05seGpfMmZXelF3?oc=5",
    "imagem": null,
-   "publicado_em": "2026-11-22T09:30:00+00:00",
-   "resumo": "The Exact Retinal Kylie Jenner Uses Is Just $14 for Black Friday — Plus, More Amazon Anti-Aging Skincare Deals People.com",
-   "pre": 2.0
-  },
-  {
-   "id": "9cc392332c2d4c05",
-   "canal": "People",
-   "titulo": "Man Didn’t Know He Had Life-Threatening Defect That Gave Him Extra Heart Chamber for Over 7 Decades (Exclusive)",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTVBuUDdXcUlmQlprSlpJUTFxbzB5Q2Z5Wk82NTRIUHF4S3J5RG1mdThSWkZXbUFiR25fTWowWEx5Tzd5dlZXenQ1UU9ZODJlX2x3TUJ1ZnV5MXc4TmhnMVlVVk4wSHFmZDNnLWpwM3ozM0syRE5GQWVYMTk4Nm5jdHd3VGczTUtzNU0wVVU3TEdkaEZ2V08wS2R2VWhpQWdTWDBYSU1sc2pnc3RBTVE?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-21T23:00:00+00:00",
-   "resumo": "Man Didn’t Know He Had Life-Threatening Defect That Gave Him Extra Heart Chamber for Over 7 Decades (Exclusive) People.com",
-   "pre": 2.0
-  },
-  {
-   "id": "abf620ad1a1ca151",
-   "canal": "People",
-   "titulo": "Scientists Discover 156-Million-Year-Old ‘Dragon’ Hidden Inside Rock and Name It After Heavy Metal Band",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQS1B5SExLZ2JzenN6cTMxeVB3UXZtalkwdXk2T3lScUJ5LWtlWnVKVVpCa2dJMGpZNUluWjBQbGt5MW5uMEotSk92MWVkcXBnWWVMT3JrUTlORExlRW8yYWU4ZUdwQ2pNU3AzYjctMnl1RXAtUmVpV3I2bWJ5eWw2bHFveV92X1dDYW5HMkdjdnJiWlJXWnVLNklReFoybk45Z2NkMkFCX190RVdCVnlzLVRjTVUyTkhkVmtrMGxpQ3VOYWVIVXRLQw?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T13:40:00+00:00",
-   "resumo": "Scientists Discover 156-Million-Year-Old ‘Dragon’ Hidden Inside Rock and Name It After Heavy Metal Band People.com",
+   "publicado_em": "2026-11-24T21:55:53+00:00",
+   "resumo": "Kayla Cardona’s Son Undergoes Emergency Surgery amid Health Scare People.com",
    "pre": 1.0
   },
   {
@@ -1792,6 +1792,26 @@
    "pre": 2.0
   },
   {
+   "id": "8f351e9e857b2733",
+   "canal": "Vulture",
+   "titulo": "The 34 Greatest Character Actors Working Today",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5XWFpaTWppeW9tcWljQmx1Vi1DSFViQU5QMlFuQ2c1Nkl1bzZEcWFRYVhyenA1SnJTOEhwMFRKQXJZYllSdVlJMmpvQ0phZjdZUU5zYk5YbnV1VUxLUDBqSUV6SmFuNmQ5QXExMlhaZUc?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T18:30:40+00:00",
+   "resumo": "The 34 Greatest Character Actors Working Today Vulture",
+   "pre": 1.0
+  },
+  {
+   "id": "9acbeedc881b26ca",
+   "canal": "Vulture",
+   "titulo": "‘Madden’ Isn’t a Bad Movie. It Isn’t a Movie at All.",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8zOGhTal9YM1lET3RWTFg1U0NJUGttY05fdlpuU0VlNEVHdThYT0lVbG5SQ1Q2YVZ6bElyQmlBQ2VUM0xYU01JTnpnX3JmcS1tOVlXOTB5V0dVb1poNl9fTVpSSVg0TmplTUE?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T20:00:02+00:00",
+   "resumo": "‘Madden’ Isn’t a Bad Movie. It Isn’t a Movie at All. Vulture",
+   "pre": 0.0
+  },
+  {
    "id": "7c2bdbd4ce83a0e2",
    "canal": "Vulture",
    "titulo": "Zach Cherry Loves a Little Bird-Based Game",
@@ -1799,6 +1819,16 @@
    "imagem": null,
    "publicado_em": "2026-11-24T18:31:40+00:00",
    "resumo": "Zach Cherry Loves a Little Bird-Based Game Vulture",
+   "pre": 0.0
+  },
+  {
+   "id": "2a3ac86f8e0710b9",
+   "canal": "Vulture",
+   "titulo": "A Complete Overview of Movies Fantasy League: Season 6",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBzU3J4UUtYRVdJWnNPeTlEenVVM0g0UUVBNE4tR2V4ZTRycDFWR1lZNzVIWTlPRXBlbmxyNWdfbURQQ2pYRDZXc3Itd1A1Vjg?oc=5",
+   "imagem": null,
+   "publicado_em": "2026-11-24T17:00:00+00:00",
+   "resumo": "A Complete Overview of Movies Fantasy League: Season 6 Vulture",
    "pre": 0.0
   },
   {
@@ -1812,93 +1842,63 @@
    "pre": 0.0
   },
   {
-   "id": "f206e997cce6515e",
-   "canal": "Vulture",
-   "titulo": "Review: The Minor Chords of August Wilson’s ‘Seven Guitars’",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNDRvanNzT0J2YjdRY0dXMlV3Z3ZhSGxSZEtScjROVGZueWMtTlZjcEtMQnotMWt6TUdsNW4wN2EtRmllMFpKN3M2WmhfSks0enE1eGs0V1FFMWNLZ3g0WW02OG9XaU9qdVhWTVFCZHY5SmZWM0V4SGlNSmotX08yLW9mWi0xRzMzajdKcHQwS1BaWmp4eHVMYkE2Vjc0NExxSnVLajlHcE1ROGthLTUw?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-24T04:00:03+00:00",
-   "resumo": "Review: The Minor Chords of August Wilson’s ‘Seven Guitars’ Vulture",
+   "id": "f8a62e63220739e6",
+   "canal": "Pagesix",
+   "titulo": "Sami Sheen dreading ‘screaming fights’ on Thanksgiving amid tumultuous family relationships",
+   "link": "https://pagesix.com/2026/11/25/celebrity-news/sami-sheen-dreading-screaming-fights-on-thanksgiving-amid-tumultuous-family-relationships/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fsami-sheen-dreads-screaming-fights-150025497.jpg?w%3D605",
+   "publicado_em": "2026-11-25T18:31:34+00:00",
+   "resumo": "The OnlyFans model has had a rocky relationship with her father, Charlie Sheen, and sister, Lola Sheen, throughout the years.",
+   "pre": 2.0
+  },
+  {
+   "id": "15330a6be03543ed",
+   "canal": "Pagesix",
+   "titulo": "Osea’s Black Friday sale is even better with Page Six’s exclusive code",
+   "link": "https://pagesix.com/2026/11/25/style/osea-black-friday-sale-is-even-better-with-this-exclusive-code/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fosea1.jpg?quality%3D90%26strip%3Dall",
+   "publicado_em": "2026-11-25T17:31:02+00:00",
+   "resumo": "Stars like Brittany Mahomes and Christie Brinkley can't get enough of the brand's body oil.",
+   "pre": 2.0
+  },
+  {
+   "id": "ee4c31b100ca3789",
+   "canal": "Pagesix",
+   "titulo": "Everyone from Tom Brady to Paige DeSorbo uses this red light mask, and it’s on sale Black Friday",
+   "link": "https://pagesix.com/2026/11/25/style/shark-cryoglow-led-mask-is-50-off-on-amazon-for-black-friday/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2F150028469.jpg?quality%3D90%26strip%3Dall",
+   "publicado_em": "2026-11-25T18:51:24+00:00",
+   "resumo": "The price is hardly ever this low.",
    "pre": 0.0
   },
   {
-   "id": "a8b12d8eef469ec9",
-   "canal": "Vulture",
-   "titulo": "Every Pop-Culture Easter Egg We’ve Found in GTA VI (So Far)",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMHVZSXRncXFvTzZERkdqUDlNcjh0SGZaQ1g1NG5IXzAyVGVVZ25RM1hSdUdJaDFxWXJPdVBEX1Z3MFJmQnA3YTh0UFNXTFd6dFVaYlN0a2xtOE9hNEkxTmFZN1NMQTYtRE91WVZWSjAzd0d2WVFKRDFKZ2tZTHhTYVd2MzRDdFlQZHZlQS15eVQ0V1owdC1iT2ZpZ2M?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T20:00:00+00:00",
-   "resumo": "Every Pop-Culture Easter Egg We’ve Found in GTA VI (So Far) Vulture",
+   "id": "06b3bedd3cc1ce16",
+   "canal": "Pagesix",
+   "titulo": "‘Married At First Sight’ star Ryan de Nino’s cause of death revealed",
+   "link": "https://pagesix.com/2026/11/25/celebrity-news/married-at-first-sight-star-ryan-de-ninos-cause-of-death-revealed/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fmarried-first-sight-star-ryan-150030691.jpg?w%3D1024",
+   "publicado_em": "2026-11-25T18:49:43+00:00",
+   "resumo": "The reality star died in August in New Jersey, with his family revealing at the time that his passing was \"sudden.\" De Nino was 40.",
    "pre": 0.0
   },
   {
-   "id": "2a9a83b4b50108b4",
-   "canal": "Vulture",
-   "titulo": "What Does MoMA’s Merger With Pompidou and M+ Mean for the Art World?",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9CcGFRQmxOVGRobWc5VUhab1poeVhZNmZIeWtCMWM2UjlHNWZTRm8tM3FPUGhpVGNibGRrcmIyQS01NlBucEVIdWhGc0lUbllzai15cElLcFlPNHFkSnlPWnYyOXBDQ0xqUm4tQXRBY0ozVHpLNDFMVg?oc=5",
-   "imagem": null,
-   "publicado_em": "2026-11-23T12:00:09+00:00",
-   "resumo": "What Does MoMA’s Merger With Pompidou and M+ Mean for the Art World? Vulture",
+   "id": "c7415574005b811c",
+   "canal": "Pagesix",
+   "titulo": "Russell Brand’s wife, kids visit convicted rapist in jail as comedian prepares for first holiday behind bars",
+   "link": "https://pagesix.com/2026/11/25/celebrity-news/russell-brands-wife-three-children-visit-disgraced-comedian-in-prison/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Flaura-brand-family-visit-russell-150019023.jpg?w%3D1024",
+   "publicado_em": "2026-11-25T18:13:19+00:00",
+   "resumo": "Laura Gallacher visited her husband at the low-security prison where he is serving his 10-year sentence just last week.",
    "pre": 0.0
   },
   {
-   "id": "f875d1f26eed0886",
+   "id": "4ceaeca94aaddb19",
    "canal": "Pagesix",
-   "titulo": "Ariana Grande to lay bare personal life in deeply intimate project — months after taking extended hiatus from public work",
-   "link": "https://pagesix.com/2026/11/24/celebrity-news/ariana-grande-to-lay-bare-personal-life-in-deeply-intimate-project-months-after-taking-extended-hiatus-from-public-work/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fariana-grande-performs-onstage-mtv-149937843.jpg?w%3D1024",
-   "publicado_em": "2026-11-24T19:35:26+00:00",
-   "resumo": "The two-part Peacock production, set for release on Dec. 11, will show the hitmaker's journey leading up to her \"Eternal Sunshine\" tour and throughout.",
-   "pre": 1.0
-  },
-  {
-   "id": "247db3404141263f",
-   "canal": "Pagesix",
-   "titulo": "Elizabeth Holmes’ Theranos assistant reveals ‘biggest red flags’ about scammer boss in first on-camera interview",
-   "link": "https://pagesix.com/2026/11/24/celebrity-news/elizabeth-holmes-theranos-assistant-shares-boss-biggest-red-flags-on-camera-interview/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fwww-youtube-com-watch-v-149929221.jpg?w%3D1024",
-   "publicado_em": "2026-11-24T18:00:00+00:00",
-   "resumo": "Aria Marinelli told podcast listeners each moment she felt \"a tickle\" of suspicion \"in the back of [her] mind\" while working for Holmes.",
-   "pre": 1.0
-  },
-  {
-   "id": "86d6be49c46be150",
-   "canal": "Pagesix",
-   "titulo": "Jax Taylor reacts to backlash over cancer diagnosis after ex Stassi Schroeder’s shady reaction",
-   "link": "https://pagesix.com/2026/11/24/celebrity-news/jax-taylor-reacts-to-backlash-over-cancer-diagnosis-after-ex-stassi-schroeders-shady-reaction/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fphoto-hollywood-star-max-gc-149357009_56bde5.jpg",
-   "publicado_em": "2026-11-24T19:41:21+00:00",
-   "resumo": "\"Jax is fully aware that his past has given people reasons to question him,\" an insider told Page Six exclusively.",
-   "pre": 0.0
-  },
-  {
-   "id": "e6178d0aa8190201",
-   "canal": "Pagesix",
-   "titulo": "‘Seinfeld’ star Steven Hack dead at 68 after ‘unexpected’ medical emergency",
-   "link": "https://pagesix.com/2026/11/24/celebrity-news/seinfeld-star-steven-hack-dead-at-68-after-unexpected-medical-emergency/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fsteven-hack-episode-ratched-149943651.jpg",
-   "publicado_em": "2026-11-24T19:33:58+00:00",
-   "resumo": "The actor also starred on \"Desperate Housewives.\"",
-   "pre": 0.0
-  },
-  {
-   "id": "bf9470de32483467",
-   "canal": "Pagesix",
-   "titulo": "Jessica Simpson flaunts darkest hair color in two decades: ‘Billionaire brunette’",
-   "link": "https://pagesix.com/2026/11/24/style/jessica-simpson-flaunts-dark-brunette-hair-color-ditching-signature-blond/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fbrunettes-fun-https-www-instagram-149931249.jpg?w%3D643",
-   "publicado_em": "2026-11-24T19:04:58+00:00",
-   "resumo": "The \"With You\" singer ditched her signature blond color for the winter.",
-   "pre": 0.0
-  },
-  {
-   "id": "62ea70b12723908f",
-   "canal": "Pagesix",
-   "titulo": "Kim Zolciak, Kroy Biermann in staggering tax debt as exes hire high-powered lawyer in son KJ’s sodomy case",
-   "link": "https://pagesix.com/2026/11/24/celebrity-news/kim-zolciak-and-kroy-biermann-in-staggering-tax-debt/",
-   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fkroy-biermann-kim-zolciak-biermann-149442529.jpg",
-   "publicado_em": "2026-11-24T18:56:18+00:00",
-   "resumo": "Zolciak and Biermann are facing financial issues as their oldest son battles serious criminal charges.",
+   "titulo": "Inside Marc Anthony’s tumultuous relationship with Max and Oskar as Jennifer Lopez recalls ‘tough’ divorce",
+   "link": "https://pagesix.com/2026/11/25/celebrity-news/inside-marc-anthonys-tumultuous-relationship-with-max-and-oskar/",
+   "imagem": "https://pagesix.com/wp-content%2Fuploads%2Fsites%2F3%2F2026%2F11%2Fmarc-anthony-posts-family-pictures-12911529.jpg",
+   "publicado_em": "2026-11-25T18:10:53+00:00",
+   "resumo": "A source exclusively told Page Six that Anthony is letting the kids “take the lead” in their relationship.",
    "pre": 0.0
   },
   {
