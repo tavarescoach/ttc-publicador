@@ -2,59 +2,84 @@
 <html lang="pt-BR"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
 <!-- Tela de story 1080x1920 com a identidade LT. Uso: render/story.py
-     Sobre vídeo ou foto: o Luan aparece nítido e o texto vai numa caixa escura (preferência do Luan, 26/11/2026).
-     v3: linha de fonte do artigo, título menor quando o texto é longo, âncora do texto embaixo. -->
+     v3 (modelo "v3", aprovado pelo Luan em 26/11/2026 a partir dos templates do Canva): foto de academia escura
+     em tom azul-marinho, texto direto sobre a foto (sem caixa), rótulo cinza com barra vermelha, título branco,
+     destaque vermelho, linha de fonte e rodapé "Evolução sem acaso.".
+     Sem modelo (v2): caixa escura sobre o vídeo. -->
 <style>
 :root{--bg:#0B1222;--bg2:#050A16;--txt:#F8FAFC;--mut:#94A3B8;--red:#C1121F}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1920px}
 body{font-family:"Inter Display","Inter",sans-serif;color:var(--txt);-webkit-font-smoothing:antialiased;
  background:radial-gradient(1200px 900px at 20% 15%,#111A2E 0%,var(--bg) 45%,var(--bg2) 100%);position:relative;overflow:hidden}
-.fundo{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+.fundo{position:absolute;left:-12px;top:-20px;width:1104px;height:1960px;object-fit:cover}
+.fundo.espelho{transform:scaleX(-1)}
+/* foto crua (banco do Drive, acervo): mesmo tom das fotos do template */
+.fundo.tratar{filter:grayscale(.85) brightness(.62) contrast(1.08)}
+.tom{position:absolute;inset:0;background:#0B1A3A;mix-blend-mode:color;opacity:.55}
+.tom2{position:absolute;inset:0;background:rgba(6,12,28,.42)}
+/* leitura do texto: escurece de leve a metade de baixo */
+.leitura{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,22,0) 0%,rgba(5,10,22,0) 45%,rgba(5,10,22,.30) 65%,rgba(5,10,22,.60) 100%)}
+.leitura.leve{background:linear-gradient(180deg,rgba(5,10,22,0) 0%,rgba(5,10,22,0) 55%,rgba(5,10,22,.18) 72%,rgba(5,10,22,.40) 100%)}
+.fundo.claro{filter:brightness(1.22) contrast(1.05)}
 .marca{position:absolute;right:-10px;top:560px;width:360px;opacity:.16}
 .logo{position:absolute;left:84px;top:258px;height:52px}
 .bloco{position:absolute;left:84px;right:150px}
 .barra{width:94px;height:7px;background:var(--red);margin-bottom:26px}
 .rot{font-size:27px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);margin-bottom:46px}
 h1{font-size:88px;line-height:1.02;font-weight:700;letter-spacing:-2.2px}
-h1.medio{font-size:68px;line-height:1.08;letter-spacing:-1.5px}
 h1 b{color:var(--red);font-weight:700}
 .p{margin-top:44px;font-size:46px;line-height:1.3;color:var(--txt);font-weight:500}
 .p b{color:var(--red);font-weight:700}
 .fonte{margin-top:30px;font-size:27px;line-height:1.3;color:var(--mut);font-family:"Inter",sans-serif}
 .vaga{position:absolute;left:84px;right:84px;border:3px dashed rgba(148,163,184,.35);border-radius:28px;
  display:flex;align-items:center;justify-content:center;color:rgba(148,163,184,.55);font-size:28px;font-weight:600;letter-spacing:.5px}
+.post{position:absolute;left:220px;width:640px;height:800px;border-radius:26px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55);border:2px solid rgba(248,250,252,.12)}
+.post img{width:100%;height:100%;object-fit:cover}
+.rod{position:absolute;left:84px;right:80px;top:1560px;display:flex;justify-content:space-between;font-family:"Inter",sans-serif;font-size:28px;color:var(--mut)}
+/* v3 */
+body.v3 .bloco{left:66px;right:120px}
+body.v3 .rot{font-size:30px;margin-bottom:30px}
+body.v3 h1{font-size:96px;line-height:1.12;letter-spacing:-2.4px}
+body.v3 h1.medio{font-size:76px;line-height:1.14;letter-spacing:-1.8px}
+body.v3 .p{font-size:38px;margin-top:34px;font-weight:400}
+body.v3 .post{left:320px;width:440px;height:540px;border-radius:24px;border:3px solid rgba(148,163,184,.85)}
+body.v3 .rod{left:70px;right:80px;top:1500px;font-size:27px}
+/* v2: caixa sobre o vídeo */
 .sombra{position:absolute;left:0;right:0;top:0;height:1920px;background:linear-gradient(180deg,rgba(5,10,22,.72) 0%,rgba(5,10,22,.15) 38%,rgba(5,10,22,0) 55%,rgba(5,10,22,.25) 75%,rgba(5,10,22,.8) 100%)}
 body.transp{background:transparent}
 body.caixa .bloco{background:rgba(5,10,22,.78);padding:44px 48px 50px;border-radius:28px;left:60px;right:60px;backdrop-filter:blur(2px)}
 body.caixa .rot{margin-bottom:30px}
-body.caixa .p{font-size:40px;margin-top:30px}
 body.caixa h1 b,body.caixa .p b{color:#E5383B}
 body.caixa .rod{text-shadow:0 2px 8px rgba(0,0,0,.8);color:#E2E8F0}
-.post{position:absolute;left:220px;width:640px;height:800px;border-radius:26px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55);border:2px solid rgba(248,250,252,.12)}
-.post img{width:100%;height:100%;object-fit:cover}
-.rod{position:absolute;left:84px;right:80px;top:1560px;display:flex;justify-content:space-between;font-family:"Inter",sans-serif;font-size:28px;color:var(--mut)}
 </style></head>
 <body><div id="raiz"></div>
 <script>
 const S = JSON.parse(decodeURIComponent(location.hash.slice(1)));
 const md = t => (t||"").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");
-// transparente: camada de texto para gravar por cima de vídeo (sem fundo e sem marca d'água)
-// fundo: foto de fundo (arquivo local ou URL), com o mesmo tratamento do vídeo
+// transparente: camada de texto para gravar por cima de vídeo
+// fundo: foto de fundo (arquivo local ou URL); "fundo_pronto": já está no tom (fotos do template); "espelho": inverte
 // imagem: arte do post (ponte / post novo), mostrada como cartão
-// ancora "baixo": a caixa de texto termina acima do rodapé; senão começa em "topo"
+// ancora "baixo": o texto termina acima do rodapé; senão começa em "topo"
+const v3 = S.modelo === "v3";
 if (S.transparente) document.body.classList.add("transp");
-if (S.transparente || S.fundo) document.body.classList.add("caixa");
+if (v3) document.body.classList.add("v3");
+else if (S.transparente) document.body.classList.add("caixa");
 let h = "";
-if (S.fundo) h += `<img class="fundo" src="${S.fundo}" alt="">`;
-h += (S.transparente || S.fundo) ? `<div class="sombra"></div><img class="logo" src="assets/logo-lt.png" alt="">`
-  : `<img class="marca" src="assets/marca-l.png" alt=""><img class="logo" src="assets/logo-lt.png" alt="">`;
+if (S.fundo) {
+  h += `<img class="fundo${S.espelho?" espelho":""}${S.fundo_pronto?" claro":" tratar"}" src="${S.fundo}" alt="">`;
+  if (!S.fundo_pronto) h += `<div class="tom"></div><div class="tom2"></div>`;
+}
+if (v3 && (S.fundo || S.transparente)) h += `<div class="leitura${S.fundo_pronto?" leve":""}"></div>`;
+if (!v3 && S.transparente) h += `<div class="sombra"></div>`;
+if (!S.fundo && !S.transparente) h += `<img class="marca" src="assets/marca-l.png" alt="">`;
+h += `<img class="logo" src="assets/logo-lt.png" alt="">`;
 if (S.imagem) h += `<div class="post" style="top:${S.imagem_topo||360}px"><img src="${S.imagem}" alt=""></div>`;
-const pos = S.ancora === "baixo" ? `bottom:${1920-1490}px` : `top:${S.topo||660}px`;
-const medio = (S.titulo||"").replace(/\*\*/g,"").length > 80 ? "medio" : "";
+const pos = S.ancora === "baixo" ? `bottom:${1920-(v3?1430:1490)}px` : `top:${S.topo||660}px`;
+const medio = v3 && (S.titulo||"").replace(/\*\*/g,"").length > 60 ? "medio" : "";
 h += `<div class="bloco" style="${pos}"><div class="barra"></div><div class="rot">${S.rotulo||""}</div><h1 class="${medio}">${md(S.titulo)}</h1>`
   + `${S.texto?`<div class="p">${md(S.texto)}</div>`:""}${S.fonte?`<div class="fonte">Fonte: ${S.fonte}</div>`:""}</div>`;
 if (S.vaga) h += `<div class="vaga" style="top:${S.vaga.y}px;height:${S.vaga.h}px">${S.vaga.txt}</div>`;
-h += `<div class="rod"><span>@tavarescoach</span><span>Corpo forte, evolução sem acaso.</span></div>`;
+h += `<div class="rod"><span>@tavarescoach</span><span>${v3?"Evolução sem acaso.":"Corpo forte, evolução sem acaso."}</span></div>`;
 document.getElementById("raiz").innerHTML = h;
 </script></body></html>

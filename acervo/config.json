@@ -65,13 +65,13 @@
    "convite": "21:00"
   },
   "midia": {
-   "abertura": "video:trabalho",
-   "virada": "video:treino",
-   "post_novo": "liso",
-   "resultado": "video:treino",
-   "convite": "video:trabalho"
+   "abertura": "foto",
+   "virada": "foto",
+   "post_novo": "foto",
+   "resultado": "foto",
+   "convite": "foto"
   },
-  "_midia": "Fundo ligado ao assunto (decisão do Luan, 26/11): time-lapse do Luan treinando ou trabalhando no TTC. liso = fundo escuro da marca. Sem vídeo, a tela usa foto de academia (pasta banco, ou fotos do acervo com contexto treino/ttc nas tags) e, sem foto, fundo liso. Foto de viagem, praia, casa ou sem etiqueta nunca entra.",
+  "_midia": "Estética aprovada pelo Luan em 26/11 (templates do Canva): foto de academia escura em tom azul-marinho, texto direto sobre a foto. Fontes: render/assets/fundos (fotos do template, já no tom, também espelhadas), pasta banco do Drive e fotos do acervo com contexto treino/ttc (o robô aplica o mesmo tom). video:<slot> continua possível (time-lapse com o mesmo tom), mas não é o padrão.",
   "pastas_foto": [
    "banco",
    "fotos"
@@ -90,6 +90,7 @@
   "contextos_foto": [
    "treino",
    "ttc"
-  ]
+  ],
+  "fundos_fixos": "render/assets/fundos"
  }
 }

@@ -148,6 +148,13 @@ FOTO_OK = ("image/jpeg", "image/png")
 def candidatas_foto(indice, tags, cfg3):
     """Fotos que podem ir ao fundo: banco + acervo de academia (contexto treino/ttc), sem `evitar`, sem camisa nem aluno sem autorização."""
     fotos = []
+    fixos = os.path.join(RAIZ, cfg3.get("fundos_fixos", "render/assets/fundos"))
+    if os.path.isdir(fixos):  # fotos do template (Canva), já no tom; cada uma também espelhada
+        for n in sorted(os.listdir(fixos)):
+            if n.lower().endswith((".jpg", ".jpeg", ".png")):
+                for esp in (False, True):
+                    fotos.append({"id": f"fundo:{n}{':espelho' if esp else ''}", "name": n, "local": os.path.join(fixos, n),
+                                  "espelho": esp, "pronto": True, "pasta": "fundos"})
     for pasta in cfg3["pastas_foto"]:
         for a in indice.get("pastas", {}).get(pasta, []):
             if a.get("mimeType") not in FOTO_OK:
@@ -171,7 +178,7 @@ def escolher_foto(tela, data, fotos, rotacao, usadas_hoje, cfg3):
         fid = u.get("id") or u.get("foto")
         ultimo[fid] = max(ultimo.get(fid, ""), u.get("data", ""))
     limite = (dt.date.fromisoformat(data) - dt.timedelta(days=cfg3["repetir_foto_apos_dias"])).isoformat()
-    livres = [f for f in fotos if f["id"] not in usadas_hoje]
+    livres = [f for f in fotos if f["id"] not in usadas_hoje and f.get("name") not in usadas_hoje]  # nem espelhada
     boas = [f for f in livres if ultimo.get(f["id"], "") < limite] or livres or fotos
     chave = lambda f: (ultimo.get(f["id"], ""), hashlib.sha1(f"{data}{tela}{f['id']}".encode()).hexdigest())  # noqa: E731
     return sorted(boas, key=chave)[0]
@@ -255,9 +262,13 @@ def posicao_texto(video):
     return ("cima" if r["baixo"] > r["cima"] * 1.2 else "baixo"), r
 
 
-def gravar_camada(base, camada_png, saida):
+TOM_VIDEO = "[0:v]hue=s=0.15,eq=brightness=-0.14:contrast=1.06,colorbalance=bs=0.16:bm=0.08:bh=0.04[g];[g][1:v]overlay=0:0[o]"
+
+
+def gravar_camada(base, camada_png, saida, tom=False):
+    """tom: deixa o vídeo no tom escuro azulado dos stories v3 (mesmo das fotos do template)."""
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", base, "-i", camada_png, "-filter_complex",
-                    "[0:v][1:v]overlay=0:0[o]", "-map", "[o]", "-an", "-c:v", "libx264", "-preset", "veryfast",
+                    TOM_VIDEO if tom else "[0:v][1:v]overlay=0:0[o]", "-map", "[o]", "-an", "-c:v", "libx264", "-preset", "veryfast",
                     "-crf", "24", "-pix_fmt", "yuv420p", "-movflags", "+faststart", saida], check=True)
     if os.path.getsize(saida) > 45 * 1024 * 1024:
         raise RuntimeError(f"{saida} passou de 45 MB")
@@ -279,7 +290,7 @@ def story_em_video(s, tela, tmp, nome, local_dir=None):
     lugar = ({"ancora": pos, "topo": CAIXA["cima"][0]} if tela.get("modelo") == "v3" else {"topo": CAIXA[pos][0]})
     renderizar([{**tela, "arquivo": os.path.relpath(camada, RAIZ), "transparente": True, **lugar}])
     local = os.path.join(tmp, f"story-{nome}.mp4")
-    gravar_camada(base, camada, local)
+    gravar_camada(base, camada, local, tom=tela.get("modelo") == "v3")
     print(f"story {nome}: texto {pos} (rostos {rostos})")
     return local, pos
 
@@ -351,7 +362,7 @@ def planejar_v3(data, cfg, indice, rotacao, fila, tags):
                 return {"slot": tipo.split(":", 1)[1], "trecho": t}
         f = escolher_foto(tela, data, fotos, rotacao, usadas, c3)
         if f:
-            usadas.add(f["id"])
+            usadas.update({f["id"], f.get("name")})
             return {"foto": f}
         return {}  # fundo liso da marca
 
@@ -462,14 +473,19 @@ def main(argv):
             if v3:
                 extra = {"ancora": "baixo"}
                 if s.get("foto"):
-                    origem = os.path.join(tmp, f"foto-{s['foto']['id']}")
-                    if not os.path.exists(origem):
-                        baixar_foto(s["foto"], origem, local_dir)
-                    extra["fundo"] = "file://" + origem
+                    f = s["foto"]
+                    if f.get("local"):
+                        origem = f["local"]
+                    else:
+                        origem = os.path.join(tmp, f"foto-{f['id']}")
+                        if not os.path.exists(origem):
+                            baixar_foto(f, origem, local_dir)
+                    extra.update({"fundo": "file://" + origem, "espelho": bool(f.get("espelho")),
+                                  "fundo_pronto": bool(f.get("pronto"))})
                 elif s.get("fundo_url"):
                     extra["fundo"] = s["fundo_url"]
                 if s.get("imagem"):  # post novo: texto em cima, cartão embaixo
-                    extra = {"topo": 1200, "imagem_topo": 360}  # como as pontes: capa grande em cima, texto embaixo
+                    extra = {**extra, "ancora": None, "topo": 450, "imagem_topo": 930}  # texto em cima, capa embaixo (template)
             else:
                 extra = {"topo": 1220, "imagem_topo": 360}
             renderizar([{**tela, **extra, "arquivo": os.path.relpath(local, RAIZ)}])
