@@ -1,6 +1,8 @@
 {
  "ativo": true,
  "_ativo": "false: o robô só roda em ensaio (gera prévias, não agenda nada). Virar true quando o ciclo temático entrar no ar.",
+ "modelo": "v3",
+ "_modelo": "v3 = Linha Editorial v3 (26/11/2026): abertura, virada, post novo, resultado e convite, com o texto de ciclos/stories/<data>.json. v2 = arco antigo (bom dia, pontes, CTA MÉTODO), só para voltar atrás.",
  "trecho_s": 12,
  "acelerar": {
   "duracao_minima_s": 180,
@@ -53,5 +55,37 @@
  "clipe_min_s": 1,
  "_partes": "Clipe curto (menos de ~10 s): o story junta clipes de vídeos diferentes, até 4 s de cada, até ~12 s no total. Clipes com menos de 1 s ficam de fora.",
  "inicio_stories": "2026-10-26",
- "_inicio_stories": "Primeiro dia com stories automáticos publicados. Antes disso o robô só gera prévias."
+ "_inicio_stories": "Primeiro dia com stories automáticos publicados. Antes disso o robô só gera prévias.",
+ "v3": {
+  "horarios": {
+   "abertura": "07:30",
+   "virada": "10:00",
+   "post_novo": "12:05",
+   "resultado": "13:00",
+   "convite": "21:00"
+  },
+  "midia": {
+   "abertura": "video:trabalho",
+   "virada": "foto",
+   "post_novo": "foto",
+   "resultado": "video:treino",
+   "convite": "foto"
+  },
+  "_midia": "video:<slot> = time-lapse do acervo (rotação de trechos); foto = foto de banco (pasta banco) ou do acervo (pasta fotos). Sem vídeo, a tela usa foto.",
+  "pastas_foto": [
+   "banco",
+   "fotos"
+  ],
+  "repetir_foto_apos_dias": 14,
+  "rotulos": {
+   "virada": "A decisão",
+   "resultado": "Resultado e critério",
+   "post_novo": "Post novo",
+   "convite": "Sua vez"
+  },
+  "post_novo": {
+   "titulo": "Post novo no perfil: o **passo a passo** completo."
+  },
+  "convite_padrao": "Responde este story com **{palavra}** e me conta em que fase você está."
+ }
 }

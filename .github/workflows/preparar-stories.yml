@@ -1,7 +1,8 @@
 name: Preparar stories
 
-# Stories automáticos do dia seguinte (diretrizes/ciclo.md): time-lapses das 6h e 10h (cortados do acervo do Drive,
-# com rotação de trechos) e pontes das 8h e 12h30 para os posts do dia. Revisão automática em cada um.
+# Stories automáticos do dia seguinte, modelo v3 (diretrizes/stories.md): abertura 7h30, virada 10h, post novo 12h05,
+# resultado 13h e convite 21h, com o texto de ciclos/stories/<data>.json (pacote do ciclo) e fundo de time-lapse ou
+# foto (banco ou acervo, com rotação). Revisão automática em cada um.
 # Roda todo dia às 18h (Brasília), depois do pacote do ciclo, para o dia seguinte. Com "ativo": false em acervo/config.json, roda em ensaio
 # (só gera prévias em render/previas/stories/<data>/, não agenda nada).
 
@@ -62,6 +63,7 @@ jobs:
         if: always()
         run: |
           git add acervo/indice.json ciclos render/previas/stories render/revisoes 2>/dev/null || true
+          git add metricas/palavras.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git config user.name "ttc-publicador"
             git config user.email "actions@users.noreply.github.com"

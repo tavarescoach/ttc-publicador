@@ -1,13 +1,19 @@
-"""Stories automáticos de um dia do ciclo temático (diretrizes/ciclo.md, seções 3 e 4).
+"""Stories automáticos de um dia (diretrizes/stories.md, bloco v3).
 
 Uso: python acervo/stories.py AAAA-MM-DD [--ensaio] [--local DIR]
 
-Gera, para o dia:
-- 06:00 time-lapse de trabalho + frase de bom dia (vídeo);
-- 08:00 ponte para o estático das 7h (imagem com a arte do post);
-- 10:00 time-lapse de treino + CTA MÉTODO (vídeo);
-- 12:30 ponte para o carrossel das 12h (imagem com a capa).
-Ponte só sai se o post existir na fila; vídeo só sai se houver vídeo no acervo.
+Modelo v3 ("modelo": "v3" em acervo/config.json), Linha Editorial v3 de 26/11/2026. Texto do dia em
+ciclos/stories/<data>.json, escrito pelo pacote do ciclo (PIPELINE.md). Gera:
+- 07:30 Abertura: só o título com a ideia central (time-lapse de trabalho, ou foto);
+- 10:00 Virada: a decisão + fonte do artigo (foto);
+- 12:05 Post novo: capa do carrossel das 12h como cartão (foto de fundo), só se o carrossel estiver na fila;
+- 13:00 Resultado e critério (time-lapse de treino, ou foto);
+- 21:00 Convite: "Responde este story com <palavra do tema>..." (foto).
+Foto = pasta "banco" (fotos de banco de imagem) ou "fotos" do acervo, sem repetir em 14 dias.
+Sem o plano do dia, sai só o Post novo e o resumo avisa "sem plano".
+
+Modelo v2 (arco antigo, só para voltar atrás): 06:00 bom dia, 08:00 ponte do estático, 10:00 CTA MÉTODO,
+12:30 ponte do carrossel. Ponte só sai se o post existir na fila; vídeo só sai se houver vídeo no acervo.
 
 Cada story passa por render/revisar.py (revisar_story). Passou: card "agendado" no painel (o robô de publicação
 importa e publica). Não passou: card "pronto" (Precisa de você) com o motivo.
@@ -38,6 +44,8 @@ CONFIG = os.path.join(AQUI, "config.json")
 INDICE = os.path.join(AQUI, "indice.json")
 ROTACAO = os.path.join(RAIZ, "ciclos", "rotacao.json")
 FILA = os.path.join(RAIZ, "fila.json")
+PLANOS = os.path.join(RAIZ, "ciclos", "stories")
+TAGS = os.path.join(AQUI, "tags.json")
 DRIVE = "https://www.googleapis.com/drive/v3/files"
 MIDIA_BASE = os.environ.get("MIDIA_BASE", "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia").rstrip("/")
 
@@ -127,6 +135,48 @@ def escolher_trecho(slot, data, indice, rotacao, cfg):
         if total >= alvo - 1 or len(partes) >= cfg.get("partes_max", 6):
             break
     return partes
+
+
+# ------------------------------------------------------------ fotos (v3)
+FOTO_OK = ("image/jpeg", "image/png")
+
+
+def candidatas_foto(indice, tags, cfg3):
+    """Fotos que podem ir ao fundo de um story: banco + acervo, sem `evitar`, sem camisa nem aluno sem autorização."""
+    fotos = []
+    for pasta in cfg3["pastas_foto"]:
+        for a in indice.get("pastas", {}).get(pasta, []):
+            if a.get("mimeType") not in FOTO_OK:
+                continue
+            t = tags.get(a["id"], {}) if isinstance(tags.get(a["id"]), dict) else {}
+            if t.get("evitar") or t.get("sem_camisa") or (t.get("aluno") and not t.get("autorizado")):
+                continue
+            fotos.append(dict(a, pasta=pasta))
+    return fotos
+
+
+def escolher_foto(tela, data, fotos, rotacao, usadas_hoje, cfg3):
+    """A foto usada há mais tempo (nunca antes = primeiro), sem repetir no dia nem em `repetir_foto_apos_dias`."""
+    if not fotos:
+        return None
+    ultimo = {}
+    for u in rotacao.get("fotos", []):  # mesma lista do feed (ciclo/escolher.py): story e post não repetem foto
+        fid = u.get("id") or u.get("foto")
+        ultimo[fid] = max(ultimo.get(fid, ""), u.get("data", ""))
+    limite = (dt.date.fromisoformat(data) - dt.timedelta(days=cfg3["repetir_foto_apos_dias"])).isoformat()
+    livres = [f for f in fotos if f["id"] not in usadas_hoje]
+    boas = [f for f in livres if ultimo.get(f["id"], "") < limite] or livres or fotos
+    chave = lambda f: (ultimo.get(f["id"], ""), hashlib.sha1(f"{data}{tela}{f['id']}".encode()).hexdigest())  # noqa: E731
+    return sorted(boas, key=chave)[0]
+
+
+def baixar_foto(arq, destino, local_dir=None):
+    if local_dir:
+        shutil.copy(os.path.join(local_dir, arq["name"]), destino)
+        return
+    url = f"{DRIVE}/{arq['id']}?alt=media&key={urllib.parse.quote(os.environ['GDRIVE_API_KEY'])}"
+    with urllib.request.urlopen(url, timeout=300) as r, open(destino, "wb") as f:
+        shutil.copyfileobj(r, f)
 
 
 # ------------------------------------------------------------ mídia
@@ -219,7 +269,8 @@ def story_em_video(s, tela, tmp, nome, local_dir=None):
     montar_video(origens, None, s["trecho"], base)
     pos, rostos = posicao_texto(base)
     camada = os.path.join(tmp, f"camada-{nome}.png")
-    renderizar([{**tela, "arquivo": os.path.relpath(camada, RAIZ), "transparente": True, "topo": CAIXA[pos][0]}])
+    lugar = ({"ancora": pos, "topo": CAIXA["cima"][0]} if tela.get("modelo") == "v3" else {"topo": CAIXA[pos][0]})
+    renderizar([{**tela, "arquivo": os.path.relpath(camada, RAIZ), "transparente": True, **lugar}])
     local = os.path.join(tmp, f"story-{nome}.mp4")
     gravar_camada(base, camada, local)
     print(f"story {nome}: texto {pos} (rostos {rostos})")
@@ -255,6 +306,77 @@ def post_do_dia(fila, data, tipo, hora):
 
 
 # ------------------------------------------------------------ principal
+def ler_plano(data):
+    """Texto do dia (ciclos/stories/<data>.json), escrito pelo pacote do ciclo. None se não existir."""
+    return ler(os.path.join(PLANOS, f"{data}.json"), None)
+
+
+def planejar_v3(data, cfg, indice, rotacao, fila, tags):
+    """Arco v3: abertura, virada, post novo, resultado, convite. Devolve (plano, avisos)."""
+    c3 = cfg["v3"]
+    h, rot, midia = c3["horarios"], c3["rotulos"], c3["midia"]
+    q = lambda hm: f"{data}T{hm}:00-03:00"  # noqa: E731
+    texto = ler_plano(data)
+    avisos = [] if texto else [f"Sem plano de stories (ciclos/stories/{data}.json): só sai o Post novo."]
+    texto = texto or {}
+    serie, palavra, tema = texto.get("serie", ""), (texto.get("palavra") or "").strip().upper(), texto.get("tema")
+    fotos = candidatas_foto(indice, tags, c3)
+    por_id = {f["id"]: f for f in fotos}
+    usadas = set()
+    plano = []
+
+    def fundo(tela):
+        """Mídia da tela: vídeo do slot (se houver) ou foto. Foto pedida no plano (URL ou drive_id) tem prioridade."""
+        pedida = (texto.get("fotos") or {}).get(tela)
+        if pedida:
+            if str(pedida).startswith("http"):
+                return {"fundo_url": pedida}
+            if pedida in por_id:
+                usadas.add(pedida)
+                return {"foto": por_id[pedida]}
+            avisos.append(f"{tela}: foto pedida no plano não está no acervo ({pedida}); escolhi outra.")
+        tipo = midia.get(tela, "foto")
+        if tipo.startswith("video:"):
+            t = escolher_trecho(tipo.split(":", 1)[1], data, indice, rotacao, cfg)
+            if t:
+                return {"slot": tipo.split(":", 1)[1], "trecho": t}
+        f = escolher_foto(tela, data, fotos, rotacao, usadas, c3)
+        if f:
+            usadas.add(f["id"])
+            return {"foto": f}
+        avisos.append(f"{tela}: sem foto nem vídeo no acervo; fundo liso.")
+        return {}
+
+    base = {"modelo": "v3", "tema": tema, "serie": serie, "palavra": palavra}
+    if texto.get("abertura"):
+        a = texto["abertura"]
+        plano.append({**base, "id": f"{data}-st-0730", "tela": "abertura", "quando": q(h["abertura"]),
+                      "aponta": "respostas", "rotulo": serie, "titulo": a["titulo"], **fundo("abertura")})
+    if texto.get("virada"):
+        v = texto["virada"]
+        plano.append({**base, "id": f"{data}-st-1000", "tela": "virada", "quando": q(h["virada"]), "aponta": "respostas",
+                      "rotulo": rot["virada"], "titulo": v["titulo"], "fonte": v.get("fonte"), "link": v.get("link"),
+                      **fundo("virada")})
+    car = post_do_dia(fila, data, "CARROSSEL", 12)
+    if car:
+        plano.append({**base, "id": f"{data}-st-1205", "tela": "post_novo", "quando": q(h["post_novo"]), "aponta": "post",
+                      "post_id": car["id"], "rotulo": rot["post_novo"], "titulo": c3["post_novo"]["titulo"],
+                      "imagem": f"{MIDIA_BASE}/{car['arquivos'][0]}", "tema": tema or car.get("tema"),
+                      **fundo("post_novo")})
+    if texto.get("resultado"):
+        r = texto["resultado"]
+        plano.append({**base, "id": f"{data}-st-1300", "tela": "resultado", "quando": q(h["resultado"]),
+                      "aponta": "respostas", "rotulo": rot["resultado"], "titulo": r["titulo"],
+                      "texto": r.get("criterio"), "fonte": r.get("fonte"), "link": r.get("link"),
+                      **fundo("resultado")})
+    if palavra or texto.get("convite"):
+        cv = texto.get("convite") or {}
+        titulo = cv.get("titulo") or c3["convite_padrao"].format(palavra=palavra)
+        plano.append({**base, "id": f"{data}-st-2100", "tela": "convite", "quando": q(h["convite"]), "aponta": "direct",
+                      "rotulo": rot["convite"], "titulo": titulo, **fundo("convite")})
+    return plano, avisos
+
+
 def planejar(data, cfg, indice, rotacao, fila):
     h = cfg["horarios"]
     q = lambda hm: f"{data}T{hm}:00-03:00"  # noqa: E731
@@ -299,12 +421,21 @@ def main(argv):
     from story import renderizar  # playwright só quando precisa
 
     ja = {i.get("id") for i in fila}
-    plano = [s for s in planejar(data, cfg, indice, rotacao, fila) if s["id"] not in ja]
+    v3 = cfg.get("modelo") == "v3"
+    if v3:
+        plano, avisos = planejar_v3(data, cfg, indice, rotacao, fila, ler(TAGS, {}))
+    else:
+        plano, avisos = planejar(data, cfg, indice, rotacao, fila), []
+    plano = [s for s in plano if s["id"] not in ja]
+    for a in avisos:
+        print(f"[aviso] {a}")
+    previas = os.path.join(RAIZ, "render", "previas", "stories", data)
     if not plano:
-        print("Nada a gerar (sem vídeo no acervo e sem post do dia, ou já gerado).")
+        print("Nada a gerar (sem plano, sem vídeo no acervo e sem post do dia, ou já gerado).")
+        if avisos:
+            gravar(os.path.join(previas, "resumo.json"), {"data": data, "ensaio": ensaio, "avisos": avisos, "stories": []})
         return 0
 
-    previas = os.path.join(RAIZ, "render", "previas", "stories", data)
     os.makedirs(previas, exist_ok=True)
     tmp = tempfile.mkdtemp(prefix="stories-")
     resumo = []
@@ -313,18 +444,33 @@ def main(argv):
         video = "trecho" in s
         nome = f"{s['id'].split('-st-')[1]}"
         arq_bucket = f"{data}/story-{nome}.{'mp4' if video else 'png'}"
-        tela = {k: s[k] for k in ("rotulo", "titulo", "texto", "imagem") if s.get(k)}
+        tela = {k: s[k] for k in ("rotulo", "titulo", "texto", "imagem", "fonte", "modelo") if s.get(k)}
+        pos = None
         if video:
             local, pos = story_em_video(s, tela, tmp, nome, local_dir)
             quadro(local, os.path.join(previas, f"story-{nome}.jpg"))
         else:
             local = os.path.join(tmp, f"story-{nome}.png")
-            renderizar([{**tela, "arquivo": os.path.relpath(local, RAIZ), "topo": 1220, "imagem_topo": 360}])
+            if v3:
+                extra = {"ancora": "baixo"}
+                if s.get("foto"):
+                    origem = os.path.join(tmp, f"foto-{s['foto']['id']}")
+                    if not os.path.exists(origem):
+                        baixar_foto(s["foto"], origem, local_dir)
+                    extra["fundo"] = "file://" + origem
+                elif s.get("fundo_url"):
+                    extra["fundo"] = s["fundo_url"]
+                if s.get("imagem"):  # post novo: texto em cima, cartão embaixo
+                    extra = {**extra, "ancora": None, "topo": 500, "imagem_topo": 950}
+            else:
+                extra = {"topo": 1220, "imagem_topo": 360}
+            renderizar([{**tela, **extra, "arquivo": os.path.relpath(local, RAIZ)}])
             shutil.copy(local, os.path.join(previas, f"story-{nome}.png"))
 
         etapa = rev["decisao"] if rev["decisao"] == "agendado" else "pronto"
-        resumo.append({"id": s["id"], "quando": s["quando"], "arquivo": arq_bucket, "decisao": rev["decisao"], "texto": pos if video else None,
-                       "problemas": rev["problemas"],
+        resumo.append({"id": s["id"], "tela": s.get("tela"), "quando": s["quando"], "arquivo": arq_bucket,
+                       "decisao": rev["decisao"], "texto": pos, "problemas": rev["problemas"],
+                       "foto": (s.get("foto") or {}).get("name") or s.get("fundo_url"),
                        "partes": [{"video": t["video"]["name"], "k": t["k"], "s": round(t["saida"], 1)}
                                   for t in s["trecho"]] if video else None})
         if ensaio:
@@ -332,21 +478,39 @@ def main(argv):
         subir(local, arq_bucket, "video/mp4" if video else "image/png")
         import render as rnd  # noqa: E402  (grava card e revisão como os carrosséis)
         rnd.salvar_revisao(rev)
+        legenda = f"Palavra do dia: {s['palavra']}" if s.get("tela") == "convite" and s.get("palavra") else ""
         rnd.gravar_card({"id": s["id"], "data": data, "quando": s["quando"], "pauta": _limpo(s["titulo"]),
-                         "legenda": "", "tema": s.get("tema")}, [arq_bucket], tipo="STORY", etapa=etapa)
+                         "legenda": legenda, "tema": s.get("tema")}, [arq_bucket], tipo="STORY", etapa=etapa)
         if video:
             for t in s["trecho"]:
                 rotacao.setdefault("trechos", []).append({"data": data, "slot": s["slot"], "video": t["video"]["id"],
                                                           "nome": t["video"]["name"], "k": t["k"]})
+        if s.get("foto"):
+            rotacao.setdefault("fotos", []).append({"id": s["foto"]["id"], "nome": s["foto"]["name"], "data": data,
+                                                    "uso": f"story-{s['tela']}"})
+        if s.get("tela") == "convite" and s.get("palavra"):
+            registrar_palavra(data, s["palavra"], s.get("serie"))
     if not ensaio:
         import render as rnd  # noqa: E402
         rnd.publicar_revisoes()
         gravar(ROTACAO, rotacao)
-    gravar(os.path.join(previas, "resumo.json"), {"data": data, "ensaio": ensaio, "stories": resumo})
+    gravar(os.path.join(previas, "resumo.json"), {"data": data, "ensaio": ensaio, "modelo": "v3" if v3 else "v2",
+                                                  "avisos": avisos, "stories": resumo})
     shutil.rmtree(tmp, ignore_errors=True)
     for r in resumo:
         print(f"{r['quando'][11:16]} {r['id']}: {r['decisao']} {'; '.join(r['problemas'])}")
     return 0
+
+
+PALAVRAS = os.path.join(RAIZ, "metricas", "palavras.json")
+
+
+def registrar_palavra(data, palavra, serie):
+    """Palavra-chave do convite por dia e origem: o painel conta as conversas por palavra (Linha Editorial v3)."""
+    reg = ler(PALAVRAS, {"_doc": "Palavra-chave de CTA por dia e origem. Stories: palavra do tema do dia.", "itens": []})
+    reg["itens"] = [i for i in reg.get("itens", []) if not (i.get("data") == data and i.get("origem") == "stories")]
+    reg["itens"].append({"data": data, "origem": "stories", "palavra": palavra, "serie": serie})
+    gravar(PALAVRAS, reg)
 
 
 def _limpo(t):

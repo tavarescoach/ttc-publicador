@@ -6,7 +6,8 @@ Vale para toda sessão que mexa em pacote, feed, stories ou revisão. Estado da 
 - Um tema por ciclo de 3 dias, escolhido por fórmula fixa (abaixo), sem IA.
 - FAM sai do sorteio: o estático das 7h é sempre sobre uma pessoa conhecida, ligada ao tema do ciclo. Concorrem 8 temas: FOR, EMA, EST, ESP (centrais) e GLP, LON, MEN, WEA (cruzados).
 - 20h: carrossel no dia 2 do ciclo; foto pessoal nos dias 1 e 3.
-- Stories automáticos novos (6h, 8h, 10h, 12h30) substituem os automáticos antigos. Stories com sticker (enquete, caixinha, quiz) viram opcionais na Tela Hoje: nada trava se o Luan não postar.
+- Stories: desde 26/11/2026 valem os stories v3 (abertura 7h30, virada 10h, post novo 12h05, resultado 13h, convite 21h; bloco v3 de diretrizes/stories.md). A tabela abaixo (6h, 8h, 10h, 12h30) é o modelo v2, só para voltar atrás.
+- (v2) Stories automáticos novos (6h, 8h, 10h, 12h30) substituem os automáticos antigos. Stories com sticker (enquete, caixinha, quiz) viram opcionais na Tela Hoje: nada trava se o Luan não postar.
 - Reels suspensos (sem editor de vídeo).
 - Publicação sem aprovação prévia: o que passa na revisão entra agendado; o Luan só veta. Isso inclui temas de saúde (GLP-1, hormônio, suplemento, lesão, saúde mental), com a revisão de saúde mais rígida (abaixo).
 - Foto de terceiros só com licença que permite uso comercial (Wikimedia Commons CC BY, CC BY-SA ou domínio público). Sem foto liberada, a arte sai tipográfica.

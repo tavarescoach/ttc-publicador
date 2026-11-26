@@ -241,7 +241,10 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      tema do ciclo, "Me manda MÉTODO no direct." e 3 hashtags. Pedido: `{"formato": "foto", "id", "data", "quando",
      "arquivo", "tema", "pauta", "legenda"}`.
    - Escreva `render/fontes/<id>.json` para estáticos e carrosséis (diretrizes/carrossel.md, seção Fontes).
-   - Stories: nada a fazer; o robô "Preparar stories" monta os do dia seguinte sozinho.
+   - Stories (v3, desde 26/11/2026): escreva o plano de cada dia do ciclo em `ciclos/stories/<dia>.json` (formato e
+     regras no bloco v3 de `diretrizes/stories.md`): série, palavra do tema, abertura (só o título, até 12 palavras,
+     sem "Hoje:"), virada com artigo verificado (DOI ou PubMed), resultado com critério mensurável. O robô "Preparar
+     stories" monta as 5 telas sozinho às 18h da véspera. Sem plano, só sai o Post novo.
 4. Rode `python render/revisar.py render/pedidos/<id>.json` em cada pedido e corrija todo "problema".
    A revisão barra foto já usada em outro post do feed nos últimos 21 dias (mesmo link; no render, também a mesma
    imagem vinda de outro link). Cada foto aparece em um post só: estático, carrossel, foto pessoal e meme do ciclo

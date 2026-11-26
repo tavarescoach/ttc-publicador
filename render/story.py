@@ -36,14 +36,14 @@ def main(caminho, enviar=False):
 
 def renderizar(telas, enviar=False):
     with sync_playwright() as p:
-        nav = p.chromium.launch()
+        nav = p.chromium.launch(executable_path=os.environ.get("CHROME_PATH") or None)  # CHROME_PATH: testes locais
         pg = nav.new_page(viewport={"width": 1080, "height": 1920})
         for t in telas:
             pg.goto("file://" + os.path.join(AQUI, "story.html") + "#" + urllib.parse.quote(json.dumps(t)))
             pg.reload()
             pg.evaluate("document.fonts.ready.then(() => true)")
             pg.wait_for_timeout(400)
-            if t.get("imagem"):
+            if t.get("imagem") or t.get("fundo"):
                 pg.wait_for_function("[...document.images].every(i => i.complete)", timeout=20000)
             destino = os.path.join(RAIZ, t["arquivo"])
             os.makedirs(os.path.dirname(destino), exist_ok=True)

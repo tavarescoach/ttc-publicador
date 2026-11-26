@@ -399,6 +399,34 @@ def revisar_meme(p):
 # ---------------------------------------------------------------- stories
 MAX_PALAVRAS_STORY = 15
 DESTINOS = {"post", "direct", "respostas", "perfil"}
+# Stories v3 (Linha Editorial v3 + decisões de 26/11/2026): limite de palavras por tela (título + texto)
+MAX_PALAVRAS_V3 = {"abertura": 12, "virada": 30, "post_novo": 15, "resultado": 30, "convite": 20}
+FONTE_VERIFICADA = re.compile(r"(doi\.org/|10\.\d{4,}/|pubmed\.ncbi\.nlm\.nih\.gov/|ncbi\.nlm\.nih\.gov/pmc/)", re.I)
+
+
+def _regras_v3(t):
+    """Regras das telas v3 (diretrizes/stories.md, bloco v3)."""
+    p, tela = [], t.get("tela")
+    titulo, texto = _txt(t.get("titulo")), _txt(t.get("texto"))
+    if tela == "abertura" and re.match(r"\s*hoje\b", titulo, re.I):
+        p.append('Abertura começa com "Hoje": só o título com a ideia central.')
+    if tela in ("virada", "resultado"):
+        tem_numero = bool(re.search(r"\d", titulo + " " + texto))
+        if t.get("fonte") and not FONTE_VERIFICADA.search(t.get("link") or ""):
+            p.append("Fonte sem link verificado (DOI ou PubMed) no plano.")
+        if tem_numero and not t.get("fonte"):
+            p.append("Número na tela sem artigo verificado: troque por aplicação prática sem número ou ponha a fonte.")
+    if tela == "resultado" and not texto:
+        p.append("Resultado sem critério que dá para medir (teste, carga, tempo ou dor de 0 a 10).")
+    if tela == "convite":
+        palavra = (t.get("palavra") or "").upper()
+        if not palavra:
+            p.append("Convite sem a palavra do tema do dia.")
+        elif palavra not in titulo.upper():
+            p.append(f'Convite não pede a palavra do tema ("{palavra}").')
+        if re.search(r"\b(m[ée]todo|ponto a)\b", titulo, re.I) and palavra not in ("MÉTODO", "METODO", "PONTO A"):
+            p.append("Convite com palavra fixa (MÉTODO/PONTO A): nos stories a palavra é a do tema do dia.")
+    return p
 
 
 def revisar_story(t, agora=None):
@@ -423,8 +451,11 @@ def revisar_story(t, agora=None):
         problemas.append(f"Horário muito próximo ({q.astimezone(BRT):%d/%m %H:%M}): sem tempo para você vetar.")
 
     palavras = len(re.findall(r"\w+", " ".join(_txt(t.get(c)) for c in ("titulo", "texto") if t.get(c))))
-    if palavras > MAX_PALAVRAS_STORY:
-        problemas.append(f"{palavras} palavras na tela (máximo {MAX_PALAVRAS_STORY}).")
+    maximo = MAX_PALAVRAS_V3.get(t.get("tela"), MAX_PALAVRAS_STORY) if t.get("modelo") == "v3" else MAX_PALAVRAS_STORY
+    if palavras > maximo:
+        problemas.append(f"{palavras} palavras na tela (máximo {maximo}).")
+    if t.get("modelo") == "v3":
+        problemas += _regras_v3(t)
     if not tela:
         problemas.append("Tela sem texto.")
     if t.get("aponta") not in DESTINOS:

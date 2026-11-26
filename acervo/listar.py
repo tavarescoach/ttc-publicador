@@ -12,7 +12,7 @@ import urllib.parse
 import urllib.request
 
 PASTA_RAIZ = "1rIv77LwguHTyfA4CX_KrAqgbx2iT7I8U"
-SUBPASTAS = ["fotos", "timelapse-trabalho", "timelapse-treino"]
+SUBPASTAS = ["fotos", "timelapse-trabalho", "timelapse-treino", "banco"]  # banco: fotos de banco de imagem (stories v3)
 API = "https://www.googleapis.com/drive/v3/files"
 CAMPOS = ("nextPageToken,files(id,name,mimeType,size,createdTime,modifiedTime,"
           "imageMediaMetadata(width,height,time),videoMediaMetadata(width,height,durationMillis))")

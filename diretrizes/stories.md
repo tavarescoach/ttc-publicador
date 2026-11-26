@@ -8,6 +8,15 @@
 > - **Ponto A→B (tela 3):** um resultado esperado + um critério mensurável (teste, carga, tempo, dor de 0 a 10). Sem promessa de prazo que o artigo não sustente.
 > - **Convite (21:00):** "Responde este story com [PALAVRA DO TEMA] e me conta…". A palavra-chave muda todo dia e é ligada ao conteúdo (ex.: JOELHO ou LCA no dia do joelho), nunca uma palavra fixa. Registre a palavra e a data no painel para medir a origem.
 > - **Mídia:** foto ou time-lapse do acervo, ou foto de banco de imagem. O objetivo é o story bonito e atraente. A foto de banco nunca é apresentada como o Luan, o TTC ou um aluno.
+> - **Robô (desde 26/11):** `acervo/stories.py` com `"modelo": "v3"` em `acervo/config.json` monta as 5 telas sozinho às 18h do dia anterior, a partir do **plano do dia** `ciclos/stories/<AAAA-MM-DD>.json`. Sem plano, sai só o Post novo (se houver carrossel às 12h). Fotos: pasta `banco` do acervo no Drive (fotos de banco) e `fotos`, sem `evitar`, sem camisa e sem aluno não autorizado, sem repetir em 14 dias (mesma rotação do feed). A palavra do convite é registrada em `metricas/palavras.json` e no card do painel.
+> - **Plano do dia** (quem escreve: a sessão que monta o conteúdo do dia; valide com `python -c "import json;json.load(open(...))"`):
+>   `{"data": "2026-12-01", "serie": "Apaga-incêndio", "tema": "LON", "palavra": "JOELHO",`
+>   ` "abertura": {"titulo": "O joelho parou de doer. **Já pode voltar?**"},`
+>   ` "virada": {"titulo": "...até 30 palavras, um destaque em **...**", "fonte": "Grindem et al., 2016, Br J Sports Med", "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4912389/"},`
+>   ` "resultado": {"titulo": "...", "criterio": "Critério: força e salto em 90% do outro lado.", "fonte": "...", "link": "..."},`
+>   ` "convite": {"titulo": "opcional; padrão: Responde este story com **<palavra>** e me conta em que fase você está."},`
+>   ` "fotos": {"virada": "opcional: URL ou drive_id de uma foto específica"}}`
+>   `link` precisa ser DOI ou PubMed/PMC aberto e conferido. Sem artigo verificado, a virada não leva número. Teste local: `python acervo/stories.py <data> --ensaio` (prévias em `render/previas/stories/<data>/`).
 > - **Visual:** fundo com foto escurecida, rótulo da série em cinza #94A3B8 com barra vermelha, título #F8FAFC, vermelho #C1121F só na palavra de destaque, logo LT, rodapé "@tavarescoach · Evolução sem acaso." em cinza. Nada importante nos 250 px do topo nem nos 340 px da base.
 
 > Em transição para o ciclo temático (diretrizes/ciclo.md): quando `acervo/config.json` tiver "ativo": true, os stories automáticos são os do robô "Preparar stories" (6h, 8h, 10h, 12h30) e os stories com sticker deste arquivo viram opcionais. Até lá, vale o que está abaixo.
