@@ -4,12 +4,13 @@ Uso: python acervo/stories.py AAAA-MM-DD [--ensaio] [--local DIR]
 
 Modelo v3 ("modelo": "v3" em acervo/config.json), Linha Editorial v3 de 26/11/2026. Texto do dia em
 ciclos/stories/<data>.json, escrito pelo pacote do ciclo (PIPELINE.md). Gera:
-- 07:30 Abertura: só o título com a ideia central (time-lapse de trabalho, ou foto);
-- 10:00 Virada: a decisão + fonte do artigo (foto);
-- 12:05 Post novo: capa do carrossel das 12h como cartão (foto de fundo), só se o carrossel estiver na fila;
-- 13:00 Resultado e critério (time-lapse de treino, ou foto);
-- 21:00 Convite: "Responde este story com <palavra do tema>..." (foto).
-Foto = pasta "banco" (fotos de banco de imagem) ou "fotos" do acervo, sem repetir em 14 dias.
+- 07:30 Abertura: só o título com a ideia central (time-lapse de trabalho);
+- 10:00 Virada: a decisão + fonte do artigo (time-lapse de treino);
+- 12:05 Post novo: capa do carrossel das 12h como cartão (fundo liso), só se o carrossel estiver na fila;
+- 13:00 Resultado e critério (time-lapse de treino);
+- 21:00 Convite: "Responde este story com <palavra do tema>..." (time-lapse de trabalho).
+Fundo ligado ao assunto: time-lapse do Luan no TTC; sem vídeo, foto de academia (pasta "banco" ou acervo com
+contexto treino/ttc) e, sem foto, fundo liso. Foto não repete em 14 dias.
 Sem o plano do dia, sai só o Post novo e o resumo avisa "sem plano".
 
 Modelo v2 (arco antigo, só para voltar atrás): 06:00 bom dia, 08:00 ponte do estático, 10:00 CTA MÉTODO,
@@ -89,8 +90,11 @@ def escolher_trecho(slot, data, indice, rotacao, cfg):
     """
     pasta = {"trabalho": "timelapse-trabalho", "treino": "timelapse-treino"}[slot]
     videos, vistos_chave = [], set()
+    tags = ler(TAGS, {})
     for a in indice.get("pastas", {}).get(pasta, []):
         if not a.get("mimeType", "").startswith("video/") or duracao_s(a) < cfg.get("clipe_min_s", 1):
+            continue
+        if isinstance(tags.get(a["id"]), dict) and tags[a["id"]].get("evitar"):  # fora de contexto (ex.: barco no lago)
             continue
         # cópias do mesmo arquivo ("nome (1).mp4", mesmo tamanho) contam uma vez só
         chave = (re.sub(r" \(\d+\)(?=\.\w+$)", "", a.get("name", "")).lower(), a.get("size"))
@@ -142,7 +146,7 @@ FOTO_OK = ("image/jpeg", "image/png")
 
 
 def candidatas_foto(indice, tags, cfg3):
-    """Fotos que podem ir ao fundo de um story: banco + acervo, sem `evitar`, sem camisa nem aluno sem autorização."""
+    """Fotos que podem ir ao fundo: banco + acervo de academia (contexto treino/ttc), sem `evitar`, sem camisa nem aluno sem autorização."""
     fotos = []
     for pasta in cfg3["pastas_foto"]:
         for a in indice.get("pastas", {}).get(pasta, []):
@@ -150,6 +154,9 @@ def candidatas_foto(indice, tags, cfg3):
                 continue
             t = tags.get(a["id"], {}) if isinstance(tags.get(a["id"]), dict) else {}
             if t.get("evitar") or t.get("sem_camisa") or (t.get("aluno") and not t.get("autorizado")):
+                continue
+            # acervo: só foto de academia etiquetada (sem etiqueta = fora); banco: curadoria do Luan, entra
+            if pasta != "banco" and t.get("contexto") not in cfg3.get("contextos_foto", ["treino", "ttc"]):
                 continue
             fotos.append(dict(a, pasta=pasta))
     return fotos
@@ -336,6 +343,8 @@ def planejar_v3(data, cfg, indice, rotacao, fila, tags):
                 return {"foto": por_id[pedida]}
             avisos.append(f"{tela}: foto pedida no plano não está no acervo ({pedida}); escolhi outra.")
         tipo = midia.get(tela, "foto")
+        if tipo == "liso":
+            return {}
         if tipo.startswith("video:"):
             t = escolher_trecho(tipo.split(":", 1)[1], data, indice, rotacao, cfg)
             if t:
@@ -344,8 +353,7 @@ def planejar_v3(data, cfg, indice, rotacao, fila, tags):
         if f:
             usadas.add(f["id"])
             return {"foto": f}
-        avisos.append(f"{tela}: sem foto nem vídeo no acervo; fundo liso.")
-        return {}
+        return {}  # fundo liso da marca
 
     base = {"modelo": "v3", "tema": tema, "serie": serie, "palavra": palavra}
     if texto.get("abertura"):
@@ -461,7 +469,7 @@ def main(argv):
                 elif s.get("fundo_url"):
                     extra["fundo"] = s["fundo_url"]
                 if s.get("imagem"):  # post novo: texto em cima, cartão embaixo
-                    extra = {**extra, "ancora": None, "topo": 500, "imagem_topo": 950}
+                    extra = {"topo": 1200, "imagem_topo": 360}  # como as pontes: capa grande em cima, texto embaixo
             else:
                 extra = {"topo": 1220, "imagem_topo": 360}
             renderizar([{**tela, **extra, "arquivo": os.path.relpath(local, RAIZ)}])

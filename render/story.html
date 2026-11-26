@@ -2,8 +2,8 @@
 <html lang="pt-BR"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
 <!-- Tela de story 1080x1920 com a identidade LT. Uso: render/story.py
-     v3 (26/11/2026): foto ou vídeo escurecido no fundo, rótulo cinza com barra vermelha, título #F8FAFC,
-     vermelho só no destaque (**...**), linha de fonte em cinza, rodapé acima da área segura da base (340 px). -->
+     Sobre vídeo ou foto: o Luan aparece nítido e o texto vai numa caixa escura (preferência do Luan, 26/11/2026).
+     v3: linha de fonte do artigo, título menor quando o texto é longo, âncora do texto embaixo. -->
 <style>
 :root{--bg:#0B1222;--bg2:#050A16;--txt:#F8FAFC;--mut:#94A3B8;--red:#C1121F}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -11,48 +11,50 @@ html,body{width:1080px;height:1920px}
 body{font-family:"Inter Display","Inter",sans-serif;color:var(--txt);-webkit-font-smoothing:antialiased;
  background:radial-gradient(1200px 900px at 20% 15%,#111A2E 0%,var(--bg) 45%,var(--bg2) 100%);position:relative;overflow:hidden}
 .fundo{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
-.escuro{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,22,.80) 0%,rgba(5,10,22,.58) 28%,rgba(5,10,22,.80) 52%,rgba(5,10,22,.95) 100%)}
-.escuro.cima{background:linear-gradient(180deg,rgba(5,10,22,.95) 0%,rgba(5,10,22,.80) 48%,rgba(5,10,22,.58) 72%,rgba(5,10,22,.85) 100%)}
 .marca{position:absolute;right:-10px;top:560px;width:360px;opacity:.16}
 .logo{position:absolute;left:84px;top:258px;height:52px}
-.bloco{position:absolute;left:84px;right:110px}
+.bloco{position:absolute;left:84px;right:150px}
 .barra{width:94px;height:7px;background:var(--red);margin-bottom:26px}
-.rot{font-size:28px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);margin-bottom:34px}
-h1{font-size:88px;line-height:1.04;font-weight:700;letter-spacing:-2.2px;text-shadow:0 2px 18px rgba(0,0,0,.35)}
-h1.medio{font-size:72px;letter-spacing:-1.6px;line-height:1.1}
+.rot{font-size:27px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);margin-bottom:46px}
+h1{font-size:88px;line-height:1.02;font-weight:700;letter-spacing:-2.2px}
+h1.medio{font-size:68px;line-height:1.08;letter-spacing:-1.5px}
 h1 b{color:var(--red);font-weight:700}
-.p{margin-top:36px;font-size:42px;line-height:1.3;color:var(--txt);font-weight:500}
+.p{margin-top:44px;font-size:46px;line-height:1.3;color:var(--txt);font-weight:500}
 .p b{color:var(--red);font-weight:700}
-.fonte{margin-top:28px;font-size:28px;line-height:1.3;color:var(--mut);font-family:"Inter",sans-serif}
+.fonte{margin-top:30px;font-size:27px;line-height:1.3;color:var(--mut);font-family:"Inter",sans-serif}
 .vaga{position:absolute;left:84px;right:84px;border:3px dashed rgba(148,163,184,.35);border-radius:28px;
  display:flex;align-items:center;justify-content:center;color:rgba(148,163,184,.55);font-size:28px;font-weight:600;letter-spacing:.5px}
+.sombra{position:absolute;left:0;right:0;top:0;height:1920px;background:linear-gradient(180deg,rgba(5,10,22,.72) 0%,rgba(5,10,22,.15) 38%,rgba(5,10,22,0) 55%,rgba(5,10,22,.25) 75%,rgba(5,10,22,.8) 100%)}
 body.transp{background:transparent}
+body.caixa .bloco{background:rgba(5,10,22,.78);padding:44px 48px 50px;border-radius:28px;left:60px;right:60px;backdrop-filter:blur(2px)}
+body.caixa .rot{margin-bottom:30px}
+body.caixa .p{font-size:40px;margin-top:30px}
+body.caixa h1 b,body.caixa .p b{color:#E5383B}
+body.caixa .rod{text-shadow:0 2px 8px rgba(0,0,0,.8);color:#E2E8F0}
 .post{position:absolute;left:220px;width:640px;height:800px;border-radius:26px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55);border:2px solid rgba(248,250,252,.12)}
-.post.v3{left:320px;width:440px;height:550px;border:3px solid rgba(148,163,184,.85);border-radius:24px}
 .post img{width:100%;height:100%;object-fit:cover}
-.rod{position:absolute;left:84px;right:80px;top:1530px;display:flex;justify-content:space-between;font-family:"Inter",sans-serif;font-size:28px;color:var(--mut);text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.rod{position:absolute;left:84px;right:80px;top:1560px;display:flex;justify-content:space-between;font-family:"Inter",sans-serif;font-size:28px;color:var(--mut)}
 </style></head>
 <body><div id="raiz"></div>
 <script>
 const S = JSON.parse(decodeURIComponent(location.hash.slice(1)));
 const md = t => (t||"").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");
-// transparente: camada de texto para gravar por cima de vídeo (escurece o vídeo; sem marca d'água)
-// fundo: foto de fundo (arquivo local ou URL), escurecida
+// transparente: camada de texto para gravar por cima de vídeo (sem fundo e sem marca d'água)
+// fundo: foto de fundo (arquivo local ou URL), com o mesmo tratamento do vídeo
 // imagem: arte do post (ponte / post novo), mostrada como cartão
-// ancora "baixo": o bloco de texto termina acima do rodapé; senão, começa em "topo"
+// ancora "baixo": a caixa de texto termina acima do rodapé; senão começa em "topo"
 if (S.transparente) document.body.classList.add("transp");
-const v3 = S.modelo === "v3";
+if (S.transparente || S.fundo) document.body.classList.add("caixa");
 let h = "";
 if (S.fundo) h += `<img class="fundo" src="${S.fundo}" alt="">`;
-if (S.transparente || S.fundo) h += `<div class="escuro${S.ancora==="cima"?" cima":""}"></div>`;
-if (!S.transparente && !S.fundo) h += `<img class="marca" src="assets/marca-l.png" alt="">`;
-h += `<img class="logo" src="assets/logo-lt.png" alt="">`;
-if (S.imagem) h += `<div class="post${v3?" v3":""}" style="top:${S.imagem_topo||360}px"><img src="${S.imagem}" alt=""></div>`;
+h += (S.transparente || S.fundo) ? `<div class="sombra"></div><img class="logo" src="assets/logo-lt.png" alt="">`
+  : `<img class="marca" src="assets/marca-l.png" alt=""><img class="logo" src="assets/logo-lt.png" alt="">`;
+if (S.imagem) h += `<div class="post" style="top:${S.imagem_topo||360}px"><img src="${S.imagem}" alt=""></div>`;
 const pos = S.ancora === "baixo" ? `bottom:${1920-1490}px` : `top:${S.topo||660}px`;
-const tam = (S.titulo||"").replace(/\*\*/g,"").length > 90 ? " medio" : "";
-h += `<div class="bloco" style="${pos}"><div class="barra"></div>${S.rotulo?`<div class="rot">${S.rotulo}</div>`:""}<h1 class="${tam.trim()}">${md(S.titulo)}</h1>`
+const medio = (S.titulo||"").replace(/\*\*/g,"").length > 80 ? "medio" : "";
+h += `<div class="bloco" style="${pos}"><div class="barra"></div><div class="rot">${S.rotulo||""}</div><h1 class="${medio}">${md(S.titulo)}</h1>`
   + `${S.texto?`<div class="p">${md(S.texto)}</div>`:""}${S.fonte?`<div class="fonte">Fonte: ${S.fonte}</div>`:""}</div>`;
 if (S.vaga) h += `<div class="vaga" style="top:${S.vaga.y}px;height:${S.vaga.h}px">${S.vaga.txt}</div>`;
-h += `<div class="rod"><span>@tavarescoach</span><span>${v3?"Evolução sem acaso.":"Corpo forte, evolução sem acaso."}</span></div>`;
+h += `<div class="rod"><span>@tavarescoach</span><span>Corpo forte, evolução sem acaso.</span></div>`;
 document.getElementById("raiz").innerHTML = h;
 </script></body></html>

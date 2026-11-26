@@ -7,8 +7,8 @@
 > - **Virada (tela 2):** até 30 palavras + linha de fonte (autor, ano, revista). Só publica com artigo verificado (DOI ou PubMed); sem artigo, aplicação prática sem número.
 > - **Ponto A→B (tela 3):** um resultado esperado + um critério mensurável (teste, carga, tempo, dor de 0 a 10). Sem promessa de prazo que o artigo não sustente.
 > - **Convite (21:00):** "Responde este story com [PALAVRA DO TEMA] e me conta…". A palavra-chave muda todo dia e é ligada ao conteúdo (ex.: JOELHO ou LCA no dia do joelho), nunca uma palavra fixa. Registre a palavra e a data no painel para medir a origem.
-> - **Mídia:** foto ou time-lapse do acervo, ou foto de banco de imagem. O objetivo é o story bonito e atraente. A foto de banco nunca é apresentada como o Luan, o TTC ou um aluno.
-> - **Robô (desde 26/11):** `acervo/stories.py` com `"modelo": "v3"` em `acervo/config.json` monta as 5 telas sozinho às 18h do dia anterior, a partir do **plano do dia** `ciclos/stories/<AAAA-MM-DD>.json`. Sem plano, sai só o Post novo (se houver carrossel às 12h). Fotos: pasta `banco` do acervo no Drive (fotos de banco) e `fotos`, sem `evitar`, sem camisa e sem aluno não autorizado, sem repetir em 14 dias (mesma rotação do feed). A palavra do convite é registrada em `metricas/palavras.json` e no card do painel.
+> - **Mídia (fundo ligado ao assunto, decisão de 26/11):** time-lapse do Luan no TTC: trabalho na Abertura e no Convite, treino na Virada e no Resultado. Post novo: fundo liso com a capa do carrossel em cima, como as pontes. Sem vídeo, foto de academia: pasta `banco` (curadoria do Luan) ou foto do acervo etiquetada com contexto treino/ttc; sem isso, fundo liso. Foto de viagem, praia, casa ou sem etiqueta nunca entra. Vídeo ou foto fora de contexto: marcar `evitar` em `acervo/tags.json` (ou tirar da pasta no Drive). A foto de banco nunca é apresentada como o Luan, o TTC ou um aluno.
+> - **Robô (desde 26/11):** `acervo/stories.py` com `"modelo": "v3"` em `acervo/config.json` monta as 5 telas sozinho às 18h do dia anterior, a partir do **plano do dia** `ciclos/stories/<AAAA-MM-DD>.json`. Sem plano, sai só o Post novo (se houver carrossel às 12h). Fundo: time-lapse do acervo; foto só de academia (ver Mídia), sem repetir em 14 dias (mesma rotação do feed). A palavra do convite é registrada em `metricas/palavras.json` e no card do painel.
 > - **Plano do dia** (quem escreve: a sessão que monta o conteúdo do dia; valide com `python -c "import json;json.load(open(...))"`):
 >   `{"data": "2026-12-01", "serie": "Apaga-incêndio", "tema": "LON", "palavra": "JOELHO",`
 >   ` "abertura": {"titulo": "O joelho parou de doer. **Já pode voltar?**"},`
@@ -17,7 +17,7 @@
 >   ` "convite": {"titulo": "opcional; padrão: Responde este story com **<palavra>** e me conta em que fase você está."},`
 >   ` "fotos": {"virada": "opcional: URL ou drive_id de uma foto específica"}}`
 >   `link` precisa ser DOI ou PubMed/PMC aberto e conferido. Sem artigo verificado, a virada não leva número. Teste local: `python acervo/stories.py <data> --ensaio` (prévias em `render/previas/stories/<data>/`).
-> - **Visual:** fundo com foto escurecida, rótulo da série em cinza #94A3B8 com barra vermelha, título #F8FAFC, vermelho #C1121F só na palavra de destaque, logo LT, rodapé "@tavarescoach · Evolução sem acaso." em cinza. Nada importante nos 250 px do topo nem nos 340 px da base.
+> - **Visual (o de antes, preferido pelo Luan):** o Luan aparece nítido no vídeo; o texto vai numa caixa escura com barra vermelha, rótulo cinza, título branco, destaque vermelho e linha de fonte; logo LT e rodapé "@tavarescoach · Corpo forte, evolução sem acaso.". Nada importante nos 250 px do topo nem nos 340 px da base.
 
 > Em transição para o ciclo temático (diretrizes/ciclo.md): quando `acervo/config.json` tiver "ativo": true, os stories automáticos são os do robô "Preparar stories" (6h, 8h, 10h, 12h30) e os stories com sticker deste arquivo viram opcionais. Até lá, vale o que está abaixo.
 

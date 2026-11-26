@@ -66,12 +66,12 @@
   },
   "midia": {
    "abertura": "video:trabalho",
-   "virada": "foto",
-   "post_novo": "foto",
+   "virada": "video:treino",
+   "post_novo": "liso",
    "resultado": "video:treino",
-   "convite": "foto"
+   "convite": "video:trabalho"
   },
-  "_midia": "video:<slot> = time-lapse do acervo (rotação de trechos); foto = foto de banco (pasta banco) ou do acervo (pasta fotos). Sem vídeo, a tela usa foto.",
+  "_midia": "Fundo ligado ao assunto (decisão do Luan, 26/11): time-lapse do Luan treinando ou trabalhando no TTC. liso = fundo escuro da marca. Sem vídeo, a tela usa foto de academia (pasta banco, ou fotos do acervo com contexto treino/ttc nas tags) e, sem foto, fundo liso. Foto de viagem, praia, casa ou sem etiqueta nunca entra.",
   "pastas_foto": [
    "banco",
    "fotos"
@@ -84,8 +84,12 @@
    "convite": "Sua vez"
   },
   "post_novo": {
-   "titulo": "Post novo no perfil: o **passo a passo** completo."
+   "titulo": "Post novo: o **passo a passo** completo."
   },
-  "convite_padrao": "Responde este story com **{palavra}** e me conta em que fase você está."
+  "convite_padrao": "Responde este story com **{palavra}** e me conta em que fase você está.",
+  "contextos_foto": [
+   "treino",
+   "ttc"
+  ]
  }
 }
