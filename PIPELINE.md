@@ -229,7 +229,8 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    que muda para o leitor.
 3. Peças (D1, D2, D3 = dias do ciclo; ids com o dia, ex. `k-2026-10-26-estatico`):
    - **Estático 07h** de cada dia (`k-<dia>-estatico`): notícia de pessoa conhecida ligada ao tema. Comece por
-     `famosos` do ciclo; sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
+     `famosos` do ciclo (o `protagonista` de cada um está no item de mesmo `noticia_id` em `radar/curadoria/*.json`: use
+     como ponto de partida e confira); sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
      Abra a matéria (WebFetch) e confirme o fato numa segunda fonte. Três pessoas ou fatos diferentes nos 3 dias.
      **Brasileiro primeiro** (`pessoa_br`; a lista `famosos` já vem nessa ordem). Gancho: nome + fato concreto.
      Foto: escreva `"pessoa": "<nome como aparece no Commons>"` na capa e deixe `foto` vazio. O robô "Renderizar

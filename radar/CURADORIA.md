@@ -23,8 +23,21 @@ Leia `diretrizes/conteudo.md`, seção 1. O que mais funciona no perfil é famos
 corpo, saúde, treino ou rotina (2 mil a 12 mil visualizações); famoso de fora rende pouco e estudo sem personagem rende
 quase nada. Pergunta de corte: o leitor comentaria isso no almoço do trabalho?
 
+## Formato Protagonista (26/11/2026)
+Leia `diretrizes/protagonista.md` (seção 3) e `diretrizes/personas.md`. Depois dos filtros da v2, toda notícia com
+`pessoa` passa pelo **filtro de protagonista**: dá para escrever, em uma linha cada, o desejo e o vilão de uma persona
+(`rafael`, `thiago` ou `feminina`) dentro dessa notícia?
+- Sim: o item leva `protagonista` {"tipo": "espelho | ponte | alerta", "persona": "rafael | thiago | feminina",
+  "desejo": "uma linha", "vilao": "uma linha (crença ou hábito, nunca pessoa ou marca)", "nivel_consciencia": 1 a 5}.
+  Espelho = o personagem tem o problema ou desejo do leitor; Ponte = feito distante (recorde, atleta jovem), o post
+  traduz o processo para a vida do leitor depois dos 30; Alerta = o personagem cometeu um erro comum ao leitor.
+- Não: `protagonista` null e a notícia só serve para post de topo (alcance); diga isso no `motivo`.
+O filtro não muda a `nota` (ela também pontua os temas do ciclo): ele só diz se a notícia serve para venda ou só para
+alcance. Tipo Ponte com atleta jovem é válido; a idade do atleta não é motivo para descartar.
+
 ## Para cada notícia
-- `nota` 0–100: encaixe com o público (executivo 30–45 e mulher 30–50 da Zona Sul do Rio), potencial de conteúdo que gere valor
+- `nota` 0–100: encaixe com as personas de `diretrizes/personas.md` (Rafael, executivo 35–50 da Zona Sul, studio 1:1;
+  Thiago, 28–42, treina sozinho, online; variação feminina 30–50), potencial de conteúdo que gere valor
   real e ponte para a venda, credibilidade da fonte, atualidade. Fofoca, política, crime e assuntos sem ponte com corpo/saúde/
   performance/rotina: abaixo de 30. Estudo novo sobre treino de força, sono, obesidade/GLP-1, longevidade, saúde do homem 35+,
   menopausa: tende a 70+.
@@ -37,7 +50,8 @@ quase nada. Pergunta de corte: o leitor comentaria isso no almoço do trabalho?
 - `pitch` (só quando nota ≥ 50; senão null), com palavras SUAS:
   {"angulo": "o ângulo da marca (método acima de motivação, anti-caos)",
    "formato": "carrossel decodificado | reels mito x método | reels erro comum | bastidor | story/enquete | estático",
-   "gancho": "frase de abertura pronta, até ~12 palavras: nome conhecido + fato concreto (diretrizes/conteudo.md)",
+   "gancho": "frase de abertura pronta, até ~12 palavras: nome conhecido + fato concreto (diretrizes/conteudo.md); com
+              `protagonista`, a estrutura do tipo (seção 8 de diretrizes/protagonista.md), terminando no leitor",
    "ponte": "como liga ao personal / Avaliação Estratégica"}
 - `tema_editorial` (ciclo temático, diretrizes/ciclo.md): a sigla do tema editorial que a notícia alimenta, uma de
   FOR (treino de força), EMA (emagrecimento), EST (estilo de vida: sono, rotina, postura, exercício no dia a dia),
@@ -114,7 +128,8 @@ amarrada a uma notícia em alta da coleta.
 ## Pautas do dia (topo do Radar)
 Escolha as 3 melhores combinações de uma notícia desta coleta (nota 70+, de preferência em alta) com um post do Instagram
 que está funcionando (de `radar/instagram.json` ou dos reels que você achou), cujo FORMATO serve para contar aquela notícia.
-Varie o público (pelo menos uma para a mulher 30–50 quando houver notícia boa) e o tema. No arquivo da curadoria, chave
+Varie o público (pelo menos uma para a mulher 30–50 quando houver notícia boa) e o tema. Prefira notícias com
+`protagonista` e varie o tipo (espelho, ponte, alerta); inclua `"protagonista"` no item da pauta (o mesmo da notícia). No arquivo da curadoria, chave
 `pautas_do_dia`: [{"gancho": "frase pronta no tom da marca", "tema": "...", "publico": "...", "em_alta": true|false,
 "noticia_id": "id da notícia", "noticia_titulo": "título em português, curto",
 "formato": {"nome": "o formato em poucas palavras", "perfil": "@quem fez", "razao": 12.3 ou null, "link": "link do post"},
@@ -122,7 +137,7 @@ Varie o público (pelo menos uma para a mulher 30–50 quando houver notícia bo
 
 ## Saída
 1. Escreva `radar/curadoria/AAAA-MM-DD-HH.json` (horário de Brasília): {"gerado_em": "...", "itens": [ {id, canal, titulo, link,
-   imagem, publicado_em, tema, tema_editorial, pessoa, pessoa_br, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
+   imagem, publicado_em, tema, tema_editorial, pessoa, pessoa_br, protagonista, nota, motivo, publico, pitch, cluster, em_alta}, ... ]} com TODAS as notícias da coleta.
 2. Apague arquivos de curadoria com mais de 3 dias.
 3. `git pull --rebase`, commit ("radar: curadoria AAAA-MM-DD HH h", incluindo `radar/perfil-interesse.json` e
    `radar/perfis-instagram.json` se mudaram) e push. O robô "Radar de notícias" aplica no painel.
