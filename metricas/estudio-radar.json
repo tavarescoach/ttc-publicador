@@ -1,87 +1,76 @@
 {
- "atualizado_em": "2026-11-20T06:33:30-03:00",
+ "atualizado_em": "2026-11-26T06:40:00-03:00",
  "em_alta": [
   {
-   "assunto": "canetas-obesidade-novidades",
-   "tema": "negocio",
-   "canais": 7,
-   "nota_max": 80,
-   "titulos": [
-    "Lifting weights reduces muscle loss from obesity drugs",
-    "Caneta emagrecedora muda consumo de comida e bebida de 1 em cada 3 adultos no Brasil, diz pesquisa",
-    "Why don't weight-loss drugs like Ozempic and Wegovy work for everyone?"
-   ]
-  },
-  {
-   "assunto": "anthropic-ipo",
-   "tema": "negocio",
-   "canais": 6,
-   "nota_max": 15,
-   "titulos": [
-    "Do Skype À Anthropic: Como Ashton Kutcher Virou Investidor Bilionário",
-    "Anthropic’s Wall Street debut marks a new chapter for AI",
-    "Anthropic's blockbuster debut tests Wall Street's faith in AI boom"
-   ]
-  },
-  {
-   "assunto": "gta-vi-lancamento",
-   "tema": "comportamento",
-   "canais": 5,
-   "nota_max": 62,
-   "titulos": [
-    "How to Play GTA VI All Weekend Without Destroying Your Body",
-    "GTA 6 fez pesquisas com ‘marombas’ para montar academias realistas no gameplay",
-    "'Grand Theft Auto VI' mania comes with serious health risks, doctors warn"
-   ]
-  },
-  {
-   "assunto": "longevidade-mainstream",
+   "assunto": "glp1-canetas-brasil",
    "tema": "saude",
    "canais": 4,
-   "nota_max": 82,
+   "nota_max": 70,
    "titulos": [
-    "Longevity medicine mainstream",
-    "Instagram",
-    "The Longevity Obsession Has Gone Too Far, Some Experts Say"
+    "Caneta emagrecedora: Anvisa adia decisão sobre aplicação em clínicas; setor sinaliza alta de preços",
+    "Canetas emagrecedoras não bastam para conter epidemia de obesidade, diz relatório internacional",
+    "Saúde de Goiás anuncia canetas emagrecedoras gratuitas para jovens no SUS"
    ]
   },
   {
-   "assunto": "alcool-beber-menos",
-   "tema": "saude",
-   "canais": 3,
-   "nota_max": 82,
+   "assunto": "jensen-huang-nvidia",
+   "tema": "negocio",
+   "canais": 4,
+   "nota_max": 12,
    "titulos": [
-    "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-    "Popular alcoholic drinks linked to sudden kidney damage in 14-year study",
-    "Ready State: menos gente bebendo e também menos gente se encontrando"
+    "Zoe Kleinman: Nobody is irreplaceable - unless you're Jensen Huang",
+    "Faisal Islam: Fears over the AI boom haven't gone away",
+    "Caso Jensen Huang: Até Onde Vai a Ética Corporativa Quando o Sucesso Está em Jogo?"
    ]
   },
   {
-   "assunto": "sarampo-eua",
+   "assunto": "dor-lombar-cronica",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 25,
+   "nota_max": 66,
    "titulos": [
-    "U.S. Loses Its Measles Elimination Status, a Historic Setback for American Health",
-    "‘I’m heartbroken’: experts dismayed as US loses long-held measles elimination status",
-    "RFK Jr faces fierce backlash after US loses measles-free status for first time in 26 years"
+    "Ready State: teste de extensão de quadril para dor nas costas e joelho",
+    "Why So Many of Us Have Chronic Back Pain, and Why It Won’t Go Away",
+    "Why So Many of Us Have Chronic Back Pain, and Why It Won’t Go Away"
+   ]
+  },
+  {
+   "assunto": "thanksgiving-saude",
+   "tema": "comportamento",
+   "canais": 3,
+   "nota_max": 40,
+   "titulos": [
+    "How to deal with diet talk at Thanksgiving",
+    "How skipping breakfast to save room for dinner shocks your blood sugar and metabolism",
+    "E.R. Doctors on Avoiding Thanksgiving Hazards"
+   ]
+  },
+  {
+   "assunto": "black-friday-consumo",
+   "tema": "comportamento",
+   "canais": 3,
+   "nota_max": 35,
+   "titulos": [
+    "Black Friday reforça gatilhos de consumo e dificulta frear impulsos",
+    "Black Friday Chega com 81,6% das Famílias Brasileiras Endividadas; Especialistas Alertam para Riscos à Saúde Mental",
+    "The 20+ Best Banana Republic Black Friday 2026 Deals"
    ]
   }
  ],
  "top": [
+  {
+   "titulo": "Caso Rasmussen: superdosagem de Mounjaro pode exacerbar efeitos colaterais",
+   "canal": "Metrópoles",
+   "assunto": "rasmussen-mounjaro",
+   "nota": 90,
+   "gancho": "Richard Rasmussen tomou Mounjaro DUAS vezes e foi parar no hospital"
+  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
    "assunto": "fc-repouso-status",
    "nota": 84,
    "gancho": "Tem gente mostrando a frequência cardíaca de repouso no app de namoro."
-  },
-  {
-   "titulo": "Letticia Munniz se orgulha de braços musculosos após falar de dedicação fitness extrema",
-   "canal": "Globo",
-   "assunto": "letticia-munniz-bracos",
-   "nota": 82,
-   "gancho": "Letticia Munniz mostrou o braço. Ainda tem medo de 'ficar grande'?"
   },
   {
    "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
@@ -98,11 +87,11 @@
    "gancho": "A medicina da longevidade chegou ao executivo. Força continua no topo da lista."
   },
   {
-   "titulo": "Lifting weights reduces muscle loss from obesity drugs",
-   "canal": "Nature News",
-   "assunto": "canetas-obesidade-novidades",
-   "nota": 80,
-   "gancho": "Tá na caneta? A Nature mostrou o que segura seu músculo."
+   "titulo": "Ready State: enzima que enfraquece o músculo com a idade; 'ainda assim, levante peso'",
+   "canal": "Instagram",
+   "assunto": "remedio-musculo-envelhecimento",
+   "nota": 82,
+   "gancho": "Vão lançar pílula pra músculo. Até lá, quem levanta é você"
   },
   {
    "titulo": "Hot vs. Cold Exposure: Which Is Better for Muscle Recovery?",
@@ -126,18 +115,18 @@
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   },
   {
-   "titulo": "Bruna Marquezine pega firme nos treinos após 'chutar o balde' em Noronha; vídeos",
-   "canal": "Globo",
-   "assunto": "marquezine-volta-treino",
+   "titulo": "Gabrielle Lyon: bíceps maior, ereção melhor (estudo publicado)",
+   "canal": "Instagram",
+   "assunto": "biceps-erecao",
    "nota": 78,
-   "gancho": "Bruna Marquezine chutou o balde em Noronha. E voltou pro treino."
+   "gancho": "Braço forte tem a ver com desempenho na cama. Tem estudo"
   },
   {
-   "titulo": "Médica: bíceps maior, ereção melhor (estudo publicado)",
+   "titulo": "Stacy Sims: levantar peso protege o cérebro da mulher na perimenopausa?",
    "canal": "Instagram",
-   "assunto": "forca-saude-homem",
+   "assunto": "menopausa-cerebro",
    "nota": 76,
-   "gancho": "Mais músculo, melhor ereção. Tem estudo sobre isso."
+   "gancho": "Levantar peso protege sua memória na menopausa? Sim, e explico"
   }
  ]
 }
