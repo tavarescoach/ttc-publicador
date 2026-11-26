@@ -41,6 +41,7 @@ Decisão do Luan em 06/11/2026, depois da auditoria (`auditoria/relatorios/2026-
 | Decodificando a recuperação. | Treinar todo dia te deixa mais fraco? Às vezes, sim. | 1 |
 | Treino de corpo inteiro perdoa melhor a falta que treino dividido. (Mind Pump, 7,5x) | Faltou na segunda? Seu peito ficou a semana inteira sem treino. | 1 |
 | Cientistas acham enzima que mantém o músculo forte com a idade. (The Ready State, 114x) | Vão lançar pílula pra músculo. Até lá, quem levanta o peso é você. | 2 |
+| Abriu a latinha e alguém já gritou que isso vai te matar? (Of Fit Feed, 11,9x) | Tomou energético antes do treino e o colega te olhou torto? | 9 |
 
 ## CTA por palavra no comentário (para testar)
 Vários dos posts mais comentados do Radar pedem uma palavra no comentário ("comente QUERO", "comente CHAMP"). Testar "Comenta MÉTODO" ao lado de "Me manda MÉTODO no direct": comentário também empurra o post para mais gente. Responder cada comentário no direct (à mão por enquanto).
