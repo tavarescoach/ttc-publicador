@@ -80,18 +80,6 @@
  {
   "titulo": "Instagram",
   "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
   "tema": "ciencia",
   "status": "salvo"
  },
@@ -99,6 +87,18 @@
   "titulo": "Instagram",
   "canal": "Sua referência",
   "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
@@ -204,12 +204,6 @@
   "status": "salvo"
  },
  {
-  "titulo": "Instagram",
-  "canal": "Sua referência",
-  "tema": "saude",
-  "status": "salvo"
- },
- {
   "titulo": "Strength & Conditioning Coach - Nick Leyden (@nickleyden) • Instagram reel",
   "canal": "Sua referência",
   "tema": "esporte",
@@ -228,6 +222,12 @@
   "status": "salvo"
  },
  {
+  "titulo": "Instagram",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
   "titulo": "Jesse James West (@jessejameswest) • Instagram reel",
   "canal": "Sua referência",
   "tema": "esporte",
@@ -240,16 +240,16 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Boom in weight-loss drugs could lead to fall in beer sales, Heineken warns UK pubs",
-  "canal": "The Guardian",
-  "tema": "negocio",
-  "status": "virou_pauta"
- },
- {
   "titulo": "Tico Santta Cruz detalha relação com álcool: 'Depois dos 40, a ressaca é como dengue'",
   "canal": "Globo",
   "tema": "comportamento",
   "status": "salvo"
+ },
+ {
+  "titulo": "Boom in weight-loss drugs could lead to fall in beer sales, Heineken warns UK pubs",
+  "canal": "The Guardian",
+  "tema": "negocio",
+  "status": "virou_pauta"
  },
  {
   "titulo": "Saiba o que está por trás da dieta que fez Kaká Diniz perder 17 kg: 'Estava à beira de um infarto'",
@@ -264,15 +264,15 @@
   "status": "salvo"
  },
  {
-  "titulo": "Exercise in a pill",
-  "canal": "MIT Technology Review",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
   "titulo": "Weight loss in middle age can restore cardiovascular health, research suggests",
   "canal": "The Guardian",
   "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Exercise in a pill",
+  "canal": "MIT Technology Review",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
@@ -288,25 +288,25 @@
   "status": "salvo"
  },
  {
-  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
-  "canal": "Folha Equilíbrio",
-  "tema": null,
-  "status": "salvo"
- },
- {
   "titulo": "Is it true that … you need to take 10,000 steps a day to be healthy?",
   "canal": "The Guardian",
   "tema": null,
   "status": "salvo"
  },
  {
-  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
-  "canal": "Sua referência",
-  "tema": "comportamento",
+  "titulo": "Fica sentado o dia todo? Veja nove exercícios para melhorar a postura",
+  "canal": "Folha Equilíbrio",
+  "tema": null,
   "status": "salvo"
  },
  {
-  "titulo": "Coming out midlife",
+  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Why Does Drinking Even One Beer Make Me Feel Awful Now?",
   "canal": "Sua referência",
   "tema": "comportamento",
   "status": "salvo"
@@ -318,9 +318,9 @@
   "status": "salvo"
  },
  {
-  "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
+  "titulo": "Coming out midlife",
   "canal": "Sua referência",
-  "tema": "saude",
+  "tema": "comportamento",
   "status": "salvo"
  },
  {
@@ -354,8 +354,38 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
-  "canal": "Folha Equilíbrio",
+  "titulo": "A 47-year study reveals the age when your body starts losing strength",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
+  "canal": "Fox News Health",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Is the energy of the 1990s returning to London’s art market?",
+  "canal": "The Art Newspaper",
+  "tema": "cultura",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Longevity medicine mainstream",
+  "canal": "Sua referência",
+  "tema": "saude",
+  "status": "salvo"
+ },
+ {
+  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
+  "canal": "ScienceDaily",
+  "tema": "saude",
+  "status": "virou_pauta"
+ },
+ {
+  "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
+  "canal": "Metrópoles",
   "tema": "saude",
   "status": "salvo"
  },
@@ -366,15 +396,9 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Leonardo DiCaprio's 'dad bod' puts spotlight on dangerous belly fat — and how to lose it",
-  "canal": "Fox News Health",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Longevity medicine mainstream",
-  "canal": "Sua referência",
-  "tema": "saude",
+  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
+  "canal": "ScienceDaily",
+  "tema": "ciencia",
   "status": "salvo"
  },
  {
@@ -384,33 +408,9 @@
   "status": "virou_pauta"
  },
  {
-  "titulo": "Posição inadequada e horas na frente do computador sobrecarregam os ombros",
-  "canal": "Metrópoles",
+  "titulo": "Cardio após musculação não vai aumentar seus ganhos; entenda os motivos",
+  "canal": "Folha Equilíbrio",
   "tema": "saude",
   "status": "salvo"
- },
- {
-  "titulo": "Is the energy of the 1990s returning to London’s art market?",
-  "canal": "The Art Newspaper",
-  "tema": "cultura",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "Scientists discover how deep sleep builds muscle, burns fat, and boosts the brain",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
-  "status": "salvo"
- },
- {
-  "titulo": "Eating late at night linked to up to 30% higher risk of liver disease",
-  "canal": "ScienceDaily",
-  "tema": "saude",
-  "status": "virou_pauta"
- },
- {
-  "titulo": "A 47-year study reveals the age when your body starts losing strength",
-  "canal": "ScienceDaily",
-  "tema": "ciencia",
-  "status": "virou_pauta"
  }
 ]
