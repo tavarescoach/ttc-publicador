@@ -1,0 +1,20 @@
+{
+ "data": "2026-11-26",
+ "serie": "Depois dos 40",
+ "tema": "ESP",
+ "assunto": "pernas",
+ "palavra": "POTÊNCIA",
+ "horarios": {"abertura": "18:40", "virada": "18:45", "resultado": "18:50", "post_novo": "21:05", "convite": "21:15"},
+ "_horarios": "Pedido do Luan em 26/11: stories agora e carrossel às 21h (fora do arco padrão).",
+ "abertura": {"titulo": "Aos 46, o Fábio segue no gol. **E você?**"},
+ "virada": {
+  "titulo": "A potência começa a cair por volta dos **40**. Por isso a força rápida entra no treino de quem passou dessa idade.",
+  "fonte": "Metter et al., 1997, J Gerontol A Biol Sci Med Sci",
+  "link": "https://pubmed.ncbi.nlm.nih.gov/9310077/"
+ },
+ "resultado": {
+  "titulo": "O que eu espero ver: mais **força rápida** no dia a dia.",
+  "criterio": "Critério: altura do salto e o teste de sentar e levantar da cadeira, medidos todo mês."
+ },
+ "convite": {"titulo": "Responde este story com **POTÊNCIA** e me conta qual esporte você quer jogar aos 50."}
+}

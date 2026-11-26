@@ -1,0 +1,132 @@
+{
+ "formato": "carrossel",
+ "id": "k-2026-11-26-carrossel",
+ "data": "2026-11-26",
+ "quando": "2026-11-26T21:00:00-03:00",
+ "tema": "Esportes",
+ "funil": "meio",
+ "pauta": "Fábio, 46, titular: potência cai a partir dos 40 e o erro de compensar no fim de semana",
+ "protagonista": {
+  "tipo": "ponte",
+  "persona": "rafael",
+  "desejo": "envelhecer forte",
+  "vilao": "a crença de que depois dos 40 o corpo só cai",
+  "nivel_consciencia": 2
+ },
+ "narrativa": {
+  "personagem": "Fábio, goleiro do Fluminense, 46 anos, titular, com 116 defesas no Brasileirão 2026 até 15/11 (Netflu/O Dia, dados Sofascore)",
+  "personagem_nome": "Fábio",
+  "persona": "rafael",
+  "desejo": "envelhecer forte",
+  "vilao": "a crença de que depois dos 40 o corpo só cai",
+  "problema_externo": "semana sentado, pelada ou corrida longa no sábado, escada e colo do filho viraram esforço",
+  "problema_interno": "parece que perdi o controle de algo que era fácil",
+  "causa": "força e potência começam a cair por volta dos 40 (Metter 1997); a potência cai antes e mais rápido que a força (Reid e Fielding 2012)",
+  "erro": "compensar no fim de semana com volume e cansaço, sem treinar força rápida",
+  "em_jogo": "a pelada, a escada e o colo do filho daqui a 10 anos",
+  "guia_empatia": "",
+  "guia_autoridade": "Luan avalia força e salto e acompanha a evolução mês a mês",
+  "plano": [
+   "Avaliar força e salto",
+   "Montar treino que cabe na agenda, com potência dentro da força",
+   "Reavaliar e ajustar todo mês"
+  ],
+  "sucesso": "de quem lembra do auge para quem treina pelos próximos 30 anos",
+  "cta_direto": "MÉTODO no direct",
+  "cta_transicao": "salvar e mandar pro amigo da pelada",
+  "ficha_persona": {
+   "consciencia": 2,
+   "objetivo": "Recuperar força perdida nos últimos anos e treinar sem dor nas costas ou no ombro",
+   "desejo": "Envelhecer forte, sem virar o pai que parou de se mexer aos 50",
+   "dor": "Sensação de ter perdido o controle de algo que antes era fácil",
+   "erro": "Achar que vai compensar no fim de semana, com treino pesado ou corrida longa",
+   "objecao": "Minha agenda muda muito, não consigo horário fixo"
+  }
+ },
+ "legenda": "Eu queria que todo cara de 40 visse o Fábio jogar.\n\nAos 46, ele segue titular do Fluminense, com 116 defesas no Brasileirão até meados de novembro. A ciência ajuda a entender por que isso é raro: força e potência começam a cair por volta dos 40, e a potência cai mais cedo e mais rápido.\n\nVocê passa a semana sentado e tenta compensar no sábado, com pelada ou corrida longa. Treina o cansaço e deixa de lado a força rápida, a primeira a ir embora.\n\nCom meus alunos eu começo avaliando força e salto, monto um treino que cabe na agenda e reavalio todo mês. É assim que dá para envelhecer forte.\n\nSalva este post e manda pro amigo da pelada. Me manda MÉTODO no direct.\n\n#tavarescoach #longevidade #treinodeforca #fluminense #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Fábio, 46, segue **titular**. O que eu faria depois dos 40?",
+   "foto": "https://lncimg.lance.com.br/uploads/2025/10/AGIF25102018555762-scaled-aspect-ratio-512-320.jpg",
+   "credito": "Foto: Thiago Ribeiro/AGIF (Reprodução/Lance!)",
+   "licenca": "reproducao",
+   "pagina_origem": "https://www.lance.com.br/fluminense/fabio-recebe-trofeu-da-cbf-antes-de-vasco-x-fluminense.html",
+   "link_noticia": "https://www.netflu.com.br/fabio-se-destaca-no-fluminense-e-disputa-lideranca-de-ranking-importante-no-brasileirao/",
+   "foco": "center 30%",
+   "layout": "recorte",
+   "pessoa": "Fábio"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O caso",
+   "titulo": "Você também quer chegar aos 46 **inteiro**.",
+   "texto": "O Fábio é titular do Fluminense aos 46. Até meados de novembro, somou 116 defesas no Brasileirão, a segunda maior marca da competição. Você quer outra coisa: energia de sobra para a vida.",
+   "fonte": "Netflu/O Dia (dados Sofascore), 15/11/2026"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "marinho",
+   "rotulo": "A crença",
+   "titulo": "\"Depois dos 40, o corpo **só cai**.\"",
+   "texto": "Você ouve isso no almoço do trabalho. E começa a acreditar no dia em que o joelho reclama na pelada ou a escada do escritório fica mais longa."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Como você se sente",
+   "titulo": "Parece que você **perdeu o controle**.",
+   "texto": "Correr para pegar o elevador, carregar o filho no colo, jogar a pelada de sábado. Coisas que eram fáceis viraram esforço, e ninguém te avisou quando isso começou."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "A causa",
+   "numero": "40",
+   "unidade": "anos",
+   "titulo": "é quando a **potência** começa a cair.",
+   "texto": "Força e potência começam a cair por volta dos 40, em homens e mulheres. A potência, que é força com velocidade, cai mais cedo e mais rápido que a força.",
+   "fonte": "Metter et al., J Gerontol (1997); Reid e Fielding, Exerc Sport Sci Rev (2012)"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O erro",
+   "titulo": "Compensar tudo no **fim de semana**.",
+   "texto": "Semana inteira sentado e, no sábado, pelada de 90 minutos ou corrida longa. Você treina o cansaço e deixa de lado justamente o que vai embora primeiro: a força rápida."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "O que está em jogo",
+   "titulo": "A pelada, a escada e o colo **daqui a 10 anos**.",
+   "texto": "A potência pesa na hora de levantar do chão, subir escada e acompanhar seus filhos. Ela é a primeira a ir embora em quem para de treinar.",
+   "fonte": "Reid e Fielding, Exerc Sport Sci Rev (2012)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "Quem treina a potência **envelhece forte**.",
+   "texto": "**De quem lembra do auge para quem treina pelos próximos 30 anos.** O Fábio é exceção no gol, e a escolha de treinar o que cai primeiro está ao seu alcance."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com meus alunos",
+   "titulo": "Força rápida entra **no plano** desde o início.",
+   "texto": "Primeiro, avalio sua força e seu salto. Depois, monto um treino que cabe na sua agenda, mesmo a que muda toda semana, com potência dentro da força. Por fim, reavalio e ajusto todo mês.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-03/foto-pessoal.jpg",
+   "foco": "center 30%"
+  },
+  {
+   "tipo": "cta",
+   "fundo": "marinho",
+   "titulo": "Seu primeiro passo é saber **onde você está**.",
+   "texto": "Avaliação Estratégica de 40 minutos no TTC, em Copacabana. Salva este post e manda pro amigo da pelada.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}

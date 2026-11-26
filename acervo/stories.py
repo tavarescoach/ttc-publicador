@@ -350,9 +350,12 @@ def ler_plano(data):
 def planejar_v3(data, cfg, indice, rotacao, fila, tags):
     """Arco v3: abertura, virada, post novo, resultado, convite. Devolve (plano, avisos)."""
     c3 = cfg["v3"]
-    h, rot, midia = c3["horarios"], c3["rotulos"], c3["midia"]
+    rot, midia = c3["rotulos"], c3["midia"]
     q = lambda hm: f"{data}T{hm}:00-03:00"  # noqa: E731
     texto = ler_plano(data)
+    # o plano do dia pode trocar os horários (ex.: stories fora do arco padrão, a pedido do Luan); o id segue o horário
+    h = {**c3["horarios"], **((texto or {}).get("horarios") or {})}
+    sid = lambda tela: f"{data}-st-{h[tela].replace(':', '')}"  # noqa: E731
     avisos = [] if texto else [f"Sem plano de stories (ciclos/stories/{data}.json): só sai o Post novo."]
     texto = texto or {}
     serie, palavra, tema = texto.get("serie", ""), (texto.get("palavra") or "").strip().upper(), texto.get("tema")
@@ -395,29 +398,29 @@ def planejar_v3(data, cfg, indice, rotacao, fila, tags):
     base = {"modelo": "v3", "tema": tema, "serie": serie, "palavra": palavra, "assunto": assunto}
     if texto.get("abertura"):
         a = texto["abertura"]
-        plano.append({**base, "id": f"{data}-st-0730", "tela": "abertura", "quando": q(h["abertura"]),
+        plano.append({**base, "id": sid("abertura"), "tela": "abertura", "quando": q(h["abertura"]),
                       "aponta": "respostas", "rotulo": serie, "titulo": a["titulo"], **fundo("abertura")})
     if texto.get("virada"):
         v = texto["virada"]
-        plano.append({**base, "id": f"{data}-st-1000", "tela": "virada", "quando": q(h["virada"]), "aponta": "respostas",
+        plano.append({**base, "id": sid("virada"), "tela": "virada", "quando": q(h["virada"]), "aponta": "respostas",
                       "rotulo": rot["virada"], "titulo": v["titulo"], "fonte": v.get("fonte"), "link": v.get("link"),
                       **fundo("virada")})
-    car = post_do_dia(fila, data, "CARROSSEL", 12)
+    car = post_do_dia(fila, data, "CARROSSEL", int(h["post_novo"][:2]))
     if car:
-        plano.append({**base, "id": f"{data}-st-1205", "tela": "post_novo", "quando": q(h["post_novo"]), "aponta": "post",
+        plano.append({**base, "id": sid("post_novo"), "tela": "post_novo", "quando": q(h["post_novo"]), "aponta": "post",
                       "post_id": car["id"], "rotulo": rot["post_novo"], "titulo": c3["post_novo"]["titulo"],
                       "imagem": f"{MIDIA_BASE}/{car['arquivos'][0]}", "tema": tema or car.get("tema"),
                       **fundo("post_novo")})
     if texto.get("resultado"):
         r = texto["resultado"]
-        plano.append({**base, "id": f"{data}-st-1300", "tela": "resultado", "quando": q(h["resultado"]),
+        plano.append({**base, "id": sid("resultado"), "tela": "resultado", "quando": q(h["resultado"]),
                       "aponta": "respostas", "rotulo": rot["resultado"], "titulo": r["titulo"],
                       "texto": r.get("criterio"), "fonte": r.get("fonte"), "link": r.get("link"),
                       **fundo("resultado")})
     if palavra or texto.get("convite"):
         cv = texto.get("convite") or {}
         titulo = cv.get("titulo") or c3["convite_padrao"].format(palavra=palavra)
-        plano.append({**base, "id": f"{data}-st-2100", "tela": "convite", "quando": q(h["convite"]), "aponta": "direct",
+        plano.append({**base, "id": sid("convite"), "tela": "convite", "quando": q(h["convite"]), "aponta": "direct",
                       "rotulo": rot["convite"], "titulo": titulo, **fundo("convite")})
     return plano, avisos
 

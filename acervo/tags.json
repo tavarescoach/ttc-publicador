@@ -295,5 +295,37 @@
   "aluno": false,
   "evitar": false,
   "nota": "Selfie no espelho com luz neon roxa, camisa branca e jeans, celular na mão; usada no meme de 20/11."
+ },
+ "1rdW7YiY22MoJJ7WbxV3G6Ve99MQpfiBw": {
+  "expressao": "concentrado",
+  "contexto": "treino",
+  "sem_camisa": true,
+  "aluno": false,
+  "evitar": true,
+  "nota": "Levantamento terra em box, sem camisa, cabelo descolorido; sem camisa em academia fica fora pela regra de 02/11."
+ },
+ "1DzVYLMXqB3DkFdzJfwUCDM8uIRw8r0aZ": {
+  "expressao": "rindo",
+  "contexto": "ttc",
+  "sem_camisa": false,
+  "aluno": true,
+  "evitar": false,
+  "nota": "Selfie no TTC com uma mulher de regata preta fazendo joinha, camiseta Tavares Coach; possível aluna sem autorização registrada; não usada."
+ },
+ "1DVJoQji08UPS-GIfAiqiDUYQt0KOQuhV": {
+  "expressao": "rindo",
+  "contexto": "praia",
+  "sem_camisa": true,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Braços abertos numa praia de mar turquesa com torre no morro (parece Sardenha), sem camisa, short branco; contexto de vida."
+ },
+ "1t3UMTHVKVU6lADxRv4AlLpSlxa-13bLm": {
+  "expressao": "rindo",
+  "contexto": "praia",
+  "sem_camisa": false,
+  "aluno": false,
+  "evitar": false,
+  "nota": "Na areia com o cachorro e um isopor vermelho, camiseta FILA, óculos escuros; contexto de vida."
  }
 }
