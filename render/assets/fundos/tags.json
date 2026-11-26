@@ -1,0 +1,111 @@
+{
+ "_doc": "Temas de cada foto de fundo dos stories (regra de contexto, 26/11/2026). O robô só usa a foto quando o assunto do dia (plano) tem algum destes temas na lista de acervo/config.json → v3.assuntos. 'geral' = ambiente de academia sem movimento específico. Ao pôr uma foto nova aqui, descreva o que ela mostra. 'pronto': false = foto em tom neutro; o robô aplica o tom azul-marinho.",
+ "academia-01.jpg": {
+  "temas": [
+   "levantamento",
+   "posterior"
+  ],
+  "nota": "Homem de costas em pé ao lado da barra carregada, preparando levantamento terra; pernas em destaque."
+ },
+ "academia-02.jpg": {
+  "temas": [
+   "costas",
+   "remada",
+   "bracos"
+  ],
+  "nota": "Remada unilateral com halter apoiado no banco."
+ },
+ "academia-03.jpg": {
+  "temas": [
+   "levantamento",
+   "posterior",
+   "costas",
+   "lombar"
+  ],
+  "nota": "Levantamento terra com barra, rosto em esforço."
+ },
+ "academia-04.jpg": {
+  "temas": [
+   "levantamento",
+   "posterior",
+   "costas",
+   "lombar"
+  ],
+  "nota": "Levantamento terra com barra em academia escura, de perfil."
+ },
+ "pernas-agachamento-barra.jpg": {
+  "temas": [
+   "agachamento",
+   "pernas",
+   "joelho",
+   "forca"
+  ],
+  "nota": "Agachamento livre com barra, joelheiras, fundo de rack.",
+  "pronto": false
+ },
+ "pernas-afundo-bulgaro.jpg": {
+  "temas": [
+   "afundo",
+   "pernas",
+   "joelho",
+   "quadril"
+  ],
+  "nota": "Afundo búlgaro com halteres, pé de trás no banco.",
+  "pronto": false
+ },
+ "pernas-passada.jpg": {
+  "temas": [
+   "afundo",
+   "pernas",
+   "joelho"
+  ],
+  "nota": "Passada com halteres, joelho de trás quase no chão.",
+  "pronto": false
+ },
+ "pernas-salto-caixa.jpg": {
+  "temas": [
+   "salto",
+   "pernas",
+   "joelho",
+   "corrida"
+  ],
+  "nota": "Salto na caixa, no ar, aterrissagem em cima.",
+  "pronto": false
+ },
+ "pernas-leg-press.jpg": {
+  "temas": [
+   "leg press",
+   "pernas",
+   "joelho"
+  ],
+  "nota": "Leg press 45°, pernas estendidas.",
+  "pronto": false
+ },
+ "joelho-descida-step.jpg": {
+  "temas": [
+   "joelho",
+   "pernas",
+   "afundo"
+  ],
+  "nota": "Descida controlada de um step (controle de joelho, retorno de lesão).",
+  "pronto": false
+ },
+ "pernas-agachamento-kettlebell.jpg": {
+  "temas": [
+   "agachamento",
+   "pernas",
+   "joelho"
+  ],
+  "nota": "Agachamento goblet com kettlebell, posição baixa.",
+  "pronto": false
+ },
+ "joelho-close-joelheira.jpg": {
+  "temas": [
+   "joelho",
+   "pernas",
+   "agachamento"
+  ],
+  "nota": "Close nos joelhos com joelheira durante o agachamento.",
+  "pronto": false
+ }
+}

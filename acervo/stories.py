@@ -150,11 +150,14 @@ def candidatas_foto(indice, tags, cfg3):
     fotos = []
     fixos = os.path.join(RAIZ, cfg3.get("fundos_fixos", "render/assets/fundos"))
     if os.path.isdir(fixos):  # fotos do template (Canva), já no tom; cada uma também espelhada
+        temas_fixos = ler(os.path.join(fixos, "tags.json"), {})
         for n in sorted(os.listdir(fixos)):
             if n.lower().endswith((".jpg", ".jpeg", ".png")):
+                info = temas_fixos.get(n) or {}
                 for esp in (False, True):
                     fotos.append({"id": f"fundo:{n}{':espelho' if esp else ''}", "name": n, "local": os.path.join(fixos, n),
-                                  "espelho": esp, "pronto": True, "pasta": "fundos"})
+                                  "espelho": esp, "pronto": info.get("pronto", True), "pasta": "fundos",
+                                  "temas": info.get("temas", [])})
     for pasta in cfg3["pastas_foto"]:
         for a in indice.get("pastas", {}).get(pasta, []):
             if a.get("mimeType") not in FOTO_OK:
@@ -165,8 +168,23 @@ def candidatas_foto(indice, tags, cfg3):
             # acervo: só foto de academia etiquetada (sem etiqueta = fora); banco: curadoria do Luan, entra
             if pasta != "banco" and t.get("contexto") not in cfg3.get("contextos_foto", ["treino", "ttc"]):
                 continue
-            fotos.append(dict(a, pasta=pasta))
+            fotos.append(dict(a, pasta=pasta, temas=t.get("temas", [])))
     return fotos
+
+
+def fotos_do_assunto(fotos, assunto, cfg3):
+    """Regra de contexto: fotos do assunto (ou relacionadas); senão as 'geral'; senão nenhuma (fundo liso).
+
+    Sem assunto no plano, vale qualquer foto. Devolve (fotos, nivel) com nivel 'assunto' | 'geral' | 'livre' | 'nenhuma'.
+    """
+    if not assunto:
+        return fotos, "livre"
+    rel = set(cfg3.get("assuntos", {}).get(assunto, [assunto]))
+    certas = [f for f in fotos if rel & set(f.get("temas", []))]
+    if certas:
+        return certas, "assunto"
+    gerais = [f for f in fotos if "geral" in f.get("temas", [])]
+    return (gerais, "geral") if gerais else ([], "nenhuma")
 
 
 def escolher_foto(tela, data, fotos, rotacao, usadas_hoje, cfg3):
@@ -338,8 +356,16 @@ def planejar_v3(data, cfg, indice, rotacao, fila, tags):
     avisos = [] if texto else [f"Sem plano de stories (ciclos/stories/{data}.json): só sai o Post novo."]
     texto = texto or {}
     serie, palavra, tema = texto.get("serie", ""), (texto.get("palavra") or "").strip().upper(), texto.get("tema")
-    fotos = candidatas_foto(indice, tags, c3)
-    por_id = {f["id"]: f for f in fotos}
+    todas = candidatas_foto(indice, tags, c3)
+    por_id = {f["id"]: f for f in todas}
+    assunto = (texto.get("assunto") or "").strip().lower() or None
+    if assunto and assunto not in c3.get("assuntos", {}):
+        avisos.append(f'Assunto "{assunto}" fora da lista de config.json (v3.assuntos); uso só fotos com esse tema.')
+    fotos, nivel = fotos_do_assunto(todas, assunto, c3)
+    if nivel == "geral":
+        avisos.append(f'Sem foto de "{assunto}" no banco: usei foto geral de academia. Ponha fotos desse tema na pasta banco.')
+    elif nivel == "nenhuma":
+        avisos.append(f'Sem foto de "{assunto}" nem geral no banco: fundo liso.')
     usadas = set()
     plano = []
 
@@ -366,7 +392,7 @@ def planejar_v3(data, cfg, indice, rotacao, fila, tags):
             return {"foto": f}
         return {}  # fundo liso da marca
 
-    base = {"modelo": "v3", "tema": tema, "serie": serie, "palavra": palavra}
+    base = {"modelo": "v3", "tema": tema, "serie": serie, "palavra": palavra, "assunto": assunto}
     if texto.get("abertura"):
         a = texto["abertura"]
         plano.append({**base, "id": f"{data}-st-0730", "tela": "abertura", "quando": q(h["abertura"]),

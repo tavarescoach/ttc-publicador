@@ -91,6 +91,71 @@
    "treino",
    "ttc"
   ],
-  "fundos_fixos": "render/assets/fundos"
+  "fundos_fixos": "render/assets/fundos",
+  "assuntos": {
+   "_doc": "Regra de contexto (Luan, 26/11): a foto de fundo mostra o assunto do dia. O plano diz o assunto; o robô só usa fotos cujos temas (render/assets/fundos/tags.json ou acervo/tags.json) estão na lista do assunto. Sem foto do assunto: foto 'geral' (ambiente de academia, sem movimento específico); sem isso, fundo liso. Nunca foto de outro movimento.",
+   "joelho": [
+    "joelho",
+    "pernas",
+    "agachamento",
+    "afundo",
+    "salto",
+    "leg press"
+   ],
+   "pernas": [
+    "pernas",
+    "joelho",
+    "agachamento",
+    "afundo",
+    "salto",
+    "leg press",
+    "posterior",
+    "levantamento"
+   ],
+   "quadril": [
+    "quadril",
+    "posterior",
+    "levantamento",
+    "pernas"
+   ],
+   "lombar": [
+    "lombar",
+    "posterior",
+    "levantamento",
+    "core"
+   ],
+   "costas": [
+    "costas",
+    "remada",
+    "levantamento"
+   ],
+   "ombro": [
+    "ombro",
+    "supino"
+   ],
+   "bracos": [
+    "bracos"
+   ],
+   "core": [
+    "core",
+    "lombar"
+   ],
+   "corrida": [
+    "corrida",
+    "salto",
+    "pernas"
+   ],
+   "forca": [
+    "levantamento",
+    "agachamento",
+    "supino",
+    "remada",
+    "pernas",
+    "costas"
+   ],
+   "geral": [
+    "geral"
+   ]
+  }
  }
 }
