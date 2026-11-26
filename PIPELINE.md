@@ -89,8 +89,9 @@ saidas {blogpost | video_aula | ementa | reels_direcao | teleprompter | broll_na
    (id "e-<doc_id>-carrossel", data = dia de `quando`, quando, funil, pauta = headline.titulo, legenda, 9–10 slides).
    A capa usa a headline confirmada pelo Luan (título); destaque 1–3 palavras com **...**.
    Pauta que partiu de notícia: preencha antes `protagonista` e a ficha `narrativa` (seção 4 de `diretrizes/protagonista.md`)
-   no pedido e siga o arco de 10 slides e a legenda das seções 6 e 7 (slide 9 = guia, `texto_foto` com foto do Luan).
-   Antes do push, confira à mão as regras da seção 10 (o revisar.py ainda não as checa).
+   no pedido, com a `ficha_persona` (consciência + um item de cada bloco da persona, copiado de `diretrizes/personas.json`),
+   e siga o arco de 10 slides e a legenda das seções 6 e 7 (slide 9 = guia, `texto_foto` com foto do Luan).
+   O revisar.py barra o pedido sem ficha ou com item fora da ficha da persona.
    Fatos e números: só os que estão na tese ou que você confirmar com pesquisa. Fotos: se a pauta partiu de reportagem com pessoa conhecida no centro do fato, a capa
    segue a seção "Capa de pauta de notícia com pessoa conhecida" de diretrizes/carrossel.md (foto da pessoa, `credito`,
    `licenca`), mesmo que a headline confirmada não cite o nome; nesse caso mantenha a headline do Luan. Nos demais casos,
@@ -211,7 +212,10 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    `marca.md`, `carrossel.md`, `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`. Pilares: 07h conexão,
    12h autoridade, 20h desejo.
    **Formato Protagonista no ciclo:** para cada dia, antes de escrever, escolha a notícia, passe o filtro de protagonista
-   e preencha `protagonista` {tipo, persona, desejo, vilao, nivel_consciencia} e a ficha `narrativa` (seção 4). Estático
+   e preencha `protagonista` {tipo, persona, desejo, vilao, nivel_consciencia} e a ficha `narrativa` (seção 4), com
+   `personagem_nome` e a `ficha_persona`: nível de consciência + objetivo, desejo, dor, erro e objeção, cada um copiado
+   palavra por palavra da persona em `diretrizes/personas.json`. O texto usa desejo, dor e erro; a objeção é respondida
+   na legenda ou no slide 9; o objetivo orienta o sucesso e o plano. Estático
    e carrossel do mesmo dia usam o mesmo `protagonista` e a mesma `narrativa` (o carrossel aprofunda o estático). Varie o
    tipo (espelho, ponte, alerta) entre os 3 dias quando as notícias permitirem e registre as escolhas em `ciclos/ciclos.json`
    (`protagonistas`: {<dia>: {tipo, persona}}), para a medição por tipo. Notícia que não passa no filtro vira estático de
@@ -279,10 +283,10 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      sem "Hoje:"), virada com artigo verificado (DOI ou PubMed), resultado com critério mensurável. O robô "Preparar
      stories" monta as 5 telas sozinho às 18h da véspera. Sem plano, só sai o Post novo.
 4. Rode `python render/revisar.py render/pedidos/<id>.json` em cada pedido e corrija todo "problema".
-   Depois confira à mão, em cada estático e carrossel de notícia, a revisão do Protagonista (seção 10 de
-   `diretrizes/protagonista.md`, ainda fora do revisar.py): `narrativa` com desejo, vilão e sucesso; personagem em até
-   3 slides; "você" entre os slides 2 e 4; slide 9 com foto do Luan; nenhuma promessa com número e prazo nos slides 8 a 10;
-   primeira pessoa de aluno só com `aluno_autorizado: true`. Corrija antes do push.
+   Desde 28/11/2026 a revisão também barra (seção 10 de `diretrizes/protagonista.md`): estático ou carrossel do ciclo
+   sem `protagonista`, `narrativa` ou `ficha_persona`; item da ficha fora da persona; personagem em mais de 3 slides;
+   nenhum "você" nos slides 2 a 4; slide 9 sem foto do Luan; promessa com número e prazo nos slides 8 a 10; fala de
+   aluno sem `aluno_autorizado`. Leia também os avisos (desejo, dor ou erro que não aparecem no texto) e corrija.
    A revisão barra foto já usada em outro post do feed nos últimos 21 dias (mesmo link; no render, também a mesma
    imagem vinda de outro link). Cada foto aparece em um post só: estático, carrossel, foto pessoal e meme do ciclo
    com fotos diferentes entre si e das peças já publicadas. Foto pessoal de ciclo anterior não volta em slide.

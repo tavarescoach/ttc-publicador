@@ -69,6 +69,29 @@ Nenhum texto é escrito antes da ficha. Ela vai no pedido JSON, no campo `narrat
 | `sucesso` | De quem → para quem? | Identidade, nunca número com prazo |
 | `cta_direto` | O que pedir? | MÉTODO no direct (o material do online ainda não existe) |
 | `cta_transicao` | Qual é o passo menor? | Salvar, responder, mandar para alguém |
+| `personagem_nome` | Nome do personagem como aparece nos slides | Usado pela revisão para contar em quantos slides ele aparece |
+| `ficha_persona` | De onde vem o contexto do leitor? | Obrigatório. Ver abaixo |
+
+### Ficha da persona (obrigatória desde 26/11/2026)
+Todo post de notícia leva `narrativa.ficha_persona` com o nível de consciência e **um item copiado, palavra por
+palavra, de cada bloco** da persona escolhida em `diretrizes/personas.json`:
+
+```json
+"ficha_persona": {
+  "consciencia": 2,
+  "objetivo": "<item de objetivos>",
+  "desejo": "<item de desejos>",
+  "dor": "<item de dores>",
+  "erro": "<item de erros>",
+  "objecao": "<item de objecoes>"
+}
+```
+- O texto do post usa pelo menos o desejo, a dor e o erro (com as suas palavras, não precisa copiar a frase).
+- A objeção entra na legenda ou no slide 9 (o guia), respondida pelo plano.
+- O objetivo orienta o `sucesso` e o plano em 3 passos.
+- O nível de consciência decide o quanto o post vende: 1–2 abre conversa, 3 traz autoridade e prova, 4–5 quebra objeção e convida.
+- `desejo` e `problema_interno` da narrativa são a versão do post, nas palavras do leitor; os da `ficha_persona` são o item original da ficha.
+- Variação feminina: onde o bloco dela estiver vazio, vale um item da ficha do Rafael ou do Thiago.
 
 ## 5. Quem narra
 | Narrador | Quando | Regra |
@@ -133,11 +156,14 @@ Valem as regras de gancho da v2: nome conhecido + fato concreto + vontade de sab
 9. Vale tudo da `copy-social-ttc`: Cena → Causa → Movimento, vícios de IA proibidos, sem travessão.
 10. Saúde (menopausa, hormônio, GLP-1, lesão): nível geral, "sinal de alerta, não diagnóstico", conduta com o médico.
 
-## 10. Revisão (aprovada; ainda não implementada em `render/revisar.py`)
-Até entrar no revisar.py, a sessão confere à mão antes do push:
+## 10. Revisão automática (`render/protagonista.py`, chamado pelo `render/revisar.py`)
+Vale para estático e carrossel com `protagonista` ou `narrativa` e para todo estático e carrossel do ciclo a partir de
+28/11/2026. Rodar antes do push: `python render/revisar.py render/pedidos/<id>.json`.
 
 Barra:
+- Pedido do formato sem `protagonista` (tipo espelho, ponte ou alerta, e persona conhecida).
 - Pedido do formato sem `narrativa`, ou sem `desejo`, `vilao` ou `sucesso`.
+- Sem `ficha_persona`, com `consciencia` fora de 1 a 5, ou com objetivo, desejo, dor, erro ou objeção que não esteja na ficha da persona.
 - Nome do personagem em mais de 3 slides.
 - Nenhum "você" entre os slides 2 e 4.
 - Slide 9 sem foto do Luan.
@@ -147,6 +173,8 @@ Barra:
 Avisa:
 - `desejo` ou `vilao` com mais de uma ideia (presença de "e" ou vírgula).
 - `cta_transicao` vazio.
+- Desejo, dor ou erro da ficha que não aparecem no texto do post (nem por palavra-chave); objeção que não aparece no carrossel.
+- Nível de consciência diferente em `protagonista` e em `ficha_persona`.
 
 ## 11. Como medir
 Por tipo (Espelho, Ponte, Alerta): seguidores ganhos, salvamentos, respostas nos stories e MÉTODO no direct.

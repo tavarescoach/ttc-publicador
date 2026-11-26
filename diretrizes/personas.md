@@ -2,6 +2,8 @@
 
 Cópia de trabalho do doc `claude/personas-posicionamento.md` do Project. Usada pelo Formato Protagonista
 (`diretrizes/protagonista.md`): todo post de notícia escolhe **uma** persona (`rafael`, `thiago` ou `feminina`).
+As listas abaixo também estão em `diretrizes/personas.json`, que a revisão automática usa para conferir a
+`ficha_persona` de cada post. **Mudou uma lista aqui? Mude no .json também.**
 
 São duas compras diferentes: no studio o cliente compra **o Luan** (presença, horário exclusivo, R$ 1.999/mês); no online
 compra **um método que cabe na vida dele** (preço baixo, autonomia). O conteúdo é o mesmo motor; o argumento muda.

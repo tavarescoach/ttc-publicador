@@ -1,0 +1,142 @@
+{
+ "_sobre": "Fichas das personas em formato de dados (fonte: diretrizes/personas.md, 26/11/2026). O revisar.py confere se a ficha_persona de cada post usa itens destas listas. Mudou a persona no .md? Atualize aqui também.",
+ "rafael": {
+  "nome": "Rafael, o executivo sem tempo",
+  "produto": "studio 1:1",
+  "consciencia": [
+   3,
+   4
+  ],
+  "objetivos": [
+   "Reduzir gordura abdominal e a circunferência da cintura",
+   "Recuperar força perdida nos últimos anos e treinar sem dor nas costas ou no ombro",
+   "Melhorar os exames (glicose, colesterol, pressão) que o médico já apontou",
+   "Manter 3 treinos por semana por 6 meses seguidos"
+  ],
+  "desejos": [
+   "Voltar a se reconhecer no espelho e na foto de férias",
+   "Ter energia para trabalhar, brincar com os filhos e ainda render à noite",
+   "Passar presença: o corpo como parte da imagem de quem lidera",
+   "Sentir que tem a saúde sob controle, como tem a empresa",
+   "Envelhecer forte, sem virar o pai que parou de se mexer aos 50"
+  ],
+  "precisa": [
+   "Tratar o treino como compromisso de agenda, não como sobra de tempo",
+   "Delegar a decisão técnica e seguir o plano, sem reinventar toda semana",
+   "Dormir melhor e reduzir o álcool dos jantares de trabalho",
+   "Aceitar progressão gradual em vez de resultado em 30 dias",
+   "Medir: avaliação inicial, reavaliações e carga registrada"
+  ],
+  "problemas": [
+   "Agenda imprevisível, viagens e jantares que quebram a rotina",
+   "Academias lotadas no horário dele, sem atendimento de verdade",
+   "Ganho de peso lento e constante desde os 30 e poucos",
+   "Dor lombar ou no ombro por ficar sentado o dia inteiro",
+   "Sono curto e estresse alto"
+  ],
+  "dores": [
+   "Vergonha de tirar a camisa na praia, morando a duas quadras dela",
+   "Sensação de ter perdido o controle de algo que antes era fácil",
+   "Medo de um problema de saúde sério, reforçado por exame ou caso na família",
+   "Frustração de pagar caro e não ver resultado",
+   "Cansaço que chega à tarde e atrapalha o trabalho e a família"
+  ],
+  "erros": [
+   "Começar com tudo na segunda e sumir em 3 semanas",
+   "Dieta radical ou jejum por conta própria, seguida de efeito sanfona",
+   "Personal anterior que só contava repetição e mexia no celular",
+   "Achar que vai compensar no fim de semana, com treino pesado ou corrida longa",
+   "Pensar em GLP-1 como atalho sem mudar treino e alimentação"
+  ],
+  "objecoes": [
+   "R$ 1.999 por mês é caro para personal",
+   "Já tive personal e não deu certo",
+   "Minha agenda muda muito, não consigo horário fixo",
+   "6 meses de compromisso é muito tempo",
+   "Posso fazer isso sozinho com um app",
+   "Viajo bastante, vou perder aulas"
+  ]
+ },
+ "thiago": {
+  "nome": "Thiago, o profissional que treina sozinho",
+  "produto": "online",
+  "consciencia": [
+   2,
+   3
+  ],
+  "objetivos": [
+   "Sair do platô: treina há 1 a 5 anos e o corpo parou de mudar",
+   "Perder a barriga sem perder o pouco de massa que ganhou",
+   "Aumentar as cargas nos básicos (agachamento, supino, terra) com técnica certa",
+   "Montar uma rotina que caiba em 45 a 60 minutos, 3 a 4 vezes por semana"
+  ],
+  "desejos": [
+   "Ter um corpo que mostre que ele treina",
+   "Sentir que sabe o que está fazendo na academia, sem copiar o cara do lado",
+   "Mais disposição e autoestima no trabalho e no relacionamento",
+   "Fazer parte de algo: um método, um grupo, um treinador que ele acompanha"
+  ],
+  "precisa": [
+   "Seguir um plano estruturado por semanas, em vez de treinar o que der vontade",
+   "Registrar cargas e progredir aos poucos",
+   "Ajustar alimentação sem extremismo (proteína suficiente, menos ultraprocessado)",
+   "Consumir conteúdo de fonte confiável e parar de pular entre influenciadores",
+   "Mandar vídeo da execução e aceitar correção"
+  ],
+  "problemas": [
+   "Excesso de informação contraditória nas redes",
+   "Nenhum acompanhamento na academia de rede",
+   "Não sabe se a técnica está certa; sente dor no joelho ou no ombro",
+   "Trabalho sentado, sono irregular, fim de semana sem controle"
+  ],
+  "dores": [
+   "Sensação de estar perdendo tempo: anos treinando e pouca diferença",
+   "Comparação com quem começou depois e está melhor",
+   "Insegurança com o corpo em foto, praia ou piscina",
+   "Medo de se machucar e ter que parar"
+  ],
+  "erros": [
+   "Trocar de treino toda semana seguindo vídeo do momento",
+   "Treinar sempre até a falha, sem descanso nem progressão",
+   "Cortar carboidrato radicalmente e perder rendimento",
+   "Gastar em suplemento antes de acertar treino, sono e comida",
+   "Comprar infoproduto genérico e abandonar na segunda semana"
+  ],
+  "objecoes": [
+   "Tem treino de graça no YouTube",
+   "Treino online não funciona, preciso de alguém do lado",
+   "Esse cara é do Rio, não conhece minha realidade",
+   "Já comprei curso e não usei",
+   "Não tenho dinheiro para consultoria agora",
+   "Como sei que é diferente de qualquer outro personal da internet?"
+  ]
+ },
+ "feminina": {
+  "nome": "Variação feminina (30 a 50 anos)",
+  "produto": "studio 1:1 ou online",
+  "consciencia": [
+   1,
+   5
+  ],
+  "_herda": "Blocos vazios aceitam itens das fichas de rafael e thiago (mesma faixa social), até a ficha própria ser validada com alunas.",
+  "herda": [
+   "rafael",
+   "thiago"
+  ],
+  "objetivos": [],
+  "precisa": [],
+  "problemas": [],
+  "erros": [],
+  "objecoes": [],
+  "desejos": [
+   "Leveza",
+   "Segurança",
+   "Resultado sem ficar presa ao fitness"
+  ],
+  "dores": [
+   "Corpo que mudou depois da gravidez ou perto da menopausa",
+   "Medo de ficar grande com musculação",
+   "Culpa alimentar"
+  ]
+ }
+}

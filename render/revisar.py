@@ -16,6 +16,9 @@ import os
 import re
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from protagonista import revisar_protagonista  # Formato Protagonista e ficha da persona (26/11/2026)
+
 BRT = dt.timezone(dt.timedelta(hours=-3))
 JANELA_MIN_H = 3  # horas mínimas entre a revisão e a publicação para dar tempo de vetar
 
@@ -303,6 +306,11 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
             if a and a == b == c:
                 avisos.append("Três slides seguidos com o mesmo fundo.")
                 break
+
+    # Formato Protagonista e ficha da persona (diretrizes/protagonista.md, seção 10)
+    pr, av = revisar_protagonista(p)
+    problemas += pr
+    avisos += av
 
     # temas que sempre passam pelo Luan
     if p.get("prova") or any(re.search(r, baixo) for r in PROVA):
