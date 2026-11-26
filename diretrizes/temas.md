@@ -2,6 +2,8 @@
 
 Todo post (pauta, carrossel, reels, estático e story) leva exatamente um tema desta lista no campo `tema`. Não invente temas novos: se nenhum servir, pare e pergunte ao Luan.
 
+> **v3 (26/11/2026):** o tema passa a ser o **assunto** do post. Todo post leva também `pilar` (CUR, PRO, MET, BAS) e `serie` (`sem-atalho`, `cansar-nao-e-evoluir`, `apaga-incendio`, `traducao`, `gente-nao-ficha`, `treino-do-luan`, `um-por-cento`). Destino de cada tema e mix da semana em `diretrizes/linha-editorial-v3.md` (seções 3, 4 e 6). ESP sobe para o centro; EMA diminui; FAM só pelo Formato Protagonista (máx. 2 por semana); GLP só na série `sem-atalho`.
+
 | Tema | Sigla | Tipo |
 |---|---|---|
 | Treino de força | FOR | central |

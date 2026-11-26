@@ -2,6 +2,8 @@
 
 Vale para toda sessão que mexa em pacote, feed, stories ou revisão. Estado da implementação no fim do arquivo.
 
+> **Em substituição (decisão do Luan em 26/11/2026):** a linha editorial v3 (`diretrizes/linha-editorial-v3.md`) troca o ciclo de 3 dias por uma semana de séries (uma antítese por dia) e os stories de time-lapse com "bom dia" pelo Diário do Ponto A ao B (`diretrizes/stories.md`). Até a troca no código (`ciclo/escolher.py`, `acervo/stories.py`; lista na seção 9 da v3), este ciclo continua rodando. Nesse meio-tempo, o pacote do ciclo já escreve com as regras da v3: Formato Protagonista, `pilar` e `serie` em cada peça e palavra-chave por origem. A grade de horários (inclusive o carrossel das 20h no dia 2) só muda junto com o código. Continuam valendo daqui: revisão automática (seção 5), acervo e rotação de time-lapses (seção 4) e regras de foto de famoso.
+
 ## Decisões do Luan (24/10/2026)
 - Um tema por ciclo de 3 dias, escolhido por fórmula fixa (abaixo), sem IA.
 - FAM sai do sorteio: o estático das 7h é sempre sobre uma pessoa conhecida, ligada ao tema do ciclo. Concorrem 8 temas: FOR, EMA, EST, ESP (centrais) e GLP, LON, MEN, WEA (cruzados).

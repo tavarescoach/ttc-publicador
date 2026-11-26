@@ -5,6 +5,9 @@ Padrão aprovado pelo Luan em 17/10/2026: ESTRUTURA e ESTÉTICA do estudo dos ca
 vermelho só no detalhe, CTA "MÉTODO"). Nunca copiar logo, nome, frases ou layout de outra marca.
 Exemplo aprovado: render/pedidos/c-2610171339-y4f-carrossel.json (prévia em render/previas/).
 
+## v3 (26/11/2026): arco do Formato Protagonista
+O carrossel das 12h segue os 10 slides de `diretrizes/protagonista.md` (seção 6): capa com personagem → espelho → vilão (a antítese da série do dia) → problema interno → causa → erro → o que está em jogo → identidade de → para → o guia com foto do Luan ("o que eu faço com meus alunos") → CTA MÉTODO. Antes de escrever, preencher a ficha `narrativa`. Um slide salvável (checklist, teste, tabela) por carrossel. A estrutura v2 abaixo vale onde não conflitar.
+
 ## v2 (02/11/2026): arco conexão → autoridade → desejo
 Leia `diretrizes/conteudo.md`. O carrossel segue: famoso ou caso (conexão) → o que a ciência diz → o que o Luan faz
 com os alunos, com foto dele do acervo (autoridade) → o resultado possível (desejo) → MÉTODO. A capa sempre tem rosto
