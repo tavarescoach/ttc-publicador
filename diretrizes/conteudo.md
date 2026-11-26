@@ -1,5 +1,7 @@
 # Diretrizes de conteúdo v2 (decididas pelo Luan em 02/11/2026)
 
+> **Desde 26/11/2026 vale a linha editorial v3: leia antes `diretrizes/linha-editorial-v3.md` e `diretrizes/protagonista.md`.** Onde conflitarem com este arquivo, valem eles. Daqui seguem valendo: fotos (seção 4), meme (seção 5, com a palavra CAMADA no lugar de MÉTODO na legenda), voz informal e público/anúncios. Mudam: os três pilares e o ciclo de 3 dias (trocados pelos 4 pilares e as séries da v3), a escolha de notícias (passa também pelo filtro de protagonista) e o CTA (uma palavra por origem).
+
 Valem para toda sessão que escolhe notícia, escreve ou monta arte do @tavarescoach (Radar, Estúdio, Pacote do ciclo).
 Onde conflitarem com `marca.md`, `carrossel.md`, `ciclo.md` ou a skill `copy-social-ttc`, valem estas.
 Cópia no Project: `claude/diretrizes-conteudo-v2.md`.

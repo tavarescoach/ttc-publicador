@@ -1,5 +1,7 @@
 # Direção — Reels enviado pelo Luan (capa + legenda)
 
+> **v3 (26/11/2026), a implementar:** 3 reels por semana às 20h (ter: correção prática · sex: case ou escuta · sáb: Luan treinando), **montados pelo robô** a partir do acervo, sem gravação nova: 3 a 5 trechos de time-lapse ou vídeo de treino (`acervo/tags.json`, mesma `serie` do dia), texto da tese-mãe na tela (gancho nos 2 primeiros segundos, uma ideia por corte, fonte no fim), trilha sem direitos, sem narração. Arco do Formato Protagonista (`diretrizes/protagonista.md`, seção 7). CTA: "me manda **TESTE** no direct" (palavra da origem reels). Reels enviado pelo Luan continua aceito pelas regras abaixo, com TESTE no lugar de MÉTODO.
+
 O vídeo já vem gravado e editado pelo Luan. O Claude NÃO edita o vídeo: cria a capa e a legenda e agenda para aprovação.
 Base do conteúdo: `render/reels/<id>/info.json` (tema, notas do Luan, funil, duração, transcrição do áudio) e os quadros `quadro-1..8.jpg`.
 

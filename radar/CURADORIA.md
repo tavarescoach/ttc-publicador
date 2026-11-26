@@ -23,6 +23,18 @@ Leia `diretrizes/conteudo.md`, seção 1. O que mais funciona no perfil é famos
 corpo, saúde, treino ou rotina (2 mil a 12 mil visualizações); famoso de fora rende pouco e estudo sem personagem rende
 quase nada. Pergunta de corte: o leitor comentaria isso no almoço do trabalho?
 
+## Linha editorial v3 (26/11/2026)
+Leia `diretrizes/linha-editorial-v3.md` e `diretrizes/protagonista.md`. Além da pergunta do almoço, **segunda pergunta de corte:
+isso ajuda alguém a decidir algo sobre a própria meta?** Reprovado nela: teto 50 (só serve como post de topo).
+Prioridade de assunto: lutas, corrida, triatlo, HYROX, retorno de lesão, prevenção articular, executivo sem tempo.
+Nos itens com nota ≥ 50, grave também:
+- `serie`: a série que a notícia alimenta (`sem-atalho`, `cansar-nao-e-evoluir`, `apaga-incendio`, `traducao`,
+  `gente-nao-ficha`, `treino-do-luan`) ou null.
+- `pilar`: CUR | PRO | MET | BAS.
+- `protagonista` (quando há `pessoa`): {"tipo": "espelho | ponte | alerta", "persona": "rafael | thiago | feminina",
+  "desejo": "uma linha", "vilao": "uma linha", "nivel_consciencia": 1–5}. Se não der para escrever desejo e vilão em uma
+  linha cada, `protagonista` = null e a notícia só serve para topo.
+
 ## Para cada notícia
 - `nota` 0–100: encaixe com o público (executivo 30–45 e mulher 30–50 da Zona Sul do Rio), potencial de conteúdo que gere valor
   real e ponte para a venda, credibilidade da fonte, atualidade. Fofoca, política, crime e assuntos sem ponte com corpo/saúde/

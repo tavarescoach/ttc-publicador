@@ -2,7 +2,8 @@
 
 Resumo do Guia de Conteúdo (Project "ASSISTENTE PESSOAL DE IA", doc claude/guia-de-conteudo.md). Em caso de dúvida, o guia completo vale.
 
-**Diretrizes v2 (02/11/2026): leia antes `diretrizes/conteudo.md` (pilares conexão, autoridade e desejo, notícias, gancho, fotos, meme). Onde conflitar, vale ela.**
+**Linha editorial v3 (26/11/2026): leia antes `diretrizes/linha-editorial-v3.md` (pilares, séries, grade, CTA por origem, ofertas) e `diretrizes/protagonista.md` (narrativa). Depois `diretrizes/conteudo.md` (fotos, meme, voz). Onde conflitar, vale a v3.**
+**Lema: "Evolução sem acaso"** (relatório Oceano Azul). Reforços: "1% a cada dia", "um passo de cada vez". Metáfora de voz: escalada em camadas.
 
 **Todo texto (slide, capa, legenda, roteiro, story) segue a skill `.claude/skills/copy-social-ttc/SKILL.md`.** Leia antes de escrever: fórmula Cena → Causa → Movimento, as três perguntas e a lista de vícios de IA, que a revisão automática barra.
 
@@ -30,7 +31,8 @@ Luan Tavares, personal trainer e Diretor Técnico do TTC Centro de Performance (
 
 ## Oferta e CTA
 - Porta de entrada: "Avaliação Estratégica" (40 min, avaliação física + plano de direção).
-- CTA de fundo de funil: "Me manda MÉTODO no direct."
+- CTA de fundo de funil: uma palavra por origem desde 26/11/2026 (carrossel MÉTODO · stories PONTO A · reels TESTE · foto das 20h CAMADA · anúncio local AVALIAÇÃO). Tabela em `diretrizes/linha-editorial-v3.md`, seção 7.
+- Personal 1 a 1 com o Luan: R$ 150 a R$ 400 por hora (26/11/2026). Estúdio boutique: ticket médio R$ 609/mês. Online: R$ 29 (entrada), R$ 227, 12x R$ 125 (anual). Preço só aparece em post quando o Luan pedir.
 - Personal: planos 2x e 3x por semana, horário fixo (manhã 7h–10h).
 
 ## Visual

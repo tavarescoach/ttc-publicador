@@ -1,57 +1,63 @@
-# Stories do @tavarescoach — como planejar e entregar
+# Stories do @tavarescoach: Diário do Ponto A ao B (v3, 26/11/2026)
 
-> Em transição para o ciclo temático (diretrizes/ciclo.md): quando `acervo/config.json` tiver "ativo": true, os stories automáticos são os do robô "Preparar stories" (6h, 8h, 10h, 12h30) e os stories com sticker deste arquivo viram opcionais. Até lá, vale o que está abaixo.
-
-Regra de operação dos stories. Vale para o pacote semanal e para qualquer sessão que monte stories. Estratégia completa: doc `claude/stories-estrategia.md` do Project. Texto: skill `copy-social-ttc` (seção 9 e vícios de IA).
+> Substitui o arco manual de 18/10 e os stories de time-lapse com "bom dia" do ciclo (ciclo.md, seção 3). Linha editorial: `diretrizes/linha-editorial-v3.md`. Papéis da narrativa: `diretrizes/protagonista.md`. Texto: skill `copy-social-ttc`.
+> Estado: regras de texto valem já para quem escreve stories. A troca da grade de stories no robô "Preparar stories" (`acervo/stories.py`, `acervo/config.json`) está pendente (linha-editorial-v3.md, seção 9); até lá, os horários antigos seguem, com o texto desta versão.
 
 ## 1. Princípios
-- **Os stories distribuem o feed.** Todo story pertence a uma pauta que sai no dia, saiu ontem ou sai amanhã.
-- **A fonte da verdade é a fila real**, não o plano: `fila.json` (status `pendente`, horário em `quando`) + `render/pedidos/<id>-carrossel.json` (capa, slides, legenda). Leia o que de fato vai ao ar em cada dia antes de escrever.
-- **Loop aberto:** o story faz a pergunta; a resposta está no post ou no story seguinte.
-- **Um objetivo por dia, pelo funil do post principal:** topo = levar ao post (toques na ponte) · meio = respostas (votos, caixinha) · fundo = MÉTODO no direct.
-- **Honestidade:** nunca inventar aluno, número ou resultado de enquete. O resultado da enquete é sempre escrito pelo Luan, com o número real.
+- **100% robô.** O robô escolhe a mídia do acervo, escreve o texto por cima, revisa e publica. O Luan não grava nem posta nada; só veta.
+- **Um dia = uma decisão**, da série do dia (linha-editorial-v3.md, seção 4), contada em 3 telas: a pergunta, a decisão com evidência e o resultado esperado com critério de avaliação.
+- **Narrativa do Formato Protagonista:** tela 1 personagem e vilão; tela 2 o guia com a causa e o artigo; tela 3 o sucesso e como medir.
+- **Honestidade:** nunca inventar aluno, número ou resultado. Personagem é situação típica ("quando o aluno chega dizendo…") ou fato com fonte.
+- **Limite da API:** o robô não publica enquete, caixinha, quiz, sticker de link nem o post compartilhado clicável. A interação vem pela resposta ao story (cai no direct) e o aviso de post novo leva ao perfil.
 
-## 2. Arco do dia
-Dia com post (6 stories nas semanas 1–2 da rampa):
-1. **Abertura** (manhã, MANUAL): vídeo curto de bastidor + a Cena da pauta em uma frase.
-2. **Ponte** (5–10 min depois de cada post do dia, MANUAL): post compartilhado pelo app (avião de papel → Adicionar ao story) + texto curto que abre o loop. Só a ponte nativa leva ao post; imagem publicada pelo robô não é clicável.
-3. **Interação** (antes do post principal, MANUAL): enquete, quiz ou caixinha sobre a cena da pauta, sobre arte de fundo.
-4. **Aprofundamento** (tarde, MANUAL): arte de fundo com a Causa (frase-assinatura) + o número real da enquete, que o Luan escreve no espaço vazio.
-5. **Conversão** (noite, AUTO): convite MÉTODO ligado ao tema, ou caixinha que puxa conversa.
+## 2. Arco diário (3 telas da narrativa + 2 de apoio)
+| Hora | Tela | Cena da mídia (`cena` no acervo) | Texto na tela | Limite |
+|---|---|---|---|---|
+| 07:30 | 1 · A pergunta do dia | `trabalhando` ou `treinando` (time-lapse) | A decisão do dia em 1 frase, começando por "Hoje:" | até 20 palavras |
+| 10:00 | 2 · A decisão | `corrigindo-aluno` ou `demonstrando` | O que o Luan faz, com aplicação prática, + linha de fonte "Fonte: Autor et al., ano, revista" | até 30 palavras + fonte |
+| 12:05 | Apoio · Post novo | imagem do carrossel do dia | "Post novo no perfil: o passo a passo completo." | até 12 palavras |
+| 13:00 | 3 · Resultado e critério | `treinando` | Um resultado esperado + um critério que dá para medir (teste, carga, tempo, dor de 0 a 10) | até 30 palavras |
+| 21:00 | Apoio · Convite | `olhando-para-camera` | "Responde este story com PONTO A e me conta sua meta." (variações aprovadas em `acervo/config.json`) | até 15 palavras |
 
-Dia sem post: metade **eco** da pauta anterior (respostas da caixinha, aplicação prática, objeção) e metade **prelúdio** da próxima (a cena, a pergunta, "amanhã eu mostro"). Não invente pauta: o prelúdio usa o próximo post da fila.
+Domingo (`um-por-cento`): as 3 decisões da semana com mais respostas, uma por tela, nos mesmos horários das telas 1–3. Sábado (`treino-do-luan`): as 3 telas contam uma decisão do treino do Luan na modalidade do dia, com mídia de treino dele.
 
-Rampa: 6/dia (até 01/11) · 9/dia (02–15/11: + bastidor de tarde, aplicação prática, objeção) · 12/dia (a partir de 16/11: + quiz, prova com autorização, resposta da caixinha anterior).
+Rampa: 5 telas/dia. Só sobe quando a queda de alcance da tela 1 para a 3 ficar abaixo de 20% por 2 semanas.
 
-Tema de saúde (hormônio, suplemento, remédio/GLP-1, lesão, gravidez, menopausa): o dia todo é MANUAL (sem story automático), e as artes levam "Informação geral. Seu médico define o tratamento." quando citam tratamento.
+### Exemplo completo (`apaga-incendio`, quarta)
+1. "Hoje: o que eu faço quando o aluno chega dizendo que o joelho parou de doer."
+2. "Operou o LCA? Parar de doer não libera a volta. Eu testo força do quadríceps e salto, e só libero com a perna operada a 90% da outra." Fonte: Grindem et al., 2016, Br J Sports Med.
+3. "No estudo, quem passou nos critérios teve 5,6% de nova lesão. Quem falhou, 38,2%. Critério: força e salto em 90% do outro lado."
+Fonte verificada: https://pmc.ncbi.nlm.nih.gov/articles/PMC4912389 (doi 10.1136/bjsports-2016-096031).
 
-Não repetir enquete, gancho ou texto de convite dos últimos 7 dias.
+## 3. Regras das 3 telas
+- Tela 1: sempre uma situação de aluno ou do leitor ligada à série; nunca um aluno específico sem `autorizado`.
+- Tela 2: só publica com artigo **verificado**: DOI ou PubMed/PMC aberto pela sessão e gravado no item (`fonte_url`, `fonte_doi`). Sem artigo verificado, a tela vira aplicação prática sem número e sem linha de fonte.
+- Tela 3: o número vem do mesmo artigo da tela 2 e fica igual a ele. Nada de prazo que o artigo não sustente.
+- Saúde (hormônio, suplemento, remédio/GLP-1, lesão, gravidez, menopausa): revisão de saúde mais rígida (ciclo.md, seção 5); quando citar tratamento, linha "Informação geral. Seu médico define o tratamento."
+- Texto: Cena → Causa → Movimento; proibidos "não é X, é Y", travessão, pergunta respondida pelo próprio texto e os demais vícios da skill. Não repetir gancho ou convite dos últimos 7 dias.
 
-## 3. Texto
-- Até 15 palavras por tela, uma ideia, leitura em 3 s.
-- Fórmula Cena → Causa → Movimento. A enquete usa a Cena; o aprofundamento entrega a Causa. Proibido "não é X, é Y", travessão, pergunta respondida pelo próprio texto e os demais vícios da skill.
-- Pergunta de sticker é pergunta de verdade.
+## 4. Escolha da mídia (acervo)
+- `acervo/tags.json` ganha, por mídia: `serie` (lista de séries em que cabe) e `cena` (`trabalhando`, `corrigindo-aluno`, `demonstrando`, `treinando`, `olhando-para-camera`).
+- A tela pede uma cena; o robô sorteia entre as mídias dessa cena e da série, sem repetir a mesma mídia em 14 dias (`ciclos/rotacao.json`). Time-lapse: trechos diferentes a cada uso (regra de rotação de ciclo.md, seção 4).
+- Fora: `evitar`, aluno sem `autorizado`, sem camisa (stories não levam foto sem camisa).
+- Visual: 1080x1920, azul performance, cinza saúde, vermelho #C1121F só no destaque, Inter, logo LT; nada importante nos 250 px do topo nem nos 340 px da base; leitura em 3 s; caixa de texto acima ou abaixo dos rostos (detecção já existente).
 
-## 4. Entrega (arquivos)
+## 5. Entrega (arquivos)
 **Artes** — `render/stories/<AAAA-MM-DD>.json`, lista de telas:
 ```json
-[{"arquivo": "midia/2026-10-26/story-fundo-enquete.png", "rotulo": "Pergunta do dia",
-  "titulo": "texto com **destaque** em vermelho", "texto": "linha de apoio (opcional)", "topo": 620}]
+[{"arquivo": "midia/2026-12-02/story-1.png", "tela": 1, "serie": "apaga-incendio", "pilar": "MET", "tema": "LON",
+  "rotulo": "Hoje", "titulo": "texto com **destaque** em vermelho", "texto": "linha de apoio (opcional)",
+  "fonte": "Grindem et al., 2016, Br J Sports Med", "fonte_url": "https://...", "midia_acervo": "<id no tags.json>", "topo": 660}]
 ```
-- Nomes: `story-fundo-enquete.png`, `story-fundo-resultado.png`, `story-fundo-caixinha.png` (fundos para o Luan usar no app) e `story-1.png`, `story-2.png`… (automáticos, publicados pelo robô).
-- `topo` (px): ~620 em fundo de sticker (espaço livre embaixo para o sticker), ~1000 em fundo de resultado (espaço livre em cima para o número), ~660 nos automáticos.
-- O robô **Renderizar stories** gera os PNGs no push e sobe para o bucket. Para conferir antes, `python render/story.py render/stories/<data>.json` gera localmente; abra os PNGs com Read.
+- O robô **Renderizar stories** gera os PNGs no push e sobe para o bucket. Conferência local: `python render/story.py render/stories/<data>.json` e abrir os PNGs com Read.
 
-**Automáticos** — um item por `story-N.png` no `fila.json` (indentação de 2 espaços):
+**Fila** — um item por tela no `fila.json` (indentação de 2 espaços):
 `{"id": "<data>-story-N", "quando": "<data>T<HH:MM>:00-03:00", "tipo": "STORY", "arquivos": ["<data>/story-N.png"], "legenda": "", "status": "pendente"}`.
-Antes, confira que não há STORY pendente da mesma data com o mesmo id; nunca altere item `publicado`.
+Antes, conferir que não há STORY pendente da mesma data com o mesmo id; nunca alterar item `publicado`.
 
-**Manuais** — itens em `tarefas.json` (indentação de 1 espaço), um por story manual:
-`{"id": "<data>-sN", "data": "<data>", "ordem": 10+N, "formato": "stories", "titulo": "Story HH:MM · bloco: assunto", "detalhe": "...", "acao": "manual", "horario": "HH:MM"}`.
-O `detalhe` traz sempre: objetivo do dia (no primeiro), O QUE FILMAR ou COMO FAZER no app, o TEXTO NA TELA exato, as opções do sticker e o link da arte de fundo:
-`https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/<data>/<arquivo>`.
-Automáticos também entram como tarefa, com "(automático, não precisa postar)" no título, para o Luan saber o que sai.
+**Painel** — cada tela entra em `tarefas.json` como "(automático, não precisa postar)", para o Luan poder vetar. Corrigir tarefa já enviada: marcar a antiga com `"apagada": true` e criar outra com id novo.
 
-**Corrigir uma tarefa já enviada:** o painel só insere ids novos. Marque a antiga com `"apagada": true` (o robô Sincronizar painel a esconde) e crie outra com id novo.
+**Google Agenda** — desligada na v3 (não há ação do Luan nos stories).
 
-**Google Agenda** — um evento por dia (não um por story), 15 min antes do primeiro story, 10 min, disponibilidade livre, lembrete popup na hora. Título "Stories do dia · <tema>". Descrição: objetivo do dia, a lista "HH:MM bloco: texto curto" e o link https://ttc-painel.vercel.app/hoje.html. Antes de criar, procure eventos "Stories do dia" na mesma data para não duplicar.
+## 6. Métricas
+O robô coleta, por tela, antes de 24 h: alcance, respostas, saídas e avanços. Por dia: queda de alcance da tela 1 para a 3 e respostas PONTO A. Metas das semanas 1–2: queda menor que 20% e 1 resposta PONTO A por dia.
