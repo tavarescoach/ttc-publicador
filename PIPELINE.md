@@ -1,6 +1,11 @@
 # Pipeline do Estúdio (sessão em segundo plano)
 
 > Ciclo temático de 3 dias (aprovado em 24/10/2026, em implementação): ver `diretrizes/ciclo.md`. Onde ele contradiz regras antigas deste arquivo (aprovação de saúde, pacote de sábado, stories), vale o ciclo.
+>
+> **Formato Protagonista (aprovado em 26/11/2026):** todo post que parte de notícia segue `diretrizes/protagonista.md`
+> e escolhe uma persona de `diretrizes/personas.md` (`rafael`, `thiago` ou `feminina`). A notícia traz o personagem, o
+> leitor é o herói, o Luan e o método são o guia. Onde ele contradiz o arco antigo do carrossel (`diretrizes/carrossel.md`
+> v2, "executivo 30–45 e mulher 30–50"), vale o Protagonista. Fotos, voz, fontes e revisão da v2 continuam valendo.
 
 Esta sessão é disparada pelo Estúdio de criação do Luan (página do claude.ai) através da tarefa agendada
 "Pipeline do Estúdio". A mensagem extra da disparada diz o que fazer, num destes formatos:
@@ -14,7 +19,7 @@ Ninguém está olhando: não faça perguntas. Decida pela leitura mais razoável
 Responda e escreva sempre em português do Brasil.
 
 ## Recursos
-- Repositório: tavarescoach/ttc-publicador (este). Clone, leia `diretrizes/marca.md`, `diretrizes/carrossel.md` e a skill de texto `.claude/skills/copy-social-ttc/SKILL.md` (todo texto segue ela; a revisão automática barra os vícios de IA da seção 4).
+- Repositório: tavarescoach/ttc-publicador (este). Clone, leia `diretrizes/marca.md`, `diretrizes/carrossel.md`, `diretrizes/protagonista.md`, `diretrizes/personas.md` e a skill de texto `.claude/skills/copy-social-ttc/SKILL.md` (todo texto segue ela; a revisão automática barra os vícios de IA da seção 4).
 - Estúdio (artifact): https://claude.ai/artifact/4qy326S1jHcMxz8Ycw4QbH — banco do artifact, coleção `criacoes`.
   Ler/escrever com a ferramenta ArtifactData (carregar via ToolSearch "select:ArtifactData"). Toda escrita leva `if_version`.
 - Painel: https://ttc-painel.vercel.app (Supabase). Esta sessão NÃO alcança o Supabase direto: tudo passa pelos robôs do GitHub.
@@ -46,18 +51,23 @@ saidas {blogpost | video_aula | ementa | reels_direcao | teleprompter | broll_na
    `radar/curadoria/*.json` (o mais recente) ou em `radar/coleta.json`. Leia a matéria com WebFetch no `link` e confira os fatos em
    outra fonte. As 5 opções partem DESSA notícia, cada uma com um ângulo diferente (ciência/decodificado, mito x método, objeção,
    público feminino, bastidor/prova), e a tese cita a reportagem como ponto de partida, sem copiar trechos dela.
+   **Filtro de protagonista** (`diretrizes/protagonista.md`, seção 3): cada opção que parte de notícia leva
+   `protagonista` {tipo (espelho | ponte | alerta), persona (rafael | thiago | feminina), desejo, vilao, nivel_consciencia}.
+   Se não der para escrever desejo e vilão em uma linha, a opção é de topo (`potencial.venda` "baixo", objetivo de alcance).
 3. Monte 5 opções DIFERENTES entre si. Cada opção também traz os campos do contrato da tese-mãe (`diretrizes/tese-mae.md`): `tipo_pauta` (noticia | tese | guia), `emocao` (admiracao | indignacao | reconhecimento | urgencia_perda | pertencimento), `lacuna` (o que a manchete promete e o conteúdo entrega) e `passo_final` (um só, com a razão). Decida esses campos pela skill `acao-emocional-ttc`. Cada opção:  (autoridade/ciência, mito x método, objeção, público feminino, prova/bastidor), cada uma com:
    - titulo (até 8 palavras), subtitulo (1 frase), frases (2 frases curtas de COMO explorar e ligar aos conteúdos e à venda — não frases de efeito);
-   - tese: seções `## A tese`, `## O que a ciência mostra` (com fontes), `## Por que isso importa para o seu público` (executivo 30–45 e mulher 30–50),
+   - tese: seções `## A tese`, `## O que a ciência mostra` (com fontes), `## Por que isso importa para o seu público` (a persona da opção, com desejo, vilão, problema interno e erro tirados de `diretrizes/personas.md`),
      `## O custo escondido da crença errada`, `## Como o método aplica`, `## Objeções que esse tema responde`, `## Desdobramentos de conteúdo`,
      `## Cuidado de comunicação`. Use "- " em listas e **negrito**. Nada genérico.
    - headlines: 4 investigativas e culturais, com potencial viral (curiosidade, conexão). titulo = frase 1, subtitulo = frase 2.
      Se a reportagem de partida tiver uma pessoa conhecida no centro do fato, pelo menos 2 das 4 headlines nomeiam a pessoa.
      Cada headline leva `notas` {curiosidade, clareza, marca, publico, venda} (0–10 cada, seja exigente e diferencie) e
-     `publico_alvo` (executivo | mulher | ambos). A opção leva `recomendada_h` {indice (1–4), motivo (2 frases), ajuste
+     `publico_alvo` (executivo | mulher | ambos, valores que o Estúdio já lê) e `persona` (rafael | thiago | feminina;
+     rafael e thiago = executivo, feminina = mulher).
+     Headline de notícia segue os ganchos por tipo (seção 8 do Protagonista) e termina no leitor. A opção leva `recomendada_h` {indice (1–4), motivo (2 frases), ajuste
      {titulo, subtitulo} ou null}: a headline que melhor equilibra parar o scroll, salvamento e venda, com uma versão
      melhorada se couber. Quesitos: curiosidade (para o scroll), clareza (entende em 2 s), marca (tom LT, sem clickbait),
-     publico (dores do executivo 30–45 e da mulher 30–50), venda (ponte para Avaliação Estratégica / MÉTODO).
+     publico (desejo, dores e erros da persona escolhida), venda (ponte para Avaliação Estratégica / MÉTODO).
      Quando houver o doc `contexto/instagram`, inclua também `historico` (0–10: semelhança de estrutura, tema e tom com os
      posts de maior valor e taxa do perfil, ignorando os de baixo desempenho) e `referencia` (título exato do post mais
      parecido, ou "" se nenhum).
@@ -78,6 +88,9 @@ saidas {blogpost | video_aula | ementa | reels_direcao | teleprompter | broll_na
 2. Para `carrossel`: escreva `render/pedidos/e-<doc_id>-carrossel.json` seguindo `diretrizes/carrossel.md`
    (id "e-<doc_id>-carrossel", data = dia de `quando`, quando, funil, pauta = headline.titulo, legenda, 9–10 slides).
    A capa usa a headline confirmada pelo Luan (título); destaque 1–3 palavras com **...**.
+   Pauta que partiu de notícia: preencha antes `protagonista` e a ficha `narrativa` (seção 4 de `diretrizes/protagonista.md`)
+   no pedido e siga o arco de 10 slides e a legenda das seções 6 e 7 (slide 9 = guia, `texto_foto` com foto do Luan).
+   Antes do push, confira à mão as regras da seção 10 (o revisar.py ainda não as checa).
    Fatos e números: só os que estão na tese ou que você confirmar com pesquisa. Fotos: se a pauta partiu de reportagem com pessoa conhecida no centro do fato, a capa
    segue a seção "Capa de pauta de notícia com pessoa conhecida" de diretrizes/carrossel.md (foto da pessoa, `credito`,
    `licenca`), mesmo que a headline confirmada não cite o nome; nesse caso mantenha a headline do Luan. Nos demais casos,
@@ -174,7 +187,8 @@ O tipo vem do campo `tipo_pauta` da tese (`noticia` | `tese` | `guia`). Sem tipo
   "o que eu faço" com foto do Luan nos carrosséis.
 - Número sem fonte confirmada bloqueia a aprovação da tese (campo `fontes` em cada evidência).
 - Prova com aluno e temas de saúde (hormônio, suplemento, remédio, lesão, gravidez, menopausa) exigem aprovação explícita do Luan, em qualquer saída.
-- Público da notícia diferente de 30–50 anos deve virar ponte para o público da marca (`pontos_de_cuidado` da tese).
+- Público da notícia diferente de 30–50 anos deve virar ponte para o público da marca (`pontos_de_cuidado` da tese); no Formato Protagonista, é o tipo **Ponte**.
+- Formato Protagonista em toda pauta de notícia: uma persona, um desejo, um vilão; o leitor entra no slide 2 e não sai; sucesso como identidade, nunca número com prazo.
 - Nada é publicado fora do robô ou do Luan; nada já publicado é alterado.
 
 ## Tema editorial
@@ -192,16 +206,27 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    Se o agendado rodar depois, ele vê que já existe o ciclo e não faz nada.
 1. `git pull`. Leia `ciclo/config.json` e `ciclos/ciclos.json`. Pare sem fazer nada ("nada a fazer") se `ativo` for false,
    ou se o último ciclo não estiver com status "escolhido", ou se o `inicio` dele não for amanhã (horário de Brasília).
-2. Leia `diretrizes/conteudo.md` (v2, 02/11/2026: vale sobre as outras), `diretrizes/ciclo.md`, `marca.md`, `carrossel.md`,
-   `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`. Pilares: 07h conexão, 12h autoridade, 20h desejo.
+2. Leia `diretrizes/protagonista.md` e `diretrizes/personas.md` (26/11/2026: valem sobre o arco antigo do carrossel),
+   `diretrizes/conteudo.md` (v2, 02/11/2026: vale sobre as demais em fotos, voz e curadoria), `diretrizes/ciclo.md`,
+   `marca.md`, `carrossel.md`, `temas.md` e as skills `copy-social-ttc` e `acao-emocional-ttc`. Pilares: 07h conexão,
+   12h autoridade, 20h desejo.
+   **Formato Protagonista no ciclo:** para cada dia, antes de escrever, escolha a notícia, passe o filtro de protagonista
+   e preencha `protagonista` {tipo, persona, desejo, vilao, nivel_consciencia} e a ficha `narrativa` (seção 4). Estático
+   e carrossel do mesmo dia usam o mesmo `protagonista` e a mesma `narrativa` (o carrossel aprofunda o estático). Varie o
+   tipo (espelho, ponte, alerta) entre os 3 dias quando as notícias permitirem e registre as escolhas em `ciclos/ciclos.json`
+   (`protagonistas`: {<dia>: {tipo, persona}}), para a medição por tipo. Notícia que não passa no filtro vira estático de
+   topo, sem carrossel de venda: busque outra notícia para o carrossel das 12h. História do guia ainda não confirmada:
+   `guia_empatia` vazio e nada de história pessoal do Luan no slide 9 nem na legenda.
    Todo item leva `tema` = o `tema` do ciclo. Saúde: só afirmação defensável, com fonte; sem prescrição nem promessa.
    **Arco do ciclo (como os 3 dias conversam):** um tema, três ângulos que avançam. D1 = o caso (o fato da pessoa
    conhecida e o estudo que explica). D2 = o mecanismo e a aplicação (por que funciona e como entra na semana;
    o carrossel das 20h é o guia prático). D3 = a objeção e o convite (o que trava o leitor e o primeiro passo, com
    MÉTODO mais forte). Funil por horário: 7h topo (atenção), 12h meio (autoridade, salvamento), 20h fundo/humano.
-   Cada estático termina chamando o carrossel do meio-dia do mesmo dia; o carrossel cita o caso da manhã no slide 2.
-   Headline do estático: nomeia a pessoa, traz um número ou uma frase dela, fica abaixo de ~60 caracteres e não
-   promete resultado; 1–3 palavras em **destaque** no que muda para o leitor.
+   Cada estático termina chamando o carrossel do meio-dia do mesmo dia; o carrossel retoma o caso da manhã e, do slide 2
+   em diante, fala com o leitor ("você"). O D3 (objeção e convite) usa uma objeção real da persona do dia (`personas.md`).
+   Headline do estático: gancho do tipo escolhido (seção 8 do Protagonista), nomeia a pessoa, traz um número ou uma frase
+   dela, **termina no leitor**, fica abaixo de ~60 caracteres e não promete resultado; 1–3 palavras em **destaque** no
+   que muda para o leitor.
 3. Peças (D1, D2, D3 = dias do ciclo; ids com o dia, ex. `k-2026-10-26-estatico`):
    - **Estático 07h** de cada dia (`k-<dia>-estatico`): notícia de pessoa conhecida ligada ao tema. Comece por
      `famosos` do ciclo; sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
@@ -216,20 +241,27 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      sai só com texto e vai para "Precisa de você".
      Depois do render, confira na prévia se a foto é mesmo da pessoa; se não for, troque o nome ou ponha `"pessoa": null`.
      Pedido: `{"formato": "estatico", "id", "data", "quando": "<dia>T07:00:00-03:00", "tema", "funil": "topo", "pauta",
-     "legenda", "slides": [{"tipo": "capa", "titulo" (nomeia a pessoa, até ~60 caracteres, 1–3 palavras em **destaque**),
+     "protagonista", "narrativa", "legenda", "slides": [{"tipo": "capa", "titulo" (nomeia a pessoa, até ~60 caracteres, 1–3 palavras em **destaque**),
      "subtitulo" (chama para o carrossel das 12h), "fonte": "Veículo, DD/MM/AAAA", "link_noticia", "foto", "credito":
      "Foto: autor / Wikimedia Commons (CC BY-SA 4.0)", "licenca": "cc-by | cc-by-sa | dominio-publico | cc0",
      "pagina_origem", "foco"}]}`. Só o que a notícia afirma sobre a pessoa; nunca sugerir que ela usa ou recomenda o
      método; notícia negativa em tom informativo; menor de idade nunca. Sem MÉTODO na arte (vai na legenda).
-   - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): aprofunda o gancho do estático daquele dia, padrão
-     Decodificado v2 de `diretrizes/carrossel.md` (arco conexão → ciência → o que eu faço → desejo → MÉTODO). A capa
+   - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): aprofunda o gancho do estático daquele dia, com a estética
+     Decodificado de `diretrizes/carrossel.md` e o **arco de 10 slides do Formato Protagonista** (`protagonista.md`,
+     seção 6): 1 capa (personagem + pergunta ao leitor) · 2 espelho · 3 vilão · 4 problema interno · 5 causa com fonte ·
+     6 o erro · 7 o que está em jogo · 8 o que o caso revela (insight, fundo claro, frase-assinatura) · 9 o guia
+     (`texto_foto` com `rotulo` "O QUE EU FAÇO COM MEUS ALUNOS", foto do Luan e o plano em 3 passos com verbo) · 10 `cta`
+     (MÉTODO + passo menor da `cta_transicao`). Personagem em no máximo 3 slides. Pedido leva `protagonista` e `narrativa`.
+     Legenda na ordem da seção 7. A capa
      NUNCA usa a mesma foto do estático (05/11/2026): use outra foto da pessoa (outra matéria, outro evento) ou uma
      foto do Luan do `acervo`, com `"layout": "recorte"` na capa (foto em bloco no alto, título em fundo sólido) para o
-     visual não repetir o do estático; ajuste `foco` para o rosto ficar no bloco. Slide 8 "O QUE EU FAÇO COM MEUS ALUNOS": `texto_foto` com
+     visual não repetir o do estático; ajuste `foco` para o rosto ficar no bloco. Slide 9 "O QUE EU FAÇO COM MEUS ALUNOS": `texto_foto` com
      uma foto do `acervo` do ciclo (abra as `previa` com Read, escolha a que combina e use
      `https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/<arquivo>`). Nunca a mesma foto do
      acervo em dois posts do ciclo.
-   - **Carrossel 20h** do D2 (`k-<D2>-carrossel-noite`, quando 20:00): outro ângulo do tema (guia, aplicação, objeção).
+   - **Carrossel 20h** do D2 (`k-<D2>-carrossel-noite`, quando 20:00): outro ângulo do tema (guia, aplicação, objeção),
+     falando com a mesma persona do D2 em "você", Cena → Causa → Movimento e slide do guia com foto do Luan. Se partir de
+     outra notícia, segue o Formato Protagonista completo.
    - **Meme 20h** do D3 (`k-<D3>-meme`, no lugar da foto pessoal do D3): frase de situação de treino com até 8 palavras,
      de preferência ecoando a notícia do ciclo; foto do `acervo` com a expressão certa (URL do bucket como acima).
      Pedido: `{"formato": "meme", "id", "data", "quando": "<D3>T20:00:00-03:00", "tema", "pauta", "frase", "foto",
@@ -246,6 +278,10 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      sem "Hoje:"), virada com artigo verificado (DOI ou PubMed), resultado com critério mensurável. O robô "Preparar
      stories" monta as 5 telas sozinho às 18h da véspera. Sem plano, só sai o Post novo.
 4. Rode `python render/revisar.py render/pedidos/<id>.json` em cada pedido e corrija todo "problema".
+   Depois confira à mão, em cada estático e carrossel de notícia, a revisão do Protagonista (seção 10 de
+   `diretrizes/protagonista.md`, ainda fora do revisar.py): `narrativa` com desejo, vilão e sucesso; personagem em até
+   3 slides; "você" entre os slides 2 e 4; slide 9 com foto do Luan; nenhuma promessa com número e prazo nos slides 8 a 10;
+   primeira pessoa de aluno só com `aluno_autorizado: true`. Corrija antes do push.
    A revisão barra foto já usada em outro post do feed nos últimos 21 dias (mesmo link; no render, também a mesma
    imagem vinda de outro link). Cada foto aparece em um post só: estático, carrossel, foto pessoal e meme do ciclo
    com fotos diferentes entre si e das peças já publicadas. Foto pessoal de ciclo anterior não volta em slide.
