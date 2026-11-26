@@ -1,36 +1,71 @@
 {
  "data": "2026-11-26",
  "ensaio": false,
+ "modelo": "v3",
+ "avisos": [],
  "stories": [
   {
-   "id": "2026-11-26-st-0600",
-   "quando": "2026-11-26T06:00:00-03:00",
-   "arquivo": "2026-11-26/story-0600.mp4",
-   "decisao": "agendado",
-   "texto": "baixo",
-   "problemas": [],
-   "partes": [
-    {
-     "video": "copy_F3FFE65B-72FA-42D4-A692-38A08A41529F.MOV",
-     "k": 0,
-     "s": 10.1
-    }
-   ]
+   "id": "2026-11-26-st-1840",
+   "tela": "abertura",
+   "quando": "2026-11-26T18:40:00-03:00",
+   "arquivo": "2026-11-26/story-1840.png",
+   "decisao": "precisa",
+   "texto": null,
+   "problemas": [
+    "Horário muito próximo (26/11 18:40): sem tempo para você vetar."
+   ],
+   "foto": "pernas-afundo-bulgaro.jpg",
+   "partes": null
   },
   {
-   "id": "2026-11-26-st-1000",
-   "quando": "2026-11-26T10:00:00-03:00",
-   "arquivo": "2026-11-26/story-1000.mp4",
+   "id": "2026-11-26-st-1845",
+   "tela": "virada",
+   "quando": "2026-11-26T18:45:00-03:00",
+   "arquivo": "2026-11-26/story-1845.png",
+   "decisao": "precisa",
+   "texto": null,
+   "problemas": [
+    "Horário muito próximo (26/11 18:45): sem tempo para você vetar."
+   ],
+   "foto": "pernas-agachamento-barra.jpg",
+   "partes": null
+  },
+  {
+   "id": "2026-11-26-st-2105",
+   "tela": "post_novo",
+   "quando": "2026-11-26T21:05:00-03:00",
+   "arquivo": "2026-11-26/story-2105.png",
+   "decisao": "precisa",
+   "texto": null,
+   "problemas": [
+    "Horário muito próximo (26/11 21:05): sem tempo para você vetar."
+   ],
+   "foto": "academia-04.jpg",
+   "partes": null
+  },
+  {
+   "id": "2026-11-26-st-1850",
+   "tela": "resultado",
+   "quando": "2026-11-26T18:50:00-03:00",
+   "arquivo": "2026-11-26/story-1850.png",
+   "decisao": "precisa",
+   "texto": null,
+   "problemas": [
+    "Horário muito próximo (26/11 18:50): sem tempo para você vetar."
+   ],
+   "foto": "pernas-leg-press.jpg",
+   "partes": null
+  },
+  {
+   "id": "2026-11-26-st-2115",
+   "tela": "convite",
+   "quando": "2026-11-26T21:15:00-03:00",
+   "arquivo": "2026-11-26/story-2115.png",
    "decisao": "agendado",
-   "texto": "cima",
+   "texto": null,
    "problemas": [],
-   "partes": [
-    {
-     "video": "IMG_2348.MP4",
-     "k": 3,
-     "s": 12.0
-    }
-   ]
+   "foto": "pernas-salto-caixa.jpg",
+   "partes": null
   }
  ]
 }
