@@ -1,0 +1,18 @@
+{
+ "data": "2026-11-28",
+ "serie": "Gente, não ficha",
+ "tema": "LON",
+ "assunto": "joelho",
+ "palavra": "LESÃO",
+ "abertura": {"titulo": "Antes do primeiro exercício, eu pergunto do seu **joelho**."},
+ "virada": {
+  "titulo": "Lesão antiga quase **triplica** a chance de repetir a mesma lesão. Por isso minha primeira pergunta é sobre dor e cirurgia.",
+  "fonte": "Hägglund et al., 2006, Br J Sports Med (jogadores de futebol de elite)",
+  "link": "https://doi.org/10.1136/bjsm.2006.026609"
+ },
+ "resultado": {
+  "titulo": "Treino que começa pelo seu histórico protege o **joelho** que já te parou uma vez.",
+  "criterio": "Critério: nota da dor no agachamento, anotada toda semana."
+ },
+ "convite": {"titulo": "Responde este story com **LESÃO** e me conta qual já te parou."}
+}
