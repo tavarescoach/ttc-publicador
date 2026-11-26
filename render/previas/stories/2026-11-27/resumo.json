@@ -1,0 +1,36 @@
+{
+ "data": "2026-11-27",
+ "ensaio": false,
+ "stories": [
+  {
+   "id": "2026-11-27-st-0600",
+   "quando": "2026-11-27T06:00:00-03:00",
+   "arquivo": "2026-11-27/story-0600.mp4",
+   "decisao": "agendado",
+   "texto": "baixo",
+   "problemas": [],
+   "partes": [
+    {
+     "video": "IMG_2393.MOV",
+     "k": 0,
+     "s": 12.0
+    }
+   ]
+  },
+  {
+   "id": "2026-11-27-st-1000",
+   "quando": "2026-11-27T10:00:00-03:00",
+   "arquivo": "2026-11-27/story-1000.mp4",
+   "decisao": "agendado",
+   "texto": "cima",
+   "problemas": [],
+   "partes": [
+    {
+     "video": "IMG_1337 (1).MP4",
+     "k": 0,
+     "s": 12.0
+    }
+   ]
+  }
+ ]
+}
