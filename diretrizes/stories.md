@@ -1,5 +1,15 @@
 # Stories do @tavarescoach — como planejar e entregar
 
+> **Vale primeiro (26/11/2026): Linha Editorial v3 + refinamentos do Luan.** Onde conflitar com o resto deste arquivo, vale este bloco. Doc completo: "Linha Editorial v3 — Evolução sem acaso" (claude.ai/artifact/Y4ksMStNr3BQmAgomNtTDQ). Templates no Canva: "Templates Stories v3 — Abertura, Virada, Ponto A→B, Post novo, Convite (26/11)".
+>
+> - **Arco diário, 100% robô (sem enquete, caixinha nem sticker):** 07:30 Abertura · 10:00 Virada (a decisão + artigo) · 12:05 Post novo · 13:00 Ponto A→B (resultado esperado + critério que dá para medir) · 21:00 Convite.
+> - **Abertura (tela 1):** só o título com a ideia central do dia, até 12 palavras. Sem "Hoje:" e sem rótulo de dia. Ex.: "O joelho parou de doer. Já pode voltar?"
+> - **Virada (tela 2):** até 30 palavras + linha de fonte (autor, ano, revista). Só publica com artigo verificado (DOI ou PubMed); sem artigo, aplicação prática sem número.
+> - **Ponto A→B (tela 3):** um resultado esperado + um critério mensurável (teste, carga, tempo, dor de 0 a 10). Sem promessa de prazo que o artigo não sustente.
+> - **Convite (21:00):** "Responde este story com [PALAVRA DO TEMA] e me conta…". A palavra-chave muda todo dia e é ligada ao conteúdo (ex.: JOELHO ou LCA no dia do joelho), nunca uma palavra fixa. Registre a palavra e a data no painel para medir a origem.
+> - **Mídia:** foto ou time-lapse do acervo, ou foto de banco de imagem. O objetivo é o story bonito e atraente. A foto de banco nunca é apresentada como o Luan, o TTC ou um aluno.
+> - **Visual:** fundo com foto escurecida, rótulo da série em cinza #94A3B8 com barra vermelha, título #F8FAFC, vermelho #C1121F só na palavra de destaque, logo LT, rodapé "@tavarescoach · Evolução sem acaso." em cinza. Nada importante nos 250 px do topo nem nos 340 px da base.
+
 > Em transição para o ciclo temático (diretrizes/ciclo.md): quando `acervo/config.json` tiver "ativo": true, os stories automáticos são os do robô "Preparar stories" (6h, 8h, 10h, 12h30) e os stories com sticker deste arquivo viram opcionais. Até lá, vale o que está abaixo.
 
 Regra de operação dos stories. Vale para o pacote semanal e para qualquer sessão que monte stories. Estratégia completa: doc `claude/stories-estrategia.md` do Project. Texto: skill `copy-social-ttc` (seção 9 e vícios de IA).
