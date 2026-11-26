@@ -3269,7 +3269,7 @@
   },
   {
     "id": "k-2026-11-20-carrossel",
-    "quando": "2026-11-20T15:00:00+00:00",
+    "quando": "2026-11-26T13:36:30+00:00",
     "tipo": "CARROSSEL",
     "arquivos": [
       "2026-11-20/k-2026-11-20-carrossel/carrossel-1.png",
@@ -3284,11 +3284,13 @@
       "2026-11-20/k-2026-11-20-carrossel/carrossel-10.png"
     ],
     "legenda": "Eu queria que toda mulher acima dos 50 ouvisse a Halle Berry.\n\nAos 60, ela contou que trocou boa parte do cardio pelos pesos, pelo menos duas vezes por semana, para manter a massa muscular depois da menopausa. No estudo LIFTMOR, 101 mulheres na pós-menopausa com massa óssea baixa fizeram 8 meses de treino pesado e supervisionado. A densidade da coluna subiu 2,9% em quem treinou e caiu 1,2% no grupo controle.\n\nCom técnica e progressão, começar depois dos 50 ainda constrói osso e músculo.\n\nMe manda MÉTODO no direct e eu te explico como funciona a Avaliação Estratégica.\n\n#tavarescoach #longevidade #menopausa #mulheresquetreinam #copacabana",
-    "status": "erro",
+    "status": "publicado",
     "origem": "painel",
     "tema": "Longevidade",
-    "erro": "API respondeu 400: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Media download has failed. The media URI doesn't meet our requirements.\",\"error_user_msg\":\"The media could not be fetched from this URI: https:\\/\\/txiszakrpssubgvzpdcx.supabase.co\\/storage\\/v1\\/object\\/public\\/midia\\/2026-11-20\\/k-2026-11-20-carrossel\\/carrossel-2.png.Please check the limitations section in our development d",
-    "tentativas": 1
+    "tentativas": 1,
+    "media_id": "18137633929672763",
+    "publicado_em": "2026-11-26T10:38-03:00",
+    "permalink": "https://www.instagram.com/p/DgNOzH-m1lp/"
   },
   {
     "id": "k-2026-11-20-estatico",
@@ -3313,10 +3315,9 @@
       "2026-11-19/k-2026-11-19-estatico/estatico.png"
     ],
     "legenda": "Confia, pae. Se o Arnold adaptou o treino, você também adapta o seu.\n\nEle contou ao Business Insider que treina quase todo dia, em sessões de cerca de uma hora e meia, bem longe das cinco horas da época de competição. Por causa de problemas no ombro e no joelho, trocou parte das barras pelas máquinas. Em maio, escreveu no blog que todo dia conquista uma vitória no treino.\n\nAo meio-dia sai o carrossel com o que a ciência mediu no músculo de quem treina depois dos 70.\n\nMe manda MÉTODO no direct.\n\n#tavarescoach #longevidade #treinodeforca #copacabana",
-    "status": "atrasado",
+    "status": "cancelado",
     "origem": "painel",
-    "tema": "Longevidade",
-    "erro": "passou mais de 12h do horário; republique ajustando 'quando'"
+    "tema": "Longevidade"
   },
   {
     "id": "k-2026-11-18-carrossel",
@@ -3420,9 +3421,8 @@
       "2026-11-19/story-0800.png"
     ],
     "legenda": "",
-    "status": "atrasado",
-    "origem": "painel",
-    "erro": "passou mais de 12h do horário; republique ajustando 'quando'"
+    "status": "cancelado",
+    "origem": "painel"
   },
   {
     "id": "2026-11-19-st-1000",
@@ -3432,9 +3432,8 @@
       "2026-11-19/story-1000.mp4"
     ],
     "legenda": "",
-    "status": "atrasado",
-    "origem": "painel",
-    "erro": "passou mais de 12h do horário; republique ajustando 'quando'"
+    "status": "cancelado",
+    "origem": "painel"
   },
   {
     "id": "2026-11-19-st-1230",
@@ -3584,9 +3583,8 @@
       "2026-11-23/story-1000.mp4"
     ],
     "legenda": "",
-    "status": "erro",
+    "status": "cancelado",
     "origem": "painel",
-    "erro": "Instagram não processou a mídia: ERROR",
     "tentativas": 1
   },
   {
