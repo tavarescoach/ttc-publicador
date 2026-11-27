@@ -37,4 +37,5 @@ Luan Tavares, personal trainer e Diretor Técnico do TTC Centro de Performance (
 - Fundos #0F172A / #050505 (e claro #F1F3F6 como respiro), texto #F8FAFC, vermelho #C1121F só como detalhe.
 - Logo oficial LT: render/assets/logo-lt.png (extraída das artes oficiais). Nunca desenhar ou gerar outra logo.
 - Rodapé: @tavarescoach + numeração.
+- **Foto sempre em fade para o marinho (desde 27/11/2026):** toda arte com foto (capa do carrossel, estático, capa de reels) dissolve a foto em degradê para o marinho #07112A. Nunca corte seco entre foto e área de texto, nunca degradê para preto puro. A exceção é a tela dividida do Dor → Movimento, em que a linha entre as metades faz parte do formato.
 - Legenda: 1 linha gancho, 3–5 linhas curtas, 1 CTA, 3–5 hashtags de nicho e bairro.

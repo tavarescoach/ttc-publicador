@@ -31,7 +31,7 @@ com os alunos, com foto dele do acervo (autoridade) → o resultado possível (d
 - marinho / preto / claro. Nunca o mesmo fundo em 3 slides seguidos. Claro no máximo 2 vezes.
 
 ## Tipos de slide (campos do JSON)
-- capa: titulo, foto, layout (opcional: "recorte" = foto em bloco no alto e título em fundo sólido; padrão = foto em tela cheia). Nunca a mesma foto do estático do dia nem de outro post dos últimos 21 dias.
+- capa: titulo, foto, layout (opcional: "recorte" = foto no alto e título embaixo; padrão = foto em tela cheia). **Fade obrigatório (27/11/2026):** em qualquer capa com foto, a foto se dissolve em degradê na cor do fundo do slide (marinho #07112A por padrão), sem linha de corte entre foto e área do título. O título pode encostar na parte final do degradê. Capa com foto nunca usa fundo claro. Fica no modelo (`render/carrossel.html`); o pedido não precisa de campo novo. Nunca a mesma foto do estático do dia nem de outro post dos últimos 21 dias.
 - texto_foto: rotulo (opcional), titulo, texto, foto (opcional; sem foto o texto centraliza), fonte (opcional)
 - numero: rotulo, numero, unidade (opcional, ex.: "semanas"), titulo, texto, fonte
 - insight: rotulo, titulo, texto (pode abrir com **frase em destaque**)

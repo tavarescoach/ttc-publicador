@@ -9,7 +9,7 @@
 html,body{width:1080px;height:1350px;overflow:hidden}
 body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
 .s{position:relative;width:1080px;height:1350px;overflow:hidden;display:flex;flex-direction:column;padding:78px 96px 72px}
-.s.marinho{background:var(--marinho);color:var(--txt)} .s.preto{background:var(--preto);color:var(--txt)} .s.claro{background:var(--claro);color:var(--escuro)}
+.s.marinho{background:var(--marinho);color:var(--txt);--bg:7,17,42} .s.preto{background:var(--preto);color:var(--txt);--bg:5,5,5} .s.claro{background:var(--claro);color:var(--escuro);--bg:241,243,246}
 .topo{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:3}
 .topo img{height:46px}
 .s.claro .topo img,.s.claro .marca{filter:invert(1) brightness(.12)}
@@ -29,18 +29,22 @@ p strong{font-weight:700;opacity:1}
 .foto{width:100%;flex:1;min-height:420px;max-height:560px;border-radius:4px;background:#1a2440 center/cover no-repeat;filter:grayscale(.25) contrast(1.05)}
 /* capa */
 .capa .bg{position:absolute;inset:0;background:center/cover no-repeat;filter:grayscale(.35) contrast(1.1) brightness(.75)}
-.capa .ve{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,20,.55) 0%,rgba(5,8,20,.15) 30%,rgba(5,8,20,.75) 58%,rgba(5,8,20,.98) 100%)}
+/* fade (padrão desde 27/11/2026): a foto se dissolve na cor do fundo do slide, nunca corte seco */
+.capa .ve{position:absolute;inset:0;background:linear-gradient(180deg,rgba(var(--bg),.45) 0%,rgba(var(--bg),0) 16%,rgba(var(--bg),0) 38%,rgba(var(--bg),.55) 52%,rgba(var(--bg),.9) 63%,rgb(var(--bg)) 72%,rgb(var(--bg)) 100%)}
 .capa .corpo{justify-content:flex-end;padding-bottom:30px}
 .capa h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;line-height:.98;font-size:108px}
 .capa .arroba{font-size:26px;color:var(--mut);letter-spacing:1px}
 .capa .sub{font-size:38px;line-height:1.3;margin-top:22px;font-weight:500}
 .capa .corpo .fonte{margin-top:18px}
 .capa .cred{font-size:20px;color:var(--mut);letter-spacing:.3px}
-/* capa "recorte": foto no alto em bloco, título em fundo sólido embaixo (carrossel, para não repetir o visual do estático) */
+/* capa "recorte": foto no alto, título embaixo no fundo do slide (carrossel, para não repetir o visual do estático).
+   27/11/2026: a foto termina em fade para a cor do fundo (marinho), sem linha de corte. */
 .capa.recorte{padding:0}
 .capa.recorte .topo{position:absolute;top:78px;left:96px;right:96px}
-.capa.recorte .bloco{height:830px;background:center/cover no-repeat;filter:contrast(1.05)}
-.capa.recorte .baixo{flex:1;display:flex;flex-direction:column;padding:44px 96px 72px}
+.capa.recorte .bloco{position:absolute;top:0;left:0;right:0;height:1010px;background:center/cover no-repeat;filter:contrast(1.05)}
+.capa.recorte .ve{height:1010px;bottom:auto;background:linear-gradient(180deg,rgba(var(--bg),.4) 0%,rgba(var(--bg),0) 15%,rgba(var(--bg),0) 52%,rgba(var(--bg),.45) 66%,rgba(var(--bg),.85) 80%,rgb(var(--bg)) 94%)}
+.capa.recorte .baixo{margin-top:auto;position:relative;z-index:2;display:flex;flex-direction:column;padding:0 96px 72px}
+.capa.recorte .baixo .rod{margin-top:44px}
 .capa.recorte .corpo{justify-content:flex-start;padding:0;gap:22px}
 .capa.recorte h1{font-size:92px}
 /* número gigante */
@@ -67,9 +71,9 @@ let h = "", fundo = S.fundo || "marinho", marca = false;
 if (S.tipo === "capa" && S.layout === "recorte" && S.foto){
   const pag = N > 1 ? `<span>${I}/${N}</span>` : `<span>@tavarescoach</span>`;
   const rodCapa = S.credito ? `<div class="rod"><span class="cred">${esc(S.credito)}</span>${pag}</div>` : rod;
-  h = `<div class="bloco" style="background-image:url('${S.foto}');background-position:${esc(S.foco || "center 25%")}"></div>${topo}
+  h = `<div class="bloco" style="background-image:url('${S.foto}');background-position:${esc(S.foco || "center 25%")}"></div><div class="ve"></div>${topo}
     <div class="baixo"><div class="corpo"><h1>${fmt(S.titulo)}</h1>${S.subtitulo ? `<p class="sub">${fmt(S.subtitulo)}</p>` : ""}</div>${rodCapa}</div>`;
-  fundo = S.fundo || "preto";
+  fundo = S.fundo === "claro" ? "marinho" : (S.fundo || "marinho");  // capa com foto: fade sempre para fundo escuro
   S.tipo = "capa recorte";
 } else if (S.tipo === "capa"){
   // estático (N === 1): sem numeração; "subtitulo" chama para o carrossel e "fonte" traz o veículo e a data da notícia

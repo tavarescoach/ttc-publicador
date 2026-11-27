@@ -33,6 +33,7 @@ A persona alterna por ciclo (Rafael, Thiago; variação feminina em ~30% dos cic
 - Voz informal liberada (é o gancho do post).
 
 ## Arte (padrão aprovado: post "ERRO")
+- Fade da foto para o marinho #07112A (27/11/2026), igual às capas do carrossel; nunca para preto puro.
 
 Modelo `render/estatico-v2.html`, 1080×1350: foto de fundo inteira (escura, azul-marinho, ligada ao assunto; do
 acervo ou de banco), logo LT no alto à esquerda, bloco no terço inferior com traço vermelho, etiqueta da função,
