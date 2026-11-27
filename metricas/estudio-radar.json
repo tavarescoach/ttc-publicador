@@ -1,70 +1,63 @@
 {
- "atualizado_em": "2026-11-26T06:40:00-03:00",
+ "atualizado_em": "2026-11-27T14:25:18-03:00",
  "em_alta": [
+  {
+   "assunto": "black-friday-consumo",
+   "tema": "comportamento",
+   "canais": 7,
+   "nota_max": 35,
+   "titulos": [
+    "Black Friday reforça gatilhos de consumo e dificulta frear impulsos",
+    "Walking Pad Deals to Shop This Black Friday (2026)",
+    "RP Strength: oferta de Black Friday dos apps com 'comente BUNDLE33'"
+   ]
+  },
   {
    "assunto": "glp1-canetas-brasil",
    "tema": "saude",
    "canais": 4,
-   "nota_max": 70,
+   "nota_max": 68,
    "titulos": [
-    "Caneta emagrecedora: Anvisa adia decisão sobre aplicação em clínicas; setor sinaliza alta de preços",
     "Canetas emagrecedoras não bastam para conter epidemia de obesidade, diz relatório internacional",
-    "Saúde de Goiás anuncia canetas emagrecedoras gratuitas para jovens no SUS"
+    "Saúde de Goiás anuncia canetas emagrecedoras gratuitas para jovens no SUS",
+    "Anvisa Determina Apreensão de Medicamentos com Tirzepatida e Retatrutida sem Registro"
    ]
   },
   {
-   "assunto": "jensen-huang-nvidia",
-   "tema": "negocio",
-   "canais": 4,
-   "nota_max": 12,
-   "titulos": [
-    "Zoe Kleinman: Nobody is irreplaceable - unless you're Jensen Huang",
-    "Faisal Islam: Fears over the AI boom haven't gone away",
-    "Caso Jensen Huang: Até Onde Vai a Ética Corporativa Quando o Sucesso Está em Jogo?"
-   ]
-  },
-  {
-   "assunto": "dor-lombar-cronica",
+   "assunto": "ceia-de-festas",
    "tema": "saude",
    "canais": 3,
-   "nota_max": 66,
+   "nota_max": 58,
    "titulos": [
-    "Ready State: teste de extensão de quadril para dor nas costas e joelho",
-    "Why So Many of Us Have Chronic Back Pain, and Why It Won’t Go Away",
-    "Why So Many of Us Have Chronic Back Pain, and Why It Won’t Go Away"
+    "RP Strength: 'é só um dia, come e segue'",
+    "A doctor’s guide to surviving — and enjoying — holiday feasting while on GLP‑1 medication",
+    "Thanksgiving on Ozempic: Clever tricks to survive the feast without offending the host"
    ]
   },
   {
-   "assunto": "thanksgiving-saude",
-   "tema": "comportamento",
+   "assunto": "cinema",
+   "tema": "cultura",
    "canais": 3,
-   "nota_max": 40,
+   "nota_max": 3,
    "titulos": [
-    "How to deal with diet talk at Thanksgiving",
-    "How skipping breakfast to save room for dinner shocks your blood sugar and metabolism",
-    "E.R. Doctors on Avoiding Thanksgiving Hazards"
+    "Elizabeth Debicki Is the Heart and Soul of 'Cliff Booth'",
+    "Every David Fincher Killer, Definitively Ranked",
+    "What Lacey Chabert Watches (and Reads) With Her Daughter"
    ]
   },
   {
-   "assunto": "black-friday-consumo",
+   "assunto": "fofoca-famosos",
    "tema": "comportamento",
    "canais": 3,
-   "nota_max": 35,
+   "nota_max": 3,
    "titulos": [
-    "Black Friday reforça gatilhos de consumo e dificulta frear impulsos",
-    "Black Friday Chega com 81,6% das Famílias Brasileiras Endividadas; Especialistas Alertam para Riscos à Saúde Mental",
-    "The 20+ Best Banana Republic Black Friday 2026 Deals"
+    "Guy Fieri mourns painful family loss in emotional post ahead of Thanksgiving",
+    "Sydney Sweeney goes full ‘Corpse Bride’ in bow-trimmed lace lingerie",
+    "Dolly Parton’s Niece Shares Heartfelt Thanksgiving Tribute to the Late Singer"
    ]
   }
  ],
  "top": [
-  {
-   "titulo": "Caso Rasmussen: superdosagem de Mounjaro pode exacerbar efeitos colaterais",
-   "canal": "Metrópoles",
-   "assunto": "rasmussen-mounjaro",
-   "nota": 90,
-   "gancho": "Richard Rasmussen tomou Mounjaro DUAS vezes e foi parar no hospital"
-  },
   {
    "titulo": "A Low Resting Heart Rate Is the New Fitness Flex",
    "canal": "Sua referência",
@@ -115,6 +108,13 @@
    "gancho": "A meta-análise mais recente sobre séries por semana cabe em um gráfico."
   },
   {
+   "titulo": "Mari Saad mostra barrigão de 8 meses em treino: 'Sumo e vocês acham que estou parindo'",
+   "canal": "Globo",
+   "assunto": "famosa-treino-gestacao",
+   "nota": 78,
+   "gancho": "Mari Saad, 8 meses de barriga, foi treinar. Você parou por quê?"
+  },
+  {
    "titulo": "Gabrielle Lyon: bíceps maior, ereção melhor (estudo publicado)",
    "canal": "Instagram",
    "assunto": "biceps-erecao",
@@ -122,11 +122,11 @@
    "gancho": "Braço forte tem a ver com desempenho na cama. Tem estudo"
   },
   {
-   "titulo": "Stacy Sims: levantar peso protege o cérebro da mulher na perimenopausa?",
-   "canal": "Instagram",
-   "assunto": "menopausa-cerebro",
+   "titulo": "Ronaldo Fenômeno joga tênis no Galácticos Open em SP",
+   "canal": "Globo",
+   "assunto": "ronaldo-tenis",
    "nota": 76,
-   "gancho": "Levantar peso protege sua memória na menopausa? Sim, e explico"
+   "gancho": "Ronaldo, 50, tá jogando torneio de tênis. Você tá parado por quê?"
   }
  ]
 }
