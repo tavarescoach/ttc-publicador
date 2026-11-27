@@ -1169,5 +1169,105 @@
   ],
   "escolhido_em": "2026-11-24T00:28-03:00",
   "status": "escolhido"
+ },
+ {
+  "id": "c-2026-11-28",
+  "inicio": "2026-11-28",
+  "fim": "2026-11-30",
+  "tema": "GLP-1",
+  "sigla": "GLP",
+  "pontuacao": {
+   "GLP": 4.479,
+   "FOR": 4.283,
+   "LON": 3.749,
+   "EMA": 2.802,
+   "EST": 1.692,
+   "ESP": 0.932,
+   "MEN": 0.192,
+   "WEA": 0.0
+  },
+  "excluidos": [
+   "EST",
+   "ESP"
+  ],
+  "regra": "2 ciclos anteriores fora",
+  "bonus_calendario": {
+   "FOR": "Novembro Azul"
+  },
+  "noticias_base": [
+   "0cd7868fa52029ef",
+   "f1b337f4711de5c2",
+   "53b774d732f703db",
+   "d2c4181afdbeb779",
+   "0f3103c1b5a6be8d",
+   "dea96b3334828cb0",
+   "040591a3c423be70",
+   "bd556fabc72f8f9a",
+   "8cc843603f251594",
+   "d0e62c0edf7f37b7",
+   "50f900aecd5b071c",
+   "0c2dfd32b76c2030",
+   "ec9ebf53b478ac75",
+   "ccdb2cb27738961d"
+  ],
+  "famosos": [
+   {
+    "nome": "Richard Rasmussen",
+    "noticia_id": "d0e62c0edf7f37b7",
+    "titulo": "Caso Rasmussen: superdosagem de Mounjaro pode exacerbar efeitos colaterais",
+    "link": "https://www.metropoles.com/saude/caso-rasmussen-superdosagem-de-mounjaro-pode-exacerbar-efeitos-colaterais",
+    "canal": "Metrópoles",
+    "data": "2026-11-25T17:22:45+00:00",
+    "nota": 90,
+    "pessoa_br": true,
+    "imagem": "https://images.metroimg.com/2026/11/richard-rasmussen.jpg"
+   }
+  ],
+  "fotos": [
+   {
+    "dia": "2026-11-28",
+    "quando": "2026-11-28T20:00:00-03:00",
+    "arquivo": "2026-11-28/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-28.jpg",
+    "drive_id": "1p5Q9HyQoStRPqCzcKMbIEGzKEF189C1z",
+    "nome": "IMG_2736.JPEG"
+   },
+   {
+    "dia": "2026-11-30",
+    "quando": "2026-11-30T20:00:00-03:00",
+    "arquivo": "2026-11-30/foto-pessoal.jpg",
+    "previa": "ciclos/fotos/2026-11-30.jpg",
+    "drive_id": "15Oi8nincbHGOQwt1aVesudwMQOg97zoz",
+    "nome": "IMG_6159.JPEG"
+   }
+  ],
+  "acervo": [
+   {
+    "arquivo": "2026-11-28/acervo-1.jpg",
+    "previa": "ciclos/fotos/2026-11-28-acervo-1.jpg",
+    "drive_id": "126mUKubcQvpCvJbSCAiuirFNI-7HX991",
+    "nome": "IMG_2257.JPG"
+   },
+   {
+    "arquivo": "2026-11-28/acervo-2.jpg",
+    "previa": "ciclos/fotos/2026-11-28-acervo-2.jpg",
+    "drive_id": "1Fr5JOW-pGj97pjYIor4ZtqGAjOf1SMh4",
+    "nome": "IMG_8062.JPEG"
+   },
+   {
+    "arquivo": "2026-11-28/acervo-3.jpg",
+    "previa": "ciclos/fotos/2026-11-28-acervo-3.jpg",
+    "drive_id": "1x9GdUoXegkp5GJFTFp3U2SDXzKWkqDHi",
+    "nome": "IMG_1886.JPEG"
+   },
+   {
+    "arquivo": "2026-11-28/acervo-4.jpg",
+    "previa": "ciclos/fotos/2026-11-28-acervo-4.jpg",
+    "drive_id": "1lrT52Ci3bTDxv33FNwxwC0N7AiToIbz8",
+    "nome": "IMG_2707.JPEG"
+   }
+  ],
+  "escolhido_em": "2026-11-27T11:17-03:00",
+  "status": "escolhido"
  }
 ]
