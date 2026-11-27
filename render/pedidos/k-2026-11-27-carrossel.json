@@ -1,0 +1,132 @@
+{
+ "formato": "carrossel",
+ "id": "k-2026-11-27-carrossel",
+ "data": "2026-11-27",
+ "quando": "2026-11-27T12:00:00-03:00",
+ "tema": "Esportes",
+ "funil": "meio",
+ "pauta": "Ana Castela, resultados aparecendo: o músculo responde por volta da 18ª sessão e quem some na semana 3 para no meio do caminho",
+ "protagonista": {
+  "tipo": "ponte",
+  "persona": "feminina",
+  "desejo": "ver o resultado aparecer sem viver para a academia",
+  "vilao": "a crença de que espelho parado é treino que não funciona",
+  "nivel_consciencia": 2
+ },
+ "narrativa": {
+  "personagem": "Ana Castela, cantora, 22 anos, treina há mais de um ano e meio com personal e acompanhamento nutricional, mesmo com agenda de shows; nesta semana comemorou os resultados aparecendo (Quem, 26/11/2026)",
+  "personagem_nome": "Ana Castela",
+  "persona": "feminina",
+  "desejo": "ver o resultado aparecer sem viver para a academia",
+  "vilao": "a crença de que espelho parado é treino que não funciona",
+  "problema_externo": "começa forte, a agenda aperta, falha uma semana e para antes de o corpo mudar",
+  "problema_interno": "esforço jogado fora num corpo que mudou com os anos",
+  "causa": "nas primeiras semanas o ganho de força vem do sistema nervoso (Moritani e deVries 1979); hipertrofia de verdade aparece por volta da 18ª sessão (Damas et al. 2018)",
+  "erro": "começar com tudo na segunda e sumir em 3 semanas",
+  "em_jogo": "viver o mês mais difícil do treino de novo a cada recomeço",
+  "guia_empatia": "",
+  "guia_autoridade": "Luan avalia, monta treino que cabe na semana real e mede a evolução todo mês",
+  "plano": [
+   "Avaliar onde você está e o que dá para manter",
+   "Montar treinos de 45 a 60 minutos com plano B para semana cheia",
+   "Medir a evolução todo mês"
+  ],
+  "sucesso": "de quem recomeça toda segunda para quem treina no que a agenda permite",
+  "cta_direto": "MÉTODO no direct",
+  "cta_transicao": "salvar para a próxima vez que pensar em desistir",
+  "ficha_persona": {
+   "consciencia": 2,
+   "objetivo": "Montar uma rotina que caiba em 45 a 60 minutos, 3 a 4 vezes por semana",
+   "desejo": "Resultado sem ficar presa ao fitness",
+   "dor": "Corpo que mudou depois da gravidez ou perto da menopausa",
+   "erro": "Começar com tudo na segunda e sumir em 3 semanas",
+   "objecao": "Minha agenda muda muito, não consigo horário fixo"
+  }
+ },
+ "legenda": "Eu queria que toda mulher que já desistiu na terceira semana visse o que a Ana Castela postou.\n\nAos 22, ela treina há mais de um ano e meio, com personal e nutricionista, mesmo com agenda de shows pelo país. Nesta semana, comemorou os resultados aparecendo. A ciência explica a demora: nas primeiras semanas quem melhora é o sistema nervoso, e o músculo começa a crescer de verdade por volta da 18ª sessão.\n\nVocê começa com tudo, a agenda aperta, o espelho não muda e você para. Três semanas dão umas nove sessões, metade do caminho.\n\nCom minhas alunas eu começo pela avaliação, monto treinos de 45 a 60 minutos que cabem na semana real, com plano B para a semana cheia, e meço a evolução todo mês. Assim você vê o progresso antes do espelho.\n\nSalva este post para a próxima vez que pensar em desistir. Me manda MÉTODO no direct.\n\n#tavarescoach #treinodeforca #musculacaofeminina #constancia #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Ana Castela viu os **resultados**. Você parou na semana 3?",
+   "pessoa": "Ana Castela",
+   "foto": "",
+   "foto_reproducao": "https://s2-quem.glbimg.com/5fNFsh7l-AoCwU4MY8iuwjieExE=/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2026/z/j/N1vIcPSX2AXm23zYXMGg/fotojet-63-.jpg",
+   "credito_reproducao": "Foto: Reprodução/Quem",
+   "origem_reproducao": "https://revistaquem.globo.com/saude/fitness/noticia/2026/11/ana-castela-celebra-transformacoes-de-treino-pesado-do-abdomem-resultados-aparencedo-veja.ghtml",
+   "fonte": "Quem, 26/11/2026",
+   "link_noticia": "https://revistaquem.globo.com/saude/fitness/noticia/2026/11/ana-castela-celebra-transformacoes-de-treino-pesado-do-abdomem-resultados-aparencedo-veja.ghtml",
+   "foco": "center 30%",
+   "layout": "recorte"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O caso",
+   "titulo": "Você também quer ver o **resultado aparecer**.",
+   "texto": "A Ana Castela treina há mais de um ano e meio, com personal e nutricionista, mesmo com agenda de shows pelo país. Nesta semana, comemorou os resultados aparecendo. Você quer o mesmo, sem viver para a academia.",
+   "fonte": "Quem (26/11/2026); UAI (04/12/2025); Correio (07/09/2026)"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "marinho",
+   "rotulo": "A crença",
+   "titulo": "\"Se o espelho não mudou, **não está funcionando**.\"",
+   "texto": "Você treina três semanas e confere o espelho todo dia. Aí a agenda aperta, uma semana falha, e você conclui que academia não combina com a sua vida."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Como você se sente",
+   "titulo": "Dá a sensação de **esforço jogado fora**.",
+   "texto": "Você acordou cedo, recusou o doce, foi treinar cansada. E o corpo, que mudou depois da gravidez ou com os anos, parece igual ao de um mês atrás."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "A causa",
+   "numero": "18",
+   "unidade": "sessões",
+   "titulo": "é quando o músculo **começa a crescer** de verdade.",
+   "texto": "Nas primeiras semanas, quem melhora é o sistema nervoso: você fica mais forte antes de ficar diferente. O ganho real de músculo aparece por volta da 18ª sessão.",
+   "fonte": "Damas et al., Eur J Appl Physiol (2018); Moritani e deVries, Am J Phys Med (1979)"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O erro",
+   "titulo": "Sumir na **terceira semana**.",
+   "texto": "Começar com tudo na segunda, treinar todo dia e parar quando a agenda aperta. Três semanas dão umas 9 sessões, metade do caminho até o músculo responder."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "O que está em jogo",
+   "titulo": "Cada recomeço te leva **de volta ao início**.",
+   "texto": "Quem para e volta várias vezes vive de novo o mês mais difícil do treino e nunca chega à fase em que o espelho responde."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "Constância vence **intensidade**.",
+   "texto": "**De quem recomeça toda segunda para quem treina no que a agenda permite.** A Ana treina com agenda de shows. Você pode treinar com a sua."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com meus alunos",
+   "titulo": "Um plano que cabe na **agenda que muda**.",
+   "texto": "Primeiro, avalio onde você está e o que dá para manter. Depois, monto treinos de 45 a 60 minutos com plano B para a semana cheia. Por fim, meço a evolução todo mês, para você ver o progresso antes do espelho.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-25/acervo-2.jpg",
+   "foco": "center 35%"
+  },
+  {
+   "tipo": "cta",
+   "fundo": "marinho",
+   "titulo": "Comece pela semana que você **tem de verdade**.",
+   "texto": "Avaliação Estratégica de 40 minutos no TTC, em Copacabana. Salva este post para a próxima vez que pensar em desistir.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}
