@@ -12,10 +12,10 @@ body{font-family:"Roboto Condensed","Liberation Sans Narrow","Arial Narrow",sans
 .s::after{content:"";position:absolute;inset:0;z-index:1;
   background:linear-gradient(180deg,rgba(5,8,15,.55) 0%,rgba(5,8,15,0) 18%,rgba(5,8,15,0) 42%,rgba(5,8,15,.78) 68%,rgba(5,8,15,.94) 100%)}
 .logo{position:absolute;z-index:2;left:56px;top:50px;height:70px}
-.corpo{position:absolute;z-index:2;left:64px;right:56px;bottom:112px;top:520px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.corpo{position:absolute;z-index:2;left:64px;right:56px;bottom:96px;top:500px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
 .traco{width:72px;height:8px;background:#C1121F;margin-bottom:16px}
 .etq{font-size:36px;font-weight:700;color:#F8FAFC;letter-spacing:.01em;text-transform:uppercase;margin-bottom:18px}
-h1{font-weight:700;color:#FFFFFF;letter-spacing:-.025em;line-height:.9;white-space:pre-line}
+h1{padding-bottom:.16em;font-weight:700;color:#FFFFFF;letter-spacing:-.025em;line-height:.9;white-space:pre-line}
 h1 .v{color:#C1121F;display:block}
 .rod{position:absolute;z-index:2;left:66px;bottom:52px;font-size:27px;font-weight:700;color:#F8FAFC;font-family:"Inter","Helvetica Neue",Arial,sans-serif}
 </style></head>
@@ -36,8 +36,12 @@ document.getElementById("raiz").innerHTML = `<section class="s" style="${bg}">
 // Ajuste automático: começa em 120px e reduz até caber na largura e na altura do bloco (mínimo 84px).
 const h1 = document.querySelector("h1"), corpo = document.querySelector(".corpo");
 let tam = 120;
+const ajustar = () => {
+  tam = 120; h1.style.fontSize = tam + "px";
+  while (!cabe() && tam > 84) { tam -= 4; h1.style.fontSize = tam + "px"; }
+};
 const cabe = () => h1.scrollWidth <= corpo.clientWidth + 2 && corpo.scrollHeight <= corpo.clientHeight + 2
   && [...h1.querySelectorAll("span")].every(e => e.scrollWidth <= corpo.clientWidth + 2);
-h1.style.fontSize = tam + "px";
-while (!cabe() && tam > 84) { tam -= 4; h1.style.fontSize = tam + "px"; }
+ajustar();
+document.fonts.ready.then(ajustar);  // mede de novo com a fonte certa carregada
 </script></body></html>
