@@ -35,12 +35,13 @@ jobs:
           python-version: "3.12"
       - name: Instalar navegador
         run: |
-          pip install playwright==1.47.0 pillow
+          pip install playwright==1.47.0 pillow opencv-python-headless==4.10.0.84
           python -m playwright install --with-deps chromium
       - name: Renderizar e entregar ao painel
         env:
           SUPABASE_URL: https://txiszakrpssubgvzpdcx.supabase.co
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}  # Dor → Movimento baixa o original do Drive
           PEDIDO: ${{ github.event.inputs.pedido }}
           EVENTO: ${{ github.event_name }}
         run: |

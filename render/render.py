@@ -114,6 +114,9 @@ def main():
     p = json.load(open(caminho, encoding="utf-8"))
     if p.get("formato") == "foto":
         return entregar_foto(p, local)
+    if p.get("formato") == "dor_movimento":  # diretrizes/dor-movimento.md (26/11/2026): modelo e regras de foto próprios
+        from dor_movimento import renderizar
+        return renderizar(p, local)
     slides = p.get("slides") or []
     pasta_rel = f"{p['data']}/{p['id']}"
     saida = os.path.join(RAIZ, "render", "_saida", pasta_rel)
