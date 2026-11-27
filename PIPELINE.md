@@ -246,6 +246,11 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      "frase_vermelha" (última linha), "foto", "foco", "legenda"}`. Legenda: 1ª linha opinião do Luan, Cena, Causa (com
      fonte se for afirmação científica), Movimento, CTA de transição + "me manda <PALAVRA> no direct" (palavra ligada ao
      tema, nunca MÉTODO) + 3 a 5 hashtags.
+   - **Dor → Movimento (extra, desde 26/11/2026, `diretrizes/dor-movimento.md`):** fora do ciclo, de manhã, em dias
+     úteis alternados (`d-<dia>-<tema>`, `"formato": "dor_movimento"`). Tela dividida: dor em cima, movimento embaixo,
+     6 a 8 pares + guia + CTA. **Só fotos do acervo com `dor_movimento: "ok"` em `acervo/tags.json`** (rosto visível,
+     original com 1080 px ou mais, nítida), sempre como `drive:<id>`. A revisão barra foto sem rosto, rosto cortado ou
+     coberto, foto ampliada e rosto sem nitidez.
    - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): o caso da pessoa conhecida ligado ao tema, com a estética
      Decodificado de `diretrizes/carrossel.md` e o **arco de 10 slides do Formato Protagonista** (`protagonista.md`,
      seção 6): 1 capa (personagem + pergunta ao leitor) · 2 espelho · 3 vilão · 4 problema interno · 5 causa com fonte ·

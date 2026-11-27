@@ -1,5 +1,5 @@
 {
- "_doc": "Etiquetas das fotos do acervo (diretrizes/conteudo.md, seção 4). Chave = drive_id. Quem gera o pacote do ciclo etiqueta cada foto que abre. Campos: expressao (serio|rindo|desconfiado|surpreso|concentrado|neutro), contexto (treino|ttc|praia|viagem|natureza|casa|trabalho|evento), sem_camisa (bool), aluno (bool), autorizado (bool, só quando o Luan registrou), evitar (bool: fora de contexto; o robô não escolhe mais), nota (1 frase).",
+ "_doc": "Etiquetas das fotos do acervo (diretrizes/conteudo.md, seção 4). Chave = drive_id. Quem gera o pacote do ciclo etiqueta cada foto que abre. Campos: expressao (serio|rindo|desconfiado|surpreso|concentrado|neutro), contexto (treino|ttc|praia|viagem|natureza|casa|trabalho|evento), sem_camisa (bool), aluno (bool), autorizado (bool, só quando o Luan registrou), evitar (bool: fora de contexto; o robô não escolhe mais), nota (1 frase). Desde 26/11/2026 (diretrizes/dor-movimento.md, seção 6.1), o robô acervo/qualidade.py preenche no original do Drive: rosto (frente|sem_rosto, pelo detector), largura_px, nitidez (variância do Laplaciano no rosto) e dor_movimento (ok|bloqueada). Foto bloqueada não entra na linha Dor → Movimento.",
  "1TaIh88a8mcH8L9oVm0IezqIDGYyOTjnb": {
   "expressao": "neutro",
   "contexto": "treino",

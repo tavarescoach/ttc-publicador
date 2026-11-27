@@ -48,13 +48,13 @@ Arco do carrossel: famoso (conexão) → o que a ciência diz → o que eu faço
 2. **Capa sempre com rosto:** do Luan, de aluno autorizado ou do famoso. Capa de carrossel ou estático sem foto não agenda sozinha (vai para "Precisa de você").
 3. **Calor na foto, respiro no layout:** pessoas em ação, luz natural, expressão real; um único destaque por peça.
 4. **Tratamento único:** fotos do acervo saem sem filtro, só enquadradas (decisão de 24/10); o modelo aplica o mesmo tratamento em todas as capas.
-5. **Nunca fingir que a foto é real:** banco de imagem não aparece como TTC ou aluno do Luan.
+5. **Nunca fingir que a foto é real:** banco de imagem não aparece como TTC ou aluno do Luan. **Exceção (26/11/2026), só na linha Dor → Movimento:** imagem de IA permitida com qualidade excepcional, nunca de aluno, famoso, TTC ou do próprio Luan, e com o rótulo "Conteúdo de IA" do Instagram (`diretrizes/dor-movimento.md`).
 6. **Aluno** (imagem, nome, número) só com autorização registrada (`acervo/tags.json`, `"autorizado": true`).
 7. **Evolução** com dados e contexto, nunca antes e depois sensacionalista.
 8. **Áreas seguras:** margem de 96 px no feed; nada nos 250 px do topo e da base em stories e capas de reels.
 9. **Kit de modelos:** capa com foto, texto, número, "o que eu faço", CTA e meme (`render/carrossel.html`, `render/meme.html`). Mudança de modelo passa pelo Luan.
 10. **Foto de famoso:** primeiro Wikimedia Commons (licença livre); senão a foto da própria notícia como **reprodução**, com crédito na arte ("Foto: Reprodução/veículo ou @perfil") e `pagina_origem`. Decisão do Luan em 02/11, substitui a exigência de licença comercial de 24/10. Menor de idade nunca.
-11. **Sem camisa:** liberado em contexto de vida (praia, viagem, natureza), no pilar Desejo, no máximo uma vez por ciclo. Fora: pose de exibição em academia ou espelho e enquadramento sensual.
+11. **Sem camisa (atualizado em 26/11/2026):** liberado em todo contexto em que é natural: praia, mar, natação, piscina, corrida e treino ao ar livre, viagem e natureza. Vale para qualquer pilar e formato, sem limite por ciclo. Fora: pose de exibição em academia ou espelho e enquadramento sensual.
 12. **Uma foto, um post (05/11/2026):** a mesma foto não aparece em dois posts do feed em 21 dias, nem por outro link. Estático e carrossel do mesmo dia têm fotos diferentes; desde 26/11/2026 o estático não usa a foto do famoso, que fica na capa do carrossel. A revisão barra.
 13. **Etiquetas do acervo** em `acervo/tags.json` (quem gera o pacote etiqueta cada foto que abre), para escolher a foto certa.
 

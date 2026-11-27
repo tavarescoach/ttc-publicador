@@ -100,7 +100,8 @@ def _txt(s):
 def textos_slides(p):
     out = []
     for s in p.get("slides", []):
-        for c in ("titulo", "texto", "nota", "rotulo", "numero", "unidade", "cta", "subtitulo", "frase"):
+        for c in ("titulo", "titulo_vermelho", "texto", "nota", "rotulo", "numero", "unidade", "cta", "subtitulo",
+                  "frase", "dor", "movimento"):
             if s.get(c):
                 out.append(_txt(s[c]))
     return out
@@ -121,9 +122,13 @@ def fotos_do_pedido(p):
     if p.get("arquivo"):
         out.append((1, "midia/" + p["arquivo"]))
     for i, sl in enumerate(p.get("slides") or [], 1):
-        u = sl.get("foto_url") or sl.get("foto")
+        u = sl.get("foto_url") or sl.get("foto_origem") or sl.get("foto")
         if u and not str(u).startswith("file://"):
             out.append((i, _norm_foto(u)))
+        for c in ("foto_dor", "foto_mov"):  # Dor → Movimento: duas fotos por slide
+            u = sl.get(c + "_origem") or sl.get(c)
+            if u and not str(u).startswith("file://"):
+                out.append((i, _norm_foto(u)))
     return [(i, u) for i, u in out if u]
 
 
@@ -184,7 +189,7 @@ def fotos_repetidas(p, hashes=None, raiz=None, janela=JANELA_FOTO_DIAS):
     return out
 
 
-def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
+def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None, checagem_fotos=None):
     agora = agora or dt.datetime.now(BRT)
     reels = p.get("formato") == "reels"
     slides = p.get("slides", [])
@@ -223,7 +228,8 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
     else:
         gancho, miolo = _gancho(textos, legenda)
         miolo = miolo + "\n" + (p.get("pauta") or "") + "\n" + _txt(p.get("frase"))
-    problemas += _vicios(gancho, miolo)
+    if p.get("formato") != "dor_movimento":  # Dor → Movimento: pergunta → resposta por natureza (26/11/2026)
+        problemas += _vicios(gancho, miolo)
     if "—" in tudo:
         problemas.append("Travessão (—) no texto: troque por ponto, vírgula ou quebra de linha.")
     m = re.search(ALARME_SAUDE, gancho.lower())
@@ -255,7 +261,11 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
         problemas.append(f"Hashtags demais ({len(tags)}); o padrão é 3 a 5.")
 
     formato = p.get("formato")
-    if formato == "estatico_v2":
+    if formato == "dor_movimento":
+        pr, av = revisar_dor_movimento(p, legenda, checagem_fotos)
+        problemas += pr
+        avisos += av
+    elif formato == "estatico_v2":
         pr, av = revisar_estatico_v2(p, legenda)
         problemas += pr
         avisos += av
@@ -380,6 +390,67 @@ def revisar_estatico_v2(p, legenda):
         out.append("Estático v2 não usa famoso: a foto da pessoa vai para a capa do carrossel.")
     if re.search(r"\w+,\s+\w+.*\be\b", _txt(p.get("frase_branca"))):
         av.append("A frase pode ter duas ideias (vírgula e \"e\"); confira.")
+    return out, av
+
+
+VERBO_INICIAL = re.compile(r"^[A-Za-zÁÉÍÓÚÂÊÔÃÕÇáéíóúâêôãõç]+(?:e|a|ie|ue)$", re.I)  # Treine, Coma, Durma, Bloqueie
+CENA_GENERICA = re.compile(r"^(?:falta de|sem energia|cansad[oa]\?$|desmotivad|quer emagrecer|quer secar)", re.I)
+TEMAS_FORA = {"HIP", "HIPERTROFIA"}
+MAX_PARES_DM, MIN_PARES_DM = 8, 6
+
+
+def revisar_dor_movimento(p, legenda, checagem_fotos=None):
+    """Dor → Movimento (diretrizes/dor-movimento.md, seções 3, 4, 6 e 8). Devolve (problemas, avisos)."""
+    out, av = [], []
+    for c in ("persona", "tema"):
+        if not p.get(c):
+            out.append(f"Dor → Movimento sem `{c}`.")
+    if str(p.get("tema") or "").upper() in TEMAS_FORA:
+        out.append("Tema fora da marca (hipertrofia).")
+    if isinstance(p.get("tema"), (list, tuple)) and len(p["tema"]) > 1:
+        out.append("Mais de um tema no carrossel: um tema por carrossel.")
+    slides = p.get("slides") or []
+    pares = [s for s in slides if s.get("tipo") == "dm_par"]
+    if not MIN_PARES_DM <= len(pares) <= MAX_PARES_DM:
+        out.append(f"{len(pares)} pares: o formato usa de {MIN_PARES_DM} a {MAX_PARES_DM} (com guia e CTA, até 10 slides).")
+    for i, s in enumerate(slides, 1):
+        if s.get("tipo") != "dm_par":
+            continue
+        dor, mov = _txt(s.get("dor")).strip(), _txt(s.get("movimento")).strip()
+        nd, nm = len(re.findall(r"[\wÀ-ÿ]+", dor)), len(re.findall(r"[\wÀ-ÿ]+", mov))
+        if not dor or not mov:
+            out.append(f"Slide {i}: falta a dor ou o movimento.")
+            continue
+        if nd > 7:
+            out.append(f"Slide {i}: dor com {nd} palavras (máximo 7).")
+        if nm > 6:
+            out.append(f"Slide {i}: movimento com {nm} palavras (máximo 6).")
+        if not dor.endswith("?"):
+            out.append(f"Slide {i}: a dor é uma pergunta (termina com ?).")
+        primeira = re.split(r"[\s,]+", mov)[0]
+        if not VERBO_INICIAL.match(primeira):
+            out.append(f'Slide {i}: o movimento começa com verbo no imperativo ("{primeira}"?).')
+        if re.search(PRAZO, (dor + " " + mov).lower()) and re.search(r"\b(?:perca|perder|seque|secar|ganhe|ganhar|elimine)\b", (dor + " " + mov).lower()):
+            out.append(f"Slide {i}: promessa com número e prazo.")
+        if CENA_GENERICA.search(dor):
+            av.append(f"Slide {i}: dor genérica; a dor precisa de uma cena concreta.")
+        if s.get("ia") and not s.get("rotulo_ia"):
+            out.append(f"Slide {i}: imagem de IA sem o rótulo \"Conteúdo de IA\".")
+    tipos = [s.get("tipo") for s in slides]
+    if "dm_guia" not in tipos:
+        out.append("Falta o slide \"O que eu faço com meus alunos\".")
+    if not slides or slides[-1].get("tipo") != "cta":
+        out.append("O último slide não é o convite (CTA).")
+    palavra = (slides[-1].get("palavra") if slides else "") or "MÉTODO"
+    if palavra.upper() not in legenda.upper():
+        out.append(f"A legenda não tem a palavra do convite ({palavra}).")
+    if re.search(r"\d+\s*(?:kg|quilos?)\b[^.\n]{0,40}" + PRAZO, legenda.lower()):
+        out.append("Promessa com número e prazo na legenda.")
+    if len(set(_txt(s.get("dor")).lower() for s in slides if s.get("tipo") == "dm_par")) < len(pares):
+        out.append("Dor repetida no carrossel.")
+    pr_f, av_f = checagem_fotos or ([], [])
+    out += pr_f
+    av += av_f
     return out, av
 
 

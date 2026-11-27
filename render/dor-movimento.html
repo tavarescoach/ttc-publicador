@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;800&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Dor → Movimento (diretrizes/dor-movimento.md, v1.1, 26/11/2026).
+   1080×1440, tela dividida: em cima a foto do Luan + a dor; embaixo a foto do Luan fazendo o movimento + o movimento.
+   Uma tipografia só (Roboto Condensed 800, caixa alta) nas duas metades; última palavra do movimento em vermelho.
+   Logo LT em todos os slides. Sem filtro de cor sobre a foto: marinho só no degradê atrás do texto. */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1440px;overflow:hidden;background:#0E1626}
+body{font-family:"Roboto Condensed","Liberation Sans Narrow","Arial Narrow",sans-serif;-webkit-font-smoothing:antialiased}
+.s{position:relative;width:1080px;height:1440px;overflow:hidden;background:#0E1626}
+.m{position:absolute;left:0;width:1080px;height:720px;overflow:hidden;background:#0E1626 center/cover no-repeat}
+.m.cima{top:0}.m.baixo{top:720px}
+.m::after{content:"";position:absolute;inset:0}
+.m.cima::after{background:linear-gradient(180deg,rgba(5,8,15,.35) 0%,rgba(5,8,15,0) 22%,rgba(5,8,15,0) 50%,rgba(5,8,15,.72) 82%,rgba(5,8,15,.88) 100%)}
+.m.baixo::after{background:linear-gradient(180deg,rgba(5,8,15,.15) 0%,rgba(5,8,15,0) 30%,rgba(5,8,15,.70) 78%,rgba(5,8,15,.90) 100%)}
+.div{position:absolute;left:0;right:0;top:718px;height:4px;background:#05080F;z-index:3}
+.txt{position:absolute;z-index:2;left:72px;right:72px;bottom:58px;text-align:center;color:#fff;font-size:92px;
+  font-weight:800;line-height:.94;letter-spacing:0;text-transform:uppercase;text-shadow:0 3px 18px rgba(0,0,0,.55)}
+.v{color:#C1121F}
+.logo{position:absolute;z-index:4;left:56px;top:46px;width:330px;filter:drop-shadow(0 2px 10px rgba(0,0,0,.6))}
+.rod{position:absolute;z-index:4;right:44px;bottom:22px;font:600 24px "Inter",sans-serif;color:rgba(248,250,252,.85)}
+.cheio{position:absolute;inset:0;background:#0E1626 center/cover no-repeat}
+.cheio::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,15,.55) 0%,rgba(5,8,15,0) 20%,rgba(5,8,15,0) 38%,rgba(5,8,15,.82) 62%,rgba(5,8,15,.96) 100%)}
+.corpo{position:absolute;z-index:2;left:72px;right:72px;bottom:110px;top:820px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.traco{width:72px;height:8px;background:#C1121F;margin-bottom:22px}
+.etq{font-weight:700;font-size:34px;letter-spacing:.04em;text-transform:uppercase;color:#F8FAFC;margin-bottom:22px}
+.corpo h1{font-weight:800;font-size:96px;line-height:.95;text-transform:uppercase}
+.corpo p{font:500 34px/1.38 "Inter",sans-serif;color:#E2E8F0;margin-top:30px;max-width:900px}
+.corpo p b{color:#fff;font-weight:700}
+.cta{align-self:flex-start;margin-top:38px;font-weight:800;font-size:44px;letter-spacing:.02em;background:#C1121F;color:#fff;padding:18px 34px;border-radius:6px;text-transform:uppercase}
+</style></head>
+<body><div id="raiz"></div>
+<script>
+const S = window.SLIDE;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const neg = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+const bg = (f, foco) => f ? `background-image:url('${f}');background-position:${esc(foco || "center 30%")}` : "";
+const ultimaVermelha = t => { const w = String(t || "").trim().split(/\s+/); const u = w.pop(); return `${esc(w.join(" "))} <span class="v">${esc(u)}</span>`; };
+const marca = `<img class="logo" src="assets/logo-lt.png" alt=""><div class="rod">@tavarescoach</div>`;
+let html;
+if (S.tipo === "dm_par") {
+  html = `<section class="s">
+    <div class="m cima" style="${bg(S.foto_dor, S.foco_dor)}"><div class="txt">${esc(S.dor)}</div></div>
+    <div class="m baixo" style="${bg(S.foto_mov, S.foco_mov)}"><div class="txt">${ultimaVermelha(S.movimento)}</div></div>
+    <div class="div"></div>${marca}</section>`;
+} else {  // dm_guia e cta: foto cheia + bloco de texto
+  html = `<section class="s"><div class="cheio" style="${bg(S.foto, S.foco)}"></div>
+    <div class="corpo"><div class="traco"></div><div class="etq">${esc(S.etiqueta)}</div>
+      <h1>${esc(S.titulo)}<br><span class="v">${esc(S.titulo_vermelho)}</span></h1>
+      ${S.texto ? `<p>${neg(S.texto)}</p>` : ""}${S.cta ? `<div class="cta">${esc(S.cta)}</div>` : ""}</div>
+    ${marca}</section>`;
+}
+document.getElementById("raiz").innerHTML = html;
+// cada metade: até 2 linhas; reduz a fonte até caber (mínimo 64 px; abaixo disso o render marca corte)
+document.querySelectorAll(".m .txt").forEach(t => {
+  let tam = 92;
+  const linhas = () => Math.round(t.offsetHeight / (tam * .94));
+  while ((t.scrollWidth > t.clientWidth + 2 || linhas() > 2) && tam > 64) { tam -= 4; t.style.fontSize = tam + "px"; }
+  if (t.scrollWidth > t.clientWidth + 2 || linhas() > 2) t.dataset.cortado = "1";
+});
+</script></body></html>

@@ -28,9 +28,16 @@ jobs:
         env:
           GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
         run: python acervo/listar.py
+      - name: Etiquetar qualidade das fotos (rosto, largura, nitidez)
+        # diretrizes/dor-movimento.md, seção 6.1: até 60 fotos novas por dia, no original do Drive
+        env:
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
+        run: |
+          pip install opencv-python-headless==4.10.0.84
+          python acervo/qualidade.py --max 60 || echo "::warning::etiquetagem de qualidade falhou; segue sem ela"
       - name: Salvar no repositório
         run: |
-          git add acervo/indice.json
+          git add acervo/indice.json acervo/tags.json
           if ! git diff --cached --quiet; then
             git config user.name "ttc-publicador"
             git config user.email "actions@users.noreply.github.com"
