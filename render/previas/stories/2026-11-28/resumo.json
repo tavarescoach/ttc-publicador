@@ -1,0 +1,52 @@
+{
+ "data": "2026-11-28",
+ "ensaio": false,
+ "modelo": "v3",
+ "avisos": [],
+ "stories": [
+  {
+   "id": "2026-11-28-st-0730",
+   "tela": "abertura",
+   "quando": "2026-11-28T07:30:00-03:00",
+   "arquivo": "2026-11-28/story-0730.png",
+   "decisao": "agendado",
+   "texto": null,
+   "problemas": [],
+   "foto": "pernas-salto-caixa.jpg",
+   "partes": null
+  },
+  {
+   "id": "2026-11-28-st-1000",
+   "tela": "virada",
+   "quando": "2026-11-28T10:00:00-03:00",
+   "arquivo": "2026-11-28/story-1000.png",
+   "decisao": "agendado",
+   "texto": null,
+   "problemas": [],
+   "foto": "joelho-close-joelheira.jpg",
+   "partes": null
+  },
+  {
+   "id": "2026-11-28-st-1300",
+   "tela": "resultado",
+   "quando": "2026-11-28T13:00:00-03:00",
+   "arquivo": "2026-11-28/story-1300.png",
+   "decisao": "agendado",
+   "texto": null,
+   "problemas": [],
+   "foto": "pernas-agachamento-barra.jpg",
+   "partes": null
+  },
+  {
+   "id": "2026-11-28-st-2100",
+   "tela": "convite",
+   "quando": "2026-11-28T21:00:00-03:00",
+   "arquivo": "2026-11-28/story-2100.png",
+   "decisao": "agendado",
+   "texto": null,
+   "problemas": [],
+   "foto": "joelho-descida-step.jpg",
+   "partes": null
+  }
+ ]
+}
