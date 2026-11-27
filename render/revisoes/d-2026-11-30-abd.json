@@ -1,0 +1,82 @@
+{
+ "id": "d-2026-11-30-abd",
+ "data": "2026-11-30",
+ "fotos": [
+  {
+   "slide": "1 (em cima)",
+   "hash": "04f2f1b171f0dcaa"
+  },
+  {
+   "slide": "1 (embaixo)",
+   "hash": "270109a8a9a98dc9"
+  },
+  {
+   "slide": "2 (em cima)",
+   "hash": "2fa32230e4aba068"
+  },
+  {
+   "slide": "2 (embaixo)",
+   "hash": "4c4a513131d5981e"
+  },
+  {
+   "slide": "3 (em cima)",
+   "hash": "1071616161c3c286"
+  },
+  {
+   "slide": "3 (embaixo)",
+   "hash": "ecd01a3871727c10"
+  },
+  {
+   "slide": "4 (em cima)",
+   "hash": "66f89c9c1bb9f6b7"
+  },
+  {
+   "slide": "4 (embaixo)",
+   "hash": "ec8df028b86c0c7c"
+  },
+  {
+   "slide": "5 (em cima)",
+   "hash": "3e391e7361415361"
+  },
+  {
+   "slide": "5 (embaixo)",
+   "hash": "000032e266c6d161"
+  },
+  {
+   "slide": "6 (em cima)",
+   "hash": "303878b82263c5c7"
+  },
+  {
+   "slide": "6 (embaixo)",
+   "hash": "30323033e4146627"
+  },
+  {
+   "slide": "7",
+   "hash": "336b33e9c81298c8"
+  },
+  {
+   "slide": "8",
+   "hash": "7c70701507e0b103"
+  }
+ ],
+ "decisao": "precisa",
+ "problemas": [
+  "Slide 1 (em cima): rosto cortado pela borda da metade.",
+  "Slide 2 (embaixo): rosto não aparece (de costas, cortado, coberto ou fora do recorte).",
+  "Slide 3 (em cima): rosto cortado pela borda da metade.",
+  "Slide 3 (em cima): o texto da metade cobre o rosto.",
+  "Slide 4 (em cima): rosto cortado pela borda da metade.",
+  "Slide 4 (em cima): o texto da metade cobre o rosto.",
+  "Slide 6 (em cima): rosto cortado pela borda da metade.",
+  "Slide 6 (em cima): o texto da metade cobre o rosto.",
+  "Slide 6 (embaixo): rosto cortado pela borda da metade."
+ ],
+ "atencao": [
+  "Marcado para você conferir antes de sair."
+ ],
+ "avisos": [
+  "Slide 1 (embaixo): rosto pequeno na foto."
+ ],
+ "quando": "2026-11-30T09:00:00-03:00",
+ "revisado_em": "2026-11-26T23:19-03:00"
+}
