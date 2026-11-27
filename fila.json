@@ -3845,5 +3845,53 @@
     "status": "pendente",
     "origem": "painel",
     "tema": "Estilo de vida"
+  },
+  {
+    "id": "2026-11-28-st-0730",
+    "quando": "2026-11-28T10:30:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-28/story-0730.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "LON"
+  },
+  {
+    "id": "2026-11-28-st-2100",
+    "quando": "2026-11-29T00:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-28/story-2100.png"
+    ],
+    "legenda": "Palavra do dia: LESÃO",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "LON"
+  },
+  {
+    "id": "2026-11-28-st-1000",
+    "quando": "2026-11-28T13:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-28/story-1000.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "LON"
+  },
+  {
+    "id": "2026-11-28-st-1300",
+    "quando": "2026-11-28T16:00:00+00:00",
+    "tipo": "STORY",
+    "arquivos": [
+      "2026-11-28/story-1300.png"
+    ],
+    "legenda": "",
+    "status": "pendente",
+    "origem": "painel",
+    "tema": "LON"
   }
 ]
