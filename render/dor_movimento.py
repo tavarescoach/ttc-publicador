@@ -33,7 +33,7 @@ RAIZ = os.path.dirname(AQUI)
 sys.path.insert(0, AQUI)
 
 MAX_PARES = 8  # 8 pares + guia + CTA = 10, o limite de carrossel da API do Instagram
-ALTO_CHEIO = 1440
+ALTO_CHEIO = 1350  # 4:5, o formato mais alto que a API do Instagram publica
 
 
 def _baixar(fonte, destino):
@@ -81,7 +81,7 @@ def preparar_fotos(p, slides, pasta_fotos):
     from foto_qualidade import avaliar, melhor_foco
     from revisar import HASH_PARECIDA, _dist
     problemas, avisos, hashes, vistos = [], [], {}, {}
-    campos = (("foto_dor", "foco_dor", "em cima", 720, 0.70), ("foto_mov", "foco_mov", "embaixo", 720, 0.70),
+    campos = (("foto_dor", "foco_dor", "em cima", 675, 0.70), ("foto_mov", "foco_mov", "embaixo", 675, 0.70),
               ("foto", "foco", "", ALTO_CHEIO, 0.58))
     for i, s in enumerate(slides, 1):
         for cf, cfoco, onde, altura, lim in campos:
@@ -101,7 +101,7 @@ def preparar_fotos(p, slides, pasta_fotos):
                 continue
             s[cf] = "file://" + local
             if not s.get(cfoco):
-                alvo = 0.32 if altura == 720 else 0.24
+                alvo = 0.32 if altura == 675 else 0.24
                 s[cfoco] = melhor_foco(local, altura, alvo) or "center 30%"
             r = avaliar(local, s[cfoco], altura, lim)
             problemas += [f"{nome}: {x}." for x in r["problemas"]]
@@ -137,7 +137,7 @@ def renderizar(p, local=False):
     with sync_playwright() as pw:
         nav = pw.chromium.launch(args=["--allow-file-access-from-files"])
         for i, s in enumerate(slides, 1):
-            pg = nav.new_page(viewport={"width": 1080, "height": 1440})
+            pg = nav.new_page(viewport={"width": 1080, "height": 1350})
             pg.add_init_script(f"window.SLIDE={json.dumps(s, ensure_ascii=False)};")
             pg.goto(modelo)
             pg.evaluate("document.fonts.ready")
@@ -153,7 +153,7 @@ def renderizar(p, local=False):
     print(f"{len(arquivos)} slides gerados em {saida}")
     try:  # folha de prévia: render/previas/<id>.jpg
         from PIL import Image
-        W, H, cols = 270, 360, 5
+        W, H, cols = 270, 338, 5
         folha = Image.new("RGB", (cols * (W + 6) + 6, ((len(arquivos) + cols - 1) // cols) * (H + 6) + 6), (40, 40, 40))
         for k, a in enumerate(arquivos):
             im = Image.open(os.path.join(RAIZ, "render", "_saida", a)).convert("RGB").resize((W, H))

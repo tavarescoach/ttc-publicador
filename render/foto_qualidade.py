@@ -14,7 +14,7 @@ import sys
 AQUI = os.path.dirname(os.path.abspath(__file__))
 MODELO = os.path.join(AQUI, "assets", "modelos", "face_detection_yunet_2023mar.onnx")
 
-LARG, ALT = 1080, 720           # cada metade do slide
+LARG, ALT = 1080, 675           # cada metade do slide (1080×1350, 4:5: o limite da API do Instagram)
 AMPLIACAO_MAX = 1.02            # acima disso a foto foi ampliada (menos de 1080 px úteis)
 FAIXA_ROSTO = (0.08, 0.55)      # centro do rosto entre 8% e 55% da altura da metade
 LIMITE_TEXTO = 0.70             # o bloco de texto ocupa a base da metade (de 70% para baixo)
@@ -92,7 +92,7 @@ def melhor_foco(caminho, altura=ALT, alvo=0.32):
 
 
 def avaliar(caminho, foco="center 30%", altura=ALT, limite_texto=LIMITE_TEXTO):
-    """Avalia uma foto recortada como metade (1080×720) ou slide cheio (altura=1440), com background-size: cover.
+    """Avalia uma foto recortada como metade (1080×675) ou slide cheio (altura=1350), com background-size: cover.
 
     Devolve {"problemas": [...], "avisos": [...], "largura_util": int, "nitidez": float|None, "rosto": bool}.
     """
@@ -103,7 +103,7 @@ def avaliar(caminho, foco="center 30%", altura=ALT, limite_texto=LIMITE_TEXTO):
     h, w = img.shape[:2]
     problemas, avisos = [], []
 
-    # recorte "cover": escala para cobrir 1080×720 e corta o excesso pela posição do foco
+    # recorte "cover": escala para cobrir 1080×675 e corta o excesso pela posição do foco
     ALT = altura  # noqa: N806 (mesma conta para metade e slide cheio)
     esc = max(LARG / w, ALT / h)
     largura_util = int(round(LARG / esc))  # quantos px da foto original viram os 1080 da metade
