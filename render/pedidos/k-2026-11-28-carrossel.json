@@ -1,0 +1,135 @@
+{
+ "formato": "carrossel",
+ "id": "k-2026-11-28-carrossel",
+ "data": "2026-11-28",
+ "quando": "2026-11-28T12:00:00-03:00",
+ "tema": "GLP-1",
+ "funil": "meio",
+ "pauta": "Rasmussen repetiu a aplicação de Mounjaro: caneta tem regra, e o músculo precisa de treino (alerta, Rafael)",
+ "protagonista": {
+  "tipo": "alerta",
+  "persona": "rafael",
+  "desejo": "ter a saúde sob controle",
+  "vilao": "a crença de que a caneta resolve sozinha",
+  "nivel_consciencia": 2
+ },
+ "narrativa": {
+  "personagem": "Richard Rasmussen, biólogo e apresentador, contou que aplicou Mounjaro, esqueceu e aplicou de novo dois dias depois; teve constipação forte, foi a um hospital em São Paulo e diz que está bem (O Liberal, 25/11/2026; Super Rádio Tupi e Terra, 26/11/2026)",
+  "personagem_nome": "Rasmussen",
+  "persona": "rafael",
+  "desejo": "ter a saúde sob controle",
+  "vilao": "a crença de que a caneta resolve sozinha",
+  "problema_externo": "cintura crescendo desde os 30, exame de rotina com alerta, fome que não respeita a agenda",
+  "problema_interno": "parece que perdi o controle de algo que era fácil",
+  "problema_filosofico": "o remédio virou o plano inteiro e ninguém falou do músculo",
+  "causa": "a tirzepatida tem meia-vida de cerca de 5 dias (bula, via Terra); no STEP 1 a massa magra caiu 9,7% junto com 19,3% de massa gorda (Wilding 2021, subestudo DXA)",
+  "erro": "pensar na caneta como atalho e deixar o treino de força de fora",
+  "em_jogo": "o músculo que segura a força para a escada, a mala e os filhos",
+  "guia_empatia": "",
+  "guia_autoridade": "Luan avalia força, cintura e composição e reavalia todo mês, conversando com o médico de quem usa caneta",
+  "plano": [
+   "Avaliar força, cintura e composição",
+   "Montar treino de força que cabe na agenda",
+   "Reavaliar todo mês junto com o médico"
+  ],
+  "sucesso": "de quem corre atrás do atalho para quem tem a saúde sob controle",
+  "cta_direto": "MÉTODO no direct",
+  "cta_transicao": "salvar e mandar para o amigo que está pensando na caneta",
+  "ficha_persona": {
+   "consciencia": 2,
+   "objetivo": "Reduzir gordura abdominal e a circunferência da cintura",
+   "desejo": "Sentir que tem a saúde sob controle, como tem a empresa",
+   "dor": "Sensação de ter perdido o controle de algo que antes era fácil",
+   "erro": "Pensar em GLP-1 como atalho sem mudar treino e alimentação",
+   "objecao": "Minha agenda muda muito, não consigo horário fixo"
+  }
+ },
+ "legenda": "Eu não tenho nada contra a caneta. Tenho contra a caneta sozinha.\n\nO Richard Rasmussen contou que aplicou Mounjaro, esqueceu e repetiu a aplicação dois dias depois. Teve constipação forte e foi ao hospital, e hoje diz que está bem. A tirzepatida leva cerca de cinco dias para cair pela metade no corpo, por isso a aplicação é semanal e quem conduz é o médico.\n\nVocê sente que perdeu o controle do corpo e pensa na caneta como atalho, sem mudar treino e comida. No STEP 1, 9,7% da massa magra foi embora junto com a gordura.\n\nCom meus alunos eu avalio força e cintura, monto um treino de força que cabe na agenda, mesmo a que muda toda semana, e reavalio todo mês, conversando com o médico de quem usa caneta.\n\nSalva este post e manda para o amigo que está pensando na caneta. Me manda MÉTODO no direct.\n\n#tavarescoach #glp1 #mounjaro #treinodeforca #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Rasmussen repetiu a caneta e foi ao **hospital**. Qual é a sua regra?",
+   "pessoa": "Richard Rasmussen",
+   "foto": "",
+   "foto_reproducao": "https://images.metroimg.com/2026/11/richard-rasmussen.jpg",
+   "credito_reproducao": "Foto: Reprodução/Metrópoles",
+   "origem_reproducao": "https://www.metropoles.com/saude/caso-rasmussen-superdosagem-de-mounjaro-pode-exacerbar-efeitos-colaterais",
+   "fonte": "O Liberal, 25/11/2026; Super Rádio Tupi, 26/11/2026",
+   "link_noticia": "https://www.oliberal.com/cultura/richard-rasmussen-se-pronuncia-apos-suposta-overdose-de-mounjaro-1.1198352",
+   "foco": "center 30%",
+   "layout": "recorte"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O caso",
+   "titulo": "Você também quer a saúde **sob controle**.",
+   "texto": "O biólogo Richard Rasmussen contou que aplicou Mounjaro, esqueceu e aplicou de novo dois dias depois. Teve constipação forte e procurou um hospital em São Paulo. Ele diz que está bem.",
+   "fonte": "O Liberal, 25/11/2026; Super Rádio Tupi, 26/11/2026"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "marinho",
+   "rotulo": "A crença",
+   "titulo": "\"A caneta **resolve sozinha**.\"",
+   "texto": "Você ouve isso no almoço do trabalho, de alguém que emagreceu rápido. A caneta vira o plano inteiro, e o treino fica para quando sobrar tempo na agenda."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Como você se sente",
+   "titulo": "Parece que você **perdeu o controle**.",
+   "texto": "A calça aperta, o exame de rotina volta com um alerta e a fome não respeita a agenda. O que era fácil aos 30 virou esforço, e a caneta parece o caminho mais curto."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "A causa",
+   "numero": "5",
+   "unidade": "dias",
+   "titulo": "para metade da **tirzepatida** sair do corpo.",
+   "texto": "É a meia-vida do remédio do Mounjaro. Por isso a aplicação é semanal, e uma aplicação extra se soma à anterior e pode intensificar náusea e constipação.",
+   "fonte": "Bula do Mounjaro (Eli Lilly), via Terra, 26/11/2026"
+  },
+  {
+   "tipo": "numero",
+   "fundo": "preto",
+   "rotulo": "O erro",
+   "numero": "9,7%",
+   "titulo": "de massa magra foi embora **junto com a gordura**.",
+   "texto": "No STEP 1, quem usou semaglutida perdeu 19,3% da massa gorda e 9,7% da massa magra. Usar a caneta como atalho, sem treino de força, deixa o músculo sem motivo para ficar.",
+   "fonte": "Wilding et al., NEJM (2021), subestudo DXA do STEP 1"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "O que está em jogo",
+   "titulo": "O músculo que **segura o resultado**.",
+   "texto": "É ele que mantém a força para subir escada, carregar a mala da viagem e brincar com os filhos. Quando ele sai junto com a gordura, o espelho melhora e a reserva diminui."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "Caneta funciona melhor **com método por trás**.",
+   "texto": "**De quem corre atrás do atalho para quem tem a saúde sob controle.** O remédio é conduta do seu médico. Agenda, comida e treino de força são a parte que fica com você."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com meus alunos",
+   "titulo": "A caneta entra **no plano**, com o médico.",
+   "texto": "Primeiro, avalio sua força, sua cintura e sua composição. Depois, monto um treino de força que cabe na sua agenda, mesmo a que muda toda semana. Por fim, reavalio todo mês e converso com o seu médico.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-21/acervo-2.jpg",
+   "foco": "center 30%"
+  },
+  {
+   "tipo": "cta",
+   "fundo": "marinho",
+   "titulo": "Comece pela **medida certa**.",
+   "texto": "Avaliação Estratégica de 40 minutos no TTC, em Copacabana. Salva este post e manda para o amigo que está pensando na caneta.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "formato": "carrossel",
+ "id": "k-2026-11-29-carrossel-noite",
+ "data": "2026-11-29",
+ "quando": "2026-11-29T20:00:00-03:00",
+ "tema": "GLP-1",
+ "funil": "fundo",
+ "pauta": "Guia: usar caneta sem perder músculo (força, proteína e medida além da balança)",
+ "protagonista": {
+  "tipo": "espelho",
+  "persona": "feminina",
+  "desejo": "terminar mais leve sem perder força",
+  "vilao": "o hábito de pular a musculação quando a fome some",
+  "nivel_consciencia": 3
+ },
+ "narrativa": {
+  "personagem": "",
+  "personagem_nome": "",
+  "persona": "feminina",
+  "desejo": "terminar mais leve sem perder força",
+  "vilao": "o hábito de pular a musculação quando a fome some",
+  "problema_externo": "come metade do prato, sente cansaço e deixa a musculação de lado",
+  "problema_interno": "estou mais leve e mais fraca",
+  "causa": "em dieta, quem fez só aeróbico perdeu 5% da massa magra e quem fez força perdeu 2% (Villareal 2017)",
+  "erro": "cortar carboidrato e treino junto com a fome",
+  "em_jogo": "a força para a sacola do mercado e a escada",
+  "guia_empatia": "",
+  "guia_autoridade": "Luan ajusta o treino à fase da caneta e reavalia todo mês",
+  "plano": [
+   "Avaliar força e composição",
+   "Montar três treinos curtos que cabem na agenda",
+   "Reavaliar todo mês"
+  ],
+  "sucesso": "de quem só olha a balança para quem termina mais leve e mais forte",
+  "cta_direto": "MÉTODO no direct",
+  "cta_transicao": "mandar para a amiga que começou a caneta",
+  "ficha_persona": {
+   "consciencia": 3,
+   "objetivo": "Perder a barriga sem perder o pouco de massa que ganhou",
+   "desejo": "Resultado sem ficar presa ao fitness",
+   "dor": "Culpa alimentar",
+   "erro": "Cortar carboidrato radicalmente e perder rendimento",
+   "objecao": "Minha agenda muda muito, não consigo horário fixo"
+  }
+ },
+ "legenda": "Eu quero que você termine a caneta mais leve e mais forte, as duas coisas.\n\nNum estudo com pessoas com obesidade em dieta, quem fez só aeróbico perdeu 5% da massa magra. Quem treinou força perdeu 2%. A caneta tira a fome, e o músculo precisa de motivo para ficar.\n\nO guia de hoje: força duas a três vezes por semana, proteína primeiro no prato e medida além da balança. Sem cortar carboidrato radicalmente e perder rendimento, e sem culpa no prato.\n\nCom minhas alunas eu avalio força e composição, monto três treinos curtos que cabem na agenda, mesmo a que muda toda semana, e reavalio todo mês.\n\nManda este post para a amiga que começou a caneta. Me manda MÉTODO no direct.\n\n#tavarescoach #glp1 #treinodeforca #emagrecimento #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "Usa caneta? **Seu músculo** precisa de um plano.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-23/foto-pessoal.jpg",
+   "foco": "center 35%",
+   "layout": "recorte"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "A cena",
+   "titulo": "Você come metade do prato e **treina menos**.",
+   "texto": "Com a caneta, a fome some e o cansaço aparece. Você pula a musculação porque falta energia e corta o carboidrato, achando que o resultado vem do mesmo jeito."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "A causa",
+   "numero": "5%",
+   "titulo": "de massa magra a menos só com **aeróbico**.",
+   "texto": "Em adultos mais velhos com obesidade em dieta, quem fez só aeróbico perdeu 5% da massa magra em seis meses. Quem fez treino de força perdeu 2%.",
+   "fonte": "Villareal et al., NEJM (2017)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Como você se sente",
+   "titulo": "Mais leve e **mais fraca**.",
+   "texto": "A roupa fecha, mas a sacola do mercado pesa e a escada cansa. Esse é o sinal de que o músculo está saindo junto com a gordura, e dá para mudar isso."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "Passo 1",
+   "titulo": "Força **duas a três vezes** por semana.",
+   "texto": "Agachar, empurrar, puxar e levantar peso do chão. Nas primeiras semanas ou depois de um ajuste do médico, você ajusta o volume ao dia em vez de parar.",
+   "fonte": "Eliz Vessoni, educadora física, ao Metrópoles (2026)"
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Passo 2",
+   "titulo": "Proteína **primeiro no prato**.",
+   "texto": "Com pouca fome, cada garfada conta, e comer não vira motivo de culpa. Ovo, frango, peixe, iogurte ou feijão primeiro, e a quantidade certa é conversa com o seu nutricionista ou médico."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "Passo 3",
+   "titulo": "Meça **além da balança**.",
+   "texto": "Cintura, carga do agachamento e uma foto no mesmo lugar todo mês. Carga subindo e cintura descendo mostram que o que está saindo é gordura."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que muda",
+   "titulo": "A caneta cuida da fome. **O treino segura o músculo.**",
+   "texto": "**De quem só olha a balança para quem termina mais leve e mais forte.** Essa divisão de tarefas é o que faz o resultado durar depois do remédio."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com minhas alunas",
+   "titulo": "Eu ajusto o treino **à fase da caneta**.",
+   "texto": "Primeiro, avalio força e composição antes de mexer na carga. Depois, monto três treinos curtos que cabem na sua agenda, mesmo a que muda toda semana. Por fim, reavalio todo mês, sem você viver para o fitness.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-28/acervo-1.jpg",
+   "foco": "center 25%"
+  },
+  {
+   "tipo": "cta",
+   "fundo": "marinho",
+   "titulo": "Seu músculo **entra no plano**.",
+   "texto": "Avaliação Estratégica de 40 minutos no TTC, em Copacabana. Manda este post para a amiga que começou a caneta.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}

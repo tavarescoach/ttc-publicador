@@ -1268,6 +1268,32 @@
    }
   ],
   "escolhido_em": "2026-11-27T11:17-03:00",
-  "status": "escolhido"
+  "status": "pacote_pronto",
+  "pecas": [
+   "v2-2026-11-28-estatico",
+   "k-2026-11-28-carrossel",
+   "k-2026-11-28-foto",
+   "v2-2026-11-29-estatico",
+   "k-2026-11-29-carrossel",
+   "k-2026-11-29-carrossel-noite",
+   "v2-2026-11-30-estatico",
+   "k-2026-11-30-carrossel",
+   "k-2026-11-30-meme"
+  ],
+  "protagonistas": {
+   "2026-11-28": {
+    "tipo": "alerta",
+    "persona": "rafael"
+   },
+   "2026-11-29": {
+    "tipo": "espelho",
+    "persona": "feminina"
+   },
+   "2026-11-30": {
+    "tipo": "alerta",
+    "persona": "thiago"
+   }
+  },
+  "pacote_em": "2026-11-27T12:30-03:00"
  }
 ]

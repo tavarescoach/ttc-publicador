@@ -1,0 +1,128 @@
+{
+ "formato": "carrossel",
+ "id": "k-2026-11-30-carrossel",
+ "data": "2026-11-30",
+ "quando": "2026-11-30T12:00:00-03:00",
+ "tema": "GLP-1",
+ "funil": "fundo",
+ "pauta": "Anvisa manda recolher tirzepatida e retatrutida: o atalho comprado não substitui o básico (alerta, Thiago)",
+ "protagonista": {
+  "tipo": "alerta",
+  "persona": "thiago",
+  "desejo": "um corpo que mostre que treina",
+  "vilao": "a crença de que falta só o produto certo",
+  "nivel_consciencia": 3
+ },
+ "narrativa": {
+  "personagem": "Anvisa mandou recolher um lote de insumo de tirzepatida (armazenamento inadequado) e todos os lotes de retatrutida de uma distribuidora; a retatrutida é experimental e não tem venda autorizada em nenhum país (Forbes Brasil, 12/11/2026; Metrópoles, 13/11/2026)",
+  "personagem_nome": "Anvisa",
+  "persona": "thiago",
+  "desejo": "um corpo que mostre que treina",
+  "vilao": "a crença de que falta só o produto certo",
+  "problema_externo": "anos de academia, barriga que não sai, dinheiro em suplemento e atalho",
+  "problema_interno": "estou perdendo tempo",
+  "causa": "em dieta com 40% menos calorias, treino de força e mais proteína geraram ganho de massa magra e perda de 4,8 kg de gordura (Longland 2016)",
+  "erro": "gastar no atalho antes de acertar treino, sono e comida",
+  "em_jogo": "mais um ano no mesmo corpo",
+  "guia_empatia": "",
+  "guia_autoridade": "Luan avalia treino e execução, monta plano com carga registrada e acompanha a evolução",
+  "plano": [
+   "Avaliar treino e execução",
+   "Montar plano de 45 a 60 minutos com carga registrada",
+   "Acompanhar a evolução"
+  ],
+  "sucesso": "de quem compra o próximo atalho para quem tem um corpo que mostra que treina",
+  "cta_direto": "MÉTODO no direct",
+  "cta_transicao": "mandar para o amigo que vive comprando atalho",
+  "ficha_persona": {
+   "consciencia": 3,
+   "objetivo": "Perder a barriga sem perder o pouco de massa que ganhou",
+   "desejo": "Ter um corpo que mostre que ele treina",
+   "dor": "Sensação de estar perdendo tempo: anos treinando e pouca diferença",
+   "erro": "Gastar em suplemento antes de acertar treino, sono e comida",
+   "objecao": "Não tenho dinheiro para consultoria agora"
+  }
+ },
+ "legenda": "Eu entendo a pressa. Só não pago atalho que nem foi aprovado.\n\nA Anvisa mandou recolher um lote de insumo de tirzepatida, guardado sem estrutura adequada, e todos os lotes de retatrutida de uma distribuidora. A retatrutida ainda é experimental e não tem venda autorizada em nenhum país.\n\nVocê treina há anos, sente que está perdendo tempo e gasta em suplemento antes de acertar treino, sono e comida. Num estudo com dieta apertada, treino de força e mais proteína tiraram 4,8 kg de gordura e ainda somaram massa magra.\n\nCom meus alunos eu avalio treino e execução, monto um plano de 45 a 60 minutos com carga registrada e acompanho a evolução. Se você acha que não tem dinheiro para consultoria agora, compara com o que já foi embora em suplemento.\n\nManda este post para o amigo que vive comprando atalho. Me manda MÉTODO no direct.\n\n#tavarescoach #glp1 #treinodeforca #musculacao #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "A Anvisa mandou recolher **retatrutida**. Você compraria da internet?",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-30/foto-pessoal.jpg",
+   "foco": "center 35%",
+   "layout": "recorte",
+   "fonte": "Forbes Brasil, 12/11/2026; Metrópoles, 13/11/2026",
+   "link_noticia": "https://www.metropoles.com/saude/anvisa-manda-recolher-insumos-de-tirzepatida-e-retatrutida"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O caso",
+   "titulo": "Você também quer a barriga **sumindo logo**.",
+   "texto": "Em 12 de novembro, a Anvisa mandou recolher um lote de insumo de tirzepatida e todos os lotes de retatrutida de uma distribuidora. A retatrutida ainda é experimental e não tem venda autorizada em nenhum país.",
+   "fonte": "Forbes Brasil, 12/11/2026; Metrópoles, 13/11/2026"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "marinho",
+   "rotulo": "A crença",
+   "titulo": "\"Falta só **o produto certo**.\"",
+   "texto": "Você treina há anos e a barriga não sai. Aí aparece o anúncio da caneta mais nova ou do suplemento da moda, e parece que faltava só comprar."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Como você se sente",
+   "titulo": "Anos de academia e **pouca diferença**.",
+   "texto": "Você sente que está perdendo tempo. Vê quem começou depois com o corpo melhor e se pergunta o que está fazendo de errado em cada treino."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "A causa",
+   "numero": "4,8",
+   "unidade": "kg",
+   "titulo": "de gordura a menos, **com músculo ganho**.",
+   "texto": "Quarenta homens jovens comeram 40% menos calorias por 4 semanas e treinaram força 6 dias por semana. Quem comeu mais proteína ganhou massa magra e perdeu 4,8 kg de gordura.",
+   "fonte": "Longland et al., American Journal of Clinical Nutrition (2016)"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O erro",
+   "titulo": "Gastar no atalho **antes do básico**.",
+   "texto": "Suplemento, caneta de procedência duvidosa, programa novo toda semana. Você gasta antes de acertar treino, sono e comida, que foram justamente o que o estudo mediu."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "O que está em jogo",
+   "titulo": "Mais um ano **no mesmo corpo**.",
+   "texto": "Com o dinheiro indo para o próximo atalho e a confiança de que dá para mudar indo embora junto. É esse o custo que ninguém coloca na conta."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "O básico bem feito **é o produto**.",
+   "texto": "**De quem compra o próximo atalho para quem tem um corpo que mostra que treina.** Treino com progressão, proteína e sono custam menos que qualquer caneta vendida na internet."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com meus alunos",
+   "titulo": "Eu começo pelo que **você já paga**.",
+   "texto": "Você já paga academia. Primeiro, avalio seu treino e sua execução. Depois, monto um plano de 45 a 60 minutos com carga registrada. Por fim, acompanho sua evolução, e a consultoria cabe antes do próximo suplemento.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-28/acervo-3.jpg",
+   "foco": "center 60%"
+  },
+  {
+   "tipo": "cta",
+   "fundo": "marinho",
+   "titulo": "Seu próximo passo **cabe no bolso**.",
+   "texto": "Avaliação Estratégica de 40 minutos no TTC, em Copacabana, ou conversa pelo direct se você treina em outra cidade. Manda este post para o amigo que vive comprando atalho.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}

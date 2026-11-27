@@ -1,0 +1,128 @@
+{
+ "formato": "carrossel",
+ "id": "k-2026-11-29-carrossel",
+ "data": "2026-11-29",
+ "quando": "2026-11-29T12:30:00-03:00",
+ "tema": "GLP-1",
+ "funil": "meio",
+ "pauta": "Relatório na JAMA: a caneta sozinha não basta; o peso volta quando o hábito não vem junto (espelho, variação feminina)",
+ "protagonista": {
+  "tipo": "espelho",
+  "persona": "feminina",
+  "desejo": "um resultado que fica",
+  "vilao": "a crença de que depois de emagrecer é só manter",
+  "nivel_consciencia": 2
+ },
+ "narrativa": {
+  "personagem": "Relatório publicado na JAMA em 17/11/2026, fruto de encontro em Chicago, conclui que as canetas sozinhas não contêm a epidemia de obesidade e pede remédio combinado com prevenção, ambiente alimentar e acesso a cuidado (Folhapress, via O Tempo e Jornal de Brasília, 26/11/2026)",
+  "personagem_nome": "JAMA",
+  "persona": "feminina",
+  "desejo": "um resultado que fica",
+  "vilao": "a crença de que depois de emagrecer é só manter",
+  "problema_externo": "a balança desce com dieta apertada ou caneta e volta a subir quando a fase acaba",
+  "problema_interno": "a culpa volta junto com a fome",
+  "problema_filosofico": "o corpo faz o que todo corpo faz depois de perder peso, e a culpa cai em quem tentou",
+  "causa": "depois de emagrecer o corpo gasta menos e a fome aumenta (JAMA 2026); no STEP 1, quem parou a semaglutida recuperou dois terços do peso perdido em um ano (Wilding 2022)",
+  "erro": "dieta radical e musculação deixada para depois, seguida de efeito sanfona",
+  "em_jogo": "recomeçar a cada virada de ano, com menos músculo",
+  "guia_empatia": "",
+  "guia_autoridade": "Luan avalia força e composição e acompanha a evolução mês a mês",
+  "plano": [
+   "Avaliar força e composição",
+   "Definir três treinos curtos que cabem na rotina",
+   "Reavaliar todo mês e ajustar"
+  ],
+  "sucesso": "de quem recomeça toda segunda para quem treina sem ficar presa ao fitness",
+  "cta_direto": "MÉTODO no direct",
+  "cta_transicao": "salvar para o dia em que a balança parar",
+  "ficha_persona": {
+   "consciencia": 2,
+   "objetivo": "Manter 3 treinos por semana por 6 meses seguidos",
+   "desejo": "Resultado sem ficar presa ao fitness",
+   "dor": "Culpa alimentar",
+   "erro": "Dieta radical ou jejum por conta própria, seguida de efeito sanfona",
+   "objecao": "6 meses de compromisso é muito tempo"
+  }
+ },
+ "legenda": "Eu vejo muita gente comemorar a balança e esquecer do dia seguinte.\n\nUm relatório publicado na JAMA em 17 de novembro concluiu que as canetas sozinhas não seguram a obesidade. Depois de emagrecer, o corpo gasta menos energia e a fome aumenta. No STEP 1, quem parou a semaglutida recuperou dois terços do peso perdido em um ano.\n\nVocê aperta o prato, faz dieta radical e deixa a musculação para depois. A culpa volta com a fome, e o efeito sanfona encontra o caminho aberto.\n\nCom minhas alunas eu avalio força e composição, monto três treinos curtos por semana e reavalio todo mês. Ninguém precisa fechar 6 meses de compromisso no escuro, porque cada reavaliação mostra o próximo passo.\n\nSalva este post para o dia em que a balança parar. Me manda MÉTODO no direct.\n\n#tavarescoach #glp1 #emagrecimento #treinodeforca #copacabana",
+ "slides": [
+  {
+   "tipo": "capa",
+   "fundo": "marinho",
+   "titulo": "A JAMA disse que a caneta **não basta**. E o seu plano?",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-21/foto-pessoal.jpg",
+   "foco": "center 40%",
+   "layout": "recorte",
+   "fonte": "JAMA, via Folhapress, 26/11/2026",
+   "link_noticia": "https://www.otempo.com.br/saude-e-bem-estar/2026/11/26/canetas-emagrecedoras-nao-sao-solucao-para-a-epidemia-global-de-obesidade-diz-estudo-internacional"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O caso",
+   "titulo": "Você também quer um resultado **que fica**.",
+   "texto": "Um relatório publicado na JAMA em 17 de novembro concluiu que as canetas sozinhas não contêm a obesidade. O texto pede o remédio junto com comida melhor, acesso a cuidado e cidade para caminhar.",
+   "fonte": "Folhapress, via O Tempo e Jornal de Brasília, 26/11/2026"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "marinho",
+   "rotulo": "A crença",
+   "titulo": "\"Emagreci, agora **é só manter**.\"",
+   "texto": "Você corta tudo, a balança desce e a fome fica quieta. Ninguém combina com você o que acontece no dia em que a dieta ou o remédio acabam."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "preto",
+   "rotulo": "Como você se sente",
+   "titulo": "A **culpa** volta junto com a fome.",
+   "texto": "O doce do aniversário vira julgamento e o jantar de sábado vira conta. Você sente que o corpo te traiu, quando ele só fez o que todo corpo faz depois de perder peso."
+  },
+  {
+   "tipo": "numero",
+   "fundo": "marinho",
+   "rotulo": "A causa",
+   "numero": "2/3",
+   "titulo": "do peso perdido voltou **em um ano**.",
+   "texto": "No STEP 1, quem parou a semaglutida e o acompanhamento recuperou dois terços do que tinha perdido. Depois de emagrecer, o corpo gasta menos energia e a fome aumenta.",
+   "fonte": "Wilding et al., Diabetes Obes Metab (2022); relatório JAMA (2026), via Folhapress"
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O erro",
+   "titulo": "Dieta radical e **zero carga**.",
+   "texto": "Você aperta o prato, corta o carboidrato e deixa a musculação para depois. A balança desce rápido, o músculo vai junto e o efeito sanfona encontra o caminho aberto."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "marinho",
+   "rotulo": "O que está em jogo",
+   "titulo": "Recomeçar **toda virada de ano**.",
+   "texto": "Cada nova tentativa começa com um pouco menos de músculo e um pouco mais de desconfiança de si mesma. É esse ciclo que cansa, mais do que qualquer dieta."
+  },
+  {
+   "tipo": "insight",
+   "fundo": "claro",
+   "rotulo": "O que o caso revela",
+   "titulo": "Resultado que fica **mora na rotina**.",
+   "texto": "**De quem recomeça toda segunda para quem treina sem ficar presa ao fitness.** O relatório da JAMA pede o remédio junto com hábito, e a parte do hábito cabe na sua semana."
+  },
+  {
+   "tipo": "texto_foto",
+   "fundo": "preto",
+   "rotulo": "O que eu faço com minhas alunas",
+   "titulo": "Eu monto o plano **para depois da balança**.",
+   "texto": "Primeiro, avalio sua força e sua composição. Depois, defino três treinos curtos por semana que cabem na sua rotina. Por fim, reavalio todo mês, e você não fecha 6 meses de compromisso no escuro.",
+   "foto": "https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/2026-11-21/acervo-1.jpg",
+   "foco": "center 30%"
+  },
+  {
+   "tipo": "cta",
+   "fundo": "marinho",
+   "titulo": "Seu resultado começa **pela avaliação**.",
+   "texto": "Avaliação Estratégica de 40 minutos no TTC, em Copacabana. Salva este post para o dia em que a balança parar.",
+   "cta": "Me manda **MÉTODO** no direct."
+  }
+ ]
+}
