@@ -216,8 +216,13 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
             problemas.append(f'Palavra fora da marca: "{w}".')
 
     # vícios de texto de IA: no gancho, pergunta/contraste/provocação liberados (06/11/2026); no miolo, não
-    gancho, miolo = _gancho(textos_slides(p), legenda)
-    miolo = miolo + "\n" + (p.get("pauta") or "") + "\n" + _txt(p.get("frase"))
+    textos = textos_slides(p)
+    if p.get("formato") == "estatico_v2":  # a frase da arte é o gancho; a pauta repete a frase
+        frase_v2 = " ".join(_txt(p.get(c)) for c in ("frase_branca", "frase_vermelha")).replace("\n", " ").strip()
+        gancho, miolo = _gancho(textos or [frase_v2], legenda)
+    else:
+        gancho, miolo = _gancho(textos, legenda)
+        miolo = miolo + "\n" + (p.get("pauta") or "") + "\n" + _txt(p.get("frase"))
     problemas += _vicios(gancho, miolo)
     if "—" in tudo:
         problemas.append("Travessão (—) no texto: troque por ponto, vírgula ou quebra de linha.")
@@ -250,7 +255,11 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
         problemas.append(f"Hashtags demais ({len(tags)}); o padrão é 3 a 5.")
 
     formato = p.get("formato")
-    if formato == "estatico":
+    if formato == "estatico_v2":
+        pr, av = revisar_estatico_v2(p, legenda)
+        problemas += pr
+        avisos += av
+    elif formato == "estatico":
         problemas += revisar_estatico(p)
     elif formato == "meme":
         problemas += revisar_meme(p)
@@ -337,6 +346,41 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None):
         "quando": quando,
         "revisado_em": agora.isoformat(timespec="minutes"),
     }
+
+
+FUNCOES_V2 = {"dor", "erro", "crenca", "objecao", "valor"}
+MAX_PALAVRAS_V2 = 12
+REFERENCIA_OUTRO_POST = r"\bveja\b|\bàs 1\dh|\bno próximo post\b|\bcontinua (?:no|na|amanhã|às)\b|\barrasta|\blink no carrossel\b|\bno carrossel\b|\bmeio-dia\b"
+PRAZO = r"\b\d+\s*(?:dias?|semanas?|meses|m[eê]s)\b"
+
+
+def revisar_estatico_v2(p, legenda):
+    """Estático v2 (diretrizes/estatico.md, 26/11/2026): uma ideia completa, da ficha da persona, sem famoso."""
+    out, av = [], []
+    for c in ("funcao", "persona", "campo_ficha", "angulo_complementar", "frase_branca", "frase_vermelha"):
+        if not p.get(c):
+            out.append(f"Estático v2 sem `{c}`.")
+    if p.get("funcao") and p["funcao"] not in FUNCOES_V2:
+        out.append(f"Função do estático fora da lista: {p['funcao']}.")
+    if not p.get("foto"):
+        out.append("Estático v2 sem foto de fundo.")
+    frase = " ".join(_txt(p.get(c)) for c in ("frase_branca", "frase_vermelha"))
+    n = len(re.findall(r"\w+", frase))
+    if n > MAX_PALAVRAS_V2:
+        out.append(f"Frase do estático com {n} palavras (máximo {MAX_PALAVRAS_V2}).")
+    todo = (frase + "\n" + (legenda or "")).lower()
+    m = re.search(REFERENCIA_OUTRO_POST, todo)
+    if m:
+        out.append(f'O estático depende de outro post ("{m.group(0)}"): ele precisa valer sozinho.')
+    if "método" in todo or "metodo" in todo:
+        out.append("MÉTODO no estático: o convite fica no carrossel e na foto pessoal.")
+    if re.search(PRAZO, frase.lower()):
+        out.append("Número com prazo na frase do estático.")
+    if p.get("pessoa") or p.get("personagem"):
+        out.append("Estático v2 não usa famoso: a foto da pessoa vai para a capa do carrossel.")
+    if re.search(r"\w+,\s+\w+.*\be\b", _txt(p.get("frase_branca"))):
+        av.append("A frase pode ter duas ideias (vírgula e \"e\"); confira.")
+    return out, av
 
 
 def revisar_estatico(p):

@@ -19,7 +19,7 @@ Isso leva à venda (MÉTODO no direct).
 ## Os três pilares no ciclo de 3 dias
 | Pilar | Formato | Entrega |
 |---|---|---|
-| Conexão | Estático 07h com famoso brasileiro | a pessoa conhecida tem o mesmo problema do leitor |
+| Conexão | Estático da manhã (v2, `estatico.md`) e capa do carrossel com famoso brasileiro | o leitor se reconhece na frase; a pessoa conhecida tem o mesmo problema dele |
 | Autoridade | Carrossel 12h | ciência + "o que eu faço com meus alunos", com foto do Luan |
 | Desejo | Foto pessoal ou meme 20h | o corpo, a saúde e a vida que o método dá |
 
@@ -55,7 +55,7 @@ Arco do carrossel: famoso (conexão) → o que a ciência diz → o que eu faço
 9. **Kit de modelos:** capa com foto, texto, número, "o que eu faço", CTA e meme (`render/carrossel.html`, `render/meme.html`). Mudança de modelo passa pelo Luan.
 10. **Foto de famoso:** primeiro Wikimedia Commons (licença livre); senão a foto da própria notícia como **reprodução**, com crédito na arte ("Foto: Reprodução/veículo ou @perfil") e `pagina_origem`. Decisão do Luan em 02/11, substitui a exigência de licença comercial de 24/10. Menor de idade nunca.
 11. **Sem camisa:** liberado em contexto de vida (praia, viagem, natureza), no pilar Desejo, no máximo uma vez por ciclo. Fora: pose de exibição em academia ou espelho e enquadramento sensual.
-12. **Uma foto, um post (05/11/2026):** a mesma foto não aparece em dois posts do feed em 21 dias, nem por outro link. Estático e carrossel do mesmo dia têm fotos diferentes; a capa do carrossel usa o layout `recorte` para não repetir o visual do estático. A revisão barra.
+12. **Uma foto, um post (05/11/2026):** a mesma foto não aparece em dois posts do feed em 21 dias, nem por outro link. Estático e carrossel do mesmo dia têm fotos diferentes; desde 26/11/2026 o estático não usa a foto do famoso, que fica na capa do carrossel. A revisão barra.
 13. **Etiquetas do acervo** em `acervo/tags.json` (quem gera o pacote etiqueta cada foto que abre), para escolher a foto certa.
 
 ## 5. Meme (formato `meme`)

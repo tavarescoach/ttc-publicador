@@ -215,52 +215,51 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
    e preencha `protagonista` {tipo, persona, desejo, vilao, nivel_consciencia} e a ficha `narrativa` (seção 4), com
    `personagem_nome` e a `ficha_persona`: nível de consciência + objetivo, desejo, dor, erro e objeção, cada um copiado
    palavra por palavra da persona em `diretrizes/personas.json`. O texto usa desejo, dor e erro; a objeção é respondida
-   na legenda ou no slide 9; o objetivo orienta o sucesso e o plano. Estático
-   e carrossel do mesmo dia usam o mesmo `protagonista` e a mesma `narrativa` (o carrossel aprofunda o estático). Varie o
+   na legenda ou no slide 9; o objetivo orienta o sucesso e o plano. `protagonista` e `narrativa` vão só no
+   carrossel (desde 26/11/2026 o estático não usa notícia nem famoso: `diretrizes/estatico.md`). Varie o
    tipo (espelho, ponte, alerta) entre os 3 dias quando as notícias permitirem e registre as escolhas em `ciclos/ciclos.json`
-   (`protagonistas`: {<dia>: {tipo, persona}}), para a medição por tipo. Notícia que não passa no filtro vira estático de
-   topo, sem carrossel de venda: busque outra notícia para o carrossel das 12h. História do guia ainda não confirmada:
+   (`protagonistas`: {<dia>: {tipo, persona}}), para a medição por tipo. Notícia que não passa no filtro não entra:
+   busque outra notícia para o carrossel das 12h. História do guia ainda não confirmada:
    `guia_empatia` vazio e nada de história pessoal do Luan no slide 9 nem na legenda.
    Todo item leva `tema` = o `tema` do ciclo. Saúde: só afirmação defensável, com fonte; sem prescrição nem promessa.
    **Arco do ciclo (como os 3 dias conversam):** um tema, três ângulos que avançam. D1 = o caso (o fato da pessoa
    conhecida e o estudo que explica). D2 = o mecanismo e a aplicação (por que funciona e como entra na semana;
    o carrossel das 20h é o guia prático). D3 = a objeção e o convite (o que trava o leitor e o primeiro passo, com
    MÉTODO mais forte). Funil por horário: 7h topo (atenção), 12h meio (autoridade, salvamento), 20h fundo/humano.
-   Cada estático termina chamando o carrossel do meio-dia do mesmo dia; o carrossel retoma o caso da manhã e, do slide 2
-   em diante, fala com o leitor ("você"). O D3 (objeção e convite) usa uma objeção real da persona do dia (`personas.md`).
-   Headline do estático: gancho do tipo escolhido (seção 8 do Protagonista), nomeia a pessoa, traz um número ou uma frase
-   dela, **termina no leitor**, fica abaixo de ~60 caracteres e não promete resultado; 1–3 palavras em **destaque** no
-   que muda para o leitor.
+   **Estático v2 (26/11/2026, `diretrizes/estatico.md`):** o estático da manhã vale sozinho. Mesmo tema do ciclo, outro
+   ângulo, sem famoso, sem MÉTODO e sem chamar o carrossel. A função segue a escada do ciclo: D1 `dor`, D2 `erro` ou
+   `crenca`, D3 `objecao` ou `valor`, sempre tirada da ficha da persona do dia. O carrossel do meio-dia abre com o caso
+   da pessoa conhecida (foto dela na capa) e, do slide 2 em diante, fala com o leitor ("você"). O D3 (objeção e convite)
+   usa uma objeção real da persona do dia (`personas.md`).
 3. Peças (D1, D2, D3 = dias do ciclo; ids com o dia, ex. `k-2026-10-26-estatico`):
-   - **Estático 07h** de cada dia (`k-<dia>-estatico`): notícia de pessoa conhecida ligada ao tema. Comece por
-     `famosos` do ciclo (o `protagonista` de cada um está no item de mesmo `noticia_id` em `radar/curadoria/*.json`: use
-     como ponto de partida e confira); sem nada lá, procure com WebSearch notícias das últimas 24 h, depois 72 h, depois 7 dias.
-     Abra a matéria (WebFetch) e confirme o fato numa segunda fonte. Três pessoas ou fatos diferentes nos 3 dias.
-     **Brasileiro primeiro** (`pessoa_br`; a lista `famosos` já vem nessa ordem). Gancho: nome + fato concreto.
-     Foto: escreva `"pessoa": "<nome como aparece no Commons>"` na capa e deixe `foto` vazio. O robô "Renderizar
-     artes" busca no Wikimedia Commons, confere a licença pelos metadados (só CC BY, CC BY-SA, CC0 ou domínio
-     público) e preenche foto, crédito, licença e página de origem. Preencha SEMPRE a reserva para quando o Commons
-     não tiver foto: `"foto_reproducao": "<URL da imagem da matéria ou do post da pessoa>"`, `"credito_reproducao":
-     "Foto: Reprodução/<veículo ou @perfil>"` e `"origem_reproducao": "<link da matéria ou do post>"` (a `imagem` do
-     item do radar costuma servir; confira que a foto mostra a pessoa e não é de menor). Sem nenhuma foto, a capa
-     sai só com texto e vai para "Precisa de você".
-     Depois do render, confira na prévia se a foto é mesmo da pessoa; se não for, troque o nome ou ponha `"pessoa": null`.
-     Pedido: `{"formato": "estatico", "id", "data", "quando": "<dia>T07:00:00-03:00", "tema", "funil": "topo", "pauta",
-     "protagonista", "narrativa", "legenda", "slides": [{"tipo": "capa", "titulo" (nomeia a pessoa, até ~60 caracteres, 1–3 palavras em **destaque**),
-     "subtitulo" (chama para o carrossel das 12h), "fonte": "Veículo, DD/MM/AAAA", "link_noticia", "foto", "credito":
-     "Foto: autor / Wikimedia Commons (CC BY-SA 4.0)", "licenca": "cc-by | cc-by-sa | dominio-publico | cc0",
-     "pagina_origem", "foco"}]}`. Só o que a notícia afirma sobre a pessoa; nunca sugerir que ela usa ou recomenda o
-     método; notícia negativa em tom informativo; menor de idade nunca. Sem MÉTODO na arte (vai na legenda).
-   - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): aprofunda o gancho do estático daquele dia, com a estética
+   - **Estático da manhã** de cada dia (`v2-<dia>-estatico`). **Se o pedido `render/pedidos/v2-<dia>-estatico.json` já
+     existir, não faça outro.** Regras completas em `diretrizes/estatico.md`: frase de até 12 palavras (linhas brancas +
+     última linha vermelha com o desfecho), passa nos dois testes (vale sozinha; o leitor se reconhece ou manda para
+     alguém), uma ideia só, vilão é crença ou hábito, nada de número com prazo. Comece pelo banco da seção 13 do doc ou
+     escreva uma nova a partir da ficha da persona; não repita frase usada nos últimos 10 ciclos.
+     Foto: do `acervo` do Luan ou de banco, escura, ligada ao assunto da frase (URL do bucket, como no slide 9). Nunca
+     a foto do famoso. Horário (seção 9 do doc): janela 06h–11h; até a escolha do padrão, alterne 07:00, 09:00 e 11:00
+     pelos dias do ciclo. Se o estático cair às 11:00, o carrossel do dia vai para 12:30.
+     Pedido: `{"formato": "estatico_v2", "id", "data", "quando", "tema", "funil": "topo", "pauta" (a frase inteira),
+     "funcao": "dor|erro|crenca|objecao|valor", "persona", "campo_ficha" (item da ficha, palavra por palavra),
+     "angulo_complementar" (o que ele diz que o carrossel do dia não diz), "frase_branca" (até 3 linhas, com \n),
+     "frase_vermelha" (última linha), "foto", "foco", "legenda"}`. Legenda: 1ª linha opinião do Luan, Cena, Causa (com
+     fonte se for afirmação científica), Movimento, CTA de transição + "me manda <PALAVRA> no direct" (palavra ligada ao
+     tema, nunca MÉTODO) + 3 a 5 hashtags.
+   - **Carrossel 12h** de cada dia (`k-<dia>-carrossel`): o caso da pessoa conhecida ligado ao tema, com a estética
      Decodificado de `diretrizes/carrossel.md` e o **arco de 10 slides do Formato Protagonista** (`protagonista.md`,
      seção 6): 1 capa (personagem + pergunta ao leitor) · 2 espelho · 3 vilão · 4 problema interno · 5 causa com fonte ·
      6 o erro · 7 o que está em jogo · 8 o que o caso revela (insight, fundo claro, frase-assinatura) · 9 o guia
      (`texto_foto` com `rotulo` "O QUE EU FAÇO COM MEUS ALUNOS", foto do Luan e o plano em 3 passos com verbo) · 10 `cta`
      (MÉTODO + passo menor da `cta_transicao`). Personagem em no máximo 3 slides. Pedido leva `protagonista` e `narrativa`.
-     Legenda na ordem da seção 7. A capa
-     NUNCA usa a mesma foto do estático (05/11/2026): use outra foto da pessoa (outra matéria, outro evento) ou uma
-     foto do Luan do `acervo`, com `"layout": "recorte"` na capa (foto em bloco no alto, título em fundo sólido) para o
-     visual não repetir o do estático; ajuste `foco` para o rosto ficar no bloco. Slide 9 "O QUE EU FAÇO COM MEUS ALUNOS": `texto_foto` com
+     Legenda na ordem da seção 7. **Capa com a foto da pessoa da notícia** (26/11/2026: saiu do estático). Notícia:
+     comece por `famosos` do ciclo (o `protagonista` de cada um está no item de mesmo `noticia_id` em
+     `radar/curadoria/*.json`); sem nada lá, WebSearch nas últimas 24 h, depois 72 h, depois 7 dias. Abra a matéria
+     (WebFetch) e confirme o fato numa segunda fonte. Três pessoas ou fatos diferentes nos 3 dias; brasileiro primeiro.
+     Foto da capa: `"pessoa": "<nome como aparece no Commons>"` e `foto` vazio (o robô busca no Commons com licença
+     conferida); preencha SEMPRE a reserva `"foto_reproducao"`, `"credito_reproducao": "Foto: Reprodução/<veículo>"` e
+     `"origem_reproducao"`; capa leva `fonte` e `link_noticia`. Depois do render, confira na prévia se a foto é mesmo da
+     pessoa. Só o que a notícia afirma; nunca sugerir que ela usa o método; menor de idade nunca. Slide 9 "O QUE EU FAÇO COM MEUS ALUNOS": `texto_foto` com
      uma foto do `acervo` do ciclo (abra as `previa` com Read, escolha a que combina e use
      `https://txiszakrpssubgvzpdcx.supabase.co/storage/v1/object/public/midia/<arquivo>`). Nunca a mesma foto do
      acervo em dois posts do ciclo.
@@ -283,7 +282,7 @@ Escreve o conteúdo dos 3 dias do ciclo temático (diretrizes/ciclo.md). Ningué
      sem "Hoje:"), virada com artigo verificado (DOI ou PubMed), resultado com critério mensurável. O robô "Preparar
      stories" monta as 5 telas sozinho às 18h da véspera. Sem plano, só sai o Post novo.
 4. Rode `python render/revisar.py render/pedidos/<id>.json` em cada pedido e corrija todo "problema".
-   Desde 28/11/2026 a revisão também barra (seção 10 de `diretrizes/protagonista.md`): estático ou carrossel do ciclo
+   Desde 28/11/2026 a revisão também barra (seção 10 de `diretrizes/protagonista.md`): carrossel do ciclo
    sem `protagonista`, `narrativa` ou `ficha_persona`; item da ficha fora da persona; personagem em mais de 3 slides;
    nenhum "você" nos slides 2 a 4; slide 9 sem foto do Luan; promessa com número e prazo nos slides 8 a 10; fala de
    aluno sem `aluno_autorizado`. Leia também os avisos (desejo, dor ou erro que não aparecem no texto) e corrija.

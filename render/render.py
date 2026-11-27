@@ -30,6 +30,7 @@ RAIZ = os.path.dirname(AQUI)
 URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 UA = {"User-Agent": "Mozilla/5.0 (ttc-publicador render)"}
+ETIQUETAS = {"dor": "Dor", "erro": "Erro", "crenca": "Crença", "objecao": "Objeção", "valor": "Valor"}
 
 
 def dhash(caminho):
@@ -124,6 +125,15 @@ def main():
     reels = p.get("formato") == "reels"
     estatico = p.get("formato") == "estatico"
     meme = p.get("formato") == "meme"  # diretrizes/conteudo.md, seção 5
+    v2 = p.get("formato") == "estatico_v2"  # diretrizes/estatico.md (26/11/2026): valor individual, sem famoso
+    if v2:
+        estatico = True
+        slides = p["slides"] = [{
+            "tipo": "estatico_v2", "etiqueta": ETIQUETAS.get(p.get("funcao"), ""),
+            "linhas_brancas": p.get("frase_branca") or "", "linha_vermelha": p.get("frase_vermelha") or "",
+            # titulo: a frase inteira, para a revisão ler o gancho de uma vez
+            "titulo": " ".join(x for x in (p.get("frase_branca"), p.get("frase_vermelha")) if x).replace("\n", " "),
+            "foto": p.get("foto"), "foco": p.get("foco")}]
     if meme:
         slides = p["slides"] = [{"tipo": "meme", "frase": p.get("frase"), "foto": p.get("foto"), "foco": p.get("foco")}]
     if estatico:
@@ -173,7 +183,8 @@ def main():
                 print(f"[aviso] sem impressão da foto do slide {i}: {e}")
 
     arquivos = []
-    modelo = "file://" + os.path.join(AQUI, "capa-reels.html" if reels else "meme.html" if meme else "carrossel.html")
+    modelo = "file://" + os.path.join(AQUI, "capa-reels.html" if reels else "meme.html" if meme
+                                      else "estatico-v2.html" if v2 else "carrossel.html")
     with sync_playwright() as pw:
         nav = pw.chromium.launch()
         pg = nav.new_page(viewport={"width": W, "height": H})

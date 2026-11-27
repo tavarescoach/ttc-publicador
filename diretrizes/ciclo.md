@@ -4,7 +4,7 @@ Vale para toda sessão que mexa em pacote, feed, stories ou revisão. Estado da 
 
 ## Decisões do Luan (24/10/2026)
 - Um tema por ciclo de 3 dias, escolhido por fórmula fixa (abaixo), sem IA.
-- FAM sai do sorteio: o estático das 7h é sempre sobre uma pessoa conhecida, ligada ao tema do ciclo. Concorrem 8 temas: FOR, EMA, EST, ESP (centrais) e GLP, LON, MEN, WEA (cruzados).
+- FAM sai do sorteio: a pessoa conhecida do dia vai na capa do carrossel das 12h (desde 26/11/2026 o estático não usa famoso; veja `estatico.md`). Concorrem 8 temas: FOR, EMA, EST, ESP (centrais) e GLP, LON, MEN, WEA (cruzados).
 - 20h: carrossel no dia 2 do ciclo; foto pessoal nos dias 1 e 3.
 - Stories: desde 26/11/2026 valem os stories v3 (abertura 7h30, virada 10h, post novo 12h05, resultado 13h, convite 21h; bloco v3 de diretrizes/stories.md). A tabela abaixo (6h, 8h, 10h, 12h30) é o modelo v2, só para voltar atrás.
 - (v2) Stories automáticos novos (6h, 8h, 10h, 12h30) substituem os automáticos antigos. Stories com sticker (enquete, caixinha, quiz) viram opcionais na Tela Hoje: nada trava se o Luan não postar.
@@ -51,7 +51,7 @@ Escolha, nesta ordem:
 | Hora | Formato | Aponta para | Saída |
 |---|---|---|---|
 | 06:00 | Story: time-lapse de trabalho + frase de bom dia | respostas | auto |
-| 07:00 | Estático: notícia de pessoa conhecida ligada ao tema, anuncia o carrossel das 12h | — | auto |
+| 07:00–11:00 | Estático v2 (`estatico.md`): ideia completa da ficha da persona, sem famoso e sem chamar o carrossel; horário decidido pelo engajamento | — | auto |
 | 08:00 | Story: arte do post das 7h + "post novo no perfil" | post das 7h | auto (compartilhar pelo app é opcional) |
 | 10:00 | Story: time-lapse de treino + CTA MÉTODO | direct | auto |
 | 12:00 | Carrossel Decodificado (diretrizes/carrossel.md) | — | auto |
@@ -60,7 +60,7 @@ Escolha, nesta ordem:
 
 Robô de publicação roda aos :07 e :37: o story das 6h sai às 6h07.
 
-Estático das 7h:
+Estático das 7h (substituído pelo Estático v2 em 26/11/2026; vale `estatico.md`):
 - Notícia: radar das últimas 24 h; senão 72 h; senão 7 dias. A sessão confirma o fato numa segunda fonte.
 - Foto: Wikimedia Commons primeiro; senão a foto da notícia como reprodução, com crédito "Foto: Reprodução/..." (02/11/2026). Sem foto, não agenda sozinho.
 - Na arte: "Foto: autor / Wikimedia Commons (licença)" e "Fonte: veículo, data". Só o que a notícia afirma sobre a pessoa; nunca sugerir que ela usa ou recomenda o método.
