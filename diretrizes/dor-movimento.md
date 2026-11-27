@@ -28,7 +28,7 @@ Slides 1 a 8: um par por slide (o 1º é o par mais forte) → "O que eu faço c
 CTA "Salva pra usar essa semana" + "Me manda MÉTODO no direct" (ou a palavra do tema).
 
 ## Arte
-- 1080×1440, dividida ao meio (720 + 720). Em cima: foto do Luan + a dor. Embaixo: foto do Luan fazendo o movimento + o movimento.
+- **1080×1350 (4:5)**, dividida ao meio (675 + 675). 3:4 (1440) não: a API do Instagram só publica de 4:5 a 1,91:1. Em cima: foto do Luan + a dor. Embaixo: foto do Luan fazendo o movimento + o movimento.
 - Tipografia única: Roboto Condensed 800, caixa alta, nas duas metades e nos slides cheios. Só a cor muda: última palavra do movimento em vermelho #C1121F.
 - Logo LT em **todos** os slides (canto superior esquerdo, ~330 px) e @tavarescoach no rodapé.
 - Marinho só no degradê atrás do texto; **nunca filtro de cor sobre a foto**.

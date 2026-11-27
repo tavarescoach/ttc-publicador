@@ -3,27 +3,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;800&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 /* Dor → Movimento (diretrizes/dor-movimento.md, v1.1, 26/11/2026).
-   1080×1440, tela dividida: em cima a foto do Luan + a dor; embaixo a foto do Luan fazendo o movimento + o movimento.
+   1080×1350, tela dividida: em cima a foto do Luan + a dor; embaixo a foto do Luan fazendo o movimento + o movimento.
    Uma tipografia só (Roboto Condensed 800, caixa alta) nas duas metades; última palavra do movimento em vermelho.
    Logo LT em todos os slides. Sem filtro de cor sobre a foto: marinho só no degradê atrás do texto. */
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{width:1080px;height:1440px;overflow:hidden;background:#0E1626}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#0E1626}
 body{font-family:"Roboto Condensed","Liberation Sans Narrow","Arial Narrow",sans-serif;-webkit-font-smoothing:antialiased}
-.s{position:relative;width:1080px;height:1440px;overflow:hidden;background:#0E1626}
-.m{position:absolute;left:0;width:1080px;height:720px;overflow:hidden;background:#0E1626 center/cover no-repeat}
-.m.cima{top:0}.m.baixo{top:720px}
+.s{position:relative;width:1080px;height:1350px;overflow:hidden;background:#0E1626}
+.m{position:absolute;left:0;width:1080px;height:675px;overflow:hidden;background:#0E1626 center/cover no-repeat}
+.m.cima{top:0}.m.baixo{top:675px}
 .m::after{content:"";position:absolute;inset:0}
 .m.cima::after{background:linear-gradient(180deg,rgba(5,8,15,.35) 0%,rgba(5,8,15,0) 22%,rgba(5,8,15,0) 50%,rgba(5,8,15,.72) 82%,rgba(5,8,15,.88) 100%)}
 .m.baixo::after{background:linear-gradient(180deg,rgba(5,8,15,.15) 0%,rgba(5,8,15,0) 30%,rgba(5,8,15,.70) 78%,rgba(5,8,15,.90) 100%)}
-.div{position:absolute;left:0;right:0;top:718px;height:4px;background:#05080F;z-index:3}
-.txt{position:absolute;z-index:2;left:72px;right:72px;bottom:58px;text-align:center;color:#fff;font-size:92px;
+.div{position:absolute;left:0;right:0;top:673px;height:4px;background:#05080F;z-index:3}
+.txt{position:absolute;z-index:2;left:72px;right:72px;bottom:52px;text-align:center;color:#fff;font-size:88px;
   font-weight:800;line-height:.94;letter-spacing:0;text-transform:uppercase;text-shadow:0 3px 18px rgba(0,0,0,.55)}
 .v{color:#C1121F}
 .logo{position:absolute;z-index:4;left:56px;top:46px;width:330px;filter:drop-shadow(0 2px 10px rgba(0,0,0,.6))}
 .rod{position:absolute;z-index:4;right:44px;bottom:22px;font:600 24px "Inter",sans-serif;color:rgba(248,250,252,.85)}
 .cheio{position:absolute;inset:0;background:#0E1626 center/cover no-repeat}
 .cheio::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,15,.55) 0%,rgba(5,8,15,0) 20%,rgba(5,8,15,0) 38%,rgba(5,8,15,.82) 62%,rgba(5,8,15,.96) 100%)}
-.corpo{position:absolute;z-index:2;left:72px;right:72px;bottom:110px;top:820px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.corpo{position:absolute;z-index:2;left:72px;right:72px;bottom:110px;top:760px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
 .traco{width:72px;height:8px;background:#C1121F;margin-bottom:22px}
 .etq{font-weight:700;font-size:34px;letter-spacing:.04em;text-transform:uppercase;color:#F8FAFC;margin-bottom:22px}
 .corpo h1{font-weight:800;font-size:96px;line-height:.95;text-transform:uppercase}
@@ -55,7 +55,7 @@ if (S.tipo === "dm_par") {
 document.getElementById("raiz").innerHTML = html;
 // cada metade: até 2 linhas; reduz a fonte até caber (mínimo 64 px; abaixo disso o render marca corte)
 document.querySelectorAll(".m .txt").forEach(t => {
-  let tam = 92;
+  let tam = 88;
   const linhas = () => Math.round(t.offsetHeight / (tam * .94));
   while ((t.scrollWidth > t.clientWidth + 2 || linhas() > 2) && tam > 64) { tam -= 4; t.style.fontSize = tam + "px"; }
   if (t.scrollWidth > t.clientWidth + 2 || linhas() > 2) t.dataset.cortado = "1";

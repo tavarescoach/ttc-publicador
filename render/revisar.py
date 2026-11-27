@@ -331,6 +331,9 @@ def revisar(p, cortes=None, fotos_falharam=None, agora=None, hashes=None, checag
     problemas += pr
     avisos += av
 
+    # pedido marcado para o Luan conferir antes de sair (ex.: primeiros carrosséis de um formato novo)
+    if p.get("conferir"):
+        atencao.append("Marcado para você conferir antes de sair.")
     # temas que sempre passam pelo Luan
     if p.get("prova") or any(re.search(r, baixo) for r in PROVA):
         atencao.append("Prova com aluno: confirme a autorização antes de publicar.")
