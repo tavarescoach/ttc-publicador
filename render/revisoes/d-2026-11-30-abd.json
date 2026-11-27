@@ -4,7 +4,7 @@
  "fotos": [
   {
    "slide": "1 (em cima)",
-   "hash": "04f2f1b171f0dcaa"
+   "hash": "c7cffddb99d2d290"
   },
   {
    "slide": "1 (embaixo)",
@@ -16,11 +16,11 @@
   },
   {
    "slide": "2 (embaixo)",
-   "hash": "4c4a513131d5981e"
+   "hash": "030f3cecb7b3e52b"
   },
   {
    "slide": "3 (em cima)",
-   "hash": "1071616161c3c286"
+   "hash": "99188d39197bff2c"
   },
   {
    "slide": "3 (embaixo)",
@@ -28,7 +28,7 @@
   },
   {
    "slide": "4 (em cima)",
-   "hash": "66f89c9c1bb9f6b7"
+   "hash": "cfe664323262eb33"
   },
   {
    "slide": "4 (embaixo)",
@@ -44,11 +44,11 @@
   },
   {
    "slide": "6 (em cima)",
-   "hash": "303878b82263c5c7"
+   "hash": "f9f9ece2ecec7971"
   },
   {
    "slide": "6 (embaixo)",
-   "hash": "30323033e4146627"
+   "hash": "4198184042c0980e"
   },
   {
    "slide": "7",
@@ -60,23 +60,14 @@
   }
  ],
  "decisao": "precisa",
- "problemas": [
-  "Slide 1 (em cima): rosto cortado pela borda da metade.",
-  "Slide 2 (embaixo): rosto não aparece (de costas, cortado, coberto ou fora do recorte).",
-  "Slide 3 (em cima): rosto cortado pela borda da metade.",
-  "Slide 3 (em cima): o texto da metade cobre o rosto.",
-  "Slide 4 (em cima): rosto cortado pela borda da metade.",
-  "Slide 4 (em cima): o texto da metade cobre o rosto.",
-  "Slide 6 (em cima): rosto cortado pela borda da metade.",
-  "Slide 6 (em cima): o texto da metade cobre o rosto.",
-  "Slide 6 (embaixo): rosto cortado pela borda da metade."
- ],
+ "problemas": [],
  "atencao": [
   "Marcado para você conferir antes de sair."
  ],
  "avisos": [
+  "Slide 1 (em cima): rosto pequeno na foto.",
   "Slide 1 (embaixo): rosto pequeno na foto."
  ],
  "quando": "2026-11-30T09:00:00-03:00",
- "revisado_em": "2026-11-26T23:19-03:00"
+ "revisado_em": "2026-11-26T23:25-03:00"
 }
