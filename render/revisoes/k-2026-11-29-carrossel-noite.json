@@ -11,13 +11,15 @@
    "hash": "f7f8e47879591535"
   }
  ],
- "decisao": "agendado",
- "problemas": [],
+ "decisao": "precisa",
+ "problemas": [
+  "Texto cortado no slide 1."
+ ],
  "atencao": [],
  "avisos": [
   "Sem `narrativa.personagem_nome` nem `pessoa` na capa: não deu para contar o personagem nos slides.",
   "Tema de saúde (glp1, remédio): passou pela revisão de saúde."
  ],
- "quando": "2026-11-29T20:00:00-03:00",
- "revisado_em": "2026-11-27T11:37-03:00"
+ "quando": "2026-11-29T23:00:00+00:00",
+ "revisado_em": "2026-11-27T11:43-03:00"
 }
