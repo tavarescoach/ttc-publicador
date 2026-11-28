@@ -1,31 +1,42 @@
 {
- "atualizado_em": "2026-11-27T14:25:18-03:00",
+ "atualizado_em": "2026-11-28T06:26:23-03:00",
  "em_alta": [
   {
    "assunto": "black-friday-consumo",
    "tema": "comportamento",
-   "canais": 7,
+   "canais": 8,
    "nota_max": 35,
    "titulos": [
     "Black Friday reforça gatilhos de consumo e dificulta frear impulsos",
-    "Walking Pad Deals to Shop This Black Friday (2026)",
-    "RP Strength: oferta de Black Friday dos apps com 'comente BUNDLE33'"
+    "5 affordable sleep gifts designed to block noise and light for better rest",
+    "The Oura Ring 5 is on sale for its lowest price ever this Black Friday"
    ]
   },
   {
    "assunto": "glp1-canetas-brasil",
    "tema": "saude",
    "canais": 4,
-   "nota_max": 68,
+   "nota_max": 74,
    "titulos": [
+    "'Overdose' de Mounjaro: por que aumentar a aplicação não acelera o emagrecimento e pode trazer riscos",
     "Canetas emagrecedoras não bastam para conter epidemia de obesidade, diz relatório internacional",
-    "Saúde de Goiás anuncia canetas emagrecedoras gratuitas para jovens no SUS",
-    "Anvisa Determina Apreensão de Medicamentos com Tirzepatida e Retatrutida sem Registro"
+    "Saúde de Goiás anuncia canetas emagrecedoras gratuitas para jovens no SUS"
+   ]
+  },
+  {
+   "assunto": "fofoca-famosos",
+   "tema": "cultura",
+   "canais": 4,
+   "nota_max": 10,
+   "titulos": [
+    "DWTS’s Brandon Armstrong Got a Cut From Ezra Frech’s Freestyle",
+    "Teresa Giudice Shares Thanksgiving Photo of Daughters After Milania Received Mental Health Care",
+    "Jennifer Lawrence wore over $22,000 in jewelry with this $59 T-shirt"
    ]
   },
   {
    "assunto": "ceia-de-festas",
-   "tema": "saude",
+   "tema": "comportamento",
    "canais": 3,
    "nota_max": 58,
    "titulos": [
@@ -35,25 +46,25 @@
    ]
   },
   {
+   "assunto": "politica-saude",
+   "tema": "saude",
+   "canais": 3,
+   "nota_max": 22,
+   "titulos": [
+    "Sardinha de Michelle vira meme, mas não há evidência de relação entre dieta de Bolsonaro e obstrução",
+    "Africa’s Leading Health Official Faces Revolt Amid Raging Ebola Crisis",
+    "The religious beliefs of a hospital operator should not determine the healthcare available to Australians | Nisha Khot"
+   ]
+  },
+  {
    "assunto": "cinema",
    "tema": "cultura",
    "canais": 3,
    "nota_max": 3,
    "titulos": [
+    "Yellowjackets Recap: Reality Bites",
     "Elizabeth Debicki Is the Heart and Soul of 'Cliff Booth'",
-    "Every David Fincher Killer, Definitively Ranked",
-    "What Lacey Chabert Watches (and Reads) With Her Daughter"
-   ]
-  },
-  {
-   "assunto": "fofoca-famosos",
-   "tema": "comportamento",
-   "canais": 3,
-   "nota_max": 3,
-   "titulos": [
-    "Guy Fieri mourns painful family loss in emotional post ahead of Thanksgiving",
-    "Sydney Sweeney goes full ‘Corpse Bride’ in bow-trimmed lace lingerie",
-    "Dolly Parton’s Niece Shares Heartfelt Thanksgiving Tribute to the Late Singer"
+    "Every David Fincher Killer, Definitively Ranked"
    ]
   }
  ],
